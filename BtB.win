@@ -1,0 +1,7 @@
+name = "back_to_basics"
+scar_file = "data:scar/winconditions/btb.scar"
+fe_name = "Back to Basics"
+fe_priority = 0
+score_display = vp_ticker
+show_time = true
+requires_vp_ticker = true
