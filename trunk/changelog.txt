@@ -1,0 +1,8 @@
+V1.0
+- All small arms damage increased by 35%
+- All max ranges of small arms weapons increased by 12.5%
+- Modified default range tables:
+ * Far increased by 12.5%
+ * Medium increased by 5%
+ * Near increased by 5%
+- Removed burst pattern from soviet 50cal ht
