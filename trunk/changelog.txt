@@ -19,10 +19,10 @@ Win condition:
 - Increased base manpower income by 50 per minute
 - Increased base fuel income by 1.5 per minute
 - Player sight radius increased by 5%
+- Player command point gain speed decreased by 15%
 
 AI changes (win condition):
 - Created custom retreat rules for all infantry squads
-- Increased production speed by 10%
 - Increased experience gain speed by 5%
 - Increased all manpower income by 15%
 - Increased all munition income by 25%
