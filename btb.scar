@@ -11,17 +11,29 @@ SetGlobals()
 Scar_AddInit(VPTicker_OnInit)
 
 local function BtB_IsSquadVehicle(squad)
-	return Squad_GetMax(squad) > 1 or Squad_GetHealthMax(squad) < 150
+	return Squad_GetMax(squad) == 1 and Squad_GetHealthMax(squad) > 150
 end
 
-BtB = {
+local BtB = {
 	Settings = {
 		BattleRadius = 45
 	},
 	
 	AIPlayers = {},
-	BtB_AIPlayerCount = 0,
+	BtB_AIPlayerCount = 0
 }
+BtB.SetupAIPlayer = function(p)
+	BtB.AIPlayerCount = BtB.AIPlayerCount + 1
+	BtB.AIPlayers[BtB.AIPlayerCount] = p
+	
+	-- TODO: Save modifiers and reset on init
+	Modify_PlayerProductionRate(p, 1.1)
+	Modify_PlayerExperienceReceived(p, 1.05)
+	Modify_PlayerResourceRate(p, RT_Manpower, 1.15)
+	Modify_PlayerResourceRate(p, RT_Munition, 1.25)
+	Modify_PlayerResourceRate(p, RT_Fuel, 1.05)
+end
+
 BtB.RetreatTactic = function(squad)
 	local result = -0.12
 	
@@ -33,8 +45,8 @@ BtB.RetreatTactic = function(squad)
 	local squadsNearSG_allied = SGroup_CreateIfNotFound("BtB_RetreatTactic_squadsNear_allied")
 	SGroup_Clear(squadsNearSG_enemy)
 	SGroup_Clear(squadsNearSG_allied)
-	Team_GetAllSquadsNearMarker(enemyTeam, squadsNearSG_enemy , pos, BtB.Settings.BattleRadius)
-	Team_GetAllSquadsNearMarker(team     , squadsNearSG_allied, pos, BtB.Settings.BattleRadius)
+	Team_GetAllSquadsNearMarker(Team_GetPlayers(enemyTeam), squadsNearSG_enemy , pos, BtB.Settings.BattleRadius)
+	Team_GetAllSquadsNearMarker(Team_GetPlayers(team)     , squadsNearSG_allied, pos, BtB.Settings.BattleRadius)
 	
 	local fullLoadout = Squad_GetMax(squad)
 	local unitsLeft = Squad_Count(squad)
@@ -82,7 +94,7 @@ BtB.RetreatTactic = function(squad)
 		if Squad_IsAttacking(squad, 5) then result = result - 0.45 end
 	end
 	
-	--if AIPlayer_IsFireConePosition(s_selfplayer, anchor_pos) then result = result + 1.5 end
+	--if AIPlayer_IsFireConePosition(s_selfplayer, pos) then result = result + 1.5 end
 	if Squad_IsPinned(squad) then result = result + 2.5 end
 	
 	local closestEnemyDistaceSq -- squared
@@ -91,19 +103,19 @@ BtB.RetreatTactic = function(squad)
 	local squadsNearSG_enemyCount = SGroup_Count(squadsNearSG_enemy)
 	local squadsNearSG_alliedCount = SGroup_Count(squadsNearSG_allied)
 	for i=1,squadsNearSG_enemyCount do
-		local enemySquad = SGroup_GetSpawnedSquadAt(i)
+		local enemySquad = SGroup_GetSpawnedSquadAt(squadsNearSG_enemy, i)
 		if BtB_IsSquadVehicle(enemySquad) then
 			enemyValue = enemyValue + Squad_GetHealth(enemySquad)/50
 		else
 			enemyValue = enemyValue + Squad_Count(enemySquad)
 		end
-		local dist = World_DistanceSquaredPointToPoint(anchor_pos, Squad_GetPosition(enemySquad))
+		local dist = World_DistanceSquaredPointToPoint(pos, Squad_GetPosition(enemySquad))
 		if not closestEnemyDistaceSq or closestEnemyDistaceSq > closestEnemyDistaceSq then
 			closestEnemyDistaceSq = dist
 		end
 	end
 	for i=1,squadsNearSG_alliedCount do
-		local friendlySquad = SGroup_GetSpawnedSquadAt(i)
+		local friendlySquad = SGroup_GetSpawnedSquadAt(squadsNearSG_allied, i)
 		if not BtB_IsSquadVehicle(friendlySquad) then
 			friendlyValue = friendlyValue + Squad_GetHealth(friendlySquad)/50
 		else
@@ -122,20 +134,23 @@ BtB.RetreatTactic = function(squad)
 	
 	return math.max(0, result)
 end
-	
+
 BtB.AIPlayerUpdate = function()
 	for i=1,BtB.AIPlayerCount do
 		local p = BtB.AIPlayers[i]
 		local squadsSG = Player_GetSquads(p)
 		local squadSGCount = SGroup_CountSpawned(squadsSG)
 		for j=1,squadSGCount do
-			local squad = SGroup_GetSpawnedSquadAt(j)
+			local squad = SGroup_GetSpawnedSquadAt(squadsSG, j)
 			
 			if not Squad_IsRetreating(squad) and not BtB_IsSquadVehicle(squad) then
-				local retreatDemand = BtB_RetreatTactic(squad) * 3
+				local retreatDemand = BtB.RetreatTactic(squad) * 3
 				if retreatDemand > 0 then
 					local r = World_GetRand(0, 10)
 					if r <= retreatDemand then
+						local retreatSG = SGroup_CreateIfNotFound('BtB_retreat')
+						SGroup_Clear(retreatSG)
+						SGroup_Add(retreatSG, squad)
 						if Squad_IsInHoldEntity(squad) then -- eject squads in entity hold
 							local holdEntity = Squad_GetHoldEntity(squad)
 							local tmpEG = EGroup_CreateIfNotFound('BtB_tmp')
@@ -143,7 +158,7 @@ BtB.AIPlayerUpdate = function()
 							EGroup_Add(tmpEG, holdEntity)
 							Cmd_EjectOccupants(tmpEG)
 							EGroup_Destroy(tmpSG)
-							Cmd_Retreat(squad, nil, nil, true) -- queued retreat
+							Cmd_Retreat(retreatSG, nil, nil, true) -- queued retreat
 						elseif Squad_IsInHoldSquad(squad) then -- eject squads in squad hold
 							local holdSquad = Squad_GetHoldSquad(squad)
 							local tmpSG = SGroup_CreateIfNotFound('BtB_tmp')
@@ -151,42 +166,40 @@ BtB.AIPlayerUpdate = function()
 							SGroup_Add(tmpSG, holdSquad)
 							Cmd_EjectOccupants(tmpSG)
 							SGroup_Destroy(tmpSG)
-							Cmd_Retreat(squad, nil, nil, true) -- queued retreat
+							Cmd_Retreat(retreatSG, nil, nil, true) -- queued retreat
 						else
-							Cmd_Retreat(squad)
+							Cmd_Retreat(retreatSG)
 						end
+						SGroup_Destroy(retreatSG)
 					end
 				end
 			end
 		end
 	end
 end
-	
-BtB.SetupAIPlayer = function(p)
-	BtB.AIPlayerCount = BtB.AIPlayerCount + 1
-	BtB.AIPlayers[BtB.AIPlayerCount] = p
-	
-	-- TODO: Save modifiers and reset on init
-	Modify_PlayerProductionRate(p, 1.1)
-	Modify_PlayerExperienceReceived(p, 1.05)
-	Modify_PlayerResourceRate(p, RT_Manpower, 1.15)
-	Modify_PlayerResourceRate(p, RT_Munition, 1.25)
-	Modify_PlayerResourceRate(p, RT_Fuel, 1.05)
+
+function BtB_MainUpdate()
+	BtB.AIPlayerUpdate()
 end
 	
-BtB.Init = function()
+function BtB_Init()
 	BtB.AIPlayers = {}
 	BtB.AIPlayerCount = 0
 	for i=1,World_GetPlayerCount() do
 		local p = World_GetPlayerAt(i)
+		
+		-- TODO: Save modifiers and reset on init
 		Modify_PlayerResourceRate(p, RT_Manpower, 50/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Fuel, 1.5/60/8, MUT_Addition)
+		Modify_PlayerResourceRate(p, RT_Action, 0.85, MUT_Multiplication)
 		Modify_PlayerSightRadius(p, 1.05)
+		
 		if not Player_IsHuman(p) then
 			BtB.SetupAIPlayer(p)
 		end
 	end
-	--Rule_AddInterval(BtB.AIPlayerUpdate, 3)
+	
+	Rule_AddInterval(BtB_MainUpdate, 2)
 end
 
-Scar_AddInit(BtB.Init)
+Scar_AddInit(BtB_Init)
