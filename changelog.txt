@@ -1,8 +1,29 @@
-V1.0
-- All small arms damage increased by 35%
+-----------------------------
+- Back to Basics v1.0
+--
+
+Attributes:
+- All small arms damage increased by 55.25%
+- Pack howitzer:
+ * 75mm shell aoe from 4 to 5. far aoe profile from 3 to 4
+ * Heat shell aoe from 6 to 7. far aoe profile from 4.5 to 5.5
 - All max ranges of small arms weapons increased by 12.5%
 - Modified default range tables:
  * Far increased by 12.5%
  * Medium increased by 5%
  * Near increased by 5%
-- Removed burst pattern from soviet 50cal ht
+- Removed burst pattern from soviet 50cal halftrack
+
+Win condition:
+- Works like default victory ticker game mode
+- Increased base manpower income by 50 per minute
+- Increased base fuel income by 1.5 per minute
+- Player sight radius increased by 5%
+
+AI changes (win condition):
+- Created custom retreat rules for all infantry squads
+- Increased production speed by 10%
+- Increased experience gain speed by 5%
+- Increased all manpower income by 15%
+- Increased all munition income by 25%
+- Increased all fuel income by 5%

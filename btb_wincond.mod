@@ -39,13 +39,13 @@
 			<Children>
 				<d2p1:anyType i:type="BurnModInfo">
 					<Dependencies />
-					<Description>.</Description>
+					<Description></Description>
 					<Hidden>false</Hidden>
 					<Name>Back to Basics</Name>
 				</d2p1:anyType>
 			</Children>
 		</d2p1:anyType>
 	</Children>
-	<Guid>1df9233a-a6fd-416c-85ee-04055018aa15</Guid>
+	<Guid>29462c0f-c84b-41b2-a2a3-456c54ff63a0</Guid>
 	<Type>WinConditionPack</Type>
 </Document>
