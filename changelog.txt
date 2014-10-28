@@ -4,15 +4,19 @@
 
 Attributes:
 - Antiblob added to all infantry. Infantry in close proximity to each other (within 10 ingame units) will receive 15% accuracy penalties.
+- Modified small arms default range tables:
+ * Far increased by 12.5%
+ * Medium increased by 5%
+ * Near increased by 5%
+- Modified small arms default accuracy tables:
+ * Far decreased by 40%
+ * Mid decreased by 10%
+ * Near increased by 35%
+- All max ranges of small arms weapons increased by 12.5%
 - All small arms damage increased by 55.25%
 - Pack howitzer:
  * 75mm shell aoe from 4 to 5. far aoe profile from 3 to 4
  * Heat shell aoe from 6 to 7. far aoe profile from 4.5 to 5.5
-- All max ranges of small arms weapons increased by 12.5%
-- Modified default range tables:
- * Far increased by 12.5%
- * Medium increased by 5%
- * Near increased by 5%
 - Removed burst pattern from soviet 50cal halftrack
 
 Win condition:
