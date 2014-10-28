@@ -3,6 +3,7 @@
 --
 
 Attributes:
+- Antiblob added to all infantry. Infantry in close proximity to each other (within 10 ingame units) will receive 15% accuracy penalties.
 - All small arms damage increased by 55.25%
 - Pack howitzer:
  * 75mm shell aoe from 4 to 5. far aoe profile from 3 to 4
@@ -20,10 +21,12 @@ Win condition:
 - Increased base fuel income by 1.5 per minute
 - Player sight radius increased by 5%
 - Player command point gain speed decreased by 15%
+- Increased maximum camera zoom from 38 to 42
+- Max population cap increased from 100 to 110
 
 AI changes (win condition):
 - Created custom retreat rules for all infantry squads
 - Increased experience gain speed by 5%
-- Increased all manpower income by 15%
-- Increased all munition income by 25%
-- Increased all fuel income by 5%
+- Increased all manpower income by 10%
+- Increased all munition income by 15%
+- Increased all fuel income by 2.5%
