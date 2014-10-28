@@ -29,9 +29,9 @@ BtB.SetupAIPlayer = function(p)
 	-- TODO: Save modifiers and reset on init
 	Modify_PlayerProductionRate(p, 1.1)
 	Modify_PlayerExperienceReceived(p, 1.05)
-	Modify_PlayerResourceRate(p, RT_Manpower, 1.15)
-	Modify_PlayerResourceRate(p, RT_Munition, 1.25)
-	Modify_PlayerResourceRate(p, RT_Fuel, 1.05)
+	Modify_PlayerResourceRate(p, RT_Manpower, 1.10)
+	Modify_PlayerResourceRate(p, RT_Munition, 1.15)
+	Modify_PlayerResourceRate(p, RT_Fuel, 1.025)
 end
 
 BtB.RetreatTactic = function(squad)
@@ -143,10 +143,10 @@ BtB.AIPlayerUpdate = function()
 		for j=1,squadSGCount do
 			local squad = SGroup_GetSpawnedSquadAt(squadsSG, j)
 			
-			if not Squad_IsRetreating(squad) and not BtB_IsSquadVehicle(squad) then
+			if Squad_IsAttacking(squad, 2) and not Squad_IsRetreating(squad) and not BtB_IsSquadVehicle(squad) then
 				local retreatDemand = BtB.RetreatTactic(squad) * 3
 				if retreatDemand > 0 then
-					local r = World_GetRand(0, 10)
+					local r = World_GetRand(0, 20)
 					if r <= retreatDemand then
 						local retreatSG = SGroup_CreateIfNotFound('BtB_retreat')
 						SGroup_Clear(retreatSG)
@@ -157,7 +157,7 @@ BtB.AIPlayerUpdate = function()
 							EGroup_Clear(tmpEG)
 							EGroup_Add(tmpEG, holdEntity)
 							Cmd_EjectOccupants(tmpEG)
-							EGroup_Destroy(tmpSG)
+							EGroup_Destroy(tmpEG)
 							Cmd_Retreat(retreatSG, nil, nil, true) -- queued retreat
 						elseif Squad_IsInHoldSquad(squad) then -- eject squads in squad hold
 							local holdSquad = Squad_GetHoldSquad(squad)
@@ -194,10 +194,16 @@ function BtB_Init()
 		Modify_PlayerResourceRate(p, RT_Action, 0.85, MUT_Multiplication)
 		Modify_PlayerSightRadius(p, 1.05)
 		
+		Player_SetMaxPopulation(p, CT_Personnel, 120)
+		Player_SetMaxCapPopulation(p, CT_Personnel, 120)
+		
 		if not Player_IsHuman(p) then
 			BtB.SetupAIPlayer(p)
 		end
 	end
+	
+	Camera_SetTuningValue(TV_DistMax, 42)
+	Camera_SetDefault(42, 40, -45)
 	
 	Rule_AddInterval(BtB_MainUpdate, 2)
 end
