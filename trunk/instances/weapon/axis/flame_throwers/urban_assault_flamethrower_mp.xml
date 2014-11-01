@@ -272,7 +272,7 @@
 			<float name="max" value="27" />
 			<float name="min" value="27" />
 			<list name="on_penetrated_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="True" />
@@ -280,7 +280,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="ambient_building" />
@@ -291,7 +291,7 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="damage" value="action\damage">
+						<template_reference name="action" value="action\damage">
 							<float name="damage" value="15" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
@@ -317,7 +317,7 @@
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="True" />
@@ -325,11 +325,11 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_all_in_list" value="requirements\required_all_in_list">
+						<template_reference name="required" value="requirements\required_all_in_list">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<list name="requirements">
-								<template_reference name="required_unit_type" value="requirements\required_unit_type">
+								<template_reference name="requirement" value="requirements\required_unit_type">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<enum name="unit_type" value="building" />
@@ -338,11 +338,11 @@
 									<bool name="search_load_out" value="False" />
 									<bool name="owned_by_player_only" value="True" />
 								</template_reference>
-								<template_reference name="required_not" value="requirements\required_not">
+								<template_reference name="requirement" value="requirements\required_not">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<list name="requirement_table">
-										<template_reference name="required_unit_type" value="requirements\required_unit_type">
+										<template_reference name="required" value="requirements\required_unit_type">
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
 											<enum name="unit_type" value="tank_traps" />
@@ -357,7 +357,7 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="damage" value="action\damage">
+						<template_reference name="action" value="action\damage">
 							<float name="damage" value="25" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />

@@ -282,7 +282,7 @@
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -290,11 +290,11 @@
 					<bool name="no_retrigger" value="True" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_all_in_list" value="requirements\required_all_in_list">
+						<template_reference name="required" value="requirements\required_all_in_list">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<list name="requirements">
-								<template_reference name="required_unit_type" value="requirements\required_unit_type">
+								<template_reference name="requirement" value="requirements\required_unit_type">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<enum name="unit_type" value="wg_jagdtiger" />
@@ -303,17 +303,17 @@
 									<bool name="search_load_out" value="False" />
 									<bool name="owned_by_player_only" value="True" />
 								</template_reference>
-								<template_reference name="required_critical" value="requirements\required_critical">
+								<template_reference name="requirement" value="requirements\required_critical">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<instance_reference name="critical_name" value="critical\vehicle_crew_dazed_jagdtiger" />
 									<bool name="is_present" value="False" />
 								</template_reference>
-								<template_reference name="required_not" value="requirements\required_not">
+								<template_reference name="requirement" value="requirements\required_not">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<list name="requirement_table">
-										<template_reference name="required_squad_veterancy" value="requirements\required_squad_veterancy">
+										<template_reference name="required" value="requirements\required_squad_veterancy">
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
 											<float name="veterancy_rank" value="5" />
@@ -324,12 +324,12 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="random_action" value="action\random_action">
+						<template_reference name="action" value="action\random_action">
 							<bool name="instant" value="False" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<list name="actions">
-										<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<instance_reference name="critical" value="critical\vehicle_crew_dazed_jagdtiger" />
 											<uniqueid name="id" value="66274" />
@@ -339,7 +339,7 @@
 								</group>
 								<group name="action_choice">
 									<list name="actions">
-										<template_reference name="no_action" value="action\no_action">
+										<template_reference name="action" value="action\no_action">
 											<uniqueid name="id" value="391897" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>

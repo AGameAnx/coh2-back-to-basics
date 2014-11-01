@@ -1,5 +1,4 @@
-<instance description="G43 incendiary round for sniper squad
-Multiplayer Clone." template="weapon">
+<instance description="G43 incendiary round for sniper squad&#xD;&#xA;Multiplayer Clone." template="weapon">
 	<group name="weapon_bag">
 		<float name="flinch_radius" value="0" />
 		<string name="fx_tracer_name" value="fx_g34_sniperfire_tracer" />
@@ -124,18 +123,18 @@ Multiplayer Clone." template="weapon">
 			<bool name="has_deflection_damage" value="True" />
 			<float name="deflection_damage_multiplier" value="1" />
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference name="random_action" value="action\random_action">
+						<template_reference name="action" value="action\random_action">
 							<uniqueid name="id" value="62235" />
 							<bool name="instant" value="False" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="5" />
 									<list name="actions">
-										<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<instance_reference name="critical" value="critical\burn_death" />
 											<float name="remove_at_health" value="1" />
 											<uniqueid name="id" value="62238" />
@@ -146,7 +145,7 @@ Multiplayer Clone." template="weapon">
 						</template_reference>
 					</list>
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="reason" value="usage" />
@@ -213,18 +212,18 @@ Multiplayer Clone." template="weapon">
 		<string name="icon_name" value="" />
 		<group name="damage">
 			<list name="on_penetrated_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference name="random_action" value="action\random_action">
+						<template_reference name="action" value="action\random_action">
 							<uniqueid name="id" value="62230" />
 							<bool name="instant" value="False" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="5" />
 									<list name="actions">
-										<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<instance_reference name="critical" value="critical\burn_death" />
 											<float name="remove_at_health" value="1" />
 											<uniqueid name="id" value="62233" />
@@ -235,7 +234,7 @@ Multiplayer Clone." template="weapon">
 						</template_reference>
 					</list>
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="reason" value="usage" />

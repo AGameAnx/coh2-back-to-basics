@@ -272,7 +272,7 @@
 			<float name="max" value="100" />
 			<float name="min" value="100" />
 			<list name="on_penetrated_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="True" />
@@ -280,7 +280,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="vehicle" />
@@ -289,11 +289,11 @@
 							<bool name="search_load_out" value="False" />
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
-						<template_reference name="required_not" value="requirements\required_not">
+						<template_reference name="required" value="requirements\required_not">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<list name="requirement_table">
-								<template_reference name="required_entity" value="requirements\required_entity">
+								<template_reference name="required" value="requirements\required_entity">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<instance_reference name="entity_blueprint_name" value="" />
@@ -303,12 +303,12 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="random_action" value="action\random_action">
+						<template_reference name="action" value="action\random_action">
 							<bool name="instant" value="True" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<list name="actions">
-										<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<instance_reference name="critical" value="critical\vehicle_crew_stunned" />
 											<uniqueid name="id" value="62372" />
@@ -318,7 +318,7 @@
 								</group>
 								<group name="action_choice">
 									<list name="actions">
-										<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<instance_reference name="critical" value="critical\vehicle_crew_stunned" />
 											<uniqueid name="id" value="62373" />
@@ -337,13 +337,13 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="delay" value="action\delay">
+				<template_reference name="action" value="action\delay">
 					<float name="delay" value="0.75" />
 					<float name="delay_min" value="0.75" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
-						<template_reference name="kicker_message_action" value="action\kicker_message_action">
+						<template_reference name="action" value="action\kicker_message_action">
 							<float name="loop_interval" value="0" />
 							<locstring name="message" value="0" />
 							<float name="message_colour_a" value="0" />
@@ -369,7 +369,7 @@
 			<float name="deflection_damage_multiplier" value="1" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="True" />
@@ -377,7 +377,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="vehicle" />
@@ -386,11 +386,11 @@
 							<bool name="search_load_out" value="False" />
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
-						<template_reference name="required_not" value="requirements\required_not">
+						<template_reference name="required" value="requirements\required_not">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<list name="requirement_table">
-								<template_reference name="required_entity" value="requirements\required_entity">
+								<template_reference name="required" value="requirements\required_entity">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<instance_reference name="entity_blueprint_name" value="" />
@@ -400,7 +400,7 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="damage" value="action\damage">
+						<template_reference name="action" value="action\damage">
 							<float name="damage" value="80" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />

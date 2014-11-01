@@ -282,7 +282,7 @@
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
-				<template_reference name="debug_action" value="action\debug_action">
+				<template_reference name="action" value="action\debug_action">
 					<template_reference name="debug_sub_action" value="debug_sub_actions\text_in_world">
 						<string name="text" value="DEFLECT" />
 						<template_reference name="colour" value="basic_data_types\colour">

@@ -31,11 +31,11 @@
 			<float name="min" value="0" />
 			<float name="max" value="0" />
 			<list name="on_penetrated_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="fire_and_forget_non_global" value="False" />
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\soldier_sniped" />
 							<uniqueid name="id" value="62484" />
@@ -51,7 +51,7 @@
 					<bool name="instant_requirement_check" value="True" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -450,11 +450,11 @@
 		</group>
 		<group name="deflection">
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="fire_and_forget_non_global" value="False" />
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\soldier_sniped" />
 							<uniqueid name="id" value="62486" />
@@ -470,7 +470,7 @@
 					<bool name="instant_requirement_check" value="True" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>

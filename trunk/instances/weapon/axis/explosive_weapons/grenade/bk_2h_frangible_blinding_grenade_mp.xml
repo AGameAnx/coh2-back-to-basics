@@ -272,7 +272,7 @@
 			<float name="max" value="5" />
 			<float name="min" value="5" />
 			<list name="on_penetrated_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -280,7 +280,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="vehicle" />
@@ -291,18 +291,18 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
 							<uniqueid name="id" value="62072" />
 						</template_reference>
-						<template_reference name="delay" value="action\delay">
+						<template_reference name="action" value="action\delay">
 							<float name="delay" value="1" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
 							<list name="delayed_actions">
-								<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<instance_reference name="critical" value="critical\vehicle_crew_shocked" />
 									<uniqueid name="id" value="62074" />
@@ -319,7 +319,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -327,7 +327,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="infantry" />
@@ -338,7 +338,7 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\soldier_stun" />
 							<uniqueid name="id" value="62076" />
@@ -351,7 +351,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -359,7 +359,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="team_weapon" />
@@ -370,7 +370,7 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\soldier_stun" />
 							<uniqueid name="id" value="62078" />
@@ -393,7 +393,7 @@
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -401,7 +401,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="vehicle" />
@@ -412,18 +412,18 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
 							<uniqueid name="id" value="62080" />
 						</template_reference>
-						<template_reference name="delay" value="action\delay">
+						<template_reference name="action" value="action\delay">
 							<float name="delay" value="1" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
 							<list name="delayed_actions">
-								<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<instance_reference name="critical" value="critical\vehicle_crew_shocked" />
 									<uniqueid name="id" value="62082" />
@@ -440,7 +440,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -448,7 +448,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="infantry" />
@@ -459,7 +459,7 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\soldier_stun" />
 							<uniqueid name="id" value="62084" />
@@ -472,7 +472,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -480,7 +480,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="team_weapon" />
@@ -491,7 +491,7 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\soldier_stun" />
 							<uniqueid name="id" value="62086" />

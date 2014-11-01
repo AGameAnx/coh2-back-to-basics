@@ -282,12 +282,12 @@
 			<float name="deflection_damage_multiplier" value="0.5" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
-				<template_reference name="random_action" value="action\random_action">
+				<template_reference name="action" value="action\random_action">
 					<bool name="instant" value="False" />
 					<list name="random_actions">
 						<group name="action_choice">
 							<list name="actions">
-								<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<instance_reference name="critical" value="critical\vehicle_loader_injured" />
 									<uniqueid name="id" value="62134" />
@@ -297,7 +297,7 @@
 						</group>
 						<group name="action_choice">
 							<list name="actions">
-								<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<instance_reference name="critical" value="critical\vehicle_crew_shocked" />
 									<uniqueid name="id" value="62135" />
@@ -307,7 +307,7 @@
 						</group>
 						<group name="action_choice">
 							<list name="actions">
-								<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<instance_reference name="critical" value="critical\vehicle_damage_engine" />
 									<uniqueid name="id" value="62136" />
@@ -317,7 +317,7 @@
 						</group>
 						<group name="action_choice">
 							<list name="actions">
-								<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<instance_reference name="critical" value="critical\stunned_cannot_shoot_10_seconds" />
 									<uniqueid name="id" value="62137" />
@@ -327,7 +327,7 @@
 						</group>
 						<group name="action_choice">
 							<list name="actions">
-								<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<instance_reference name="critical" value="critical\_no_critical" />
 									<uniqueid name="id" value="62138" />

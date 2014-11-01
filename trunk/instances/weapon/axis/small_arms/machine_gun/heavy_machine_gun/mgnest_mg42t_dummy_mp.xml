@@ -123,18 +123,18 @@
 			<bool name="has_deflection_damage" value="False" />
 			<float name="deflection_damage_multiplier" value="0" />
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference name="random_action" value="action\random_action">
+						<template_reference name="action" value="action\random_action">
 							<uniqueid name="id" value="62215" />
 							<bool name="instant" value="True" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="1" />
 									<list name="actions">
-										<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
 											<float name="remove_at_health" value="0.75" />
 											<uniqueid name="id" value="62216" />
@@ -145,7 +145,7 @@
 						</template_reference>
 					</list>
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="reason" value="usage" />
