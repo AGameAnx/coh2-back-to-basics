@@ -1,8 +1,8 @@
 <instance description="pioneer squad&#xA;Multiplayer Clone." template="sbps">
 	<list name="extensions">
-		<template_reference name="squad_blueprint_ext" value="sbpextensions\squad_blueprint_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext">
 		</template_reference>
-		<template_reference name="squad_ui_ext" value="sbpextensions\squad_ui_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext">
 			<list name="race_list">
 				<group name="race_data">
 					<group name="info">
@@ -62,178 +62,11 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="squad_ai_ext" value="sbpextensions\squad_ai_ext">
-			<group name="avoid_tactic">
-				<float name="priority" value="1000" />
-				<string name="tactic_filter_start" value="" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="capture_team_weapon_tactic">
-				<string name="entity_target_filter" value="EntityTargetFilter_CaptureTeamWeapon" />
-				<float name="priority" value="15" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="20" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="cover_tactic">
-				<float name="priority" value="200" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="30" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="forceattack_tactic">
-				<float name="priority" value="2" />
-				<string name="tactic_filter_start" value="" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="hold_tactic">
-				<float name="priority" value="250" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="30" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="pickup_tactic">
-				<string name="entity_target_filter" value="EntityTargetFilter_PickUp" />
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="20" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="rush_at_target">
-				<float name="priority" value="-1" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="50" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="vehicle_tactic">
-				<float name="priority" value="-1" />
-				<string name="tactic_filter_start" value="" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<float name="tactic_max_range_override" value="30" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="recrew_tactic">
-				<string name="entity_target_filter" value="EntityTargetFilter_Recrew" />
-				<float name="priority" value="10" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="20" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="finish_healing_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="50" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="capture_point_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="20" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="provide_reinforcement_point_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="50" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="warm_up_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="50" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="min_range_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="vehicle_decrew_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="False" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<float name="priority" value="-1" />
-				<string name="tactic_filter_abort" value="" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="30" />
-			</group>
-		</template_reference>
-		<template_reference name="squad_combat_stance_ext" value="sbpextensions\squad_combat_stance_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_combat_stance_ext">
 			<string name="default_stance_name" value="stance_attack" />
 			<float name="ranged_attackrange" value="0" />
 		</template_reference>
-		<template_reference name="squad_formation_ext" value="sbpextensions\squad_formation_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_ext">
 			<float name="combat_follower_cover_search_radius" value="2" />
 			<group name="cover_formation_table">
 				<instance_reference name="tp_defcover" value="squad_formations\wedge" />
@@ -320,11 +153,11 @@
 			</group>
 			<bool name="support_weapons_to_flanks" value="False" />
 		</template_reference>
-		<template_reference name="squad_item_slot_ext" value="sbpextensions\squad_item_slot_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_item_slot_ext">
 			<bool name="can_pick_up" value="True" />
 			<float name="num_slots" value="2" />
 		</template_reference>
-		<template_reference name="squad_loadout_ext" value="sbpextensions\squad_loadout_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="4" />
@@ -333,11 +166,11 @@
 			</list>
 			<float name="squad_female_chance" value="0" />
 		</template_reference>
-		<template_reference name="squad_modifier_ext" value="sbpextensions\squad_modifier_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_modifier_ext">
 		</template_reference>
-		<template_reference name="squad_requirement_ext" value="sbpextensions\squad_requirement_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
-				<template_reference name="required_in_territory" value="requirements\required_in_territory">
+				<template_reference name="required" value="requirements\required_in_territory">
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="0" />
 					<bool name="in_supply" value="True" />
@@ -347,24 +180,24 @@
 				</template_reference>
 			</list>
 		</template_reference>
-		<template_reference name="squad_upgrade_apply_ext" value="sbpextensions\squad_upgrade_apply_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
 			<list name="upgrades">
 			</list>
 		</template_reference>
-		<template_reference name="squad_upgrade_ext" value="sbpextensions\squad_upgrade_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\german\items\pioneer_minesweeper_mp" />
 				<instance_reference name="upgrade" value="upgrade\german\items\pioneer_flamethrower_mp" />
 			</list>
 		</template_reference>
-		<template_reference name="squad_action_apply_ext" value="sbpextensions\squad_action_apply_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
-				<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
-						<template_reference name="accuracy_weapon_modifier" value="modifiers\accuracy_weapon_modifier">
+						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 							<enum name="application_type" value="apply_to_weapon" />
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
@@ -378,7 +211,7 @@
 				</template_reference>
 			</list>
 		</template_reference>
-		<template_reference name="squad_combat_behaviour_ext" value="sbpextensions\squad_combat_behaviour_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
 			<float name="heavy_weapon_setup_delay" value="999" />
 			<float name="reaction_delay_seconds" value="25" />
 			<float name="reveal_self_attacker_time" value="0" />
@@ -453,11 +286,11 @@
 				<float name="suppressed_activate_threshold" value="0.2" />
 				<float name="suppressed_recover_threshold" value="0.15" />
 				<list name="pin_down_activate_actions">
-					<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+					<template_reference name="action" value="action\apply_modifiers_action">
 						<float name="duration" value="0" />
 						<bool name="permanent" value="False" />
 						<list name="modifiers">
-							<template_reference name="capture_enable_squad_modifier" value="modifiers\capture_enable_squad_modifier">
+							<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
 								<enum name="application_type" value="apply_to_squad" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -466,7 +299,7 @@
 								<float name="value" value="-1" />
 								<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 							</template_reference>
-							<template_reference name="enable_weapon_modifier" value="modifiers\enable_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -475,7 +308,7 @@
 								<float name="value" value="-1" />
 								<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 							</template_reference>
-							<template_reference name="move_enable_modifier" value="modifiers\move_enable_modifier">
+							<template_reference name="modifier" value="modifiers\move_enable_modifier">
 								<enum name="application_type" value="apply_to_entity" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -487,17 +320,17 @@
 						</list>
 						<uniqueid name="id" value="59758" />
 					</template_reference>
-					<template_reference name="delay" value="action\delay">
+					<template_reference name="action" value="action\delay">
 						<float name="delay" value="10" />
 						<float name="delay_min" value="0" />
 						<bool name="progress_bar" value="False" />
 						<bool name="randomize" value="False" />
 						<list name="delayed_actions">
-							<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+							<template_reference name="action" value="action\apply_modifiers_action">
 								<float name="duration" value="0" />
 								<bool name="permanent" value="False" />
 								<list name="modifiers">
-									<template_reference name="received_accuracy_modifier" value="modifiers\received_accuracy_modifier">
+									<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 										<enum name="application_type" value="apply_to_entity" />
 										<bool name="exclusive" value="False" />
 										<string name="modifier_id" value="" />
@@ -513,7 +346,7 @@
 						<uniqueid name="id" value="59759" />
 						<bool name="can_prevent_refund" value="True" />
 					</template_reference>
-					<template_reference name="animator_set_state" value="action\animator_set_state">
+					<template_reference name="action" value="action\animator_set_state">
 						<bool name="apply_to_leader_only" value="False" />
 						<string name="do_action_state_name" value="pinned" />
 						<bool name="retrigger" value="False" />
@@ -523,11 +356,11 @@
 					</template_reference>
 				</list>
 				<list name="suppressed_activate_actions">
-					<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+					<template_reference name="action" value="action\apply_modifiers_action">
 						<float name="duration" value="0" />
 						<bool name="permanent" value="False" />
 						<list name="modifiers">
-							<template_reference name="posture_speed_modifier" value="modifiers\posture_speed_modifier">
+							<template_reference name="modifier" value="modifiers\posture_speed_modifier">
 								<enum name="application_type" value="apply_to_entity" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -536,7 +369,7 @@
 								<float name="value" value="-2" />
 								<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
 							</template_reference>
-							<template_reference name="cooldown_weapon_modifier" value="modifiers\cooldown_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -545,7 +378,7 @@
 								<float name="value" value="4" />
 								<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 							</template_reference>
-							<template_reference name="reload_weapon_modifier" value="modifiers\reload_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -554,7 +387,7 @@
 								<float name="value" value="4" />
 								<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 							</template_reference>
-							<template_reference name="accuracy_weapon_modifier" value="modifiers\accuracy_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -594,12 +427,12 @@
 				</template_reference>
 			</template_reference>
 		</template_reference>
-		<template_reference name="squad_attention_ext" value="sbpextensions\squad_attention_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext">
 			<float name="search_radius" value="35" />
 		</template_reference>
-		<template_reference name="squad_holdable_ext" value="sbpextensions\squad_holdable_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_holdable_ext">
 			<list name="modifier_table">
-				<template_reference name="enable_weapon_modifier" value="modifiers\enable_weapon_modifier">
+				<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
 					<enum name="application_type" value="apply_to_weapon" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -610,7 +443,7 @@
 				</template_reference>
 			</list>
 		</template_reference>
-		<template_reference name="squad_veterancy_ext" value="sbpextensions\squad_veterancy_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_veterancy_ext">
 			<list name="race_list">
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
@@ -628,11 +461,11 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="entity_veterency_experience_modifier" value="modifiers\entity_veterency_experience_modifier">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -644,7 +477,7 @@
 										</list>
 										<uniqueid name="id" value="67897" />
 									</template_reference>
-									<template_reference name="scar_function_call" value="action\scar_function_call">
+									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level1" />
 										<uniqueid name="id" value="65478" />
 									</template_reference>
@@ -660,11 +493,11 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="accuracy_weapon_modifier" value="modifiers\accuracy_weapon_modifier">
+											<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 												<enum name="application_type" value="apply_to_weapon" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -676,11 +509,11 @@
 										</list>
 										<uniqueid name="id" value="59764" />
 									</template_reference>
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="entity_veterency_experience_modifier" value="modifiers\entity_veterency_experience_modifier">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -692,7 +525,7 @@
 										</list>
 										<uniqueid name="id" value="67898" />
 									</template_reference>
-									<template_reference name="scar_function_call" value="action\scar_function_call">
+									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
 										<uniqueid name="id" value="65479" />
 									</template_reference>
@@ -708,11 +541,11 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="accuracy_weapon_modifier" value="modifiers\accuracy_weapon_modifier">
+											<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 												<enum name="application_type" value="apply_to_weapon" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -721,7 +554,7 @@
 												<float name="value" value="1.15" />
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
-											<template_reference name="cooldown_weapon_modifier" value="modifiers\cooldown_weapon_modifier">
+											<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
 												<enum name="application_type" value="apply_to_weapon" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -733,17 +566,17 @@
 										</list>
 										<uniqueid name="id" value="59766" />
 									</template_reference>
-									<template_reference name="upgrade_add" value="action\upgrade_add">
+									<template_reference name="action" value="action\upgrade_add">
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
 										<instance_reference name="upgrade" value="upgrade\max_vet" />
 										<uniqueid name="id" value="59768" />
 									</template_reference>
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="entity_veterency_experience_modifier" value="modifiers\entity_veterency_experience_modifier">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -755,7 +588,7 @@
 										</list>
 										<uniqueid name="id" value="67899" />
 									</template_reference>
-									<template_reference name="scar_function_call" value="action\scar_function_call">
+									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level3" />
 										<uniqueid name="id" value="65480" />
 									</template_reference>
@@ -767,7 +600,7 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="squad_ability_ext" value="sbpextensions\squad_ability_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\repair_ability\soviet_repair_ability_mp" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\german_hulldown_ability" />
@@ -775,20 +608,19 @@
 				<instance_reference name="ability" value="abilities\german\modal_ability\infantry_medkits_mp" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\retreat_to_forward_hq" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\stormtrooper_sprint_mp" />
-				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
-		<template_reference name="squad_can_defuse_charges_ext" value="sbpextensions\squad_can_defuse_charges_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_can_defuse_charges_ext">
 		</template_reference>
-		<template_reference name="squad_capture_strategic_point_ext" value="sbpextensions\squad_capture_strategic_point_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">
 			<float name="capture_distance" value="4" />
 			<float name="capture_rate_multiplier" value="1" />
 			<float name="revert_rate_multiplier" value="1" />
 		</template_reference>
-		<template_reference name="squad_mine_defuser_ext" value="sbpextensions\squad_mine_defuser_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_mine_defuser_ext">
 			<float name="on_idle_search_distance" value="10" />
 		</template_reference>
-		<template_reference name="squad_reinforce_ext" value="sbpextensions\squad_reinforce_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
 				<float name="cost_percentage" value="0.5" />
 				<float name="time_percentage" value="1" />
@@ -805,7 +637,7 @@
 			<list name="paradrop_requirements">
 			</list>
 		</template_reference>
-		<template_reference name="squad_retreat_ext" value="sbpextensions\squad_retreat_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
 			<group name="retreat_building_types">
 				<enum name="unit_type00" value="hq" />
 				<enum name="unit_type01" value="hq_wreck" />
@@ -814,14 +646,14 @@
 				<enum name="unit_type04" value="" />
 			</group>
 			<list name="actions">
-				<template_reference name="suppression" value="action\suppression">
+				<template_reference name="action" value="action\suppression">
 					<float name="suppression" value="0" />
 					<uniqueid name="id" value="59769" />
 					<float name="supressionrecovertime" value="0" />
 				</template_reference>
 			</list>
 			<list name="modifiers">
-				<template_reference name="posture_speed_modifier" value="modifiers\posture_speed_modifier">
+				<template_reference name="modifier" value="modifiers\posture_speed_modifier">
 					<enum name="application_type" value="apply_to_entity" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -830,7 +662,7 @@
 					<float name="value" value="2" />
 					<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
 				</template_reference>
-				<template_reference name="received_accuracy_modifier" value="modifiers\received_accuracy_modifier">
+				<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 					<enum name="application_type" value="apply_to_entity" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -839,7 +671,7 @@
 					<float name="value" value="0.4" />
 					<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 				</template_reference>
-				<template_reference name="received_suppression_squad_modifier" value="modifiers\received_suppression_squad_modifier">
+				<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
 					<enum name="application_type" value="apply_to_squad" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -848,7 +680,7 @@
 					<float name="value" value="0" />
 					<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 				</template_reference>
-				<template_reference name="reaction_enabled_squad_modifier" value="modifiers\reaction_enabled_squad_modifier">
+				<template_reference name="modifier" value="modifiers\reaction_enabled_squad_modifier">
 					<enum name="application_type" value="apply_to_squad" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -857,7 +689,7 @@
 					<float name="value" value="-1" />
 					<instance_reference name="tooltip" value="modifier_tooltip\reaction_enabled_squad_modifier" />
 				</template_reference>
-				<template_reference name="capture_enable_squad_modifier" value="modifiers\capture_enable_squad_modifier">
+				<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
 					<enum name="application_type" value="apply_to_squad" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -866,7 +698,7 @@
 					<float name="value" value="-1" />
 					<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 				</template_reference>
-				<template_reference name="posture_prone_modifier" value="modifiers\posture_prone_modifier">
+				<template_reference name="modifier" value="modifiers\posture_prone_modifier">
 					<enum name="application_type" value="apply_to_entity" />
 					<bool name="exclusive" value="True" />
 					<string name="modifier_id" value="" />
@@ -875,7 +707,7 @@
 					<float name="value" value="-1" />
 					<instance_reference name="tooltip" value="modifier_tooltip\posture_prone_modifier" />
 				</template_reference>
-				<template_reference name="facing_only_enable" value="modifiers\facing_only_enable">
+				<template_reference name="modifier" value="modifiers\facing_only_enable">
 					<enum name="application_type" value="apply_to_entity" />
 					<bool name="exclusive" value="True" />
 					<string name="modifier_id" value="" />
@@ -887,7 +719,7 @@
 			</list>
 			<bool name="withdraw_only" value="False" />
 		</template_reference>
-		<template_reference name="squad_vault_ext" value="sbpextensions\squad_vault_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_vault_ext">
 			<list name="timing_list">
 				<group name="group">
 					<int name="vaulter_count" value="2" />
@@ -904,14 +736,14 @@
 			</list>
 			<instance_reference name="vaulting_formation" value="squad_formations\vaulting" />
 		</template_reference>
-		<template_reference name="squad_engineer_ext" value="sbpextensions\squad_engineer_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext">
 			<float name="construction_rate_multiplier" value="1" />
 			<list name="in_construction_actions">
-				<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
-						<template_reference name="received_accuracy_modifier" value="modifiers\received_accuracy_modifier">
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 							<enum name="application_type" value="apply_to_entity" />
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
@@ -1003,13 +835,13 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="squad_type_ext" value="sbpextensions\squad_type_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">
 				<enum name="squad_type" value="pioneer" />
 				<enum name="squad_type" value="infantry" />
 			</list>
 		</template_reference>
-		<template_reference name="squad_plant_demolition_ext" value="sbpextensions\squad_plant_demolition_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_plant_demolition_ext">
 			<group name="cost">
 				<float name="action" value="0" />
 				<float name="command" value="0" />
@@ -1032,7 +864,7 @@
 				<locstring name="screen_name" value="0" />
 			</group>
 			<list name="requirements">
-				<template_reference name="required_player_upgrade" value="requirements\required_player_upgrade">
+				<template_reference name="required" value="requirements\required_player_upgrade">
 					<enum name="reason" value="usage_and_display" />
 					<locstring name="ui_name" value="0" />
 					<bool name="is_present" value="True" />
