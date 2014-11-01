@@ -50,10 +50,10 @@
 		<instance_reference name="ui_range" value="ui_reticule\range_sniper" />
 		<group name="damage">
 			<list name="on_penetrated_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<bool name="search_load_out" value="False" />
 							<template_reference name="qualify_option" value="options\none">
@@ -65,7 +65,7 @@
 					</list>
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<instance_reference name="critical" value="critical\world_object_destroy" />
 							<float name="remove_at_health" value="1" />
 							<uniqueid name="id" value="66197" />
@@ -266,10 +266,10 @@
 		<float name="fx_tracer_speed" value="120" />
 		<group name="deflection">
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<bool name="search_load_out" value="False" />
 							<template_reference name="qualify_option" value="options\none">
@@ -281,7 +281,7 @@
 					</list>
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<instance_reference name="critical" value="critical\world_object_destroy" />
 							<float name="remove_at_health" value="1" />
 							<uniqueid name="id" value="66201" />

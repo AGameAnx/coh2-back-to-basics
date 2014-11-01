@@ -301,7 +301,7 @@
 		<group name="fire">
 			<float name="wind_down" value="0" />
 			<list name="on_fire_actions">
-				<template_reference name="debug_action" value="action\debug_action">
+				<template_reference name="action" value="action\debug_action">
 					<uniqueid name="id" value="66346" />
 					<template_reference name="debug_sub_action" value="debug_sub_actions\text_in_world">
 						<float name="duration" value="1.25" />

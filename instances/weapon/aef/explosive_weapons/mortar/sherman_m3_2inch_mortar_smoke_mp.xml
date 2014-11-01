@@ -288,9 +288,9 @@
 			<float name="wind_down" value="0.5" />
 			<float name="wind_up" value="0.5" />
 			<list name="on_fire_actions">
-				<template_reference name="change_target_action" value="action\change_target_action">
+				<template_reference name="action" value="action\change_target_action">
 					<list name="actions">
-						<template_reference name="animator_set_action" value="action\animator_set_action">
+						<template_reference name="action" value="action\animator_set_action">
 							<string name="action_name" value="fx_ability_smoke_mortar" />
 							<bool name="allies_only" value="False" />
 							<float name="duration" value="0" />

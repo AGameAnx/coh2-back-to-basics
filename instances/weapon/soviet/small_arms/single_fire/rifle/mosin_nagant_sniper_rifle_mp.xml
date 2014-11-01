@@ -71,11 +71,11 @@
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<uniqueid name="id" value="62448" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="search_load_out" value="False" />
 							<enum name="unit_type" value="targetable_object" />
 							<template_reference name="qualify_option" value="options\none">
@@ -88,7 +88,7 @@
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<instance_reference name="critical" value="critical\world_object_destroy" />
 							<float name="remove_at_health" value="1" />
 							<uniqueid name="id" value="62449" />
@@ -361,11 +361,11 @@
 		<group name="damage">
 			<float name="min" value="0" />
 			<list name="on_penetrated_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<uniqueid name="id" value="62444" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="search_load_out" value="False" />
 							<enum name="unit_type" value="targetable_object" />
 							<template_reference name="qualify_option" value="options\none">
@@ -378,7 +378,7 @@
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<list name="action_table">
-						<template_reference name="trigger_critical_action" value="action\trigger_critical_action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<instance_reference name="critical" value="critical\world_object_destroy" />
 							<float name="remove_at_health" value="1" />
 							<uniqueid name="id" value="62445" />

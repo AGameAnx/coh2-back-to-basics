@@ -434,18 +434,18 @@
 		<locstring name="ui_name" value="0" />
 		<group name="deflection">
 			<list name="on_deflected_actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference name="random_action" value="action\random_action">
+						<template_reference name="action" value="action\random_action">
 							<bool name="instant" value="True" />
 							<uniqueid name="id" value="69196" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="93" />
 									<list name="actions">
-										<template_reference name="no_action" value="action\no_action">
+										<template_reference name="action" value="action\no_action">
 											<uniqueid name="id" value="391943" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
@@ -465,7 +465,7 @@
 					<bool name="instant_requirement_check" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<bool name="search_load_out" value="False" />
 							<enum name="unit_type" value="aircraft" />

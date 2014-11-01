@@ -288,7 +288,7 @@
 			<float name="wind_down" value="1" />
 			<float name="wind_up" value="0.875" />
 			<list name="on_fire_actions">
-				<template_reference name="kicker_message_action" value="action\kicker_message_action">
+				<template_reference name="action" value="action\kicker_message_action">
 					<float name="loop_interval" value="0" />
 					<locstring name="message" value="11053787" />
 					<float name="message_colour_a" value="255" />

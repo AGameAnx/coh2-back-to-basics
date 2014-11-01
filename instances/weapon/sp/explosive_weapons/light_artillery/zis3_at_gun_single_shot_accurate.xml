@@ -272,7 +272,7 @@
 			<float name="max" value="10" />
 			<float name="min" value="10" />
 			<list name="on_penetrated_actions">
-				<template_reference name="scar_function_call" value="action\scar_function_call">
+				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_DamageIce_atHighExplosive" />
 					<uniqueid name="id" value="62454" />
 				</template_reference>

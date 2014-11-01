@@ -272,13 +272,13 @@
 			<float name="max" value="40" />
 			<float name="min" value="40" />
 			<list name="on_penetrated_actions">
-				<template_reference name="delay" value="action\delay">
+				<template_reference name="action" value="action\delay">
 					<float name="delay" value="0.75" />
 					<float name="delay_min" value="0.75" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
-						<template_reference name="kicker_message_action" value="action\kicker_message_action">
+						<template_reference name="action" value="action\kicker_message_action">
 							<float name="loop_interval" value="0" />
 							<locstring name="message" value="11049916" />
 							<float name="message_colour_a" value="0" />
