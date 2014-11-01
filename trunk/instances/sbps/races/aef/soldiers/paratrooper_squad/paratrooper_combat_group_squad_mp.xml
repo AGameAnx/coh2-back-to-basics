@@ -1,8 +1,8 @@
 <instance description="" template="sbps">
 	<list name="extensions">
-		<template_reference name="squad_blueprint_ext" value="sbpextensions\squad_blueprint_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext">
 		</template_reference>
-		<template_reference name="squad_ui_ext" value="sbpextensions\squad_ui_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext">
 			<list name="race_list">
 				<group name="race_data">
 					<group name="info">
@@ -62,178 +62,11 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="squad_ai_ext" value="sbpextensions\squad_ai_ext">
-			<group name="avoid_tactic">
-				<float name="priority" value="1000" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="capture_team_weapon_tactic">
-				<string name="entity_target_filter" value="EntityTargetFilter_CaptureTeamWeapon" />
-				<float name="priority" value="15" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="20" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="cover_tactic">
-				<float name="priority" value="200" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="30" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="forceattack_tactic">
-				<float name="priority" value="2" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="hold_tactic">
-				<float name="priority" value="250" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="30" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="pickup_tactic">
-				<string name="entity_target_filter" value="EntityTargetFilter_PickUp" />
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="20" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="rush_at_target">
-				<float name="priority" value="-1" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="50" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="vehicle_tactic">
-				<float name="priority" value="-1" />
-				<string name="tactic_filter_start" value="" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<float name="tactic_max_range_override" value="30" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="recrew_tactic">
-				<string name="entity_target_filter" value="EntityTargetFilter_Recrew" />
-				<float name="priority" value="10" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="20" />
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="finish_healing_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="-1" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="capture_point_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="-1" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="provide_reinforcement_point_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="-1" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="warm_up_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="True" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<float name="tactic_max_range_override" value="-1" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="min_range_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="True" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<float name="priority" value="50" />
-				<string name="tactic_filter_start" value="TacticFilter_TrivialAccept" />
-				<string name="tactic_filter_abort" value="" />
-			</group>
-			<group name="vehicle_decrew_tactic">
-				<enum_table name="class">
-					<bool name="tactic_Combat" value="False" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
-				</enum_table>
-				<float name="priority" value="-1" />
-				<string name="tactic_filter_abort" value="" />
-				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="30" />
-			</group>
-		</template_reference>
-		<template_reference name="squad_combat_stance_ext" value="sbpextensions\squad_combat_stance_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_combat_stance_ext">
 			<string name="default_stance_name" value="stance_attack" />
 			<float name="ranged_attackrange" value="0" />
 		</template_reference>
-		<template_reference name="squad_formation_ext" value="sbpextensions\squad_formation_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_ext">
 			<float name="combat_follower_cover_search_radius" value="0" />
 			<group name="cover_formation_table">
 				<instance_reference name="tp_defcover" value="squad_formations\assault_stance_test" />
@@ -320,11 +153,11 @@
 			</group>
 			<bool name="support_weapons_to_flanks" value="True" />
 		</template_reference>
-		<template_reference name="squad_item_slot_ext" value="sbpextensions\squad_item_slot_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_item_slot_ext">
 			<bool name="can_pick_up" value="True" />
 			<float name="num_slots" value="2" />
 		</template_reference>
-		<template_reference name="squad_loadout_ext" value="sbpextensions\squad_loadout_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="3" />
@@ -333,15 +166,15 @@
 			</list>
 			<float name="squad_female_chance" value="0" />
 		</template_reference>
-		<template_reference name="squad_modifier_ext" value="sbpextensions\squad_modifier_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_modifier_ext">
 		</template_reference>
-		<template_reference name="squad_requirement_ext" value="sbpextensions\squad_requirement_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
-				<template_reference name="required_all_in_list" value="requirements\required_all_in_list">
+				<template_reference name="required" value="requirements\required_all_in_list">
 					<enum name="reason" value="display" />
 					<locstring name="ui_name" value="0" />
 					<list name="requirements">
-						<template_reference name="required_player_upgrade" value="requirements\required_player_upgrade">
+						<template_reference name="requirement" value="requirements\required_player_upgrade">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
@@ -349,7 +182,7 @@
 							<float name="min_completed" value="1" />
 							<instance_reference name="upgrade_name" value="upgrade\pm\aef_pm" />
 						</template_reference>
-						<template_reference name="required_player_upgrade" value="requirements\required_player_upgrade">
+						<template_reference name="requirement" value="requirements\required_player_upgrade">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="False" />
@@ -357,7 +190,7 @@
 							<float name="min_completed" value="1" />
 							<instance_reference name="upgrade_name" value="upgrade\pm\american\commanders\mechanized\pm_mechanized_unlock" />
 						</template_reference>
-						<template_reference name="required_player_upgrade" value="requirements\required_player_upgrade">
+						<template_reference name="requirement" value="requirements\required_player_upgrade">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="False" />
@@ -369,16 +202,16 @@
 				</template_reference>
 			</list>
 		</template_reference>
-		<template_reference name="squad_upgrade_apply_ext" value="sbpextensions\squad_upgrade_apply_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
 			<list name="upgrades">
 			</list>
 		</template_reference>
-		<template_reference name="squad_upgrade_ext" value="sbpextensions\squad_upgrade_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
 			</list>
 		</template_reference>
-		<template_reference name="squad_combat_behaviour_ext" value="sbpextensions\squad_combat_behaviour_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
 			<float name="heavy_weapon_setup_delay" value="999" />
 			<float name="reaction_delay_seconds" value="25" />
 			<float name="reveal_self_attacker_time" value="0" />
@@ -453,11 +286,11 @@
 				<float name="suppressed_activate_threshold" value="0.2" />
 				<float name="suppressed_recover_threshold" value="0.15" />
 				<list name="pin_down_activate_actions">
-					<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+					<template_reference name="action" value="action\apply_modifiers_action">
 						<float name="duration" value="0" />
 						<bool name="permanent" value="False" />
 						<list name="modifiers">
-							<template_reference name="capture_enable_squad_modifier" value="modifiers\capture_enable_squad_modifier">
+							<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
 								<enum name="application_type" value="apply_to_squad" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -466,7 +299,7 @@
 								<float name="value" value="-1" />
 								<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 							</template_reference>
-							<template_reference name="enable_weapon_modifier" value="modifiers\enable_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -475,7 +308,7 @@
 								<float name="value" value="-1" />
 								<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 							</template_reference>
-							<template_reference name="move_enable_modifier" value="modifiers\move_enable_modifier">
+							<template_reference name="modifier" value="modifiers\move_enable_modifier">
 								<enum name="application_type" value="apply_to_entity" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -487,17 +320,17 @@
 						</list>
 						<uniqueid name="id" value="348269" />
 					</template_reference>
-					<template_reference name="delay" value="action\delay">
+					<template_reference name="action" value="action\delay">
 						<float name="delay" value="10" />
 						<float name="delay_min" value="0" />
 						<bool name="progress_bar" value="False" />
 						<bool name="randomize" value="False" />
 						<list name="delayed_actions">
-							<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+							<template_reference name="action" value="action\apply_modifiers_action">
 								<float name="duration" value="0" />
 								<bool name="permanent" value="False" />
 								<list name="modifiers">
-									<template_reference name="received_accuracy_modifier" value="modifiers\received_accuracy_modifier">
+									<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 										<enum name="application_type" value="apply_to_entity" />
 										<bool name="exclusive" value="False" />
 										<string name="modifier_id" value="" />
@@ -513,7 +346,7 @@
 						<uniqueid name="id" value="348271" />
 						<bool name="can_prevent_refund" value="True" />
 					</template_reference>
-					<template_reference name="animator_set_state" value="action\animator_set_state">
+					<template_reference name="action" value="action\animator_set_state">
 						<bool name="apply_to_leader_only" value="False" />
 						<string name="do_action_state_name" value="pinned" />
 						<bool name="retrigger" value="False" />
@@ -523,11 +356,11 @@
 					</template_reference>
 				</list>
 				<list name="suppressed_activate_actions">
-					<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+					<template_reference name="action" value="action\apply_modifiers_action">
 						<float name="duration" value="0" />
 						<bool name="permanent" value="False" />
 						<list name="modifiers">
-							<template_reference name="posture_speed_modifier" value="modifiers\posture_speed_modifier">
+							<template_reference name="modifier" value="modifiers\posture_speed_modifier">
 								<enum name="application_type" value="apply_to_entity" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -536,7 +369,7 @@
 								<float name="value" value="-2" />
 								<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
 							</template_reference>
-							<template_reference name="cooldown_weapon_modifier" value="modifiers\cooldown_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -545,7 +378,7 @@
 								<float name="value" value="4" />
 								<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 							</template_reference>
-							<template_reference name="reload_weapon_modifier" value="modifiers\reload_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -554,7 +387,7 @@
 								<float name="value" value="4" />
 								<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 							</template_reference>
-							<template_reference name="accuracy_weapon_modifier" value="modifiers\accuracy_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
@@ -566,7 +399,7 @@
 						</list>
 						<uniqueid name="id" value="348273" />
 					</template_reference>
-					<template_reference name="requirement_action" value="action\requirement_action">
+					<template_reference name="action" value="action\requirement_action">
 						<bool name="check_self" value="False" />
 						<bool name="global_fire_and_forget_on_success" value="False" />
 						<bool name="instant_requirement_check" value="False" />
@@ -574,7 +407,7 @@
 						<bool name="no_retrigger" value="False" />
 						<bool name="validate_all_sub_actions" value="True" />
 						<list name="requirement_table">
-							<template_reference name="required_player_upgrade" value="requirements\required_player_upgrade">
+							<template_reference name="required" value="requirements\required_player_upgrade">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
 								<bool name="is_present" value="True" />
@@ -584,11 +417,11 @@
 							</template_reference>
 						</list>
 						<list name="action_table">
-							<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+							<template_reference name="action" value="action\apply_modifiers_action">
 								<float name="duration" value="0" />
 								<bool name="permanent" value="False" />
 								<list name="modifiers">
-									<template_reference name="received_suppression_squad_modifier" value="modifiers\received_suppression_squad_modifier">
+									<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
 										<enum name="application_type" value="apply_to_squad" />
 										<bool name="exclusive" value="False" />
 										<string name="modifier_id" value="" />
@@ -639,9 +472,9 @@
 				</template_reference>
 			</template_reference>
 		</template_reference>
-		<template_reference name="squad_action_apply_ext" value="sbpextensions\squad_action_apply_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -649,7 +482,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="aef_captain" />
@@ -661,11 +494,11 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="armor_modifier" value="modifiers\armor_modifier">
+								<template_reference name="modifier" value="modifiers\armor_modifier">
 									<enum name="application_type" value="apply_to_entity" />
 									<bool name="exclusive" value="True" />
 									<string name="modifier_id" value="" />
@@ -685,7 +518,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -693,7 +526,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_unit_type" value="requirements\required_unit_type">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="aef_lieutenant" />
@@ -705,11 +538,11 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="accuracy_weapon_modifier" value="modifiers\accuracy_weapon_modifier">
+								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 									<enum name="application_type" value="apply_to_weapon" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
@@ -729,11 +562,11 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
 					<bool name="permanent" value="True" />
 					<list name="modifiers">
-						<template_reference name="accuracy_weapon_modifier" value="modifiers\accuracy_weapon_modifier">
+						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 							<enum name="application_type" value="apply_to_weapon" />
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
@@ -745,12 +578,12 @@
 					</list>
 					<uniqueid name="id" value="348280" />
 				</template_reference>
-				<template_reference name="override_move_type_action" value="action\override_move_type_action">
+				<template_reference name="action" value="action\override_move_type_action">
 					<instance_reference name="move_type" value="move_type\assault_stance_test_move" />
 					<float name="priority" value="1200" />
 					<uniqueid name="id" value="348281" />
 				</template_reference>
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -758,11 +591,11 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_not" value="requirements\required_not">
+						<template_reference name="required" value="requirements\required_not">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<list name="requirement_table">
-								<template_reference name="required_in_state" value="requirements\required_in_state">
+								<template_reference name="required" value="requirements\required_in_state">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<bool name="garrisoned" value="False" />
@@ -777,12 +610,12 @@
 								</template_reference>
 							</list>
 						</template_reference>
-						<template_reference name="required_squad_veterancy" value="requirements\required_squad_veterancy">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<float name="veterancy_rank" value="2" />
 						</template_reference>
-						<template_reference name="required_in_state" value="requirements\required_in_state">
+						<template_reference name="required" value="requirements\required_in_state">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="garrisoned" value="False" />
@@ -797,11 +630,11 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="health_regeneration_modifier" value="modifiers\health_regeneration_modifier">
+								<template_reference name="modifier" value="modifiers\health_regeneration_modifier">
 									<enum name="application_type" value="apply_to_entity" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
@@ -813,7 +646,7 @@
 							</list>
 							<uniqueid name="id" value="348282" />
 						</template_reference>
-						<template_reference name="animator_set_state" value="action\animator_set_state">
+						<template_reference name="action" value="action\animator_set_state">
 							<bool name="apply_to_leader_only" value="True" />
 							<string name="do_action_state_name" value="on" />
 							<bool name="retrigger" value="True" />
@@ -821,7 +654,7 @@
 							<string name="undo_action_state_name" value="off" />
 							<uniqueid name="id" value="348283" />
 						</template_reference>
-						<template_reference name="ui_unit_modifier_action" value="action\ui_unit_modifier_action">
+						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="0" />
@@ -839,7 +672,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -847,7 +680,7 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_squad_upgrade" value="requirements\required_squad_upgrade">
+						<template_reference name="required" value="requirements\required_squad_upgrade">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="include_queued" value="False" />
@@ -856,11 +689,11 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="capture_enable_squad_modifier" value="modifiers\capture_enable_squad_modifier">
+								<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="True" />
 									<string name="modifier_id" value="paradrop" />
@@ -869,7 +702,7 @@
 									<float name="value" value="-1" />
 									<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 								</template_reference>
-								<template_reference name="squad_chill_per_tick_modifier" value="modifiers\squad_chill_per_tick_modifier">
+								<template_reference name="modifier" value="modifiers\squad_chill_per_tick_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="True" />
 									<string name="modifier_id" value="paradrop2" />
@@ -889,7 +722,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="requirement_action" value="action\requirement_action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
@@ -897,11 +730,11 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required_all_in_list" value="requirements\required_all_in_list">
+						<template_reference name="required" value="requirements\required_all_in_list">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<list name="requirements">
-								<template_reference name="required_player_upgrade" value="requirements\required_player_upgrade">
+								<template_reference name="requirement" value="requirements\required_player_upgrade">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<bool name="is_present" value="True" />
@@ -909,7 +742,7 @@
 									<float name="min_completed" value="1" />
 									<instance_reference name="upgrade_name" value="upgrade\pm\aef_pm" />
 								</template_reference>
-								<template_reference name="required_player_upgrade" value="requirements\required_player_upgrade">
+								<template_reference name="requirement" value="requirements\required_player_upgrade">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<bool name="is_present" value="True" />
@@ -921,11 +754,11 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="capture_rate_squad_modifier" value="modifiers\capture_rate_squad_modifier">
+								<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
@@ -947,12 +780,12 @@
 				</template_reference>
 			</list>
 		</template_reference>
-		<template_reference name="squad_attention_ext" value="sbpextensions\squad_attention_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext">
 			<float name="search_radius" value="35" />
 		</template_reference>
-		<template_reference name="squad_holdable_ext" value="sbpextensions\squad_holdable_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_holdable_ext">
 			<list name="modifier_table">
-				<template_reference name="enable_weapon_modifier" value="modifiers\enable_weapon_modifier">
+				<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
 					<enum name="application_type" value="apply_to_weapon" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -963,15 +796,14 @@
 				</template_reference>
 			</list>
 		</template_reference>
-		<template_reference name="squad_ability_ext" value="sbpextensions\squad_ability_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\pm\aef\specializations\cover_specialization\cover_specialization_hunker_down" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\sp\refuel_tank_sp" />
-				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
-		<template_reference name="squad_reinforce_ext" value="sbpextensions\squad_reinforce_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
 				<float name="cost_percentage" value="0.5" />
 				<float name="time_percentage" value="1" />
@@ -986,7 +818,7 @@
 				<locstring name="screen_name" value="0" />
 			</group>
 			<list name="paradrop_requirements">
-				<template_reference name="required_near_entity" value="requirements\required_near_entity">
+				<template_reference name="required" value="requirements\required_near_entity">
 					<enum name="alliance_requirement" value="ally" />
 					<float name="radius_requirement" value="35" />
 					<instance_reference name="entity_pbg" value="ebps\races\aef\buildings\defensive_structures\airborne_beacon_mp" />
@@ -995,7 +827,7 @@
 				</template_reference>
 			</list>
 		</template_reference>
-		<template_reference name="squad_retreat_ext" value="sbpextensions\squad_retreat_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
 			<group name="retreat_building_types">
 				<enum name="unit_type00" value="hq" />
 				<enum name="unit_type01" value="hq_wreck" />
@@ -1004,14 +836,14 @@
 				<enum name="unit_type04" value="" />
 			</group>
 			<list name="actions">
-				<template_reference name="suppression" value="action\suppression">
+				<template_reference name="action" value="action\suppression">
 					<float name="suppression" value="0" />
 					<uniqueid name="id" value="348290" />
 					<float name="supressionrecovertime" value="0" />
 				</template_reference>
 			</list>
 			<list name="modifiers">
-				<template_reference name="received_suppression_squad_modifier" value="modifiers\received_suppression_squad_modifier">
+				<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
 					<enum name="application_type" value="apply_to_squad" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -1020,7 +852,7 @@
 					<float name="value" value="0" />
 					<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 				</template_reference>
-				<template_reference name="reaction_enabled_squad_modifier" value="modifiers\reaction_enabled_squad_modifier">
+				<template_reference name="modifier" value="modifiers\reaction_enabled_squad_modifier">
 					<enum name="application_type" value="apply_to_squad" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -1029,7 +861,7 @@
 					<float name="value" value="-1" />
 					<instance_reference name="tooltip" value="modifier_tooltip\reaction_enabled_squad_modifier" />
 				</template_reference>
-				<template_reference name="posture_speed_modifier" value="modifiers\posture_speed_modifier">
+				<template_reference name="modifier" value="modifiers\posture_speed_modifier">
 					<enum name="application_type" value="apply_to_entity" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -1038,7 +870,7 @@
 					<float name="value" value="2" />
 					<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
 				</template_reference>
-				<template_reference name="received_accuracy_modifier" value="modifiers\received_accuracy_modifier">
+				<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 					<enum name="application_type" value="apply_to_entity" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -1047,7 +879,7 @@
 					<float name="value" value="0.4" />
 					<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 				</template_reference>
-				<template_reference name="capture_enable_squad_modifier" value="modifiers\capture_enable_squad_modifier">
+				<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
 					<enum name="application_type" value="apply_to_squad" />
 					<bool name="exclusive" value="False" />
 					<string name="modifier_id" value="" />
@@ -1059,14 +891,14 @@
 			</list>
 			<bool name="withdraw_only" value="False" />
 		</template_reference>
-		<template_reference name="squad_can_defuse_charges_ext" value="sbpextensions\squad_can_defuse_charges_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_can_defuse_charges_ext">
 		</template_reference>
-		<template_reference name="squad_capture_strategic_point_ext" value="sbpextensions\squad_capture_strategic_point_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">
 			<float name="capture_distance" value="4" />
 			<float name="capture_rate_multiplier" value="1" />
 			<float name="revert_rate_multiplier" value="1" />
 		</template_reference>
-		<template_reference name="squad_vault_ext" value="sbpextensions\squad_vault_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_vault_ext">
 			<list name="timing_list">
 				<group name="group">
 					<int name="vaulter_count" value="2" />
@@ -1083,33 +915,33 @@
 			</list>
 			<instance_reference name="vaulting_formation" value="squad_formations\vaulting" />
 		</template_reference>
-		<template_reference name="squad_population_ext" value="sbpextensions\squad_population_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_population_ext">
 			<float name="personnel_pop" value="0" />
 		</template_reference>
-		<template_reference name="squad_type_ext" value="sbpextensions\squad_type_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">
 				<enum name="squad_type" value="infantry" />
 				<enum name="squad_type" value="aef_paratroopers_3_man" />
 				<enum name="squad_type" value="aef_unit" />
 			</list>
 		</template_reference>
-		<template_reference name="squad_shared_veterancy_ext" value="sbpextensions\squad_shared_veterancy_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_shared_veterancy_ext">
 			<float name="multiplier_pct_self" value="1" />
 			<float name="multiplier_pct_share" value="0.5" />
 			<float name="radius" value="35" />
 			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
 		</template_reference>
-		<template_reference name="squad_paradrop_ext" value="sbpextensions\squad_paradrop_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_paradrop_ext">
 			<float name="spawn_time_scatter" value="2" />
 		</template_reference>
-		<template_reference name="squad_engineer_ext" value="sbpextensions\squad_engineer_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext">
 			<float name="construction_rate_multiplier" value="1" />
 			<list name="in_construction_actions">
-				<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
-						<template_reference name="received_accuracy_modifier" value="modifiers\received_accuracy_modifier">
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 							<enum name="application_type" value="apply_to_entity" />
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
@@ -1139,7 +971,7 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="squad_veterancy_ext" value="sbpextensions\squad_veterancy_ext">
+		<template_reference name="squadexts" value="sbpextensions\squad_veterancy_ext">
 			<list name="race_list">
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
@@ -1157,11 +989,11 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="False" />
 										<list name="modifiers">
-											<template_reference name="ability_recharge_time_modifier" value="modifiers\ability_recharge_time_modifier">
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -1170,7 +1002,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\paratrooper_mk2_fragmentation_grenade_mp" />
 											</template_reference>
-											<template_reference name="ability_recharge_time_modifier" value="modifiers\ability_recharge_time_modifier">
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -1179,7 +1011,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_assault_move_test_mp" />
 											</template_reference>
-											<template_reference name="ability_recharge_time_modifier" value="modifiers\ability_recharge_time_modifier">
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -1188,7 +1020,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_suppressing_fire_ability_mp" />
 											</template_reference>
-											<template_reference name="ability_recharge_time_modifier" value="modifiers\ability_recharge_time_modifier">
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -1200,11 +1032,11 @@
 										</list>
 										<uniqueid name="id" value="349921" />
 									</template_reference>
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="entity_veterency_experience_modifier" value="modifiers\entity_veterency_experience_modifier">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -1228,24 +1060,24 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="accuracy_weapon_modifier" value="modifiers\accuracy_weapon_modifier">
+											<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 												<enum name="application_type" value="apply_to_weapon" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.4" />
+												<float name="value" value="1.25" />
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
-											<template_reference name="ability_max_range_modifier" value="modifiers\ability_max_range_modifier">
+											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="paratrooper_mk2_fragmentation_grenade_mp" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\paratrooper_mk2_fragmentation_grenade_mp" />
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="1.25" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -1253,11 +1085,11 @@
 										</list>
 										<uniqueid name="id" value="349923" />
 									</template_reference>
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="entity_veterency_experience_modifier" value="modifiers\entity_veterency_experience_modifier">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -1281,11 +1113,11 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="False" />
 										<list name="modifiers">
-											<template_reference name="cooldown_weapon_modifier" value="modifiers\cooldown_weapon_modifier">
+											<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
 												<enum name="application_type" value="apply_to_weapon" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
@@ -1294,8 +1126,8 @@
 												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 											</template_reference>
-											<template_reference name="received_accuracy_modifier" value="modifiers\received_accuracy_modifier">
-												<enum name="application_type" value="apply_to_entity" />
+											<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
@@ -1306,11 +1138,11 @@
 										</list>
 										<uniqueid name="id" value="349925" />
 									</template_reference>
-									<template_reference name="apply_modifiers_action" value="action\apply_modifiers_action">
+									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="entity_veterency_experience_modifier" value="modifiers\entity_veterency_experience_modifier">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
