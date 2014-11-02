@@ -438,6 +438,7 @@
 				<instance_reference name="ability" value="abilities\global\tow\mud_soviet\spy_network_tow" />
 				<instance_reference name="ability" value="abilities\global\tow\mud_soviet\kv-2_tow" />
 				<instance_reference name="ability" value="abilities\global\tow\mud_soviet\il-2_precision_bomb_strike_tow" />
+				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
