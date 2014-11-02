@@ -16,6 +16,19 @@ Attributes:
  * Near increased by 35%
 - Pack howitzer aoe radius set from 6 to 7. Far aoe profile set from 4.5 to 5.5
 - Removed burst pattern from soviet 50cal halftrack to improve its projectile visuals (used to shoot up in the air)
+- Improved all projectile deformation and crater size
+- Stug G and Stug E frontal armor increased from 140 to 225
+- Jagdpanzer V frontal armor increased from 230 to 300
+- Jagdpanzer V manpower cost decreased from 470 to 350, fuel cost from 135 to 125
+- Increased the effectiveness of yellow cover by 25%
+- Redone tank weapon area effect
+ * Max radius increased by 25%
+ * Far radius increased by 25%
+ * Mid radius decreased by 25%
+ * Near radius decreased by 25%
+- Increased all tank and antitank ranges by 10%
+- Tank and antitank weapon distance profile redone, doesn't fall off linearly anymore, tanks now have a slightly faster fall off on mid range
+- Slight increases in tank accuracy on all ranges
 
 Win condition:
 - Works like default victory ticker game mode
@@ -29,6 +42,5 @@ Win condition:
 AI changes (win condition):
 - Created custom retreat rules for all infantry squads
 - Increased experience gain speed by 5%
-- Increased all manpower income by 10%
-- Increased all munition income by 15%
-- Increased all fuel income by 2.5%
+- Increased all manpower income by 15%
+- Decreased all fuel income by 5%

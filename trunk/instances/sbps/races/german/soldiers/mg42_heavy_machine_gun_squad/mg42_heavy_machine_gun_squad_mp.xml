@@ -891,6 +891,7 @@
 				<instance_reference name="ability" value="abilities\german\toggle_ability\commander_ability\ambush_camo_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\retreat_to_forward_hq" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\stormtrooper_sprint_mp" />
+				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">

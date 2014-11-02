@@ -922,6 +922,7 @@
 				<instance_reference name="ability" value="abilities\pm\aef\specializations\cover_specialization\cover_specialization_hunker_down" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\bazooka_deploy_mp" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\ranger_sprint_mp" />
+				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">

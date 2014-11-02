@@ -29,13 +29,13 @@ BtB.SetupAIPlayer = function(p)
 	-- TODO: Save modifiers and reset on init
 	Modify_PlayerProductionRate(p, 1.1)
 	Modify_PlayerExperienceReceived(p, 1.05)
-	Modify_PlayerResourceRate(p, RT_Manpower, 1.10)
-	Modify_PlayerResourceRate(p, RT_Munition, 1.15)
-	Modify_PlayerResourceRate(p, RT_Fuel, 1.025)
+	Modify_PlayerResourceRate(p, RT_Manpower, 1.15)
+	--Modify_PlayerResourceRate(p, RT_Munition, 1.15)
+	Modify_PlayerResourceRate(p, RT_Fuel, 0.95)
 end
 
 BtB.RetreatTactic = function(squad)
-	local result = -0.12
+	local result = -0.1
 	
 	local pos = Squad_GetPosition(squad)
 	local p = Squad_GetPlayerOwner(squad)
@@ -146,7 +146,7 @@ BtB.AIPlayerUpdate = function()
 			if Squad_IsAttacking(squad, 2) and not Squad_IsRetreating(squad) and not BtB_IsSquadVehicle(squad) then
 				local retreatDemand = BtB.RetreatTactic(squad) * 3
 				if retreatDemand > 0 then
-					local r = World_GetRand(0, 20)
+					local r = World_GetRand(0, 15)
 					if r <= retreatDemand then
 						local retreatSG = SGroup_CreateIfNotFound('BtB_retreat')
 						SGroup_Clear(retreatSG)

@@ -423,6 +423,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\sniper_fire_flares_ability_mp" />
 				<instance_reference name="ability" value="abilities\global\tow\volga_timber\officer_close_air_support" />
+				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
