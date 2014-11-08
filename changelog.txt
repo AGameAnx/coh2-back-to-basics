@@ -1,5 +1,5 @@
 -----------------------------
-- Back to Basics v0.1
+- Back to Basics v0.3
 --
 
 Attributes:
@@ -19,7 +19,6 @@ Attributes:
 - Improved all projectile deformation and crater size
 - Stug G and Stug E frontal armor increased from 140 to 225
 - Jagdpanzer V frontal armor increased from 230 to 300
-- Jagdpanzer V manpower cost decreased from 470 to 350, fuel cost from 135 to 125
 - Increased the effectiveness of yellow cover by 25%
 - Redone tank weapon area effect
  * Max radius increased by 25%
