@@ -360,7 +360,7 @@ AIControl.Grid = {
 AIControl.Pathfinding = {
 	Settings = {
 		Precision = 1.5,
-		EntityBlueprint = BP_GetEntityBlueprint("ebps/races/allies/vehicles/m4_sherman.lua")
+		EntityBlueprint = BP_GetEntityBlueprint('23d6cdb82724460dbcb21e1a9162e473:ebps\\races\\german\\vehicles\\stug_iii_sdkfz_141_1\\stug_iii_e_sdkfz_141_1_mp.xml')
 	},
 	StepsTotal = {1,1},
 	Data = {},
