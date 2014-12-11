@@ -1,10 +1,10 @@
 -----------------------------
-- Back to Basics v0.3
+- Back to Basics v0.4
 --
 
 Attributes:
 - Antiblob added to all infantry. Infantry in close proximity to each other (within 10 ingame units) will receive 15% accuracy penalties.
-- All max ranges of small arms weapons increased by 12.5%
+- Max range of small arms weapons increased by 12.5%
 - All small arms damage increased by 55.25%
 - Modified small arms default range tables:
  * Far increased by 12.5%
@@ -14,24 +14,22 @@ Attributes:
  * Far decreased by 40%
  * Mid decreased by 10%
  * Near increased by 35%
-- Pack howitzer aoe radius set from 6 to 7. Far aoe profile set from 4.5 to 5.5
 - Removed burst pattern from soviet 50cal halftrack to improve its projectile visuals (used to shoot up in the air)
-- Improved all projectile deformation and crater size
 - Stug G and Stug E frontal armor increased from 140 to 225
 - Jagdpanzer V frontal armor increased from 230 to 300
-- Increased the effectiveness of yellow cover by 25%
-- Redone tank weapon area effect
+- Reduced the effectiveness of small arms against light cover by 15%
+- Redone area effect for all weapons
  * Max radius increased by 25%
  * Far radius increased by 25%
- * Mid radius decreased by 25%
- * Near radius decreased by 25%
+ * Mid radius decreased by 35%
+ * Near radius decreased by 50%
 - Increased all tank and antitank ranges by 10%
-- Tank and antitank weapon distance profile redone, doesn't fall off linearly anymore, tanks now have a slightly faster fall off on mid range
+- Tank and antitank weapon distance profile doesn't fall off linearly anymore, mid range falls off faster
 - Slight increases in tank accuracy on all ranges
 
 Win condition:
 - Works like default victory ticker game mode
-- Increased base manpower income by 50 per minute
+- Increased base manpower income by 25 per minute
 - Increased base fuel income by 1.5 per minute
 - Player sight radius increased by 5%
 - Player command point gain speed decreased by 15%
