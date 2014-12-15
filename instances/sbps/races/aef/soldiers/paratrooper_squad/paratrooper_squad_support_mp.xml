@@ -624,6 +624,8 @@
 					<instance_reference name="entity_pbg" value="ebps\races\aef\buildings\defensive_structures\airborne_beacon_mp" />
 					<enum name="reason" value="usage_and_display" />
 					<locstring name="ui_name" value="0" />
+					<list name="near_entity_requirement">
+					</list>
 				</template_reference>
 			</list>
 		</template_reference>

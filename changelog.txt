@@ -1,9 +1,9 @@
------------------------------
-- Back to Basics v0.4
---
 
-Attributes:
-- Antiblob added to all infantry. Infantry in close proximity to each other (within 10 ingame units) will receive 15% accuracy penalties.
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Antiblob added to all infantry. Infantry in close proximity to each other (within 10 ingame units) will receive 15% accuracy penalties
 - Max range of small arms weapons increased by 12.5%
 - All small arms damage increased by 55.25%
 - Modified small arms default range tables:
@@ -19,24 +19,43 @@ Attributes:
 - Jagdpanzer V frontal armor increased from 230 to 300
 - Reduced the effectiveness of small arms against light cover by 15%
 - Redone area effect for all weapons
+ * Max radius damage decreased by 40%
  * Max radius increased by 25%
  * Far radius increased by 25%
  * Mid radius decreased by 35%
  * Near radius decreased by 50%
 - Increased all tank and antitank ranges by 10%
 - Tank and antitank weapon distance profile doesn't fall off linearly anymore, mid range falls off faster
-- Slight increases in tank accuracy on all ranges
+- Slightly increases tank accuracy on all ranges
 
-Win condition:
+Soviets:
+- B4 redesign:
+ * Base damage decreased from 640 to 350
+ * Barrage ability recharge time increased from 110s to 130s
+ * Level 2 veteracy requirement increased.
+ * Level 3 veterancy requirement increased and damage multiplication reduced from 1.5 to 1.2
+
+Ostheer:
+- Increased MG42 damage from 4 to 5
+- Slightly reduced accuracy of grenadier LMG42 on range (0.33 -> 0.29)
+
+Oberkommando West:
+- Reduced accuracy and effectiveness of Obersoldatten Infrared mp44 rifle
+- Slightly reduced accuracy of Obersoldatten LMG on max range (0.34 -> 0.3)
+
+-----------------------------------------------------------------
+## Win condition:
+
+General
 - Works like default victory ticker game mode
 - Increased base manpower income by 25 per minute
 - Increased base fuel income by 1.5 per minute
 - Player sight radius increased by 5%
 - Player command point gain speed decreased by 15%
 - Increased maximum camera zoom from 38 to 42
-- Max population cap increased from 100 to 110
+- Max population cap increased from 100 to 120
 
-AI changes (win condition):
+AI changes:
 - Created custom retreat rules for all infantry squads
 - Increased experience gain speed by 5%
 - Increased all manpower income by 15%

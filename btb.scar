@@ -146,7 +146,7 @@ BtB.AIPlayerUpdate = function()
 			if Squad_IsAttacking(squad, 2) and not Squad_IsRetreating(squad) and not BtB_IsSquadVehicle(squad) then
 				local retreatDemand = BtB.RetreatTactic(squad) * 3
 				if retreatDemand > 0 then
-					local r = World_GetRand(0, 6)
+					local r = World_GetRand(0, 8)
 					if r <= retreatDemand then
 						local retreatSG = SGroup_CreateIfNotFound('BtB_retreat')
 						SGroup_Clear(retreatSG)
