@@ -161,7 +161,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="4" />
-					<instance_reference name="type" value="ebps\races\german\soldiers\pioneer\pioneer" />
+					<instance_reference name="type" value="ebps\races\german\soldiers\pioneer\pioneer" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -696,7 +696,7 @@
 							<int name="ui_position" value="14" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\base_building\bereich_festung" />
+							<instance_reference name="ebp" value="ebps\races\german\buildings\base_building\bereich_festung" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="11" />
 						</group>
 						<group name="construction_item">

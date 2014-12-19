@@ -1,4 +1,55 @@
 
+=================================================================
+## v0.2
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Added a status icon for infantry affected by antiblob
+- Reduced the antiblob penalty to 10%
+- Reduced the antiblob radius from 10 to 7
+- Fixed an issue where some ballistic weapons received same bonuses as small arms since their attribute files are located in small arms directory
+
+Soviets:
+- Slightly adjusted 120mm mortar aoe to make it be slightly more lethal again (far damage 0.05 -> 0.1)
+
+Ostheer:
+- Pioneer entity construction cost decreased (50mp -> 40mp / squad 200mp -> 160mp)
+- Grenadiers can now be built from the HQ
+- Grenadiers entity construction cost and build time increased (60mp -> 65mp, 6s -> 8s/ squad 240mp -> 260mp, 24s -> 32s)
+
+OKW:
+- Adjusted the cost of Mechanized Regiment HQ from 200mp to 250mp due to the dynamics of the new income and importance of unit reinforcement
+- Adjusted the cost of Battlegroup Headquarters HQ from 200mp to 300mp to encourage the use of lower tech units
+- Walking Stuka cost reduced from 390mp 100f to 300mp 85f
+- Reworked Walking Stuka damage and aoe to reduce its squad wipe potential significantly
+- Normalized coaxial MG accuracy to Ostheer coaxial MGs (were twice as effective)
+- Volksgrenadier veterancy accuracy modifiers heavily decreased
+- Slightly decreased Flak HQ weapon range (50->47)
+- Decreased initial Obersoldatten received accuracy modifier from 0.7 to 0.75
+- Increased initial Fallschirmjager initial received accuracy modifier from 0.84 to 0.79
+- Fallschirmjager veterancy accuracy modifiers heavily decreased
+- 7.5cm leIG 18 Infantry Support Gun support gun cost decreased from 420mp to 370mp
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Increased win condition starting manpower modification from 30 to 140
+- Increased overall player unit upkeep by 35%
+- Player command point gain speed is now reduced by 35%. This change is made due to increased damage on units which makes cp gain faster than intended
+- Reduced unit experience gain by 20%. This change is made due to increased damage on units which makes xp gain faster than intended
+
+AI changes:
+- Veterancy gain is now increased by 10%
+
+
+=================================================================
+## v0.1
+=================================================================
+
 -----------------------------------------------------------------
 ## Attributes:
 
@@ -14,40 +65,41 @@ General:
  * Far decreased by 40%
  * Mid decreased by 10%
  * Near increased by 35%
-- Removed burst pattern from soviet 50cal halftrack to improve its projectile visuals (used to shoot up in the air)
-- Stug G and Stug E frontal armor increased from 140 to 225
-- Jagdpanzer V frontal armor increased from 230 to 300
 - Reduced the effectiveness of small arms against light cover by 15%
 - Redone area effect for all weapons
- * Max radius damage decreased by 40%
- * Max radius increased by 25%
- * Far radius increased by 25%
- * Mid radius decreased by 35%
- * Near radius decreased by 50%
+ * Max radius damage decreased by 30%
+ * Max radius increased by 35%
+ * Far radius increased by 35%
+ * Mid radius decreased by 10%
+ * Near radius decreased by 35%
 - Increased all tank and antitank ranges by 10%
 - Tank and antitank weapon distance profile doesn't fall off linearly anymore, mid range falls off faster
 - Slightly increases tank accuracy on all ranges
 
 Soviets:
+- Removed burst pattern from soviet 50cal halftrack to improve its projectile visuals (used to shoot up in the air)
 - B4 redesign:
  * Base damage decreased from 640 to 350
  * Barrage ability recharge time increased from 110s to 130s
- * Level 2 veteracy requirement increased.
+ * Level 2 veterancy requirement increased.
  * Level 3 veterancy requirement increased and damage multiplication reduced from 1.5 to 1.2
 
 Ostheer:
 - Increased MG42 damage from 4 to 5
 - Slightly reduced accuracy of grenadier LMG42 on range (0.33 -> 0.29)
+- Stug G and Stug E frontal armor increased from 140 to 225
 
 Oberkommando West:
 - Reduced accuracy and effectiveness of Obersoldatten Infrared mp44 rifle
 - Slightly reduced accuracy of Obersoldatten LMG on max range (0.34 -> 0.3)
+- Jagdpanzer V frontal armor increased from 230 to 300
 
 -----------------------------------------------------------------
 ## Win condition:
 
-General
+General:
 - Works like default victory ticker game mode
+- Increased starting manpower by 30
 - Increased base manpower income by 25 per minute
 - Increased base fuel income by 1.5 per minute
 - Player sight radius increased by 5%
