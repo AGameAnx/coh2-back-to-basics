@@ -39,6 +39,20 @@
 				</d2p1:anyType>
 			</Children>
 		</d2p1:anyType>
+		<d2p1:anyType i:type="TableOfContents">
+			<Alias>Data</Alias>
+			<Children>
+				<d2p1:anyType i:type="Folder">
+					<Children>
+						<d2p1:anyType i:type="BurnIcons">
+							<PackSize>512</PackSize>
+							<RelativeName>icons</RelativeName>
+						</d2p1:anyType>
+					</Children>
+					<Name>ui</Name>
+				</d2p1:anyType>
+			</Children>
+		</d2p1:anyType>
 	</Children>
 	<Guid>23d6cdb8-2724-460d-bcb2-1e1a9162e473</Guid>
 	<Type>PropertyBagGroupPack</Type>

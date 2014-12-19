@@ -8,7 +8,8 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="action_list">
-			<list name="end_target_actions" />
+			<list name="end_target_actions">
+			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\target">
 					<bool name="entity_targets" value="False" />
@@ -36,7 +37,7 @@
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<list name="modifiers">
 								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-									<float name="value" value="0.85" />
+									<float name="value" value="0.9" />
 									<string name="modifier_id" value="" />
 									<bool name="exclusive" value="False" />
 									<enum name="usage_type" value="multiplication" />
@@ -49,19 +50,31 @@
 							<uniqueid name="id" value="1073741829" />
 							<bool name="permanent" value="False" />
 						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="False" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="3" mod="23d6cdb82724460dbcb21e1a9162e473" />
+								<locstring name="help_text" value="2" mod="23d6cdb82724460dbcb21e1a9162e473" />
+								<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_status_antiblob" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="1073741970" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073741824" />
 					<bool name="die_with_creator" value="True" />
 					<group name="area_info">
 						<enum name="area_type" value="circle" />
-						<float name="radius" value="10" />
+						<float name="radius" value="7" />
 						<float name="angle_left" value="0" />
 						<float name="angle_right" value="0" />
 					</group>
 				</template_reference>
 			</list>
-			<list name="start_self_actions" />
-			<list name="end_self_actions" />
+			<list name="start_self_actions">
+			</list>
+			<list name="end_self_actions">
+			</list>
 		</group>
 		<bool name="initial_recharge" value="False" />
 		<bool name="move_back" value="False" />
@@ -79,7 +92,8 @@
 			<string name="cursor_good" value="" />
 		</group>
 		<float name="cursor_ghost_blueprint_angle" value="0" />
-		<list name="requirements_self_recharge" />
+		<list name="requirements_self_recharge">
+		</list>
 		<bool name="facing_ignore" value="True" />
 		<string name="ui_targetable_off_key" value="" />
 		<bool name="fire_and_forget" value="False" />
@@ -100,7 +114,8 @@
 		<string name="cursor_ghost_blueprint" value="" />
 		<bool name="enable_in_vehicle" value="False" />
 		<float name="facing_angle" value="5" />
-		<list name="global_self_actions" />
+		<list name="global_self_actions">
+		</list>
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<float name="entity_busy_time" value="0" />
 		<bool name="disable_combat" value="False" />
@@ -123,7 +138,8 @@
 		<string name="ui_targetable_sm_key" value="" />
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
-		<list name="requirements_target" />
+		<list name="requirements_target">
+		</list>
 		<bool name="enable_in_building" value="False" />
 		<enum name="ui_combine_type" value="intersection" />
 		<enum name="ui_targetable_receiver" value="local" />
@@ -143,7 +159,8 @@
 		</group>
 		<string name="ui_targetable_on_key" value="" />
 		<enum name="ui_direction_requirement" value="nondirectional" />
-		<list name="requirements" />
+		<list name="requirements">
+		</list>
 		<enum name="ui_group_cast_type" value="single" />
 		<group name="cost">
 			<float name="command" value="0" />

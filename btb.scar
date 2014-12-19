@@ -35,7 +35,7 @@ BtB.SetupAIPlayer = function(p)
 end
 
 BtB.RetreatTactic = function(squad)
-	local result = -0.1
+	local result = -0.4
 	
 	local pos = Squad_GetPosition(squad)
 	local p = Squad_GetPlayerOwner(squad)
@@ -70,7 +70,7 @@ BtB.RetreatTactic = function(squad)
 	result = result + 3.5*math.max(0, 0.925-healthLeftPercentage)
 	
 	if Squad_IsInHoldEntity(squad) then
-		result = result - 2
+		result = result - 1.5
 		if Squad_IsUnderAttack(squad, 5) then
 			if Squad_Count(squad) == 1 then result = result + 1.75 end
 			result = result + 0.5
@@ -80,7 +80,7 @@ BtB.RetreatTactic = function(squad)
 			result = result + math.max(0, math.min((90-healthLeft)/11, 5))
 		end
 		if Squad_IsAttacking(squad, 5) then
-			result = result - 2
+			result = result - 1.5
 		end
 	else
 		if Squad_IsUnderAttack(squad, 5) then
@@ -91,7 +91,7 @@ BtB.RetreatTactic = function(squad)
 			end
 			result = result + math.max(0, math.min((90-healthLeft)/11, 5))
 		end
-		if Squad_IsAttacking(squad, 5) then result = result - 0.45 end
+		if Squad_IsAttacking(squad, 5) then result = result - 0.35 end
 	end
 	
 	--if AIPlayer_IsFireConePosition(s_selfplayer, pos) then result = result + 1.5 end
@@ -191,11 +191,15 @@ function BtB_Init()
 		-- TODO: Save modifiers and reset on init
 		Modify_PlayerResourceRate(p, RT_Manpower, 25/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Fuel, 1.5/60/8, MUT_Addition)
-		Modify_PlayerResourceRate(p, RT_Action, 0.85, MUT_Multiplication)
-		Modify_PlayerSightRadius(p, 1.05)
+		Modify_PlayerResourceRate(p, RT_Action, 0.65, MUT_Multiplication)
+		Modify_PlayerSightRadius(p, 1.1)
+		Modify_Upkeep(p, 1.35)
+		Modify_PlayerExperienceReceived(p, 0.75)
 		
 		Player_SetMaxPopulation(p, CT_Personnel, 120)
 		Player_SetMaxCapPopulation(p, CT_Personnel, 120)
+		
+		Player_SetResource(p, RT_Manpower, Player_GetResource(p, RT_Manpower)+140)
 		
 		if not Player_IsHuman(p) then
 			BtB.SetupAIPlayer(p)
