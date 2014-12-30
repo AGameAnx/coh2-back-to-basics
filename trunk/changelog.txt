@@ -1,5 +1,47 @@
 
 =================================================================
+## v0.3
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviets:
+- Sniper team aim time increased from 1.125-1.75 to 1.6-1.9. This leaves the overall effectiveness of the unit only slightly decreased, but reduces its ability to kite away from chasing units while picking them off
+- ISU152 health total reduced from 1040 to 850 to compensate for its overall strength, range and frontal armor
+- Adjusted ISU152 aoe profile to make it deal damage in a larger area while having less squad wipe potential:
+ * Far distance 5.6 -> 6.85 (aoe max radius is 7.5)
+ * Medium distance 2.5 -> 2.0
+
+Ostheer:
+- Reduced base damage of Grenadier LMG42 from 6 to 5
+- Increased MG42 base damage from 7 to 8
+- Elefant main weapon base damage reduced from 320 to 240 (same as the king tiger, jackson)
+
+USF:
+- 50cal machine gun base damage increased from 6 to 8
+- Riflemen base received accuracy decreased from 0.97 to 0.92
+- Increased 3rd level of veterancy requirement Lieutenant squad from 2560 to 2960
+- Increased 3rd level of veterancy requirement Captain squad from 2880 to 3180
+- Increased 3rd level of veterancy requirement Riflemen squad from 2240 to 2740
+- Added additional 0.8 received accuracy multiplier on 3rd level of veterancy for riflemen, lieutenant and captain
+- Pack howitzer auto-barrage range increased from 80 to 90 (still much shorter than barrage range)
+- Pack howitzer entity target priority now set to -100, which will make other units target the crew before the howitzer itself. This is the default behavior for team weapons like mortars, OKW leIG 18 infantry support gun, AT weapons and other team weapons. The change should increase howitzer's survivability lategame
+
+OKW:
+- King tiger aoe profile redone to decrease squad wipe potential and increase reliability:
+ * Medium range damage 0.35 -> 0.25
+ * Far range distance 0.35 -> 0.45
+- Jagdpanzer veterancy modifiers reduced:
+ * Sight modifier on veterancy 2 set from 1.35 to 1.25
+ * Reload multiplier 0.9 -> 0.95 on veterancy 3
+ * Maximum speed from 1.2 to 1.1 on veterancy 3
+ * Reload multiplier 0.75 -> 0.9 on veterancy 4
+ * Accuracy 1.3 -> 1.15 on veterancy 4
+- Jagdtiger main weapon base damage reduced from 320 to 240 (same as the king tiger, jackson)
+
+
+=================================================================
 ## v0.2
 =================================================================
 
@@ -7,18 +49,33 @@
 ## Attributes:
 
 General:
+- All vehicles now have fuel upkeep based on their initial fuel and population costs
 - Added a status icon for infantry affected by antiblob
 - Reduced the antiblob penalty to 10%
 - Reduced the antiblob radius from 10 to 7
-- Fixed an issue where some ballistic weapons received same bonuses as small arms since their attribute files are located in small arms directory
 
 Soviets:
-- Slightly adjusted 120mm mortar aoe to make it be slightly more lethal again (far damage 0.05 -> 0.1)
+- Tier 1 Barracks building fuel cost reduced from 50 to 40
+- Slightly adjusted 120mm mortar aoe to make it be more lethal again after general aoe changes (far damage 0.05 -> 0.1)
+- Conscript base cost reduced (40mp -> 35mp / squad 240mp -> 210mp). This change is justified by the grenadier tier change and the fact that new damage and weapon ranges limits the usefulness of conscripts considerably (much harder to close in, harder to throw molotovs, bad scaling lategame)
+- Increased the effectiveness of Penal Battalion troop SVT rifle on long and medium ranges, slightly lowered their effectiveness up close. Thus change intends to make Penals a stronger base infantry and add an incentive to soviet T1 beyond snipers and scout cars. Since flame thrower effectiveness is generally reduced in the mod and snipers are generally much harder to keep alive this change should help provide a better backbone for positional soviet play
+- Guards PTRS41 AT rifle damage increased from 40 to 60. This still doesn't 1 shot infantry, but should increase their effectiveness vs vehicles considerably
+- Slightly increased Guards PTRS41 AT rifle close and mid range accuracy
 
 Ostheer:
 - Pioneer entity construction cost decreased (50mp -> 40mp / squad 200mp -> 160mp)
 - Grenadiers can now be built from the HQ
 - Grenadiers entity construction cost and build time increased (60mp -> 65mp, 6s -> 8s/ squad 240mp -> 260mp, 24s -> 32s)
+- Reduced the effectiveness of hull MG weapon to match the normal coaxial MG
+- Reduced the effectiveness of mounted turret MGs
+- Slightly nerfed PzIv and Stug-E aoe as they were overperforming after global aoe changes
+- 222 Armored Car hit points increased from 200 to 240. This is a buff that's required due to strong USF early game and early game vehicles, as well as to remove sherman one hit kill on it.
+
+USF:
+- Pack howitzer cost reduced from 480mp to 420mp
+- Bazooka upgrade cost reduced from 150mp to 100mp
+- Bazooka weapon rack upgrade cost reduced from 60mu to 45mu
+- Captain first dispatch upgrade cost reduced from 80f to 50f to match the lieutenant dispatch
 
 OKW:
 - Adjusted the cost of Mechanized Regiment HQ from 200mp to 250mp due to the dynamics of the new income and importance of unit reinforcement
@@ -31,7 +88,7 @@ OKW:
 - Decreased initial Obersoldatten received accuracy modifier from 0.7 to 0.75
 - Increased initial Fallschirmjager initial received accuracy modifier from 0.84 to 0.79
 - Fallschirmjager veterancy accuracy modifiers heavily decreased
-- 7.5cm leIG 18 Infantry Support Gun support gun cost decreased from 420mp to 370mp
+- 7.5cm leIG 18 Infantry Support Gun support gun cost decreased from 430mp to 360mp
 
 -----------------------------------------------------------------
 ## Win condition:
@@ -41,9 +98,12 @@ General:
 - Increased overall player unit upkeep by 35%
 - Player command point gain speed is now reduced by 35%. This change is made due to increased damage on units which makes cp gain faster than intended
 - Reduced unit experience gain by 20%. This change is made due to increased damage on units which makes xp gain faster than intended
+- Base player fuel income is now increased by 1.75 per minute
+- Base player manpower income is now increased by 32 per minute
 
 AI changes:
 - Veterancy gain is now increased by 10%
+- Adjusted how fast AI retreats with retreat script
 
 
 =================================================================
