@@ -161,7 +161,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="6" />
-					<instance_reference name="type" value="ebps\races\soviet\soldiers\conscript_soldier\conscript_soldier" />
+					<instance_reference name="type" value="ebps\races\soviet\soldiers\conscript_soldier\conscript_soldier" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />

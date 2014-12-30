@@ -35,7 +35,7 @@ BtB.SetupAIPlayer = function(p)
 end
 
 BtB.RetreatTactic = function(squad)
-	local result = -0.4
+	local result = -0.8
 	
 	local pos = Squad_GetPosition(squad)
 	local p = Squad_GetPlayerOwner(squad)
@@ -124,7 +124,7 @@ BtB.RetreatTactic = function(squad)
 	end
 	
 	if closestEnemyDistaceSq and closestEnemyDistaceSq < 400 then
-		result = result + (420-closestEnemyDistaceSq)/100
+		result = result + (420-closestEnemyDistaceSq)/130
 	end
 	
 	SGroup_Destroy(squadsNearSG_enemy)
@@ -189,12 +189,12 @@ function BtB_Init()
 		local p = World_GetPlayerAt(i)
 		
 		-- TODO: Save modifiers and reset on init
-		Modify_PlayerResourceRate(p, RT_Manpower, 25/60/8, MUT_Addition)
-		Modify_PlayerResourceRate(p, RT_Fuel, 1.5/60/8, MUT_Addition)
+		Modify_PlayerResourceRate(p, RT_Manpower, 32/60/8, MUT_Addition)
+		Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Action, 0.65, MUT_Multiplication)
 		Modify_PlayerSightRadius(p, 1.1)
 		Modify_Upkeep(p, 1.35)
-		Modify_PlayerExperienceReceived(p, 0.75)
+		Modify_PlayerExperienceReceived(p, 0.8)
 		
 		Player_SetMaxPopulation(p, CT_Personnel, 120)
 		Player_SetMaxCapPopulation(p, CT_Personnel, 120)
