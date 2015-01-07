@@ -1,10 +1,34 @@
 
 =================================================================
+## v0.4
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Due to the reduction of long range heavy tank damage their cost (and therefore their upkeep) have been reduced:
+ * Soviet ISU152 cost from 720mp/260f to 600mp/230f, population cost from 25 to 23
+ * Ostheer Elefant cost from 720/245f to 650mp/245f, population cost from 25 to 23
+ * OKW Jagdtiger cost from 800mp/290f to 650mp/270f, population cost from 26 to 23
+- Due to high upkeep and initial cost heavy tank costs and upkeep have been slightly reduced:
+ * Soviet IS-2 cost from 640mp/230f to 600mp/230f, population cost from 24 to 22
+ * Ostheer Tiger cost from 640mp/230f to 600mp/230f, population cost from 24 to 22
+ * OKW King tiger cost from 720mp/260f to 700mp/250f, population cost from 26 to 23
+ * OKW Sturmtiger cost from 560mp/160f to 520mp/150f, population cost from 18 to 16
+
+OKW:
+- Sandbag health increased from 110 to 250
+
+=================================================================
 ## v0.3
 =================================================================
 
 -----------------------------------------------------------------
 ## Attributes:
+
+General:
+- Antiblob no longer affects team weapons, vehicles and snipers
 
 Soviets:
 - Sniper team aim time increased from 1.125-1.75 to 1.6-1.9. This leaves the overall effectiveness of the unit only slightly decreased, but reduces its ability to kite away from chasing units while picking them off
@@ -17,6 +41,7 @@ Ostheer:
 - Reduced base damage of Grenadier LMG42 from 6 to 5
 - Increased MG42 base damage from 7 to 8
 - Elefant main weapon base damage reduced from 320 to 240 (same as the king tiger, jackson)
+- Grenadier rifle grenade aoe profile redone (mid distance 1.6 -> 1.3, far distance 3.3 -> 3.8). Rifle grenades have had a high potential of instantly wiping team weapons from pretty safe distance. This change should make them slightly more reliable to do a lot of damage but not wipe as many entities in a squad
 
 USF:
 - 50cal machine gun base damage increased from 6 to 8
@@ -29,6 +54,8 @@ USF:
 - Pack howitzer entity target priority now set to -100, which will make other units target the crew before the howitzer itself. This is the default behavior for team weapons like mortars, OKW leIG 18 infantry support gun, AT weapons and other team weapons. The change should increase howitzer's survivability lategame
 
 OKW:
+- Volksgrenadier accuracy on medium and far range increased (far 0.35 -> 0.4, mid 0.56 -> 0.59)
+- Assault Pioneer entity cost reduced from 80mp to 75mp (squad 320mp -> 300mp)
 - King tiger aoe profile redone to decrease squad wipe potential and increase reliability:
  * Medium range damage 0.35 -> 0.25
  * Far range distance 0.35 -> 0.45

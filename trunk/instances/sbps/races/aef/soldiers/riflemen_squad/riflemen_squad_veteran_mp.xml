@@ -955,7 +955,7 @@
 							<int name="ui_position" value="23" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\wg_sandbag_fence_mp" />
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\wg_sandbag_fence_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="0" />
 						</group>
 						<group name="construction_item">
