@@ -20,9 +20,34 @@
 							<list name="target_infos">
 								<template_reference name="info" value="type_ability_target_type\allied">
 								</template_reference>
+								<template_reference name="info" value="type_ability_target_type\has_unit_type">
+									<enum name="unit_type" value="infantry" />
+								</template_reference>
 								<template_reference name="info" value="type_ability_target_type\not">
 									<group name="target_info">
 										<template_reference name="target_info" value="type_ability_target_type\is_self">
+										</template_reference>
+									</group>
+								</template_reference>
+								<template_reference name="info" value="type_ability_target_type\not">
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\at_least_one_entity_has">
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
+													<enum name="unit_type" value="team_weapon" />
+												</template_reference>
+											</group>
+										</template_reference>
+									</group>
+								</template_reference>
+								<template_reference name="info" value="type_ability_target_type\not">
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\at_least_one_entity_has">
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
+													<enum name="unit_type" value="snipers" />
+												</template_reference>
+											</group>
 										</template_reference>
 									</group>
 								</template_reference>
