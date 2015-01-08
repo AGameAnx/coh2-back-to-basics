@@ -9,13 +9,13 @@
 			<group name="damage">
 				<float name="far" value="0.05" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.35" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="3.8" />
+				<float name="radius" value="3.5" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
@@ -42,9 +42,9 @@
 				<float name="mid" value="0.15" />
 			</group>
 			<group name="distance">
-				<float name="far" value="3.8" />
-				<float name="near" value="0.7" />
-				<float name="mid" value="1.8" />
+				<float name="far" value="3.5" />
+				<float name="near" value="1.4" />
+				<float name="mid" value="2.1" />
 			</group>
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="3.04" />
@@ -67,7 +67,8 @@
 				<float name="min" value="2.15" />
 				<float name="max" value="2.15" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
 				<float name="near" value="1" />
@@ -92,7 +93,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="0" />
@@ -153,15 +155,31 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="40" />
+			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\trigger_critical_action" name="action">
-					<float name="remove_at_health" value="1" />
-					<uniqueid name="id" value="66208" />
-					<instance_reference name="critical" value="critical\soldier_killed_death_intensity_100" />
+				<template_reference name="action" value="action\random_action">
+					<bool name="instant" value="False" />
+					<list name="random_actions">
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\trigger_critical_action">
+									<float name="remove_at_health" value="1" />
+									<uniqueid name="id" value="1073742379" />
+									<instance_reference name="critical" value="critical\soldier_killed_death_intensity_60" />
+								</template_reference>
+							</list>
+							<int name="weight" value="1" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+							</list>
+							<int name="weight" value="3" />
+						</group>
+					</list>
+					<uniqueid name="id" value="1073742378" />
 				</template_reference>
 			</list>
-			<float name="max" value="40" />
+			<float name="max" value="80" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -270,7 +288,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<group name="offhand">
 			<float name="offhand_end_time" value="0" />

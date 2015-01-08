@@ -163,7 +163,7 @@
 			</group>
 		</group>
 		<group name="accuracy">
-			<float name="far" value="0.24" />
+			<float name="far" value="0.2" />
 			<float name="near" value="1" />
 			<float name="mid" value="0.54" />
 		</group>

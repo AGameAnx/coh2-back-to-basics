@@ -393,14 +393,17 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_modifier_ext">
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
-			<list name="requirement_table" />
+			<list name="requirement_table">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
@@ -541,9 +544,11 @@
 					</group>
 				</group>
 				<float name="suppressed_recover_threshold" value="0.05" />
-				<list name="suppressed_activate_actions" />
+				<list name="suppressed_activate_actions">
+				</list>
 				<float name="suppressed_activate_threshold" value="0.15" />
-				<list name="pin_down_activate_actions" />
+				<list name="pin_down_activate_actions">
+				</list>
 				<float name="noncombat_recover_multiplier" value="1" />
 				<bool name="can_be_suppressed" value="False" />
 				<float name="recover_rate" value="0.002" />
@@ -556,7 +561,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_mp" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\west_german\timed_ability\commander_ability\vehicle_emergency_repair_ability_mp" />
 			</list>
 		</template_reference>
@@ -588,7 +593,7 @@
 												<string name="modifier_id" value="" />
 												<float name="value" value="0.9" />
 												<bool name="exclusive" value="False" />
-												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 											</template_reference>
 										</list>
 										<bool name="permanent" value="False" />
@@ -611,10 +616,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="1780" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
@@ -639,7 +646,7 @@
 												<string name="modifier_id" value="" />
 												<float name="value" value="0.7" />
 												<bool name="exclusive" value="False" />
-												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 											</template_reference>
 										</list>
 										<bool name="permanent" value="False" />
@@ -662,10 +669,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="3560" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
@@ -690,7 +699,7 @@
 												<string name="modifier_id" value="" />
 												<float name="value" value="1.33" />
 												<bool name="exclusive" value="False" />
-												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 											</template_reference>
 										</list>
 										<bool name="permanent" value="False" />
@@ -713,10 +722,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="7120" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 						</list>
 						<float name="max_persistent_squads" value="0" />
@@ -751,7 +762,7 @@
 												<string name="modifier_id" value="" />
 												<float name="value" value="0.9" />
 												<bool name="exclusive" value="False" />
-												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 											</template_reference>
 										</list>
 										<bool name="permanent" value="False" />
@@ -774,10 +785,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="1780" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
@@ -802,7 +815,7 @@
 												<string name="modifier_id" value="" />
 												<float name="value" value="0.7" />
 												<bool name="exclusive" value="False" />
-												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 											</template_reference>
 										</list>
 										<bool name="permanent" value="False" />
@@ -825,10 +838,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="3560" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
@@ -853,7 +868,7 @@
 												<string name="modifier_id" value="" />
 												<float name="value" value="1.33" />
 												<bool name="exclusive" value="False" />
-												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_napalm_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 											</template_reference>
 										</list>
 										<bool name="permanent" value="False" />
@@ -876,10 +891,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="7120" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
@@ -902,10 +919,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="8900" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
@@ -960,10 +979,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="11837" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 						</list>
 						<float name="max_persistent_squads" value="0" />
@@ -976,7 +997,8 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
 			<bool name="withdraw_only" value="True" />
-			<list name="modifiers" />
+			<list name="modifiers">
+			</list>
 			<group name="retreat_building_types">
 				<enum name="unit_type03" value="" />
 				<enum name="unit_type02" value="alternate_retreat_point" />
@@ -984,7 +1006,8 @@
 				<enum name="unit_type00" value="hq" />
 				<enum name="unit_type04" value="" />
 			</group>
-			<list name="actions" />
+			<list name="actions">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">
