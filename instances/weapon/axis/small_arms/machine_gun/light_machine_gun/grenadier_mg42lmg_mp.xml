@@ -393,7 +393,7 @@
 		<group name="accuracy">
 			<float name="near" value="0.68" />
 			<float name="mid" value="0.35" />
-			<float name="far" value="0.17" />
+			<float name="far" value="0.13" />
 		</group>
 		<group name="scatter">
 			<float name="distance_scatter_obj_hit_min" value="7" />

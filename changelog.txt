@@ -1,5 +1,78 @@
 
 =================================================================
+## v0.5
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviets:
+- T34/85 main weapon far penetration reduced 120 -> 100
+- SU85 far penetration reduced 180 -> 160
+- IS-2 far penetration reduced 190 -> 160
+- IS-2 distance scatter increased 5.7 -> 6
+- ZiS3 76mm at gun far penetration reduced 180 -> 130
+
+USF:
+- Canister shot reworked:
+ * Critical action no longer happens 100% of the time on hit, only 25% of the time
+ * Critical will no longer cause infantry body parts to fly up in the air
+ * Base damage increased from 40 -> 80
+ * Mid damage 0.15 -> 0.35
+ * Aoe radius reduced from 3.8 -> 3.5
+ * Aoe max range 3.8 -> 3.5
+ * Aoe medium range 1.8 -> 2.1
+ * Aoe near (lethal) range 0.7 -> 1.4
+- M10 Wolverine reworked:
+ * Base damage increased 140 -> 200
+ * Health increased 400 -> 520
+- M36 Jackson reworked:
+ * Health increased 480 -> 550
+ * Cost reduced 350mp/135f -> 300mp/100f
+ * Max range 66 -> 55
+ * Far range 66 -> 55
+- M8A1 HMC Scott aoe profile reworked:
+ * Near range 0.7 -> 1
+ * Mid range 1.8 -> 2
+- Sherman HE shell distance scatter reduced 6 -> 5.7. Previous change was too strong
+- M9 Bazooka reworked:
+ * Base damage 80 -> 120
+ * Far accuracy 0.033 -> 0.025
+ * Mid accuracy 0.041 -> 0.038
+ * Near accuracy 0.093 -> 0.1
+- M1 81mm mortar for mortar halftrack reworked:
+ * Near aoe range 0.7 -> 1
+ * Mid aoe range 1.8 -> 2
+ * Distance scatter 12 -> 10
+ * Barrage distance scatter 14 -> 12
+
+Ostheer:
+- Grenadier kar98 medium range accuracy increased 0.54 -> 0.6
+- Grenadier LMG42 reworked:
+ * Base damage increased 5 -> 6
+ * Far accuracy reduced 0.17 -> 0.13
+- Assault grenadier mp40 medium range accuracy increased 0.28 -> 0.32
+- MG42 setup time reduced 3 -> 2.8
+- MG42 teardown time reduced 2.5 -> 2.3
+- Pak40 penetration reduced:
+ * Far 190 -> 120
+ * Mid 200 -> 180
+- Panther penetration reduced:
+ * Far 220 -> 120
+ * Mid 240 -> 200
+- Pak40 arc of fire reduced 60 -> 54
+
+OKW:
+- Jagdpanzer IV far penetration reduced 170 -> 140
+- Walking Stuka incendiary barrage cost increased 40mu -> 70mu
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Unit experience gain reduction changed from 20% to 15%
+
+=================================================================
 ## v0.4
 =================================================================
 
@@ -7,18 +80,47 @@
 ## Attributes:
 
 General:
+- Reworked the damage caused by plane crashes:
+ * Base damage reduced 750 -> 600
+ * Aoe medium range 5.625 -> 3
+ * Aoe short range 3.75 -> 1.5
+ * Far range damage 0.05 -> 0.01
 - Due to the reduction of long range heavy tank damage their cost (and therefore their upkeep) have been reduced:
- * Soviet ISU152 cost from 720mp/260f to 600mp/230f, population cost from 25 to 23
- * Ostheer Elefant cost from 720/245f to 650mp/245f, population cost from 25 to 23
- * OKW Jagdtiger cost from 800mp/290f to 650mp/270f, population cost from 26 to 23
-- Due to high upkeep and initial cost heavy tank costs and upkeep have been slightly reduced:
- * Soviet IS-2 cost from 640mp/230f to 600mp/230f, population cost from 24 to 22
- * Ostheer Tiger cost from 640mp/230f to 600mp/230f, population cost from 24 to 22
- * OKW King tiger cost from 720mp/260f to 700mp/250f, population cost from 26 to 23
- * OKW Sturmtiger cost from 560mp/160f to 520mp/150f, population cost from 18 to 16
+ * Soviet ISU152 cost 720mp/260f -> 600mp/230f, pop 25 -> 23
+ * Ostheer Elefant cost 720/245f -> 650mp/245f, pop 25 -> 23
+ * OKW Jagdtiger cost from 800mp/290f -> 650mp/270f, pop 26 -> 23
+- Due to high upkeep and initial cost heavy tank costs (and therefore their upkeep) have been slightly reduced:
+ * Soviet IS-2 cost 640mp/230f -> 600mp/230f, pop 24 -> 22
+ * Ostheer Tiger cost 640mp/230f -> 600mp/230f, pop 24 -> 22
+ * OKW King tiger cost 720mp/260f -> 700mp/250f, pop 26 -> 23
+ * OKW Sturmtiger cost 560mp/160f -> 520mp/150f, pop 18 -> 16
+
+USF:
+- M15A5 AA halftrack accuracy slightly reduced:
+ * 50 cal far 0.18 - 0.15
+ * 50 cal mid 0.4 -> 0.38
+ * 30 cal far 0.24 -> 0.2
+ * 30 cal mid 0.54 -> 0.5
+- Sherman HE shell medium range aoe damage reduced 0.35 -> 0.3
+- Sherman HE shell distance scatter increased 5.5 to 6
+
+Ostheer:
+- Assault grenadier dispatch cost reduced from 280 to 240, squad entity cost adjusted accordingly
+- Ostruppen reserves callin cost reduced from 425 to 400
 
 OKW:
 - Sandbag health increased from 110 to 250
+- Jagdpanzer manpower cost reduced from 470 to 400
+- Walking stuka napalm barrage cost reduced from 100 to 40
+- Flak halftrack weapon range increased:
+ * max distance 50 -> 55
+ * far distance 50 -> 55
+ * mid distance 24 -> 28
+- Raketenwerfer aim times decreased:
+ * Ready aim time from 1-1.5 to 0.25-0.375 seconds
+ * Fire aim time from 1-1.25 to 0.125-0.25
+- Raketenwerfer reload time from 3-3.6 to 3.8-4.3
+
 
 =================================================================
 ## v0.3

@@ -395,43 +395,45 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
 				<template_reference name="required" value="requirements\required_all_in_list">
+					<enum name="reason" value="display" />
+					<locstring name="ui_name" value="0" />
 					<list name="requirements">
 						<template_reference name="requirement" value="requirements\required_player_upgrade">
-							<float name="max_completed" value="100" />
-							<instance_reference name="upgrade_name" value="upgrade\pm\aef_pm" />
-							<locstring name="ui_name" value="0" />
-							<float name="min_completed" value="1" />
 							<enum name="reason" value="display" />
+							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\pm\aef_pm" />
 						</template_reference>
 						<template_reference name="requirement" value="requirements\required_player_upgrade">
-							<float name="max_completed" value="100" />
-							<instance_reference name="upgrade_name" value="upgrade\pm\american\unit_unlocks\pm_m8_greyhound_unlock" />
-							<locstring name="ui_name" value="0" />
-							<float name="min_completed" value="1" />
 							<enum name="reason" value="display" />
+							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\pm\american\unit_unlocks\pm_m8_greyhound_unlock" />
 						</template_reference>
 					</list>
-					<locstring name="ui_name" value="0" />
-					<enum name="reason" value="display" />
 				</template_reference>
 				<template_reference name="required" value="requirements\required_player_upgrade">
-					<float name="max_completed" value="100" />
-					<instance_reference name="upgrade_name" value="upgrade\aef\research\captain_dispatched_upgrade_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
-					<locstring name="ui_name" value="11062977" />
-					<float name="min_completed" value="1" />
 					<enum name="reason" value="display" />
+					<locstring name="ui_name" value="11062977" />
 					<bool name="is_present" value="True" />
+					<float name="max_completed" value="100" />
+					<float name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\aef\research\captain_dispatched_upgrade_mp" />
 				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
@@ -613,9 +615,11 @@
 					</group>
 				</group>
 				<float name="suppressed_recover_threshold" value="0.05" />
-				<list name="suppressed_activate_actions" />
+				<list name="suppressed_activate_actions">
+				</list>
 				<float name="suppressed_activate_threshold" value="0.15" />
-				<list name="pin_down_activate_actions" />
+				<list name="pin_down_activate_actions">
+				</list>
 				<float name="noncombat_recover_multiplier" value="1" />
 				<bool name="can_be_suppressed" value="False" />
 				<float name="recover_rate" value="0.002" />
@@ -671,10 +675,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="790" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
@@ -722,10 +728,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="1580" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
@@ -789,10 +797,12 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<float name="experience_value" value="3160" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 							</group>
 						</list>
 						<float name="max_persistent_squads" value="0" />
@@ -805,7 +815,8 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
 			<bool name="withdraw_only" value="True" />
-			<list name="modifiers" />
+			<list name="modifiers">
+			</list>
 			<group name="retreat_building_types">
 				<enum name="unit_type03" value="" />
 				<enum name="unit_type02" value="alternate_retreat_point" />
@@ -813,7 +824,8 @@
 				<enum name="unit_type00" value="hq" />
 				<enum name="unit_type04" value="" />
 			</group>
-			<list name="actions" />
+			<list name="actions">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">

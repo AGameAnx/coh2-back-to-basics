@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<uniqueid name="pbgid" value="3178" />
 	<group name="weapon_bag">
 		<group name="suppression">
@@ -163,9 +163,9 @@
 			</group>
 		</group>
 		<group name="accuracy">
-			<float name="far" value="0.18" />
+			<float name="far" value="0.16" />
 			<float name="near" value="0.76" />
-			<float name="mid" value="0.4" />
+			<float name="mid" value="0.38" />
 		</group>
 		<group name="cover_table">
 			<group name="tp_garrison_cover">
@@ -283,7 +283,8 @@
 		<float name="fx_delay_in_building" value="0" />
 		<group name="fire">
 			<float name="wind_up" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 		</group>
 		<group name="offhand">
@@ -315,7 +316,8 @@
 			</group>
 		</group>
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="far" value="1" />
@@ -473,7 +475,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="12" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="12" />
 		</group>
 		<string name="fx_action_target_name" value="turret_hmg_target" />

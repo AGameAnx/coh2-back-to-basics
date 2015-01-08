@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<uniqueid name="pbgid" value="2853" />
 	<group name="weapon_bag">
 		<group name="damage_over_time">
@@ -9,8 +9,8 @@
 			<float name="post_firing_cooldown_interval" value="0" />
 			<float name="post_firing_aim_time" value="2" />
 			<group name="fire_aim_time">
-				<float name="min" value="1" />
-				<float name="max" value="1.25" />
+				<float name="min" value="0.125" />
+				<float name="max" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="far" value="1" />
@@ -18,8 +18,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="ready_aim_time">
-				<float name="min" value="1" />
-				<float name="max" value="1.5" />
+				<float name="min" value="0.25" />
+				<float name="max" value="0.375" />
 			</group>
 		</group>
 		<string name="name" value="8.8cm Raketenwerfer 43" />
@@ -29,10 +29,11 @@
 				<float name="max" value="0" />
 			</group>
 			<group name="duration">
-				<float name="min" value="3" />
-				<float name="max" value="3.6" />
+				<float name="min" value="3.8" />
+				<float name="max" value="4.3" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="far" value="1" />
@@ -58,13 +59,13 @@
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="True" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_all_in_list" name="required">
+						<template_reference name="required" value="requirements\required_all_in_list">
 							<list name="requirements">
-								<template_reference value="requirements\required_unit_type" name="requirement">
+								<template_reference name="requirement" value="requirements\required_unit_type">
 									<bool name="owned_by_player_only" value="True" />
 									<enum name="unit_type" value="wg_jagdtiger" />
 									<enum name="reason" value="usage" />
@@ -73,7 +74,7 @@
 									<template_reference name="qualify_option" value="options\none">
 									</template_reference>
 								</template_reference>
-								<template_reference value="requirements\required_critical" name="requirement">
+								<template_reference name="requirement" value="requirements\required_critical">
 									<locstring name="ui_name" value="0" />
 									<bool name="is_present" value="False" />
 									<enum name="reason" value="usage" />
@@ -89,14 +90,14 @@
 						<int name="phrase_order" value="0" />
 					</template_reference>
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
+						<template_reference name="action" value="action\random_action">
 							<uniqueid name="id" value="66290" />
 							<bool name="instant" value="False" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="3" />
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<uniqueid name="id" value="66291" />
 											<instance_reference name="critical" value="critical\vehicle_crew_dazed_jagdtiger" />
@@ -106,7 +107,7 @@
 								<group name="action_choice">
 									<int name="weight" value="3" />
 									<list name="actions">
-										<template_reference value="action\no_action" name="action">
+										<template_reference name="action" value="action\no_action">
 											<uniqueid name="id" value="391909" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
@@ -196,7 +197,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="160" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="160" />
 		</group>
 		<group name="scatter">
@@ -391,7 +393,8 @@
 			<string name="target_range_name" value="" />
 		</group>
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0.5" />
 			<float name="wind_up" value="0" />
 		</group>
