@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBurnInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BurnInfo>
+		<FileName>C:\Games\Steam\SteamApps\common\Company of Heroes 2 Tools\mods\btb\airetreat_wincond Intermediate Cache\Intermediate Files\data\game\winconditions\airetreat_wincond.win</FileName>
+		<FileHash>26d0b69014953eae07275fa60a9aae30</FileHash>
+	</BurnInfo>
+	<BurnInfo>
+		<FileName>C:\Games\Steam\SteamApps\common\Company of Heroes 2 Tools\mods\btb\airetreat_wincond Intermediate Cache\Intermediate Files\data\scar\winconditions\airetreat.scar</FileName>
+		<FileHash>14493f37291bee38988d35f94e161c9f</FileHash>
+	</BurnInfo>
+	<BurnInfo>
+		<FileName>C:\Games\Steam\SteamApps\common\Company of Heroes 2 Tools\mods\btb\airetreat_wincond Intermediate Cache\Intermediate Files\info\3b9b9f0927024d7a84899529bb977d56.info</FileName>
+		<FileHash>b8bf85d86202b371473675ea0a4f7398</FileHash>
+	</BurnInfo>
+</ArrayOfBurnInfo>

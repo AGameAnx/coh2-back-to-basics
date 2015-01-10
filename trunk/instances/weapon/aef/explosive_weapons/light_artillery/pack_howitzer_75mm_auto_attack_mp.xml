@@ -27,8 +27,8 @@
 			<list name="on_reload_actions">
 			</list>
 			<group name="duration">
-				<float name="min" value="6.6" />
-				<float name="max" value="7.2" />
+				<float name="min" value="4.1" />
+				<float name="max" value="4.9" />
 			</group>
 			<group name="frequency">
 				<float name="min" value="0" />
@@ -374,7 +374,7 @@
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1" />
+				<float name="near" value="1.25" />
 				<float name="far" value="5.6" />
 				<float name="mid" value="2.8" />
 			</group>

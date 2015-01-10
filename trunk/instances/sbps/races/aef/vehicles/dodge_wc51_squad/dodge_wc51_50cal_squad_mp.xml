@@ -1,4 +1,5 @@
 <instance description="Dodge WC51 3/4 ton truck" template="sbps">
+	<uniqueid name="pbgid" value="2634" />
 	<list name="extensions">
 		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext">
 		</template_reference>
@@ -6,281 +7,281 @@
 			<list name="race_list">
 				<group name="race_data">
 					<group name="info">
-						<bool name="use_random_entity_speaker" value="False" />
-						<string name="hotkey_name" value="R" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
-						<bool name="decoratable" value="True" />
-						<locstring name="help_text" value="11051527" />
-						<group name="speech_code_2">
-							<string name="code_2" value="" />
-							<string name="code_1" value="gv" />
-							<string name="code_3" value="" />
-						</group>
-						<instance_reference name="modal_ability" value="" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
-						<locstring name="screen_name_short" value="0" />
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="brief_text" value="11051539" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051098" />
+						<locstring name="brief_text" value="11051539" />
+						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<float name="minimap_texture_scale" value="0.65" />
 						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="selection_group" value="WC51 Military Truck" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
-						<locstring name="extra_text" value="11051515" />
-						<bool name="minimap_team_only" value="False" />
-						<bool name="show_in_build_log" value="True" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<enum name="ui_style" value="default" />
 						<group name="speaker_specific_alt">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="" />
 						</group>
-						<group name="speaker_generic">
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="screen_name" value="11051098" />
+						<group name="speech_code_2">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_2" value="trk" />
-							<string name="code_1" value="dod" />
-							<string name="code_3" value="" />
+							<string name="code_1" value="gv" />
 						</group>
 						<bool name="has_speech_code" value="True" />
+						<group name="speech_code_3">
+							<string name="code_2" value="trk" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="dod" />
+						</group>
+						<bool name="minimap_team_only" value="False" />
+						<enum name="ui_style" value="default" />
+						<bool name="show_in_build_log" value="True" />
+						<locstring name="screen_name_short" value="0" />
+						<int name="ui_priority" value="28" />
+						<string name="hotkey_name" value="R" />
+						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
+						<instance_reference name="modal_ability" value="" />
 						<group name="speaker_specific">
 							<string name="code_2" value="" />
-							<string name="code_1" value="lv" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="lv" />
 						</group>
-						<float name="minimap_texture_scale" value="0.65" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<string name="selection_group" value="WC51 Military Truck" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<bool name="decoratable" value="True" />
+						<locstring name="extra_text" value="11051515" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="help_text" value="11051527" />
+						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
+						<bool name="allow_spawner_production" value="False" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\aef" />
 				</group>
 				<group name="race_data">
 					<group name="info">
-						<bool name="use_random_entity_speaker" value="False" />
-						<string name="hotkey_name" value="R" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
-						<bool name="decoratable" value="True" />
-						<locstring name="help_text" value="11051527" />
-						<group name="speech_code_2">
-							<string name="code_2" value="" />
-							<string name="code_1" value="gv" />
-							<string name="code_3" value="" />
-						</group>
-						<instance_reference name="modal_ability" value="" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
-						<locstring name="screen_name_short" value="0" />
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="brief_text" value="11051539" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051098" />
+						<locstring name="brief_text" value="11051539" />
+						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<float name="minimap_texture_scale" value="0.65" />
 						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="selection_group" value="Dodge WC51" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
-						<locstring name="extra_text" value="11051515" />
-						<bool name="minimap_team_only" value="False" />
-						<bool name="show_in_build_log" value="True" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<enum name="ui_style" value="default" />
 						<group name="speaker_specific_alt">
 							<string name="code_2" value="" />
+							<string name="code_3" value="" />
 							<string name="code_1" value="" />
-							<string name="code_3" value="" />
 						</group>
-						<group name="speaker_generic">
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="screen_name" value="11051098" />
+						<group name="speech_code_2">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_2" value="" />
-							<string name="code_1" value="gvh" />
-							<string name="code_3" value="" />
+							<string name="code_1" value="gv" />
 						</group>
 						<bool name="has_speech_code" value="True" />
+						<group name="speech_code_3">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="gvh" />
+						</group>
+						<bool name="minimap_team_only" value="False" />
+						<enum name="ui_style" value="default" />
+						<bool name="show_in_build_log" value="True" />
+						<locstring name="screen_name_short" value="0" />
+						<int name="ui_priority" value="28" />
+						<string name="hotkey_name" value="R" />
+						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
+						<instance_reference name="modal_ability" value="" />
 						<group name="speaker_specific">
 							<string name="code_2" value="" />
-							<string name="code_1" value="ve" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="ve" />
 						</group>
-						<float name="minimap_texture_scale" value="0.65" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<string name="selection_group" value="Dodge WC51" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<bool name="decoratable" value="True" />
+						<locstring name="extra_text" value="11051515" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="help_text" value="11051527" />
+						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
+						<bool name="allow_spawner_production" value="False" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\german" />
 				</group>
 				<group name="race_data">
 					<group name="info">
-						<bool name="use_random_entity_speaker" value="False" />
-						<string name="hotkey_name" value="R" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
-						<bool name="decoratable" value="True" />
-						<locstring name="help_text" value="11051527" />
-						<group name="speech_code_2">
-							<string name="code_2" value="" />
-							<string name="code_1" value="gv" />
-							<string name="code_3" value="" />
-						</group>
-						<instance_reference name="modal_ability" value="" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
-						<locstring name="screen_name_short" value="0" />
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="brief_text" value="11051539" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051098" />
+						<locstring name="brief_text" value="11051539" />
+						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<float name="minimap_texture_scale" value="0.65" />
 						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="selection_group" value="Dodge WC51" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
-						<locstring name="extra_text" value="11051515" />
-						<bool name="minimap_team_only" value="False" />
-						<bool name="show_in_build_log" value="True" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<enum name="ui_style" value="default" />
 						<group name="speaker_specific_alt">
 							<string name="code_2" value="" />
+							<string name="code_3" value="" />
 							<string name="code_1" value="" />
-							<string name="code_3" value="" />
 						</group>
-						<group name="speaker_generic">
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="screen_name" value="11051098" />
+						<group name="speech_code_2">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_2" value="" />
-							<string name="code_1" value="gvh" />
-							<string name="code_3" value="" />
+							<string name="code_1" value="gv" />
 						</group>
 						<bool name="has_speech_code" value="True" />
+						<group name="speech_code_3">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="gvh" />
+						</group>
+						<bool name="minimap_team_only" value="False" />
+						<enum name="ui_style" value="default" />
+						<bool name="show_in_build_log" value="True" />
+						<locstring name="screen_name_short" value="0" />
+						<int name="ui_priority" value="28" />
+						<string name="hotkey_name" value="R" />
+						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
+						<instance_reference name="modal_ability" value="" />
 						<group name="speaker_specific">
 							<string name="code_2" value="" />
-							<string name="code_1" value="ve" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="ve" />
 						</group>
-						<float name="minimap_texture_scale" value="0.65" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<string name="selection_group" value="Dodge WC51" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<bool name="decoratable" value="True" />
+						<locstring name="extra_text" value="11051515" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="help_text" value="11051527" />
+						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
+						<bool name="allow_spawner_production" value="False" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\soviet" />
 				</group>
 				<group name="race_data">
 					<group name="info">
-						<bool name="use_random_entity_speaker" value="False" />
-						<string name="hotkey_name" value="R" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
-						<bool name="decoratable" value="True" />
-						<locstring name="help_text" value="11051527" />
-						<group name="speech_code_2">
-							<string name="code_2" value="" />
-							<string name="code_1" value="gv" />
-							<string name="code_3" value="" />
-						</group>
-						<instance_reference name="modal_ability" value="" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
-						<locstring name="screen_name_short" value="0" />
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="brief_text" value="11051539" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051098" />
+						<locstring name="brief_text" value="11051539" />
+						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<float name="minimap_texture_scale" value="0.65" />
 						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="selection_group" value="Dodge WC51" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
-						<locstring name="extra_text" value="11051515" />
-						<bool name="minimap_team_only" value="False" />
-						<bool name="show_in_build_log" value="True" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<enum name="ui_style" value="default" />
 						<group name="speaker_specific_alt">
 							<string name="code_2" value="" />
+							<string name="code_3" value="" />
 							<string name="code_1" value="" />
-							<string name="code_3" value="" />
 						</group>
-						<group name="speaker_generic">
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="screen_name" value="11051098" />
+						<group name="speech_code_2">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_2" value="" />
-							<string name="code_1" value="gvh" />
-							<string name="code_3" value="" />
+							<string name="code_1" value="gv" />
 						</group>
 						<bool name="has_speech_code" value="True" />
+						<group name="speech_code_3">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="gvh" />
+						</group>
+						<bool name="minimap_team_only" value="False" />
+						<enum name="ui_style" value="default" />
+						<bool name="show_in_build_log" value="True" />
+						<locstring name="screen_name_short" value="0" />
+						<int name="ui_priority" value="28" />
+						<string name="hotkey_name" value="R" />
+						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
+						<instance_reference name="modal_ability" value="" />
 						<group name="speaker_specific">
 							<string name="code_2" value="" />
-							<string name="code_1" value="lv" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="lv" />
 						</group>
-						<float name="minimap_texture_scale" value="0.65" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<string name="selection_group" value="Dodge WC51" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<bool name="decoratable" value="True" />
+						<locstring name="extra_text" value="11051515" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="help_text" value="11051527" />
+						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
+						<bool name="allow_spawner_production" value="False" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\west_german" />
 				</group>
 				<group name="race_data">
 					<group name="info">
-						<bool name="use_random_entity_speaker" value="False" />
-						<string name="hotkey_name" value="R" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
-						<bool name="decoratable" value="True" />
-						<locstring name="help_text" value="11051527" />
-						<group name="speech_code_2">
-							<string name="code_2" value="" />
-							<string name="code_1" value="gv" />
-							<string name="code_3" value="" />
-						</group>
-						<instance_reference name="modal_ability" value="" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
-						<locstring name="screen_name_short" value="0" />
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="brief_text" value="11051539" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051098" />
+						<locstring name="brief_text" value="11051539" />
+						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<float name="minimap_texture_scale" value="0.65" />
 						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="selection_group" value="WC51 Military Truck" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
-						<locstring name="extra_text" value="11051515" />
-						<bool name="minimap_team_only" value="False" />
-						<bool name="show_in_build_log" value="True" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<enum name="ui_style" value="default" />
 						<group name="speaker_specific_alt">
 							<string name="code_2" value="" />
+							<string name="code_3" value="" />
 							<string name="code_1" value="" />
-							<string name="code_3" value="" />
 						</group>
-						<group name="speaker_generic">
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="screen_name" value="11051098" />
+						<group name="speech_code_2">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_2" value="" />
-							<string name="code_1" value="dod" />
-							<string name="code_3" value="" />
+							<string name="code_1" value="gv" />
 						</group>
 						<bool name="has_speech_code" value="True" />
+						<group name="speech_code_3">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="dod" />
+						</group>
+						<bool name="minimap_team_only" value="False" />
+						<enum name="ui_style" value="default" />
+						<bool name="show_in_build_log" value="True" />
+						<locstring name="screen_name_short" value="0" />
+						<int name="ui_priority" value="28" />
+						<string name="hotkey_name" value="R" />
+						<string name="portrait_name_summer" value="Icons_portraits_vehicle_aef_wc51_50cal_s_portrait" />
+						<instance_reference name="modal_ability" value="" />
 						<group name="speaker_specific">
 							<string name="code_2" value="" />
-							<string name="code_1" value="lv" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="lv" />
 						</group>
-						<float name="minimap_texture_scale" value="0.65" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
+						<string name="selection_group" value="WC51 Military Truck" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<bool name="decoratable" value="True" />
+						<locstring name="extra_text" value="11051515" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="help_text" value="11051527" />
+						<string name="portrait_name_winter" value="Icons_portraits_vehicle_aef_wc51_50cal_w_portrait" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_50cal_symbol" />
+						<bool name="allow_spawner_production" value="False" />
 					</group>
 					<instance_reference name="ext_key" value="" />
 				</group>
@@ -292,94 +293,94 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_formation_ext">
 			<group name="cover_formation_table">
-				<instance_reference name="tp_negative" value="squad_formations\wedge" />
-				<instance_reference name="tp_garrison_cover" value="squad_formations\default" />
 				<instance_reference name="tp_heavy" value="squad_formations\wedge" />
-				<instance_reference name="tp_defcover_narrow" value="squad_formations\line" />
-				<instance_reference name="tp_open" value="squad_formations\line" />
 				<instance_reference name="tp_z_snow" value="squad_formations\default" />
-				<instance_reference name="tp_smoke" value="squad_formations\wedge" />
-				<instance_reference name="tp_z_bunker" value="squad_formations\wedge" />
-				<instance_reference name="tp_zz_mud" value="squad_formations\default" />
-				<instance_reference name="tp_z_emplacement" value="squad_formations\default" />
-				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
-				<instance_reference name="tp_garrison_halftrack" value="squad_formations\default" />
-				<instance_reference name="tp_water" value="squad_formations\wedge" />
-				<instance_reference name="tp_light" value="squad_formations\wedge" />
-				<instance_reference name="tp_defcover" value="squad_formations\wedge" />
 				<instance_reference name="tp_z_ice" value="squad_formations\default" />
-				<instance_reference name="tp_trench" value="squad_formations\default" />
+				<instance_reference name="tp_light" value="squad_formations\wedge" />
+				<instance_reference name="tp_open" value="squad_formations\line" />
+				<instance_reference name="tp_defcover_narrow" value="squad_formations\line" />
+				<instance_reference name="tp_z_emplacement" value="squad_formations\default" />
+				<instance_reference name="tp_garrison_cover" value="squad_formations\default" />
+				<instance_reference name="tp_negative" value="squad_formations\wedge" />
 				<instance_reference name="tp_zz_deep_snow" value="squad_formations\default" />
+				<instance_reference name="tp_defcover" value="squad_formations\wedge" />
+				<instance_reference name="tp_garrison_halftrack" value="squad_formations\default" />
+				<instance_reference name="tp_trench" value="squad_formations\default" />
+				<instance_reference name="tp_water" value="squad_formations\wedge" />
+				<instance_reference name="tp_zz_mud" value="squad_formations\default" />
+				<instance_reference name="tp_smoke" value="squad_formations\wedge" />
+				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
+				<instance_reference name="tp_z_bunker" value="squad_formations\wedge" />
 			</group>
-			<bool name="support_weapons_to_flanks" value="False" />
 			<group name="squad_distribution_table">
-				<group name="09_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="3" />
-					<float name="units_in_scout" value="2" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
-				<group name="07_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="1" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
-				<group name="08_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="2" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
 				<group name="03_soldiers">
-					<float name="units_in_left_flank" value="0" />
-					<float name="units_in_core" value="3" />
-					<float name="units_in_scout" value="0" />
 					<float name="units_in_right_flank" value="0" />
-				</group>
-				<group name="06_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="2" />
 					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
-				<group name="05_soldiers">
-					<float name="units_in_left_flank" value="1" />
 					<float name="units_in_core" value="3" />
-					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_left_flank" value="0" />
 				</group>
 				<group name="04_soldiers">
-					<float name="units_in_left_flank" value="1" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="0" />
 					<float name="units_in_right_flank" value="1" />
-				</group>
-				<group name="01_soldiers">
-					<float name="units_in_left_flank" value="0" />
-					<float name="units_in_core" value="1" />
 					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_core" value="2" />
+					<float name="units_in_left_flank" value="1" />
 				</group>
-				<group name="10_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="4" />
-					<float name="units_in_scout" value="2" />
+				<group name="05_soldiers">
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_core" value="3" />
+					<float name="units_in_left_flank" value="1" />
+				</group>
+				<group name="06_soldiers">
 					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_core" value="2" />
+					<float name="units_in_left_flank" value="2" />
+				</group>
+				<group name="08_soldiers">
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+					<float name="units_in_core" value="2" />
+					<float name="units_in_left_flank" value="2" />
+				</group>
+				<group name="07_soldiers">
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="1" />
+					<float name="units_in_core" value="2" />
+					<float name="units_in_left_flank" value="2" />
+				</group>
+				<group name="09_soldiers">
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+					<float name="units_in_core" value="3" />
+					<float name="units_in_left_flank" value="2" />
 				</group>
 				<group name="02_soldiers">
-					<float name="units_in_left_flank" value="0" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="0" />
 					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_core" value="2" />
+					<float name="units_in_left_flank" value="0" />
+				</group>
+				<group name="01_soldiers">
+					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_core" value="1" />
+					<float name="units_in_left_flank" value="0" />
+				</group>
+				<group name="10_soldiers">
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+					<float name="units_in_core" value="4" />
+					<float name="units_in_left_flank" value="2" />
 				</group>
 			</group>
-			<float name="move_dest_cover_search_radius" value="0" />
+			<bool name="support_weapons_to_flanks" value="False" />
 			<float name="combat_follower_cover_search_radius" value="0" />
+			<float name="move_dest_cover_search_radius" value="0" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_item_slot_ext">
-			<float name="num_slots" value="1" />
 			<bool name="can_pick_up" value="False" />
+			<float name="num_slots" value="1" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<float name="squad_female_chance" value="0" />
@@ -395,18 +396,18 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
 				<template_reference name="required" value="requirements\required_any_in_list">
+					<enum name="reason" value="display" />
 					<list name="requirements">
 						<template_reference name="requirement" value="requirements\required_player_upgrade">
 							<float name="max_completed" value="100" />
 							<instance_reference name="upgrade_name" value="upgrade\pm\american\unit_unlocks\pm_dodge50cal_unlock" />
-							<locstring name="ui_name" value="0" />
-							<float name="min_completed" value="1" />
 							<enum name="reason" value="display" />
 							<bool name="is_present" value="True" />
+							<locstring name="ui_name" value="0" />
+							<float name="min_completed" value="1" />
 						</template_reference>
 					</list>
 					<locstring name="ui_name" value="0" />
-					<enum name="reason" value="display" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -420,26 +421,38 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
 				<template_reference name="action" value="action\requirement_action">
+					<uniqueid name="id" value="691122165" />
 					<list name="action_table">
 						<template_reference name="action" value="action\apply_modifiers_action">
-							<uniqueid name="id" value="620380260" />
 							<list name="modifiers">
 								<template_reference name="modifier" value="modifiers\income_fuel_player_modifier">
 									<instance_reference name="tooltip" value="modifier_tooltip\income_fuel_player_modifier" />
+									<bool name="exclusive" value="False" />
 									<enum name="usage_type" value="addition" />
-									<enum name="application_type" value="apply_to_player" />
 									<string name="modifier_id" value="vehicle_upkeep" />
 									<float name="value" value="-0" />
-									<bool name="exclusive" value="False" />
 									<string name="target_type_name" value="" />
+									<enum name="application_type" value="apply_to_player" />
 								</template_reference>
 							</list>
-							<bool name="permanent" value="False" />
+							<uniqueid name="id" value="620380260" />
 							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
 						</template_reference>
 					</list>
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="check_self" value="False" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+					<bool name="kill_action_on_failed_requirements" value="True" />
 					<list name="requirement_table">
 						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
 							<list name="requirement_table">
 								<template_reference name="required" value="requirements\required_ownership">
 									<enum name="ownership_type" value="neutral" />
@@ -447,125 +460,113 @@
 									<enum name="reason" value="usage" />
 								</template_reference>
 							</list>
-							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 						</template_reference>
 					</list>
-					<bool name="fire_and_forget_non_global" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="True" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<locstring name="phrase" value="0" />
-						<int name="phrase_order" value="0" />
-					</template_reference>
-					<bool name="check_self" value="False" />
-					<uniqueid name="id" value="691122165" />
 				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
-			<float name="reveal_self_attacker_time" value="0" />
-			<float name="reaction_delay_seconds" value="8" />
-			<bool name="reveal_self_attacker_time_use" value="False" />
-			<float name="reaction_combat_delay_seconds" value="8" />
-			<template_reference name="can_recrew_abandoned_option" value="options\none">
-			</template_reference>
-			<string name="squad_ai_sniped_file" value="" />
-			<float name="heavy_weapon_setup_delay" value="0" />
-			<string name="squad_ai_pinned_file" value="empty-plan" />
-			<string name="squad_ai_reaction_file" value="empty-plan" />
-			<string name="squad_ai_file" value="empty-plan" />
-			<group name="pilfer">
-				<bool name="can_pilfer" value="False" />
-				<group name="weapon">
-					<enum name="type" value="default" />
-					<float name="length" value="0" />
-					<group name="heading">
-						<float name="x" value="0" />
-						<float name="y" value="0" />
-						<float name="z" value="1" />
-					</group>
-					<group name="origin">
-						<float name="x" value="0" />
-						<float name="y" value="0.5" />
-						<float name="z" value="0" />
-					</group>
-					<instance_reference name="weapon" value="" />
-				</group>
-				<instance_reference name="remove_weapon" value="" />
-			</group>
 			<string name="squad_ai_retaliation_file" value="empty-plan" />
 			<group name="suppression">
+				<list name="suppressed_activate_actions" />
 				<group name="cover_info">
-					<group name="tp_negative">
-						<float name="recover_multiplier" value="0.5" />
-					</group>
-					<group name="tp_garrison_cover">
-						<float name="recover_multiplier" value="1" />
-					</group>
 					<group name="tp_heavy">
 						<float name="recover_multiplier" value="5" />
 					</group>
-					<group name="tp_defcover_narrow">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_open">
-						<float name="recover_multiplier" value="0.75" />
-					</group>
 					<group name="tp_z_snow">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_smoke">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_z_bunker">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_zz_mud">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_z_emplacement">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_zz_team_weapon_heavy">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_garrison_halftrack">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_water">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_light">
-						<float name="recover_multiplier" value="2.5" />
-					</group>
-					<group name="tp_defcover">
 						<float name="recover_multiplier" value="1" />
 					</group>
 					<group name="tp_z_ice">
 						<float name="recover_multiplier" value="1" />
 					</group>
-					<group name="tp_trench">
+					<group name="tp_light">
+						<float name="recover_multiplier" value="2.5" />
+					</group>
+					<group name="tp_open">
+						<float name="recover_multiplier" value="0.75" />
+					</group>
+					<group name="tp_defcover_narrow">
 						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_z_emplacement">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_garrison_cover">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_negative">
+						<float name="recover_multiplier" value="0.5" />
 					</group>
 					<group name="tp_zz_deep_snow">
 						<float name="recover_multiplier" value="1" />
 					</group>
+					<group name="tp_defcover">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_garrison_halftrack">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_trench">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_water">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_zz_mud">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_smoke">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_zz_team_weapon_heavy">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_z_bunker">
+						<float name="recover_multiplier" value="1" />
+					</group>
 				</group>
-				<float name="suppressed_recover_threshold" value="0.05" />
-				<list name="suppressed_activate_actions" />
-				<float name="suppressed_activate_threshold" value="0.15" />
-				<list name="pin_down_activate_actions" />
 				<float name="noncombat_recover_multiplier" value="1" />
-				<bool name="can_be_suppressed" value="False" />
+				<list name="pin_down_activate_actions" />
+				<float name="pin_down_activate_threshold" value="0.3" />
+				<float name="suppressed_activate_threshold" value="0.15" />
 				<float name="recover_rate" value="0.002" />
 				<float name="noncombat_delay" value="1" />
 				<float name="pin_down_recover_threshold" value="0.2" />
-				<float name="pin_down_activate_threshold" value="0.3" />
+				<float name="suppressed_recover_threshold" value="0.05" />
+				<bool name="can_be_suppressed" value="False" />
 			</group>
+			<float name="reaction_delay_seconds" value="8" />
+			<string name="squad_ai_pinned_file" value="empty-plan" />
+			<group name="pilfer">
+				<instance_reference name="remove_weapon" value="" />
+				<bool name="can_pilfer" value="False" />
+				<group name="weapon">
+					<enum name="type" value="default" />
+					<float name="length" value="0" />
+					<group name="heading">
+						<float name="z" value="1" />
+						<float name="y" value="0" />
+						<float name="x" value="0" />
+					</group>
+					<group name="origin">
+						<float name="z" value="0" />
+						<float name="y" value="0.5" />
+						<float name="x" value="0" />
+					</group>
+					<instance_reference name="weapon" value="" />
+				</group>
+			</group>
+			<float name="heavy_weapon_setup_delay" value="0" />
+			<template_reference name="can_recrew_abandoned_option" value="options\none">
+			</template_reference>
+			<string name="squad_ai_file" value="empty-plan" />
+			<float name="reveal_self_attacker_time" value="0" />
+			<float name="reaction_combat_delay_seconds" value="8" />
+			<string name="squad_ai_sniped_file" value="" />
+			<string name="squad_ai_reaction_file" value="empty-plan" />
+			<bool name="reveal_self_attacker_time_use" value="False" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
@@ -577,162 +578,162 @@
 			<list name="race_list">
 				<group name="race_data">
 					<group name="info">
+						<float name="max_persistent_squads" value="3" />
+						<bool name="can_receive_shared_veterancy" value="True" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<bool name="hide_ingame_veterancy_art" value="False" />
+								<list name="non_leader_actions" />
 								<locstring name="screen_name" value="11075325" />
+								<list name="leader_actions" />
+								<float name="experience_value" value="360" />
+								<bool name="single_player_only" value="False" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
-										<uniqueid name="id" value="348073" />
 										<list name="modifiers">
 											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+												<bool name="exclusive" value="False" />
 												<enum name="usage_type" value="multiply_add" />
-												<enum name="application_type" value="apply_to_squad" />
 												<string name="modifier_id" value="" />
 												<float name="value" value="0.2" />
-												<bool name="exclusive" value="False" />
 												<string name="target_type_name" value="" />
+												<enum name="application_type" value="apply_to_squad" />
 											</template_reference>
 										</list>
-										<bool name="permanent" value="True" />
+										<uniqueid name="id" value="348073" />
 										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
-								<bool name="single_player_only" value="False" />
-								<float name="experience_value" value="360" />
-								<list name="leader_actions" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
 							</group>
 							<group name="veterancy_rank">
-								<bool name="hide_ingame_veterancy_art" value="False" />
+								<list name="non_leader_actions" />
 								<locstring name="screen_name" value="11073122" />
+								<list name="leader_actions" />
+								<float name="experience_value" value="720" />
+								<bool name="single_player_only" value="False" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
-										<uniqueid name="id" value="348074" />
 										<list name="modifiers">
 											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+												<bool name="exclusive" value="False" />
 												<enum name="usage_type" value="multiply_add" />
-												<enum name="application_type" value="apply_to_squad" />
 												<string name="modifier_id" value="" />
 												<float name="value" value="0.2" />
-												<bool name="exclusive" value="False" />
 												<string name="target_type_name" value="" />
+												<enum name="application_type" value="apply_to_squad" />
 											</template_reference>
 										</list>
-										<bool name="permanent" value="True" />
+										<uniqueid name="id" value="348074" />
 										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
-										<uniqueid name="id" value="348075" />
 										<list name="modifiers">
 											<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
 												<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+												<bool name="exclusive" value="False" />
 												<enum name="usage_type" value="multiplication" />
-												<enum name="application_type" value="apply_to_entity" />
 												<string name="modifier_id" value="" />
 												<float name="value" value="1.2" />
-												<bool name="exclusive" value="False" />
 												<string name="target_type_name" value="" />
+												<enum name="application_type" value="apply_to_entity" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
 												<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+												<bool name="exclusive" value="False" />
 												<enum name="usage_type" value="multiplication" />
-												<enum name="application_type" value="apply_to_entity" />
 												<string name="modifier_id" value="" />
 												<float name="value" value="1.2" />
-												<bool name="exclusive" value="False" />
 												<string name="target_type_name" value="" />
+												<enum name="application_type" value="apply_to_entity" />
 											</template_reference>
 										</list>
-										<bool name="permanent" value="False" />
+										<uniqueid name="id" value="348075" />
 										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
 									</template_reference>
 									<template_reference name="action" value="action\change_move_data_action">
+										<float name="pathfinding_size_y" value="0" />
+										<float name="pathfinding_size_x" value="0" />
 										<float name="acceleration_multiplier" value="1.25" />
 										<uniqueid name="id" value="348076" />
-										<float name="pathfinding_size_x" value="0" />
 										<float name="deceleration_multiplier" value="1.25" />
-										<float name="pathfinding_size_y" value="0" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
-								<bool name="single_player_only" value="False" />
-								<float name="experience_value" value="720" />
-								<list name="leader_actions" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
 							</group>
 							<group name="veterancy_rank">
-								<bool name="hide_ingame_veterancy_art" value="False" />
+								<list name="non_leader_actions" />
 								<locstring name="screen_name" value="11073124" />
+								<list name="leader_actions" />
+								<float name="experience_value" value="1440" />
+								<bool name="single_player_only" value="False" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
-										<uniqueid name="id" value="348077" />
 										<list name="modifiers">
 											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+												<bool name="exclusive" value="False" />
 												<enum name="usage_type" value="multiply_add" />
-												<enum name="application_type" value="apply_to_squad" />
 												<string name="modifier_id" value="" />
 												<float name="value" value="0.2" />
-												<bool name="exclusive" value="False" />
 												<string name="target_type_name" value="" />
+												<enum name="application_type" value="apply_to_squad" />
 											</template_reference>
 										</list>
-										<bool name="permanent" value="True" />
+										<uniqueid name="id" value="348077" />
 										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
-										<uniqueid name="id" value="348078" />
 										<list name="modifiers">
 											<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
 												<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
+												<bool name="exclusive" value="False" />
 												<enum name="usage_type" value="multiplication" />
-												<enum name="application_type" value="apply_to_weapon" />
 												<string name="modifier_id" value="" />
 												<float name="value" value="1.2" />
-												<bool name="exclusive" value="False" />
 												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="application_type" value="apply_to_weapon" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+												<bool name="exclusive" value="False" />
 												<enum name="usage_type" value="multiplication" />
-												<enum name="application_type" value="apply_to_weapon" />
 												<string name="modifier_id" value="" />
 												<float name="value" value="1.3" />
-												<bool name="exclusive" value="False" />
 												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="application_type" value="apply_to_weapon" />
 											</template_reference>
 										</list>
-										<bool name="permanent" value="False" />
+										<uniqueid name="id" value="348078" />
 										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
 									</template_reference>
 								</list>
-								<list name="non_leader_actions" />
-								<bool name="single_player_only" value="False" />
-								<float name="experience_value" value="1440" />
-								<list name="leader_actions" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
 							</group>
 						</list>
-						<float name="max_persistent_squads" value="3" />
 						<enum name="shared_veterancy_type" value="tp_panzer_elite_infantry" />
-						<bool name="can_receive_shared_veterancy" value="True" />
 					</group>
 					<instance_reference name="ext_key" value="" />
 				</group>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
-			<bool name="withdraw_only" value="True" />
 			<list name="modifiers" />
 			<group name="retreat_building_types">
+				<enum name="unit_type01" value="hq_wreck" />
 				<enum name="unit_type03" value="" />
 				<enum name="unit_type02" value="alternate_retreat_point" />
-				<enum name="unit_type01" value="hq_wreck" />
-				<enum name="unit_type00" value="hq" />
 				<enum name="unit_type04" value="" />
+				<enum name="unit_type00" value="hq" />
 			</group>
 			<list name="actions" />
+			<bool name="withdraw_only" value="True" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">
@@ -743,11 +744,10 @@
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_shared_veterancy_ext">
-			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
-			<float name="multiplier_pct_share" value="0.25" />
-			<float name="multiplier_pct_self" value="1" />
 			<float name="radius" value="35" />
+			<float name="multiplier_pct_share" value="0.25" />
+			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
+			<float name="multiplier_pct_self" value="1" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="2634" />
 </instance>

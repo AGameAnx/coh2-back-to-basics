@@ -1,0 +1,7 @@
+name = "airetreat"
+scar_file = "data:scar/winconditions/airetreat.scar"
+fe_name = "AIRetreat"
+fe_priority = 0
+score_display = vp_ticker
+show_time = true
+requires_vp_ticker = true
