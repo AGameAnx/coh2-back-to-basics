@@ -27,8 +27,8 @@
 			<list name="on_reload_actions">
 			</list>
 			<group name="duration">
-				<float name="min" value="3.4" />
-				<float name="max" value="4.2" />
+				<float name="min" value="4.1" />
+				<float name="max" value="4.9" />
 			</group>
 			<group name="frequency">
 				<float name="min" value="0" />
@@ -181,7 +181,7 @@
 		<group name="setup">
 			<bool name="has_instant_setup" value="False" />
 			<float name="duration" value="1.8" />
-			<float name="attach_duration" value="0.7" />
+			<float name="attach_duration" value="0" />
 			<bool name="can_interrupt_setup" value="False" />
 		</group>
 		<group name="cooldown">
@@ -450,7 +450,7 @@
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1" />
+				<float name="near" value="0.75" />
 				<float name="far" value="5.6" />
 				<float name="mid" value="2.8" />
 			</group>
@@ -473,7 +473,7 @@
 		<enum name="weapon_type" value="explosive" />
 		<float name="flinch_radius" value="10" />
 		<group name="teardown">
-			<float name="duration" value="0.5" />
+			<float name="duration" value="0" />
 		</group>
 		<instance_reference name="ui_range" value="" />
 		<group name="behaviour">

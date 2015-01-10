@@ -633,7 +633,6 @@
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sniper_hold_fire" />
 				<instance_reference name="ability" value="abilities\soviet\always_on_ability\sniper_in_cover_auto_camouflage" />
 				<instance_reference name="ability" value="abilities\soviet\timed_ability\sniper_hmg_sprint" />
-				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">

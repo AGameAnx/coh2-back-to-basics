@@ -1,3 +1,5 @@
+AI_EnableAll(false) setsimrate(200) FOW_RevealAll()
+Game_SetLocalPlayer(World_GetPlayerAt(1))
 
 =================================================================
 ## v0.5
@@ -6,12 +8,17 @@
 -----------------------------------------------------------------
 ## Attributes:
 
+General:
+- Fixed an issue where antiblob would get applied from team weapons and snipers
+- All building panels have more hp, take less damage from aoe weaponry and should be generally harder to destroy
+
 Soviets:
 - T34/85 main weapon far penetration reduced 120 -> 100
 - SU85 far penetration reduced 180 -> 160
 - IS-2 far penetration reduced 190 -> 160
 - IS-2 distance scatter increased 5.7 -> 6
 - ZiS3 76mm at gun far penetration reduced 180 -> 130
+- B4 direct fire cost reduced 180mu -> 70mu
 
 USF:
 - Canister shot reworked:
@@ -45,6 +52,14 @@ USF:
  * Mid aoe range 1.8 -> 2
  * Distance scatter 12 -> 10
  * Barrage distance scatter 14 -> 12
+- Pack howitzer changes:
+ * Reworked rate of fire for vet 0 and vet 1 increased to match HEAT shell rate of fire
+ * Near aoe distance increased 1 -> 1.25
+ * Fixed the HEAT shell staying after the team disbands
+ * Fixed a bug where a pack howitzer would lose its crew and then get recrewed as a bugged vehicle crew
+ * Fixed a bug with pack howitzer crew costing double the price to reinforce
+ * Reinforce price reduced 40 -> 30
+ * HEAT shell near distance decreased 1 -> 0.75. This is done to reduce effect the double damage has on its impact radius
 
 Ostheer:
 - Grenadier kar98 medium range accuracy increased 0.54 -> 0.6
@@ -71,6 +86,7 @@ OKW:
 
 General:
 - Unit experience gain reduction changed from 20% to 15%
+- Unit upkeep increase changed from 35% to 30%
 
 =================================================================
 ## v0.4
