@@ -409,7 +409,7 @@
 				<float name="mid" value="1" />
 			</group>
 			<bool name="can_harm_shooter" value="False" />
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_mortar" />
 			<group name="damage_friendly">
 				<float name="near" value="0.5" />
 				<float name="far" value="0.025" />

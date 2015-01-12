@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<uniqueid name="pbgid" value="2854" />
 	<group name="weapon_bag">
 		<group name="damage_over_time">
@@ -32,7 +32,8 @@
 				<float name="min" value="7.75" />
 				<float name="max" value="7.75" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="far" value="1" />
@@ -57,7 +58,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0.25" />
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="0" />
@@ -129,9 +131,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="120" />
-			<list name="on_penetrated_actions" />
-			<float name="max" value="120" />
+			<float name="min" value="150" />
+			<list name="on_penetrated_actions">
+			</list>
+			<float name="max" value="150" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -325,7 +328,8 @@
 			<string name="target_range_name" value="" />
 		</group>
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
 		</group>

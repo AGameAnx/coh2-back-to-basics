@@ -24,10 +24,11 @@
 		</group>
 		<string name="name" value="pm41_82mm Mortar" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
-				<float name="min" value="7.5" />
-				<float name="max" value="7.5" />
+				<float name="min" value="4.6" />
+				<float name="max" value="4.6" />
 			</group>
 			<group name="frequency">
 				<float name="min" value="0" />
@@ -57,7 +58,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="25" />
@@ -119,7 +121,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="80" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="80" />
 		</group>
 		<group name="scatter">
@@ -156,7 +159,8 @@
 		<group name="fire">
 			<float name="wind_up" value="2.125" />
 			<float name="wind_down" value="1" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

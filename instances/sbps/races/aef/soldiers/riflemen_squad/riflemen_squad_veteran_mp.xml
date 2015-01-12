@@ -484,6 +484,22 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="True" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.92" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="387929" />
+				</template_reference>
 				<template_reference name="action" value="action\random_action">
 					<bool name="instant" value="False" />
 					<list name="random_actions">
@@ -523,51 +539,8 @@
 							</list>
 							<int name="weight" value="14" />
 						</group>
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\veterancy_action">
-									<float name="number_of_experience_points" value="960" />
-									<uniqueid name="id" value="348264" />
-								</template_reference>
-							</list>
-							<int name="weight" value="14" />
-						</group>
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\veterancy_action">
-									<float name="number_of_experience_points" value="1060" />
-									<uniqueid name="id" value="348265" />
-								</template_reference>
-							</list>
-							<int name="weight" value="14" />
-						</group>
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\veterancy_action">
-									<float name="number_of_experience_points" value="1120" />
-									<uniqueid name="id" value="348266" />
-								</template_reference>
-							</list>
-							<int name="weight" value="14" />
-						</group>
 					</list>
 					<uniqueid name="id" value="348256" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="True" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-							<enum name="application_type" value="apply_to_entity" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.92" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="387929" />
 				</template_reference>
 			</list>
 		</template_reference>

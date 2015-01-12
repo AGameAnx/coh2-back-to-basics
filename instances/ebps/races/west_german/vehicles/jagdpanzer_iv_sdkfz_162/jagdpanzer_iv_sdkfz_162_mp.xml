@@ -98,8 +98,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="135" />
-					<float name="manpower" value="400" />
+					<float name="fuel" value="115" />
+					<float name="manpower" value="350" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>

@@ -482,7 +482,7 @@
 					<bool name="permanent" value="True" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-							<enum name="application_type" value="apply_to_squad" />
+							<enum name="application_type" value="apply_to_entity" />
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />

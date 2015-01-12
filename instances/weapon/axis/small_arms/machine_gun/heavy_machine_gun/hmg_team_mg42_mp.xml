@@ -68,8 +68,8 @@
 		<group name="damage">
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="min" value="7" />
-			<float name="max" value="7" />
+			<float name="min" value="8" />
+			<float name="max" value="8" />
 		</group>
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="cover_table">
@@ -237,12 +237,12 @@
 		<group name="tracking">
 			<float name="fire_cone_angle" value="5" />
 			<group name="normal">
-				<float name="max_right" value="60" />
+				<float name="max_right" value="50" />
 				<float name="max_down" value="-90" />
-				<float name="speed_horizontal" value="25" />
+				<float name="speed_horizontal" value="30" />
 				<float name="speed_vertical" value="60" />
 				<float name="max_up" value="45" />
-				<float name="max_left" value="-60" />
+				<float name="max_left" value="-50" />
 			</group>
 			<float name="pivot_start_time" value="0" />
 			<float name="pivot_end_time" value="0" />
@@ -324,11 +324,11 @@
 		<group name="suppression">
 			<group name="target_suppressed_multipliers">
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.35" />
 				<float name="damage_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="nearby_suppression_radius" value="11.5" />
+			<float name="nearby_suppression_radius" value="20" />
 			<float name="nearby_suppression_multiplier" value="0.8" />
 			<float name="amount" value="0.012" />
 			<group name="target_pinned_multipliers">

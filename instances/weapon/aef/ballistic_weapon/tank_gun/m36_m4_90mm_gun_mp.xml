@@ -231,10 +231,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="240" />
+			<float name="min" value="220" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="240" />
+			<float name="max" value="220" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -322,9 +322,9 @@
 				<float name="max" value="0.125" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="far" value="1" />
+				<float name="far" value="20" />
 				<float name="near" value="1" />
-				<float name="mid" value="1" />
+				<float name="mid" value="7" />
 			</group>
 			<group name="ready_aim_time">
 				<float name="min" value="0.125" />
