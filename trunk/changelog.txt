@@ -8,6 +8,9 @@ Game_SetLocalPlayer(World_GetPlayerAt(1))
 -----------------------------------------------------------------
 ## Attributes:
 
+General:
+- Further adjustments to building damage profiles for HE weaponry, satchels and demo charges
+
 Soviets:
 - Incendiary artillery rework:
  * Shots per salvo 3 -> 2
@@ -58,6 +61,7 @@ OKW:
  * Second SWS Halftrack now arrives 150s into the game
  * Interval between subsequent SWS Halftracks arriving increased 180s -> 200s
 - Fixed an issue where Panzer II Luchs took too long between shots at range
+- New Panzer IV icon (thanks mandead)
 
 
 =================================================================
