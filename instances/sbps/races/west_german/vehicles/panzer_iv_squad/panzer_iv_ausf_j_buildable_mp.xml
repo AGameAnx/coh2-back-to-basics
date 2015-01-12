@@ -8,7 +8,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
+						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -64,7 +64,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
+						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -120,7 +120,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
+						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -176,7 +176,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
+						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -232,7 +232,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
+						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -385,7 +385,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" mod="23d6cdb82724460dbcb21e1a9162e473" value="ebps\races\west_german\vehicles\panzer_iv_sdkfz_161\panzer_iv_sdkfz_ausf_j_buildable_mp" />
+					<instance_reference name="type" value="ebps\races\west_german\vehicles\panzer_iv_sdkfz_161\panzer_iv_sdkfz_ausf_j_buildable_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -414,12 +414,13 @@
 							<enum name="reason" value="usage" />
 						</template_reference>
 					</list>
-					<locstring name="ui_name" mod="23d6cdb82724460dbcb21e1a9162e473" value="13" />
+					<locstring name="ui_name" value="13" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<list name="upgrades">
@@ -487,7 +488,8 @@
 				<float name="suppressed_activate_threshold" value="0.15" />
 				<bool name="can_be_suppressed" value="False" />
 				<float name="noncombat_recover_multiplier" value="1" />
-				<list name="suppressed_activate_actions" />
+				<list name="suppressed_activate_actions">
+				</list>
 				<float name="recover_rate" value="0.002" />
 				<float name="pin_down_recover_threshold" value="0.2" />
 				<group name="cover_info">
@@ -546,7 +548,8 @@
 						<float name="recover_multiplier" value="1" />
 					</group>
 				</group>
-				<list name="pin_down_activate_actions" />
+				<list name="pin_down_activate_actions">
+				</list>
 				<float name="pin_down_activate_threshold" value="0.3" />
 			</group>
 			<group name="pilfer">
@@ -594,10 +597,12 @@
 						<float name="max_persistent_squads" value="0" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<bool name="single_player_only" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<locstring name="screen_name" value="11075590" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -624,10 +629,12 @@
 								<float name="experience_value" value="1620" />
 							</group>
 							<group name="veterancy_rank">
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<bool name="single_player_only" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<locstring name="screen_name" value="11075360" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -679,10 +686,12 @@
 								<float name="experience_value" value="3240" />
 							</group>
 							<group name="veterancy_rank">
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<bool name="single_player_only" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<locstring name="screen_name" value="11075595" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -757,10 +766,12 @@
 						<float name="max_persistent_squads" value="0" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<bool name="single_player_only" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<locstring name="screen_name" value="11075591" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -787,10 +798,12 @@
 								<float name="experience_value" value="1620" />
 							</group>
 							<group name="veterancy_rank">
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<bool name="single_player_only" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<locstring name="screen_name" value="11075360" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -842,10 +855,12 @@
 								<float name="experience_value" value="3240" />
 							</group>
 							<group name="veterancy_rank">
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<bool name="single_player_only" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<locstring name="screen_name" value="11075592" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -910,10 +925,12 @@
 								<float name="experience_value" value="6480" />
 							</group>
 							<group name="veterancy_rank">
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<bool name="single_player_only" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<locstring name="screen_name" value="11075593" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -961,10 +978,12 @@
 								<float name="experience_value" value="8100" />
 							</group>
 							<group name="veterancy_rank">
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<bool name="single_player_only" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<locstring name="screen_name" value="11075594" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\requirement_action">
@@ -1070,8 +1089,10 @@
 				<enum name="unit_type00" value="hq" />
 			</group>
 			<bool name="withdraw_only" value="True" />
-			<list name="actions" />
-			<list name="modifiers" />
+			<list name="actions">
+			</list>
+			<list name="modifiers">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">
