@@ -2,6 +2,126 @@ AI_EnableAll(false) setsimrate(200) FOW_RevealAll()
 Game_SetLocalPlayer(World_GetPlayerAt(1))
 
 =================================================================
+## v0.7
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviets:
+- Incendiary artillery rework:
+ * Shots per salvo 3 -> 2
+ * Radius reduced 15 -> 9
+ * Salvo delay 0.01s -> 7s
+
+USF:
+- M10 Wolverine damage 200 -> 180
+- M36 Jackson damage 240 -> 220
+- Bazooka damage 120 -> 100
+- M1 57mm AT gun range 66 -> 63
+- M1 57mm AT gun received a new range profile - its performance will scale down with range slightly faster than before
+- USF White Phosphorus barrage rework:
+ * Shots per salvo 10 -> 7
+ * Radius 20 -> 10
+ * Delay 5s -> 7s
+- Major artillery rework:
+ * Delay 7s -> 4s
+ * Shots per salvo 3 -> 6
+ * Radius 15 -> 12
+ * Time between shells 2-4 -> 1-2
+- P47 Rocket attack rework:
+ * Target attack distance 200 -> 175
+ * Initial delay increased by 2s
+
+Ostheer:
+- Command Tank (short barrel Panzer IV) aoe profile rework to increase its effectiveness vs infantry (underperformed due to low damage):
+ * Mid 1 -> 1.5
+ * Near 0.5 -> 0.8
+- Slight change to Grenadier Rifle grenade aoe profile:
+ * Mid 1.3 -> 1.2
+ * Near 0.5 -> 0.4
+- Light Artillery rework:
+ * Initial delay 0.3 -> 0.45
+ * Number of shells dropped increased 4
+ * Fire rate slightly increases with time
+ * Radii for each artillery salvo during ability increased by 2
+
+OKW:
+- Normalized OKW Panzer IV weapon to perform more like Ostheer Panzer IV (motly buffs):
+ * Mid aoe damage 0.15 -> 0.35
+ * Mid aoe distance 1.1 -> 1
+ * Reload 5.75-5.75 -> 5.3-5.7
+ * Distance scatter 7.1 -> 6.4
+ * Horizontal tracking speed 28 -> 35
+- SWS Halftrack arrive interval reworked:
+ * First SWS Halftrack now comes in 50s into the game
+ * Second SWS Halftrack now arrives 150s into the game
+ * Interval between subsequent SWS Halftracks arriving increased 180s -> 200s
+- Fixed an issue where Panzer II Luchs took too long between shots at range
+
+
+=================================================================
+## v0.6
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Fixed some more issues with aoe vs buildings
+
+Soviets:
+- T70 hitpoints 320 -> 340
+- ZiS-3 76mm AT gun range 66 -> 63
+- ZiS-3 76mm AT gun received a new range profile - its performance will scale down with range slightly faster than before
+
+USF:
+- Small fix to riflemen's initial received accuracy bonus
+- Veteran riflemen random experience range reduced (less experience on average)
+
+Ostheer:
+- Grenadier cost reduced back to its default 260 -> 240
+- Grenadier base effectiveness increased:
+ * Far weapon accuracy 0.31 -> 0.34
+ * Mid weapon accuracy 0.6 -> 0.66
+ * Near weapon accuracy 0.88 -> 0.85
+ * Base received accuracy 0.91 -> 0.86
+- Grenadier veterancy bonuses reduced:
+ * Vet 2 weapon accuracy multiplier 1.4 -> 1.2
+ * Vet 3 received accuracy multiplier 0.77 -> 0.82
+ * Vet 3 cooldown multiplier 0.8 -> 0.85
+ * Vet 3 experience required 1920 -> 2250
+- MG42 veterancy bonuses reduced:
+ * Vet 2 suppression modifier 1.2 -> 1.15
+ * Vet 2 horizontal tracking speed multiplier 1.25 -> 1.1
+ * Vet 3 accuracy multiplier 1.3 -> 1.15
+ * Vet 3 burst rate of fire multiplier 1.2 -> 1.15
+- Panzerschrek damage 160 -> 150
+- Pak 40 range reduced 66 -> 63
+- Pak 40 received a new range profile - its performance will scale down with range slightly faster than before
+- Stug E and Stug G hitpoints 400 -> 485
+- Panzer IV cost 350mp/125f -> 350mp/110f
+- Command Panzer IV callin cost 360mp/125f -> 350mp/110f
+- Ostwind cost 280mp/100f -> 280mp/85f
+- T3 structure fuel cost increased 160mp/25f -> 160mp/35f
+
+OKW:
+- Luchs hitpoints 400 -> 485
+- Panzerschrek damage 160 -> 150
+- Jagdpanzer cost 400mp/135f -> 350mp/115f
+- Panzer IV is now purchasable from HQ:
+ * Requires Healing and Repair HQs to unlock
+ * Costs 360mp/135f, 55s construction time
+ * Exact copy of elite armor battle group Panzer IV (without random experience)
+- Elite armor battlegroup reworked:
+ * Callin cost reduced 720mp/210f -> 650mp/190f
+ * Random initial veterancy increased significantly
+ * Now available only once per game
+- Panther cost reduced 490mp/175f -> 420mp/155f
+- Command panther cost reduced 560mp/200f -> 480mp/180f
+
+
+=================================================================
 ## v0.5
 =================================================================
 
@@ -10,7 +130,24 @@ Game_SetLocalPlayer(World_GetPlayerAt(1))
 
 General:
 - Fixed an issue where antiblob would get applied from team weapons and snipers
-- All building panels have more hp, take less damage from aoe weaponry and should be generally harder to destroy
+- All building panels have less hp but take less damage from aoe weaponry. This should result in ballistic weapons punching holes in the walls easier but aoe weaponry destroying the buildings slower
+- Assault grenadier and infiltration tactics grenade aoe max reduced 5 -> 4
+- All grenades now have a mortar profile vs buildings making them destroy fewer panels but have a higher chance of killing infantry near the blast (experimental)
+- Satchel building damage profile redone to do less damage to the larger portion of the aoe
+- Grenades now do double damage to garrison targets to balance out the effects of the mortar damage profile
+- HE tank shells have had their profile vs buildings changed to HE shell rounds to prevent them from destroying buildings in 1 shot
+- HMG global rework:
+ * Received accuracy debuff reduced from 25% to 15%. This debuff is not required with the new damage model. Flanking an MG still means it needs to retreat. Mortars retain this debuff
+ * Further damage increases across the board. This is done due to the fact that engagements happen faster in the mod and suppression is not as valuable
+ * Suppression circle radii increased
+ * Max tracking angles (arcs of fire) reduced
+ * Reduction in effectiveness vs suppressed units (0.5 -> 0.35)
+- All tank weapons will now take longer to aim with range
+ * Far 2.375s longer
+ * Mid 0.75s longer
+- All anti-tank weapons will now take longer to aim with range
+ * Far 1.125s longer
+ * Mid 0.5s longer
 
 Soviets:
 - T34/85 main weapon far penetration reduced 120 -> 100
@@ -19,6 +156,7 @@ Soviets:
 - IS-2 distance scatter increased 5.7 -> 6
 - ZiS3 76mm at gun far penetration reduced 180 -> 130
 - B4 direct fire cost reduced 180mu -> 70mu
+- 82mm mortar reload time reduced 7.5s -> 4.6s
 
 USF:
 - Canister shot reworked:
@@ -60,6 +198,12 @@ USF:
  * Fixed a bug with pack howitzer crew costing double the price to reinforce
  * Reinforce price reduced 40 -> 30
  * HEAT shell near distance decreased 1 -> 0.75. This is done to reduce effect the double damage has on its impact radius
+- Ambulance reworked:
+ * Hitpoints 160 -> 250
+ * Target size 14 -> 10
+ * Cost reduced 250mp/10f -> 150mp/10f
+- All mortar aoe mid range damage increased 0.15 -> 0.35 to put it in line with other factions
+- Sherman 105mm HE shell range increased 44 -> 50
 
 Ostheer:
 - Grenadier kar98 medium range accuracy increased 0.54 -> 0.6
@@ -76,10 +220,16 @@ Ostheer:
  * Far 220 -> 120
  * Mid 240 -> 200
 - Pak40 arc of fire reduced 60 -> 54
+- Rifle grenade is now 50% more effective vs garrison targets (it was originally half as effective as normal grenades, now it has 75% effectiveness compared to normal grenades)
+- Slightly increased MG42 horizontal tracking speed (aquires targets in arc of fire faster)
+- Brummbar weapon range increased 44 -> 55
+- Panzerschrek weapon damage 120 -> 160
 
 OKW:
 - Jagdpanzer IV far penetration reduced 170 -> 140
 - Walking Stuka incendiary barrage cost increased 40mu -> 70mu
+- Sturmpioneer vehicle repair rate decreased 3 -> 2
+- Panzerschrek weapon damage 120 -> 160
 
 -----------------------------------------------------------------
 ## Win condition:
@@ -87,6 +237,7 @@ OKW:
 General:
 - Unit experience gain reduction changed from 20% to 15%
 - Unit upkeep increase changed from 35% to 30%
+
 
 =================================================================
 ## v0.4
@@ -169,7 +320,7 @@ USF:
 - Increased 3rd level of veterancy requirement Riflemen squad from 2240 to 2740
 - Added additional 0.8 received accuracy multiplier on 3rd level of veterancy for riflemen, lieutenant and captain
 - Pack howitzer auto-barrage range increased from 80 to 90 (still much shorter than barrage range)
-- Pack howitzer entity target priority now set to -100, which will make other units target the crew before the howitzer itself. This is the default behavior for team weapons like mortars, OKW leIG 18 infantry support gun, AT weapons and other team weapons. The change should increase howitzer's survivability lategame
+- Pack howitzer entity target priority now set to -100, which will make other units target the crew before the howitzer itself. This is the default behavior for team weapons like mortars, OKW leIG 18 infantry support gun, AT weapons and other team weapons. The change should increase howitzer's survivability late game
 
 OKW:
 - Volksgrenadier accuracy on medium and far range increased (far 0.35 -> 0.4, mid 0.56 -> 0.59)

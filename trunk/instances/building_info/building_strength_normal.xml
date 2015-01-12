@@ -1,7 +1,7 @@
 <instance description="" template="building_info">
 	<group name="building_info_bag">
-		<float name="panel_health" value="500" />
-		<float name="min_damage" value="15" />
+		<float name="panel_health" value="120" />
+		<float name="min_damage" value="20" />
 		<list name="weapon_immunities">
 			<enum name="weapon_type" value="small_arms" />
 		</list>

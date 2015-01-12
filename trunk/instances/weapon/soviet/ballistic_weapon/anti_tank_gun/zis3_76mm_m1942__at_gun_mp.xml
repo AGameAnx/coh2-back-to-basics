@@ -24,8 +24,8 @@
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="10" />
+				<float name="mid" value="5" />
 			</group>
 			<group name="ready_aim_time">
 				<float name="min" value="0.125" />
@@ -150,11 +150,11 @@
 		<group name="range">
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
-				<float name="far" value="-1" />
-				<float name="mid" value="-1" />
+				<float name="near" value="10" />
+				<float name="far" value="60" />
+				<float name="mid" value="25" />
 			</group>
-			<float name="max" value="66" />
+			<float name="max" value="63" />
 		</group>
 		<string name="icon_name" value="" />
 		<group name="projectile">

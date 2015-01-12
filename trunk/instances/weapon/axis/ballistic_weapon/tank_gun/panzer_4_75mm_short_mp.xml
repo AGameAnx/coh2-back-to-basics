@@ -14,8 +14,8 @@
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="20" />
+				<float name="mid" value="7" />
 			</group>
 			<group name="ready_aim_time">
 				<float name="min" value="0.125" />
@@ -408,7 +408,7 @@
 				<float name="radius" value="3.1" />
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<bool name="can_harm_shooter" value="False" />
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -417,8 +417,8 @@
 			</group>
 			<group name="distance">
 				<float name="far" value="2.3" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="1" />
+				<float name="near" value="0.8" />
+				<float name="mid" value="1.5" />
 			</group>
 			<group name="suppression">
 				<float name="far" value="0" />

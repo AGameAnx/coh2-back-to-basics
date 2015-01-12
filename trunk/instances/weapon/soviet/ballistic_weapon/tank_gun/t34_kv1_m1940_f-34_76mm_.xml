@@ -24,8 +24,8 @@
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="20" />
+				<float name="mid" value="7" />
 			</group>
 			<group name="ready_aim_time">
 				<float name="min" value="0.125" />
@@ -42,7 +42,8 @@
 				<float name="min" value="4.75" />
 				<float name="max" value="4.75" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
 				<float name="near" value="1" />
@@ -65,7 +66,8 @@
 			<float name="fire_cone_angle" value="5" />
 		</group>
 		<group name="deflection">
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="True" />
 			<float name="deflection_damage_multiplier" value="0" />
 		</group>
@@ -132,7 +134,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="80" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="80" />
 		</group>
 		<group name="scatter">
@@ -199,7 +202,8 @@
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
 		</group>

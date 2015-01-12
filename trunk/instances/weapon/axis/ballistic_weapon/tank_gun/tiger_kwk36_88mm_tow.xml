@@ -14,8 +14,8 @@
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="20" />
+				<float name="mid" value="7" />
 			</group>
 			<group name="ready_aim_time">
 				<float name="min" value="0.125" />
@@ -32,7 +32,8 @@
 				<float name="min" value="6.25" />
 				<float name="max" value="6.25" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
 				<float name="near" value="1" />
@@ -55,7 +56,8 @@
 			<float name="fire_cone_angle" value="5" />
 		</group>
 		<group name="deflection">
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="True" />
 			<float name="deflection_damage_multiplier" value="0" />
 		</group>
@@ -122,7 +124,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="120" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="120" />
 		</group>
 		<group name="scatter">
@@ -320,7 +323,8 @@
 			<bool name="over_penetration_priority_penalty" value="True" />
 		</group>
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
 		</group>
@@ -339,7 +343,7 @@
 				<float name="radius" value="12.5" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell_extreme" />
 			<bool name="can_harm_shooter" value="False" />
 			<group name="building_damage">
 				<float name="near" value="1" />

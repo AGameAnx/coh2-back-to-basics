@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="suppression">
 			<group name="target_pinned_multipliers">
@@ -7,12 +7,12 @@
 				<float name="damage_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
-			<float name="nearby_suppression_radius" value="13" />
+			<float name="nearby_suppression_radius" value="20" />
 			<float name="nearby_suppression_multiplier" value="0.8" />
 			<float name="amount" value="0.0135" />
 			<group name="target_suppressed_multipliers">
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.35" />
 				<float name="damage_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
@@ -198,7 +198,8 @@
 		<group name="fire">
 			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<group name="priority">
 			<float name="window_bonus" value="0" />
@@ -268,9 +269,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<list name="on_penetrated_actions" />
-			<float name="min" value="6" />
-			<float name="max" value="6" />
+			<list name="on_penetrated_actions">
+			</list>
+			<float name="min" value="12" />
+			<float name="max" value="12" />
 		</group>
 		<group name="cooldown">
 			<group name="duration_multiplier">
@@ -285,7 +287,8 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<group name="deflection">
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="False" />
 			<float name="deflection_damage_multiplier" value="0" />
 		</group>
@@ -306,7 +309,8 @@
 				<float name="mid" value="0.75" />
 				<float name="far" value="1" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="6" />
 				<float name="max" value="6.5" />
