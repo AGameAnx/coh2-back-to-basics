@@ -1,8 +1,8 @@
 <instance description="Used for very large explosions in the AA campaign (when needed)" template="weapon_building_damage">
 	<group name="weapon_building_damage_bag">
 		<group name="range_multipliers">
-			<float name="near" value="1" />
-			<float name="mid" value="0.3" />
+			<float name="near" value="1.5" />
+			<float name="mid" value="0.5" />
 			<float name="far" value="0" />
 		</group>
 	</group>

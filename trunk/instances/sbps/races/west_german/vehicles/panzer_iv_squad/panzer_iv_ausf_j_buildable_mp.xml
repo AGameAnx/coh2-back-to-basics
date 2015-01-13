@@ -8,7 +8,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -27,7 +27,7 @@
 						</group>
 						<locstring name="extra_text" value="11075320" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
+						<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_units_wgpanzer4" />
 						<group name="speech_code_3">
 							<string name="code_2" value="mar" />
 							<string name="code_1" value="pn4" />
@@ -64,7 +64,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -83,7 +83,7 @@
 						</group>
 						<locstring name="extra_text" value="11075320" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
+						<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_units_wgpanzer4" />
 						<group name="speech_code_3">
 							<string name="code_2" value="arm" />
 							<string name="code_1" value="pn4" />
@@ -120,7 +120,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -139,7 +139,7 @@
 						</group>
 						<locstring name="extra_text" value="11075320" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
+						<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_units_wgpanzer4" />
 						<group name="speech_code_3">
 							<string name="code_2" value="arm" />
 							<string name="code_1" value="pn4" />
@@ -176,7 +176,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -195,7 +195,7 @@
 						</group>
 						<locstring name="extra_text" value="11075320" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
+						<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_units_wgpanzer4" />
 						<group name="speech_code_3">
 							<string name="code_2" value="arm" />
 							<string name="code_1" value="pn4" />
@@ -232,7 +232,7 @@
 					<group name="info">
 						<string name="hotkey_name" value="X" />
 						<locstring name="help_text" value="11075321" />
-						<string name="symbol_icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_icons_units_west_german_vehicles_panzer4" />
+						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
 						<locstring name="screen_name_short" value="11075323" />
 						<bool name="allow_spawner_production" value="False" />
 						<bool name="minimap_team_only" value="False" />
@@ -251,7 +251,7 @@
 						</group>
 						<locstring name="extra_text" value="11075320" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
+						<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_units_wgpanzer4" />
 						<group name="speech_code_3">
 							<string name="code_2" value="mar" />
 							<string name="code_1" value="pn4" />
