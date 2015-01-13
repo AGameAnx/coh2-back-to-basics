@@ -343,7 +343,7 @@
 				<float name="radius" value="0.6" />
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<bool name="can_harm_shooter" value="False" />
 			<group name="building_damage">
 				<float name="near" value="1" />

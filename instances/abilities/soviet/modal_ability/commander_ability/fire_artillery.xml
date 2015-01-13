@@ -15,8 +15,8 @@
 					<uniqueid name="id" value="1073742839" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="7" />
-					<float name="delay_min" value="7" />
+					<float name="delay" value="3" />
+					<float name="delay_min" value="3" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
@@ -71,7 +71,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="7" />
+		<float name="duration_time" value="10" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />

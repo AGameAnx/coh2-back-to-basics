@@ -9,7 +9,7 @@ Game_SetLocalPlayer(World_GetPlayerAt(1))
 ## Attributes:
 
 General:
-- Further adjustments to building damage profiles for HE weaponry, satchels and demo charges
+- Further adjustments to building damage profiles
 
 Soviets:
 - Incendiary artillery rework:
@@ -50,6 +50,7 @@ Ostheer:
  * Radii for each artillery salvo during ability increased by 2
 
 OKW:
+- Fixed a bug for Panzer IV battle group needing to be cast on an entity to be used.
 - Normalized OKW Panzer IV weapon to perform more like Ostheer Panzer IV (motly buffs):
  * Mid aoe damage 0.15 -> 0.35
  * Mid aoe distance 1.1 -> 1
@@ -58,10 +59,8 @@ OKW:
  * Horizontal tracking speed 28 -> 35
 - SWS Halftrack arrive interval reworked:
  * First SWS Halftrack now comes in 50s into the game
- * Second SWS Halftrack now arrives 150s into the game
  * Interval between subsequent SWS Halftracks arriving increased 180s -> 200s
 - Fixed an issue where Panzer II Luchs took too long between shots at range
-- New Panzer IV icon (thanks mandead)
 
 
 =================================================================
