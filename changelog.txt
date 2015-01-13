@@ -15,7 +15,7 @@ Soviets:
 - Incendiary artillery rework:
  * Shots per salvo 3 -> 2
  * Radius reduced 15 -> 9
- * Salvo delay 0.01s -> 7s
+ * Salvo delay 0.01s -> 3s
 
 USF:
 - M10 Wolverine damage 200 -> 180
