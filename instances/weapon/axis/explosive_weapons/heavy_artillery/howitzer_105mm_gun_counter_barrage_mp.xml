@@ -138,7 +138,7 @@
 			<float name="max_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
-			<float name="distance_scatter_ratio" value="0.074" />
+			<float name="distance_scatter_ratio" value="0.068" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />
 		</group>
@@ -180,19 +180,19 @@
 		<group name="suppression">
 			<group name="target_suppressed_multipliers">
 				<float name="suppression_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.6" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="0.5" />
 			</group>
-			<float name="nearby_suppression_multiplier" value="0" />
-			<float name="nearby_suppression_radius" value="0" />
+			<float name="nearby_suppression_multiplier" value="1" />
+			<float name="nearby_suppression_radius" value="10" />
 			<group name="target_pinned_multipliers">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="0.25" />
 			</group>
-			<float name="amount" value="0" />
+			<float name="amount" value="0.45" />
 		</group>
 		<string name="fx_action_target_name" value="" />
 		<group name="priority">
@@ -256,7 +256,7 @@
 			</group>
 			<group name="tp_garrison_cover">
 				<float name="suppression_multiplier" value="0" />
-				<float name="damage_multiplier" value="0.25" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="1" />
 			</group>
@@ -335,8 +335,8 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.05" />
-				<float name="mid" value="0.35" />
+				<float name="far" value="0.01" />
+				<float name="mid" value="0.2" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -345,7 +345,7 @@
 				<float name="radius" value="9.4" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell_extreme" />
 			<group name="damage_friendly">
 				<float name="near" value="0.5" />
 				<float name="far" value="0.025" />
@@ -374,14 +374,14 @@
 				<float name="mid" value="0.5" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1.2" />
-				<float name="far" value="7" />
+				<float name="near" value="1.4" />
+				<float name="far" value="9.4" />
 				<float name="mid" value="3.4" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="1" />
-				<float name="far" value="0.25" />
-				<float name="mid" value="0.75" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<string name="fx_tracer_name" value="" />
@@ -411,7 +411,7 @@
 			<bool name="enable_auto_target_search" value="False" />
 			<bool name="aa_weapon" value="False" />
 			<bool name="fire_at_building_combat_slot" value="False" />
-			<float name="reaction_radius" value="6.4" />
+			<float name="reaction_radius" value="10" />
 			<bool name="point_blank" value="False" />
 			<bool name="can_be_substituted" value="False" />
 			<bool name="can_be_offhanded" value="False" />

@@ -150,11 +150,11 @@
 		<group name="range">
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
-				<float name="far" value="-1" />
-				<float name="mid" value="-1" />
+				<float name="near" value="20" />
+				<float name="far" value="60" />
+				<float name="mid" value="35" />
 			</group>
-			<float name="max" value="66" />
+			<float name="max" value="63" />
 		</group>
 		<string name="icon_name" value="" />
 		<group name="projectile">
@@ -293,15 +293,15 @@
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="0.6" />
+				<float name="radius" value="1.2" />
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<bool name="can_harm_shooter" value="False" />
 			<group name="distance">
-				<float name="far" value="0.3" />
-				<float name="near" value="0.1" />
-				<float name="mid" value="0.2" />
+				<float name="far" value="1.2" />
+				<float name="near" value="0.3" />
+				<float name="mid" value="0.6" />
 			</group>
 			<group name="accuracy">
 				<float name="far" value="5" />

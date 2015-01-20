@@ -161,7 +161,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="2" />
-					<instance_reference name="type" value="ebps\races\soviet\soldiers\sniper\sniper_mp" />
+					<instance_reference name="type" value="ebps\races\soviet\soldiers\sniper\sniper_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0.5" />
@@ -433,6 +433,15 @@
 							<enum name="usage_type" value="multiplication" />
 							<float name="value" value="0.6" />
 							<instance_reference name="tooltip" value="modifier_tooltip\squad_weapon_accuracy_vs_retreating_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1.4" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="386637" />

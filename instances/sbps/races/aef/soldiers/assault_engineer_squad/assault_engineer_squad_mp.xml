@@ -724,7 +724,7 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\repair_ability\aef_repair_critical_mp" />
 				<instance_reference name="ability" value="abilities\pm\aef\specializations\cover_specialization\cover_specialization_hunker_down" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\repair_ability\aef_repair_ability_rear_echelon_mp" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\combat_engineer_timed_demo_mp" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\combat_engineer_timed_demo_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\sp\refuel_tank_sp" />
 				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
@@ -873,7 +873,7 @@
 							<int name="ui_position" value="13" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\fighting_position\fighting_position_mp" />
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\fighting_position\fighting_position_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">

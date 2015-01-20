@@ -120,10 +120,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="300" />
+			<float name="min" value="220" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="300" />
+			<float name="max" value="220" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -188,19 +188,19 @@
 		<group name="suppression">
 			<group name="target_suppressed_multipliers">
 				<float name="suppression_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.6" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="0.5" />
 			</group>
-			<float name="nearby_suppression_multiplier" value="0" />
-			<float name="nearby_suppression_radius" value="0" />
+			<float name="nearby_suppression_multiplier" value="1" />
+			<float name="nearby_suppression_radius" value="10" />
 			<group name="target_pinned_multipliers">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="0.25" />
 			</group>
-			<float name="amount" value="0" />
+			<float name="amount" value="0.45" />
 		</group>
 		<string name="fx_action_target_name" value="" />
 		<group name="priority">
@@ -343,8 +343,8 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.04" />
-				<float name="mid" value="0.35" />
+				<float name="far" value="0.01" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />

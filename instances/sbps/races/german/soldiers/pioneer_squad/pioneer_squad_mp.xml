@@ -766,7 +766,7 @@
 							<int name="ui_position" value="22" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\team_weapons\german_field_artillery\howitzer_105mm_le_fh18_mp" />
+							<instance_reference name="ebp" value="ebps\races\german\team_weapons\german_field_artillery\howitzer_105mm_le_fh18_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="21" />
 						</group>
 						<group name="construction_item">
@@ -774,7 +774,7 @@
 							<int name="ui_position" value="21" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\bunker\bunker_mp" />
+							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\bunker\bunker_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="11" />
 						</group>
 						<group name="construction_item">
@@ -851,7 +851,7 @@
 				<float name="munition" value="15" />
 				<float name="popcap" value="0" />
 			</group>
-			<instance_reference name="demo_entity" value="ebps\props\demo_charge" />
+			<instance_reference name="demo_entity" value="ebps\props\demo_charge" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<bool name="parallel_placement" value="True" />
 			<bool name="place_anywhere" value="True" />
 			<float name="recharge_time" value="0" />

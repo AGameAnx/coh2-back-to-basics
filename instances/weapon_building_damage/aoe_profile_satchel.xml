@@ -3,7 +3,7 @@
 		<group name="range_multipliers">
 			<float name="near" value="2" />
 			<float name="mid" value="1" />
-			<float name="far" value="0.3" />
+			<float name="far" value="0.5" />
 		</group>
 	</group>
 	<uniqueid name="pbgid" value="85930" />

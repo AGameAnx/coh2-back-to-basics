@@ -21,8 +21,8 @@
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
 						<template_reference name="action" value="action\off_map_artillery">
-							<float name="num_salvo" value="3" />
-							<float name="radius" value="9" />
+							<float name="num_salvo" value="2" />
+							<float name="radius" value="11" />
 							<float name="source_offset_x" value="60" />
 							<float name="source_offset_y" value="100" />
 							<float name="source_offset_z" value="1" />

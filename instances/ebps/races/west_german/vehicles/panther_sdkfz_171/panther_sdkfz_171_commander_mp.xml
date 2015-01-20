@@ -136,7 +136,7 @@
 			<float name="death_seconds" value="1.8" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="800" />
+			<float name="hitpoints" value="720" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -153,7 +153,7 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panther_sdkfz_171" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="320" />
+			<float name="armor" value="280" />
 			<float name="rear_armor" value="110" />
 			<float name="target_size" value="24" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -277,7 +277,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_out_of_control_fast" />
+							<instance_reference name="critical" value="critical\vehicle_out_of_control_fast" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />

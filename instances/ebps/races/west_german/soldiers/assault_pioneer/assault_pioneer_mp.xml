@@ -35,6 +35,15 @@
 							<float name="value" value="1" />
 							<instance_reference name="tooltip" value="modifier_tooltip\ignore_snow_effects_modifier" />
 						</template_reference>
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.97" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073742228" />
 				</template_reference>
@@ -201,7 +210,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\make_casualty" />
+							<instance_reference name="critical" value="critical\make_casualty" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />

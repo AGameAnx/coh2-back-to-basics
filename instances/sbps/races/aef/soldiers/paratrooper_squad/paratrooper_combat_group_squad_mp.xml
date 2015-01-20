@@ -1030,7 +1030,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.75" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_timed_demo_mp" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_timed_demo_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="349921" />
