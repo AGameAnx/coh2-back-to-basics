@@ -1,0 +1,550 @@
+<instance description="4th tier vehicle building&#xA;Multiplayer Clone." template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
+			<string name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="False" />
+			<file name="animator" value="armies\soviet\structures\base_building_4\base_building_4" />
+			<bool name="is_visible_in_game" value="True" />
+			<float name="precise_size" value="-1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext">
+			<bool name="is_in_spatial_bucket" value="True" />
+			<float name="rotate_snap" value="360" />
+			<float name="transferable" value="0" />
+			<bool name="kill_paradrop" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext">
+			<bool name="can_repair" value="True" />
+			<bool name="cuttable" value="False" />
+			<string name="death_event_name" value="death" />
+			<float name="death_seconds" value="1" />
+			<bool name="delete_when_dead" value="True" />
+			<bool name="force_attacker_memory" value="False" />
+			<float name="hitpoints" value="2000" />
+			<bool name="is_invincible" value="False" />
+			<bool name="is_salvagable_wreck" value="False" />
+			<bool name="keep_wreck_ownership" value="False" />
+			<bool name="rear_damage_enabled" value="False" />
+			<instance_reference name="rebuilt_entity" value="" />
+			<instance_reference name="rebuilt_squad" value="" />
+			<bool name="rebuilt_use_wreck_owner" value="False" />
+			<bool name="receive_weapon_cover_modifiers" value="True" />
+			<float name="regeneration" value="0" />
+			<bool name="regeneration_disabled" value="True" />
+			<bool name="remove_from_pathfinding_on_death" value="True" />
+			<bool name="reveal_to_all_on_death" value="False" />
+			<bool name="ui_can_scuttle" value="True" />
+			<instance_reference name="wreck_entity" value="" />
+			<list name="death_actions">
+			</list>
+			<float name="armor" value="0" />
+			<float name="rear_armor" value="0" />
+			<float name="target_size" value="26" />
+			<bool name="dies_from_broken_ice" value="True" />
+			<list name="criticals">
+				<group name="critical_group">
+					<float name="max_health_percentage" value="0" />
+					<list name="critical_info">
+						<group name="info">
+							<float name="weight" value="100" />
+							<enum_table name="applicable_weapons">
+								<bool name="small_arms" value="True" />
+								<bool name="flame" value="True" />
+								<bool name="ballistic" value="True" />
+								<bool name="explosive" value="True" />
+							</enum_table>
+							<instance_reference name="critical" value="critical\building_destroy" />
+							<enum_table name="applicable_hit_direction">
+								<bool name="front" value="True" />
+								<bool name="rear" value="True" />
+							</enum_table>
+						</group>
+					</list>
+				</group>
+			</list>
+			<float name="weapon_priority" value="-80" />
+			<template_reference name="wreck_entity_option" value="options\none">
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext">
+			<instance_reference name="hit_material" value="hit_material\sandbag" />
+			<bool name="hit_non_neutral" value="True" />
+			<float name="hit_percentage" value="1" />
+			<bool name="pass_through" value="False" />
+			<group name="projectile_pass_through">
+				<bool name="tp_artillery" value="False" />
+				<bool name="tp_artillery_inf" value="False" />
+				<bool name="tp_artillery_overwatch" value="False" />
+				<bool name="tp_homing" value="False" />
+				<bool name="tp_homing_inf" value="False" />
+				<bool name="tp_sticky" value="False" />
+				<bool name="tp_throw" value="False" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\line_of_sight_ext">
+			<group name="blocking_box">
+				<float name="x" value="0.01" />
+				<float name="y" value="0.01" />
+				<float name="z" value="0.01" />
+			</group>
+			<bool name="is_shot_blocking" value="True" />
+			<bool name="use_blocking_box" value="False" />
+			<enum name="does_block_line_of_sight" value="Never" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\marker_ext">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_ext">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext">
+			<float name="extra_build_test_footprint" value="2" />
+			<bool name="require_all_cells_clear" value="True" />
+			<bool name="snap_to_terrain" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext">
+			<group name="unit_type_list">
+				<enum name="unit_type00" value="building" />
+				<enum name="unit_type01" value="motor_pool_heavy" />
+				<enum name="unit_type02" value="annihilation_condition" />
+				<enum name="unit_type03" value="" />
+				<enum name="unit_type04" value="" />
+				<enum name="unit_type05" value="" />
+				<enum name="unit_type06" value="" />
+				<enum name="unit_type07" value="" />
+				<enum name="unit_type08" value="" />
+				<enum name="unit_type09" value="" />
+				<enum name="unit_type10" value="" />
+				<enum name="unit_type11" value="" />
+				<enum name="unit_type12" value="" />
+				<enum name="unit_type13" value="" />
+				<enum name="unit_type14" value="" />
+				<enum name="unit_type15" value="" />
+			</group>
+			<enum name="weapon_targeting" value="automatic" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext">
+			<bool name="automatic_fit_on_placement" value="False" />
+			<bool name="can_set_facing" value="False" />
+			<float name="cancel_refund_percentage" value="100" />
+			<bool name="check_terrain" value="False" />
+			<string name="construction_state_name" value="build_shovel_sandbag_state" />
+			<float name="construction_transition_time" value="1.36667" />
+			<bool name="force_construction" value="False" />
+			<float name="max_engineers" value="8" />
+			<bool name="must_be_in_command_territory" value="True" />
+			<bool name="must_be_in_line_of_sight" value="False" />
+			<bool name="must_be_in_supply_territory" value="True" />
+			<bool name="must_be_in_territory" value="False" />
+			<bool name="must_be_on" value="False" />
+			<bool name="must_not_be_in_walkable_surfaces" value="False" />
+			<instance_reference name="on_construction_squad" value="" />
+			<float name="orientation" value="90" />
+			<enum name="placement_type" value="tp_structure" />
+			<bool name="prefer_spots_on_side_with_leader" value="False" />
+			<bool name="query_abilities_for_range_ui" value="True" />
+			<bool name="query_construction_actions_for_range_ui" value="True" />
+			<bool name="query_upgrade_actions_for_range_ui" value="True" />
+			<bool name="random_rotation" value="False" />
+			<float name="replace_ghost_distance" value="0" />
+			<float name="spacing_distance" value="0" />
+			<bool name="self_construct" value="False" />
+			<list name="on_construction_actions">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="35" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.5" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073743132" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="True" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\cost_fuel_modifier">
+							<enum name="application_type" value="apply_to_entity_type" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="high_tech_cost_fuel_reduction" />
+							<instance_reference name="target_type_name" value="ebps\races\soviet\buildings\base_building\motorpool_mp" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="-45" />
+							<instance_reference name="tooltip" value="modifier_tooltip\cost_fuel_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\cost_manpower_modifier">
+							<enum name="application_type" value="apply_to_entity_type" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="high_tech_cost_manpower_reduction" />
+							<instance_reference name="target_type_name" value="ebps\races\soviet\buildings\base_building\motorpool_mp" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="-60" />
+							<instance_reference name="tooltip" value="modifier_tooltip\cost_manpower_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\cost_fuel_modifier">
+							<enum name="application_type" value="apply_to_entity_type" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="high_tech_cost_fuel_reduction" />
+							<instance_reference name="target_type_name" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="-45" />
+							<instance_reference name="tooltip" value="modifier_tooltip\cost_fuel_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\cost_manpower_modifier">
+							<enum name="application_type" value="apply_to_entity_type" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="high_tech_cost_manpower_reduction" />
+							<instance_reference name="target_type_name" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="-60" />
+							<instance_reference name="tooltip" value="modifier_tooltip\cost_manpower_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073743153" />
+				</template_reference>
+			</list>
+			<list name="materials">
+			</list>
+			<group name="field_placement_info">
+				<instance_reference name="border_entity" value="" />
+				<instance_reference name="replace_entity" value="" />
+				<int name="replace_count" value="0" />
+				<float name="replace_retry_distance" value="0" />
+			</group>
+			<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
+			<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
+			<instance_reference name="ui_range" value="" />
+			<float name="ui_range_radius" value="0" />
+			<instance_reference name="ui_setfacing" value="ui_setfacing\construction_base_building" />
+			<bool name="query_weapon_for_range_ui" value="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext">
+			<group name="time_cost">
+				<group name="cost">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="fuel" value="135" />
+					<float name="manpower" value="240" />
+					<float name="munition" value="0" />
+					<float name="popcap" value="0" />
+				</group>
+				<float name="time_seconds" value="200" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\impass_ext">
+			<bool name="cant_build" value="True" />
+			<bool name="heavy_crush" value="True" />
+			<bool name="land" value="True" />
+			<bool name="light_crush" value="True" />
+			<bool name="medium_crush" value="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext">
+			<group name="detect_camouflage">
+				<float name="tp_global" value="3" />
+				<float name="tp_mine" value="0" />
+			</group>
+			<bool name="extended_sight" value="False" />
+			<float name="extended_sight_radius" value="70" />
+			<float name="reveal_area_on_death_time" value="1.5" />
+			<group name="sight_package">
+				<float name="inner_height" value="5" />
+				<float name="inner_radius" value="10" />
+				<float name="outer_height" value="-10" />
+				<float name="outer_radius" value="35" />
+				<float name="cone_angle" value="360" />
+				<float name="cone_start_radius" value="0" />
+			</group>
+			<group name="extended_sight_target_info">
+				<template_reference name="extended_sight_target_info" value="type_ability_target_type\all">
+				</template_reference>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext">
+			<bool name="ap_killed_kicker" value="True" />
+			<bool name="ap_loss_kicker" value="True" />
+			<bool name="cullsphere_selectable" value="False" />
+			<float name="decorator_offset" value="0" />
+			<string name="extra_text_deprecated" value="T-34/76 Medium Tank, SU-85 Tank Destroyer, BM-13 Katyusha Rocket Truck and special command specific heavy assault guns." />
+			<bool name="ghost_enable" value="True" />
+			<bool name="has_speech_code" value="False" />
+			<locstring name="help_text" value="11042144" />
+			<string name="hotkey_name" value="T" />
+			<string name="icon_name" value="Icons_buildings_building_soviet_heavy_factory" />
+			<enum name="kill_type" value="building" />
+			<float name="minimap_color_a" value="255" />
+			<float name="minimap_color_b" value="255" />
+			<float name="minimap_color_g" value="255" />
+			<float name="minimap_color_r" value="255" />
+			<bool name="minimap_enable" value="True" />
+			<bool name="minimap_team_only" value="False" />
+			<bool name="minimap_teamcolor" value="True" />
+			<bool name="obb_selectable" value="True" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="True" />
+			<locstring name="screen_name" value="17" mod="23d6cdb82724460dbcb21e1a9162e473" />
+			<enum name="selection_name" value="building" />
+			<float name="selection_scale" value="1" />
+			<enum name="selection_type" value="single_entity_select" />
+			<bool name="sloppy_selectable" value="False" />
+			<group name="speaker">
+				<string name="code_1" value="sbl" />
+				<string name="code_2" value="" />
+				<string name="code_3" value="" />
+			</group>
+			<group name="speech_code_2">
+				<string name="code_1" value="s3" />
+				<string name="code_2" value="bl" />
+				<string name="code_3" value="" />
+			</group>
+			<group name="speech_code_3">
+				<string name="code_1" value="sb3" />
+				<string name="code_2" value="bld" />
+				<string name="code_3" value="" />
+			</group>
+			<group name="speech_code_cover">
+				<string name="code_1" value="" />
+				<string name="code_2" value="" />
+				<string name="code_3" value="" />
+			</group>
+			<bool name="tacmap_team_only" value="False" />
+			<locstring name="tooltip_txt" value="0" />
+			<int name="ui_priority" value="0" />
+			<string name="minimap_icon" value="Icons_taskbar_coh_taskbar_01_sc_icon_05" />
+			<string name="portrait_icon_winter" value="Icons_portraits_building_soviet_heavy_factory_w_portrait" />
+			<group name="speaker_alt">
+				<string name="code_1" value="" />
+				<string name="code_2" value="" />
+				<string name="code_3" value="" />
+			</group>
+			<float name="minimap_icon_scale" value="1" />
+			<string name="portrait_icon_summer" value="Icons_portraits_building_soviet_heavy_factory_s_portrait" />
+			<locstring name="brief_text" value="11039004" />
+			<locstring name="extra_text" value="15" mod="23d6cdb82724460dbcb21e1a9162e473" />
+			<locstring name="screen_name_short" value="0" />
+			<bool name="show_in_build_log" value="True" />
+			<bool name="show_entity_appearance" value="True" />
+			<locstring name="screen_name_world" value="0" />
+			<locstring name="help_text_world" value="0" />
+			<locstring name="extra_text_world" value="0" />
+			<enum name="map_rotation_type_override" value="no_override" />
+			<string name="symbol_icon_name" value="Icons_symbols_building_soviet_heavy_factory_symbol" />
+			<enum name="occlusion_state" value="can_be_occluded" />
+			<enum name="decorator_visibility" value="default" />
+			<string name="decorator_marker_name" value="Marker_FX_UI" />
+			<bool name="skin_pack_override" value="False" />
+			<string name="skin_summer" value="" />
+			<string name="skin_winter" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext">
+			<bool name="reject_attack_command" value="True" />
+			<list name="hardpoints">
+			</list>
+			<int name="sight_hardpoint" value="-1" />
+			<list name="kill_actions">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_any_in_list">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_structure">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="True" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_structure">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\barracks_mp" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext">
+			<bool name="animated_spawning" value="False" />
+			<float name="animated_spawning_seconds" value="0" />
+			<bool name="must_be_in_supply" value="True" />
+			<float name="reinforce_radius" value="20" />
+			<bool name="spawn_at_map_entry_point" value="True" />
+			<list name="spawn_items">
+				<group name="spawn_item">
+					<int name="ui_position" value="11" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\katyusha_rocket_trucks\katyusha_bm-13n_squad_mp" />
+				</group>
+				<group name="spawn_item">
+					<int name="ui_position" value="12" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\t_34_squad\t_34_76_squad_mp" />
+				</group>
+				<group name="spawn_item">
+					<int name="ui_position" value="13" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\su-85\su-85_mp" />
+				</group>
+			</list>
+			<list name="bonus_xp_from_hold_list">
+			</list>
+			<list name="reinforce_requirements">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" />
+			<list name="standard_upgrades">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext">
+			<list name="actions">
+				<template_reference name="action" value="action\add_aura">
+					<instance_reference name="aura" value="aura\heat_aura_mp" />
+					<group name="area_info">
+						<float name="angle_left" value="0" />
+						<float name="angle_right" value="0" />
+						<enum name="area_type" value="circle" />
+						<float name="radius" value="30" />
+					</group>
+					<template_reference name="target_info" value="type_ability_target_type\all">
+					</template_reference>
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="1073743133" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_deformation_action">
+					<group name="deform_decal">
+						<string name="deform_decal_file" value="soviet_bb4" />
+						<bool name="limited" value="True" />
+						<bool name="random_rotation" value="False" />
+						<float name="rotation" value="0" />
+						<group name="splat_list">
+							<group name="entry_01">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_02">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_03">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_04">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_05">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_06">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_07">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_08">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_09">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_10">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_11">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_12">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_13">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_14">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_15">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+							<group name="entry_default">
+								<string name="splat_texture" value="" />
+								<instance_reference name="terrain_material" value="" />
+							</group>
+						</group>
+						<float name="vertical_scale" value="0.018" />
+						<enum name="deform_type" value="tp_additive" />
+					</group>
+					<float name="rotation" value="0" />
+					<float name="scale_x" value="12" />
+					<float name="scale_y" value="12" />
+					<bool name="undoable" value="True" />
+					<uniqueid name="id" value="1073743134" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="2" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073743135" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_stamp_action">
+					<string name="stamp_name" value="data:art\stamps\soviet_bb4.stamp" />
+					<float name="rotation" value="0" />
+					<uniqueid name="id" value="1073743136" />
+					<float name="offset_x" value="-0.4" />
+					<float name="offset_y" value="0" />
+					<float name="offset_z" value="0.4" />
+					<bool name="camera_relative_rotation" value="False" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\demolishable_ext">
+			<bool name="detonate_requires_fully_wired" value="False" />
+			<bool name="prevent_detonation_effects" value="False" />
+			<bool name="wire_all_points" value="False" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1620" />
+</instance>

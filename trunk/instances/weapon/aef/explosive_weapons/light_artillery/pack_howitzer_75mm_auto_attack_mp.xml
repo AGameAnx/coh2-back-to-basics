@@ -105,7 +105,7 @@
 		<group name="setup">
 			<bool name="has_instant_setup" value="False" />
 			<float name="duration" value="1.8" />
-			<float name="attach_duration" value="0" />
+			<float name="attach_duration" value="0.7" />
 			<bool name="can_interrupt_setup" value="False" />
 		</group>
 		<group name="cooldown">

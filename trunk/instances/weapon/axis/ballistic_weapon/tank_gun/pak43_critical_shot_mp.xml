@@ -32,7 +32,8 @@
 				<float name="min" value="0" />
 				<float name="max" value="0" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
 				<float name="near" value="1" />
@@ -55,7 +56,8 @@
 			<float name="fire_cone_angle" value="5" />
 		</group>
 		<group name="deflection">
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="False" />
 			<float name="deflection_damage_multiplier" value="0" />
 		</group>
@@ -71,7 +73,7 @@
 		<string name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\pak_88mm_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\pak_88mm_pak43_shell_mp" />
 		</group>
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -123,11 +125,11 @@
 		<group name="damage">
 			<float name="min" value="320" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="unit_type" value="vehicle" />
 							<enum name="reason" value="usage" />
@@ -142,11 +144,11 @@
 						<int name="phrase_order" value="0" />
 					</template_reference>
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
+						<template_reference name="action" value="action\random_action">
 							<list name="random_actions">
 								<group name="action_choice">
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<uniqueid name="id" value="62049" />
 											<instance_reference name="critical" value="critical\vehicle_crew_shocked" />
@@ -365,11 +367,11 @@
 		</group>
 		<group name="fire">
 			<list name="on_fire_actions">
-				<template_reference value="action\timed_action" name="action">
+				<template_reference name="action" value="action\timed_action">
 					<list name="subactions">
-						<template_reference value="action\apply_modifiers_action" name="action">
+						<template_reference name="action" value="action\apply_modifiers_action">
 							<list name="modifiers">
-								<template_reference value="modifiers\enable_weapon_modifier" name="modifier">
+								<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
 									<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 									<bool name="exclusive" value="False" />
 									<enum name="usage_type" value="enable" />
@@ -448,9 +450,9 @@
 		</group>
 		<string name="fx_tracer_name" value="" />
 		<group name="accuracy">
-			<float name="near" value="0.045" />
-			<float name="far" value="0" />
-			<float name="mid" value="0" />
+			<float name="near" value="0.102" />
+			<float name="far" value="0.047" />
+			<float name="mid" value="0.053" />
 		</group>
 		<instance_reference name="ui_range" value="" />
 		<enum name="weapon_type" value="ballistic" />

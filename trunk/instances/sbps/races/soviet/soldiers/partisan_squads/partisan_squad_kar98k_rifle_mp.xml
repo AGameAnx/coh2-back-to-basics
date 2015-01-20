@@ -405,12 +405,12 @@
 						<group name="action_choice">
 							<list name="actions">
 								<template_reference name="action" value="action\slot_item_add">
-									<instance_reference name="slot_item" value="slot_item\soviet\small_arms\dp-28_light_machine_gun_package_mp" />
+									<instance_reference name="slot_item" value="slot_item\soviet\small_arms\dp-28_light_machine_gun_package_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 									<bool name="permanent" value="True" />
 									<uniqueid name="id" value="60631" />
 								</template_reference>
 								<template_reference name="action" value="action\slot_item_add">
-									<instance_reference name="slot_item" value="slot_item\soviet\small_arms\dp-28_light_machine_gun_package_mp" />
+									<instance_reference name="slot_item" value="slot_item\soviet\small_arms\dp-28_light_machine_gun_package_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 									<bool name="permanent" value="True" />
 									<uniqueid name="id" value="60632" />
 								</template_reference>
@@ -420,12 +420,12 @@
 						<group name="action_choice">
 							<list name="actions">
 								<template_reference name="action" value="action\slot_item_add">
-									<instance_reference name="slot_item" value="slot_item\soviet\anti_tank_weapon\ptrs_41_anti_tank_rifle_guard_troop_mp" />
+									<instance_reference name="slot_item" value="slot_item\soviet\anti_tank_weapon\ptrs_41_anti_tank_rifle_guard_troop_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 									<bool name="permanent" value="True" />
 									<uniqueid name="id" value="60633" />
 								</template_reference>
 								<template_reference name="action" value="action\slot_item_add">
-									<instance_reference name="slot_item" value="slot_item\soviet\anti_tank_weapon\ptrs_41_anti_tank_rifle_guard_troop_mp" />
+									<instance_reference name="slot_item" value="slot_item\soviet\anti_tank_weapon\ptrs_41_anti_tank_rifle_guard_troop_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 									<bool name="permanent" value="True" />
 									<uniqueid name="id" value="60634" />
 								</template_reference>

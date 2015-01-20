@@ -24,7 +24,8 @@
 		</group>
 		<string name="name" value="five hundred pound bomb" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -57,7 +58,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="0" />
@@ -120,11 +122,11 @@
 		<group name="damage">
 			<float name="min" value="400" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="unit_type" value="infantry" />
 							<enum name="reason" value="usage" />
@@ -136,7 +138,7 @@
 					</list>
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference value="action\make_dead" name="action">
+						<template_reference name="action" value="action\make_dead">
 							<bool name="ignore_invulnerability" value="False" />
 							<bool name="destroy" value="False" />
 							<uniqueid name="id" value="62108" />
@@ -152,6 +154,41 @@
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<uniqueid name="id" value="62107" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+					<bool name="check_self" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<bool name="owned_by_player_only" value="True" />
+							<enum name="unit_type" value="vehicle" />
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="search_load_out" value="False" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+						</template_reference>
+					</list>
+					<bool name="fire_and_forget_non_global" value="False" />
+					<list name="action_table">
+						<template_reference name="action" value="action\damage">
+							<float name="damage" value="150" />
+							<bool name="percentage" value="False" />
+							<bool name="set" value="False" />
+							<bool name="cause_criticals" value="True" />
+							<enum name="crit_weapon_type" value="explosive" />
+							<uniqueid name="id" value="1073742957" />
+						</template_reference>
+					</list>
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<uniqueid name="id" value="1073742958" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
@@ -196,7 +233,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">
@@ -378,19 +416,19 @@
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="6.3" />
+				<float name="radius" value="6" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell_extreme" />
 			<group name="damage_friendly">
 				<float name="near" value="0.5" />
 				<float name="far" value="0.025" />
 				<float name="mid" value="0.075" />
 			</group>
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="1000" />
+				<float name="far" value="15" />
 				<float name="near" value="1000" />
-				<float name="mid" value="1000" />
+				<float name="mid" value="200" />
 			</template_reference>
 			<bool name="can_harm_shooter" value="False" />
 			<group name="accuracy">

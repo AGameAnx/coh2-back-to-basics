@@ -37,7 +37,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="60" />
+					<float name="manpower" value="40" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -192,7 +192,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\make_casualty" />
+							<instance_reference name="critical" value="critical\make_casualty" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />

@@ -463,7 +463,7 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="21" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\vehicles\panzer_iv_squad\panzer_iv_ausf_j_buildable_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\panther_squad\panther_ausf_g_squad_mp" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="22" />

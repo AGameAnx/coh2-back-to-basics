@@ -364,9 +364,9 @@
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<group name="suppression_friendly">
-				<float name="near" value="0.2" />
+				<float name="near" value="1" />
 				<float name="far" value="0.1" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.35" />
 			</group>
 			<group name="building_damage">
 				<float name="near" value="1.0023" />
@@ -375,13 +375,13 @@
 			</group>
 			<group name="distance">
 				<float name="near" value="1" />
-				<float name="far" value="5.6" />
+				<float name="far" value="7.5" />
 				<float name="mid" value="2.8" />
 			</group>
 			<group name="suppression">
-				<float name="near" value="0.2" />
+				<float name="near" value="1" />
 				<float name="far" value="0.1" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.35" />
 			</group>
 		</group>
 		<string name="fx_tracer_name" value="" />

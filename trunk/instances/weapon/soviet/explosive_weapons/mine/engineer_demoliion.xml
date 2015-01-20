@@ -444,7 +444,7 @@
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="10" />
+				<float name="radius" value="8.5" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_demolitions" mod="23d6cdb82724460dbcb21e1a9162e473" />

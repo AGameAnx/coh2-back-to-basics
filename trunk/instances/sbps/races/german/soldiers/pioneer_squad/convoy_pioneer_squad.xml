@@ -686,7 +686,7 @@
 				<float name="munition" value="90" />
 				<float name="popcap" value="0" />
 			</group>
-			<instance_reference name="demo_entity" value="ebps\props\demo_charge" />
+			<instance_reference name="demo_entity" value="ebps\props\demo_charge" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<bool name="parallel_placement" value="True" />
 			<bool name="place_anywhere" value="True" />
 			<float name="recharge_time" value="10" />
