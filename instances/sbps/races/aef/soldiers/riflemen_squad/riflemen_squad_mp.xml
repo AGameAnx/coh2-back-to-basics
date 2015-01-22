@@ -818,7 +818,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\aef\toggle_ability\commander_ability\riflemen_defensive" />
+				<instance_reference name="ability" value="abilities\aef\toggle_ability\commander_ability\riflemen_defensive" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\pm\aef\specializations\cover_specialization\cover_specialization_hunker_down" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\sp\refuel_tank_sp" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\forward_observers_always_on" />

@@ -28,16 +28,23 @@
 			</template_reference>
 			<template_reference name="action" value="action\trigger_critical_action">
 				<float name="remove_at_health" value="1" />
-				<instance_reference name="critical" value="critical\vehicle_light_destroy_engine" />
-				<uniqueid name="id" value="1073743095" />
+				<instance_reference name="critical" value="critical\vehicle_destroy_maingun" />
+				<uniqueid name="id" value="1073743267" />
 			</template_reference>
-			<template_reference name="action" value="action\damage">
-				<float name="damage" value="0.15" />
-				<bool name="percentage" value="True" />
-				<bool name="set" value="True" />
-				<bool name="cause_criticals" value="False" />
-				<enum name="crit_weapon_type" value="small_arms" />
-				<uniqueid name="id" value="1073743097" />
+			<template_reference name="action" value="action\timed_action">
+				<float name="duration" value="0.5" />
+				<bool name="fire_and_forget" value="False" />
+				<list name="subactions">
+					<template_reference name="action" value="action\heal_action">
+						<float name="amount" value="420" />
+						<group name="target_info">
+							<template_reference name="target_info" value="type_ability_target_type\all">
+							</template_reference>
+						</group>
+						<uniqueid name="id" value="1073743265" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073743264" />
 			</template_reference>
 		</list>
 		<list name="requirements">

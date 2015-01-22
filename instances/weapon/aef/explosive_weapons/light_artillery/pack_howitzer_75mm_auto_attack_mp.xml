@@ -374,7 +374,7 @@
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1.25" />
+				<float name="near" value="0.75" />
 				<float name="far" value="5.6" />
 				<float name="mid" value="2.8" />
 			</group>
@@ -386,7 +386,7 @@
 		</group>
 		<string name="fx_tracer_name" value="" />
 		<group name="projectile">
-			<instance_reference name="projectile" value="ebps\projectile\aef_pack_howitzer_75mm_round_high_arc_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\aef_pack_howitzer_75mm_round_high_arc_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<bool name="delete_previous_on_hit" value="False" />
 		</group>
 		<group name="accuracy">

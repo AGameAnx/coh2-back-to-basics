@@ -24,7 +24,8 @@
 		</group>
 		<string name="name" value="Mine Weapon" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="2" />
 				<float name="max" value="2" />
@@ -57,7 +58,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="0" />
@@ -118,13 +120,13 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="320" />
+			<float name="min" value="100" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="unit_type" value="vehicle" />
 							<enum name="reason" value="usage" />
@@ -136,21 +138,18 @@
 					</list>
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
-							<uniqueid name="id" value="62162" />
-							<bool name="instant" value="True" />
-							<list name="random_actions">
-								<group name="action_choice">
-									<int name="weight" value="100" />
-									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
-											<float name="remove_at_health" value="1" />
-											<uniqueid name="id" value="62163" />
-											<instance_reference name="critical" value="critical\vehicle_lose_treads_or_wheels" />
-										</template_reference>
-									</list>
-								</group>
-							</list>
+						<template_reference name="action" value="action\trigger_critical_action">
+							<float name="remove_at_health" value="1" />
+							<uniqueid name="id" value="1073743247" />
+							<instance_reference name="critical" value="critical\vehicle_lose_treads_or_wheels" />
+						</template_reference>
+						<template_reference name="action" value="action\damage">
+							<float name="damage" value="160" />
+							<bool name="percentage" value="False" />
+							<bool name="set" value="False" />
+							<bool name="cause_criticals" value="True" />
+							<enum name="crit_weapon_type" value="explosive" />
+							<uniqueid name="id" value="1073743248" />
 						</template_reference>
 					</list>
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -164,7 +163,7 @@
 					<bool name="instant_requirement_check" value="True" />
 				</template_reference>
 			</list>
-			<float name="max" value="320" />
+			<float name="max" value="100" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -200,7 +199,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">
@@ -375,14 +375,14 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.7" />
-				<float name="mid" value="1" />
+				<float name="far" value="0.01" />
+				<float name="mid" value="0.35" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="6.3" />
+				<float name="radius" value="5.5" />
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
@@ -399,8 +399,8 @@
 			<bool name="can_harm_shooter" value="False" />
 			<group name="accuracy">
 				<float name="near" value="5" />
-				<float name="far" value="0.6" />
-				<float name="mid" value="2.8" />
+				<float name="far" value="5" />
+				<float name="mid" value="5" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<group name="suppression_friendly">
@@ -414,9 +414,9 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1" />
-				<float name="far" value="3.1" />
-				<float name="mid" value="1.8" />
+				<float name="near" value="2.15" />
+				<float name="far" value="5.5" />
+				<float name="mid" value="3" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="0.4" />

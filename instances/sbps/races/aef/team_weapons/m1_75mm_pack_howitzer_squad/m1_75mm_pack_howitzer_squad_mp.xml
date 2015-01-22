@@ -582,103 +582,37 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="1960" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11066682" />
+								<locstring name="screen_name" value="18" mod="23d6cdb82724460dbcb21e1a9162e473" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="action" value="action\change_target_action">
-										<list name="actions">
-											<template_reference name="action" value="action\requirement_action">
-												<bool name="check_self" value="False" />
-												<bool name="global_fire_and_forget_on_success" value="False" />
-												<bool name="instant_requirement_check" value="True" />
-												<bool name="kill_action_on_failed_requirements" value="False" />
-												<bool name="no_retrigger" value="False" />
-												<bool name="validate_all_sub_actions" value="True" />
-												<list name="requirement_table">
-													<template_reference name="required" value="requirements\required_unit_type">
-														<enum name="reason" value="usage" />
-														<locstring name="ui_name" value="0" />
-														<enum name="unit_type" value="artillery" />
-														<template_reference name="qualify_option" value="options\none">
-														</template_reference>
-														<bool name="search_load_out" value="False" />
-														<bool name="owned_by_player_only" value="True" />
-													</template_reference>
-												</list>
-												<list name="action_table">
-													<template_reference name="action" value="action\remove_weapon">
-														<bool name="fire_and_forget" value="False" />
-														<float name="hardpoint" value="1" />
-														<uniqueid name="id" value="1073742435" />
-													</template_reference>
-													<template_reference name="action" value="action\add_weapon">
-														<float name="hardpoint" value="1" />
-														<group name="weapon">
-															<group name="heading">
-																<float name="x" value="0" />
-																<float name="y" value="0" />
-																<float name="z" value="1" />
-															</group>
-															<float name="length" value="0" />
-															<group name="origin">
-																<float name="x" value="0" />
-																<float name="y" value="1" />
-																<float name="z" value="0" />
-															</group>
-															<enum name="type" value="default" />
-															<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_heat_mp" />
-														</group>
-														<uniqueid name="id" value="1073742437" />
-													</template_reference>
-													<template_reference name="action" value="action\change_weapon">
-														<float name="hardpoint" value="1" />
-														<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_heat_mp" />
-														<uniqueid name="id" value="1073742440" />
-													</template_reference>
-													<template_reference name="action" value="action\remove_weapon">
-														<bool name="fire_and_forget" value="False" />
-														<float name="hardpoint" value="2" />
-														<uniqueid name="id" value="1073742436" />
-													</template_reference>
-													<template_reference name="action" value="action\add_weapon">
-														<float name="hardpoint" value="2" />
-														<group name="weapon">
-															<group name="heading">
-																<float name="x" value="0" />
-																<float name="y" value="0" />
-																<float name="z" value="1" />
-															</group>
-															<float name="length" value="0" />
-															<group name="origin">
-																<float name="x" value="0" />
-																<float name="y" value="1" />
-																<float name="z" value="0" />
-															</group>
-															<enum name="type" value="default" />
-															<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_heat_mp" />
-														</group>
-														<uniqueid name="id" value="1073742438" />
-													</template_reference>
-													<template_reference name="action" value="action\change_weapon">
-														<float name="hardpoint" value="2" />
-														<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_heat_mp" />
-														<uniqueid name="id" value="1073742441" />
-													</template_reference>
-												</list>
-												<uniqueid name="id" value="1073742439" />
-												<bool name="fire_and_forget_non_global" value="False" />
-												<template_reference name="ui_help_text" value="tables\help_text_phrase">
-													<int name="phrase_order" value="0" />
-													<locstring name="phrase" value="0" />
-												</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\damage_weapon_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.15" />
+												<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
 											</template_reference>
 										</list>
-										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073742420" />
+										<uniqueid name="id" value="1073743268" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -716,7 +650,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="True" />
 												<string name="modifier_id" value="pack_howitzer_barrage_vet" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_heat_mp" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="1.33" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -737,7 +671,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.7" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_heat_mp" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
@@ -838,137 +772,6 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073742425" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_not">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_any_in_list">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<list name="requirements">
-										<template_reference name="requirement" value="requirements\required_squad_veterancy">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<float name="veterancy_rank" value="2" />
-										</template_reference>
-										<template_reference name="requirement" value="requirements\required_squad_veterancy">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<float name="veterancy_rank" value="3" />
-										</template_reference>
-									</list>
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\change_target_action">
-							<list name="actions">
-								<template_reference name="action" value="action\requirement_action">
-									<bool name="check_self" value="False" />
-									<bool name="global_fire_and_forget_on_success" value="False" />
-									<bool name="instant_requirement_check" value="True" />
-									<bool name="kill_action_on_failed_requirements" value="False" />
-									<bool name="no_retrigger" value="False" />
-									<bool name="validate_all_sub_actions" value="True" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_unit_type">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<enum name="unit_type" value="artillery" />
-											<template_reference name="qualify_option" value="options\none">
-											</template_reference>
-											<bool name="search_load_out" value="False" />
-											<bool name="owned_by_player_only" value="True" />
-										</template_reference>
-									</list>
-									<list name="action_table">
-										<template_reference name="action" value="action\remove_weapon">
-											<bool name="fire_and_forget" value="False" />
-											<float name="hardpoint" value="1" />
-											<uniqueid name="id" value="1073742427" />
-										</template_reference>
-										<template_reference name="action" value="action\add_weapon">
-											<float name="hardpoint" value="1" />
-											<group name="weapon">
-												<group name="heading">
-													<float name="x" value="0" />
-													<float name="y" value="0" />
-													<float name="z" value="1" />
-												</group>
-												<float name="length" value="0" />
-												<group name="origin">
-													<float name="x" value="0" />
-													<float name="y" value="1" />
-													<float name="z" value="0" />
-												</group>
-												<enum name="type" value="default" />
-												<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_auto_attack_mp" />
-											</group>
-											<uniqueid name="id" value="1073742428" />
-										</template_reference>
-										<template_reference name="action" value="action\change_weapon">
-											<float name="hardpoint" value="1" />
-											<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_auto_attack_mp" />
-											<uniqueid name="id" value="1073742442" />
-										</template_reference>
-										<template_reference name="action" value="action\remove_weapon">
-											<bool name="fire_and_forget" value="False" />
-											<float name="hardpoint" value="2" />
-											<uniqueid name="id" value="1073742430" />
-										</template_reference>
-										<template_reference name="action" value="action\add_weapon">
-											<float name="hardpoint" value="2" />
-											<group name="weapon">
-												<group name="heading">
-													<float name="x" value="0" />
-													<float name="y" value="0" />
-													<float name="z" value="1" />
-												</group>
-												<float name="length" value="0" />
-												<group name="origin">
-													<float name="x" value="0" />
-													<float name="y" value="1" />
-													<float name="z" value="0" />
-												</group>
-												<enum name="type" value="default" />
-												<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_mp" />
-											</group>
-											<uniqueid name="id" value="1073742431" />
-										</template_reference>
-										<template_reference name="action" value="action\change_weapon">
-											<float name="hardpoint" value="2" />
-											<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_mp" />
-											<uniqueid name="id" value="1073742443" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073742433" />
-									<bool name="fire_and_forget_non_global" value="False" />
-									<template_reference name="ui_help_text" value="tables\help_text_phrase">
-										<int name="phrase_order" value="0" />
-										<locstring name="phrase" value="0" />
-									</template_reference>
-								</template_reference>
-							</list>
-							<enum name="change_target_type" value="entities" />
-							<uniqueid name="id" value="1073742434" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073742426" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
