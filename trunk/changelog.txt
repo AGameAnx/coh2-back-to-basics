@@ -1,4 +1,123 @@
 =================================================================
+## v0.10
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- All small arms mid accuracy increased again by 10% (up to 1.306 effectiveness)
+- Abandon critical will now heal vehicles for 210hp, didn't work properly before
+- Abandon critical will now also destroy the main weapon
+- Global mines rework:
+ * Slightly smaller letal aoe range, resulting in fewer complete squad wipes
+ * Will now apply a smaller overall amount of damage to infantry, but the same amount to vehicles
+ * Aoe accuracy set to 5 on all ranges to prevent aoe from skipping dealing damage to entities on larger aoe distances
+ * Max aoe range 6.3 -> 5.5
+ * Far aoe range 3.1 -> 5.5
+ * Mid aoe range 1.8 -> 3.5
+ * Near aoe range 1 -> 2.15
+ * Mid aoe damage 1 -> 0.35
+ * Far aoe damage 0.7 -> 0.01
+ * For more details, check the army changes below
+- Reworked aim time multipliers:
+ * AT weaponry 1/5/10 -> 1/3/7
+ * Tank weaponry 1/7/20 -> 1/5/12
+
+Soviet:
+- Maxim rework:
+ * Base damage 14 -> 12
+ * Max range 50 -> 47
+ * Setup duration 1.75s -> 2.25s
+- Dshk 38 sokolov rework:
+ * Setup duration 2s -> 2.5s
+ * Arc of fire -27/27 -> -24/24
+- Mechanized Armor Kampaneya and Tankoviy Battalion Command build time changes reverted 200s -> 290s
+- Conscript sandbag wall health 500 -> 320
+- TM-35 mine rework:
+ * Base mine rework changes
+ * Base damage 200 -> 100
+ * Added 100 static damage that the mine will apply to vehicles it hits
+- Conscript cost 210mp -> 220mp
+- Reintroduced the increased received accuracy modifier to conscripts
+- M5 Halftrack Quad 50 cal rework:
+ * Mid accuracy 0.26 -> 0.19
+ * Near accuracy 0.68 -> 0.35
+
+USF:
+- Defensive stance with m1919 now properly requires the squad to be out of combat before being used
+- Pack howitzer rework:
+ * Barrage far aoe damage 0.04 -> 0.1
+ * Barrage near distance 1.25 -> 1
+ * Autoattack near 1.25 -> 0.75
+ * Artillery barrage salvo fired shell count increased 3 -> 4
+ * Projectile non-collision settings changed to create a more predictable behavior
+- All white phosphorus damage over time reworked:
+ * Damage frequency 0.2 -> 0.6
+ * New aoe profile making the smoke deal less damage on the outer circle radius
+- M20 M6 mine rework:
+ * Base damage 400 -> 100
+ * Added 220 of static damage that the mine will apply to vehicles it hits (this is an overall decrease)
+- Pack howitzer will no longer change its weapon at vet2. It will instead receive a 15% damage increase and 50% penetration increase
+- M1 57mm AT gun will no longer change its weapon at vet2. It will instead receive a 10% reload speed increase
+- Slightly buffed white phosphorus again, previous changes were too strong
+- Lieutenant and Captain will no longer search for cover when starting their engagement (specifically useful for target firing the bazookas)
+
+Ostheer:
+- Pioneer range table rework:
+ * Far 0.09 -> 0.06
+ * Mid 0.23 -> 0.21
+ * Near 0.43 -> 0.47
+- Reduced the chance of Sdkfz 251 halftrack top gunner dying in half
+- Anti-personnel mine rework:
+ * Aoe accuracy set to 5 on all ranges to prevent aoe from skipping dealing damage to entities on larger aoe distances
+ * Reworked penetration to penetrate nearby mines much less frequently
+ * Base damage 40 -> 80
+ * Max aoe distance 6.3 -> 4
+ * Far aoe range 3.1 -> 4
+ * Mid aoe range 1 -> 2.5
+ * Near aoe damage 1 -> 1.725
+ * Far aoe damage 0.7 -> 0.01
+ * Mid aoe damage 1 -> 0.35
+ * Added 50 of static damage that the mine will apply to vehicles it hits
+- Teller mine rework:
+ * Base mine rework changes
+ * Base damage 400 -> 100
+ * Added 220 of static damage that the mine will apply to vehicles it hits (this is an overall decrease)
+ * Chance to destroy engine 33% -> 60%
+ * Chance to damage engine 66% -> 40%
+- Riegel 43 mine rework:
+ * Base mine rework changes
+ * Base damage 320 -> 100
+ * Added 160 of static damage that the mine will apply to vehicles it hits (this is an overall decrease)
+
+OKW:
+- Fixed an issue with HEAT shells being treated as artillery
+- Reinforced wire is now cuttable
+- Reinforced wire build time 36s -> 29s
+- Schu Mine rework:
+ * Base mine rework changes
+ * Base damage 200 -> 100
+ * Added 100 of static damage that the mine will apply to vehicles it hits
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Upkeep increased 1.3 -> 1.375
+- Experience received 0.85 -> 0.875
+
+AI:
+- Added a new script to improve tank behaviour. Specifically, this should force AI to move back its tanks after they've suffered a critical or are heavily damaged and should make it face its tanks towards the enemy more often
+- AI will now have 150 max popcap
+- AI will have a decreased retreat chance once popcap becomes important
+- AI now has 15% increased starting resources (to apply more pressure early in the game)
+- AI now has slightly reduced upkeep
+- AI now has a slightly increased production rate
+- Lowered the importance of distance to the closest enemy in retreat logic
+
+
+=================================================================
 ## v0.9
 =================================================================
 

@@ -7,6 +7,8 @@ import("Prototype/SpecialAEFunctions.scar")
 import("PrintOnScreen.scar")
 import("WinConditions/Annihilate.scar")
 
+import('WinConditions/aicontrol.scar')
+
 SetGlobals()
 Scar_AddInit(VPTicker_OnInit)
 
@@ -25,13 +27,6 @@ local BtB = {
 BtB.SetupAIPlayer = function(p)
 	BtB.AIPlayerCount = BtB.AIPlayerCount + 1
 	BtB.AIPlayers[BtB.AIPlayerCount] = p
-	
-	-- TODO: Save modifiers and reset on init
-	Modify_PlayerProductionRate(p, 1.1)
-	Modify_PlayerExperienceReceived(p, 1.05)
-	Modify_PlayerResourceRate(p, RT_Manpower, 1.15)
-	--Modify_PlayerResourceRate(p, RT_Munition, 1.15)
-	Modify_PlayerResourceRate(p, RT_Fuel, 0.95)
 end
 
 BtB.RetreatTactic = function(squad)
@@ -193,8 +188,8 @@ function BtB_Init()
 		Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Action, 0.65, MUT_Multiplication)
 		Modify_PlayerSightRadius(p, 1.1)
-		Modify_Upkeep(p, 1.3)
-		Modify_PlayerExperienceReceived(p, 0.85)
+		Modify_Upkeep(p, 1.375)
+		Modify_PlayerExperienceReceived(p, 0.875)
 		
 		Player_SetMaxPopulation(p, CT_Personnel, 120)
 		Player_SetMaxCapPopulation(p, CT_Personnel, 120)

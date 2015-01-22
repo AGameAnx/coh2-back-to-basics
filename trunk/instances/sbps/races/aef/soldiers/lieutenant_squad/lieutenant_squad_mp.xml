@@ -204,7 +204,7 @@
 			<float name="reaction_delay_seconds" value="25" />
 			<float name="reveal_self_attacker_time" value="0" />
 			<bool name="reveal_self_attacker_time_use" value="False" />
-			<string name="squad_ai_file" value="guards-infantry-plan" />
+			<string name="squad_ai_file" value="riflemen-infantry-plan" />
 			<string name="squad_ai_pinned_file" value="" />
 			<string name="squad_ai_reaction_file" value="reaction-plan" />
 			<string name="squad_ai_retaliation_file" value="" />

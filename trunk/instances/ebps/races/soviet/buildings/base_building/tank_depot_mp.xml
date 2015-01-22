@@ -242,7 +242,7 @@
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="200" />
+				<float name="time_seconds" value="290" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">

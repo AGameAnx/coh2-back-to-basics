@@ -800,7 +800,7 @@
 					<instance_reference name="construction_menu" value="construction_menu\basic_infantry" />
 					<list name="construction_items">
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\sand_bag_soviet_mp" />
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\sand_bag_soviet_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="11" />
 						</group>
 					</list>

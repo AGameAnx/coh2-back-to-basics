@@ -11,26 +11,26 @@
 				</group>
 				<float name="radius_min" value="6" />
 				<instance_reference name="dot_weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_white_phosphorous_dot_mp" />
-				<float name="damage_frequency" value="0.2" />
+				<float name="damage_frequency" value="0.3" />
 				<float name="radius_max" value="6" />
 				<list name="dot_spawn_actions">
 				</list>
 				<float name="dots_max" value="1" />
 				<group name="damage_distance_table">
 					<group name="distance_03">
-						<float name="final_damage_multiplier" value="1" />
+						<float name="final_damage_multiplier" value="0.5" />
 						<float name="min_distance" value="5" />
 					</group>
 					<group name="distance_01">
-						<float name="final_damage_multiplier" value="1" />
+						<float name="final_damage_multiplier" value="0.9" />
 						<float name="min_distance" value="3" />
 					</group>
 					<group name="distance_02">
-						<float name="final_damage_multiplier" value="1" />
+						<float name="final_damage_multiplier" value="0.75" />
 						<float name="min_distance" value="4" />
 					</group>
 					<group name="distance_04">
-						<float name="final_damage_multiplier" value="1" />
+						<float name="final_damage_multiplier" value="0.2" />
 						<float name="min_distance" value="6" />
 					</group>
 					<group name="distance_00">
