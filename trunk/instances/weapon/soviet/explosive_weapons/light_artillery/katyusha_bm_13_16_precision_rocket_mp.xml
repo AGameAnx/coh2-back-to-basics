@@ -374,8 +374,8 @@
 				<float name="mid" value="0.5" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1" />
-				<float name="far" value="5.6" />
+				<float name="near" value="0.5" />
+				<float name="far" value="7.5" />
 				<float name="mid" value="2.8" />
 			</group>
 			<group name="suppression">

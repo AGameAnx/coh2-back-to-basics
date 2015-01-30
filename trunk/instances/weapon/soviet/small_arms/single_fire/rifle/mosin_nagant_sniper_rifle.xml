@@ -220,11 +220,11 @@
 		</group>
 		<locstring name="help_text" value="0" />
 		<group name="range">
-			<float name="max" value="54" />
+			<float name="max" value="52" />
 			<group name="distance">
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
-				<float name="near" value="-1" />
+				<float name="near" value="10" />
 			</group>
 			<float name="min" value="0" />
 		</group>
@@ -246,7 +246,8 @@
 				<float name="max" value="4" />
 				<float name="min" value="4" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="max" value="6" />
 				<float name="min" value="4.5" />
@@ -585,7 +586,8 @@
 		<instance_reference name="ui_range" value="ui_reticule\range_sniper" />
 		<group name="fire">
 			<float name="wind_down" value="1.6" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 		</group>
 		<instance_reference name="ui_setfacing" value="" />

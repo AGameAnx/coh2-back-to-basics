@@ -182,9 +182,9 @@
 			<bool name="delete_previous_on_hit" value="False" />
 		</group>
 		<group name="accuracy">
-			<float name="far" value="0.09" />
-			<float name="mid" value="0.32" />
-			<float name="near" value="0.81" />
+			<float name="far" value="0.15" />
+			<float name="mid" value="0.4" />
+			<float name="near" value="0.65" />
 		</group>
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="penetration">
@@ -246,7 +246,8 @@
 				<float name="max" value="8" />
 				<float name="min" value="12" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="max" value="4" />
 				<float name="min" value="4" />
@@ -293,7 +294,8 @@
 		<string name="name" value="DShK Sokolov" />
 		<group name="damage">
 			<float name="min" value="23" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="23" />
 		</group>
 		<group name="deflection">
@@ -398,7 +400,8 @@
 		<instance_reference name="ui_range" value="" />
 		<group name="fire">
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 		</group>
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_default" />

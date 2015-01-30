@@ -41,7 +41,7 @@
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="4" />
+				<float name="time_seconds" value="5" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -275,7 +275,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\soldier_flamethrower_explode" />
+							<instance_reference name="critical" value="critical\soldier_flamethrower_explode" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />

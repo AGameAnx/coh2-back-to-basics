@@ -182,9 +182,9 @@
 			<bool name="delete_previous_on_hit" value="False" />
 		</group>
 		<group name="accuracy">
-			<float name="far" value="0.2" />
-			<float name="mid" value="0.46" />
-			<float name="near" value="0.97" />
+			<float name="far" value="0.15" />
+			<float name="mid" value="0.4" />
+			<float name="near" value="0.65" />
 		</group>
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="penetration">
@@ -293,10 +293,10 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="name" value="DShK Sokolov" />
 		<group name="damage">
-			<float name="min" value="23" />
+			<float name="min" value="27" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="23" />
+			<float name="max" value="27" />
 		</group>
 		<group name="deflection">
 			<bool name="has_deflection_damage" value="False" />
@@ -420,7 +420,7 @@
 			<bool name="can_interrupt_setup" value="False" />
 			<float name="attach_duration" value="1.3" />
 			<bool name="has_instant_setup" value="False" />
-			<float name="duration" value="2.5" />
+			<float name="duration" value="2.8" />
 		</group>
 		<group name="area_effect">
 			<bool name="damage_all_in_hold" value="False" />

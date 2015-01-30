@@ -106,7 +106,7 @@
 				<enum name="unit_type01" value="tactical_structure" />
 				<enum name="unit_type02" value="tank_traps" />
 				<enum name="unit_type03" value="" />
-				<enum name="unit_type04" value="" />
+				<enum name="unit_type04" value="wire" />
 				<enum name="unit_type05" value="" />
 				<enum name="unit_type06" value="" />
 				<enum name="unit_type07" value="" />

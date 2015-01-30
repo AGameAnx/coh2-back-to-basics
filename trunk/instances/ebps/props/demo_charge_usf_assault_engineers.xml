@@ -160,7 +160,7 @@
 			<float name="attack_priority" value="0" />
 			<enum name="camouflage_type" value="tp_mine" />
 			<bool name="chain_revealer" value="False" />
-			<float name="detection_radius" value="12" />
+			<float name="detection_radius" value="9" />
 			<bool name="must_be_fully_constructed" value="False" />
 			<bool name="permanently_activated" value="True" />
 			<float name="combat_reset_time" value="5" />

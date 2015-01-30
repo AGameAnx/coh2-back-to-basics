@@ -36,7 +36,7 @@
 				<bool name="fire_and_forget" value="False" />
 				<list name="subactions">
 					<template_reference name="action" value="action\heal_action">
-						<float name="amount" value="420" />
+						<float name="amount" value="360" />
 						<group name="target_info">
 							<template_reference name="target_info" value="type_ability_target_type\all">
 							</template_reference>

@@ -197,31 +197,10 @@
 					</list>
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference name="action" value="action\random_action">
-							<uniqueid name="id" value="62365" />
-							<bool name="instant" value="True" />
-							<list name="random_actions">
-								<group name="action_choice">
-									<int name="weight" value="100" />
-									<list name="actions">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="1" />
-											<uniqueid name="id" value="62366" />
-											<instance_reference name="critical" value="critical\vehicle_damage_engine" />
-										</template_reference>
-									</list>
-								</group>
-								<group name="action_choice">
-									<int name="weight" value="50" />
-									<list name="actions">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="1" />
-											<uniqueid name="id" value="62367" />
-											<instance_reference name="critical" value="critical\vehicle_destroy_engine" />
-										</template_reference>
-									</list>
-								</group>
-							</list>
+						<template_reference name="action" value="action\trigger_critical_action">
+							<float name="remove_at_health" value="1" />
+							<uniqueid name="id" value="1073743392" />
+							<instance_reference name="critical" value="critical\vehicle_damage_engine" />
 						</template_reference>
 						<template_reference name="action" value="action\damage">
 							<float name="damage" value="100" />

@@ -16,7 +16,7 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
-				<instance_reference name="ability" value="abilities\west_german\timed_ability\combat_blitz_mp" />
+				<instance_reference name="ability" value="abilities\west_german\timed_ability\combat_blitz_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\west_german\toggle_ability\okw_vehicle_hold_fire_mp" />
 			</list>
 		</template_reference>

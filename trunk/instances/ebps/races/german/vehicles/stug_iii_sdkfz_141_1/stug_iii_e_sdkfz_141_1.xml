@@ -252,7 +252,7 @@
 					<uniqueid name="id" value="1073741906" />
 				</template_reference>
 			</list>
-			<float name="armor" value="225" />
+			<float name="armor" value="200" />
 			<float name="rear_armor" value="75" />
 			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -894,7 +894,7 @@
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
-			<float name="rotation_rate" value="20" />
+			<float name="rotation_rate" value="28" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />

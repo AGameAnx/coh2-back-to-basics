@@ -300,9 +300,9 @@
 			<int name="alpha" value="0" />
 		</group>
 		<group name="accuracy">
-			<float name="mid" value="0.05" />
-			<float name="far" value="0.038" />
-			<float name="near" value="0.11" />
+			<float name="mid" value="0.046" />
+			<float name="far" value="0.035" />
+			<float name="near" value="0.08" />
 		</group>
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.5" />
@@ -386,8 +386,8 @@
 			<float name="distance_scatter_ratio" value="1" />
 		</group>
 		<group name="damage">
-			<float name="max" value="60" />
-			<float name="min" value="60" />
+			<float name="max" value="55" />
+			<float name="min" value="55" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>

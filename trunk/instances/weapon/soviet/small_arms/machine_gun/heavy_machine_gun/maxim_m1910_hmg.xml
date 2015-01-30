@@ -182,9 +182,9 @@
 			<bool name="delete_previous_on_hit" value="False" />
 		</group>
 		<group name="accuracy">
-			<float name="far" value="0.05" />
-			<float name="mid" value="0.3" />
-			<float name="near" value="0.81" />
+			<float name="far" value="0.12" />
+			<float name="mid" value="0.35" />
+			<float name="near" value="0.65" />
 		</group>
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="penetration">

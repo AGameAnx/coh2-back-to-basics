@@ -236,7 +236,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\soldier_flamethrower_explode" />
+							<instance_reference name="critical" value="critical\soldier_flamethrower_explode" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />

@@ -1,0 +1,222 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="Soldier Killed" />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="0" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="1" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+			<template_reference name="action" value="action\timed_action">
+				<float name="duration" value="17" />
+				<bool name="fire_and_forget" value="True" />
+				<list name="subactions">
+					<template_reference name="action" value="action\dot_action">
+						<group name="damage_over_time">
+							<template_reference name="damage_over_time" value="dot_type\dot_effect">
+								<group name="damage_distance_table">
+									<group name="distance_00">
+										<float name="final_damage_multiplier" value="1" />
+										<float name="min_distance" value="4" />
+									</group>
+									<group name="distance_01">
+										<float name="final_damage_multiplier" value="1" />
+										<float name="min_distance" value="4" />
+									</group>
+									<group name="distance_02">
+										<float name="final_damage_multiplier" value="1" />
+										<float name="min_distance" value="4" />
+									</group>
+									<group name="distance_03">
+										<float name="final_damage_multiplier" value="-1" />
+										<float name="min_distance" value="-1" />
+									</group>
+									<group name="distance_04">
+										<float name="final_damage_multiplier" value="-1" />
+										<float name="min_distance" value="-1" />
+									</group>
+								</group>
+								<float name="damage_frequency" value="1.5" />
+								<instance_reference name="dot_weapon" value="weapon\soviet\flame_throwers\grenade\molotov_cocktail_dotdamage_mp" />
+								<float name="dots_max" value="1" />
+								<float name="dots_min" value="1" />
+								<float name="duration_max" value="17" />
+								<float name="duration_min" value="17" />
+								<float name="radius_max" value="5" />
+								<float name="radius_min" value="4" />
+								<float name="radius_scatter" value="0" />
+								<group name="target_info">
+									<template_reference name="target_info" value="type_ability_target_type\all">
+									</template_reference>
+								</group>
+								<list name="dot_spawn_actions">
+									<template_reference name="action" value="action\trigger_dca_action">
+										<string name="dca_action_name" value="Weapons\Splash_Damage\splashdmg_flamethrower_death" />
+										<float name="duration" value="17" />
+										<bool name="is_terrain_only" value="True" />
+										<uniqueid name="id" value="1073743418" />
+									</template_reference>
+								</list>
+							</template_reference>
+						</group>
+						<uniqueid name="id" value="1073743419" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073743420" />
+			</template_reference>
+			<template_reference name="action" value="action\change_target_action">
+				<list name="actions">
+					<template_reference name="action" value="action\slot_item_remove">
+						<bool name="fire_and_forget" value="True" />
+						<bool name="random" value="False" />
+						<instance_reference name="slot_item" value="slot_item\soviet\flamethrowers\flamethrower_roks3_item" />
+						<uniqueid name="id" value="1073743421" />
+					</template_reference>
+					<template_reference name="action" value="action\slot_item_remove">
+						<bool name="fire_and_forget" value="True" />
+						<bool name="random" value="False" />
+						<instance_reference name="slot_item" value="slot_item\soviet\flamethrowers\flamethrower_roks3_item_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+						<uniqueid name="id" value="1073743422" />
+					</template_reference>
+					<template_reference name="action" value="action\slot_item_remove">
+						<bool name="fire_and_forget" value="True" />
+						<bool name="random" value="False" />
+						<instance_reference name="slot_item" value="slot_item\german\flame_weapon\pioneer_flamethrower" />
+						<uniqueid name="id" value="1073743423" />
+					</template_reference>
+					<template_reference name="action" value="action\slot_item_remove">
+						<bool name="fire_and_forget" value="True" />
+						<bool name="random" value="False" />
+						<instance_reference name="slot_item" value="slot_item\german\flame_weapon\pioneer_flamethrower_mp" />
+						<uniqueid name="id" value="1073743424" />
+					</template_reference>
+					<template_reference name="action" value="action\slot_item_remove">
+						<bool name="fire_and_forget" value="True" />
+						<bool name="random" value="False" />
+						<instance_reference name="slot_item" value="slot_item\german\flame_weapon\urban_assault_flamethrower_mp" />
+						<uniqueid name="id" value="1073743425" />
+					</template_reference>
+					<template_reference name="action" value="action\slot_item_remove">
+						<bool name="fire_and_forget" value="True" />
+						<bool name="random" value="False" />
+						<instance_reference name="slot_item" value="slot_item\aef\flame_weapon\assault_engineer_flamethrower" />
+						<uniqueid name="id" value="1073743426" />
+					</template_reference>
+					<template_reference name="action" value="action\upgrade_remove">
+						<bool name="apply_to_entities_in_squad" value="False" />
+						<instance_reference name="upgrade" value="upgrade\soviet\items\engineer_flamethrower" />
+						<uniqueid name="id" value="1073743427" />
+					</template_reference>
+					<template_reference name="action" value="action\upgrade_remove">
+						<bool name="apply_to_entities_in_squad" value="False" />
+						<instance_reference name="upgrade" value="upgrade\soviet\items\engineer_flamethrower_mp" />
+						<uniqueid name="id" value="1073743428" />
+					</template_reference>
+					<template_reference name="action" value="action\upgrade_remove">
+						<bool name="apply_to_entities_in_squad" value="False" />
+						<instance_reference name="upgrade" value="upgrade\german\items\pioneer_flamethrower" />
+						<uniqueid name="id" value="1073743429" />
+					</template_reference>
+					<template_reference name="action" value="action\upgrade_remove">
+						<bool name="apply_to_entities_in_squad" value="False" />
+						<instance_reference name="upgrade" value="upgrade\german\items\pioneer_flamethrower_mp" />
+						<uniqueid name="id" value="1073743430" />
+					</template_reference>
+					<template_reference name="action" value="action\upgrade_remove">
+						<bool name="apply_to_entities_in_squad" value="False" />
+						<instance_reference name="upgrade" value="upgrade\aef\items\assault_engineer_flamethrower" />
+						<uniqueid name="id" value="1073743431" />
+					</template_reference>
+				</list>
+				<enum name="change_target_type" value="squad" />
+				<uniqueid name="id" value="1073743432" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_number_of_squad_members">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<enum name="comparison" value="less_than_or_equal_to" />
+				<float name="number_of_members" value="1" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="True" />
+						<bool name="display_requirement" value="True" />
+						<float name="max_owned" value="10" />
+						<float name="min_owned" value="1" />
+						<instance_reference name="slot_item" value="slot_item\soviet\flamethrowers\flamethrower_roks3_item" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="True" />
+						<bool name="display_requirement" value="True" />
+						<float name="max_owned" value="10" />
+						<float name="min_owned" value="1" />
+						<instance_reference name="slot_item" value="slot_item\soviet\flamethrowers\flamethrower_roks3_item_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="True" />
+						<bool name="display_requirement" value="True" />
+						<float name="max_owned" value="10" />
+						<float name="min_owned" value="1" />
+						<instance_reference name="slot_item" value="slot_item\german\flame_weapon\pioneer_flamethrower" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="True" />
+						<bool name="display_requirement" value="True" />
+						<float name="max_owned" value="10" />
+						<float name="min_owned" value="1" />
+						<instance_reference name="slot_item" value="slot_item\german\flame_weapon\pioneer_flamethrower_mp" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="True" />
+						<bool name="display_requirement" value="True" />
+						<float name="max_owned" value="10" />
+						<float name="min_owned" value="1" />
+						<instance_reference name="slot_item" value="slot_item\german\flame_weapon\urban_assault_flamethrower_mp" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="True" />
+						<bool name="display_requirement" value="True" />
+						<float name="max_owned" value="10" />
+						<float name="min_owned" value="1" />
+						<instance_reference name="slot_item" value="slot_item\aef\flame_weapon\assault_engineer_flamethrower" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="icon_name" value="" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="36" />
+</instance>

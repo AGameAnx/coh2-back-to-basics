@@ -143,7 +143,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="15" />
+					<float name="fuel" value="20" />
 					<float name="manpower" value="210" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -793,7 +793,7 @@
 		<template_reference name="exts" value="ebpextensions\marker_ext">
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="acceleration" value="2.4" />
+			<float name="acceleration" value="2.7" />
 			<float name="deceleration" value="5.3" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
