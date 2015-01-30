@@ -370,13 +370,13 @@
 			</group>
 			<group name="building_damage">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="0.1" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="distance">
-				<float name="near" value="0.4" />
-				<float name="far" value="3.8" />
-				<float name="mid" value="1.2" />
+				<float name="near" value="0.45" />
+				<float name="far" value="4.4" />
+				<float name="mid" value="1.55" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="0.2" />

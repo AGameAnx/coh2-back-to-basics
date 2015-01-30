@@ -135,6 +135,15 @@
 							<float name="value" value="0.015" />
 							<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
 						</template_reference>
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.85" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073743232" />
 				</template_reference>
@@ -222,33 +231,6 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_in_state">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="11072675" />
-						<bool name="garrisoned" value="False" />
-						<bool name="healed" value="False" />
-						<float name="in_combat_since" value="5" />
-						<bool name="injured" value="False" />
-						<bool name="leader" value="False" />
-						<bool name="not_moving" value="False" />
-						<bool name="not_retreating" value="False" />
-						<bool name="pinned" value="True" />
-						<bool name="suppressed" value="True" />
-					</template_reference>
-					<template_reference name="required" value="requirements\required_player_upgrade">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="11079039" />
-						<bool name="is_present" value="True" />
-						<float name="max_completed" value="100" />
-						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\pm\american\specializations\cover_specialization\pm_hunker_down_active" />
-					</template_reference>
-				</list>
-			</template_reference>
 			<template_reference name="required" value="requirements\required_slot_item">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="11071179" />
@@ -305,7 +287,7 @@
 				<list name="requirement_table">
 					<template_reference name="required" value="requirements\required_in_state">
 						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
+						<locstring name="ui_name" value="20" mod="23d6cdb82724460dbcb21e1a9162e473" />
 						<bool name="garrisoned" value="False" />
 						<bool name="healed" value="False" />
 						<float name="in_combat_since" value="4" />

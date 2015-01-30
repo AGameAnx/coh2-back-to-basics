@@ -487,7 +487,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_2_mp" />
+				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_2_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_3_mp" />
 				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_4_mp" />
 			</list>

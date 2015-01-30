@@ -521,7 +521,7 @@ AIControl.MainControl = {
 						
 						local directionToHq = normalizeVector(Util_ScarPos(playerHQPosition.x - pos.x, playerHQPosition.z - pos.z))
 						local initialStep = 0
-						local stepsTotal = 8
+						local stepsTotal = 9
 						local maxDist = initialStep + stepsTotal
 						local surroundingSafety = AIControl.MainControl.GetSurroundingSafety({x, y}, initialStep, stepsTotal, team)
 						table.sort(surroundingSafety, function(a, b) return a[3] > b[3] end)
@@ -530,7 +530,7 @@ AIControl.MainControl = {
 						for j,v in pairs(surroundingSafety) do
 							local dist = math.sqrt((v[1]-x)^2 + (v[2]-y)^2)/maxDist
 							local distMult = (1 - dist + dist*0.15)
-							collectiveDanger = collectiveDanger + v[3] * 30 / math.min(30, math.max(1, dist*14)) * distMult - v[5]*0.325 * distMult
+							collectiveDanger = collectiveDanger + v[3] * 25 / math.min(27, math.max(1, dist*AIControl.Grid.Dimensions[1] / 2)) * distMult - v[5]*0.325 * distMult
 						end
 						
 						collectiveDanger = collectiveDanger / (healthPercentage + (1-healthPercentage)*0.1)
@@ -564,7 +564,7 @@ AIControl.MainControl = {
 						end
 						if (AIControl.MainControl.VehicleControl.RepairsRetreat[team][squadGameID] and healthPercentage < 0.9)
 								or hasDamageCritical
-								or healthPercentage < 0.65 then
+								or healthPercentage < 0.55 then
 							lockSquad = true
 							lowHealth = true
 							--print('  RETREATING DUE TO LOW HEALTH!')
@@ -572,7 +572,7 @@ AIControl.MainControl = {
 							AIControl.MainControl.VehicleControl.RepairsRetreat[team][squadGameID] = nil
 						end
 						
-						local dangerRequiredToRetreat = 59
+						local dangerRequiredToRetreat = 62 - 8*math.min(1, 1-healthPercentage/0.55)
 						
 						local retreatDistance
 						if lowHealth then

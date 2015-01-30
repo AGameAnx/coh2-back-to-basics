@@ -650,8 +650,8 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">
 			<float name="capture_distance" value="4" />
-			<float name="capture_rate_multiplier" value="1" />
-			<float name="revert_rate_multiplier" value="1" />
+			<float name="capture_rate_multiplier" value="0.9" />
+			<float name="revert_rate_multiplier" value="0.9" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
 			<group name="retreat_building_types">

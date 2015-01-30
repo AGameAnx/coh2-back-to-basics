@@ -133,7 +133,7 @@
 				<float name="near" value="0" />
 				<float name="mid" value="30" />
 			</group>
-			<float name="max" value="66" />
+			<float name="max" value="62" />
 		</group>
 		<string name="icon_name" value="" />
 		<group name="projectile">

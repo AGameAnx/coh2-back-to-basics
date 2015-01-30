@@ -438,7 +438,7 @@
 					<float name="scale_x" value="9.95" />
 					<float name="scale_y" value="9.95" />
 					<bool name="undoable" value="True" />
-					<uniqueid name="id" value="1073743149" />
+					<uniqueid name="id" value="1073743338" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -455,15 +455,6 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073743150" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_stamp_action">
-					<string name="stamp_name" value="data:art\stamps\soviet_bb2.stamp" />
-					<float name="rotation" value="0" />
-					<uniqueid name="id" value="1073743151" />
-					<float name="offset_x" value="-0.1" />
-					<float name="offset_y" value="0" />
-					<float name="offset_z" value="-0.4" />
-					<bool name="camera_relative_rotation" value="False" />
 				</template_reference>
 			</list>
 		</template_reference>

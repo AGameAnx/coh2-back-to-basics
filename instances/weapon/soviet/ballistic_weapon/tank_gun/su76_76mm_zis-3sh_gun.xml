@@ -161,9 +161,9 @@
 			<float name="offhand_start_time" value="0" />
 		</group>
 		<group name="penetration">
-			<float name="near" value="75" />
-			<float name="far" value="75" />
-			<float name="mid" value="75" />
+			<float name="near" value="160" />
+			<float name="far" value="110" />
+			<float name="mid" value="140" />
 		</group>
 		<locstring name="help_text" value="0" />
 		<group name="damage_over_time">

@@ -384,9 +384,9 @@
 		</group>
 		<string name="fx_tracer_name" value="" />
 		<group name="accuracy">
-			<float name="near" value="0.093" />
-			<float name="far" value="0.033" />
-			<float name="mid" value="0.041" />
+			<float name="near" value="0.102" />
+			<float name="far" value="0.047" />
+			<float name="mid" value="0.053" />
 		</group>
 		<instance_reference name="ui_range" value="" />
 		<enum name="weapon_type" value="ballistic" />

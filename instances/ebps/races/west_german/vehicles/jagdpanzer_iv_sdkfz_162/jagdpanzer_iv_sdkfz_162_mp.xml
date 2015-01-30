@@ -130,9 +130,9 @@
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="300" />
+			<float name="armor" value="230" />
 			<float name="rear_armor" value="80" />
-			<float name="target_size" value="17" />
+			<float name="target_size" value="22" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">

@@ -639,7 +639,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\aef\modal_ability\repair_ability\aef_repair_ability_vehicle_crew_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\repair_ability\aef_repair_critical_mp" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\repair_ability\aef_repair_critical_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\pm\aef\specializations\cover_specialization\cover_specialization_hunker_down" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\sp\refuel_tank_sp" />
 				<instance_reference name="ability" value="abilities\aef\always_on_ability\vehicle_crew_auto_repair" />

@@ -29,7 +29,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="360" />
+					<float name="manpower" value="320" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -43,7 +43,7 @@
 			<float name="death_seconds" value="30" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="100" />
+			<float name="hitpoints" value="120" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />

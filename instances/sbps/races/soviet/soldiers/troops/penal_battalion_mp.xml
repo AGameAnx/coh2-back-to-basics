@@ -161,7 +161,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="6" />
-					<instance_reference name="type" value="ebps\races\soviet\soldiers\commander_troops\penal_battalion_troops_mp" />
+					<instance_reference name="type" value="ebps\races\soviet\soldiers\commander_troops\penal_battalion_troops_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -179,7 +179,8 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\soviet\items\penal_battalion_flamethrower_package_mp" />
+				<instance_reference name="upgrade" value="upgrade\soviet\items\penal_battalion_flamethrower_package_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+				<instance_reference name="upgrade" value="upgrade\soviet\items\ptrs_41_at_rifle_package_penal_battalion_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -421,7 +422,7 @@
 						<template_reference name="action" value="action\upgrade_add">
 							<bool name="apply_to_entities_in_squad" value="False" />
 							<bool name="trigger_publish_event" value="False" />
-							<instance_reference name="upgrade" value="upgrade\soviet\items\penal_battalion_flamethrower_package_mp" />
+							<instance_reference name="upgrade" value="upgrade\soviet\items\penal_battalion_flamethrower_package_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<uniqueid name="id" value="60943" />
 						</template_reference>
 					</list>

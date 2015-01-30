@@ -196,7 +196,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\soviet\items\ptrs_41_at_rifle_package_guard_troop_mp" />
+				<instance_reference name="upgrade" value="upgrade\soviet\items\ptrs_41_at_rifle_package_guard_troop_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">

@@ -29,8 +29,8 @@
 				<float name="max" value="0" />
 			</group>
 			<group name="duration">
-				<float name="min" value="3.2" />
-				<float name="max" value="3.8" />
+				<float name="min" value="3.7" />
+				<float name="max" value="3.9" />
 			</group>
 			<list name="on_reload_actions">
 			</list>

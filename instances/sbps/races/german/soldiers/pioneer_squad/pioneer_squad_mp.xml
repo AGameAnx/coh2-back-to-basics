@@ -808,7 +808,7 @@
 							<int name="ui_position" value="13" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" />
+							<instance_reference name="ebp" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="14" />
 						</group>
 						<group name="construction_item">
@@ -816,7 +816,7 @@
 							<int name="ui_position" value="11" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\base_building\dolch_aktionen_mp" />
+							<instance_reference name="ebp" value="ebps\races\german\buildings\base_building\dolch_aktionen_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">

@@ -184,17 +184,16 @@ function BtB_Init()
 		local p = World_GetPlayerAt(i)
 		
 		-- TODO: Save modifiers and reset on init
-		Modify_PlayerResourceRate(p, RT_Manpower, 32/60/8, MUT_Addition)
+		Modify_PlayerResourceRate(p, RT_Manpower, 34/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Action, 0.65, MUT_Multiplication)
 		Modify_PlayerSightRadius(p, 1.1)
-		Modify_Upkeep(p, 1.375)
-		Modify_PlayerExperienceReceived(p, 0.875)
+		Modify_Upkeep(p, 1.41)
 		
 		Player_SetMaxPopulation(p, CT_Personnel, 120)
 		Player_SetMaxCapPopulation(p, CT_Personnel, 120)
 		
-		Player_SetResource(p, RT_Manpower, Player_GetResource(p, RT_Manpower)+140)
+		Player_SetResource(p, RT_Manpower, Player_GetResource(p, RT_Manpower)+80)
 		
 		if not Player_IsHuman(p) then
 			BtB.SetupAIPlayer(p)

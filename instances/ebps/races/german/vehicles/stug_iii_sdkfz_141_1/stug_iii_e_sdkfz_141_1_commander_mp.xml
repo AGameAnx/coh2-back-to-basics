@@ -302,7 +302,7 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_stug_iii_e_sdkfz_141_1" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="225" />
+			<float name="armor" value="200" />
 			<float name="rear_armor" value="70" />
 			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -951,7 +951,7 @@
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
-			<float name="rotation_rate" value="22" />
+			<float name="rotation_rate" value="28" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />

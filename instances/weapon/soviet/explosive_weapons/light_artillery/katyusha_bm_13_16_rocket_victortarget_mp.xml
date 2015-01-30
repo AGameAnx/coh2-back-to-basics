@@ -180,19 +180,19 @@
 		<group name="suppression">
 			<group name="target_suppressed_multipliers">
 				<float name="suppression_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="1" />
 			</group>
 			<float name="nearby_suppression_multiplier" value="0" />
 			<float name="nearby_suppression_radius" value="0" />
 			<group name="target_pinned_multipliers">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="1" />
 			</group>
-			<float name="amount" value="0" />
+			<float name="amount" value="0.25" />
 		</group>
 		<string name="fx_action_target_name" value="" />
 		<group name="priority">
@@ -334,7 +334,7 @@
 		<locstring name="ui_name" value="0" />
 		<group name="area_effect">
 			<group name="damage">
-				<float name="near" value="1" />
+				<float name="near" value="0.5" />
 				<float name="far" value="0.04" />
 				<float name="mid" value="0.35" />
 			</group>
@@ -375,7 +375,7 @@
 			</group>
 			<group name="distance">
 				<float name="near" value="1" />
-				<float name="far" value="5.6" />
+				<float name="far" value="7.5" />
 				<float name="mid" value="2.8" />
 			</group>
 			<group name="suppression">

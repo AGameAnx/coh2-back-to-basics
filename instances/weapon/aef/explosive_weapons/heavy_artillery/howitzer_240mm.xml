@@ -122,45 +122,6 @@
 		<group name="damage">
 			<float name="min" value="320" />
 			<list name="on_penetrated_actions">
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_unit_type">
-							<bool name="owned_by_player_only" value="True" />
-							<enum name="unit_type" value="infantry" />
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="search_load_out" value="False" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-						</template_reference>
-					</list>
-					<bool name="fire_and_forget_non_global" value="False" />
-					<list name="action_table">
-						<template_reference name="action" value="action\make_dead">
-							<bool name="ignore_invulnerability" value="False" />
-							<bool name="destroy" value="False" />
-							<uniqueid name="id" value="187432" />
-							<list name="death_reaction_table">
-								<group name="death_reaction">
-									<enum name="death_reaction" value="normal" />
-									<float name="weight" value="1" />
-								</group>
-							</list>
-							<enum name="death_intensity" value="death_intensity_gib" />
-						</template_reference>
-					</list>
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<uniqueid name="id" value="187433" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-					<bool name="check_self" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-				</template_reference>
 			</list>
 			<float name="max" value="320" />
 		</group>
@@ -219,19 +180,19 @@
 		<group name="suppression">
 			<group name="target_suppressed_multipliers">
 				<float name="suppression_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.6" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="1" />
 			</group>
 			<float name="nearby_suppression_multiplier" value="0" />
 			<float name="nearby_suppression_radius" value="0" />
 			<group name="target_pinned_multipliers">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="1" />
 			</group>
-			<float name="amount" value="0" />
+			<float name="amount" value="0.55" />
 		</group>
 		<string name="fx_action_target_name" value="" />
 		<group name="priority">
@@ -381,7 +342,7 @@
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="15" />
+				<float name="radius" value="16" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
@@ -403,9 +364,9 @@
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<group name="suppression_friendly">
-				<float name="near" value="1.5" />
-				<float name="far" value="0.75" />
-				<float name="mid" value="1.125" />
+				<float name="near" value="1" />
+				<float name="far" value="0.1" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="building_damage">
 				<float name="near" value="1.0023" />
@@ -413,14 +374,14 @@
 				<float name="mid" value="0.5" />
 			</group>
 			<group name="distance">
-				<float name="near" value="2" />
-				<float name="far" value="11.3" />
+				<float name="near" value="1.5" />
+				<float name="far" value="16" />
 				<float name="mid" value="5.4" />
 			</group>
 			<group name="suppression">
-				<float name="near" value="1.5" />
-				<float name="far" value="0.75" />
-				<float name="mid" value="1.125" />
+				<float name="near" value="1" />
+				<float name="far" value="0.1" />
+				<float name="mid" value="0.5" />
 			</group>
 		</group>
 		<string name="fx_tracer_name" value="" />

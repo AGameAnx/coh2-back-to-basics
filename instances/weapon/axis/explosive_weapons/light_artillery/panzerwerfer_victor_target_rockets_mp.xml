@@ -127,7 +127,7 @@
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
-			<float name="angle_scatter" value="10" />
+			<float name="angle_scatter" value="15" />
 			<float name="distance_scatter_offset" value="0.1" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
@@ -180,19 +180,19 @@
 		<group name="suppression">
 			<group name="target_suppressed_multipliers">
 				<float name="suppression_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="1" />
 			</group>
 			<float name="nearby_suppression_multiplier" value="0" />
 			<float name="nearby_suppression_radius" value="0" />
 			<group name="target_pinned_multipliers">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="1" />
 			</group>
-			<float name="amount" value="0" />
+			<float name="amount" value="0.25" />
 		</group>
 		<string name="fx_action_target_name" value="" />
 		<group name="priority">
@@ -374,9 +374,9 @@
 				<float name="mid" value="0.5" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1" />
-				<float name="far" value="5.6" />
-				<float name="mid" value="2.8" />
+				<float name="near" value="0.5" />
+				<float name="far" value="7.5" />
+				<float name="mid" value="2.1" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="1" />

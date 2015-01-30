@@ -1,4 +1,302 @@
 =================================================================
+## v0.15
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Penal Satchel Charge maximum area of effect range decreased 7.5 -> 7
+- Penal Satchel Charge far area of effect range decreased 5.6 -> 5
+- SU-76 accuracy increased:
+ * Far 0.033 -> 0.047
+ * Mid 0.041 -> 0.053
+ * Near 0.093 -> 0.102
+- Fixed an issue where SU-76 did not have its intended penetration values
+
+Ostheer:
+- Stug E reload speed reduced and randomness decreased 3.2-3.8s -> 3.7-3.9s
+- Stug G reload speed slightly increased and randomness reduced 3.5-4.5s -> 3.7-4.2s
+
+OKW:
+- Jagdpanzer IV rotation speed change reverted 26 -> 20
+- Jagdpanzer IV frontal armor change reverted 300 -> 230
+- Panzerfusilier population cost increased 7 -> 9
+- Flak HQ cost reduced 300mp/75f -> 250mp/75f
+- Battlegroup HQ cost changed 250mp/40f -> 220mp/55f
+
+
+=================================================================
+## v0.14
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Flamethrower critical can now only happen when the squad is completely wiped
+
+Soviet:
+- 82mm mortar autofire reload time increased 4.6s -> 5.2s (previous reduction was too strong)
+- 120mm mortar medium aoe range reduced 2.8 -> 2.5
+- Fixed an issue with 120mm mortar precision strike
+- Penal troops cost increased 270mp -> 290mp
+- SU-85 accuracy increased:
+ * Far 0.033 -> 0.047
+ * Mid 0.041 -> 0.053
+ * Near 0.093 -> 0.102
+
+Ostheer:
+- Teller mines will no longer have a chance to cause a destroyed engine critical
+- Teller mines will now stun the crew for 12 seconds
+- Rifle grenade effectiveness reduced sligtly vs buildings, and panel damage reduced significantly
+- Stug G accuracy increased:
+ * Far 0.033 -> 0.047
+ * Mid 0.041 -> 0.053
+ * Near 0.093 -> 0.102
+- Elefant accuracy increased:
+ * Far 0.033 -> 0.047
+ * Mid 0.041 -> 0.053
+ * Near 0.093 -> 0.102
+- Railway artillery aoe mid range increased 5 -> 6
+- Railway artillery aoe suppression reduced
+ 
+OKW:
+- Jagdpanzer size increased 17 -> 22 for the sake of consistency with similar vehicles
+- Jagdpanzer range 66 -> 62
+- Kubelwagen rework. Kubelwagen was underperforming but was also capable of pinning enemy units in choke points very effectively. These changes aim to prevent Kubelwagen from suppressing on first burst but increase the predictability of the outcome, increase survivability slightly and increase effectiveness vs groups of enemies. Ideally, this should make Kubelwagen stronger when supported by other units but not as potent at instant suppression and harrassment. Details:
+ * Size 14 -> 10
+ * Range increased 45 -> 48
+ * Suppression amount per shot increased 0.008 -> 0.009
+ * Decreased setup time 3 -> 2.8
+ * Burst duration and randomness reduced 2-2.5 -> 1.5-1.7
+ * Burst duration mutliplier on far range reduced 2 -> 1.25
+ * Suppression radius increased to match other HMGs 12 -> 20
+ * Now has a new ability called 'Hold Position' which completely disables Kubelwagen movement while toggled on
+ * Reworked Kubelwagen target priority numbers, which should in theory improve the predictability of its handling in battle
+- Volksgrenadier far accuracy increased 0.34 -> 0.38
+- Normalized Sturmpioneer Stg44 rifle performance and reduced weapon readiness randomness:
+ * Ready aim time 0.125-5s -> 0.125-0.375s
+ * Burst duration 1-1.75s -> 1.25-1.5s
+ * Reload duration 2.8-3.5s -> 3-3.3s
+
+
+=================================================================
+## v0.13
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Conscript build time increased to mitigate the effects of lower cost in the early game 24s -> 30s
+- Conscript capture and revert rate multiplier 1 -> 0.9
+- PTRS damage reduced 60 -> 55
+- PTRS accuracy table reworked:
+ * Far 0.038 -> 0.035
+ * Mid 0.05 -> 0.046
+ * Near 0.11 -> 0.08
+- Penal battalion troops can now upgrade PTRS rifles for 70mu
+- TM-35 mines will no longer have a chance of causing heavy engine damage
+- Conscript AT grenade will no longer have a 5% change of causing heavy engine damage
+- Dshk 38 HMG team weapon hitpoints increased to match other team weapons 300 -> 350
+
+USF:
+- 240mm artillery rework:
+ * Added a reticule showing the artillery radius
+ * Cost 250mu -> 180mu
+ * Delay 5s -> 8s
+ * Num salvo 5 -> 8
+ * Time between shells 12s -> 5s
+ * Radius 30 -> 22
+ * Aoe max radius 15 -> 16
+ * Far aoe radius 11.3 -> 16
+ * Near aoe radius 2 -> 1.5
+ * Far aoe damage 0.05 -> 0.01
+ * Gib critical removed
+ * Heavy amount of suppression added
+ * Reduced damage vs suppressed targets
+ * Reworked aoe suppression profile
+
+Ostheer:
+- Railway artillery rework:
+ * Added a reticule showing the artillery radius
+ * Far aoe range 7.5 -> 15
+ * Mid aoe range 4.1 -> 5
+ * Far aoe damage 0.05 -> 0.01
+ * Mid aoe damage 0.15 -> 0.07
+ * Radius 20 -> 17
+ * Gib critical removed
+ * Heavy amount of suppression added
+ * Reduced damage vs suppressed targets
+ * Reworked aoe suppression profile
+- Blitzkrieg ability rework:
+ * Received accuracy modifier removed
+ * Max speed multiplier reduced 1.35 -> 1.25
+ * Acceleration multiplier reduced 1.6 -> 1.4
+- 221/222 Armored Car cost increased 210mp/15f -> 210mp/20f
+- 221/222 Armored Car acceleration increased 2.4 -> 2.7
+- 221/222 Armored Car pintle MG34 near accuracy reduced 0.81 -> 0.72
+- 222 Armored Car kwk32 20mm gun penetration 35 -> 55
+- 222 Armored Car kwk32 20mm gun increased building damage
+- T2 research cost decreased 200mp/45f -> 200mp/40f
+- Stug G and Stug E rotation speed increased 22 -> 28
+- Panzerfaust will no longer have a 5% change of causing heavy engine damage
+
+OKW:
+- Jagdpanzer IV rotation speed increased 20 -> 26
+- Fixed reinforced wire not being cuttable
+- Combat Blitz reworked:
+ * Weapon accuracy multiplier 2 -> 1.25
+ * Received accuracy multiplier 0.5 -> 0.85
+ * Maximum speed multiplier 2 -> 1.35
+- Schu mines will no longer have a chance of causing heavy engine damage
+
+-----------------------------------------------------------------
+## Win condition:
+
+AI:
+- Adjustments to vehicle threat calculation (distance importance, min threat to retreat)
+
+
+=================================================================
+## v0.12
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Vehicle wreck smoke shot blocking and sight blocking effects heavily reduced (was causing unpredictable buggy behavior)
+
+USF:
+- Riflemen veterancy 3 requirement reduced to its default value 2740 -> 2240
+- Lieutenant veterancy 3 requirement reduced to its default value 2960 -> 2560
+- Captain veterancy 3 requirement reduced to its default value 3180 -> 2880
+
+Soviet:
+- Sniper cost increased by 40mp (reinforce by 10mp)
+- Sniper range reduced 54 -> 52
+- Katyusha barrage reworked:
+ * Far aoe 5.6 -> 7.5 (to match max aoe)
+ * Near aoe 1 -> 0.5
+ * Suppression added
+ * Now does less damage vs pinned and suppressed units
+
+Ostheer:
+- Sniper cost decreased 360mp -> 320mp
+- Sniper health 100 -> 120
+- Sniper received accuracy 1.4 -> 1.3
+- Rifle grenade aoe range table rework:
+ * Far 3.8 -> 4.4 to match max aoe
+ * Mid 1.3 -> 1.55
+ * Near 0.4 -> 0.45 (lethal)
+- Grenadier MG42 LMG damage 5 -> 6 (hits to kill 16 -> 14)
+- Panzerwerfer barrage reworked:
+ * Shots per salvo 10 -> 16
+ * Far aoe range 5.6 -> 7.5 (to match max aoe)
+ * Mid aoe range 2.8 -> 2.1
+ * Near aoe range 1 -> 0.5
+ * Base scatter 10 -> 15
+ * Suppression added
+ * Now does less damage vs pinned and suppressed units
+- Brummbar weapon rework:
+ * Max aoe range 7.5 -> 11
+ * Far aoe 4.7 -> 11
+ * Suppression added
+ * Now does less damage vs pinned and suppressed units
+
+OKW:
+- Volksgrenadier kar98k accuracy table rework:
+ * Base damage 15 -> 16 (hits to kill 6 -> 5)
+ * Far 0.34 -> 0.36
+ * Mid 0.54 -> 0.59
+ * Near 0.81 -> 0.75
+- Panzerfusilier kar98k accuracy table rework:
+ * Base damage 15 -> 16 (hits to kill 6 -> 5)
+ * Far 0.32 -> 0.36
+ * Mid 0.55 -> 0.59
+ * Near 0.82 -> 0.75
+- Panzerfusilier G43 accuracy table rework:
+ * Far 0.2 -> 0.24
+ * Mid 0.35 -> 0.37
+ * Near 0.74 -> 0.56
+
+-----------------------------------------------------------------
+## Win condition:
+
+AI:
+- Adjustments to vehicle threat calculation (distance importance, min threat to retreat)
+
+
+=================================================================
+## v0.11
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Abandon critical will now restore 180hp instead of 210hp
+- Demolition charge detection radius reduced 12 -> 9
+
+Soviet:
+- Buildings no longer spawn a splat texture and are no longer revealed through fog of war
+- Adjusted Maxim HMG accuracy due to its high damage and dps:
+ * Far 0.22 -> 0.16
+ * Mid 0.51 -> 0.47
+ * Near 1 -> 0.65
+- Dshk 38 sokolov HMG rework:
+ * Damage 23 -> 27
+ * Setup time 2.5s -> 2.8s
+ * Far accuracy 0.2 -> 0.15
+ * Mid accuracy 0.46 -> 0.4
+ * Near accuracy 0.97 -> 0.65
+
+USF:
+- Priest shell reworked to make it work in line with other artillery:
+ * Added suppression to match all other artillery suppression
+ * Will deal reduced damage vs suppressed and pinned units
+ * Mid aoe damage 0.35 -> 0.15
+ * Aoe max radius 8.8 -> 11.3
+ * Aoe far range 8.8 -> 11.3
+ * Aoe near range 1.3 -> 1.15
+ * Creeping barrage aoe max radius 7.5 -> 9.5
+ * Creeping barrage aoe far range 7.5 -> 9.5
+- Rebalanced repair critical ability:
+ * Cost 10mu -> 35mu
+ * Received damage multiplier 3 -> 1.5
+ * Received accuracy multiplier 3 -> 1.5
+ * Duration 2s -> 16s
+ * Total heal hitpoints 18 -> 96
+ * Remove critical action will now only happen at the end of the action
+- M2HB 50cal HMG accuracy rework:
+ * Far 0.22 -> 0.19
+ * Mid 0.46 -> 0.43
+ * Near 0.81 -> 0.72
+
+Ostheer:
+- Buildings no longer spawn a splat texture and are no longer revealed through fog of war
+- Panther hitpoints 720 -> 840 (frontal armor still lower than before)
+- Stug G and Stug E frontal armor 225 -> 200
+- MG42 HMG accuracy rework
+ * Far 0.07 -> 0.09
+ * Mid 0.34 -> 0.31
+ * Near 0.92 -> 0.75
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Starting resources increase set to 80 from 140
+- Manpower income increase set to 32 from 34
+- Upkeep set to 1.41 from 1.375
+
+AI:
+- Adjustments to vehicle threat calculation (distance importance, min threat to retreat)
+
+
+=================================================================
 ## v0.10
 =================================================================
 
@@ -10,7 +308,7 @@ General:
 - Abandon critical will now heal vehicles for 210hp, didn't work properly before
 - Abandon critical will now also destroy the main weapon
 - Global mines rework:
- * Slightly smaller letal aoe range, resulting in fewer complete squad wipes
+ * Slightly smaller lethal aoe range, resulting in fewer complete squad wipes
  * Will now apply a smaller overall amount of damage to infantry, but the same amount to vehicles
  * Aoe accuracy set to 5 on all ranges to prevent aoe from skipping dealing damage to entities on larger aoe distances
  * Max aoe range 6.3 -> 5.5
@@ -21,8 +319,19 @@ General:
  * Far aoe damage 0.7 -> 0.01
  * For more details, check the army changes below
 - Reworked aim time multipliers:
- * AT weaponry 1/5/10 -> 1/3/7
- * Tank weaponry 1/7/20 -> 1/5/12
+ * AT weaponry 1 (0.125s) / 5 (0.625s) / 10 (1.25s) -> 1 (0.125s) / 3 (0.375s) / 7 (0.875s)
+ * Tank weaponry 1 (0.125s) / 7 (0.875s) / 20 (2.5s) -> 1 (0.125s) / 5 (0.625s) / 12 (1.5s)
+- Increased the CP cost of most of the powerful offmap call-ins:
+ * T34/85 10 -> 12
+ * IS-2 11 -> 14
+ * ISU-152 12 -> 14
+ * Tiger Ace 15 -> 16
+ * Tiger 11 -> 14
+ * Elefant 12 -> 14
+ * KV-1 8 -> 10
+ * Command Panther 10 -> 12
+ * Jagdtiger 13 -> 15
+ * Panzer IV group 9 -> 10
 
 Soviet:
 - Maxim rework:
@@ -43,9 +352,16 @@ Soviet:
 - M5 Halftrack Quad 50 cal rework:
  * Mid accuracy 0.26 -> 0.19
  * Near accuracy 0.68 -> 0.35
+- Penal troop SVT rifle rework, this is done to further the idea of Penals being a generalist anti-infantry squad:
+ * Mid range 16 -> 23
+ * Near range 6 -> 3
+ * Far accuracy 0.18 -> 0.2
+ * Mid accuracy 0.35 -> 0.37
+ * Near accuracy 0.79 -> 0.71
 
 USF:
 - Defensive stance with m1919 now properly requires the squad to be out of combat before being used
+- Defensive stance with m1919 now applies a 0.85 received accuracy modifier
 - Pack howitzer rework:
  * Barrage far aoe damage 0.04 -> 0.1
  * Barrage near distance 1.25 -> 1
@@ -53,14 +369,13 @@ USF:
  * Artillery barrage salvo fired shell count increased 3 -> 4
  * Projectile non-collision settings changed to create a more predictable behavior
 - All white phosphorus damage over time reworked:
- * Damage frequency 0.2 -> 0.6
+ * Damage frequency 0.2 -> 0.3
  * New aoe profile making the smoke deal less damage on the outer circle radius
 - M20 M6 mine rework:
  * Base damage 400 -> 100
  * Added 220 of static damage that the mine will apply to vehicles it hits (this is an overall decrease)
 - Pack howitzer will no longer change its weapon at vet2. It will instead receive a 15% damage increase and 50% penetration increase
 - M1 57mm AT gun will no longer change its weapon at vet2. It will instead receive a 10% reload speed increase
-- Slightly buffed white phosphorus again, previous changes were too strong
 - Lieutenant and Captain will no longer search for cover when starting their engagement (specifically useful for target firing the bazookas)
 
 Ostheer:
@@ -90,6 +405,11 @@ Ostheer:
  * Base mine rework changes
  * Base damage 320 -> 100
  * Added 160 of static damage that the mine will apply to vehicles it hits (this is an overall decrease)
+- Panzerfaust ability range increased 18 -> 20
+- Stormtrooper rifle rework:
+ * Near accuracy 0.88 -> 0.75
+ * Mid distance 18 -> 24
+ * Near distance 6 -> 4
 
 OKW:
 - Fixed an issue with HEAT shells being treated as artillery
@@ -99,13 +419,16 @@ OKW:
  * Base mine rework changes
  * Base damage 200 -> 100
  * Added 100 of static damage that the mine will apply to vehicles it hits
+- Sturm pioneer weapon distance table improved slightly. Should match panzergrenadier performance a bit more closely, and do slightly better on short range:
+ * Mid 15 -> 17
+ * Near 3 -> 5
 
 -----------------------------------------------------------------
 ## Win condition:
 
 General:
 - Upkeep increased 1.3 -> 1.375
-- Experience received 0.85 -> 0.875
+- Experience received 0.85 -> 1
 
 AI:
 - Added a new script to improve tank behaviour. Specifically, this should force AI to move back its tanks after they've suffered a critical or are heavily damaged and should make it face its tanks towards the enemy more often
@@ -800,3 +1123,4 @@ AI changes:
 - Increased experience gain speed by 5%
 - Increased all manpower income by 15%
 - Decreased all fuel income by 5%
+
