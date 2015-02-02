@@ -1,0 +1,32 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="Weak Penetration" />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="2153950" />
+			<float name="message_colour_a" value="0" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="1.5" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="icon_name" value="" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="2" />
+</instance>

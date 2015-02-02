@@ -1,0 +1,38 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="" />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="0" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="1" />
+		</group>
+		<enum name="target" value="tp_squad" />
+		<list name="actions">
+			<template_reference name="action" value="action\retreat_action">
+				<instance_reference name="entity_type_to_retreat_to" value="" />
+				<enum name="retreat_type" value="forced_retreat" />
+				<uniqueid name="id" value="53558" />
+				<float name="refund_percent_after_retreat" value="0" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="icon_name" value="" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="37" />
+</instance>

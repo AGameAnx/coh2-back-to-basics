@@ -1,0 +1,76 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="" />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="0" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="1" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+			<template_reference name="action" value="action\dot_action">
+				<group name="damage_over_time">
+					<template_reference name="damage_over_time" value="dot_type\dot_effect">
+						<group name="damage_distance_table">
+							<group name="distance_00">
+								<float name="final_damage_multiplier" value="1" />
+								<float name="min_distance" value="4" />
+							</group>
+							<group name="distance_01">
+								<float name="final_damage_multiplier" value="1" />
+								<float name="min_distance" value="4" />
+							</group>
+							<group name="distance_02">
+								<float name="final_damage_multiplier" value="1" />
+								<float name="min_distance" value="4" />
+							</group>
+							<group name="distance_03">
+								<float name="final_damage_multiplier" value="-1" />
+								<float name="min_distance" value="-1" />
+							</group>
+							<group name="distance_04">
+								<float name="final_damage_multiplier" value="-1" />
+								<float name="min_distance" value="-1" />
+							</group>
+						</group>
+						<float name="damage_frequency" value="0.2" />
+						<instance_reference name="dot_weapon" value="" />
+						<float name="dots_max" value="100" />
+						<float name="dots_min" value="100" />
+						<float name="duration_max" value="15" />
+						<float name="duration_min" value="12" />
+						<float name="radius_max" value="4" />
+						<float name="radius_min" value="4" />
+						<float name="radius_scatter" value="0" />
+						<group name="target_info">
+							<template_reference name="target_info" value="type_ability_target_type\all">
+							</template_reference>
+						</group>
+						<list name="dot_spawn_actions">
+						</list>
+					</template_reference>
+				</group>
+				<uniqueid name="id" value="53512" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="icon_name" value="" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="11" />
+</instance>

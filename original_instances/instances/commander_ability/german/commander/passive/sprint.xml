@@ -1,0 +1,23 @@
+<instance description="" template="commander_ability">
+	<group name="commander_ability_bag">
+		<locstring name="name" value="11053192" />
+		<locstring name="description" value="11053193" />
+		<string name="icon" value="Icons_commander_german_sprint_ability" />
+		<template_reference name="server_item" value="server_item">
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<uniqueid name="server_id" value="402680" />
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<instance_reference name="upgrade" value="upgrade\german\commander\passive\sprint" />
+		<instance_reference name="ability" value="" />
+	</group>
+	<uniqueid name="pbgid" value="86367" />
+</instance>

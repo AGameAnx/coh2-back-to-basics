@@ -1,0 +1,12 @@
+<instance description="" template="construction_menu">
+	<group name="construction_menu_bag">
+		<int name="ui_position" value="22" />
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="11007839" />
+			<locstring name="help_text" value="11032078" />
+			<string name="icon_name" value="Icons_commands_icon_command_build_basic" />
+			<string name="hotkey_name" value="B" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="2" />
+</instance>

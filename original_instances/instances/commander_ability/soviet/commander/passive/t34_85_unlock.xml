@@ -1,0 +1,23 @@
+<instance description="" template="commander_ability">
+	<group name="commander_ability_bag">
+		<locstring name="name" value="11048171" />
+		<locstring name="description" value="11050213" />
+		<string name="icon" value="Icons_commander_cmdr_soviet_t34_85" />
+		<template_reference name="server_item" value="server_item">
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<uniqueid name="server_id" value="402738" />
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<instance_reference name="upgrade" value="upgrade\soviet\commander\passive\t34_85_unlock" />
+		<instance_reference name="ability" value="" />
+	</group>
+	<uniqueid name="pbgid" value="86425" />
+</instance>

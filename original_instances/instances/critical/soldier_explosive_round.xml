@@ -1,0 +1,63 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="Soldier Sniped" />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="11011326" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="5" />
+		</group>
+		<enum name="target" value="tp_squad" />
+		<list name="actions">
+			<template_reference name="action" value="action\apply_modifiers_action">
+				<float name="duration" value="4" />
+				<bool name="permanent" value="False" />
+				<list name="modifiers">
+					<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+						<enum name="application_type" value="apply_to_weapon" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="hardpoint_01" />
+						<enum name="usage_type" value="enable" />
+						<float name="value" value="-1" />
+						<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="53543" />
+			</template_reference>
+			<template_reference name="action" value="action\timed_action">
+				<float name="duration" value="3" />
+				<bool name="fire_and_forget" value="True" />
+				<list name="subactions">
+					<template_reference name="action" value="action\animator_set_state">
+						<bool name="apply_to_leader_only" value="True" />
+						<string name="do_action_state_name" value="on" />
+						<bool name="retrigger" value="False" />
+						<string name="state_machine_name" value="ability_hold_fire_state" />
+						<string name="undo_action_state_name" value="off" />
+						<uniqueid name="id" value="53545" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="53544" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="icon_name" value="Icons_criticals_temp_stun" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="35" />
+</instance>
