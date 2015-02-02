@@ -1,0 +1,273 @@
+<instance description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
+			<string name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="True" />
+			<file name="animator" value="environment\bridges\bridge_short_span_wooden_w_iron_banding\bridge_short_span_wooden_w_iron_banding" />
+			<bool name="is_visible_in_game" value="True" />
+			<float name="precise_size" value="-1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext">
+			<bool name="is_in_spatial_bucket" value="True" />
+			<float name="rotate_snap" value="360" />
+			<float name="transferable" value="0" />
+			<bool name="kill_paradrop" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\line_of_sight_ext">
+			<group name="blocking_box">
+				<float name="x" value="0.01" />
+				<float name="y" value="0.01" />
+				<float name="z" value="0.01" />
+			</group>
+			<bool name="is_shot_blocking" value="False" />
+			<bool name="use_blocking_box" value="False" />
+			<enum name="does_block_line_of_sight" value="Never" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext">
+			<float name="extra_build_test_footprint" value="0" />
+			<bool name="require_all_cells_clear" value="True" />
+			<bool name="snap_to_terrain" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext">
+			<bool name="ap_killed_kicker" value="True" />
+			<bool name="ap_loss_kicker" value="True" />
+			<bool name="cullsphere_selectable" value="False" />
+			<float name="decorator_offset" value="0" />
+			<string name="extra_text_deprecated" value="" />
+			<bool name="ghost_enable" value="False" />
+			<bool name="has_speech_code" value="True" />
+			<locstring name="help_text" value="11045427" />
+			<string name="hotkey_name" value="" />
+			<string name="icon_name" value="Icons_buildings_building_bridge" />
+			<enum name="kill_type" value="" />
+			<float name="minimap_color_a" value="255" />
+			<float name="minimap_color_b" value="255" />
+			<float name="minimap_color_g" value="255" />
+			<float name="minimap_color_r" value="255" />
+			<bool name="minimap_enable" value="False" />
+			<bool name="minimap_team_only" value="False" />
+			<bool name="minimap_teamcolor" value="False" />
+			<bool name="obb_selectable" value="False" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11045419" />
+			<enum name="selection_name" value="" />
+			<float name="selection_scale" value="1" />
+			<enum name="selection_type" value="single_entity_select" />
+			<bool name="sloppy_selectable" value="False" />
+			<group name="speaker">
+				<string name="code_1" value="" />
+				<string name="code_2" value="" />
+				<string name="code_3" value="" />
+			</group>
+			<group name="speech_code_2">
+				<string name="code_1" value="" />
+				<string name="code_2" value="bd" />
+				<string name="code_3" value="" />
+			</group>
+			<group name="speech_code_3">
+				<string name="code_1" value="" />
+				<string name="code_2" value="brd" />
+				<string name="code_3" value="" />
+			</group>
+			<group name="speech_code_cover">
+				<string name="code_1" value="" />
+				<string name="code_2" value="" />
+				<string name="code_3" value="" />
+			</group>
+			<bool name="tacmap_team_only" value="False" />
+			<locstring name="tooltip_txt" value="0" />
+			<int name="ui_priority" value="0" />
+			<string name="minimap_icon" value="" />
+			<string name="portrait_icon_winter" value="Icons_portraits_building_common_bridge_w_portrait" />
+			<group name="speaker_alt">
+				<string name="code_1" value="" />
+				<string name="code_2" value="" />
+				<string name="code_3" value="" />
+			</group>
+			<float name="minimap_icon_scale" value="1" />
+			<string name="portrait_icon_summer" value="Icons_portraits_building_common_bridge_s_portrait" />
+			<locstring name="brief_text" value="11045435" />
+			<locstring name="extra_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
+			<bool name="show_in_build_log" value="True" />
+			<bool name="show_entity_appearance" value="True" />
+			<locstring name="screen_name_world" value="0" />
+			<locstring name="help_text_world" value="0" />
+			<locstring name="extra_text_world" value="0" />
+			<enum name="map_rotation_type_override" value="no_override" />
+			<string name="symbol_icon_name" value="Icons_symbols_building_bridge_symbol" />
+			<enum name="occlusion_state" value="can_be_occluded" />
+			<enum name="decorator_visibility" value="default" />
+			<string name="decorator_marker_name" value="Marker_FX_UI" />
+			<bool name="skin_pack_override" value="False" />
+			<string name="skin_summer" value="" />
+			<string name="skin_winter" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext">
+			<list name="actions">
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="fake_wreck" />
+					<bool name="retrigger" value="False" />
+					<string name="state_machine_name" value="damage_state" />
+					<string name="undo_action_state_name" value="" />
+					<uniqueid name="id" value="53743" />
+				</template_reference>
+				<template_reference name="action" value="action\damage">
+					<float name="damage" value="100" />
+					<bool name="percentage" value="True" />
+					<bool name="set" value="True" />
+					<bool name="cause_criticals" value="False" />
+					<enum name="crit_weapon_type" value="small_arms" />
+					<uniqueid name="id" value="53744" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.2" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="53745" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext">
+			<bool name="can_repair" value="True" />
+			<bool name="cuttable" value="False" />
+			<string name="death_event_name" value="Death" />
+			<float name="death_seconds" value="0" />
+			<bool name="delete_when_dead" value="True" />
+			<bool name="force_attacker_memory" value="False" />
+			<float name="hitpoints" value="500" />
+			<bool name="is_invincible" value="False" />
+			<bool name="is_salvagable_wreck" value="False" />
+			<bool name="keep_wreck_ownership" value="False" />
+			<bool name="rear_damage_enabled" value="False" />
+			<instance_reference name="rebuilt_entity" value="ebps\environment\art_ambient\bridges\bridge_short_span_wooden_w_iron_banding" />
+			<instance_reference name="rebuilt_squad" value="" />
+			<bool name="rebuilt_use_wreck_owner" value="True" />
+			<bool name="receive_weapon_cover_modifiers" value="True" />
+			<float name="regeneration" value="0" />
+			<bool name="regeneration_disabled" value="True" />
+			<bool name="remove_from_pathfinding_on_death" value="True" />
+			<bool name="reveal_to_all_on_death" value="False" />
+			<bool name="ui_can_scuttle" value="False" />
+			<instance_reference name="wreck_entity" value="" />
+			<list name="death_actions">
+			</list>
+			<float name="armor" value="35" />
+			<float name="rear_armor" value="0" />
+			<float name="target_size" value="1" />
+			<bool name="dies_from_broken_ice" value="False" />
+			<list name="criticals">
+			</list>
+			<float name="weapon_priority" value="0" />
+			<template_reference name="wreck_entity_option" value="options\none">
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext">
+			<instance_reference name="hit_material" value="hit_material\building_wood" />
+			<bool name="hit_non_neutral" value="False" />
+			<float name="hit_percentage" value="0" />
+			<bool name="pass_through" value="True" />
+			<group name="projectile_pass_through">
+				<bool name="tp_artillery" value="True" />
+				<bool name="tp_artillery_inf" value="False" />
+				<bool name="tp_artillery_overwatch" value="True" />
+				<bool name="tp_homing" value="True" />
+				<bool name="tp_homing_inf" value="True" />
+				<bool name="tp_sticky" value="True" />
+				<bool name="tp_throw" value="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext">
+			<group name="unit_type_list">
+				<enum name="unit_type00" value="wrecked_bridge" />
+				<enum name="unit_type01" value="" />
+				<enum name="unit_type02" value="" />
+				<enum name="unit_type03" value="" />
+				<enum name="unit_type04" value="" />
+				<enum name="unit_type05" value="" />
+				<enum name="unit_type06" value="" />
+				<enum name="unit_type07" value="" />
+				<enum name="unit_type08" value="" />
+				<enum name="unit_type09" value="" />
+				<enum name="unit_type10" value="" />
+				<enum name="unit_type11" value="" />
+				<enum name="unit_type12" value="" />
+				<enum name="unit_type13" value="" />
+				<enum name="unit_type14" value="" />
+				<enum name="unit_type15" value="" />
+			</group>
+			<enum name="weapon_targeting" value="no_targeting" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_ext">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\walkable_surface_ext">
+			<enum name="cover_type" value="type_cover\tp_defcover.lua" />
+			<group name="death_sections">
+				<group name="death_section_01">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_02">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_03">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_04">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_05">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_06">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_07">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_08">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_09">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+				<group name="death_section_10">
+					<float name="seconds_after_death" value="0" />
+					<float name="width" value="0" />
+				</group>
+			</group>
+			<float name="impassable_centre_width" value="5" />
+			<bool name="impassable_edges" value="True" />
+			<float name="seconds_after_death" value="0" />
+			<file name="animator_dgm_name" value="environment\bridges\bridge_short_span_wooden_w_iron_banding\bridge_short_span_wooden_w_iron_banding_wreck" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\impass_ext">
+			<bool name="cant_build" value="False" />
+			<bool name="heavy_crush" value="False" />
+			<bool name="land" value="False" />
+			<bool name="light_crush" value="False" />
+			<bool name="medium_crush" value="False" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="26" />
+</instance>
