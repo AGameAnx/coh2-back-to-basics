@@ -1,0 +1,25 @@
+<instance description="" template="ai_personality">
+	<group name="ai_personality_bag">
+		<group name="easy">
+			<instance_reference name="settings" value="ai_settings\tutorial_skirmish_very_easy" />
+			<file name="lua_script" value="default_with_build_phases" />
+			<instance_reference name="economy" value="ai_economy_group\tutorial_very_easy" />
+		</group>
+		<group name="standard">
+			<instance_reference name="settings" value="ai_settings\tutorial_skirmish_very_easy" />
+			<file name="lua_script" value="default_with_build_phases" />
+			<instance_reference name="economy" value="ai_economy_group\tutorial_very_easy" />
+		</group>
+		<group name="hard">
+			<instance_reference name="settings" value="ai_settings\tutorial_skirmish_very_easy" />
+			<file name="lua_script" value="default_with_build_phases" />
+			<instance_reference name="economy" value="ai_economy_group\tutorial_very_easy" />
+		</group>
+		<group name="hardest">
+			<instance_reference name="settings" value="ai_settings\tutorial_skirmish_very_easy" />
+			<file name="lua_script" value="default_with_build_phases" />
+			<instance_reference name="economy" value="ai_economy_group\tutorial_very_easy" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="14944" />
+</instance>

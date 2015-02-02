@@ -1,0 +1,25 @@
+<instance description="" template="ai_personality">
+	<group name="ai_personality_bag">
+		<group name="easy">
+			<instance_reference name="settings" value="ai_settings\default_skirmish_easy" />
+			<file name="lua_script" value="default" />
+			<instance_reference name="economy" value="ai_economy_group\tow_ai_battle_compound" />
+		</group>
+		<group name="standard">
+			<instance_reference name="settings" value="ai_settings\default_skirmish_standard" />
+			<file name="lua_script" value="default" />
+			<instance_reference name="economy" value="ai_economy_group\tow_ai_battle_compound" />
+		</group>
+		<group name="hard">
+			<instance_reference name="settings" value="ai_settings\default_skirmish_hard" />
+			<file name="lua_script" value="default" />
+			<instance_reference name="economy" value="ai_economy_group\tow_ai_battle_compound" />
+		</group>
+		<group name="hardest">
+			<instance_reference name="settings" value="ai_settings\default_skirmish_hardest" />
+			<file name="lua_script" value="default" />
+			<instance_reference name="economy" value="ai_economy_group\tow_ai_battle_compound" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="14352" />
+</instance>
