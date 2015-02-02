@@ -80,7 +80,7 @@
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="3" mod="23d6cdb82724460dbcb21e1a9162e473" />
 								<locstring name="help_text" value="2" mod="23d6cdb82724460dbcb21e1a9162e473" />
-								<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_status_antiblob" />
+								<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_antiblob" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="1073741970" />

@@ -118,7 +118,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="10" />
-					<float name="manpower" value="150" />
+					<float name="manpower" value="200" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -132,7 +132,7 @@
 			<float name="death_seconds" value="1.8" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="250" />
+			<float name="hitpoints" value="180" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -149,9 +149,9 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_wc54_ambulance" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="4" />
+			<float name="armor" value="3" />
 			<float name="rear_armor" value="1.8" />
-			<float name="target_size" value="10" />
+			<float name="target_size" value="8" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -879,7 +879,7 @@
 			<bool name="animated_spawning" value="False" />
 			<float name="animated_spawning_seconds" value="0" />
 			<bool name="must_be_in_supply" value="False" />
-			<float name="reinforce_radius" value="20" />
+			<float name="reinforce_radius" value="15" />
 			<bool name="spawn_at_map_entry_point" value="False" />
 			<list name="spawn_items">
 			</list>

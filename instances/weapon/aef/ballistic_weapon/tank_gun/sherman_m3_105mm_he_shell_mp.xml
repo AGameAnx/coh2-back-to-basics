@@ -44,7 +44,7 @@
 			<group name="distance">
 				<float name="far" value="4.2" />
 				<float name="near" value="0.8" />
-				<float name="mid" value="2" />
+				<float name="mid" value="1.75" />
 			</group>
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="21.26" />
@@ -248,7 +248,7 @@
 			<float name="tilt_max_distance" value="0" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
-			<float name="distance_scatter_max" value="4.8" />
+			<float name="distance_scatter_max" value="5.5" />
 			<float name="distance_scatter_ratio" value="1" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />

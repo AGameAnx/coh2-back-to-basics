@@ -351,9 +351,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="near" value="0.5" />
+				<float name="far" value="0.05" />
+				<float name="mid" value="0.2" />
 			</group>
 			<bool name="can_harm_shooter" value="False" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />

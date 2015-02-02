@@ -170,7 +170,7 @@
 													<string name="modifier_id" value="" />
 													<string name="target_type_name" value="hardpoint_01" />
 													<enum name="usage_type" value="addition" />
-													<float name="value" value="0.04" />
+													<float name="value" value="0.045" />
 													<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
 												</template_reference>
 												<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">

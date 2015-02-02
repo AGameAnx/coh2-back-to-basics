@@ -24,7 +24,8 @@
 		</group>
 		<string name="name" value="IL2 rockets" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -57,7 +58,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0.5" />
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="45" />
@@ -119,7 +121,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="120" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="120" />
 		</group>
 		<group name="scatter">
@@ -156,7 +159,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">
@@ -338,7 +342,7 @@
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="7.5" />
+				<float name="radius" value="6" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
@@ -370,9 +374,9 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1" />
-				<float name="far" value="5.6" />
-				<float name="mid" value="2.8" />
+				<float name="near" value="1.5" />
+				<float name="far" value="4.5" />
+				<float name="mid" value="3" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="0.2" />
