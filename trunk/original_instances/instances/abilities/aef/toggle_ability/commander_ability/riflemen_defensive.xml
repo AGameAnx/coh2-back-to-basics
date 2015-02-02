@@ -1,0 +1,335 @@
+<instance description="available with 30 caliber machinegun upgrade. riflemen can go into a defensive posture to increase defense and add suppression." template="abilities">
+	<group name="ability_bag">
+		<group name="action_list">
+			<list name="end_self_actions">
+				<template_reference name="action" value="action\change_target_action">
+					<list name="actions">
+						<template_reference name="action" value="action\target">
+							<group name="area_info">
+								<float name="angle_left" value="0" />
+								<float name="angle_right" value="0" />
+								<enum name="area_type" value="circle" />
+								<float name="radius" value="0.3" />
+							</group>
+							<bool name="die_with_creator" value="True" />
+							<bool name="do_recalc_targets" value="True" />
+							<float name="duration" value="1" />
+							<bool name="entity_targets" value="True" />
+							<instance_reference name="entity_types_to_choose" value="ebps\races\german\buildings\defensive_structure\sniper_digin_cover_mp" />
+							<bool name="stationary" value="False" />
+							<group name="target_info">
+								<template_reference name="target_info" value="type_ability_target_type\own">
+								</template_reference>
+							</group>
+							<enum name="unit_type" value="" />
+							<list name="subactions">
+								<template_reference name="action" value="action\make_dead">
+									<enum name="death_intensity" value="death_intensity_low" />
+									<bool name="ignore_invulnerability" value="True" />
+									<bool name="destroy" value="True" />
+									<list name="death_reaction_table">
+									</list>
+									<uniqueid name="id" value="189771" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="189772" />
+							<bool name="any_subaction" value="False" />
+						</template_reference>
+					</list>
+					<enum name="change_target_type" value="entities" />
+					<uniqueid name="id" value="189773" />
+				</template_reference>
+				<template_reference name="action" value="action\upgrade_remove">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<instance_reference name="upgrade" value="upgrade\pm\american\specializations\cover_specialization\pm_defensive_stance_active" />
+					<uniqueid name="id" value="396577" />
+				</template_reference>
+			</list>
+			<list name="end_target_actions">
+			</list>
+			<list name="start_self_actions">
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="True" />
+					<string name="do_action_state_name" value="on" />
+					<bool name="retrigger" value="True" />
+					<string name="state_machine_name" value="ability_defensive_buff_state" />
+					<string name="undo_action_state_name" value="off" />
+					<uniqueid name="id" value="189774" />
+				</template_reference>
+				<template_reference name="action" value="action\change_target_action">
+					<list name="actions">
+						<template_reference name="action" value="action\spawn_entity">
+							<float name="duration" value="1000" />
+							<instance_reference name="entity_blueprint" value="ebps\races\german\buildings\defensive_structure\sniper_digin_cover_mp" />
+							<bool name="permanent" value="False" />
+							<bool name="player_owned" value="True" />
+							<group name="target_info">
+								<template_reference name="target_info" value="type_ability_target_type\all">
+								</template_reference>
+							</group>
+							<uniqueid name="id" value="189775" />
+							<template_reference name="spawn_attached_option" value="options\none">
+							</template_reference>
+							<list name="spawned_entity_actions">
+							</list>
+						</template_reference>
+					</list>
+					<enum name="change_target_type" value="entities" />
+					<uniqueid name="id" value="189776" />
+				</template_reference>
+				<template_reference name="action" value="action\ui_unit_modifier_action">
+					<bool name="die_with_creator" value="False" />
+					<template_reference name="ui_info" value="tables\ui_info">
+						<locstring name="screen_name" value="11064652" />
+						<locstring name="help_text" value="11064654" />
+						<string name="icon_name" value="Icons_abilities_ability_aef_defensive_stance_off" />
+						<string name="hotkey_name" value="" />
+					</template_reference>
+					<uniqueid name="id" value="189777" />
+				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\pm\american\specializations\cover_specialization\pm_defensive_stance_active" />
+					<uniqueid name="id" value="396575" />
+				</template_reference>
+			</list>
+			<list name="start_target_actions">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\facing_only_enable">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="enable" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\facing_only_enable" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\posture_prone_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="enable" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\posture_prone_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1.3" />
+							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="0.015" />
+							<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="189778" />
+				</template_reference>
+			</list>
+		</group>
+		<enum name="activation" value="toggle" />
+		<bool name="can_interrupt" value="True" />
+		<bool name="can_target_in_fow" value="False" />
+		<float name="caster_close_in_distance" value="2" />
+		<bool name="casters_can_evacuate" value="False" />
+		<group name="cost">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="0" />
+			<float name="munition" value="0" />
+			<float name="popcap" value="0" />
+		</group>
+		<string name="cursor_ghost_blueprint" value="" />
+		<float name="cursor_ghost_blueprint_angle" value="0" />
+		<bool name="disable_combat" value="False" />
+		<bool name="disable_when_active" value="False" />
+		<float name="duration_time" value="10" />
+		<bool name="enable_in_building" value="False" />
+		<bool name="enable_in_vehicle" value="False" />
+		<bool name="engage_combat" value="False" />
+		<float name="entity_busy_time" value="0" />
+		<float name="facing_angle" value="5" />
+		<bool name="facing_ignore" value="False" />
+		<float name="final_close_in_distance" value="0" />
+		<bool name="fire_and_forget" value="False" />
+		<bool name="garrison_target" value="False" />
+		<bool name="has_speech_code" value="True" />
+		<float name="initial_delay_time" value="10" />
+		<bool name="initial_recharge" value="False" />
+		<bool name="is_default_action" value="False" />
+		<bool name="move_back" value="False" />
+		<float name="move_back_distance" value="10" />
+		<float name="range" value="0" />
+		<bool name="range_ignore" value="True" />
+		<float name="recharge_time" value="15" />
+		<bool name="refundable" value="True" />
+		<bool name="require_no_shot_block" value="False" />
+		<enum name="shared_timer" value="" />
+		<bool name="shared_timer_player_wide" value="False" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="rds" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<enum name="squad_caster" value="squad" />
+		<enum name="target" value="tp_any" />
+		<group name="target_special_validation">
+			<template_reference name="target_special_validation" value="type_ability_target_type\all">
+			</template_reference>
+		</group>
+		<float name="toggled_recharge_time_off" value="10" />
+		<float name="toggled_recharge_time_on" value="10" />
+		<group name="ui_cursor">
+			<string name="cursor_bad" value="modal_ability_cancel" />
+			<string name="cursor_good" value="modal_ability" />
+			<string name="cursor_nonmodal_good" value="" />
+		</group>
+		<group name="ui_info">
+			<locstring name="extra_text" value="11064655" />
+			<locstring name="help_text" value="11064654" />
+			<string name="hotkey_name" value="E" />
+			<string name="icon_name" value="Icons_abilities_ability_aef_defensive_stance_off" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11064652" />
+			<string name="icon_alternate_name" value="Icons_abilities_ability_aef_defensive_stance_on" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="help_text_alternate" value="11068290" />
+			<locstring name="screen_name_alternate" value="11064653" />
+			<locstring name="screen_name_short" value="0" />
+		</group>
+		<locstring name="ui_usage_txt" value="0" />
+		<bool name="validate_actions" value="True" />
+		<list name="global_self_actions">
+		</list>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_in_state">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="11072675" />
+						<bool name="garrisoned" value="False" />
+						<bool name="healed" value="False" />
+						<float name="in_combat_since" value="5" />
+						<bool name="injured" value="False" />
+						<bool name="leader" value="False" />
+						<bool name="not_moving" value="False" />
+						<bool name="not_retreating" value="False" />
+						<bool name="pinned" value="True" />
+						<bool name="suppressed" value="True" />
+					</template_reference>
+					<template_reference name="required" value="requirements\required_player_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="11079039" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\pm\american\specializations\cover_specialization\pm_hunker_down_active" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_slot_item">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11071179" />
+				<bool name="check_item_on_entity" value="False" />
+				<bool name="display_requirement" value="True" />
+				<float name="max_owned" value="10" />
+				<float name="min_owned" value="1" />
+				<instance_reference name="slot_item" value="slot_item\aef\small_arms\riflemen_30_cal" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_player_upgrade">
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\aef\commander\passive\riflemen_30_caliber_lmg" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_player_upgrade">
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\pm\american\commanders\mechanized\combat_group\pm_mechanized_combat_group_unlock" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_in_state">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="garrisoned" value="True" />
+						<bool name="healed" value="False" />
+						<float name="in_combat_since" value="-1" />
+						<bool name="injured" value="False" />
+						<bool name="leader" value="False" />
+						<bool name="not_moving" value="False" />
+						<bool name="not_retreating" value="False" />
+						<bool name="pinned" value="False" />
+						<bool name="suppressed" value="False" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<enum name="ability_super" value="tp_none" />
+		<int name="ui_position" value="22" />
+		<bool name="ui_mini_map_capture" value="False" />
+		<bool name="facing_ignore_during_active" value="False" />
+		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_reticule" value="" />
+		<float name="ui_reticule_radius_min" value="1" />
+		<float name="ui_reticule_radius_max" value="1" />
+		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
+		<enum name="ui_group" value="group_primary" />
+		<string name="ui_targetable_sm_key" value="" />
+		<string name="ui_targetable_on_key" value="" />
+		<string name="ui_targetable_off_key" value="" />
+		<enum name="ui_targetable_receiver" value="local" />
+		<enum name="ui_combine_type" value="intersection" />
+		<enum name="ui_group_cast_type" value="multi" />
+		<enum_table name="ui_modal_highlight">
+			<bool name="world_sector" value="False" />
+			<bool name="map_sector" value="False" />
+			<bool name="map_sector_hq_link_extender" value="False" />
+		</enum_table>
+		<list name="requirements_target">
+		</list>
+		<template_reference name="targeted_ability_option" value="options\none">
+		</template_reference>
+		<enum name="ui_direction_requirement" value="nondirectional" />
+		<instance_reference name="cursor_ghost_ebp" value="" />
+		<bool name="can_cast_whilst_constructing" value="False" />
+		<list name="requirements_self_recharge">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="15185" />
+</instance>
