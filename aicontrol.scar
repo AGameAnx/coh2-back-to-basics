@@ -768,7 +768,7 @@ AIControl.MainControl = {
 						
 						local directionToHq = normalizeVector(Util_ScarPos(playerHQPosition.x - pos.x, playerHQPosition.z - pos.z))
 						local initialStep = 0
-						local stepsTotal = 9
+						local stepsTotal = 11
 						local maxDist = initialStep + stepsTotal
 						local surroundingSafety = AIControl.MainControl.GetSurroundingSafety({x, y}, initialStep, stepsTotal, team)
 						table.sort(surroundingSafety, function(a, b) return a[3] > b[3] end)
@@ -819,7 +819,7 @@ AIControl.MainControl = {
 							AIControl.MainControl.VehicleControl.RepairsRetreat[team][squadGameID] = nil
 						end
 						
-						local dangerRequiredToRetreat = 58 - 8*math.min(1, 1-healthPercentage/0.55)
+						local dangerRequiredToRetreat = 58 - 10*math.min(1, 1-healthPercentage/0.55)
 						if healthPercentage == 1 then
 							dangerRequiredToRetreat = dangerRequiredToRetreat + 12
 						end

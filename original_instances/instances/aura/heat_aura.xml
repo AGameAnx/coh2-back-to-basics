@@ -1,0 +1,11 @@
+<instance description="makes objects warm squads" template="aura">
+	<group name="aura_bag">
+		<list name="actions">
+			<template_reference name="action" value="action\heat_action">
+				<uniqueid name="id" value="53418" />
+			</template_reference>
+		</list>
+		<bool name="affects_squads" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="13" />
+</instance>

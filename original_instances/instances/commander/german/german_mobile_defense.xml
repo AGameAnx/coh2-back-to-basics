@@ -1,0 +1,33 @@
+<instance description="" template="commander">
+	<group name="commander_bag">
+		<locstring name="name" value="11071071" />
+		<instance_reference name="archetype_upgrade" value="upgrade\german\commander\archetype\jaeger_archetype" />
+		<locstring name="description" value="11074823" />
+		<string name="icon" value="Icons_commander_portrait_german_commander_19" />
+		<string name="icon_secondary" value="Icons_commander_portrait_german_commander_19_large" />
+		<int name="ui_position" value="1" />
+		<locstring name="description_short" value="0" />
+		<instance_reference name="store_item" value="thq_store\commanders\german\german_mobile_defense" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="258891" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="rare" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="True" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<list name="commander_abilities">
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\passive\panzer_tactician" />
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\ability\armor_commander" />
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\passive\counterattack_tactics" />
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\passive\ostruppen_reserves" />
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\passive\puma_dispatch" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="16313" />
+</instance>

@@ -1,0 +1,17 @@
+<instance description="" template="camouflage_stance_type">
+	<group name="camouflage_stance_bag">
+		<enum name="combat_stance_value" value="tp_attack" />
+		<bool name="has_ui_button" value="True" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="2106250" />
+			<string name="hotkey_name" value="stance_attack" />
+			<string name="icon_name" value="" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="2106251" />
+		</group>
+		<locstring name="ui_usage_txt" value="2106252" />
+	</group>
+	<uniqueid name="pbgid" value="0" />
+</instance>

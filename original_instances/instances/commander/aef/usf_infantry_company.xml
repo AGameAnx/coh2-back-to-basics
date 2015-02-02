@@ -1,0 +1,33 @@
+<instance description="this is to test the &quot;commander&quot; uinits" template="commander">
+	<group name="commander_bag">
+		<locstring name="name" value="11063827" />
+		<instance_reference name="archetype_upgrade" value="upgrade\aef\commander\archetype\tech_tree_v1" />
+		<locstring name="description" value="11074833" />
+		<string name="icon" value="Icons_commander_portrait_us_forces_commander_02" />
+		<string name="icon_secondary" value="Icons_commander_portrait_us_forces_commander_02_large" />
+		<int name="ui_position" value="0" />
+		<locstring name="description_short" value="0" />
+		<instance_reference name="store_item" value="" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="186414" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\aef" />
+			</list>
+			<bool name="is_in_default_bundle" value="True" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<list name="commander_abilities">
+			<instance_reference name="commander_ability" value="commander_ability\aef\commander\ability\priest_dispatch" />
+			<instance_reference name="commander_ability" value="commander_ability\aef\commander\ability\time_on_target_artillery" />
+			<instance_reference name="commander_ability" value="commander_ability\aef\commander\ability\m21_mortar_halftrack_dispatch" />
+			<instance_reference name="commander_ability" value="commander_ability\aef\commander\passive\riflemen_30_caliber_lmg" />
+			<instance_reference name="commander_ability" value="commander_ability\aef\commander\passive\riflemen_defensive_buildings" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="14935" />
+</instance>

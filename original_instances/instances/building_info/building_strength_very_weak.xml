@@ -1,0 +1,9 @@
+<instance description="" template="building_info">
+	<group name="building_info_bag">
+		<float name="panel_health" value="160" />
+		<float name="min_damage" value="5" />
+		<list name="weapon_immunities">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="85923" />
+</instance>
