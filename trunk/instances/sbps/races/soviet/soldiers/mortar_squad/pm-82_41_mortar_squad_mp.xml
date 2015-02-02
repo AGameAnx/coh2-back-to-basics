@@ -298,7 +298,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\soviet\team_weapons\pm41_82mm_mortar_mp" />
+					<instance_reference name="type" value="ebps\races\soviet\team_weapons\pm41_82mm_mortar_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 				<group name="loadout_data">
 					<float name="num" value="6" />

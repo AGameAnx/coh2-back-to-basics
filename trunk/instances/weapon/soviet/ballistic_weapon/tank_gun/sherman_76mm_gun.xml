@@ -133,16 +133,16 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="160" />
+			<float name="min" value="120" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="160" />
+			<float name="max" value="120" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_scatter_offset" value="0.25" />
-			<float name="distance_scatter_max" value="5" />
+			<float name="distance_scatter_max" value="6.4" />
 			<float name="distance_bracket_count_ground" value="1" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="angle_scatter" value="7.5" />
@@ -162,8 +162,8 @@
 		</group>
 		<group name="penetration">
 			<float name="near" value="140" />
-			<float name="far" value="120" />
-			<float name="mid" value="130" />
+			<float name="far" value="100" />
+			<float name="mid" value="120" />
 		</group>
 		<locstring name="help_text" value="0" />
 		<group name="damage_over_time">

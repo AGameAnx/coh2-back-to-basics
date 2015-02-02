@@ -1,4 +1,111 @@
 =================================================================
+## v0.18
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Changed the equation for vehicle upkeep. Overall upkeep should be slightly reduced and slightly increased for the heaviest tanks
+
+Soviet:
+- Reverted sniper aim time changes
+- M3A1 halftrack hitpoints increased 200 -> 240
+- Sherman 76mm weapon rework:
+ * Base damage 160 -> 120
+ * Max scatter 5 -> 6.4
+ * Far penetration 120 -> 100
+ * Mid penetration 130 -> 120
+- 82mm mortar cost increased 240mp -> 280mp
+- M-42 AT Gun rework:
+ * Base damage 80 -> 100
+ * Far penetration 60 -> 70
+ * Mid penetration 80 -> 100
+ * Near penetration 100 -> 140
+- Soviet cargo plane hitpoints increased 1000 -> 1300
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Base fuel income is no longer increased
+- Starting resource increase reduced 80mp -> 25mp
+- Upkeep multiplier reduced 1.41 -> 1.39
+
+
+=================================================================
+## v0.17
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+USF:
+- Ambulance armor increased 2 -> 3
+- Ambulance reinforce radius increased 12 -> 15
+- Rear Echelon Suppressive fire main suppression addition modifier increased 0.04 -> 0.045
+- Rifleman AT grenade minimum radius removed
+- Fixed an issue where M15A1 weapon would destroy buildings too quickly
+- Reworked P47 rockets to work exactly like vanilla (they weren't consistent enough and would often shoot around the target due to global aoe changes)
+- Fixed an issue with M21 Mortar Halftrack veterancy where a recharge modifier would get applied twice to white phosphorus instead of once to all types of barrage abilities - HE modifier was missing (thanks Mandead)
+
+Soviet:
+- Fixed an issue where recrewing B4 howitzer would not apply its population value correctly
+
+Ostheer:
+- Stug G and Stug E rotation speed decreased 28 -> 25
+- Fixed an issue where pak43 would aim for 7s. New ready aim time is 0.5s/1s/2s
+- Pak43 entity hitpoints increased 470 -> 580
+
+OKW:
+- Luchs hitpoints 485 -> 435
+- Panther hitpoints now match Ostheer panther again
+- Reinforced wire construction time reduced 29s -> 26s
+- Fixed an issue where pak43 would aim for up to 7s. New ready aim time is 0.5s/1s/2s
+- Pak43 entity hitpoints increased 470 -> 580
+- Obersoldatten cost decreased 400mp -> 360mp
+- Fallschirmjager dispatch cost reduced 440mp -> 400mp
+- MG34 dispatch cost increased 210mp -> 220mp
+- Fixed that Luchs weapon would destroy buildings too quickly
+- Fixed OKW wire not getting destroyed after being cut
+
+
+-----------------------------------------------------------------
+## Win condition:
+
+AI:
+- Added a script that will force AI to reinforce its squads
+- Added a script that will make AI set up its team weapons in correct locations, facing the enemy and prevent them from running in blindly
+- Adjustments made to tank retreat numbers
+
+
+=================================================================
+## v0.16
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+USF:
+- Ambulance rework:
+ * Reinforce radius reduced 20 -> 13
+ * Armor reduced 4 -> 2
+ * Hitpoints reduced 250 -> 180
+ * Size reduced 10 -> 8
+ * Cost increased 150mp/10f -> 200mp/10f
+- 105mm Bulldozer Sherman mid aoe range decreased 2 -> 1.7
+- 105mm Bulldozer Sherman max distance scatter 4.8 -> 5.5
+
+Ostheer:
+- Troop Training for Elite Troops Doctrine now requires 1 CP
+
+OKW:
+- Sturmpioneer far range falloff increased 31 -> 37. Should increase their performane mid to far range drastically
+- Sturmpioneer build time reduced 40s -> 32s
+- Flak halftrack max range and far range reduced 55 -> 52
+
+
+=================================================================
 ## v0.15
 =================================================================
 
@@ -22,8 +129,8 @@ OKW:
 - Jagdpanzer IV rotation speed change reverted 26 -> 20
 - Jagdpanzer IV frontal armor change reverted 300 -> 230
 - Panzerfusilier population cost increased 7 -> 9
-- Flak HQ cost reduced 300mp/75f -> 250mp/75f
-- Battlegroup HQ cost changed 250mp/40f -> 220mp/55f
+- Battlegroup HQ cost reduced 300mp/75f -> 250mp/75f
+- Mechanized Regiment HQ cost changed 250mp/40f -> 220mp/55f
 
 
 =================================================================
@@ -451,7 +558,7 @@ General:
 - All small arms far accuracy reduced by 10% (resulting overall effectiveness compared to vanilla 0.83835 + range increase of 12.5%)
 - All small arms mid accuracy reduced by 15% (resulting overall effectiveness compared to vanilla 1.18766 + range increase of 5%)
 - Infantry make casualty critical is disabled for the time being. This is done to resolve the issue of crawling soldiers blocking pathing
-- Demolishion charge rework:
+- Demolition charge rework:
  * Aoe radius 10 -> 8.5
  * Cost 90 -> 50
  * Target size 1 -> 20

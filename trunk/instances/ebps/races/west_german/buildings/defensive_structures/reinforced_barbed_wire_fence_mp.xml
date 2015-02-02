@@ -105,7 +105,7 @@
 				<enum name="unit_type00" value="" />
 				<enum name="unit_type01" value="tactical_structure" />
 				<enum name="unit_type02" value="tank_traps" />
-				<enum name="unit_type03" value="" />
+				<enum name="unit_type03" value="wire_sandbags" />
 				<enum name="unit_type04" value="wire" />
 				<enum name="unit_type05" value="" />
 				<enum name="unit_type06" value="" />
@@ -195,7 +195,7 @@
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="29" />
+				<float name="time_seconds" value="26" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">
