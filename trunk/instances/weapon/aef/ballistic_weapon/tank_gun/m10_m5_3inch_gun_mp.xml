@@ -175,11 +175,11 @@
 		<group name="range">
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="far" value="-1" />
-				<float name="near" value="-1" />
-				<float name="mid" value="-1" />
+				<float name="far" value="45" />
+				<float name="near" value="0" />
+				<float name="mid" value="28" />
 			</group>
-			<float name="max" value="55" />
+			<float name="max" value="45" />
 		</group>
 		<string name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />

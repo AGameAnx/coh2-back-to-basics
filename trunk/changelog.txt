@@ -7,6 +7,7 @@
 
 General:
 - Changed the equation for vehicle upkeep. Overall upkeep should be slightly reduced and slightly increased for the heaviest tanks
+- SWS Halftrack, Kubelwagen, M20 utility car and M3 Halftrack wrecks are now destructible by small arms fire
 
 Soviet:
 - Reverted sniper aim time changes
@@ -23,6 +24,15 @@ Soviet:
  * Mid penetration 80 -> 100
  * Near penetration 100 -> 140
 - Soviet cargo plane hitpoints increased 1000 -> 1300
+
+USF:
+- Pack howitzer autofire reload speed decreased 4.1-4.9s -> 4.6-5.8s
+- Pack howitzer ability range multiplier on vet3 reduced 1.33 -> 1.2
+- 57mm M1 AT gun Take Aim ability range addition reduced 10 -> 6
+- 57mm M1 AT gun Take Aim ability sight multiplier reduced 1.75 -> 1.45
+- M10 Wolverine tank destroyer weapon range reduced 55 -> 45
+- M36 Jackson tank destroyer weapon range reduced 55 -> 51
+- Sherman 50cal mounted machine gun near accuracy reduced 0.88 -> 0.6
 
 -----------------------------------------------------------------
 ## Win condition:

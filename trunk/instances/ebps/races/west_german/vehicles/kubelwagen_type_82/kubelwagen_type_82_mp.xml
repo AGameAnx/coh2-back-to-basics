@@ -217,7 +217,7 @@
 			<bool name="remove_from_pathfinding_on_death" value="True" />
 			<bool name="reveal_to_all_on_death" value="False" />
 			<bool name="ui_can_scuttle" value="False" />
-			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_kubelwagen" />
+			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_kubelwagen" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<list name="death_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
