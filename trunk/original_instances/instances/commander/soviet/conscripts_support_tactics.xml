@@ -1,0 +1,33 @@
+<instance description="" template="commander">
+	<group name="commander_bag">
+		<locstring name="name" value="11040322" />
+		<instance_reference name="archetype_upgrade" value="upgrade\soviet\commander\archetype\shock_archetype" />
+		<locstring name="description" value="11040321" />
+		<string name="icon" value="Icons_commander_portrait_soviet_commander_02" />
+		<string name="icon_secondary" value="Icons_commander_portrait_soviet_commander_02_large" />
+		<int name="ui_position" value="4" />
+		<locstring name="description_short" value="11048930" />
+		<instance_reference name="store_item" value="thq_store\commanders\soviet\conscripts_support_tactics" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="5922" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<list name="commander_abilities">
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\conscript_evasive_tactics" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\conscript_repair_kit" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\conscript_assault_package" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\rapid_conscription" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\ability\fire_artillery" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17" />
+</instance>

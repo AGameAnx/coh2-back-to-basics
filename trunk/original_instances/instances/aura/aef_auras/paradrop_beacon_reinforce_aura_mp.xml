@@ -1,0 +1,13 @@
+<instance description="" template="aura">
+	<group name="aura_bag">
+		<list name="actions">
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\aef\paradrop_reinforce_item" />
+				<bool name="permanent" value="False" />
+				<uniqueid name="id" value="71722" />
+			</template_reference>
+		</list>
+		<bool name="affects_squads" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="14550" />
+</instance>

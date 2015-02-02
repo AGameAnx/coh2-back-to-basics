@@ -1,0 +1,33 @@
+<instance description="" template="commander">
+	<group name="commander_bag">
+		<locstring name="name" value="11024625" />
+		<instance_reference name="archetype_upgrade" value="upgrade\german\commander\archetype\jaeger_archetype" />
+		<locstring name="description" value="11048915" />
+		<string name="icon" value="Icons_commander_portrait_german_commander_06" />
+		<string name="icon_secondary" value="Icons_commander_portrait_german_commander_06_large" />
+		<int name="ui_position" value="1" />
+		<locstring name="description_short" value="11048924" />
+		<instance_reference name="store_item" value="" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="5573" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<list name="commander_abilities">
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\passive\ambush_camouflage" />
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\ability\stuka_close_air_support" />
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\passive\jaeger_light_infantry" />
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\ability\fast_march" />
+			<instance_reference name="commander_ability" value="commander_ability\german\commander\ability\light_artillery_support" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="8" />
+</instance>

@@ -1,0 +1,33 @@
+<instance description="" template="commander">
+	<group name="commander_bag">
+		<locstring name="name" value="11007677" />
+		<instance_reference name="archetype_upgrade" value="upgrade\soviet\commander\archetype\guard_archetype" />
+		<locstring name="description" value="11036213" />
+		<string name="icon" value="Icons_commander_portrait_soviet_commander_04" />
+		<string name="icon_secondary" value="Icons_commander_portrait_soviet_commander_04_large" />
+		<int name="ui_position" value="0" />
+		<locstring name="description_short" value="11048932" />
+		<instance_reference name="store_item" value="" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="5576" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="True" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<list name="commander_abilities">
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\guard_troops" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\conscript_evasive_tactics" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\conscript_assault_package" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\ability\il-2_sturmovik_attack" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\ml_20_howitzer_unlock" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="19" />
+</instance>
