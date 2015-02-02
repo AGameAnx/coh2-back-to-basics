@@ -1,0 +1,23 @@
+<instance description="" template="commander_ability">
+	<group name="commander_ability_bag">
+		<locstring name="name" value="11051221" />
+		<locstring name="description" value="11051222" />
+		<string name="icon" value="Icons_vehicles_vehicle_soviet_b4_artillery_gun" />
+		<template_reference name="server_item" value="server_item">
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<uniqueid name="server_id" value="402718" />
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<instance_reference name="upgrade" value="upgrade\soviet\commander\passive\howtizer_203mm" />
+		<instance_reference name="ability" value="" />
+	</group>
+	<uniqueid name="pbgid" value="86405" />
+</instance>

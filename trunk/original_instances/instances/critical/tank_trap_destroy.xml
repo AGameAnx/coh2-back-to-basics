@@ -1,0 +1,52 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="Destroy a world object" />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="0" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="1" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+			<template_reference name="action" value="action\animator_set_state">
+				<bool name="apply_to_leader_only" value="False" />
+				<string name="do_action_state_name" value="damage_01" />
+				<bool name="retrigger" value="False" />
+				<string name="state_machine_name" value="damage_states" />
+				<string name="undo_action_state_name" value="" />
+				<uniqueid name="id" value="53585" />
+			</template_reference>
+			<template_reference name="action" value="action\make_dead">
+				<enum name="death_intensity" value="death_intensity_low" />
+				<bool name="ignore_invulnerability" value="False" />
+				<bool name="destroy" value="False" />
+				<list name="death_reaction_table">
+					<group name="death_reaction">
+						<enum name="death_reaction" value="normal" />
+						<float name="weight" value="1" />
+					</group>
+				</list>
+				<uniqueid name="id" value="53586" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="icon_name" value="" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="55" />
+</instance>

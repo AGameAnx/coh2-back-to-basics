@@ -1,0 +1,23 @@
+<instance description="" template="commander_ability">
+	<group name="commander_ability_bag">
+		<locstring name="name" value="11052844" />
+		<locstring name="description" value="11052845" />
+		<string name="icon" value="Icons_commander_cmdr_soviet_rpg_43_at_grenade_assualt" />
+		<template_reference name="server_item" value="server_item">
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<uniqueid name="server_id" value="402710" />
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<instance_reference name="upgrade" value="upgrade\soviet\commander\passive\conscript_at_grenade_assault" />
+		<instance_reference name="ability" value="" />
+	</group>
+	<uniqueid name="pbgid" value="86397" />
+</instance>

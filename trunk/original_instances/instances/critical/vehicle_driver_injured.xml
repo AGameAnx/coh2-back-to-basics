@@ -1,0 +1,90 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="vehicle_driver_injured" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="immobilize vehicle for 15 seconds" />
+		<bool name="is_unique" value="False" />
+		<group name="kicker_message">
+			<locstring name="message" value="11017412" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="10" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+			<template_reference name="action" value="action\delay">
+				<float name="delay" value="1" />
+				<float name="delay_min" value="0" />
+				<bool name="progress_bar" value="False" />
+				<bool name="randomize" value="False" />
+				<list name="delayed_actions">
+					<template_reference name="action" value="action\apply_modifiers_action">
+						<float name="duration" value="10" />
+						<bool name="permanent" value="False" />
+						<list name="modifiers">
+							<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+								<enum name="application_type" value="apply_to_entity" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0" />
+								<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+							</template_reference>
+							<template_reference name="modifier" value="modifiers\move_enable_modifier">
+								<enum name="application_type" value="apply_to_entity" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="" />
+								<enum name="usage_type" value="enable" />
+								<float name="value" value="-1" />
+								<instance_reference name="tooltip" value="modifier_tooltip\move_enable_modifier" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="53637" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="53636" />
+				<bool name="can_prevent_refund" value="True" />
+			</template_reference>
+			<template_reference name="action" value="action\timed_action">
+				<float name="duration" value="15" />
+				<bool name="fire_and_forget" value="False" />
+				<list name="subactions">
+					<template_reference name="action" value="action\animator_set_state">
+						<bool name="apply_to_leader_only" value="False" />
+						<string name="do_action_state_name" value="injured" />
+						<string name="state_machine_name" value="criticals_driver" />
+						<string name="undo_action_state_name" value="healthy" />
+						<bool name="retrigger" value="False" />
+						<uniqueid name="id" value="275627" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="275626" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\campaign\disable_vehicle_criticals" />
+			</template_reference>
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="11036975" />
+			<locstring name="help_text" value="11036978" />
+			<string name="icon_name" value="Icons_criticals_temp_driverinjured" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="69" />
+</instance>

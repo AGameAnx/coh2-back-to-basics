@@ -1,0 +1,70 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="Destroyed" />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="0" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="1" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+			<template_reference name="action" value="action\modify_resources">
+				<template_reference name="resource_to_modify" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="fuel" value="-999999" />
+					<float name="manpower" value="-999999" />
+					<float name="munition" value="-999999" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
+				</template_reference>
+				<bool name="modify_per_second" value="False" />
+				<bool name="ignore_resource_cap" value="False" />
+				<uniqueid name="id" value="56585" />
+			</template_reference>
+			<template_reference name="action" value="action\off_map_artillery">
+				<float name="num_salvo" value="1" />
+				<float name="radius" value="0" />
+				<float name="source_offset_x" value="0" />
+				<float name="source_offset_y" value="1" />
+				<float name="source_offset_z" value="0" />
+				<float name="time_range_between_shells_max" value="0" />
+				<float name="time_range_between_shells_min" value="0.125" />
+				<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\heavy_artillery\railway_gun_80_cm_shell_first_shot" />
+				<uniqueid name="id" value="56584" />
+			</template_reference>
+			<template_reference name="action" value="action\make_dead">
+				<enum name="death_intensity" value="death_intensity_low" />
+				<bool name="ignore_invulnerability" value="False" />
+				<bool name="destroy" value="False" />
+				<list name="death_reaction_table">
+					<group name="death_reaction">
+						<enum name="death_reaction" value="normal" />
+						<float name="weight" value="1" />
+					</group>
+				</list>
+				<uniqueid name="id" value="66768" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="icon_name" value="" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="4474" />
+</instance>

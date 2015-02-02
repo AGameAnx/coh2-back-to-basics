@@ -1,0 +1,74 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="vehicle_engine_red" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="red destroy engine" />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="2138550" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="10" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+			<template_reference name="action" value="action\apply_modifiers_action">
+				<float name="duration" value="0" />
+				<bool name="permanent" value="False" />
+				<list name="modifiers">
+					<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+						<enum name="application_type" value="apply_to_entity" />
+						<bool name="exclusive" value="True" />
+						<string name="modifier_id" value="engine_destroy" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="multiplication" />
+						<float name="value" value="0.1" />
+						<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+					</template_reference>
+					<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+						<enum name="application_type" value="apply_to_entity" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="multiplication" />
+						<float name="value" value="1.6" />
+						<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+					</template_reference>
+					<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
+						<enum name="application_type" value="apply_to_entity" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="multiplication" />
+						<float name="value" value="0.1" />
+						<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="53666" />
+			</template_reference>
+			<template_reference name="action" value="action\animator_set_state">
+				<bool name="apply_to_leader_only" value="False" />
+				<string name="do_action_state_name" value="Red" />
+				<string name="state_machine_name" value="Criticals_Engine" />
+				<string name="undo_action_state_name" value="Healthy" />
+				<bool name="retrigger" value="False" />
+				<uniqueid name="id" value="53667" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="0" />
+			<locstring name="help_text" value="11042003" />
+			<string name="icon_name" value="Icons_criticals_killed_engine_light" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="82" />
+</instance>

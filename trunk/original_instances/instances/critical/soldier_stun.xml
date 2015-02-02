@@ -1,0 +1,167 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="Stunned for 5 seconds" />
+		<bool name="is_unique" value="False" />
+		<group name="kicker_message">
+			<locstring name="message" value="11011326" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="5" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+			<template_reference name="action" value="action\timed_action">
+				<float name="duration" value="5" />
+				<bool name="fire_and_forget" value="True" />
+				<list name="subactions">
+					<template_reference name="action" value="action\apply_modifiers_action">
+						<float name="duration" value="5" />
+						<bool name="permanent" value="False" />
+						<list name="modifiers">
+							<template_reference name="modifier" value="modifiers\posture_prone_modifier">
+								<enum name="application_type" value="apply_to_entity" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="" />
+								<enum name="usage_type" value="enable" />
+								<float name="value" value="1" />
+								<instance_reference name="tooltip" value="modifier_tooltip\posture_prone_modifier" />
+							</template_reference>
+							<template_reference name="modifier" value="modifiers\facing_only_enable">
+								<enum name="application_type" value="apply_to_entity" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="" />
+								<enum name="usage_type" value="enable" />
+								<float name="value" value="1" />
+								<instance_reference name="tooltip" value="modifier_tooltip\facing_only_enable" />
+							</template_reference>
+							<template_reference name="modifier" value="modifiers\range_weapon_modifier">
+								<enum name="application_type" value="apply_to_weapon" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="hardpoint_01" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.01" />
+								<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="53576" />
+					</template_reference>
+					<template_reference name="action" value="action\requirement_action">
+						<bool name="check_self" value="False" />
+						<bool name="global_fire_and_forget_on_success" value="False" />
+						<bool name="instant_requirement_check" value="False" />
+						<bool name="kill_action_on_failed_requirements" value="False" />
+						<bool name="no_retrigger" value="False" />
+						<bool name="validate_all_sub_actions" value="True" />
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_any_in_list">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements">
+									<template_reference name="requirement" value="requirements\required_unit_type">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<enum name="unit_type" value="mortars" />
+										<template_reference name="qualify_option" value="options\none">
+										</template_reference>
+										<bool name="search_load_out" value="False" />
+										<bool name="owned_by_player_only" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_unit_type">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<enum name="unit_type" value="artillery" />
+										<template_reference name="qualify_option" value="options\none">
+										</template_reference>
+										<bool name="search_load_out" value="False" />
+										<bool name="owned_by_player_only" value="True" />
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+						<list name="action_table">
+							<template_reference name="action" value="action\apply_modifiers_action">
+								<float name="duration" value="5" />
+								<bool name="permanent" value="False" />
+								<list name="modifiers">
+									<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+										<enum name="application_type" value="apply_to_weapon" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="hardpoint_01" />
+										<enum name="usage_type" value="enable" />
+										<float name="value" value="-1" />
+										<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+									</template_reference>
+									<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+										<enum name="application_type" value="apply_to_weapon" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="hardpoint_02" />
+										<enum name="usage_type" value="enable" />
+										<float name="value" value="-1" />
+										<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+									</template_reference>
+									<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+										<enum name="application_type" value="apply_to_weapon" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="hardpoint_03" />
+										<enum name="usage_type" value="enable" />
+										<float name="value" value="-1" />
+										<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+									</template_reference>
+									<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+										<enum name="application_type" value="apply_to_weapon" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="hardpoint_04" />
+										<enum name="usage_type" value="enable" />
+										<float name="value" value="-1" />
+										<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+									</template_reference>
+									<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+										<enum name="application_type" value="apply_to_weapon" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="hardpoint_05" />
+										<enum name="usage_type" value="enable" />
+										<float name="value" value="-1" />
+										<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+									</template_reference>
+								</list>
+								<uniqueid name="id" value="53578" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="53577" />
+						<bool name="fire_and_forget_non_global" value="False" />
+						<template_reference name="ui_help_text" value="tables\help_text_phrase">
+							<int name="phrase_order" value="0" />
+							<locstring name="phrase" value="0" />
+						</template_reference>
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="53575" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="11053655" />
+			<locstring name="help_text" value="11053656" />
+			<string name="icon_name" value="Icons_criticals_temp_stun" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="50" />
+</instance>
