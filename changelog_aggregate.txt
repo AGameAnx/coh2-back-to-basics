@@ -52,6 +52,7 @@ General:
 - Vehicle abandon critical rework:
  * Will destroy main gun and engine
  * Will restore 180hp to the vehicle
+- SWS Halftrack, Kubelwagen, M20 utility car and M3 Halftrack wrecks are now destructible by small arms fire
 - Global mines rework:
  * Slightly smaller lethal aoe range, resulting in fewer complete squad wipes
  * Will now apply a smaller overall amount of damage to infantry, but the same amount to vehicles
@@ -319,13 +320,15 @@ USF:
  * Added 220 of static damage that the mine will apply to vehicles it hits (this is an overall decrease)
 - M1 57mm AT gun range 66 -> 63
 - M1 57mm AT gun will no longer change its weapon at vet2. It will instead receive a 10% reload speed increase
+- M1 57mm AT gun Take Aim ability range addition reduced 10 -> 6
+- M1 57mm AT gun Take Aim ability sight multiplier reduced 1.75 -> 1.45
 - Pack hotizer rework:
  * Cost reduced from 480mp to 380mp
  * Reinforce cost reduced 40mp -> 20mp
  * Fixed a bug with recrewed pack howitzer costing double the price to reinforce
  * Entity target priority set to -100, which will make other units target the crew before the howitzer itself. This is default behaviour for team weapons
  * Auto-barrage range increased from 80 to 90 (still much shorter than barrage range)
- * Reworked rate of fire for base weapon to match HEAT shell rate of fire closer
+ * Reworked rate of fire for base weapon autofire to match HEAT shell rate of fire a bit closer
  * Near aoe distance decreased 1 -> 0.75
  * Will no longer change its weapon at vet2. It will instead receive a 15% damage increase and 50% penetration increase
  * Fixed a bug where a it would lose its crew and then get recrewed as a bugged vehicle
@@ -333,6 +336,7 @@ USF:
  * Barrage near aoe distance decreased 1.25 -> 1
  * Artillery barrage salvo fired shell count increased 3 -> 4
  * Projectile non-collision settings changed to create a more predictable behavior
+ * Ability range multiplier on vet3 reduced 1.33 -> 1.2
 - Major artillery rework:
  * Delay 7s -> 4s
  * Shots per salvo 3 -> 6
@@ -341,6 +345,7 @@ USF:
 - Sherman HE shell rework:
  * Medium range aoe damage reduced 0.35 -> 0.3
  * Max distance scatter increased 5.5 to 5.7
+- Sherman 50cal mounted machine gun near accuracy reduced 0.88 -> 0.6
 - Sherman 105mm HE shell rework:
  * Range increased 44 -> 50
  * Mid aoe range decreased 2 -> 1.7
@@ -349,12 +354,13 @@ USF:
  * Base damage reduced 240 -> 220
  * Health increased 480 -> 550
  * Cost reduced 350mp/135f -> 300mp/100f
- * Max range 66 -> 55
- * Far range 66 -> 55
+ * Max range 66 -> 51
+ * Far range 66 -> 51
  * Veterancy requirements reduced
 - M10 Wolverine reworked:
  * Base damage increased 140 -> 180
  * Health increased 400 -> 520
+ * Weapon range reduced 55 -> 45
 - M8A1 HMC Scott aoe profile reworked:
  * Near range 0.7 -> 1
  * Mid range 1.8 -> 2

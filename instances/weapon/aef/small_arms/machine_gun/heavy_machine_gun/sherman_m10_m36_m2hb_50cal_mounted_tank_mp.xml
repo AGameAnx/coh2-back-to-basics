@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<group name="weapon_bag">
 		<float name="fx_delay_in_building" value="0" />
 		<locstring name="ui_name" value="0" />
@@ -20,7 +20,7 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
@@ -32,13 +32,13 @@
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="check_self" value="False" />
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
+						<template_reference name="action" value="action\random_action">
 							<uniqueid name="id" value="66182" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="197" />
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<uniqueid name="id" value="66183" />
 											<instance_reference name="critical" value="critical\vehicle_destroy" />
@@ -48,7 +48,7 @@
 								<group name="action_choice">
 									<int name="weight" value="9803" />
 									<list name="actions">
-										<template_reference value="action\no_action" name="action">
+										<template_reference name="action" value="action\no_action">
 											<uniqueid name="id" value="391861" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
@@ -60,7 +60,7 @@
 						</template_reference>
 					</list>
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="unit_type" value="aircraft" />
 							<locstring name="ui_name" value="0" />
 							<bool name="owned_by_player_only" value="True" />
@@ -95,13 +95,14 @@
 		</group>
 		<group name="accuracy">
 			<float name="far" value="0.27" />
-			<float name="near" value="0.88" />
+			<float name="near" value="0.6" />
 			<float name="mid" value="0.46" />
 		</group>
 		<string name="fx_action_target_name" value="50cal_target" />
 		<group name="fire">
 			<float name="wind_up" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 		</group>
 		<string name="icon_name" value="" />
@@ -240,7 +241,8 @@
 				<float name="max" value="4" />
 				<float name="min" value="4" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
 				<float name="near" value="1" />
@@ -267,7 +269,8 @@
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="damage">
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="min" value="12" />
 			<float name="max" value="12" />
 		</group>
