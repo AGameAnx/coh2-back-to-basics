@@ -1,0 +1,26 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\artillery\ib_rbn_build_katyusha_panzerwerfer" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_artillery_production_i" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="60" />
+				<locstring name="name" value="11035010" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\katyusha_rocket_trucks\katyusha_bm-13n_squad_mp" />
+				</list>
+			</template_reference>
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="60" />
+				<locstring name="name" value="11035011" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panzerwerfer_squad\panzerwerfer_squad_mp" />
+				</list>
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17265" />
+</instance>

@@ -1,0 +1,18 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\infantry\gersniper\ib_rbn_squad_kills_gersniper" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_sniper_hero" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\single_squad_kills">
+				<int name="number" value="15" />
+				<int name="num_kills" value="25" />
+				<enum name="killer_unit_type" value="sniper_german" />
+				<locstring name="name" value="11036938" />
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17374" />
+</instance>

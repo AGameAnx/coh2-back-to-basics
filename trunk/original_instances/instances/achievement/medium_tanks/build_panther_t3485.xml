@@ -1,0 +1,26 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\medium_tanks\ib_rbn_build_panther_t3485" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_medtank_production_i" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="50" />
+				<locstring name="name" value="11034993" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panther_squad\panther_squad_mp" />
+				</list>
+			</template_reference>
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="40" />
+				<locstring name="name" value="11034994" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\t_34_squad\t_34_85_squad_mp" />
+				</list>
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17405" />
+</instance>

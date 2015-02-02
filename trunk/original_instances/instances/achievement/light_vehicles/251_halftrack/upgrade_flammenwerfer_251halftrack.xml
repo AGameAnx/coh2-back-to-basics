@@ -1,0 +1,17 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\light_vehicles\251_halftrack\ib_rbn_upgrade_flammenwerfer_251halftrack" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_flame_on" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\build_upgrade">
+				<int name="number" value="60" />
+				<instance_reference name="upgrade" value="upgrade\german\items\sdkfz_251_halftrack_flammpanzerwagen_upgrade_mp" />
+				<locstring name="name" value="11034905" />
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17398" />
+</instance>

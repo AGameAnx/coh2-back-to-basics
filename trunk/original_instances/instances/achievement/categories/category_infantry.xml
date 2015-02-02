@@ -1,0 +1,37 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin_category\ibcat_infantry" />
+		<int name="reward_xp" value="3600" />
+		<string name="steam_achievement_id" value="ib_fin_infantry_cat" />
+		<list name="prerequisite_tasks">
+		</list>
+		<list name="prerequisite_achievements">
+			<instance_reference name="sub_achievement" value="achievement\infantry\build_conscripts_grenadiers_pzgrenadiers" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\build_shock_guard_penal" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\assault_grenadiers\kill_50_enemy_one_squad" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\conscripts\ability_molotov_kill_infantry_conscripts" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\conscripts\ability_oorah_conscripts" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\engineer\construct_barbedfield_mine_engineer" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\engineer\upgrade_kill_infantry_engineer" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\gersniper\squad_kills_gersniper" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\grenadiers\ability_kill_lightvehicles_grenadiers" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\grenadiers\kill_heavytank_grenadiers" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\guards\kill_ostwind_222_vehicles_guards" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\guards\kill_pzgrenadiers_guards" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\irregulars\kill_100_enemy" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\ostruppen\deploy_200" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\partisan\deploy_200_partisans" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\partisan\kill_20_tanks" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\penal\ability_kill_mortar_penal" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\penal\upgrade_kill_infantry_penal" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\pioneer\construct_bunker_pioneer" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\pioneer\construct_minefield_tellermine_pioneer" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\pzgrenadiers\squad_kills_pzgrenadiers" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\pzgrenadiers\vet_kill_conscripts_pzgrenadiers" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\shock\build_kill_shock" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\shock\kill_hmg_mortar_shock" />
+			<instance_reference name="sub_achievement" value="achievement\infantry\sovsniper\kill_hmg_mortar_sovsniper" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17337" />
+</instance>

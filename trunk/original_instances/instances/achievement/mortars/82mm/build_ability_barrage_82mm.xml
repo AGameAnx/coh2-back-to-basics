@@ -1,0 +1,27 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\mortars\82mm\ib_rbn_build_ability_barrage_82mm" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_direct_indirect_fire" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="80" />
+				<locstring name="name" value="11034978" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\soviet\soldiers\mortar_squad\pm-82_41_mortar_squad_mp" />
+				</list>
+			</template_reference>
+			<template_reference name="task" value="achievement_task\use_ability">
+				<int name="number" value="40" />
+				<locstring name="name" value="11034979" />
+				<list name="abilities">
+					<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\sync_mortar_barrage_mp" />
+					<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\sync_mortar_barrage" />
+				</list>
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17424" />
+</instance>

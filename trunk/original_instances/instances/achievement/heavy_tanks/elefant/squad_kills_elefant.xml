@@ -1,0 +1,18 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\heavy_tanks\elefant\ib_rbn_squad_kills_elefant" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_elefant_frenzy" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\single_squad_kills">
+				<int name="number" value="5" />
+				<int name="num_kills" value="30" />
+				<enum name="killer_unit_type" value="elefant" />
+				<locstring name="name" value="11034885" />
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17346" />
+</instance>

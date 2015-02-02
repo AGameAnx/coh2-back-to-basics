@@ -1,0 +1,24 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin_category\ibcat_artillery" />
+		<int name="reward_xp" value="3600" />
+		<string name="steam_achievement_id" value="ib_fin_artillery_cat" />
+		<list name="prerequisite_tasks">
+		</list>
+		<list name="prerequisite_achievements">
+			<instance_reference name="sub_achievement" value="achievement\artillery\build_katyusha_panzerwerfer" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\build_ml20_fh18" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\b4\kill_tanks_b4" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\fh18\kill_mortar_hmg_fh18" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\fh18\kill_vehicles_fh18" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\katyusha\ability_squad_kills_katyusha" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\katyusha\kill_building_infantry_katyusha" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\ml20\kill_elefant_ml20" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\ml20\kill_fh18_ml20" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\ml20\kill_infantry_ml20" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\panzerwerfer\ability_panzerwerfer" />
+			<instance_reference name="sub_achievement" value="achievement\artillery\panzerwerfer\kill_infantry_panzerwerfer" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17332" />
+</instance>
