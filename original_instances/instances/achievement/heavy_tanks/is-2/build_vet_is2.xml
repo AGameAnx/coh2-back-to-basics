@@ -1,0 +1,25 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\heavy_tanks\is-2\ib_rbn_build_vet_is2" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_is2_specialist" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="30" />
+				<locstring name="name" value="11034869" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\is-2\is-2_mp" />
+				</list>
+			</template_reference>
+			<template_reference name="task" value="achievement_task\achieve_veterancy">
+				<int name="number" value="5" />
+				<instance_reference name="squad" value="sbps\races\soviet\vehicles\is-2\is-2_mp" />
+				<int name="veterancy_level" value="3" />
+				<locstring name="name" value="11034870" />
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17347" />
+</instance>

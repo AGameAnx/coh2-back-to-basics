@@ -1,0 +1,22 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin_category\ibcat_hmg" />
+		<int name="reward_xp" value="3600" />
+		<string name="steam_achievement_id" value="ib_fin_hmgs_cat" />
+		<list name="prerequisite_tasks">
+		</list>
+		<list name="prerequisite_achievements">
+			<instance_reference name="sub_achievement" value="achievement\hmgs\build_maxim_mg42" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\kill_infantry_hmg" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\kill_lightvehicle_hmg" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\dshk\kill_vehicles_dshk" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\maxim\kill_hmg_grenadier_maxim" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\maxim\kill_infantry_maxim" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\maxim\squad_kills_maxim" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\mg42\ability_kill_lightvehicles_mg42" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\mg42\kill_maxim_conscripts_mg42" />
+			<instance_reference name="sub_achievement" value="achievement\hmgs\mg42\vet_mg42" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17336" />
+</instance>

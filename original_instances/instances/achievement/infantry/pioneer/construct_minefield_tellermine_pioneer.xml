@@ -1,0 +1,22 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\infantry\pioneer\ib_rbn_construct_minefield_tellermine_pioneer" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_dont_step_on_the_grass" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\construct_building">
+				<locstring name="name" value="11036962" />
+				<int name="number" value="120" />
+				<instance_reference name="entity" value="ebps\races\german\buildings\defensive_structure\mine_field_mp" />
+			</template_reference>
+			<template_reference name="task" value="achievement_task\construct_building">
+				<locstring name="name" value="11036963" />
+				<int name="number" value="15" />
+				<instance_reference name="entity" value="ebps\races\german\buildings\defensive_structure\german_mine_mp" />
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17386" />
+</instance>

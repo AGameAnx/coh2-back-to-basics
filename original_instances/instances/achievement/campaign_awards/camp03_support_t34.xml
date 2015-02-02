@@ -1,0 +1,17 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\campaign\camp_bonus_m03_hardened_armor" />
+		<int name="reward_xp" value="400" />
+		<string name="steam_achievement_id" value="camp_bonus_03_support_t34" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\scar">
+				<int name="number" value="1" />
+				<string name="task_id" value="camp03_support_t34" />
+				<locstring name="name" value="0" />
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17304" />
+</instance>

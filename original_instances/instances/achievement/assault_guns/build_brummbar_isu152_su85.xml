@@ -1,0 +1,33 @@
+<instance description="" template="achievement">
+	<group name="achievement_bag">
+		<instance_reference name="reward_ribbon" value="ribbon\intel_bulletin\assault_guns\ib_rbn_build_brummbar_isu152_su85" />
+		<int name="reward_xp" value="900" />
+		<string name="steam_achievement_id" value="ib_assaultgun_production_i" />
+		<list name="prerequisite_tasks">
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="50" />
+				<locstring name="name" value="11035003" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\german\vehicles\brummbar_squad\brummbar_squad_mp" />
+				</list>
+			</template_reference>
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="10" />
+				<locstring name="name" value="11035004" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\isu-152\isu-152_mp" />
+				</list>
+			</template_reference>
+			<template_reference name="task" value="achievement_task\build_squad">
+				<int name="number" value="50" />
+				<locstring name="name" value="11035005" />
+				<list name="squadlist">
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\su-85\su-85_mp" />
+				</list>
+			</template_reference>
+		</list>
+		<list name="prerequisite_achievements">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17277" />
+</instance>
