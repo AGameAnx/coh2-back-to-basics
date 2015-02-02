@@ -1,0 +1,13 @@
+<instance description="" template="ai_economy_group">
+	<group name="ai_economy_group_bag">
+		<instance_reference name="default" value="ai_economy\complete\default" />
+		<list name="overrides">
+			<group name="economy_override">
+				<string name="name" value="" />
+				<instance_reference name="economy_settings" value="ai_economy\overrides\volga_timber_yard" />
+				<bool name="active_by_default" value="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17650" />
+</instance>

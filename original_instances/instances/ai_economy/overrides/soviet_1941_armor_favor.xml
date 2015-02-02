@@ -1,0 +1,43 @@
+<instance description="" template="ai_economy">
+	<group name="ai_economy_bag">
+		<list name="squads">
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="-1" />
+				<float name="utility" value="600" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\kv-1\kv-1" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.3" />
+				<float name="per_unit_scale_historical" value="0.2" />
+				<float name="utility" value="300" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\t_34_squad\t_34_76_squad" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+		</list>
+		<list name="build_settings">
+		</list>
+		<group name="default_squad_utility">
+			<float name="per_unit_scale" value="-1" />
+			<float name="per_unit_scale_historical" value="-1" />
+			<float name="utility" value="-1" />
+			<float name="utility_random_range_offset" value="-1" />
+		</group>
+		<group name="default_upgrade_utility">
+			<float name="per_unit_scale" value="-1" />
+			<float name="per_unit_scale_historical" value="-1" />
+			<float name="utility" value="-1" />
+			<float name="utility_random_range_offset" value="-1" />
+		</group>
+		<list name="upgrades">
+		</list>
+		<group name="default_player_upgrade_utility">
+			<float name="utility" value="-1" />
+			<float name="utility_random_range_offset" value="-1" />
+		</group>
+		<list name="player_upgrades">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="24" />
+</instance>
