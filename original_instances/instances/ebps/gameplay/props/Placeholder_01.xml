@@ -1,0 +1,47 @@
+<instance description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
+			<string name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="False" />
+			<file name="animator" value="gameplay\props\placeholder_01\placeholder_01" />
+			<bool name="is_visible_in_game" value="True" />
+			<float name="precise_size" value="-1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext">
+			<bool name="is_in_spatial_bucket" value="False" />
+			<float name="rotate_snap" value="90" />
+			<float name="transferable" value="0" />
+			<bool name="kill_paradrop" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext">
+			<list name="actions">
+				<template_reference name="action" value="action\animator_set_action">
+					<string name="action_name" value="UI\Selection\selectover_allies_ally" />
+					<float name="duration" value="0" />
+					<bool name="fire_and_forget" value="True" />
+					<bool name="is_terrain_only" value="False" />
+					<bool name="allies_only" value="False" />
+					<uniqueid name="id" value="56160" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\attention_gen_ext">
+			<string name="animation_event_name" value="" />
+			<enum name="attention_mode" value="positional_toward" />
+			<enum name="attention_type" value="" />
+			<float name="attention_weight" value="45" />
+			<float name="chance_to_use" value="0.1" />
+			<float name="directional_angle" value="0" />
+			<bool name="ignore_in_combat" value="True" />
+			<bool name="ignore_while_calm" value="False" />
+			<bool name="ignore_while_moving" value="False" />
+			<bool name="ignore_while_stationary" value="False" />
+			<bool name="ignore_while_tense" value="False" />
+			<float name="initial_delay" value="-1" />
+			<float name="max_range" value="25" />
+			<float name="time_limit" value="3" />
+			<bool name="generates_spotted_events" value="False" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1275" />
+</instance>
