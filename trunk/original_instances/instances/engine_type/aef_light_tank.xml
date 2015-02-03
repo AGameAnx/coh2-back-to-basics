@@ -1,0 +1,58 @@
+<instance description="engine gear behaviour for light tanks" template="engine_type">
+	<group name="engine_type_bag">
+		<list name="gear_stages">
+			<group name="setting">
+				<int name="gear" value="1" />
+				<float name="time_to_next_gear_setting" value="1" />
+				<float name="lowest_rpm" value="200" />
+				<float name="highest_rpm" value="900" />
+				<float name="min_velocity" value="0" />
+				<float name="time_to_shift_to_this_gear" value="0" />
+			</group>
+			<group name="setting">
+				<int name="gear" value="1" />
+				<float name="time_to_next_gear_setting" value="1.75" />
+				<float name="lowest_rpm" value="900" />
+				<float name="highest_rpm" value="3100" />
+				<float name="min_velocity" value="1" />
+				<float name="time_to_shift_to_this_gear" value="2" />
+			</group>
+			<group name="setting">
+				<int name="gear" value="2" />
+				<float name="time_to_next_gear_setting" value="3" />
+				<float name="lowest_rpm" value="1100" />
+				<float name="highest_rpm" value="2850" />
+				<float name="min_velocity" value="2.5" />
+				<float name="time_to_shift_to_this_gear" value="2" />
+			</group>
+			<group name="setting">
+				<int name="gear" value="3" />
+				<float name="time_to_next_gear_setting" value="4.25" />
+				<float name="lowest_rpm" value="1200" />
+				<float name="highest_rpm" value="2750" />
+				<float name="min_velocity" value="3.5" />
+				<float name="time_to_shift_to_this_gear" value="2" />
+			</group>
+			<group name="setting">
+				<int name="gear" value="4" />
+				<float name="time_to_next_gear_setting" value="5.25" />
+				<float name="lowest_rpm" value="1300" />
+				<float name="highest_rpm" value="2450" />
+				<float name="min_velocity" value="4.5" />
+				<float name="time_to_shift_to_this_gear" value="2" />
+			</group>
+			<group name="setting">
+				<int name="gear" value="5" />
+				<float name="time_to_next_gear_setting" value="7" />
+				<float name="lowest_rpm" value="1300" />
+				<float name="highest_rpm" value="2300" />
+				<float name="min_velocity" value="5.5" />
+				<float name="time_to_shift_to_this_gear" value="2" />
+			</group>
+		</list>
+		<float name="engine_incline_tolerance" value="10" />
+		<float name="overdrive_time_to_reach_highest_rpm" value="2" />
+		<float name="overdrive_highest_rpm" value="3000" />
+	</group>
+	<uniqueid name="pbgid" value="14190" />
+</instance>
