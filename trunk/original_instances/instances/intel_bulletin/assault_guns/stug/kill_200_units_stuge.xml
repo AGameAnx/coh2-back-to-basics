@@ -1,0 +1,38 @@
+<instance description="kill 200 units with stug E" template="intel_bulletin">
+	<group name="intel_bag">
+		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\assault_gun\stug\rate_of_fire_stug_e" />
+		<locstring name="name" value="11054587" />
+		<locstring name="description" value="11054588" />
+		<string name="icon" value="Icons_intel_bulletins_assault_gun_ger_stug_e_reload" />
+		<locstring name="description_short" value="11054590" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="18435" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074161" />
+				<locstring name="tag" value="11074163" />
+				<locstring name="tag" value="11074160" />
+				<locstring name="tag" value="11074168" />
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\intel_bulletin\assault_guns" />
+		</template_reference>
+		<template_reference name="server_buff" value="server_ib">
+			<template_reference name="modifier" value="">
+			</template_reference>
+			<list name="target_requirements">
+			</list>
+			<float name="default" value="0" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
+			<list name="rarities">
+			</list>
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="4243" />
+</instance>

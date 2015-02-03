@@ -1,0 +1,22 @@
+<instance description="" template="fatality">
+	<uniqueid name="pbgid" value="17725" />
+	<group name="fatality_bag">
+		<locstring name="name" value="11075512" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="349043" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+			</list>
+			<bool name="is_in_default_bundle" value="True" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<string name="icon" value="Icons_fatalities_fatality_default" />
+		<string name="lua_function_name" value="Fatality_DefaultHowitzer" />
+		<locstring name="description" value="11075513" />
+		<instance_reference name="store_item" value="" />
+	</group>
+</instance>

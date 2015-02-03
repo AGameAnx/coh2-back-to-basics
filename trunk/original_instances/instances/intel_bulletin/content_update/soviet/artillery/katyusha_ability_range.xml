@@ -1,0 +1,38 @@
+<instance description="" template="intel_bulletin">
+	<group name="intel_bag">
+		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\soviet\artillery\katyusha_ability_range" />
+		<locstring name="name" value="11076898" />
+		<locstring name="description" value="11076900" />
+		<string name="icon" value="Icons_intel_bulletins_artillery_sov_katyusha_range" />
+		<locstring name="description_short" value="11076899" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="388304" />
+			<list name="search_tags">
+				<locstring name="tag" value="11078789" />
+				<locstring name="tag" value="11078788" />
+				<locstring name="tag" value="11078786" />
+				<locstring name="tag" value="11078787" />
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\intel_bulletin\artillery" />
+		</template_reference>
+		<template_reference name="server_buff" value="server_ib">
+			<template_reference name="modifier" value="">
+			</template_reference>
+			<list name="target_requirements">
+			</list>
+			<float name="default" value="0" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
+			<list name="rarities">
+			</list>
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="18324" />
+</instance>

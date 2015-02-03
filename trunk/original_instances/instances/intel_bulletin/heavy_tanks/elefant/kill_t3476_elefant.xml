@@ -1,0 +1,36 @@
+<instance description="Destroy 400 T-34/76 medium tanks with Elefants" template="intel_bulletin">
+	<group name="intel_bag">
+		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\heavy_tank\elefant\rotrate_elefant" />
+		<locstring name="name" value="11034226" />
+		<locstring name="description" value="11035026" />
+		<string name="icon" value="Icons_intel_bulletins_heavytank_heavytank11" />
+		<locstring name="description_short" value="11036763" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="5773" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074175" />
+				<locstring name="tag" value="11074182" />
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\intel_bulletin\heavy_tanks" />
+		</template_reference>
+		<template_reference name="server_buff" value="server_ib">
+			<template_reference name="modifier" value="">
+			</template_reference>
+			<list name="target_requirements">
+			</list>
+			<float name="default" value="0" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
+			<list name="rarities">
+			</list>
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="72" />
+</instance>

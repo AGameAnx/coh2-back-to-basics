@@ -1,0 +1,37 @@
+<instance description="Destroy 400 light vehicles with T-70s." template="intel_bulletin">
+	<group name="intel_bag">
+		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\light_vehicle\t70\dmg_t70" />
+		<locstring name="name" value="11034237" />
+		<locstring name="description" value="11034326" />
+		<string name="icon" value="Icons_intel_bulletins_lightvehicle_sov_t70_ap" />
+		<locstring name="description_short" value="11036773" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="5784" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074235" />
+				<locstring name="tag" value="11074236" />
+				<locstring name="tag" value="11074237" />
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\intel_bulletin\light_vehicles" />
+		</template_reference>
+		<template_reference name="server_buff" value="server_ib">
+			<template_reference name="modifier" value="">
+			</template_reference>
+			<list name="target_requirements">
+			</list>
+			<float name="default" value="0" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
+			<list name="rarities">
+			</list>
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="129" />
+</instance>

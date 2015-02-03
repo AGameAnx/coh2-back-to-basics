@@ -1,0 +1,38 @@
+<instance description="" template="intel_bulletin">
+	<group name="intel_bag">
+		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\light_vehicles\stuart\armor_pro_stuart" />
+		<locstring name="name" value="11072506" />
+		<locstring name="description" value="11072507" />
+		<string name="icon" value="Icons_intel_bulletins_lightvehicle_aef_stuart_armor" />
+		<locstring name="description_short" value="11072508" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="260238" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074236" />
+				<locstring name="tag" value="11074237" />
+				<locstring name="tag" value="11074322" />
+				<locstring name="tag" value="11074323" />
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\aef" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\intel_bulletin\light_vehicles" />
+		</template_reference>
+		<template_reference name="server_buff" value="server_ib">
+			<template_reference name="modifier" value="">
+			</template_reference>
+			<list name="target_requirements">
+			</list>
+			<float name="default" value="0" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
+			<list name="rarities">
+			</list>
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="16828" />
+</instance>

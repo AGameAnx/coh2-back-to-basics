@@ -1,0 +1,6 @@
+<instance description="" template="hit_material">
+	<group name="hit_material_bag">
+		<string name="fx_material_name" value="stucco" />
+	</group>
+	<uniqueid name="pbgid" value="25" />
+</instance>

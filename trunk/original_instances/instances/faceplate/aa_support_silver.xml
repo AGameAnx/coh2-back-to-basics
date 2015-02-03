@@ -1,0 +1,25 @@
+<instance description="Silver participation" template="faceplate">
+	<group name="faceplate_bag">
+		<locstring name="name" value="11081655" />
+		<string name="icon" value="_Faceplate_AA_Silver_Icon" />
+		<instance_reference name="store_item" value="" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="404727" />
+			<list name="search_tags">
+				<locstring name="tag" value="11080227" />
+				<locstring name="tag" value="11077350" />
+				<locstring name="tag" value="11081659" />
+			</list>
+			<enum name="rarity" value="reward" />
+			<list name="races">
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<string name="icon_secondary" value="_Faceplate_AA_Silver" />
+		<string name="frame_selector" value="support" />
+	</group>
+	<uniqueid name="pbgid" value="87325" />
+</instance>

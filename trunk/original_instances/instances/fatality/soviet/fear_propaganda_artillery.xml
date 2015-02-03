@@ -1,0 +1,23 @@
+<instance description="" template="fatality">
+	<uniqueid name="pbgid" value="17670" />
+	<group name="fatality_bag">
+		<locstring name="name" value="11072680" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="261094" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="epic" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<string name="icon" value="Icons_fatalities_fatality_propaganda_strike" />
+		<string name="lua_function_name" value="Fatality_FearPropagandaArtillery" />
+		<locstring name="description" value="11074090" />
+		<instance_reference name="store_item" value="" />
+	</group>
+</instance>
