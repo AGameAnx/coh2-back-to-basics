@@ -1,0 +1,22 @@
+<instance description="This is the special WFA preorder faceplate for US Forces" template="faceplate">
+	<group name="faceplate_bag">
+		<locstring name="name" value="11074525" />
+		<string name="icon" value="Icons_faceplate_frames_faceplate_frame_preorder_us_icon" />
+		<instance_reference name="store_item" value="thq_store\faceplates\faceplate_wfa_preorder_us" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="346847" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="epic" />
+			<list name="races">
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<string name="icon_secondary" value="Icons_faceplate_frames_faceplate_frame_preorder_us_00" />
+		<string name="frame_selector" value="" />
+	</group>
+	<uniqueid name="pbgid" value="17180" />
+</instance>

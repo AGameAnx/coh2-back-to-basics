@@ -1,0 +1,39 @@
+<instance description="" template="intel_bulletin">
+	<group name="intel_bag">
+		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\at_gun\officer_acc_arpen_atgun" />
+		<locstring name="name" value="11048249" />
+		<locstring name="description" value="11048283" />
+		<string name="icon" value="Icons_intel_bulletins_at_gun_atgun12" />
+		<locstring name="description_short" value="11048862" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="6109" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074171" />
+				<locstring name="tag" value="11074170" />
+				<locstring name="tag" value="11074174" />
+				<locstring name="tag" value="11074173" />
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\intel_bulletin\at_guns" />
+		</template_reference>
+		<template_reference name="server_buff" value="server_ib">
+			<template_reference name="modifier" value="">
+			</template_reference>
+			<list name="target_requirements">
+			</list>
+			<float name="default" value="0" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
+			<list name="rarities">
+			</list>
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="26" />
+</instance>

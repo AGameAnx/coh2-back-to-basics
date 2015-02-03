@@ -1,0 +1,23 @@
+<instance description="" template="fatality">
+	<uniqueid name="pbgid" value="18524" />
+	<group name="fatality_bag">
+		<locstring name="name" value="11077089" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="388911" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\aef" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<string name="icon" value="Icons_fatalities_fatality_smoke_flare" />
+		<string name="lua_function_name" value="Fatality_SmokeFlare" />
+		<locstring name="description" value="11077090" />
+		<instance_reference name="store_item" value="" />
+	</group>
+</instance>

@@ -1,0 +1,36 @@
+<instance description="Use Grenadiers' Panzerfaust ability 200 times and destroy 250 light vehicles with Grenadiers." template="intel_bulletin">
+	<group name="intel_bag">
+		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\infantry\assault_grenadiers\accuracy_assault_grenadier" />
+		<locstring name="name" value="11054581" />
+		<locstring name="description" value="11054579" />
+		<string name="icon" value="Icons_intel_bulletins_infantry_ger_assault_grenadier_acc" />
+		<locstring name="description_short" value="11054580" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="18371" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074201" />
+				<locstring name="tag" value="11074223" />
+			</list>
+			<enum name="rarity" value="rare" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\intel_bulletin\infantry" />
+		</template_reference>
+		<template_reference name="server_buff" value="server_ib">
+			<template_reference name="modifier" value="">
+			</template_reference>
+			<list name="target_requirements">
+			</list>
+			<float name="default" value="0" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
+			<list name="rarities">
+			</list>
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="4233" />
+</instance>

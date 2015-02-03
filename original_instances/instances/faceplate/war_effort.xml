@@ -1,0 +1,23 @@
+<instance description="Base War Effort faceplate with 3 (Bronze/Silver/Gold) frames." template="faceplate">
+	<group name="faceplate_bag">
+		<locstring name="name" value="11077354" />
+		<string name="icon" value="_WarEffort_All_Icon" />
+		<instance_reference name="store_item" value="" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="390062" />
+			<list name="search_tags">
+				<locstring name="tag" value="11077353" />
+			</list>
+			<enum name="rarity" value="event" />
+			<list name="races">
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<string name="icon_secondary" value="_WarEffort_All" />
+		<string name="frame_selector" value="" />
+	</group>
+	<uniqueid name="pbgid" value="18718" />
+</instance>

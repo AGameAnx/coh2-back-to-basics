@@ -1,0 +1,38 @@
+<instance description="Use the 250 Mortar Halftrack's Mortar Barrage, Smoke Barrage, and Incendiary Mortar Barrage 200 times each." template="intel_bulletin">
+	<group name="intel_bag">
+		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\light_vehicle\250mortarht\ability_recharge_250mortarht" />
+		<locstring name="name" value="11036932" />
+		<locstring name="description" value="11036931" />
+		<string name="icon" value="Icons_intel_bulletins_lightvehicle_lightvehicle05" />
+		<locstring name="description_short" value="11047652" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="5905" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074227" />
+				<locstring name="tag" value="11074226" />
+				<locstring name="tag" value="11074228" />
+				<locstring name="tag" value="11074236" />
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\intel_bulletin\light_vehicles" />
+		</template_reference>
+		<template_reference name="server_buff" value="server_ib">
+			<template_reference name="modifier" value="">
+			</template_reference>
+			<list name="target_requirements">
+			</list>
+			<float name="default" value="0" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
+			<list name="rarities">
+			</list>
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="118" />
+</instance>
