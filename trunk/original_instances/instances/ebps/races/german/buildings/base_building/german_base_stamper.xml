@@ -1,0 +1,31 @@
+<instance description="temporary ebps for testing stamp tech" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\action_apply_ext">
+			<list name="actions">
+				<template_reference name="action" value="action\apply_stamp_action">
+					<string name="stamp_name" value="data:art\stamps\germanBaseStamp.stamp" />
+					<float name="rotation" value="0" />
+					<uniqueid name="id" value="402203" />
+					<float name="offset_x" value="0" />
+					<float name="offset_y" value="0" />
+					<float name="offset_z" value="0" />
+					<bool name="camera_relative_rotation" value="True" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
+			<string name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="False" />
+			<file name="animator" value="armies\aef\structures\aef_base_building_1\aef_base_building_1" />
+			<bool name="is_visible_in_game" value="False" />
+			<float name="precise_size" value="-1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext">
+			<bool name="is_in_spatial_bucket" value="False" />
+			<float name="rotate_snap" value="360" />
+			<float name="transferable" value="0" />
+			<bool name="kill_paradrop" value="False" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="85915" />
+</instance>

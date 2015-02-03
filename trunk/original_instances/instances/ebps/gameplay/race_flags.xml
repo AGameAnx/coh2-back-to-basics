@@ -1,0 +1,30 @@
+<instance description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
+			<string name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="False" />
+			<file name="animator" value="environment\objects\base_perimeter\team_flagpole\team_flagpole" />
+			<bool name="is_visible_in_game" value="True" />
+			<float name="precise_size" value="-1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext">
+			<bool name="is_in_spatial_bucket" value="False" />
+			<float name="rotate_snap" value="360" />
+			<float name="transferable" value="0" />
+			<bool name="kill_paradrop" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\starting_marker_ext">
+			<bool name="player_starting_position" value="False" />
+			<string name="key" value="" />
+			<list name="starting_buildings">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_ext">
+			<bool name="command_provider" value="False" />
+			<bool name="default_on" value="True" />
+			<bool name="secures_territory_sector" value="True" />
+			<enum name="sector_entity_type" value="sector_creator" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1288" />
+</instance>
