@@ -1,0 +1,4 @@
+<instance description="" template="type_projectile_collision">
+	<template_reference name="type_projectile_collision" value="type_projectile_collision\tp_artillery">
+	</template_reference>
+</instance>

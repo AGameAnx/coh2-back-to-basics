@@ -1,0 +1,113 @@
+<instance description="minesweeper upgrade for pioneer. " template="upgrade">
+	<group name="upgrade_bag">
+		<bool name="enable_in_hold" value="True" />
+		<float name="global_max_limit" value="0" />
+		<bool name="has_speech_code" value="True" />
+		<float name="local_max_limit" value="0" />
+		<enum name="owner_type" value="self" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="mns" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="time_cost">
+			<group name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="fuel" value="0" />
+				<float name="manpower" value="0" />
+				<float name="munition" value="30" />
+				<float name="popcap" value="0" />
+			</group>
+			<float name="time_seconds" value="10" />
+		</group>
+		<bool name="ui_event_cue" value="True" />
+		<enum name="ui_group" value="unit_upgrade_panel" />
+		<int name="ui_position" value="2" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="11038485" />
+			<locstring name="help_text" value="11007816" />
+			<string name="hotkey_name" value="H" />
+			<string name="icon_name" value="Icons_upgrades_icon_upgrade_german_minesweeper" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11007817" />
+			<locstring name="brief_text" value="11038834" />
+			<locstring name="screen_name_short" value="0" />
+			<enum name="ui_style" value="default" />
+		</group>
+		<bool name="validate_actions" value="True" />
+		<list name="actions">
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\minesweeper\minesweeper" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="61536" />
+			</template_reference>
+			<template_reference name="action" value="action\apply_modifiers_action">
+				<float name="duration" value="0" />
+				<bool name="permanent" value="True" />
+				<list name="modifiers">
+					<template_reference name="modifier" value="modifiers\detect_specific_camouflage_radius">
+						<enum name="application_type" value="apply_to_squad" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="addition" />
+						<float name="value" value="15" />
+						<instance_reference name="tooltip" value="modifier_tooltip\detect_specific_camouflage_radius" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="61537" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_all_in_list">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11038544" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="False" />
+						<bool name="display_requirement" value="False" />
+						<float name="max_owned" value="0" />
+						<float name="min_owned" value="0" />
+						<instance_reference name="slot_item" value="slot_item\german\flame_weapon\pioneer_flamethrower" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="False" />
+						<bool name="display_requirement" value="False" />
+						<float name="max_owned" value="0" />
+						<float name="min_owned" value="0" />
+						<instance_reference name="slot_item" value="slot_item\minesweeper\minesweeper" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_squad_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="include_queued" value="True" />
+						<bool name="is_present" value="False" />
+						<instance_reference name="upgrade_name" value="upgrade\german\items\pioneer_flamethrower" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_squad_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="include_queued" value="True" />
+						<bool name="is_present" value="False" />
+						<instance_reference name="upgrade_name" value="upgrade\german\items\pioneer_minesweeper" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<string name="ui_kicker_icon_name" value="Icons_weapons_weapon_minesweeper" />
+		<locstring name="ui_squad_name_override" value="0" />
+		<locstring name="ui_squad_help_text_override" value="0" />
+		<locstring name="ui_squad_extra_text_override" value="0" />
+	</group>
+	<uniqueid name="pbgid" value="147" />
+</instance>

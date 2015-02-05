@@ -1,0 +1,195 @@
+<instance description="6 extra popcap when all base buildings are built." template="upgrade">
+	<group name="upgrade_bag">
+		<bool name="enable_in_hold" value="False" />
+		<float name="global_max_limit" value="0" />
+		<bool name="has_speech_code" value="False" />
+		<float name="local_max_limit" value="0" />
+		<enum name="owner_type" value="player" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="time_cost">
+			<group name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="fuel" value="0" />
+				<float name="manpower" value="0" />
+				<float name="munition" value="0" />
+				<float name="popcap" value="0" />
+			</group>
+			<float name="time_seconds" value="0" />
+		</group>
+		<bool name="ui_event_cue" value="False" />
+		<enum name="ui_group" value="command_panel" />
+		<int name="ui_position" value="0" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="" />
+			<string name="icon_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="0" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
+			<enum name="ui_style" value="default" />
+		</group>
+		<bool name="validate_actions" value="False" />
+		<list name="actions">
+			<template_reference name="action" value="action\requirement_action">
+				<bool name="check_self" value="True" />
+				<bool name="global_fire_and_forget_on_success" value="True" />
+				<bool name="instant_requirement_check" value="False" />
+				<bool name="kill_action_on_failed_requirements" value="False" />
+				<bool name="no_retrigger" value="False" />
+				<bool name="validate_all_sub_actions" value="True" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_any_in_list">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="requirements">
+							<template_reference name="requirement" value="requirements\required_all_in_list">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements">
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\hq\german_hq_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\bereich_festung_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\dolch_aktionen_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\hintere_panzerwerk_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+								</list>
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_all_in_list">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements">
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\motorpool_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\hq\hq_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\barracks_mp" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+				<list name="action_table">
+					<template_reference name="action" value="action\player_target_action">
+						<bool name="allies" value="False" />
+						<bool name="enemies" value="False" />
+						<bool name="neutral" value="False" />
+						<bool name="self" value="True" />
+						<list name="subactions">
+							<template_reference name="action" value="action\apply_modifiers_action">
+								<float name="duration" value="0" />
+								<bool name="permanent" value="True" />
+								<list name="modifiers">
+									<template_reference name="modifier" value="modifiers\personnel_cap_player_modifier">
+										<enum name="application_type" value="apply_to_player" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="" />
+										<enum name="usage_type" value="addition" />
+										<float name="value" value="6" />
+										<instance_reference name="tooltip" value="modifier_tooltip\personnel_cap_player_modifier" />
+									</template_reference>
+								</list>
+								<uniqueid name="id" value="61355" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="61354" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="61353" />
+				<bool name="fire_and_forget_non_global" value="False" />
+				<template_reference name="ui_help_text" value="tables\help_text_phrase">
+					<int name="phrase_order" value="0" />
+					<locstring name="phrase" value="0" />
+				</template_reference>
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<string name="ui_kicker_icon_name" value="" />
+		<locstring name="ui_squad_name_override" value="0" />
+		<locstring name="ui_squad_help_text_override" value="0" />
+		<locstring name="ui_squad_extra_text_override" value="0" />
+	</group>
+	<uniqueid name="pbgid" value="7" />
+</instance>

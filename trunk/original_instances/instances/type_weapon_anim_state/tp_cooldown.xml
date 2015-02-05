@@ -1,0 +1,4 @@
+<instance description="" template="type_weapon_anim_state">
+	<template_reference name="type_weapon_anim_state" value="type_weapon_anim_state\tp_aim">
+	</template_reference>
+</instance>

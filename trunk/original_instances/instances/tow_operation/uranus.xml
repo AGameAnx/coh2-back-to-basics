@@ -1,0 +1,83 @@
+<instance description="" template="tow_operation">
+	<group name="tow_operation_bag">
+		<locstring name="ui_name" value="11052835" />
+		<list name="scenarios">
+			<group name="scenario">
+				<string name="name" value="1942_Kalach" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc2\skirmishes\tow_sc_kalach_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc2\skirmishes\tow_sc_kalach_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc2\skirmishes\tow_sc_kalach_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1942_Airfield" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc2\challenges\tow_ch_airfield_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc2\challenges\tow_ch_airfield_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc2\challenges\tow_ch_airfield_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1942_Bridge_Defense" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc2\challenges\tow_ch_bridge_defense_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc2\challenges\tow_ch_bridge_defense_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc2\challenges\tow_ch_bridge_defense_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Resistance" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc2\battles\tow_bt_resistance_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc2\battles\tow_bt_resistance_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc2\battles\tow_bt_resistance_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="TerekLines" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc2\battles\tow_bt_terek_lines_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc2\battles\tow_bt_terek_lines_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc2\battles\tow_bt_terek_lines_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Stalingradai" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc2\battles\tow_bt_victory_at_stalingrad_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc2\battles\tow_bt_victory_at_stalingrad_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc2\battles\tow_bt_victory_at_stalingrad_hard" />
+				</group>
+			</group>
+		</list>
+		<instance_reference name="store_item" value="thq_store\operations\uranus" />
+		<int name="ui_position" value="2" />
+		<locstring name="ui_description" value="11052882" />
+		<group name="post_game_achievements">
+			<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc2\tow_dlc2_complete_all_easy" />
+			<instance_reference name="complete_med" value="post_game_achievement\tow\dlc2\tow_dlc2_complete_all_medium" />
+			<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc2\tow_dlc2_complete_all_hard" />
+			<instance_reference name="complete_battle" value="" />
+			<instance_reference name="complete_challenge" value="" />
+			<instance_reference name="complete_skirmish" value="" />
+		</group>
+		<string name="ui_icon_low" value="Icons_operations_mars_low" />
+		<string name="ui_icon_high" value="Icons_operations_mars_high" />
+		<string name="ui_movie" value="tow_operation_intro/vas_intro" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="257241" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="other" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="2" />
+</instance>

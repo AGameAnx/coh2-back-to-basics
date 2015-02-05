@@ -1,0 +1,75 @@
+<instance description="The original ToW maps." template="tow_operation">
+	<group name="tow_operation_bag">
+		<locstring name="ui_name" value="11052597" />
+		<list name="scenarios">
+			<group name="scenario">
+				<string name="name" value="1942_Voronezh" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc1\skirmishes\tow_sc_voronezh_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc1\skirmishes\tow_sc_voronezh_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc1\skirmishes\tow_sc_voronezh_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Convoy" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc1\challenges\tow_ch_convoy_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc1\challenges\tow_ch_convoy_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc1\challenges\tow_ch_convoy_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Tiger_Ace" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc1\challenges\tow_ch_tiger_ace_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc1\challenges\tow_ch_tiger_ace_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc1\challenges\tow_ch_tiger_ace_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="DonRiver" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc1\battles\tow_bt_don_river_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc1\battles\tow_bt_don_river_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc1\battles\tow_bt_don_river_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Kharkov" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc1\battles\tow_bt_second_kharkov_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc1\battles\tow_bt_second_kharkov_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc1\battles\tow_bt_second_kharkov_hard" />
+				</group>
+			</group>
+		</list>
+		<instance_reference name="store_item" value="thq_store\operations\case_blue" />
+		<int name="ui_position" value="1" />
+		<locstring name="ui_description" value="11052881" />
+		<group name="post_game_achievements">
+			<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc1\tow_dlc1_complete_all_easy" />
+			<instance_reference name="complete_med" value="post_game_achievement\tow\dlc1\tow_dlc1_complete_all_medium" />
+			<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc1\tow_dlc1_complete_all_hard" />
+			<instance_reference name="complete_battle" value="" />
+			<instance_reference name="complete_challenge" value="" />
+			<instance_reference name="complete_skirmish" value="" />
+		</group>
+		<string name="ui_icon_low" value="Icons_operations_case_blue_low" />
+		<string name="ui_icon_high" value="Icons_operations_case_blue_high" />
+		<string name="ui_movie" value="tow_operation_intro/cb_intro" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="257239" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="other" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="1" />
+</instance>

@@ -1,0 +1,116 @@
+<instance description="1943 missions" template="tow_operation">
+	<group name="tow_operation_bag">
+		<locstring name="ui_name" value="11052850" />
+		<list name="scenarios">
+			<group name="scenario">
+				<string name="name" value="1943_Mud_Hunt" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\challenges\tow_ch_spring_rasputitsa_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\challenges\tow_ch_spring_rasputitsa_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\challenges\tow_ch_spring_rasputitsa_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Liberation" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\challenges\tow_ch_occupation_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\challenges\tow_ch_occupation_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\challenges\tow_ch_occupation_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="MuddyValley" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\battles\tow_bt_breaking_lines_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\battles\tow_bt_breaking_lines_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\battles\tow_bt_breaking_lines_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="MudRoad_soviets" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\battles\tow_bt_no_retreat_no_surrender_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\battles\tow_bt_no_retreat_no_surrender_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\battles\tow_bt_no_retreat_no_surrender_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Compound" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\battles\tow_bt_panzer_crossing_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\battles\tow_bt_panzer_crossing_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\battles\tow_bt_panzer_crossing_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="VolgaTimberYard" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\battles\tow_bt_retreat_to_the_donets_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\battles\tow_bt_retreat_to_the_donets_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\battles\tow_bt_retreat_to_the_donets_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="MudRoad" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\battles\tow_bt_general_mud_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\battles\tow_bt_general_mud_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\battles\tow_bt_general_mud_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="CompoundGerman" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\battles\tow_bt_heavy_rain_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\battles\tow_bt_heavy_rain_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\battles\tow_bt_heavy_rain_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="DivideGerman" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\battles\tow_bt_kharkov_divide_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\battles\tow_bt_kharkov_divide_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\battles\tow_bt_kharkov_divide_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="VolgaTimberYardGerman" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\battles\tow_bt_storming_the_donets_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\battles\tow_bt_storming_the_donets_medium" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\battles\tow_bt_storming_the_donets_hard" />
+				</group>
+			</group>
+		</list>
+		<instance_reference name="store_item" value="thq_store\operations\mud_season" />
+		<int name="ui_position" value="3" />
+		<locstring name="ui_description" value="11054892" />
+		<group name="post_game_achievements">
+			<instance_reference name="complete_easy" value="post_game_achievement\tow\dlc3\tow_dlc3_complete_all_easy" />
+			<instance_reference name="complete_med" value="post_game_achievement\tow\dlc3\tow_dlc3_complete_all_medium" />
+			<instance_reference name="complete_hard" value="post_game_achievement\tow\dlc3\tow_dlc3_complete_all_hard" />
+			<instance_reference name="complete_battle" value="" />
+			<instance_reference name="complete_challenge" value="" />
+			<instance_reference name="complete_skirmish" value="" />
+		</group>
+		<string name="ui_icon_low" value="Icons_operations_mud_season_low" />
+		<string name="ui_icon_high" value="Icons_operations_mud_season_high" />
+		<string name="ui_movie" value="tow_operation_intro\sf_intro" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="257240" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="other" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="3" />
+</instance>

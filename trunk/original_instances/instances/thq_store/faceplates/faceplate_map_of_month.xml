@@ -1,0 +1,13 @@
+<instance description="Map of the month faceplate is not for sale. It's only given by admins to map creators." template="thq_store">
+	<group name="unlock_item">
+		<enum name="item_category" value="cosmetics" />
+		<instance_reference name="unlock_upgrade" value="" />
+		<bool name="community" value="False" />
+		<bool name="purchaseable" value="False" />
+		<list name="dlc_tokens">
+			<string name="dlc_token" value="231512" />
+			<string name="dlc_token" value="231573" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17179" />
+</instance>

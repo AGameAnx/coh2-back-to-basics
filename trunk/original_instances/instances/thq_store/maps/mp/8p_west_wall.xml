@@ -1,0 +1,18 @@
+<instance description="" template="thq_store">
+	<group name="unlock_item">
+		<enum name="item_category" value="maps" />
+		<instance_reference name="unlock_upgrade" value="" />
+		<bool name="community" value="False" />
+		<bool name="purchaseable" value="True" />
+		<list name="dlc_tokens">
+			<string name="dlc_token" value="287370" />
+			<string name="dlc_token" value="287371" />
+			<string name="dlc_token" value="231571" />
+			<string name="dlc_token" value="322820" />
+			<string name="dlc_token" value="317850" />
+			<string name="dlc_token" value="322830" />
+			<string name="dlc_token" value="322840" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="16490" />
+</instance>

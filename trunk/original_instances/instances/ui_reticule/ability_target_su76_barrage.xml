@@ -1,0 +1,64 @@
+<instance description="" template="ui_reticule">
+	<group name="ui_reticule_bag">
+		<template_reference name="data" value="tables\ui_reticule_data">
+			<group name="directional_data">
+				<bool name="directional" value="False" />
+				<float name="height" value="0.5" />
+				<float name="offset_forward" value="0.5" />
+				<float name="offset_forward_max" value="0.5" />
+				<float name="offset_left" value="0.5" />
+				<float name="offset_left_max" value="0.5" />
+				<float name="offset_right" value="0.5" />
+				<float name="offset_right_max" value="0.5" />
+				<string name="texture" value="" />
+				<float name="width" value="0.5" />
+			</group>
+			<group name="element1">
+				<int name="count" value="5" />
+				<float name="offset" value="0" />
+				<string name="texture" value="targeting\target_rectangle_red" />
+				<string name="texture_max_range" value="targeting\target_rectangle_red" />
+				<string name="texture_min_range" value="targeting\target_rectangle_red" />
+				<enum name="type" value="quad" />
+				<float name="uscale" value="1" />
+			</group>
+			<group name="element2">
+				<int name="count" value="1" />
+				<float name="offset" value="0" />
+				<string name="texture" value="targeting\target_arrow_red" />
+				<string name="texture_max_range" value="targeting\target_arrow_red" />
+				<string name="texture_min_range" value="targeting\target_arrow_red" />
+				<enum name="type" value="quad" />
+				<float name="uscale" value="1" />
+			</group>
+			<float name="height" value="0.35" />
+			<float name="pattern_density" value="0" />
+			<int name="pattern_repeat" value="16" />
+			<float name="rotation_rate" value="0" />
+			<float name="width" value="0.4" />
+		</template_reference>
+		<group name="map">
+			<int name="colour_a" value="100" />
+			<int name="colour_b" value="0" />
+			<int name="colour_g" value="65" />
+			<int name="colour_r" value="255" />
+		</group>
+		<group name="retention">
+			<int name="strobe_count" value="1" />
+			<float name="strobe_seconds_on" value="0" />
+			<float name="strobe_seconds_off" value="0.25" />
+			<float name="strobe_alpha_on" value="1" />
+			<float name="strobe_alpha_off" value="0" />
+		</group>
+		<group name="easing">
+			<float name="speed" value="0" />
+			<float name="factor" value="10" />
+		</group>
+		<group name="pulsing">
+			<float name="pulse_alpha_off" value="0" />
+			<float name="pulse_alpha_on" value="1" />
+			<float name="pulse_seconds" value="0" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="31" />
+</instance>
