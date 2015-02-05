@@ -1,0 +1,72 @@
+<instance description="" template="slot_item">
+	<group name="slot_item_bag">
+		<bool name="always_pick_up" value="False" />
+		<bool name="can_stack" value="False" />
+		<float name="can_stack_max" value="1" />
+		<instance_reference name="drop_item_entity" value="" />
+		<float name="drop_rate" value="0" />
+		<float name="hardpoint" value="2" />
+		<bool name="has_speech_code" value="True" />
+		<bool name="is_entity_user" value="False" />
+		<float name="item_uses" value="0" />
+		<enum name="owner_type" value="squad" />
+		<string name="package_icon" value="" />
+		<float name="recharge_time" value="0" />
+		<float name="slot_size" value="0" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="los" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="ui_info">
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="" />
+			<string name="icon_name" value="" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="0" />
+		</group>
+		<group name="weapon">
+			<group name="heading">
+				<float name="x" value="0" />
+				<float name="y" value="0.8" />
+				<float name="z" value="1" />
+			</group>
+			<float name="length" value="0" />
+			<group name="origin">
+				<float name="x" value="0" />
+				<float name="y" value="5" />
+				<float name="z" value="-2" />
+			</group>
+			<enum name="type" value="squad" />
+			<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m15a1_aa_half_track_50cal_left_special_aa_mp" />
+		</group>
+		<list name="on_add_actions">
+			<template_reference name="action" value="action\override_weapon_target_prereq_action">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_unit_type">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<enum name="unit_type" value="aircraft" />
+						<template_reference name="qualify_option" value="options\none">
+						</template_reference>
+						<bool name="search_load_out" value="False" />
+						<bool name="owned_by_player_only" value="False" />
+					</template_reference>
+				</list>
+				<instance_reference name="weapon_to_override" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m15a1_aa_half_track_50cal_left_special_aa_mp" />
+				<uniqueid name="id" value="259930" />
+				<bool name="auto_attack_only" value="False" />
+			</template_reference>
+		</list>
+		<list name="on_drop_actions">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="16755" />
+</instance>

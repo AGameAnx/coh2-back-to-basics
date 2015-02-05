@@ -1,0 +1,29 @@
+<instance description="" template="skin_pack">
+	<group name="skin_pack_bag">
+		<string name="skin_name" value="us_0001_winter" />
+		<string name="icon" value="Icons_swatches_swatch_aef_0001_winter_heavy" />
+		<string name="icon_secondary" value="" />
+		<locstring name="name" value="11075063" />
+		<locstring name="description" value="11075093" />
+		<enum name="kill_type" value="heavy_armour" />
+		<enum name="season" value="winter" />
+		<locstring name="description_short" value="11048892" />
+		<instance_reference name="store_item" value="thq_store\skins\xp1_preorder\xp1_pre_order_us_winter_heavy" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="346753" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074086" />
+				<locstring name="tag" value="11074084" />
+			</list>
+			<enum name="rarity" value="rare" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\aef" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\winter_heavy" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="17164" />
+</instance>

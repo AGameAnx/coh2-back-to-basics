@@ -1,0 +1,29 @@
+<instance description="German Medium Winter (progression)" template="skin_pack">
+	<group name="skin_pack_bag">
+		<string name="skin_name" value="german_0002_winter" />
+		<string name="icon" value="Icons_swatches_swatch_german_0002_winter_medium" />
+		<string name="icon_secondary" value="Icons_swatches_preview_preview_german_0002_winter_medium" />
+		<locstring name="name" value="11046776" />
+		<locstring name="description" value="11046986" />
+		<enum name="kill_type" value="medium_armour" />
+		<enum name="season" value="winter" />
+		<locstring name="description_short" value="11048869" />
+		<instance_reference name="store_item" value="" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="6005" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074008" />
+				<locstring name="tag" value="11074086" />
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\winter_medium" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="5" />
+</instance>

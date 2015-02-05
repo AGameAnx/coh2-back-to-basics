@@ -1,0 +1,29 @@
+<instance description="" template="skin_pack">
+	<group name="skin_pack_bag">
+		<string name="skin_name" value="okw_0001_summer" />
+		<string name="icon" value="Icons_swatches_swatch_west_german_0001_summer_light" />
+		<string name="icon_secondary" value="Icons_swatches_preview_preview_west_german_0001_summer_light" />
+		<locstring name="name" value="11075067" />
+		<locstring name="description" value="11075117" />
+		<enum name="kill_type" value="light_armour" />
+		<enum name="season" value="summer" />
+		<locstring name="description_short" value="11050429" />
+		<instance_reference name="store_item" value="thq_store\skins\xp1_preorder\xp1_pre_order_okw_summer_light" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="346742" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074085" />
+				<locstring name="tag" value="11074051" />
+			</list>
+			<enum name="rarity" value="rare" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\west_german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\summer_light" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="17153" />
+</instance>
