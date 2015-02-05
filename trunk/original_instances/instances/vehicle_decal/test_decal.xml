@@ -1,0 +1,24 @@
+<instance description="test instance" template="vehicle_decal">
+	<uniqueid name="pbgid" value="18923" />
+	<group name="vehicle_decal_bag">
+		<string name="icon" value="Icons_decals_custom_00" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="391248" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="other" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\german" />
+				<instance_reference name="race" value="racebps\aef" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+		<instance_reference name="store_item" value="" />
+		<locstring name="description" value="11077832" />
+		<locstring name="name" value="11077860" />
+		<string name="decal_name" value="DATA:\art\armies\common\badges\custom_00_dif" />
+	</group>
+</instance>
