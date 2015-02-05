@@ -1,0 +1,61 @@
+<instance description="" template="slot_item">
+	<group name="slot_item_bag">
+		<bool name="always_pick_up" value="False" />
+		<bool name="can_stack" value="False" />
+		<float name="can_stack_max" value="3" />
+		<instance_reference name="drop_item_entity" value="" />
+		<float name="drop_rate" value="0" />
+		<float name="hardpoint" value="6" />
+		<bool name="has_speech_code" value="False" />
+		<bool name="is_entity_user" value="False" />
+		<float name="item_uses" value="0" />
+		<enum name="owner_type" value="squad" />
+		<string name="package_icon" value="" />
+		<float name="recharge_time" value="0" />
+		<float name="slot_size" value="0" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="min" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="ui_info">
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="" />
+			<string name="icon_name" value="" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="0" />
+		</group>
+		<group name="weapon">
+			<group name="heading">
+				<float name="x" value="0" />
+				<float name="y" value="0" />
+				<float name="z" value="0" />
+			</group>
+			<float name="length" value="0" />
+			<group name="origin">
+				<float name="x" value="0" />
+				<float name="y" value="0" />
+				<float name="z" value="0" />
+			</group>
+			<enum name="type" value="squad" />
+			<instance_reference name="weapon" value="" />
+		</group>
+		<list name="on_add_actions">
+			<template_reference name="action" value="action\trigger_critical_action">
+				<float name="remove_at_health" value="1" />
+				<instance_reference name="critical" value="critical\_no_critical" />
+				<uniqueid name="id" value="346533" />
+			</template_reference>
+		</list>
+		<list name="on_drop_actions">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="3109" />
+</instance>
