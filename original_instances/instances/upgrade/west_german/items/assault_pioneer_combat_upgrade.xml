@@ -1,0 +1,88 @@
+<instance description="" template="upgrade">
+	<group name="upgrade_bag">
+		<bool name="enable_in_hold" value="True" />
+		<float name="global_max_limit" value="0" />
+		<bool name="has_speech_code" value="True" />
+		<float name="local_max_limit" value="1" />
+		<enum name="owner_type" value="self" />
+		<group name="speech_code_2">
+			<string name="code_1" value="pk" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="cmb" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="time_cost">
+			<group name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="fuel" value="0" />
+				<float name="manpower" value="0" />
+				<float name="munition" value="90" />
+				<float name="popcap" value="0" />
+			</group>
+			<float name="time_seconds" value="30" />
+		</group>
+		<bool name="ui_event_cue" value="True" />
+		<enum name="ui_group" value="unit_upgrade_panel" />
+		<int name="ui_position" value="1" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="11056012" />
+			<locstring name="help_text" value="11056011" />
+			<string name="hotkey_name" value="U" />
+			<string name="icon_name" value="Icons_upgrades_icon_upgrade_west_german_combat_package" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11056010" />
+			<locstring name="brief_text" value="11056013" />
+			<locstring name="screen_name_short" value="11056009" />
+			<enum name="ui_style" value="default" />
+		</group>
+		<bool name="validate_actions" value="True" />
+		<list name="actions">
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzershreck_slot1_mp" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="71475" />
+			</template_reference>
+			<template_reference name="action" value="action\apply_modifiers_action">
+				<float name="duration" value="0" />
+				<bool name="permanent" value="False" />
+				<list name="modifiers">
+					<template_reference name="modifier" value="modifiers\squad_chill_per_tick_modifier">
+						<enum name="application_type" value="apply_to_squad" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="multiplication" />
+						<float name="value" value="0" />
+						<instance_reference name="tooltip" value="modifier_tooltip\squad_chill_per_tick_modifier" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="71720" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11073206" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\research\panzerschreck_unlocked" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_slot_item_size">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11074956" />
+				<float name="required_free_slot_size" value="1" />
+			</template_reference>
+		</list>
+		<string name="ui_kicker_icon_name" value="Icons_weapons_weapon_panzerschreck" />
+		<locstring name="ui_squad_name_override" value="0" />
+		<locstring name="ui_squad_help_text_override" value="0" />
+		<locstring name="ui_squad_extra_text_override" value="0" />
+	</group>
+	<uniqueid name="pbgid" value="14516" />
+</instance>
