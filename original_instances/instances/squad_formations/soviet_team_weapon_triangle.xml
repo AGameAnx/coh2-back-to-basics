@@ -1,0 +1,12 @@
+<instance description="" template="squad_formations">
+	<group name="squad_formation_bag">
+		<instance_reference name="element_core_formation" value="formations\element_wedge_right" />
+		<instance_reference name="element_left_flank_formation" value="formations\element_wedge_left" />
+		<instance_reference name="element_right_flank_formation" value="formations\element_soviet_team_weapon_right" />
+		<instance_reference name="element_scout_formation" value="formations\soviet_conscript_line" />
+		<float name="follower_drift_cap" value="1.5" />
+		<float name="follower_drift_rate" value="0.3" />
+		<instance_reference name="squad_formation" value="formations\squad_soviet_team_weapon" />
+	</group>
+	<uniqueid name="pbgid" value="25" />
+</instance>

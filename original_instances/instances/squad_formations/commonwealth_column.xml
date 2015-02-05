@@ -1,0 +1,12 @@
+<instance description="" template="squad_formations">
+	<group name="squad_formation_bag">
+		<instance_reference name="element_core_formation" value="formations\element_column" />
+		<instance_reference name="element_left_flank_formation" value="formations\element_column" />
+		<instance_reference name="element_right_flank_formation" value="formations\element_column" />
+		<instance_reference name="element_scout_formation" value="formations\element_column" />
+		<float name="follower_drift_cap" value="0" />
+		<float name="follower_drift_rate" value="0" />
+		<instance_reference name="squad_formation" value="formations\squad_commonwealth_column" />
+	</group>
+	<uniqueid name="pbgid" value="6" />
+</instance>

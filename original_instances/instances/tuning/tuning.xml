@@ -1,0 +1,4164 @@
+<instance description="" template="tuning">
+	<group name="ability">
+		<float name="resource_stealing_percentage" value="0.5" />
+	</group>
+	<group name="attention">
+		<float name="additional_weight_for_current_attention_target" value="5" />
+		<float name="attention_weight_for_combat_target" value="100" />
+		<float name="idle_attention_chance_multiplier" value="1" />
+		<float name="max_entity_attention_range" value="20" />
+		<float name="min_weight_to_pay_attention" value="10" />
+		<float name="remain_in_combat_time" value="3" />
+		<float name="time_between_attention_updates" value="1" />
+		<float name="time_to_pay_attention_to_target" value="8" />
+		<float name="weight_multiplier_behind_entity" value="0" />
+		<enum_table name="pace_max_attention_angles">
+			<float name="veryfast" value="0" />
+			<float name="fast" value="15" />
+			<float name="medium" value="30" />
+			<float name="slow" value="45" />
+			<float name="veryslow" value="90" />
+			<float name="stopped" value="180" />
+		</enum_table>
+	</group>
+	<group name="building_info">
+		<float name="break_formation_distance" value="8" />
+		<float name="build_decrease" value="0.025" />
+		<group name="building_collapse_info">
+			<float name="collapse_actions_to_trigger" value="3" />
+			<float name="collapse_size_huge" value="30" />
+			<float name="collapse_size_large" value="20" />
+			<float name="collapse_size_medium" value="10" />
+			<float name="collapse_size_small" value="5" />
+		</group>
+		<float name="building_snap_distance" value="2" />
+		<float name="defuse_demolition_charge_max_time" value="5" />
+		<float name="defuse_demolition_charge_min_time" value="5" />
+		<instance_reference name="demo_entity" value="ebps\props\demo_charge" />
+		<float name="evaculate_wait_time" value="3" />
+		<float name="fuel_back_percentage" value="0" />
+		<float name="garrison_camouflage_attack_priority" value="5" />
+		<float name="garrison_camouflage_detect_radius" value="20" />
+		<bool name="garrison_camouflage_enabled" value="False" />
+		<float name="garrison_camouflage_revert_max" value="30" />
+		<float name="garrison_camouflage_revert_multiplier" value="1.5" />
+		<float name="garrison_camouflage_revert_time" value="30" />
+		<float name="garrison_camouflage_revert_time_on_detection" value="30" />
+		<float name="manpower_back_percentage" value="0" />
+		<float name="max_allowed_slope_height" value="3" />
+		<float name="munition_back_percentage" value="0" />
+		<float name="no_build_distance" value="0.5" />
+		<float name="plant_demolition_charge_max_time" value="7" />
+		<float name="plant_demolition_charge_min_time" value="7" />
+		<float name="priority_target_combatslot" value="100" />
+		<float name="priority_target_distance" value="-5" />
+		<float name="priority_target_higherfloor" value="100" />
+		<float name="priority_target_panel" value="1" />
+		<float name="priority_target_unit" value="1" />
+		<float name="repair_decrease" value="0.5" />
+		<float name="repair_health" value="5" />
+		<float name="resource_no_build_size" value="22" />
+		<list name="panel_substance_list">
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_brick" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_eastern_village_wall_brick" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_shingle" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_roof_slatediam_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_terracotta" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_roof_flat_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_terracotta" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_roof_zincslum_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_brick" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_brick_02" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_shingle" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="Substance_Roof_ChurchShing_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_special_wood_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_shingle" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="Substance_Roof_WoodShingles_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_brick" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_brick_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_shingle" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_roof_tiles_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stucco" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_plaster_02" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stone" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_roughstone_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_shingle" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_roof_grey_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stone" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_stone_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_eastern_village_wall_wooden" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stucco" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_eastern_village_wall_plaster" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_brick" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_bricktile_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_eastern_village_roof_wooden" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_metal" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_eastern_village_roof_metal" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stucco" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_interior_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="floor" />
+				<string name="substance_name" value="substance_eastern_village_floor_wooden" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stucco" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_plasterstone_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_eastern_rural_wall_wooden" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stone" />
+				<enum name="panel_type" value="floor" />
+				<string name="substance_name" value="substance_floor_concrete_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="floor" />
+				<string name="substance_name" value="substance_floor_wooden_02" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stone" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_eastern_rural_wall_stone" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_eastern_rural_wall_log" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_eastern_rural_roof_thatch" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_eastern_rural_roof_wooden" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stucco" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_plaster_03" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_roof_wooden_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\wood" />
+				<enum name="panel_type" value="floor" />
+				<string name="substance_name" value="substance_eastern_rural_floor_wooden" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_wood_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_stucco" />
+				<enum name="panel_type" value="wall" />
+				<string name="substance_name" value="substance_wall_plaster_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_metal" />
+				<enum name="panel_type" value="roof" />
+				<string name="substance_name" value="substance_roof_metals_01" />
+			</group>
+			<group name="substance">
+				<instance_reference name="hit_material" value="hit_material\building_wood" />
+				<enum name="panel_type" value="floor" />
+				<string name="substance_name" value="substance_floor_wooden_01" />
+			</group>
+		</list>
+		<group name="fire_info">
+			<float name="fire_change_per_sec_normal" value="-1" />
+			<float name="fire_change_per_sec_smoking" value="-0.5" />
+			<float name="fire_change_per_sec_burning" value="400" />
+			<float name="burning_damage_interval" value="4" />
+			<float name="burning_effect_best_swap_time" value="0" />
+			<string name="burning_damage_action_name" value="buildings\fire_building_collapse_med" />
+		</group>
+	</group>
+	<group name="combat">
+		<float name="accessory_weapon_fire_timeout" value="10" />
+		<float name="in_combat_time" value="4" />
+		<float name="in_range_modifier" value="4" />
+		<float name="in_tense_duration_time" value="1" />
+		<float name="point_blank_range" value="10" />
+		<float name="target_search_delay_time" value="0.5" />
+		<float name="tense_dist_from_base" value="100" />
+		<float name="time_to_move_squad_once_in_los" value="0.376" />
+		<float name="weapon_priority_ability_target" value="-50" />
+		<float name="weapon_priority_special_weapon_target" value="-15" />
+		<float name="pilfer_radius" value="6" />
+		<float name="pilfer_bodies_allowed_seconds" value="30" />
+		<float name="weapon_priority_ineffective_penalty" value="-100" />
+		<float name="attacker_fow_area_reveal_radius" value="5" />
+	</group>
+	<group name="command_point_system">
+		<float name="action_points_per_command_point" value="1032" />
+		<group name="command_point_cost_table">
+			<float name="command_point_01" value="1032" />
+			<float name="command_point_02" value="1032" />
+			<float name="command_point_03" value="1032" />
+			<float name="command_point_04" value="1032" />
+			<float name="command_point_05" value="1032" />
+			<float name="command_point_06" value="1032" />
+			<float name="command_point_07" value="1032" />
+			<float name="command_point_08" value="1032" />
+			<float name="command_point_09" value="1032" />
+			<float name="command_point_10" value="1032" />
+			<float name="command_point_11" value="1032" />
+			<float name="command_point_12" value="1032" />
+			<float name="command_point_13" value="1032" />
+			<float name="command_point_14" value="1032" />
+			<float name="command_point_15" value="1032" />
+			<float name="command_point_16" value="1032" />
+			<float name="command_point_17" value="1032" />
+			<float name="command_point_18" value="1032" />
+			<float name="command_point_19" value="1032" />
+			<float name="command_point_20" value="1032" />
+			<float name="command_point_21" value="688" />
+			<float name="command_point_22" value="688" />
+			<float name="command_point_23" value="688" />
+			<float name="command_point_24" value="688" />
+			<float name="command_point_25" value="688" />
+			<float name="command_point_26" value="688" />
+			<float name="command_point_27" value="688" />
+			<float name="command_point_28" value="688" />
+			<float name="command_point_29" value="688" />
+			<float name="command_point_30" value="688" />
+			<float name="command_point_31" value="688" />
+			<float name="command_point_32" value="688" />
+		</group>
+	</group>
+	<group name="construction">
+		<float name="construction_site_search_radius" value="15" />
+	</group>
+	<group name="cover_object">
+		<float name="search_radius" value="5" />
+		<float name="snap_to_cover_search_radius" value="3" />
+	</group>
+	<group name="cover_priorities">
+		<enum name="priority_01" value="tp_garrison_cover" />
+		<enum name="priority_02" value="tp_garrison_halftrack" />
+		<enum name="priority_03" value="tp_zz_team_weapon_heavy" />
+		<enum name="priority_04" value="tp_heavy" />
+		<enum name="priority_05" value="tp_light" />
+		<enum name="priority_06" value="tp_negative" />
+		<enum name="priority_07" value="tp_defcover" />
+		<enum name="priority_08" value="tp_z_snow" />
+		<enum name="priority_09" value="tp_zz_deep_snow" />
+		<enum name="priority_10" value="tp_zz_mud" />
+		<enum name="priority_11" value="tp_z_ice" />
+		<enum name="priority_12" value="tp_open" />
+		<enum name="priority_13" value="tp_smoke" />
+		<enum name="priority_14" value="tp_z_bunker" />
+		<enum name="priority_15" value="tp_z_emplacement" />
+		<enum name="priority_16" value="tp_defcover_narrow" />
+		<enum name="priority_17" value="" />
+		<enum name="priority_18" value="" />
+		<enum name="priority_19" value="" />
+		<enum name="priority_20" value="" />
+	</group>
+	<group name="cover_table">
+		<enum name="cover_type_for_water" value="type_cover\tp_water.lua" />
+		<group name="tp_defcover">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_default" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_default" />
+			<bool name="show_preview" value="True" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="0" />
+		</group>
+		<group name="tp_defcover_narrow">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="0" />
+		</group>
+		<group name="tp_garrison_cover">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="2" />
+		</group>
+		<group name="tp_garrison_halftrack">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="2" />
+		</group>
+		<group name="tp_heavy">
+			<enum name="cursor" value="heavy_cover" />
+			<string name="obj_cover_preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_direct_heavy" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_direct_heavy" />
+			<bool name="show_preview" value="True" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="2" />
+		</group>
+		<group name="tp_light">
+			<enum name="cursor" value="light_cover" />
+			<string name="obj_cover_preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_direct_light" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_area_light" />
+			<bool name="show_preview" value="True" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="1" />
+		</group>
+		<group name="tp_negative">
+			<enum name="cursor" value="negative_cover" />
+			<string name="obj_cover_preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_negative" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_negative" />
+			<bool name="show_preview" value="True" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="-1" />
+		</group>
+		<group name="tp_open">
+			<enum name="cursor" value="negative_cover" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="-1" />
+		</group>
+		<group name="tp_smoke">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="2" />
+		</group>
+		<group name="tp_trench">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="2" />
+		</group>
+		<group name="tp_water">
+			<enum name="cursor" value="negative_cover" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="-1" />
+		</group>
+		<group name="tp_z_bunker">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="2" />
+		</group>
+		<group name="tp_z_emplacement">
+			<enum name="cursor" value="light_cover" />
+			<string name="obj_cover_preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_direct_light" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_area_light" />
+			<bool name="show_preview" value="True" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="2" />
+		</group>
+		<enum name="cover_type_for_ice" value="tp_z_ice" />
+		<group name="tp_z_ice">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_default" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_default" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="0" />
+		</group>
+		<group name="tp_z_snow">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_default" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_default" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="0" />
+		</group>
+		<enum name="cover_type_for_snow" value="tp_zz_deep_snow" />
+		<group name="tp_zz_deep_snow">
+			<enum name="cursor" value="deep_snow" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="0" />
+		</group>
+		<group name="tp_zz_mud">
+			<enum name="cursor" value="deep_mud" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="0" />
+		</group>
+		<enum name="cover_type_for_mud" value="tp_zz_mud" />
+		<group name="tp_zz_team_weapon_heavy">
+			<enum name="cursor" value="" />
+			<string name="obj_cover_preview_icon" value="" />
+			<group name="obj_cover_ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<string name="preview_icon" value="" />
+			<bool name="show_preview" value="False" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="0" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="" />
+				<string name="icon_name" value="" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="0" />
+			</group>
+			<int name="cover_level" value="2" />
+		</group>
+	</group>
+	<group name="death">
+		<float name="death_fadeout_curve" value="2" />
+		<float name="death_intensity_gib" value="100" />
+		<float name="death_intensity_heavy" value="30" />
+		<float name="death_intensity_low" value="0" />
+		<float name="death_intensity_ragdoll" value="60" />
+		<float name="maximum_number_of_wrecks" value="20" />
+		<enum name="salvage_death_intensity" value="death_intensity_low" />
+		<float name="wreck_burn_max_time" value="15" />
+		<float name="wreck_burn_min_time" value="5" />
+		<float name="wreck_smoke_max_time" value="15" />
+		<float name="wreck_smoke_min_time" value="5" />
+		<float name="submerge_distance_per_second" value="0.5" />
+		<float name="posture_submerge_delay_min_second" value="12" />
+		<float name="posture_submerge_delay_max_second" value="15" />
+	</group>
+	<group name="diplomacy">
+		<float name="fuel_donation_inc" value="50" />
+		<float name="manpower_donation_inc" value="50" />
+		<float name="munition_donation_inc" value="100" />
+	</group>
+	<group name="fog_of_war">
+		<float name="attacker_reveal_time" value="3" />
+		<float name="death_reveal_time" value="2" />
+		<bool name="extended_sight_reveals_ingame" value="False" />
+		<float name="projectile_reveal_time" value="6" />
+	</group>
+	<group name="hold_info">
+		<float name="destroyed_ground_wall_to_entrance_chance" value="0.1" />
+		<float name="scan_cycle" value="1" />
+		<float name="slot_delay_seconds_max" value="0.5" />
+		<float name="slot_delay_seconds_min" value="0" />
+		<list name="combat_slots">
+			<group name="combat_slot">
+				<group name="acceptable_types">
+					<enum name="acceptable_type_01" value="hold_infantry" />
+					<enum name="acceptable_type_02" value="hold_sniper" />
+					<enum name="acceptable_type_03" value="hold_large_gun" />
+					<enum name="acceptable_type_04" value="hold_heavy_machine_gun" />
+				</group>
+				<bool name="combat_enabled" value="True" />
+				<bool name="enabled_on_destroy" value="False" />
+				<bool name="entrance" value="False" />
+				<bool name="standing" value="True" />
+				<string name="type" value="medium" />
+				<bool name="use_slot_heading" value="True" />
+				<float name="angle_of_fire" value="120" />
+			</group>
+			<group name="combat_slot">
+				<group name="acceptable_types">
+					<enum name="acceptable_type_01" value="hold_infantry" />
+					<enum name="acceptable_type_02" value="hold_sniper" />
+					<enum name="acceptable_type_03" value="hold_heavy_machine_gun" />
+					<enum name="acceptable_type_04" value="" />
+				</group>
+				<bool name="combat_enabled" value="True" />
+				<bool name="enabled_on_destroy" value="True" />
+				<bool name="entrance" value="False" />
+				<bool name="standing" value="True" />
+				<string name="type" value="destroyed panel" />
+				<bool name="use_slot_heading" value="True" />
+				<float name="angle_of_fire" value="120" />
+			</group>
+			<group name="combat_slot">
+				<group name="acceptable_types">
+					<enum name="acceptable_type_01" value="type_holdable\hold_infantry.lua" />
+					<enum name="acceptable_type_02" value="type_holdable\hold_sniper.lua" />
+					<enum name="acceptable_type_03" value="" />
+					<enum name="acceptable_type_04" value="type_holdable\hold_heavy_machine_gun.lua" />
+				</group>
+				<bool name="combat_enabled" value="False" />
+				<bool name="enabled_on_destroy" value="False" />
+				<bool name="entrance" value="True" />
+				<bool name="standing" value="True" />
+				<string name="type" value="doorway" />
+				<bool name="use_slot_heading" value="True" />
+				<float name="angle_of_fire" value="120" />
+			</group>
+			<group name="combat_slot">
+				<group name="acceptable_types">
+					<enum name="acceptable_type_01" value="type_holdable\hold_sniper.lua" />
+					<enum name="acceptable_type_02" value="" />
+					<enum name="acceptable_type_03" value="" />
+					<enum name="acceptable_type_04" value="" />
+				</group>
+				<bool name="combat_enabled" value="True" />
+				<bool name="enabled_on_destroy" value="False" />
+				<bool name="entrance" value="False" />
+				<bool name="standing" value="True" />
+				<string name="type" value="sniper spot" />
+				<bool name="use_slot_heading" value="True" />
+				<float name="angle_of_fire" value="120" />
+			</group>
+			<group name="combat_slot">
+				<group name="acceptable_types">
+					<enum name="acceptable_type_01" value="hold_infantry" />
+					<enum name="acceptable_type_02" value="" />
+					<enum name="acceptable_type_03" value="" />
+					<enum name="acceptable_type_04" value="hold_sniper" />
+				</group>
+				<bool name="combat_enabled" value="True" />
+				<bool name="enabled_on_destroy" value="False" />
+				<bool name="entrance" value="False" />
+				<bool name="standing" value="True" />
+				<string name="type" value="infantry only" />
+				<bool name="use_slot_heading" value="False" />
+				<float name="angle_of_fire" value="360" />
+			</group>
+			<group name="combat_slot">
+				<group name="acceptable_types">
+					<enum name="acceptable_type_01" value="hold_heavy_machine_gun" />
+					<enum name="acceptable_type_02" value="" />
+					<enum name="acceptable_type_03" value="" />
+					<enum name="acceptable_type_04" value="" />
+				</group>
+				<bool name="combat_enabled" value="True" />
+				<bool name="enabled_on_destroy" value="False" />
+				<bool name="entrance" value="False" />
+				<bool name="standing" value="False" />
+				<string name="type" value="mg42_hmg" />
+				<bool name="use_slot_heading" value="True" />
+				<float name="angle_of_fire" value="120" />
+			</group>
+			<group name="combat_slot">
+				<group name="acceptable_types">
+					<enum name="acceptable_type_01" value="hold_mortar" />
+					<enum name="acceptable_type_02" value="" />
+					<enum name="acceptable_type_03" value="" />
+					<enum name="acceptable_type_04" value="" />
+				</group>
+				<bool name="combat_enabled" value="True" />
+				<bool name="enabled_on_destroy" value="False" />
+				<bool name="entrance" value="False" />
+				<bool name="standing" value="False" />
+				<string name="type" value="mortar" />
+				<bool name="use_slot_heading" value="True" />
+				<float name="angle_of_fire" value="360" />
+			</group>
+		</list>
+		<float name="team_weapon_slot_delay_seconds_min" value="4" />
+		<float name="team_weapon_slot_delay_seconds_max" value="4" />
+	</group>
+	<group name="kicker_messages">
+		<group name="action_point_gain">
+			<locstring name="message" value="2158684" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="186" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="8" />
+		</group>
+		<group name="custom">
+			<locstring name="message" value="0" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="255" />
+			<float name="message_colour_g" value="255" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="6" />
+		</group>
+		<group name="default_critical_damage">
+			<locstring name="message" value="2146650" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="60" />
+			<float name="message_colour_g" value="60" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="6" />
+		</group>
+		<group name="item_pickup">
+			<locstring name="message" value="2158686" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="255" />
+			<float name="message_colour_g" value="255" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="6" />
+		</group>
+		<float name="kicker_fuel_colour_a" value="255" />
+		<float name="kicker_fuel_colour_b" value="50" />
+		<float name="kicker_fuel_colour_g" value="150" />
+		<float name="kicker_fuel_colour_r" value="228" />
+		<float name="kicker_manpower_colour_a" value="255" />
+		<float name="kicker_manpower_colour_b" value="86" />
+		<float name="kicker_manpower_colour_g" value="220" />
+		<float name="kicker_manpower_colour_r" value="255" />
+		<float name="kicker_munition_colour_a" value="255" />
+		<float name="kicker_munition_colour_b" value="102" />
+		<float name="kicker_munition_colour_g" value="168" />
+		<float name="kicker_munition_colour_r" value="255" />
+		<group name="pinned">
+			<locstring name="message" value="2158690" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="60" />
+			<float name="message_colour_g" value="60" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="10" />
+		</group>
+		<group name="sniped">
+			<locstring name="message" value="2158685" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="60" />
+			<float name="message_colour_g" value="60" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="12" />
+		</group>
+		<group name="strategic_point_captured">
+			<locstring name="message" value="2158691" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="255" />
+			<float name="message_colour_g" value="255" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="6" />
+		</group>
+		<group name="strategic_point_secured">
+			<locstring name="message" value="2158687" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="255" />
+			<float name="message_colour_g" value="255" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="6" />
+		</group>
+	</group>
+	<group name="modifier_caps">
+		<group name="ability_enable_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="accuracy_weapon_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="0" />
+			<float name="minimum_multiplier" value="0.1" />
+		</group>
+		<group name="burst_weapon_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="50" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="1" />
+		</group>
+		<group name="capture_rate_squad_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="cooldown_weapon_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="0" />
+			<float name="minimum_multiplier" value="0.1" />
+		</group>
+		<group name="cost_action_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="cost_fuel_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="cost_manpower_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="cost_munition_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="enable_weapon_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="garrison_requisition_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="health_degeneration_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="health_maximum_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="health_meleedamage_received_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="1.5" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="0.5" />
+		</group>
+		<group name="health_rangedamage_received_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="1.5" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="0.5" />
+		</group>
+		<group name="health_regeneration_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="horizontal_speed_weapon_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="income_cap_combat_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="income_cap_fuel_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="income_cap_manpower_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="income_cap_munition_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="income_combat_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="income_fuel_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="income_manpower_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="income_munition_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="max_medic_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="max_personnel_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="max_squad_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="max_units_squad_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="max_vehicle_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="medic_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="morale_rate_squad_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="morale_value_squad_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="move_enable_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="0" />
+			<float name="minimum_multiplier" value="0.1" />
+		</group>
+		<group name="personnel_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="population_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="population_growth_rate_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="production_speed_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="production_speed_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="range_weapon_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="received_accuracy_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="0" />
+			<float name="minimum_multiplier" value="0.1" />
+		</group>
+		<group name="received_damage_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="0" />
+			<float name="minimum_multiplier" value="0.1" />
+		</group>
+		<group name="received_penetration_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="0" />
+			<float name="minimum_multiplier" value="0.1" />
+		</group>
+		<group name="received_suppression_squad_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="0" />
+			<float name="minimum_multiplier" value="0" />
+		</group>
+		<group name="reinforce_radius_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="reload_weapon_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="resource_cap_action_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="shoot_enable_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="sight_radius_modifier">
+			<float name="maximum_addition" value="178" />
+			<float name="maximum_multiplier" value="2.6" />
+			<float name="minimum_addition" value="0" />
+			<float name="minimum_multiplier" value="0.1" />
+		</group>
+		<group name="speed_maximum_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="squad_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="trigger_suppression_enable_squad_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="vehicle_cap_player_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+		<group name="vertical_speed_weapon_modifier">
+			<float name="maximum_addition" value="9000" />
+			<float name="maximum_multiplier" value="9000" />
+			<float name="minimum_addition" value="-9000" />
+			<float name="minimum_multiplier" value="-9000" />
+		</group>
+	</group>
+	<group name="out_of_control">
+		<float name="lowest_speed_from_turn_allowed" value="1" />
+		<float name="max_distance" value="25" />
+		<float name="max_turn_angle" value="180" />
+		<float name="min_distance" value="15" />
+		<list name="end_of_path_actions">
+		</list>
+	</group>
+	<group name="pathfinding">
+		<bool name="assign_destination_spots_optimal" value="True" />
+		<float name="building_max_water_depth" value="0" />
+		<float name="chance_to_fidget_on_cooldown" value="0.05" />
+		<float name="default_max_squad_radius" value="8" />
+		<instance_reference name="default_pass_type" value="pass_types\land_only" />
+		<float name="follower_impassable_clearance" value="0.5" />
+		<float name="group_move_mult_scale" value="0.3" />
+		<bool name="is_attack_move_default" value="False" />
+		<float name="land_unit_max_water_depth" value="1" />
+		<float name="locomotion_move_suggestion_duration" value="4" />
+		<instance_reference name="max_passable_pass_type" value="pass_types\heavy_crusher" />
+		<float name="max_slope_for_non_climbers" value="34" />
+		<float name="min_time_before_formation_changes" value="2" />
+		<float name="min_time_between_formation_changes" value="4" />
+		<group name="move_types">
+			<instance_reference name="ability_move_type" value="move_type\no_leapfrog_move" />
+			<instance_reference name="attackmove_move_type" value="move_type\normal_move" />
+			<instance_reference name="combat_move_type" value="move_type\fast_move" />
+			<instance_reference name="default_move_type" value="move_type\normal_move" />
+			<instance_reference name="load_move_type" value="move_type\fast_move" />
+			<instance_reference name="medic_carrying_move_type" value="move_type\normal_move" />
+			<instance_reference name="medic_move_type" value="move_type\fast_move" />
+			<instance_reference name="retreat_move_type" value="move_type\fast_move" />
+			<instance_reference name="suppressed_move_type" value="move_type\suppressed_type" />
+			<instance_reference name="user_control_move_type" value="move_type\user_control_move_type" />
+		</group>
+		<float name="path_weighting_multiplier" value="0.8" />
+		<float name="reverse_in_combat_multiplier" value="3.5" />
+		<float name="right_of_way_lookahead_seconds" value="4" />
+		<float name="squad_face_direction_radius" value="8" />
+		<float name="time_to_delay_after_fidget" value="0" />
+		<float name="time_to_delay_after_move_start" value="0" />
+		<float name="time_to_delay_after_move_stop" value="0" />
+		<float name="time_to_delay_after_pivot" value="0" />
+		<float name="ui_path_minimap_color_b" value="255" />
+		<float name="ui_path_minimap_color_g" value="255" />
+		<float name="ui_path_minimap_color_r" value="255" />
+		<float name="ui_path_minimap_duration" value="0.5" />
+		<float name="ui_path_node_colour_b" value="255" />
+		<float name="ui_path_node_colour_g" value="255" />
+		<float name="ui_path_node_colour_r" value="255" />
+		<float name="ui_path_node_duration" value="1.5" />
+		<float name="ui_path_node_highlight_colour_b" value="255" />
+		<float name="ui_path_node_highlight_colour_g" value="255" />
+		<float name="ui_path_node_highlight_colour_r" value="255" />
+		<float name="ui_path_node_separation" value="1.75" />
+		<string name="ui_path_node_texture" value="art/ui_visuals/paths/path_node" />
+		<float name="water_unit_min_water_depth" value="0.5" />
+		<float name="starting_facing_turn_weighting" value="1.5" />
+		<float name="starting_facing_turn_penalty_distance" value="15" />
+		<bool name="ui_path_tacticalmap_show_repath" value="True" />
+		<float name="vehicle_impact_panel_shake_strength" value="30" />
+	</group>
+	<group name="player">
+		<float name="donation_penalty_percentage" value="0.25" />
+		<instance_reference name="empty_player_replacement_object" value="" />
+		<group name="starting_res_normal">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="0" />
+			<float name="munition" value="0" />
+			<float name="popcap" value="0" />
+		</group>
+		<group name="starting_res_quickstart">
+			<float name="action" value="0" />
+			<float name="command" value="2" />
+			<float name="fuel" value="30" />
+			<float name="manpower" value="900" />
+			<float name="munition" value="50" />
+			<float name="popcap" value="0" />
+		</group>
+		<group name="free_upkeep_per_minute">
+			<float name="action" value="0" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="0" />
+			<float name="munition" value="0" />
+		</group>
+		<group name="upkeep_per_pop_per_minute">
+			<float name="action" value="0" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="1.5" />
+			<float name="munition" value="0" />
+		</group>
+		<group name="max_upkeep_per_minute">
+			<float name="action" value="0" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="200" />
+			<float name="munition" value="0" />
+		</group>
+		<float name="commander_unlock_command_points" value="0" />
+	</group>
+	<group name="resource_sharing">
+		<group name="min_decay_percentage">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="0" />
+			<float name="munition" value="0" />
+			<float name="popcap" value="0" />
+		</group>
+		<float name="out_of_supply_modifier" value="0" />
+		<float name="team_size2" value="1" />
+		<float name="team_size3" value="1" />
+		<float name="team_size4" value="1" />
+	</group>
+	<group name="sim_animator_info">
+		<float name="chance_to_crouch_at_destination" value="0.33333" />
+		<float name="crouch_fidget_distance" value="1" />
+		<float name="crouch_fidget_duration_in_secs" value="1" />
+		<float name="prone_fidget_distance" value="1" />
+		<float name="prone_fidget_duration_in_secs" value="1" />
+		<float name="stand_fidget_distance" value="1" />
+		<float name="stand_fidget_duration_in_secs" value="1" />
+	</group>
+	<group name="site_decal">
+		<string name="coal_decal_name" value="coal_01.tga" />
+		<float name="coal_decal_scale" value="1.75" />
+		<float name="dead_decal_fadein_time" value="1" />
+		<float name="dead_decal_fadeout_time" value="1" />
+		<float name="dead_decal_life_time" value="5" />
+		<string name="default_dead_decal_name" value="BuildingDead.tga" />
+		<string name="default_live_decal_name" value="BuildingLive.tga" />
+		<float name="live_decal_fadein_time" value="0" />
+		<float name="live_decal_fadeout_time" value="1" />
+	</group>
+	<group name="territory">
+		<bool name="show_enemy_territory_minimap" value="True" />
+		<bool name="show_enemy_territory_multiplayer" value="True" />
+		<bool name="show_enemy_territory_singleplayer" value="True" />
+	</group>
+	<group name="ui">
+		<float name="arrow_height" value="0.8" />
+		<string name="arrow_texture" value="targeting\target_arrow_yellow" />
+		<float name="arrow_width" value="0.8" />
+		<float name="default_ammo_a" value="200" />
+		<float name="default_ammo_b" value="227" />
+		<float name="default_ammo_g" value="227" />
+		<float name="default_ammo_r" value="227" />
+		<float name="default_fuel_a" value="200" />
+		<float name="default_fuel_b" value="227" />
+		<float name="default_fuel_g" value="227" />
+		<float name="default_fuel_r" value="227" />
+		<float name="default_manpower_a" value="200" />
+		<float name="default_manpower_b" value="227" />
+		<float name="default_manpower_g" value="227" />
+		<float name="default_manpower_r" value="227" />
+		<float name="default_vp_a" value="200" />
+		<float name="default_vp_b" value="227" />
+		<float name="default_vp_g" value="227" />
+		<float name="default_vp_r" value="227" />
+		<float name="hp_fade_begin_alpha" value="1" />
+		<float name="hp_fade_begin_distance" value="50" />
+		<float name="hp_fade_end_alpha" value="0" />
+		<float name="hp_fade_end_distance" value="150" />
+		<group name="ingame_team_colour">
+			<float name="ally_a" value="255" />
+			<float name="ally_b" value="0" />
+			<float name="ally_g" value="225" />
+			<float name="ally_r" value="255" />
+			<float name="enemy_a" value="255" />
+			<float name="enemy_b" value="0" />
+			<float name="enemy_g" value="0" />
+			<float name="enemy_r" value="225" />
+			<float name="local_a" value="255" />
+			<float name="local_b" value="180" />
+			<float name="local_g" value="130" />
+			<float name="local_r" value="90" />
+			<float name="neutral_a" value="255" />
+			<float name="neutral_b" value="255" />
+			<float name="neutral_g" value="255" />
+			<float name="neutral_r" value="255" />
+		</group>
+		<string name="line_texture" value="targeting\target_circle_yellow" />
+		<float name="line_uvscale" value="1" />
+		<float name="line_width" value="0.6" />
+		<group name="map_team_colour">
+			<float name="ally_a" value="255" />
+			<float name="ally_b" value="0" />
+			<float name="ally_g" value="225" />
+			<float name="ally_r" value="255" />
+			<float name="enemy_a" value="255" />
+			<float name="enemy_b" value="0" />
+			<float name="enemy_g" value="0" />
+			<float name="enemy_r" value="225" />
+			<float name="local_a" value="255" />
+			<float name="local_b" value="200" />
+			<float name="local_g" value="140" />
+			<float name="local_r" value="80" />
+			<float name="neutral_a" value="255" />
+			<float name="neutral_b" value="255" />
+			<float name="neutral_g" value="255" />
+			<float name="neutral_r" value="255" />
+		</group>
+		<group name="retreat">
+			<enum_table name="fx_action_name">
+				<string name="retreat" value="propagandawar_state" />
+				<string name="forced_retreat" value="propagandawar_state" />
+				<string name="withdraw_to_edge" value="propagandawar_state" />
+				<string name="withdraw_to_entry_point" value="propagandawar_state" />
+			</enum_table>
+		</group>
+		<group name="event_cues">
+			<group name="ability_executed">
+				<template_reference name="ability_executed" value="tables\event_cue_table">
+					<locstring name="alert_text" value="0" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="2146745" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="booby_trap_triggered">
+				<template_reference name="booby_trap_triggered" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2135900" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="2135852" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="80" />
+					<float name="text_colour_g" value="80" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="casualty_squad_spawned">
+				<template_reference name="casualty_squad_spawned" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158697" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2158697" />
+					<locstring name="help_text_title" value="2150436" />
+					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="175" />
+				</template_reference>
+			</group>
+			<group name="construction_complete">
+				<template_reference name="construction_complete" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158681" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2158682" />
+					<locstring name="help_text_title" value="2158683" />
+					<string name="icon" value="Icons_events_event_cue_building_complete" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+			<group name="default_eventcue">
+				<template_reference name="default_eventcue" value="tables\event_cue_table">
+					<locstring name="alert_text" value="0" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="0" />
+					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="94" />
+					<float name="text_colour_g" value="181" />
+					<float name="text_colour_r" value="210" />
+					<enum name="ping_type" value="" />
+				</template_reference>
+			</group>
+			<group name="enemy_reveal">
+				<template_reference name="enemy_reveal" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11043509" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="0" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<float name="repeat_count" value="5" />
+					<float name="repeat_radius" value="60" />
+					<float name="repeat_time" value="0" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+					<enum name="ping_type" value="reveal" />
+				</template_reference>
+			</group>
+			<group name="enemy_territory_entered">
+				<template_reference name="enemy_territory_entered" value="tables\event_cue_table">
+					<locstring name="alert_text" value="0" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="2146738" />
+					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="1" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="240" />
+					<string name="sound" value="" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="infantry_attacked">
+				<template_reference name="infantry_attacked" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158692" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="0" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="20" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="combat" />
+					<float name="repeat_count" value="5" />
+					<float name="repeat_radius" value="60" />
+					<float name="repeat_time" value="30" />
+					<string name="sound" value="ui/in_game/event_cues/infantry_under_attack" />
+					<float name="text_colour_b" value="62" />
+					<float name="text_colour_g" value="62" />
+					<float name="text_colour_r" value="221" />
+				</template_reference>
+			</group>
+			<group name="info_point_active">
+				<template_reference name="info_point_active" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2146740" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2158651" />
+					<locstring name="help_text_title" value="2158652" />
+					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="203" />
+					<float name="text_colour_g" value="203" />
+					<float name="text_colour_r" value="203" />
+				</template_reference>
+			</group>
+			<group name="mine_detected">
+				<template_reference name="mine_detected" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2150414" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="2150416" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="5" />
+					<float name="repeat_radius" value="60" />
+					<float name="repeat_time" value="30" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="62" />
+					<float name="text_colour_g" value="62" />
+					<float name="text_colour_r" value="221" />
+				</template_reference>
+			</group>
+			<group name="phase_up">
+				<template_reference name="phase_up" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2150407" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="2150408" />
+					<locstring name="help_text_title" value="2150409" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="player_attacked">
+				<template_reference name="player_attacked" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2146718" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2158655" />
+					<locstring name="help_text_title" value="2158654" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="20" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="combat" />
+					<float name="repeat_count" value="3" />
+					<float name="repeat_radius" value="60" />
+					<float name="repeat_time" value="50" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="62" />
+					<float name="text_colour_g" value="62" />
+					<float name="text_colour_r" value="221" />
+				</template_reference>
+			</group>
+			<group name="resource_depleted">
+				<template_reference name="resource_depleted" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2146708" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="2158674" />
+					<locstring name="help_text_title" value="2158675" />
+					<string name="icon" value="Icons_events_event_cue_map" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="sniped">
+				<template_reference name="sniped" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2150410" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2158659" />
+					<locstring name="help_text_title" value="2158660" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="combat" />
+					<float name="repeat_count" value="1" />
+					<float name="repeat_radius" value="30" />
+					<float name="repeat_time" value="30" />
+					<string name="sound" value="ui/in_game/event_cues/unit_sniped" />
+					<float name="text_colour_b" value="62" />
+					<float name="text_colour_g" value="62" />
+					<float name="text_colour_r" value="221" />
+				</template_reference>
+			</group>
+			<group name="infantry_complete">
+				<template_reference name="infantry_complete" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2150427" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2150428" />
+					<locstring name="help_text_title" value="2150429" />
+					<string name="icon" value="Icons_events_event_cue_infantry_complete" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+			<group name="squad_pinned">
+				<template_reference name="squad_pinned" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2150418" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2158661" />
+					<locstring name="help_text_title" value="2158662" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="1" />
+					<float name="repeat_radius" value="10" />
+					<float name="repeat_time" value="30" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="62" />
+					<float name="text_colour_g" value="62" />
+					<float name="text_colour_r" value="221" />
+				</template_reference>
+			</group>
+			<group name="squad_veterancy">
+				<template_reference name="squad_veterancy" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158670" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="2158669" />
+					<locstring name="help_text_title" value="2158663" />
+					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="30" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="strategic_point_captured">
+				<template_reference name="strategic_point_captured" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158695" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2158694" />
+					<locstring name="help_text_title" value="2158696" />
+					<string name="icon" value="Icons_events_event_cue_map" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="True" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="203" />
+					<float name="text_colour_g" value="203" />
+					<float name="text_colour_r" value="203" />
+				</template_reference>
+			</group>
+			<group name="strategic_point_reverting">
+				<template_reference name="strategic_point_reverting" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158673" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2158672" />
+					<locstring name="help_text_title" value="2158671" />
+					<string name="icon" value="Icons_events_event_cue_map" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="True" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="203" />
+					<float name="text_colour_g" value="203" />
+					<float name="text_colour_r" value="203" />
+				</template_reference>
+			</group>
+			<group name="strategic_point_secured">
+				<template_reference name="strategic_point_secured" value="tables\event_cue_table">
+					<locstring name="alert_text" value="0" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="2150449" />
+					<string name="icon" value="Icons_events_event_cue_map" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="True" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="203" />
+					<float name="text_colour_g" value="203" />
+					<float name="text_colour_r" value="203" />
+				</template_reference>
+			</group>
+			<group name="teammate_attacked">
+				<template_reference name="teammate_attacked" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158666" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="2158664" />
+					<locstring name="help_text_title" value="2158665" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="20" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="combat" />
+					<float name="repeat_count" value="1" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="60" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="territory_entered">
+				<template_reference name="territory_entered" value="tables\event_cue_table">
+					<locstring name="alert_text" value="0" />
+					<bool name="disabled" value="True" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="2146734" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="1" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="240" />
+					<string name="sound" value="" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="upgrade_complete">
+				<template_reference name="upgrade_complete" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158667" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2150430" />
+					<locstring name="help_text_title" value="2158668" />
+					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+			<group name="vehicle_attacked">
+				<template_reference name="vehicle_attacked" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2158693" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="0" />
+					<string name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="20" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="combat" />
+					<float name="repeat_count" value="5" />
+					<float name="repeat_radius" value="60" />
+					<float name="repeat_time" value="30" />
+					<string name="sound" value="ui/in_game/event_cues/infantry_under_attack" />
+					<float name="text_colour_b" value="62" />
+					<float name="text_colour_g" value="62" />
+					<float name="text_colour_r" value="221" />
+				</template_reference>
+			</group>
+			<group name="squad_cold">
+				<template_reference name="squad_cold" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11032047" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="11032048" />
+					<locstring name="help_text_title" value="11032049" />
+					<string name="icon" value="Icons_events_event_cue_freezing" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="ui/in_game/event_cues/event_squad_cold" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+			<group name="squad_freezing">
+				<template_reference name="squad_freezing" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11032050" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="11032051" />
+					<locstring name="help_text_title" value="11032052" />
+					<string name="icon" value="Icons_events_event_cue_freezing" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="ui/in_game/event_cues/event_squad_freezing" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+			<group name="vehicle_complete">
+				<template_reference name="vehicle_complete" value="tables\event_cue_table">
+					<locstring name="alert_text" value="2150427" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="2150428" />
+					<locstring name="help_text_title" value="2150429" />
+					<string name="icon" value="Icons_events_event_cue_vehicle_complete" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+			<group name="ability_unlocked">
+				<template_reference name="ability_unlocked" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11035860" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="11035860" />
+					<locstring name="help_text_title" value="11035860" />
+					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="94" />
+					<float name="text_colour_g" value="181" />
+					<float name="text_colour_r" value="210" />
+				</template_reference>
+			</group>
+			<group name="command_point_gained">
+				<template_reference name="command_point_gained" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11040456" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="0" />
+					<string name="icon" value="Icons_events_event_victory_point" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="ui/in_game/event_cues/command_point_accrue" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="commander_ability_unlocked">
+				<template_reference name="commander_ability_unlocked" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11040459" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="0" />
+					<locstring name="help_text_title" value="0" />
+					<string name="icon" value="Icons_events_event_victory_point" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="ui/in_game/event_cues/commander_ability_unlocked" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
+				</template_reference>
+			</group>
+			<group name="infantry_replaced">
+				<template_reference name="infantry_replaced" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11047470" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="11047470" />
+					<locstring name="help_text_title" value="11047470" />
+					<string name="icon" value="Icons_events_event_cue_infantry_complete" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+			<group name="vehicle_replaced">
+				<template_reference name="vehicle_replaced" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11047470" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="11047470" />
+					<locstring name="help_text_title" value="11047470" />
+					<string name="icon" value="Icons_events_event_cue_vehicle_complete" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="True" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="general" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="175" />
+					<float name="text_colour_g" value="137" />
+					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+		</group>
+		<group name="entity_flashes">
+			<group name="entity_flash_neutral">
+				<template_reference name="entity_flash_neutral" value="tables\entity_flash">
+					<string name="action_off_name" value="ui/entity_flash_off" />
+					<string name="action_on_name" value="ui/entity_flash_on" />
+					<int name="num_flashes" value="2" />
+					<float name="time_flash_off" value="0.1" />
+					<float name="time_flash_on" value="0.2" />
+					<bool name="queue" value="True" />
+				</template_reference>
+			</group>
+			<group name="entity_flash_local">
+				<template_reference name="entity_flash_local" value="tables\entity_flash">
+					<string name="action_off_name" value="ui/entity_flash_off" />
+					<string name="action_on_name" value="ui/entity_selection_highlight_flash_player" />
+					<int name="num_flashes" value="2" />
+					<float name="time_flash_off" value="0.1" />
+					<float name="time_flash_on" value="0.2" />
+					<bool name="queue" value="True" />
+				</template_reference>
+			</group>
+			<group name="entity_flash_ally">
+				<template_reference name="entity_flash_ally" value="tables\entity_flash">
+					<string name="action_off_name" value="ui/entity_flash_off" />
+					<string name="action_on_name" value="ui/entity_selection_highlight_flash_ally" />
+					<int name="num_flashes" value="2" />
+					<float name="time_flash_off" value="0.1" />
+					<float name="time_flash_on" value="0.2" />
+					<bool name="queue" value="True" />
+				</template_reference>
+			</group>
+			<group name="entity_flash_enemy">
+				<template_reference name="entity_flash_enemy" value="tables\entity_flash">
+					<string name="action_off_name" value="ui/entity_flash_off" />
+					<string name="action_on_name" value="ui/entity_selection_highlight_flash_enemy" />
+					<int name="num_flashes" value="2" />
+					<float name="time_flash_off" value="0.1" />
+					<float name="time_flash_on" value="0.2" />
+					<bool name="queue" value="True" />
+				</template_reference>
+			</group>
+			<group name="entity_flash_selection_neutral">
+				<template_reference name="entity_flash_selection_neutral" value="tables\entity_flash">
+					<string name="action_off_name" value="ui/entity_flash_off" />
+					<string name="action_on_name" value="ui/entity_selection_highlight_flash" />
+					<int name="num_flashes" value="1" />
+					<float name="time_flash_off" value="0" />
+					<float name="time_flash_on" value="0.75" />
+					<bool name="queue" value="False" />
+				</template_reference>
+			</group>
+			<group name="entity_flash_selection_local">
+				<template_reference name="entity_flash_selection_local" value="tables\entity_flash">
+					<string name="action_off_name" value="ui/entity_flash_off" />
+					<string name="action_on_name" value="ui/entity_selection_highlight_flash_player" />
+					<int name="num_flashes" value="1" />
+					<float name="time_flash_off" value="0" />
+					<float name="time_flash_on" value="0.75" />
+					<bool name="queue" value="False" />
+				</template_reference>
+			</group>
+			<group name="entity_flash_selection_ally">
+				<template_reference name="entity_flash_selection_ally" value="tables\entity_flash">
+					<string name="action_off_name" value="ui/entity_flash_off" />
+					<string name="action_on_name" value="ui/entity_selection_highlight_flash_ally" />
+					<int name="num_flashes" value="1" />
+					<float name="time_flash_off" value="0" />
+					<float name="time_flash_on" value="0.75" />
+					<bool name="queue" value="False" />
+				</template_reference>
+			</group>
+			<group name="entity_flash_selection_enemy">
+				<template_reference name="entity_flash_selection_enemy" value="tables\entity_flash">
+					<string name="action_off_name" value="ui/entity_flash_off" />
+					<string name="action_on_name" value="ui/entity_selection_highlight_flash_enemy" />
+					<int name="num_flashes" value="1" />
+					<float name="time_flash_off" value="0" />
+					<float name="time_flash_on" value="0.75" />
+					<bool name="queue" value="False" />
+				</template_reference>
+			</group>
+		</group>
+		<group name="input">
+			<int name="bandbox_min_area" value="240" />
+			<int name="bandbox_min_length" value="100" />
+			<int name="context_facing_min_screen_distance" value="40" />
+			<float name="context_facing_min_world_distance" value="3" />
+			<int name="modal_facing_min_screen_distance" value="10" />
+			<float name="modal_facing_min_world_distance" value="1" />
+		</group>
+		<float name="command_highlight_time" value="0.75" />
+		<string name="fuel_kicker_texture" value="Icons_minimap_mm_fuel_point" />
+		<string name="ammo_kicker_texture" value="Icons_minimap_mm_ammo_point" />
+		<string name="manpower_kicker_texture" value="Icons_minimap_mm_manpower_point" />
+	</group>
+	<group name="victory_point">
+		<int name="ticker_option_1" value="250" />
+		<int name="ticker_option_2" value="500" />
+		<int name="ticker_option_3" value="1000" />
+		<int name="ticker_option_4" value="25" />
+		<int name="ticker_option_5" value="100" />
+	</group>
+	<group name="weapon">
+		<group name="animation_state_names">
+			<string name="tp_aim" value="Aim" />
+			<string name="tp_cooldown" value="CoolDown" />
+			<string name="tp_disabled" value="Invisible" />
+			<string name="tp_fire" value="Fire" />
+			<string name="tp_move" value="Mobile" />
+			<string name="tp_offhand" value="Offhand" />
+			<string name="tp_pivot" value="Pivot" />
+			<string name="tp_ready" value="Ready" />
+			<string name="tp_reload" value="Reload" />
+			<string name="tp_unarmed" value="Unarmed" />
+		</group>
+		<float name="ground_hit_rate" value="1" />
+		<float name="ground_hit_rate_burst_weapon" value="1" />
+		<group name="state_machine_details">
+			<group name="tp_aim">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_cooldown">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_fire">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_reload">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_cooldown">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_cooldown">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_disabled">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_disabled">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_fire">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_fire">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_pivot">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_move">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_move">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_offhand">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_offhand">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_pivot">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_pivot">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_ready">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_offhand">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_pivot">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_reload">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_pivot">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_reload">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_aim">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+			<group name="tp_unarmed">
+				<group name="transitions">
+					<group name="tp_aim">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_cooldown">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_disabled">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_disabled">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_fire">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_move">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_move">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_offhand">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_pivot">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_ready">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_reload">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_ready">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+					<group name="tp_unarmed">
+						<group name="next_state">
+							<template_reference name="next_state" value="type_weapon_anim_state\tp_unarmed">
+							</template_reference>
+						</group>
+						<float name="time_for_transition" value="0" />
+					</group>
+				</group>
+			</group>
+		</group>
+		<string name="piercing_weapon_munition_name" value="antitank_light" />
+		<group name="tracking">
+			<float name="posture_entity_pace_stop_max_left" value="-45" />
+			<float name="posture_entity_pace_stop_max_right" value="45" />
+		</group>
+	</group>
+	<group name="ice">
+		<float name="ice_chunk_max_health" value="225" />
+		<float name="damage_spread_range_relative_to_max_ice_health" value="15" />
+		<float name="ice_healing_per_second" value="0.5" />
+		<int name="largest_ice_break_effect_size" value="8" />
+		<float name="explosion_range_multiplier" value="2" />
+		<float name="ice_kill_percentage" value="0.2" />
+	</group>
+	<group name="posture">
+		<enum_table name="pace_speeds">
+			<float name="veryfast" value="6" />
+			<float name="fast" value="5.4" />
+			<float name="medium" value="3.6" />
+			<float name="slow" value="2" />
+			<float name="veryslow" value="1.5" />
+			<float name="stopped" value="0" />
+		</enum_table>
+		<float name="snow_starting_depth" value="0.25" />
+	</group>
+	<group name="snow">
+		<group name="deform">
+			<string name="decal_name" value="crater" />
+			<float name="damage_scale" value="100" />
+			<float name="area_scale" value="1" />
+		</group>
+		<group name="prone_deform">
+			<float name="area_scale" value="1" />
+			<string name="deform_decal_name" value="crater" />
+			<float name="crunch_depth_scale" value="1" />
+			<float name="crunch_snow_depth_minimum" value="0.1" />
+		</group>
+	</group>
+	<group name="vault">
+		<float name="vault_animation_seconds" value="1.166" />
+		<list name="vault_actions">
+		</list>
+	</group>
+	<group name="cold_system">
+		<template_reference name="single_player" value="types\cold_data">
+			<float name="default_chill_per_second" value="0" />
+			<float name="default_heat_per_second" value="0" />
+			<list name="heat_levels">
+				<group name="level">
+					<float name="heat_threshold" value="0" />
+					<list name="actions">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_01" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.35" />
+									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\received_damage_modifier">
+									<enum name="application_type" value="apply_to_entity" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="2" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\posture_speed_modifier">
+									<enum name="application_type" value="apply_to_entity" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.75" />
+									<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="61310" />
+						</template_reference>
+					</list>
+				</group>
+				<group name="level">
+					<float name="heat_threshold" value="40" />
+					<list name="actions">
+					</list>
+				</group>
+			</list>
+			<float name="starting_heat" value="40" />
+			<float name="max_heat" value="50" />
+			<float name="time_at_min_for_death" value="12" />
+			<enum name="cold_death_reaction" value="frozen" />
+			<list name="insulating_cover_types">
+				<enum name="cover" value="tp_heavy" />
+				<enum name="cover" value="tp_light" />
+			</list>
+		</template_reference>
+		<template_reference name="multiplayer" value="types\cold_data">
+			<float name="default_chill_per_second" value="0" />
+			<float name="default_heat_per_second" value="0" />
+			<list name="heat_levels">
+				<group name="level">
+					<float name="heat_threshold" value="0" />
+					<list name="actions">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\squad_chill_per_tick_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.01" />
+									<instance_reference name="tooltip" value="modifier_tooltip\squad_chill_per_tick_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="61311" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="False" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="11039005" />
+								<locstring name="help_text" value="11039008" />
+								<string name="icon_name" value="Icons_events_event_cue_network" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="61312" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="False" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="11038987" />
+								<locstring name="help_text" value="11038988" />
+								<string name="icon_name" value="Icons_events_event_cue_blizzard" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="61313" />
+						</template_reference>
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="on" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="white_splash" />
+							<string name="undo_action_state_name" value="off" />
+							<uniqueid name="id" value="61314" />
+						</template_reference>
+					</list>
+				</group>
+				<group name="level">
+					<float name="heat_threshold" value="5" />
+					<list name="actions">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\squad_chill_per_tick_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="True" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.2" />
+									<instance_reference name="tooltip" value="modifier_tooltip\squad_chill_per_tick_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="61315" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="False" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="11038987" />
+								<locstring name="help_text" value="11038988" />
+								<string name="icon_name" value="Icons_events_event_cue_blizzard" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="61316" />
+						</template_reference>
+					</list>
+				</group>
+				<group name="level">
+					<float name="heat_threshold" value="15" />
+					<list name="actions">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\squad_chill_per_tick_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.45" />
+									<instance_reference name="tooltip" value="modifier_tooltip\squad_chill_per_tick_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="61317" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="False" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="11038987" />
+								<locstring name="help_text" value="11038988" />
+								<string name="icon_name" value="Icons_events_event_cue_blizzard" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="61318" />
+						</template_reference>
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="on" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="white_splash" />
+							<string name="undo_action_state_name" value="off" />
+							<uniqueid name="id" value="61319" />
+						</template_reference>
+					</list>
+				</group>
+				<group name="level">
+					<float name="heat_threshold" value="25" />
+					<list name="actions">
+					</list>
+				</group>
+				<group name="level">
+					<float name="heat_threshold" value="40" />
+					<list name="actions">
+					</list>
+				</group>
+			</list>
+			<float name="starting_heat" value="40" />
+			<float name="max_heat" value="50" />
+			<float name="time_at_min_for_death" value="20" />
+			<enum name="cold_death_reaction" value="frozen" />
+			<list name="insulating_cover_types">
+				<enum name="cover" value="tp_heavy" />
+				<enum name="cover" value="tp_light" />
+			</list>
+		</template_reference>
+	</group>
+	<group name="casualty">
+		<float name="casualty_in_pain_max_time" value="12" />
+		<float name="casualty_in_pain_min_time" value="5" />
+		<float name="seek_cover_radius" value="20" />
+		<float name="seek_cover_angle" value="45" />
+		<float name="seek_cover_wait_min_time" value="3" />
+		<float name="seek_cover_wait_max_time" value="10" />
+		<float name="casualty_move_speed_multiplier" value="0.2" />
+	</group>
+	<group name="retreat">
+		<float name="retreat_inner_proximity" value="3" />
+		<float name="retreat_outer_proximity" value="8" />
+	</group>
+	<group name="reward">
+		<float name="action_point_build_multiplier" value="1" />
+		<float name="action_point_kill_multiplier" value="1" />
+		<float name="action_point_loss_multiplier" value="1" />
+		<group name="resource_multiplier">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="fuel" value="5" />
+			<float name="manpower" value="1" />
+			<float name="munition" value="0" />
+			<float name="popcap" value="0" />
+		</group>
+		<float name="deal_damage_xp_multiplier" value="1.5" />
+		<float name="take_damage_xp_multiplier" value="0.5" />
+		<int name="progression_xp_per_match_hard_cap" value="20000" />
+		<float name="progression_xp_from_build_multiplier" value="1" />
+		<float name="progression_xp_from_kills_multiplier" value="1" />
+		<float name="progression_xp_from_territory_multiplier" value="1" />
+		<float name="progression_xp_from_losses_multiplier" value="1" />
+		<bool name="disable_campaign_match_xp_gain" value="True" />
+	</group>
+	<group name="loadout_info">
+		<list name="ai_loadouts">
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11049014" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\soviet_war_machine" />
+					<instance_reference name="commander" value="commander\soviet\terror_tactics" />
+					<instance_reference name="commander" value="commander\soviet\nkvd_rifle_disruption_tactics" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\mortars\82mm\kill_222_82mm" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\conscripts\ability_molotov_kill_infantry_conscripts" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\shock\kill_hmg_mortar_shock" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0004_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0006_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0004_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0006_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0004_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0006_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11049015" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\anti_infantry_tactics" />
+					<instance_reference name="commander" value="commander\soviet\mechanized_support" />
+					<instance_reference name="commander" value="commander\soviet\1941_tow_soviet_shock_army" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\shock\build_kill_shock" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\at-guns\zis3\kill_medtank_zis3" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\light_vehicles\m5_halftrack\upgrade_m17quad_m5" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0009_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0011_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0009_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0011_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0009_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0011_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11049016" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\advanced_warfare_tactics" />
+					<instance_reference name="commander" value="commander\soviet\shock_motor_heavy_tactics" />
+					<instance_reference name="commander" value="commander\soviet\soviet_industry_commander" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\assault_guns\build_su75_stug" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\hmgs\kill_lightvehicle_hmg" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\light_vehicles\t70\kill_lightvehicle_t70" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0008_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0007_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0008_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0007_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0008_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0007_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11077754" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\shock_rifle_frontline_tactics" />
+					<instance_reference name="commander" value="commander\soviet\soviet_lend_lease" />
+					<instance_reference name="commander" value="commander\soviet\1941_tow_soviet_combined_arms_army" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\guards\kill_ostwind_222_vehicles_guards" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\light_vehicles\build_t70_222_m3a1" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\hmgs\maxim\kill_hmg_grenadier_maxim" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0002_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0005_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0002_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0005_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0002_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0005_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11049020" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\spearhead_doctrine" />
+					<instance_reference name="commander" value="commander\german\aerial_superiority_doctrine" />
+					<instance_reference name="commander" value="commander\german\assault_support_doctrine" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\heavy_tanks\tiger\kill_is2_tiger" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\pzgrenadiers\squad_kills_pzgrenadiers" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\assault_guns\build_su75_stug" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0002_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0009_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0002_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0009_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0002_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0009_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11049021" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\german_infantry_assault" />
+					<instance_reference name="commander" value="commander\german\1941_tow_german_blitzkrieg" />
+					<instance_reference name="commander" value="commander\german\fortified_armor_doctrine" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\medium_tanks\build_t3476_panzeriv_ostwind" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\medium_tanks\ostwind\kill_hmg_mortar_ostwind" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\grenadiers\kill_heavytank_grenadiers" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0008_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0006_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0008_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0006_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0008_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0006_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11049022" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\german_air_supply" />
+					<instance_reference name="commander" value="commander\german\german_elite_troops" />
+					<instance_reference name="commander" value="commander\german\1941_tow_german_mechanized" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\light_vehicles\251_halftrack\upgrade_flammenwerfer_251halftrack" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\assault_guns\stug\kill_t3476_stug" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\grenadiers\ability_kill_lightvehicles_grenadiers" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0011_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0003_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0011_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0003_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0011_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0003_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11077753" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\german_mobile_defense" />
+					<instance_reference name="commander" value="commander\german\german_community_defense" />
+					<instance_reference name="commander" value="commander\german\jaeger_armor_doctrine" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\heavy_tanks\build_tiger_is2_elefant" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\hmgs\mg42\ability_kill_lightvehicles_mg42" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\at-guns\pak40\build_kill_mediumtank_pak40" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0007_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0005_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0007_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0005_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0007_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0005_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11077751" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\aef\usf_airborne_company" />
+					<instance_reference name="commander" value="commander\aef\usf_mechanized_company" />
+					<instance_reference name="commander" value="commander\aef\usf_rifle_company" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0003_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_xp1_preorder_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0003_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_xp1_preorder_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0003_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_xp1_preorder_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\aef" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11077752" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\aef\usf_armor_company" />
+					<instance_reference name="commander" value="commander\aef\usf_recon_support_company" />
+					<instance_reference name="commander" value="commander\aef\usf_infantry_company" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0002_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0002_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0002_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0002_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0002_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\us\us_0002_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\aef" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11077750" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\west_german\okw_breakthrough_doctrine" />
+					<instance_reference name="commander" value="commander\west_german\okw_fortifications_doctrine" />
+					<instance_reference name="commander" value="commander\west_german\okw_special_operations_doctrine" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\west_german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11077749" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\west_german\okw_elite_armored_doctrine" />
+					<instance_reference name="commander" value="commander\west_german\okw_luftwaffe_ground_forces_doctrine" />
+					<instance_reference name="commander" value="commander\west_german\okw_scavenge_doctrine" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_xp1_preorder_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_xp1_preorder_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_xp1_preorder_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\west_german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="multiplayer" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\german_ostruppen_tree" />
+					<instance_reference name="commander" value="commander\german\festung_support_doctrine" />
+					<instance_reference name="commander" value="commander\german\jaeger_infantry_doctrine" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\heavy_tanks\build_tiger_is2_elefant" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\heavy_tanks\elefant\kill_heavytank_elefant" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\medium_tanks\panther\kill_medtank_heavytank_panther" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0007_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0009_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0007_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0009_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0007_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0009_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="battle_coop" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="skirmish" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1942" />
+					<int name="scenario_year" value="1943" />
+					<int name="scenario_year" value="1944" />
+					<int name="scenario_year" value="1945" />
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\german_ostruppen_tree" />
+					<instance_reference name="commander" value="commander\german\german_air_supply" />
+					<instance_reference name="commander" value="commander\german\german_elite_troops" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0002_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0003_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0007_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0006_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0002_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0001_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="battle_coop" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="skirmish" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1943" />
+					<int name="scenario_year" value="1944" />
+					<int name="scenario_year" value="1945" />
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\german_elite_troops" />
+					<instance_reference name="commander" value="commander\german\german_infantry_assault" />
+					<instance_reference name="commander" value="commander\german\german_community_defense" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0011_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0010_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0011_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0009_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0007_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\german\german_0005_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="battle_coop" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="skirmish" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1943" />
+					<int name="scenario_year" value="1944" />
+					<int name="scenario_year" value="1945" />
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\conscripts_support_tactics" />
+					<instance_reference name="commander" value="commander\soviet\guard_rifle_anti_tank_tactics" />
+					<instance_reference name="commander" value="commander\soviet\nkvd_rifle_disruption_tactics" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\medium_tanks\veteran_tank" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\heavy_tanks\kv-8\vet_kill_infantry_kv8" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\medium_tanks\t-34_76\kill_infantry_vehicles_t3476" />
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0008_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0007_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0008_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0007_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0008_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0007_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="battle_coop" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="skirmish" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1942" />
+					<int name="scenario_year" value="1943" />
+					<int name="scenario_year" value="1944" />
+					<int name="scenario_year" value="1945" />
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\terror_tactics" />
+					<instance_reference name="commander" value="commander\soviet\soviet_partisan" />
+					<instance_reference name="commander" value="commander\soviet\soviet_community_defense" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="battle_coop" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="skirmish" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1943" />
+					<int name="scenario_year" value="1944" />
+					<int name="scenario_year" value="1945" />
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\soviet_counterattack" />
+					<instance_reference name="commander" value="commander\soviet\soviet_urban" />
+					<instance_reference name="commander" value="commander\soviet\anti_infantry_tactics" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0004_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0001_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0004_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\soviet\soviet_0001_summer_medium" />
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="battle_coop" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="skirmish" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1943" />
+					<int name="scenario_year" value="1944" />
+					<int name="scenario_year" value="1945" />
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0002_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\west_german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="persistent_battle" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_winter_light" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_summer_light" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_winter_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_summer_medium" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_winter_heavy" />
+					<instance_reference name="skin_pack" value="skin_pack\okw\okw_0003_summer_heavy" />
+				</list>
+				<instance_reference name="race" value="racebps\west_german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="persistent_battle" />
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="" />
+			</template_reference>
+		</list>
+		<list name="recommended_tow_loadouts">
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11074127" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\1941_tow_soviet_combined_arms_army" />
+					<instance_reference name="commander" value="commander\soviet\1941_tow_soviet_reserve_army" />
+					<instance_reference name="commander" value="commander\soviet\1941_tow_soviet_shock_army" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="battle_coop" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="challenge" />
+					<enum name="scenario_type" value="skirmish" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1941" />
+				</list>
+				<instance_reference name="fatality" value="" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11074127" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\1941_tow_soviet_combined_arms_army" />
+					<instance_reference name="commander" value="commander\soviet\guard_rifle_anti_tank_tactics" />
+					<instance_reference name="commander" value="commander\soviet\1941_tow_soviet_shock_army" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="battle_coop" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="challenge" />
+					<enum name="scenario_type" value="skirmish" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1942" />
+					<int name="scenario_year" value="1943" />
+					<int name="scenario_year" value="1944" />
+					<int name="scenario_year" value="1945" />
+				</list>
+				<instance_reference name="fatality" value="" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11074128" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\1941_tow_german_blitzkrieg" />
+					<instance_reference name="commander" value="commander\german\1941_tow_german_infantry" />
+					<instance_reference name="commander" value="commander\german\1941_tow_german_mechanized" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="skirmish" />
+					<enum name="scenario_type" value="challenge" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="battle_coop" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1941" />
+				</list>
+				<instance_reference name="fatality" value="" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="11074128" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\1941_tow_german_blitzkrieg" />
+					<instance_reference name="commander" value="commander\german\festung_armor_doctrine" />
+					<instance_reference name="commander" value="commander\german\1941_tow_german_mechanized" />
+				</list>
+				<list name="intel_bulletins">
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+					<enum name="scenario_type" value="skirmish" />
+					<enum name="scenario_type" value="challenge" />
+					<enum name="scenario_type" value="battle_solo" />
+					<enum name="scenario_type" value="battle_coop" />
+				</list>
+				<list name="allowed_scenario_years">
+					<int name="scenario_year" value="1942" />
+					<int name="scenario_year" value="1943" />
+					<int name="scenario_year" value="1944" />
+					<int name="scenario_year" value="1945" />
+				</list>
+				<instance_reference name="fatality" value="" />
+			</template_reference>
+		</list>
+		<list name="default_loadouts">
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\soviet\guard_motor_coordination_tactics" />
+					<instance_reference name="commander" value="commander\soviet\guard_rifle_anti_tank_tactics" />
+					<instance_reference name="commander" value="commander\soviet\shock_rifle_frontline_tactics" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\at-guns\recruit_atgun" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\hmgs\recruit_hmg" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\recruit_infantry" />
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\soviet" />
+				<list name="allowed_scenario_types">
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\german\festung_armor_doctrine" />
+					<instance_reference name="commander" value="commander\german\festung_support_doctrine" />
+					<instance_reference name="commander" value="commander\german\jaeger_armor_doctrine" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\at-guns\recruit_atgun" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\hmgs\recruit_hmg" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\infantry\recruit_infantry" />
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\german" />
+				<list name="allowed_scenario_types">
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\aef\usf_airborne_company" />
+					<instance_reference name="commander" value="commander\aef\usf_armor_company" />
+					<instance_reference name="commander" value="commander\aef\usf_infantry_company" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\xp1_units\infantry\infantry_recruit" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\xp1_units\atguns\atgun_recruit" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\xp1_units\hmgs\hmg_recruit" />
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\aef" />
+				<list name="allowed_scenario_types">
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+			<template_reference name="loadout" value="loadout">
+				<locstring name="name" value="0" />
+				<list name="commanders">
+					<instance_reference name="commander" value="commander\west_german\okw_breakthrough_doctrine" />
+					<instance_reference name="commander" value="commander\west_german\okw_luftwaffe_ground_forces_doctrine" />
+					<instance_reference name="commander" value="commander\west_german\okw_special_operations_doctrine" />
+				</list>
+				<list name="intel_bulletins">
+					<instance_reference name="intel_bulletin" value="intel_bulletin\xp1_units\infantry\infantry_recruit" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\xp1_units\atguns\atgun_recruit" />
+					<instance_reference name="intel_bulletin" value="intel_bulletin\xp1_units\hmgs\hmg_recruit" />
+				</list>
+				<list name="skins">
+				</list>
+				<instance_reference name="race" value="racebps\west_german" />
+				<list name="allowed_scenario_types">
+				</list>
+				<list name="allowed_scenario_years">
+				</list>
+				<instance_reference name="fatality" value="fatality\global\fatality_default" />
+			</template_reference>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="0" />
+	<group name="ai_info">
+		<enum_table name="default_personalities">
+			<instance_reference name="campaign" value="ai_personality\default_campaign" />
+			<instance_reference name="multiplayer" value="ai_personality\default_skirmish" />
+			<instance_reference name="skirmish" value="ai_personality\default_skirmish" />
+			<instance_reference name="battle_solo" value="ai_personality\default_skirmish" />
+			<instance_reference name="challenge" value="ai_personality\default_campaign" />
+			<instance_reference name="battle_coop" value="ai_personality\default_skirmish" />
+			<instance_reference name="tutorial" value="ai_personality\default_skirmish" />
+			<instance_reference name="persistent" value="ai_personality\botb_campaign" />
+			<instance_reference name="persistent_battle" value="ai_personality\default_skirmish" />
+			<instance_reference name="invalid" value="ai_personality\default_skirmish" />
+		</enum_table>
+		<group name="cold">
+			<instance_reference name="blizzard_active_player_upgrade" value="upgrade\blizzard_active" />
+		</group>
+		<group name="forward_base_info">
+			<enum name="unit_class_name" value="forward_base" />
+		</group>
+	</group>
+	<group name="persistent_campaign">
+		<list name="xp_amount_per_vet_level">
+			<float name="xp" value="1" />
+			<float name="xp" value="1.5" />
+			<float name="xp" value="2" />
+		</list>
+		<list name="unit_type_xp_multipliers">
+			<group name="unit_type_multiplier">
+				<float name="multiplier" value="1" />
+				<list name="squads">
+					<instance_reference name="squad" value="sbps\races\german\soldiers\grenadier_squad\grenadier_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\mg42_heavy_machine_gun_squad\mg42_heavy_machine_gun_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\mortar_team\mortar_team_81mm_mp" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\ostruppen_squad\ostruppen_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\at_gun_squad\pak40_75mm_at_gun_squad_mp" />
+				</list>
+			</group>
+			<group name="unit_type_multiplier">
+				<float name="multiplier" value="1.2" />
+				<list name="squads">
+					<instance_reference name="squad" value="sbps\races\german\soldiers\officer_squad\assault_officer_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\officer_squad\officer_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\panzer_grenadier_squad\panzer_grenadier_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\sniper_squad\sniper_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\at_gun_squad\pak43_88mm_at_gun_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\howitzer_105mm_le_fh18_artillery\howitzer_105mm_le_fh18_artillery_mp" />
+				</list>
+			</group>
+			<group name="unit_type_multiplier">
+				<float name="multiplier" value="1" />
+				<list name="squads">
+					<instance_reference name="squad" value="sbps\races\german\vehicles\halftrack_squad\mortar_250_halftrack_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\halftrack_squad\sdkfz_251_halftrack_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panzerwerfer_squad\panzerwerfer_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\scout_car_sdkfz222\scoutcar_sdkfz222_mp" />
+				</list>
+			</group>
+			<group name="unit_type_multiplier">
+				<float name="multiplier" value="2" />
+				<list name="squads">
+					<instance_reference name="squad" value="sbps\races\german\vehicles\ostwind_squad\ostwind_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_command_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_e_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_squad_mp" />
+				</list>
+			</group>
+			<group name="unit_type_multiplier">
+				<float name="multiplier" value="2.5" />
+				<list name="squads">
+					<instance_reference name="squad" value="sbps\races\german\vehicles\brummbar_squad\brummbar_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\elefant_tank_destroyer_squad\elefant_tank_destroyer_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panther_squad\panther_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\tiger_squad\tiger_squad_mp" />
+				</list>
+			</group>
+		</list>
+		<float name="division_max_health" value="350" />
+		<instance_reference name="race" value="racebps\aef" />
+		<float name="opportunity_chance" value="1" />
+	</group>
+	<group name="localization">
+		<enum_table name="sector_type_name">
+			<locstring name="sector_type_fuel" value="11068276" />
+			<locstring name="sector_type_manpower" value="11068277" />
+			<locstring name="sector_type_munition" value="11068278" />
+			<locstring name="sector_type_action" value="11068274" />
+			<locstring name="sector_type_victory" value="11068281" />
+			<locstring name="sector_type_command" value="11068275" />
+			<locstring name="sector_type_null" value="11068279" />
+			<locstring name="sector_type_unknown" value="11068280" />
+		</enum_table>
+	</group>
+	<group name="speech">
+		<enum name="forward_base_type" value="forward_base" />
+	</group>
+</instance>

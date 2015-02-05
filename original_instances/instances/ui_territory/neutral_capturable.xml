@@ -1,0 +1,14 @@
+<instance description="" template="ui_territory">
+	<group name="ui_territory_bag">
+		<group name="territory">
+			<float name="diffuse_a" value="25" />
+			<float name="diffuse_b" value="255" />
+			<float name="diffuse_g" value="255" />
+			<float name="diffuse_r" value="255" />
+			<string name="texture" value="territory\territory_line_dashed_alternate" />
+			<float name="thickness" value="1" />
+			<float name="uv_scale" value="0.15" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="5" />
+</instance>

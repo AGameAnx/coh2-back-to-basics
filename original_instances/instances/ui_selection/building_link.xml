@@ -1,0 +1,18 @@
+<instance description="" template="ui_selection">
+	<group name="ui_selection_bag">
+		<int name="diffuse_a" value="255" />
+		<int name="diffuse_b" value="255" />
+		<int name="diffuse_g" value="255" />
+		<int name="diffuse_r" value="255" />
+		<float name="scale" value="2" />
+		<bool name="team_colourize" value="True" />
+		<string name="texture" value="" />
+		<float name="thickness" value="1" />
+		<enum name="type" value="reticule" />
+		<instance_reference name="reticule" value="ui_reticule\ui_selection_building_link" />
+		<float name="corner_radius" value="0" />
+		<float name="u_animation_rate" value="0" />
+		<bool name="scale_absolute" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="14911" />
+</instance>

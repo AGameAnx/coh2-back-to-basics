@@ -1,0 +1,18 @@
+<instance description="" template="ui_selection">
+	<group name="ui_selection_bag">
+		<int name="diffuse_a" value="255" />
+		<int name="diffuse_b" value="255" />
+		<int name="diffuse_g" value="255" />
+		<int name="diffuse_r" value="255" />
+		<float name="scale" value="0.9" />
+		<bool name="team_colourize" value="True" />
+		<string name="texture" value="selection\dashed_line" />
+		<float name="thickness" value="0.2" />
+		<enum name="type" value="arc_array" />
+		<instance_reference name="reticule" value="" />
+		<float name="corner_radius" value="0" />
+		<float name="u_animation_rate" value="0.15" />
+		<bool name="scale_absolute" value="True" />
+	</group>
+	<uniqueid name="pbgid" value="25" />
+</instance>

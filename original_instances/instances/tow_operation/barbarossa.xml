@@ -1,0 +1,180 @@
+<instance description="The original ToW maps." template="tow_operation">
+	<group name="tow_operation_bag">
+		<locstring name="ui_name" value="11052834" />
+		<list name="scenarios">
+			<group name="scenario">
+				<string name="name" value="Brody" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\skirmishes\tow_sc_brody_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\skirmishes\tow_sc_brody_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\skirmishes\tow_sc_brody_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Moscow" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\skirmishes\tow_sc_general_winter_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\skirmishes\tow_sc_general_winter_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\skirmishes\tow_sc_general_winter_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Rostov" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\skirmishes\tow_sc_rostov_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\skirmishes\tow_sc_rostov_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\skirmishes\tow_sc_rostov_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Smolensk" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\skirmishes\tow_sc_smolensk_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\skirmishes\tow_sc_smolensk_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\skirmishes\tow_sc_smolensk_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Cold_Weather_Challenge" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\challenges\tow_ch_cold_weather_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\challenges\tow_ch_cold_weather_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\challenges\tow_ch_cold_weather_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Challenge_Indirect_Fire_v2" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\challenges\tow_ch_indirect_fire_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\challenges\tow_ch_indirect_fire_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\challenges\tow_ch_indirect_fire_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Ice_challenge" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\challenges\tow_ch_winter_defense_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\challenges\tow_ch_winter_defense_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\challenges\tow_ch_winter_defense_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Blitzkrieg" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\challenges\tow_ch_blitzkrieg_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\challenges\tow_ch_blitzkrieg_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\challenges\tow_ch_blitzkrieg_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Officer_Assassination" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\challenges\tow_ch_assassination_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\challenges\tow_ch_assassination_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\challenges\tow_ch_assassination_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="Schildkroteberg" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\challenges\tow_ch_schildkrotenberg_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\challenges\tow_ch_schildkrotenberg_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\challenges\tow_ch_schildkrotenberg_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Pripyat" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\battles\tow_bt_pripyat_river_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\battles\tow_bt_pripyat_river_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\battles\tow_bt_pripyat_river_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Minsk" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\battles\tow_bt_minsk_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\battles\tow_bt_minsk_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\battles\tow_bt_minsk_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_MoscowApproach" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\battles\tow_bt_moscow_approach_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\battles\tow_bt_moscow_approach_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\battles\tow_bt_moscow_approach_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_MoscowLines" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\battles\tow_bt_moscow_lines_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\battles\tow_bt_moscow_lines_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\battles\tow_bt_moscow_lines_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Crimea" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\battles\tow_bt_crimea_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\battles\tow_bt_crimea_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\battles\tow_bt_crimea_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Kharkov" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\battles\tow_bt_kharkov_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\battles\tow_bt_kharkov_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\battles\tow_bt_kharkov_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Leningrad" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\battles\tow_bt_leningrad_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\battles\tow_bt_leningrad_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\battles\tow_bt_leningrad_hard" />
+				</group>
+			</group>
+			<group name="scenario">
+				<string name="name" value="1941_Oka" />
+				<group name="post_game_achievements">
+					<instance_reference name="complete_easy" value="post_game_achievement\tow\battles\tow_bt_oka_river_easy" />
+					<instance_reference name="complete_med" value="post_game_achievement\tow\battles\tow_bt_oka_river_med" />
+					<instance_reference name="complete_hard" value="post_game_achievement\tow\battles\tow_bt_oka_river_hard" />
+				</group>
+			</group>
+		</list>
+		<instance_reference name="store_item" value="thq_store\operations\barbarossa" />
+		<int name="ui_position" value="0" />
+		<locstring name="ui_description" value="11052883" />
+		<group name="post_game_achievements">
+			<instance_reference name="complete_easy" value="post_game_achievement\tow\tow_complete_all_easy" />
+			<instance_reference name="complete_med" value="post_game_achievement\tow\tow_complete_all_med" />
+			<instance_reference name="complete_hard" value="post_game_achievement\tow\tow_complete_all_hard" />
+			<instance_reference name="complete_battle" value="post_game_achievement\tow\tow_complete_battles" />
+			<instance_reference name="complete_challenge" value="post_game_achievement\tow\tow_complete_challenges" />
+			<instance_reference name="complete_skirmish" value="post_game_achievement\tow\tow_complete_skirmishes" />
+		</group>
+		<string name="ui_icon_low" value="Icons_operations_barbarossa_low" />
+		<string name="ui_icon_high" value="Icons_operations_barbarossa_high" />
+		<string name="ui_movie" value="" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="257238" />
+			<list name="search_tags">
+			</list>
+			<enum name="rarity" value="other" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+				<instance_reference name="race" value="racebps\german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="0" />
+</instance>

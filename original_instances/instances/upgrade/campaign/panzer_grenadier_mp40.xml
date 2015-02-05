@@ -1,0 +1,231 @@
+<instance description="" template="upgrade">
+	<group name="upgrade_bag">
+		<bool name="enable_in_hold" value="True" />
+		<float name="global_max_limit" value="0" />
+		<bool name="has_speech_code" value="True" />
+		<float name="local_max_limit" value="0" />
+		<enum name="owner_type" value="self" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="time_cost">
+			<group name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="fuel" value="0" />
+				<float name="manpower" value="0" />
+				<float name="munition" value="20" />
+				<float name="popcap" value="0" />
+			</group>
+			<float name="time_seconds" value="20" />
+		</group>
+		<bool name="ui_event_cue" value="True" />
+		<enum name="ui_group" value="unit_upgrade_panel" />
+		<int name="ui_position" value="11" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="W" />
+			<string name="icon_name" value="Icons_upgrades_icon_upgrade_german_mg42" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="0" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
+			<enum name="ui_style" value="default" />
+		</group>
+		<bool name="validate_actions" value="False" />
+		<list name="actions">
+			<template_reference name="action" value="action\filter_action">
+				<bool name="apply_to_future_units" value="True" />
+				<bool name="apply_to_local_player" value="True" />
+				<instance_reference name="deprecated_entity_type" value="ebps\races\german\soldiers\panzer_grenadiers\panzer_grenadiers" />
+				<instance_reference name="deprecated_squad_type" value="" />
+				<group name="target_info">
+					<template_reference name="target_info" value="type_ability_target_type\own">
+					</template_reference>
+				</group>
+				<enum name="deprecated_unit_class_type" value="" />
+				<list name="action_table">
+					<template_reference name="action" value="action\remove_weapon">
+						<bool name="fire_and_forget" value="False" />
+						<float name="hardpoint" value="1" />
+						<uniqueid name="id" value="61415" />
+					</template_reference>
+					<template_reference name="action" value="action\add_weapon">
+						<float name="hardpoint" value="1" />
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\sub_machine_gun\panzer_grenadier_mp40_smg" />
+						</group>
+						<uniqueid name="id" value="61416" />
+					</template_reference>
+					<template_reference name="action" value="action\change_weapon">
+						<float name="hardpoint" value="1" />
+						<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\sub_machine_gun\panzer_grenadier_mp40_smg" />
+						<uniqueid name="id" value="61417" />
+					</template_reference>
+					<template_reference name="action" value="action\requirement_action">
+						<bool name="check_self" value="False" />
+						<bool name="global_fire_and_forget_on_success" value="False" />
+						<bool name="instant_requirement_check" value="False" />
+						<bool name="kill_action_on_failed_requirements" value="False" />
+						<bool name="no_retrigger" value="False" />
+						<bool name="validate_all_sub_actions" value="True" />
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_slot_item">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<bool name="check_item_on_entity" value="False" />
+								<bool name="display_requirement" value="True" />
+								<float name="max_owned" value="10" />
+								<float name="min_owned" value="0" />
+								<instance_reference name="slot_item" value="slot_item\german\anti_tank_weapon\panzerbusche_39" />
+							</template_reference>
+						</list>
+						<list name="action_table">
+							<template_reference name="action" value="action\slot_item_remove">
+								<bool name="fire_and_forget" value="False" />
+								<bool name="random" value="False" />
+								<instance_reference name="slot_item" value="slot_item\german\anti_tank_weapon\panzerbusche_39" />
+								<uniqueid name="id" value="61419" />
+							</template_reference>
+							<template_reference name="action" value="action\slot_item_add">
+								<instance_reference name="slot_item" value="slot_item\german\anti_tank_weapon\panzerbusche_39" />
+								<bool name="permanent" value="True" />
+								<uniqueid name="id" value="61420" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="61418" />
+						<bool name="fire_and_forget_non_global" value="False" />
+						<template_reference name="ui_help_text" value="tables\help_text_phrase">
+							<int name="phrase_order" value="0" />
+							<locstring name="phrase" value="0" />
+						</template_reference>
+					</template_reference>
+				</list>
+				<enum name="deprecated_squad_class_type" value="" />
+				<list name="target_requirements">
+				</list>
+				<bool name="target_squad" value="False" />
+				<uniqueid name="id" value="61414" />
+			</template_reference>
+			<template_reference name="action" value="action\filter_action">
+				<bool name="apply_to_future_units" value="True" />
+				<bool name="apply_to_local_player" value="True" />
+				<instance_reference name="deprecated_entity_type" value="ebps\races\german\soldiers\panzer_grenadiers\panzer_grenadiers_mp" />
+				<instance_reference name="deprecated_squad_type" value="" />
+				<group name="target_info">
+					<template_reference name="target_info" value="type_ability_target_type\own">
+					</template_reference>
+				</group>
+				<enum name="deprecated_unit_class_type" value="" />
+				<list name="action_table">
+					<template_reference name="action" value="action\remove_weapon">
+						<bool name="fire_and_forget" value="False" />
+						<float name="hardpoint" value="1" />
+						<uniqueid name="id" value="61422" />
+					</template_reference>
+					<template_reference name="action" value="action\add_weapon">
+						<float name="hardpoint" value="1" />
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\sub_machine_gun\panzer_grenadier_mp40_smg" />
+						</group>
+						<uniqueid name="id" value="61423" />
+					</template_reference>
+					<template_reference name="action" value="action\change_weapon">
+						<float name="hardpoint" value="1" />
+						<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\sub_machine_gun\panzer_grenadier_mp40_smg" />
+						<uniqueid name="id" value="61424" />
+					</template_reference>
+					<template_reference name="action" value="action\requirement_action">
+						<bool name="check_self" value="False" />
+						<bool name="global_fire_and_forget_on_success" value="False" />
+						<bool name="instant_requirement_check" value="False" />
+						<bool name="kill_action_on_failed_requirements" value="False" />
+						<bool name="no_retrigger" value="False" />
+						<bool name="validate_all_sub_actions" value="True" />
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_slot_item">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<bool name="check_item_on_entity" value="False" />
+								<bool name="display_requirement" value="True" />
+								<float name="max_owned" value="10" />
+								<float name="min_owned" value="0" />
+								<instance_reference name="slot_item" value="slot_item\german\anti_tank_weapon\panzerbusche_39_mp" />
+							</template_reference>
+						</list>
+						<list name="action_table">
+							<template_reference name="action" value="action\slot_item_remove">
+								<bool name="fire_and_forget" value="False" />
+								<bool name="random" value="False" />
+								<instance_reference name="slot_item" value="slot_item\german\anti_tank_weapon\panzerbusche_39_mp" />
+								<uniqueid name="id" value="61426" />
+							</template_reference>
+							<template_reference name="action" value="action\slot_item_add">
+								<instance_reference name="slot_item" value="slot_item\german\anti_tank_weapon\panzerbusche_39_mp" />
+								<bool name="permanent" value="True" />
+								<uniqueid name="id" value="61427" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="61425" />
+						<bool name="fire_and_forget_non_global" value="False" />
+						<template_reference name="ui_help_text" value="tables\help_text_phrase">
+							<int name="phrase_order" value="0" />
+							<locstring name="phrase" value="0" />
+						</template_reference>
+					</template_reference>
+				</list>
+				<enum name="deprecated_squad_class_type" value="" />
+				<list name="target_requirements">
+				</list>
+				<bool name="target_squad" value="False" />
+				<uniqueid name="id" value="61421" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="True" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\german\items\grenadier_mg42_lmg" />
+			</template_reference>
+		</list>
+		<string name="ui_kicker_icon_name" value="Icons_weapons_weapon_mg42" />
+		<locstring name="ui_squad_name_override" value="0" />
+		<locstring name="ui_squad_help_text_override" value="0" />
+		<locstring name="ui_squad_extra_text_override" value="0" />
+	</group>
+	<uniqueid name="pbgid" value="53" />
+</instance>
