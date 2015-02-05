@@ -1,0 +1,31 @@
+<instance description="" template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11052822" />
+		<string name="icon" value="Icons_tooltips_loadtip_tow_soviet_commanders" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="any" />
+		<list name="scenario_names">
+			<string name="name" value="1942_kalach" />
+			<string name="name" value="1942_voronezh" />
+			<string name="name" value="1941_moscow" />
+			<string name="name" value="brody" />
+			<string name="name" value="1941_leningrad" />
+			<string name="name" value="1941_moscowapproach" />
+			<string name="name" value="1941_moscowlines" />
+			<string name="name" value="1941_oka" />
+			<string name="name" value="1941_crimea" />
+			<string name="name" value="1941_kharkov" />
+			<string name="name" value="1941_minsk" />
+			<string name="name" value="1941_pripyat" />
+			<string name="name" value="1941_rostov" />
+			<string name="name" value="1941_smolensk" />
+			<string name="name" value="donriver" />
+			<string name="name" value="kharkov" />
+			<string name="name" value="resistance" />
+			<string name="name" value="tereklines" />
+		</list>
+		<list name="required_races">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2127" />
+</instance>

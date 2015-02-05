@@ -1,0 +1,17 @@
+<instance description="" template="material">
+	<group name="material_bag">
+		<enum name="cover_type" value="type_cover\tp_defcover.lua" />
+		<instance_reference name="hit_material" value="hit_material\stone" />
+		<float name="priority" value="0" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="" />
+			<string name="icon_name" value="" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="0" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="1" />
+</instance>
