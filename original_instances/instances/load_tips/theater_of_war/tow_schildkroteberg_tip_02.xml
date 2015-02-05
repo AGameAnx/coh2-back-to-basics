@@ -1,0 +1,14 @@
+<instance description="" template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11038943" />
+		<string name="icon" value="Icons_tooltips_teamweapon_1" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="any" />
+		<list name="scenario_names">
+			<string name="name" value="schildkroteberg" />
+		</list>
+		<list name="required_races">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="202" />
+</instance>

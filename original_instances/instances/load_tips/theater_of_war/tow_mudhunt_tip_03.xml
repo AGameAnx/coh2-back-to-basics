@@ -1,0 +1,14 @@
+<instance description="" template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11056090" />
+		<string name="icon" value="Icons_vehicles_vehicle_german_stug_iii_g" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="any" />
+		<list name="scenario_names">
+			<string name="name" value="1943_mud_hunt" />
+		</list>
+		<list name="required_races">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="14561" />
+</instance>

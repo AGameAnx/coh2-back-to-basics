@@ -1,0 +1,19 @@
+<instance description="" template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11037922" />
+		<string name="icon" value="Icons_tooltips_loadtip_coldweather_fire_cover" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="any" />
+		<list name="scenario_names">
+			<string name="name" value="cold_weather_challenge" />
+			<string name="name" value="1941_moscow" />
+			<string name="name" value="1941_leningrad" />
+			<string name="name" value="1941_moscowapproach" />
+			<string name="name" value="1941_moscowlines" />
+			<string name="name" value="1941_oka" />
+		</list>
+		<list name="required_races">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="167" />
+</instance>

@@ -1,0 +1,14 @@
+<instance description="" template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11050866" />
+		<string name="icon" value="Icons_abilities_ability_scorched_earth_generic" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="any" />
+		<list name="scenario_names">
+			<string name="name" value="1942_voronezh" />
+		</list>
+		<list name="required_races">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2136" />
+</instance>

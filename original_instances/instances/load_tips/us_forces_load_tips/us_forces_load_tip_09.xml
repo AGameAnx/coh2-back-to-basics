@@ -1,0 +1,14 @@
+<instance description="" template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11074666" />
+		<string name="icon" value="Icons_abilities_ability_aef_abandon_vehicle" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="any" />
+		<list name="scenario_names">
+		</list>
+		<list name="required_races">
+			<instance_reference name="required_race" value="racebps\aef" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17213" />
+</instance>
