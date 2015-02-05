@@ -7,6 +7,10 @@
 
 General:
 - All barbed wire target size increased 1 -> 7 (easier to target fire with ballistic weapons)
+- All small arms accuracies decreased:
+ * Far by 4%
+ * Mid by 4%
+ * Near by 7%
 
 Soviet:
 - M3A1 halftrack hitpoints reduced 240 -> 230
