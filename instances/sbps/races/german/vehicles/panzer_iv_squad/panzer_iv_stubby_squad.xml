@@ -1,4 +1,4 @@
-<instance template="sbps" description="">
+<instance description="" template="sbps">
 	<list name="extensions">
 		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext">
 		</template_reference>
@@ -384,7 +384,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
 				<group name="loadout_data">
-					<instance_reference name="type" value="ebps\races\german\vehicles\panzer_iv_sdkfz_161\panzer_iv_sdkfz_ausf1" mod="23d6cdb82724460dbcb21e1a9162e473" />
+					<instance_reference name="type" value="ebps\races\german\vehicles\panzer_iv_sdkfz_161\panzer_iv_sdkfz_ausf1" />
 					<float name="num" value="1" />
 				</group>
 			</list>
@@ -424,7 +424,8 @@
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
@@ -488,9 +489,11 @@
 			<float name="reaction_combat_delay_seconds" value="8" />
 			<group name="suppression">
 				<float name="pin_down_recover_threshold" value="0.2" />
-				<list name="pin_down_activate_actions" />
+				<list name="pin_down_activate_actions">
+				</list>
 				<float name="noncombat_delay" value="1" />
-				<list name="suppressed_activate_actions" />
+				<list name="suppressed_activate_actions">
+				</list>
 				<float name="pin_down_activate_threshold" value="0.3" />
 				<float name="suppressed_activate_threshold" value="0.15" />
 				<float name="suppressed_recover_threshold" value="0.05" />
@@ -585,7 +588,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
-				<instance_reference mod="23d6cdb82724460dbcb21e1a9162e473" name="ability" value="abilities\german\timed_ability\panzer_panther_tiger_ostwind_blitzkrieg_mp" />
+				<instance_reference name="ability" value="abilities\german\timed_ability\panzer_panther_tiger_ostwind_blitzkrieg_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 			</list>
 		</template_reference>
@@ -601,16 +604,20 @@
 							<group name="veterancy_rank">
 								<locstring name="screen_name" value="11050261" />
 								<float name="experience_value" value="1920" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
-								<list name="squad_actions" />
-								<list name="leader_actions" />
+								<list name="squad_actions">
+								</list>
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 							</group>
 							<group name="veterancy_rank">
 								<locstring name="screen_name" value="11050273" />
 								<float name="experience_value" value="3840" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -638,13 +645,15 @@
 										<bool name="retrigger" value="False" />
 									</template_reference>
 								</list>
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 							</group>
 							<group name="veterancy_rank">
 								<locstring name="screen_name" value="11050275" />
 								<float name="experience_value" value="7680" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<bool name="single_player_only" value="False" />
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -664,7 +673,8 @@
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<bool name="hide_ingame_veterancy_art" value="False" />
 							</group>
 						</list>
@@ -673,7 +683,8 @@
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
-			<list name="modifiers" />
+			<list name="modifiers">
+			</list>
 			<group name="retreat_building_types">
 				<enum name="unit_type01" value="hq_wreck" />
 				<enum name="unit_type02" value="alternate_retreat_point" />
@@ -681,7 +692,8 @@
 				<enum name="unit_type04" value="" />
 				<enum name="unit_type00" value="hq" />
 			</group>
-			<list name="actions" />
+			<list name="actions">
+			</list>
 			<bool name="withdraw_only" value="True" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
