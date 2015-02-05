@@ -1,0 +1,12 @@
+<instance description="Win 25 games having killed twice as many units as were lost" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036387" />
+		<locstring name="description" value="11036386" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_83" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="40" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_83" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="195" />
+</instance>

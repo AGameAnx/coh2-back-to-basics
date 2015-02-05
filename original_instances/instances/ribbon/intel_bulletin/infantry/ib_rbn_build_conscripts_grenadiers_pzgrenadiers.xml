@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the Infantry class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11034442" />
+		<locstring name="description" value="11049844" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_6" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3095" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_6" />
+		<instance_reference name="achievement" value="achievement\infantry\build_conscripts_grenadiers_pzgrenadiers" />
+	</group>
+	<uniqueid name="pbgid" value="139" />
+</instance>

@@ -1,0 +1,12 @@
+<instance description="Complete the Kalach Pincer scenario" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11052971" />
+		<locstring name="description" value="11052974" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_kharkovpincer_hard" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2302" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_kharkovpincer_hard" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2208" />
+</instance>

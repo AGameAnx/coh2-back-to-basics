@@ -1,0 +1,67 @@
+<instance description="" template="ribbon_group">
+	<group name="ribbon_group_bag">
+		<locstring name="ui_name" value="11052835" />
+		<int name="ui_position" value="5" />
+		<list name="subgroups">
+			<group name="subgroup">
+				<locstring name="ui_name" value="11052896" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc2\tow_dlc2_completion_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\tow_dlc2_completion_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\tow_dlc2_completion_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11051029" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc2\scenarios\tow_sc_kalach_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\scenarios\tow_sc_kalach_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\scenarios\tow_sc_kalach_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11052237" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc2\challenges\tow_ch_airfield_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\challenges\tow_ch_airfield_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\challenges\tow_ch_airfield_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11051588" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc2\challenges\tow_ch_bridge_defense_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\challenges\tow_ch_bridge_defense_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\challenges\tow_ch_bridge_defense_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11052590" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_resistance_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_resistance_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_resistance_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11052593" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_terek_lines_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_terek_lines_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_terek_lines_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11054653" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_victory_at_stalingrad_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_victory_at_stalingrad_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc2\battles\tow_bt_victory_at_stalingrad_hard" />
+				</list>
+			</group>
+		</list>
+		<instance_reference name="tow_operation_hint" value="tow_operation\uranus" />
+		<enum name="scenario_type_hint" value="invalid" />
+	</group>
+	<uniqueid name="pbgid" value="4236" />
+</instance>

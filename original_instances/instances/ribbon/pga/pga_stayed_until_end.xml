@@ -1,0 +1,12 @@
+<instance description="Finish 500 multiplayer games" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036407" />
+		<locstring name="description" value="11036406" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_85" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="70" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_85" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="216" />
+</instance>

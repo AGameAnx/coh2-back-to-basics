@@ -1,0 +1,12 @@
+<instance description="Spend over 1000 fuel in one match" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036335" />
+		<locstring name="description" value="11036334" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_29" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="105" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_29" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="245" />
+</instance>

@@ -1,0 +1,12 @@
+<instance description="Medal granted for completing entire artillery intel bulletin class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036186" />
+		<locstring name="description" value="11036185" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_23" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="915" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_23" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="184" />
+</instance>

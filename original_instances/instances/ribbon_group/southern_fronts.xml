@@ -1,0 +1,101 @@
+<instance description="" template="ribbon_group">
+	<group name="ribbon_group_bag">
+		<locstring name="ui_name" value="11055829" />
+		<int name="ui_position" value="6" />
+		<list name="subgroups">
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055837" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\tow_dlc3_completion_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\tow_dlc3_completion_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\tow_dlc3_completion_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055838" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\challenges\tow_ch_occupation_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\challenges\tow_ch_occupation_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\challenges\tow_ch_occupation_hard" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\challenges\tow_ch_occupation_bonus" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055839" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\challenges\tow_ch_spring_rasputitsa_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\challenges\tow_ch_spring_rasputitsa_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\challenges\tow_ch_spring_rasputitsa_hard" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\challenges\tow_ch_spring_rasputitsa_bonus" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055840" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_general_mud_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_general_mud_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_general_mud_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055841" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_kharkov_divide_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_kharkov_divide_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_kharkov_divide_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055842" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_panzer_crossing_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_panzer_crossing_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_panzer_crossing_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055843" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_storming_the_donets_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_storming_the_donets_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_storming_the_donets_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055844" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_breaking_lines_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_breaking_lines_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_breaking_lines_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11056044" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_heavy_rain_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_heavy_rain_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_heavy_rain_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11056045" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_no_retreat_no_surrender_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_no_retreat_no_surrender_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_no_retreat_no_surrender_hard" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11055708" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_retreat_to_the_donets_easy" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_retreat_to_the_donets_medium" />
+					<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_retreat_to_the_donets_hard" />
+				</list>
+			</group>
+		</list>
+		<instance_reference name="tow_operation_hint" value="tow_operation\mud_season" />
+		<enum name="scenario_type_hint" value="invalid" />
+	</group>
+	<uniqueid name="pbgid" value="14396" />
+</instance>

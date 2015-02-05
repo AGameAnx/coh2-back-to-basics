@@ -1,0 +1,12 @@
+<instance description="Complete the Tiger Ace challenge" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11052923" />
+		<locstring name="description" value="11052922" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_tigerace_easy" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2203" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_tigerace_easy" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2186" />
+</instance>

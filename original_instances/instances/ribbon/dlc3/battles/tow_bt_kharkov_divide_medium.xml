@@ -1,0 +1,12 @@
+<instance description="Complete Kharkov Divide Battle" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11055777" />
+		<locstring name="description" value="11055776" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_tow_sf_kharkov_divide_captain" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2110" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_tow_sf_kharkov_divide_captain" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="14366" />
+</instance>

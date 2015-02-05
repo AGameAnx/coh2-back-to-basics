@@ -1,0 +1,12 @@
+<instance description="Win a skirmish versus three AIs" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036365" />
+		<locstring name="description" value="11036364" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_35" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="53" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_35" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="261" />
+</instance>

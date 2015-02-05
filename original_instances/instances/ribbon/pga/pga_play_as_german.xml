@@ -1,0 +1,12 @@
+<instance description="Play 500 games as Germans" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036405" />
+		<locstring name="description" value="11036404" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_38" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="69" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_38" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="207" />
+</instance>

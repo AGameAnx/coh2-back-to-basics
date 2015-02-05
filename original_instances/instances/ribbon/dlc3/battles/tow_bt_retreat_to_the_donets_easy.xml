@@ -1,0 +1,12 @@
+<instance description="Complete Retreat to the Donets Battle" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11055798" />
+		<locstring name="description" value="11055799" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_tow_sf_retreat_to_the_donets_conscript" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2118" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_tow_sf_retreat_to_the_donets_conscript" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="14379" />
+</instance>

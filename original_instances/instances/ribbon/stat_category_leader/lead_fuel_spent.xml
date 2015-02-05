@@ -1,0 +1,12 @@
+<instance description="Spend the most fuel in a multiplayer match" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036514" />
+		<locstring name="description" value="11036513" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_60" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="0" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_60" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="267" />
+</instance>

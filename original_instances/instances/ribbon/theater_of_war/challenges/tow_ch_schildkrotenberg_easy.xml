@@ -1,0 +1,12 @@
+<instance description="Complete the Defense of Schildkrotenberg challenge" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036583" />
+		<locstring name="description" value="11036582" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_defense_of_schildkrotenberg_easy" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2212" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_74" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="343" />
+</instance>

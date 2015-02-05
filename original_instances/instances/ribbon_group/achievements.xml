@@ -1,0 +1,186 @@
+<instance description="" template="ribbon_group">
+	<group name="ribbon_group_bag">
+		<locstring name="ui_name" value="11073166" />
+		<int name="ui_position" value="2" />
+		<list name="subgroups">
+			<group name="subgroup">
+				<locstring name="ui_name" value="11052896" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_infantry" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_hmg" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_mortar" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_at_gun" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_artillery" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_light_vehicle" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_medium_tank" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_assault_gun" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin_category\ibcat_heavy_tank" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031069" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\conscripts\ib_rbn_ability_molotov_kill_infantry_conscripts" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\conscripts\ib_rbn_ability_oorah_conscripts" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\engineer\ib_rbn_construct_barbedfield_mine_engineer" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\engineer\ib_rbn_upgrade_kill_infantry_engineer" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\gersniper\ib_rbn_squad_kills_gersniper" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\grenadiers\ib_rbn_ability_kill_lightvehicles_grenadiers" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\grenadiers\ib_rbn_kill_heavytank_grenadiers" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\guards\ib_rbn_kill_ostwind_222_vehicles_guards" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\guards\ib_rbn_kill_pzgrenadiers_guards" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\penal\ib_rbn_ability_kill_mortar_penal" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\penal\ib_rbn_upgrade_kill_infantry_penal" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\pioneer\ib_rbn_construct_bunker_pioneer" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\pioneer\ib_rbn_construct_minefield_tellermine_pioneer" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\pzgrenadiers\ib_rbn_squad_kills_pzgrenadiers" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\pzgrenadiers\ib_rbn_vet_kill_conscripts_pzgrenadiers" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\shock\ib_rbn_build_kill_shock" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\shock\ib_rbn_kill_hmg_mortar_shock" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\sovsniper\ib_rbn_kill_hmg_mortar_sovsniper" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\ib_rbn_build_conscripts_grenadiers_pzgrenadiers" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\ib_rbn_build_shock_guard_penal" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\grenadiers\ib_rbn_kill_infantry_assault_grenadiers" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\ostruppen\ib_rbn_deploy_ostruppen" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\grenadiers\ib_rbn_deploy_partisans" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\partisans\ib_rbn_kill_vehicle_partisans" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\infantry\irregulars\ib_rbn_kill_infantry_irregulars" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031070" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\maxim\ib_rbn_kill_hmg_grenadier_maxim" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\maxim\ib_rbn_kill_infantry_maxim" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\maxim\ib_rbn_squad_kills_maxim" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\mg42\ib_rbn_ability_kill_lightvehicles_mg42" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\mg42\ib_rbn_kill_maxim_conscripts_mg42" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\mg42\ib_rbn_vet_mg42" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\ib_rbn_build_maxim_mg42" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\ib_rbn_kill_infantry_hmg" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\ib_rbn_kill_lightvehicle_hmg" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\hmgs\dshk\ib_rbn_kill_vehicles_dshk" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031066" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\120mm\ib_rbn_build_kill_infantry_120mm" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\120mm\ib_rbn_vet_kill_buildings_120mm" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\81mm\ib_rbn_kill_infantry_81mm" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\81mm\ib_rbn_kill_mortars_81mm" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\81mm\ib_rbn_squad_kills_81mm" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\82mm\ib_rbn_build_ability_barrage_82mm" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\82mm\ib_rbn_kill_222_82mm" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\82mm\ib_rbn_vet_82mm" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\mortars\ib_rbn_build_81mm_82mm_120mm" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031072" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\at-guns\pak40\ib_rbn_build_kill_mediumtank_pak40" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\at-guns\pak40\ib_rbn_kill_lightvehicles_pak40" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\at-guns\pak43\ib_rbn_build_kill_is2_pak43" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\at-guns\pak43\ib_rbn_vet_pak43" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\at-guns\zis3\ib_rbn_ability_he_rounds_zis3" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\at-guns\zis3\ib_rbn_kill_medtank_zis3" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\at-guns\ib_rbn_build_pak40_pak43_zis3" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\at-guns\m-42\ib_rbn_kill_tigers_m42" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031074" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\fh18\ib_rbn_kill_mortar_hmg_fh18" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\fh18\ib_rbn_kill_vehicles_fh18" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\katyusha\ib_rbn_ability_squad_kills_katyusha" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\katyusha\ib_rbn_kill_building_infantry_katyusha" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\ml20\ib_rbn_kill_elefant_ml20" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\ml20\ib_rbn_kill_fh18_ml20" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\ml20\ib_rbn_kill_infantry_ml20" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\panzerwerfer\ib_rbn_ability_panzerwerfer" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\panzerwerfer\ib_rbn_kill_infantry_panzerwerfer" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\ib_rbn_build_katyusha_panzerwerfer" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\ib_rbn_build_ml20_fh18" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\artillery\b4\ib_rbn_kill_vehicles_b4" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031068" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\222\ib_rbn_kill_hmg_mortar_222" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\222\ib_rbn_kill_sniper_222" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\250mortarht\ib_rbn_ability_x3_mortarht" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\251_halftrack\ib_rbn_upgrade_flammenwerfer_251halftrack" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\m3a1\ib_rbn_squad_kills_m3a1" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\m5_halftrack\ib_rbn_kill_infantry_m5" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\m5_halftrack\ib_rbn_upgrade_m17quad_m5" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\t70\ib_rbn_kill_atguns_t70" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\t70\ib_rbn_kill_lightvehicle_t70" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\ib_rbn_build_m5_251" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\ib_rbn_build_t70_222_m3a1" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\m3a1\ib_rbn_vet_m3a1" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\light_vehicles\250ht\ib_rbn_deploy_mechanized_group" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031067" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\ostwind\ib_rbn_kill_hmg_mortar_ostwind" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\ostwind\ib_rbn_kill_lightvehicles_ostwind" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\panther\ib_rbn_kill_katyusha_panther" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\panther\ib_rbn_kill_medtank_heavytank_panther" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\panther\ib_rbn_vet_kill_t70_panther" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\panzeriv\ib_rbn_build_vet_panzeriv" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\panzeriv\ib_rbn_kill_t34_panzeriv" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\panzeriv\ib_rbn_kill_t70_panzeriv" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\t-34_76\ib_rbn_ability_t3476" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\t-34_76\ib_rbn_kill_infantry_vehicles_t3476" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\t-34_85\ib_rbn_build_kill_heavytank_t3485" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\ib_rbn_build_panther_t3485" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\medium_tanks\ib_rbn_build_t3476_panzeriv_ostwind" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031073" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\brummbar\ib_rbn_kill_conscripts_infantry_brummbar" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\brummbar\ib_rbn_vet_squad_kills_brummbar" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\isu152\ib_rbn_kill_buildings_vehicles_isu152" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\isu152\ib_rbn_kill_panther_tiger_isu152" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\stug\ib_rbn_build_kill_vehicles_stug" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\stug\ib_rbn_kill_t3476_stug" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\su76\ib_rbn_ability_kill_vehicles_su76" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\su76\ib_rbn_vet_kill_medtank_su76" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\su85\ib_rbn_kill_heavytank_su85" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\ib_rbn_build_brummbar_isu152_su85" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\ib_rbn_build_su75_stug" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\assault_guns\stug\ib_rbn_kill_infantry_stuge" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="11031071" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\elefant\ib_rbn_kill_heavytank_elefant" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\elefant\ib_rbn_kill_t3476_elefant" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\elefant\ib_rbn_squad_kills_elefant" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\is-2\ib_rbn_build_vet_is2" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\is-2\ib_rbn_kill_infantry_vehicles_is2" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\is-2\ib_rbn_kill_tiger_is2" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\kv-8\ib_rbn_vet_kill_infantry_kv8" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\tiger\ib_rbn_kill_is2_tiger" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\tiger\ib_rbn_kill_t3476_kv1_tiger" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\tiger\ib_rbn_squad_kills_tiger" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\ib_rbn_build_tiger_is2_elefant" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\kv-1\ib_rbn_vet_kv1" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\kv-2\ib_rbn_kill_100_kv2" />
+					<instance_reference name="ribbon" value="ribbon\intel_bulletin\heavy_tanks\ib_rbn_kill_200_tigerace" />
+				</list>
+			</group>
+		</list>
+		<instance_reference name="tow_operation_hint" value="" />
+		<enum name="scenario_type_hint" value="invalid" />
+	</group>
+	<uniqueid name="pbgid" value="3" />
+</instance>

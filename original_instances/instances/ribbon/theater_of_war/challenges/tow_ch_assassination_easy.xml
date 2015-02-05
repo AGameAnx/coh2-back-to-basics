@@ -1,0 +1,12 @@
+<instance description="Complete the Officer Assassination challenge" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036581" />
+		<locstring name="description" value="11036580" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_officer_assassination_easy" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2200" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_73" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="311" />
+</instance>

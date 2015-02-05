@@ -1,0 +1,12 @@
+<instance description="Complete the battle of Rostov" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11049746" />
+		<locstring name="description" value="11049747" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_faceoff_at_rostov_hard" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2309" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_79_hard" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="366" />
+</instance>

@@ -1,0 +1,12 @@
+<instance description="Complete the Blitzkrieg challenge" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11049718" />
+		<locstring name="description" value="11049719" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_blitzkrieg_hard" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2205" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_72_hard" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="333" />
+</instance>

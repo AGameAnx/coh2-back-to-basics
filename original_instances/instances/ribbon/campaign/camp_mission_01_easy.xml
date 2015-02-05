@@ -1,0 +1,12 @@
+<instance description="Complete Campaign Mission 01&#xD;&#xA;" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036524" />
+		<locstring name="description" value="11036523" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_m01_easy" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="1004" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_1" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="38" />
+</instance>

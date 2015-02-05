@@ -1,0 +1,17 @@
+<instance description="" template="post_game_achievement">
+	<group name="post_game_achievement_bag">
+		<list name="achievement_list">
+			<group name="achievement">
+				<int name="number_of_completions" value="1" />
+				<int name="bonus_xp" value="225" />
+				<string name="steam_achievement_id" value="tow_bt_kharkov_divide_hard" />
+				<instance_reference name="ribbon" value="ribbon\dlc3\battles\tow_bt_kharkov_divide_hard" />
+				<uniqueid name="server_id" value="70961" />
+			</group>
+		</list>
+		<int name="xp_per_completion" value="0" />
+		<string name="steam_stat_name" value="" />
+		<instance_reference name="ribbon_per_completion" value="" />
+	</group>
+	<uniqueid name="pbgid" value="14398" />
+</instance>

@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the Artillery class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11034349" />
+		<locstring name="description" value="11049908" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_1" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3410" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_1" />
+		<instance_reference name="achievement" value="achievement\artillery\katyusha\kill_building_infantry_katyusha" />
+	</group>
+	<uniqueid name="pbgid" value="86" />
+</instance>
