@@ -1,0 +1,14 @@
+<instance description="Sample tip for some scenario." template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11007827" />
+		<string name="icon" value="Icons_tooltips_loadtip_m10_pzwerfer" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="any" />
+		<list name="scenario_names">
+			<string name="name" value="lublin" />
+		</list>
+		<list name="required_races">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="103" />
+</instance>

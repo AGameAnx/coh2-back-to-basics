@@ -1,0 +1,17 @@
+<instance description="" template="load_tip_group">
+	<group name="load_tip_group_bag">
+		<locstring name="name" value="11049498" />
+		<list name="tips">
+			<instance_reference name="tip" value="load_tips\gameplay\combined_arms_tip_01" />
+			<instance_reference name="tip" value="load_tips\gameplay\combined_arms_tip_02" />
+			<instance_reference name="tip" value="load_tips\gameplay\combined_arms_tip_03" />
+			<instance_reference name="tip" value="load_tips\gameplay\combined_arms_tip_04" />
+			<instance_reference name="tip" value="load_tips\gameplay\hard_counters_tip_01" />
+			<instance_reference name="tip" value="load_tips\gameplay\hard_counters_tip_02" />
+			<instance_reference name="tip" value="load_tips\gameplay\hard_counters_tip_03" />
+			<instance_reference name="tip" value="load_tips\gameplay\commanders_tip_01" />
+			<instance_reference name="tip" value="load_tips\gameplay\commanders_tip_02" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1" />
+</instance>

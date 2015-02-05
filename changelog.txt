@@ -1,5 +1,55 @@
 =================================================================
-## v0.18
+## v0.19
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- All barbed wire target size increased 1 -> 7 (easier to target fire with ballistic weapons)
+
+Soviet:
+- M3A1 halftrack hitpoints reduced 240 -> 230
+- 120mm mortar reworked:
+ * Autofire reload duration increased 5.2-5.2 -> 5.8-6.2
+ * Autofire max range 80 -> 75
+ * Barrage max range 100 -> 90
+- Shocktroopers reworked:
+ * Far accuracy 0.05 -> 0.09
+ * Mid accuracy 0.2 -> 0.35
+ * Near accuracy 0.92 -> 0.75
+ * Far range 33 -> 36
+ * Mid range 16 -> 22
+ * Near range 10 -> 7
+- Conscript PPSH-41 reworked:
+ * Mid accuracy 0.17 -> 0.25
+ * Near accuracy 0.61 -> 0.56
+ * Far range 33 -> 36
+ * Mid range 16 -> 22
+ * Near range 10 -> 7
+
+USF:
+- Riflemen population cost increased 7 -> 8
+- BAR automatic rifle mid accuracy increased 0.42 -> 0.48
+- Captain thompson damage increased 7 -> 9
+- Captain thompson mid accuracy increased 0.13 -> 0.17
+
+Ostheer:
+- Assault grenadier damage increased 6 -> 8
+- Assault grenadier near accuracy reduced 0.74 -> 0.66
+- Panzergrenadier near accuracy reduced 0.68 -> 0.62
+- Panzergrenadier far accuracy reduced 0.22 -> 0.19
+- Sdkfz 251 halftrack reinforce radius reduced 20 -> 15
+- GRW34 mortar autofire reload duration increased 2.4-2.4 -> 2.8-3.4
+
+OKW:
+- Sturmpioneers can now construct fuel and ammo caches
+- SWS halftrack initial delay increased 50s -> 60s
+- Delay between SWS halftrack reduced 200s -> 180s
+
+
+=================================================================
+## v0.18 (full changelog)
 =================================================================
 
 -----------------------------------------------------------------

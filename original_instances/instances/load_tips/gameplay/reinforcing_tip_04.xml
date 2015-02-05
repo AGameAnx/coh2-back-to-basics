@@ -1,0 +1,14 @@
+<instance description="" template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11045576" />
+		<string name="icon" value="Icons_tooltips_reinforce_4" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="any" />
+		<list name="scenario_names">
+		</list>
+		<list name="required_races">
+			<instance_reference name="required_race" value="racebps\soviet" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="117" />
+</instance>

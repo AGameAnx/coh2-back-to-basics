@@ -27,8 +27,8 @@
 			<list name="on_reload_actions">
 			</list>
 			<group name="duration">
-				<float name="min" value="5.2" />
-				<float name="max" value="5.2" />
+				<float name="min" value="5.8" />
+				<float name="max" value="6.2" />
 			</group>
 			<group name="frequency">
 				<float name="min" value="0" />
@@ -68,7 +68,7 @@
 				<float name="near" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
-			<float name="max" value="80" />
+			<float name="max" value="75" />
 		</group>
 		<string name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />

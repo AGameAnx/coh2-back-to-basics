@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<group name="weapon_bag">
 		<float name="fx_delay_in_building" value="0" />
 		<locstring name="ui_name" value="0" />
@@ -19,7 +19,8 @@
 		</group>
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="False" />
 		</group>
 		<float name="flinch_radius" value="0" />
@@ -42,12 +43,13 @@
 		<group name="accuracy">
 			<float name="far" value="0.19" />
 			<float name="near" value="0.88" />
-			<float name="mid" value="0.42" />
+			<float name="mid" value="0.48" />
 		</group>
 		<string name="fx_action_target_name" value="rifle_bar_target" />
 		<group name="fire">
 			<float name="wind_up" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 		</group>
 		<string name="icon_name" value="" />
@@ -186,7 +188,8 @@
 				<float name="max" value="3.3" />
 				<float name="min" value="3.3" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
 				<float name="near" value="1" />
@@ -213,7 +216,8 @@
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="damage">
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="min" value="12" />
 			<float name="max" value="12" />
 		</group>

@@ -385,7 +385,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="5" />
-					<instance_reference name="type" value="ebps\races\west_german\soldiers\volksgrenadier\volksgrenadier_mp" />
+					<instance_reference name="type" value="ebps\races\west_german\soldiers\volksgrenadier\volksgrenadier_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />

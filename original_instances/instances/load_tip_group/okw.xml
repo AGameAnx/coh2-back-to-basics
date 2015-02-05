@@ -1,0 +1,27 @@
+<instance description="" template="load_tip_group">
+	<group name="load_tip_group_bag">
+		<locstring name="name" value="11074698" />
+		<list name="tips">
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_01" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_02" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_03" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_04" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_05" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_06" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_07" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_08" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_09" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_10" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_11" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_12" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_13" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_14" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_15" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_16" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_17" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_18" />
+			<instance_reference name="tip" value="load_tips\okw_loadtips\okw_load_tip_19" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17245" />
+</instance>

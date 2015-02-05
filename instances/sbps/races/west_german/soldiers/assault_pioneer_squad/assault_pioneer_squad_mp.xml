@@ -1086,6 +1086,14 @@
 							<instance_reference name="ebp" value="ebps\races\west_german\team_weapons\at_gun\pak43_88mm_at_gun_westgerman_mp" />
 							<int name="ui_position" value="0" />
 						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\observation_post\fuel_post_german_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<int name="ui_position" value="21" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\observation_post\munition_post_german_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<int name="ui_position" value="22" />
+						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_engineer_basic" />
 				</group>
