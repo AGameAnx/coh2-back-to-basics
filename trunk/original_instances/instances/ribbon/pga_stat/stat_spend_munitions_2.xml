@@ -1,0 +1,12 @@
+<instance description="Spend over 2000 munitions in one match" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036333" />
+		<locstring name="description" value="11036332" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_28" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="102" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_28" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="248" />
+</instance>

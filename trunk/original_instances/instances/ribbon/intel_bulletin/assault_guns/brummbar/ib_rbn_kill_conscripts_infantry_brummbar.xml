@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the Assault Gun class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11034274" />
+		<locstring name="description" value="11049900" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_2" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3600" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_2" />
+		<instance_reference name="achievement" value="achievement\assault_guns\brummbar\kill_conscripts_infantry_brummbar" />
+	</group>
+	<uniqueid name="pbgid" value="92" />
+</instance>

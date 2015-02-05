@@ -1,0 +1,12 @@
+<instance description="Win an Annihilate game" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036230" />
+		<locstring name="description" value="11036231" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_13" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="82" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_13" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="232" />
+</instance>

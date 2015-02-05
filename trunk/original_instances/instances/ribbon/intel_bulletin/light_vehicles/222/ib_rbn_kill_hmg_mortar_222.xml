@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the Light Vehicle class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11034239" />
+		<locstring name="description" value="11049842" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_7" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3400" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_7" />
+		<instance_reference name="achievement" value="achievement\light_vehicles\222\kill_hmg_mortar_222" />
+	</group>
+	<uniqueid name="pbgid" value="150" />
+</instance>

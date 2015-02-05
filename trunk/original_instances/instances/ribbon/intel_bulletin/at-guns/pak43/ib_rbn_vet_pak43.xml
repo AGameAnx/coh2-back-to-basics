@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the AT Gun class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11034251" />
+		<locstring name="description" value="11049886" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_3" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3310" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_3" />
+		<instance_reference name="achievement" value="achievement\at-guns\pak43\vet_pak43" />
+	</group>
+	<uniqueid name="pbgid" value="107" />
+</instance>

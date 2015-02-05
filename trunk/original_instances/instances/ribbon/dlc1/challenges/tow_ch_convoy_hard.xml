@@ -1,0 +1,12 @@
+<instance description="Complete the Convoy challenge" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11052929" />
+		<locstring name="description" value="11052928" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_convoy_hard" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2202" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_convoy_hard" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2184" />
+</instance>

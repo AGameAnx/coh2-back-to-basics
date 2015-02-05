@@ -1,0 +1,123 @@
+<instance description="" template="ribbon_group">
+	<group name="ribbon_group_bag">
+		<locstring name="ui_name" value="11038003" />
+		<int name="ui_position" value="1" />
+		<list name="subgroups">
+			<group name="subgroup">
+				<locstring name="ui_name" value="11052896" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\mp_ranked_played" />
+					<instance_reference name="ribbon" value="ribbon\mp_compstomp_played" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="0" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\pga\pga_vp_total_victory" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_vp_overwhelming_victory" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_vp_challenging_victory" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_vp_heartbreaking_loss" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_2to1_kd_ratio" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_win_vs_1_ai" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_win_vs_2_ai" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_win_vs_3_ai" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_win_vs_4_ai" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_play_as_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_play_as_german" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_stayed_until_end" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_vp_game_won" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_vp_game_played" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_annihilate_game_won" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_annihilate_game_played" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_spend_munitions_1" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_spend_munitions_2" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_spend_munitions_3" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_spend_fuel_1" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_spend_fuel_2" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_spend_fuel_3" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_spend_everything" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_lose_3x_win_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_longgame_vs_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_capture_tanks_weps" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_build_bunkers_german" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_2x_losses_suffered_win" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_infantry_spec_german" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_armour_spec_german" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_teamwep_spec_german" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_infantry_spec_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_armour_spec_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga\pga_teamwep_spec_soviet" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="0" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_buildings_built" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_buildings_destroyed" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_buildings_lost" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_fuel_collected" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_fuel_spent" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_infantry_casualties" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_infantry_killed" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_infantry_produced" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_infantry_veterancy" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_manpower_collected" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_manpower_spent" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_munitions_collected" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_munitions_spent" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_territories_captured" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_territories_lost" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_territories_seized" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_total_resources_collected" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_total_resources_spent" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_vehicles_destroyed" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_vehicles_lost" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_vehicles_produced" />
+					<instance_reference name="ribbon" value="ribbon\stat_category_leader\lead_vehicle_veterancy" />
+				</list>
+			</group>
+			<group name="subgroup">
+				<locstring name="ui_name" value="0" />
+				<list name="ribbons">
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_vp_total_victory" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_vp_overwhelming_victory" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_vp_challenging_victory" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_vp_heartbreaking_loss" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_2to1_kd_ratio" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_win_vs_1_ai" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_win_vs_2_ai" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_win_vs_3_ai" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_win_vs_4_ai" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_play_as_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_play_as_german" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_stayed_until_end" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_vp_game_won" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_vp_game_played" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_annihilate_game_won" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_annihilate_game_played" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_spend_munitions_1" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_spend_munitions_2" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_spend_munitions_3" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_spend_fuel_1" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_spend_fuel_2" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_spend_fuel_3" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_spend_everything" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_longgame_vs_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_capture_tanks_weps" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_build_bunkers_german" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_2x_losses_suffered_win" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_lose_3x_win_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_infantry_spec_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_armour_spec_german" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_teamwep_spec_german" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_infantry_spec_german" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_armour_spec_soviet" />
+					<instance_reference name="ribbon" value="ribbon\pga_stat\stat_teamwep_spec_soviet" />
+				</list>
+			</group>
+		</list>
+		<instance_reference name="tow_operation_hint" value="" />
+		<enum name="scenario_type_hint" value="multiplayer" />
+	</group>
+	<uniqueid name="pbgid" value="4" />
+</instance>

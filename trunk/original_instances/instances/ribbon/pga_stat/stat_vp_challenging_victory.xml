@@ -1,0 +1,12 @@
+<instance description="Win a Victory Point game with a 100 or less point lead" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036299" />
+		<locstring name="description" value="11036298" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_15" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="2" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_15" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="253" />
+</instance>

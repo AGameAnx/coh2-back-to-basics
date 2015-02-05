@@ -1,0 +1,12 @@
+<instance description="Complete the Ice challenge" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11049732" />
+		<locstring name="description" value="11049733" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_winter_defense_medium" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2216" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_76_med" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="348" />
+</instance>

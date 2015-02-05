@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the Heavy Tank class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11034217" />
+		<locstring name="description" value="11049877" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_4" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3710" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_4" />
+		<instance_reference name="achievement" value="achievement\heavy_tanks\is-2\kill_tiger_is2" />
+	</group>
+	<uniqueid name="pbgid" value="116" />
+</instance>

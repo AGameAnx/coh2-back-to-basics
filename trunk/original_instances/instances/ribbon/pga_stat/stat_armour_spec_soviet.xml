@@ -1,0 +1,12 @@
+<instance description="Win a game with Soviet tanks receiving the most kills" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11036313" />
+		<locstring name="description" value="11036312" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_20" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="232" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_20" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="234" />
+</instance>

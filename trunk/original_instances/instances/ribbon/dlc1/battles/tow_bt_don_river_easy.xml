@@ -1,0 +1,12 @@
+<instance description="Complete Don River Battle" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11052933" />
+		<locstring name="description" value="11052932" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_donriver_easy" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2100" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_donriver_easy" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2177" />
+</instance>

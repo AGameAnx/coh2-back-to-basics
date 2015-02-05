@@ -1,0 +1,10 @@
+<instance description="" template="post_game_achievement">
+	<group name="post_game_achievement_bag">
+		<list name="achievement_list">
+		</list>
+		<int name="xp_per_completion" value="0" />
+		<string name="steam_stat_name" value="mp_win_compstomp" />
+		<instance_reference name="ribbon_per_completion" value="" />
+	</group>
+	<uniqueid name="pbgid" value="56" />
+</instance>

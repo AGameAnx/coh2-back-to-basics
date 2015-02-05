@@ -1,0 +1,12 @@
+<instance description="Complete Terek Lines Battle" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11052993" />
+		<locstring name="description" value="11052999" />
+		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_winterstorm_hard" />
+		<bool name="is_medal" value="True" />
+		<int name="priority" value="2105" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_winterstorm_hard" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2199" />
+</instance>

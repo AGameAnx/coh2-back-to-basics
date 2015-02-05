@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the Assault Gun class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11054871" />
+		<locstring name="description" value="11054868" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_117" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3620" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_117" />
+		<instance_reference name="achievement" value="achievement\assault_guns\stug\kill_200_units_stuge" />
+	</group>
+	<uniqueid name="pbgid" value="4356" />
+</instance>

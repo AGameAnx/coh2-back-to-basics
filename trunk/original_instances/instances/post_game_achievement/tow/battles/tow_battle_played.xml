@@ -1,0 +1,45 @@
+<instance description="" template="post_game_achievement">
+	<group name="post_game_achievement_bag">
+		<list name="achievement_list">
+			<group name="achievement">
+				<int name="number_of_completions" value="1" />
+				<int name="bonus_xp" value="0" />
+				<string name="steam_achievement_id" value="count_tow_bt_1" />
+				<instance_reference name="ribbon" value="" />
+				<uniqueid name="server_id" value="6711" />
+			</group>
+			<group name="achievement">
+				<int name="number_of_completions" value="3" />
+				<int name="bonus_xp" value="0" />
+				<string name="steam_achievement_id" value="count_tow_bt_3" />
+				<instance_reference name="ribbon" value="" />
+				<uniqueid name="server_id" value="6712" />
+			</group>
+			<group name="achievement">
+				<int name="number_of_completions" value="10" />
+				<int name="bonus_xp" value="0" />
+				<string name="steam_achievement_id" value="count_tow_bt_10" />
+				<instance_reference name="ribbon" value="" />
+				<uniqueid name="server_id" value="6713" />
+			</group>
+			<group name="achievement">
+				<int name="number_of_completions" value="25" />
+				<int name="bonus_xp" value="0" />
+				<string name="steam_achievement_id" value="count_tow_bt_25" />
+				<instance_reference name="ribbon" value="" />
+				<uniqueid name="server_id" value="6714" />
+			</group>
+			<group name="achievement">
+				<int name="number_of_completions" value="100" />
+				<int name="bonus_xp" value="0" />
+				<string name="steam_achievement_id" value="count_tow_bt_100" />
+				<instance_reference name="ribbon" value="" />
+				<uniqueid name="server_id" value="6715" />
+			</group>
+		</list>
+		<int name="xp_per_completion" value="25" />
+		<string name="steam_stat_name" value="tow_battle_played" />
+		<instance_reference name="ribbon_per_completion" value="ribbon\theater_of_war\battles\tow_bt_played" />
+	</group>
+	<uniqueid name="pbgid" value="103" />
+</instance>

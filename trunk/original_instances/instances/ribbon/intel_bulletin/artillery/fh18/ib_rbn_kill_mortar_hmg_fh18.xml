@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the Artillery class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11034257" />
+		<locstring name="description" value="11049911" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_1" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3400" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_1" />
+		<instance_reference name="achievement" value="achievement\artillery\fh18\kill_mortar_hmg_fh18" />
+	</group>
+	<uniqueid name="pbgid" value="81" />
+</instance>

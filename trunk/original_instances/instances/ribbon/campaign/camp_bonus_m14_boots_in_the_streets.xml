@@ -1,0 +1,12 @@
+<instance description="" template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11048071" />
+		<locstring name="description" value="11048072" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_95" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="1035" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_95" />
+		<instance_reference name="achievement" value="" />
+	</group>
+	<uniqueid name="pbgid" value="33" />
+</instance>

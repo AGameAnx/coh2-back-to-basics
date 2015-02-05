@@ -1,0 +1,12 @@
+<instance description="Ribbon for intel bulletins in the Mortar class." template="ribbon">
+	<group name="ribbon_bag">
+		<locstring name="name" value="11034291" />
+		<locstring name="description" value="11049817" />
+		<string name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_9" />
+		<bool name="is_medal" value="False" />
+		<int name="priority" value="3200" />
+		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_9" />
+		<instance_reference name="achievement" value="achievement\mortars\120mm\build_kill_infantry_120mm" />
+	</group>
+	<uniqueid name="pbgid" value="175" />
+</instance>
