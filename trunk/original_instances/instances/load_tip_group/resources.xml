@@ -1,0 +1,17 @@
+<instance description="" template="load_tip_group">
+	<group name="load_tip_group_bag">
+		<locstring name="name" value="11049508" />
+		<list name="tips">
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_01" />
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_02" />
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_03" />
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_04" />
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_05" />
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_06" />
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_07" />
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_08" />
+			<instance_reference name="tip" value="load_tips\gameplay\resource_tip_09" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="9" />
+</instance>

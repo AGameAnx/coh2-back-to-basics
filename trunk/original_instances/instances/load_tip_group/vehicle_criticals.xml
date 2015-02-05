@@ -1,0 +1,18 @@
+<instance description="" template="load_tip_group">
+	<group name="load_tip_group_bag">
+		<locstring name="name" value="11049516" />
+		<list name="tips">
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_top_gunner_killed" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_crew_shocked" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_driver_injured" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_main_gun_destroyed" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_heavy_engine_damage" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_immobilized" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_engine_overheated" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_gunner_injured" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_engine_damage" />
+			<instance_reference name="tip" value="load_tips\vehicle_criticals\vehcrit_vision_block" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="17" />
+</instance>

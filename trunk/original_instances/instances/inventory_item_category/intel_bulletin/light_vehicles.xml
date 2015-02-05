@@ -1,0 +1,7 @@
+<instance description="" template="inventory_item_category">
+	<uniqueid name="pbgid" value="89057" />
+	<group name="inventory_item_category_bag">
+		<locstring name="name" value="11031068" />
+		<int name="ui_position" value="5" />
+	</group>
+</instance>

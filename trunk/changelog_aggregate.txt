@@ -34,7 +34,7 @@ General:
 - Increased all tank and antitank ranges by 10%
 - Tank and antitank weapon distance profile doesn't fall off linearly anymore, mid range falls off faster
 - Slightly increases tank accuracy on all ranges
-- All vehicles now have fuel upkeep based on their initial fuel and population costs
+- All vehicles now have fuel upkeep based on their initial fuel and population costs (fuelCost / 650 * math.max(1, pop*1.35-4) per minute)
 - All tank and anti-tank weapons will now take longer to aim with range
  * AT weaponry 1 (0.125s) / 1 (0.125s) / 1 (0.125s) -> 1 (0.125s) / 3 (0.375s) / 7 (0.875s)
  * Tank weaponry 1 (0.125s) / 1 (0.125s) / 1 (0.125s) -> 1 (0.125s) / 5 (0.625s) / 12 (1.5s)

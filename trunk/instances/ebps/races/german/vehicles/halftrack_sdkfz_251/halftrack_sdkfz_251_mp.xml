@@ -1098,7 +1098,7 @@
 			<bool name="animated_spawning" value="False" />
 			<float name="animated_spawning_seconds" value="0" />
 			<bool name="must_be_in_supply" value="False" />
-			<float name="reinforce_radius" value="20" />
+			<float name="reinforce_radius" value="15" />
 			<bool name="spawn_at_map_entry_point" value="False" />
 			<list name="spawn_items">
 			</list>

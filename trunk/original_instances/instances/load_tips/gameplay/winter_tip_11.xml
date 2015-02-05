@@ -1,0 +1,13 @@
+<instance description="" template="load_tips">
+	<group name="tip">
+		<locstring name="loadtip" value="11042884" />
+		<string name="icon" value="Icons_tooltips_deep_snow_destruction" />
+		<enum name="tip_type" value="generic" />
+		<enum name="tip_season_type" value="winter" />
+		<list name="scenario_names">
+		</list>
+		<list name="required_races">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="251" />
+</instance>

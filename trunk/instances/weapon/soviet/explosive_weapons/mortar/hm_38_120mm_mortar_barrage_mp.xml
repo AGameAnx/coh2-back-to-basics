@@ -68,7 +68,7 @@
 				<float name="near" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
-			<float name="max" value="100" />
+			<float name="max" value="90" />
 		</group>
 		<string name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />

@@ -640,7 +640,7 @@
 							<int name="ui_position" value="14" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\barbed_wire_fence_mp" />
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\barbed_wire_fence_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="12" />
 						</group>
 					</list>

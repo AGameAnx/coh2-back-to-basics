@@ -25,11 +25,11 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\interval_action">
-							<float name="interval_second" value="200" />
+							<float name="interval_second" value="180" />
 							<uniqueid name="id" value="1073742880" />
 							<list name="interval_subactions">
 								<group name="interval_subaction_group">
-									<float name="trigger_time_second" value="200" />
+									<float name="trigger_time_second" value="180" />
 									<list name="actions">
 										<template_reference name="action" value="action\set_start_position_target_action">
 											<uniqueid name="id" value="1073742881" />
@@ -56,7 +56,7 @@
 									</list>
 								</group>
 								<group name="interval_subaction_group">
-									<float name="trigger_time_second" value="198" />
+									<float name="trigger_time_second" value="178" />
 									<list name="actions">
 										<template_reference name="action" value="action\speech_action">
 											<uniqueid name="id" value="1073742883" />
@@ -102,7 +102,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="50" />
+							<float name="delay" value="60" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />

@@ -1,0 +1,13 @@
+<instance description="" template="load_tip_group">
+	<group name="load_tip_group_bag">
+		<locstring name="name" value="11050793" />
+		<list name="tips">
+			<instance_reference name="tip" value="load_tips\twitchtv\twitch_mute_mic" />
+			<instance_reference name="tip" value="load_tips\twitchtv\twitch_run_ad" />
+			<instance_reference name="tip" value="load_tips\twitchtv\twitch_toggle_broadcasting" />
+			<instance_reference name="tip" value="load_tips\twitchtv\twitch_toggle_view" />
+			<instance_reference name="tip" value="load_tips\twitchtv\twitch_chat" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="14" />
+</instance>

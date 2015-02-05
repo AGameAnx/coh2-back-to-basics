@@ -1,0 +1,19 @@
+<instance description="" template="load_tip_group">
+	<group name="load_tip_group_bag">
+		<locstring name="name" value="11049518" />
+		<list name="tips">
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_01" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_02" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_03" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_04" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_05" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_06" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_07" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_08" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_09" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_10" />
+			<instance_reference name="tip" value="load_tips\gameplay\winter_tip_11" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="18" />
+</instance>
