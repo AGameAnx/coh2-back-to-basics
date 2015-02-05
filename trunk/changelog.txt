@@ -1,4 +1,16 @@
 =================================================================
+## v0.20 (February bug fix patch)
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+- Create casualty critical reenabled
+
+Ostheer:
+- Reverted all previous changes to Panzer IV entity due to a missing animator problem introduced with the patch
+
+
+=================================================================
 ## v0.19
 =================================================================
 
