@@ -1,0 +1,10 @@
+<instance description="" template="weapon_building_damage">
+	<group name="weapon_building_damage_bag">
+		<group name="range_multipliers">
+			<float name="near" value="1" />
+			<float name="mid" value="1" />
+			<float name="far" value="1" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="85932" />
+</instance>
