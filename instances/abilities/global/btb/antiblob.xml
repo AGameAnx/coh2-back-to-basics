@@ -80,7 +80,7 @@
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="3" mod="23d6cdb82724460dbcb21e1a9162e473" />
 								<locstring name="help_text" value="2" mod="23d6cdb82724460dbcb21e1a9162e473" />
-								<string name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_antiblob" />
+								<icon name="icon_name" value="ModIcons_23d6cdb82724460dbcb21e1a9162e473_antiblob" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="1073741970" />
@@ -170,14 +170,14 @@
 		<enum name="ui_targetable_receiver" value="local" />
 		<group name="ui_info">
 			<locstring name="help_text" value="0" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<string name="hotkey_name" value="" />
 			<locstring name="extra_text" value="0" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
 			<string name="overlay_name" value="" />
-			<string name="icon_name" value="" />
+			<icon name="icon_name" value="" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name" value="0" />
 			<bool name="reveal_for_decryption" value="False" />

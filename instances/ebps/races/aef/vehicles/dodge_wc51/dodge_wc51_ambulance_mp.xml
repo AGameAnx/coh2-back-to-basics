@@ -93,7 +93,7 @@
 									<template_reference name="ui_info" value="tables\ui_info">
 										<locstring name="screen_name" value="11075072" />
 										<locstring name="help_text" value="11075077" />
-										<string name="icon_name" value="Icons_odds_reinforce" />
+										<icon name="icon_name" value="Icons_odds_reinforce" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
 									<uniqueid name="id" value="1073742459" />
@@ -151,7 +151,7 @@
 			</list>
 			<float name="armor" value="3" />
 			<float name="rear_armor" value="1.8" />
-			<float name="target_size" value="8" />
+			<float name="target_size" value="4" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -384,7 +384,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11071684" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_ambulance" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_ambulance" />
 			<enum name="kill_type" value="light_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -424,7 +424,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11071571" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_aef_wc51_ambulance_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -443,7 +443,7 @@
 			<locstring name="extra_text_world" value="11071656" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_ambulance_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_aef_wc51_ambulance_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="fx_ui" />
 			<bool name="skin_pack_override" value="False" />
@@ -787,6 +787,7 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="55" />
+			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\marker_ext">
 		</template_reference>

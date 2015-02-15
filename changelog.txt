@@ -1,13 +1,278 @@
 =================================================================
+## v0.26
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- T34/85 population cost reduced 14 -> 13
+- SU-76 penetration increased 110/140/160 -> 130/160/170
+- Katyusha barrage recharge time reduced 110s -> 100s
+
+USF:
+- Defensive stance rework:
+ * 1.3 accuracy multiplier removed
+ * Suppression addition decreased 0.015 -> 0.01
+
+Ostheer:
+- Panzerwerfer barrage cooldown duration reduced 100s -> 90s
+
+OKW:
+- Sturmpioneer vet2 and vet3 bonuses switched
+- Sturmpioneer weapon accuracy rework:
+ * Far distance 37 -> 39 (to match max distance)
+ * Near 0.68 -> 0.63
+- le.IG 18 ISG aoe profile rework:
+ * Max aoe range 5 -> 4
+ * Far aoe range 5 -> 4
+ * Mid aoe range 2.2 -> 2
+ * Near aoe range 0.6 -> 0.55
+ * Base angle scatter 7 -> 7.5
+- Kubelwagen now receives 4 additional range at vet3
+- Kubelwagen veterancy requirements reduced slightly
+- Volksgrenadier weapon and veterancy rework:
+ * The squad no longer has a 15% base accuracy increase like most core infantry does highlighting their support role
+ * The squad's base kar98k weapon has 15% more (16 -> 18, still 5 shots to kill, mostly affects fights cover vs cover & improves synergy with sturmpioneers) damage to offset the performance decrease created by the removal of 15% base accuracy increase
+ * Slight increase in weapon accuracy
+ * Vet 4 and Vet 5 modifiers increased slightly
+ * Squad's veterancy modifiers are once again increased to improve squad's progression into lategame slightly
+- Walking Stuka barrage recharge time reduced 120s -> 110s
+
+
+=================================================================
+## v0.25
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- All formation scales increased by 1.25 times
+- A complete diff pass over attributes to make sure February update changes are all included in the mod:
+ * Counterbarrage buffs
+ * Exploit fixes
+ * USF raketenwerfer camo fix
+ * B4 Direct Fire fix
+ * Jagttiger supporting fire buffs and fixes
+ * Obersoldatten LMG42 prone behavior fixes
+ * Panzer IV further tweaks and fixes to match the new version
+ * More small changes
+
+Soviet:
+- Mechanized Armor Kampaneya cost reduced 240mp/135f -> 240mp/115f
+- T70 build time increased 40s -> 50s
+- M5 Halftrack build time increased 30s -> 40s
+- SU76 build time increased 45s -> 55s
+- M-42 AT Gun hitpoints increased 230 -> 350, to bring it in line with other factions' AT guns (Thanks Mandead)
+
+Ostheer:
+- Field medkits cost reduced 20mu -> 10mu
+- Stug G and Stug E rotation rate reverted to default 28 -> 22
+- Stug G and Stug E armor reduced 200 -> 170
+
+OKW:
+- Sturmpioneer base received accuracy reduced 0.97 -> 0.91
+- Decreased Sturmpioneer veterancy requirements to match volksgrenadiers
+- Deployed HQ health increased 1920/1600/1920 -> 2200/2000/2200
+
+
+=================================================================
+## v0.24 (Tools update)
+=================================================================
+
+Fixed a lot of mod bugs created by the February bug fix patch due to incompatibility of modified files
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Demolition charge craters will no longer create heavy cover, only light cover like all other explosions
+- Heavy and light artillery fog of war scatter multipliers removed
+
+Soviet:
+- Sniper range 52 -> 51
+- Reload duration randomness reduced 4.5-6s -> 5-5.5s
+- 120mm mortar near aoe reduced 1 -> 0.65
+- 82mm mortar near aoe reduced 0.7 -> 0.55
+
+USF:
+- Captain tier unlock build time increased 60s -> 90s
+- Ambulance target size 8 -> 4
+- White Phosphorus damage frequency change reverte 0.3 -> 0.2 (aoe changes and infantry company barrage nerfs were enough)
+
+Ostheer:
+- Sniper range 56 -> 55
+- Sniper reload duration increased reduced 4-4.5s -> 4.7-5.2s
+- Mortar near aoe reduced 0.7 -> 0.55
+- Rifle grenade warning event delay reduced 2.125s -> 1.25s
+
+OKW:
+- Battlegroup HQ retreat point will no longer spawn 4 antennas when retreat point is activated. The antennas will be hidden but retreat should still function correctly
+- Fixed an issue where Sturmpioneers couldn't put away their mine sweepers
+- leIG 18 75mm ISG near aoe range reduced 0.7 -> 0.6
+- leIG 18 75mm ISG barrage (and hollow charge barrage) shots per salvo number increased 4 -> 6
+
+
+=================================================================
+## v0.23
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Sniper cooldown randomness reduced
+
+USF:
+- Pack howitzer autoattack near aoe distance 0.75 -> 0.65
+- Pack howitzer autoattack near mid distance 2.8 -> 2.5
+- Riflemen, Lieutenant and Sergeant vet3 received accuracy bonus reduced 0.8 -> 0.9
+- Riflemen far accuracy 0.29 -> 0.28
+- Riflemen mid accuracy 0.51 -> 0.49
+- Sherman HE near aoe range 0.5 -> 0.3
+- Sherman HE max aoe range 5 -> 4
+- Paratroomer m1919a6 LMG accuracy decreased:
+ * Far 0.2 -> 0.17
+ * Mid 0.35 -> 0.33
+
+Ostheer:
+- Panzergrenadier reload duration reduced, randomness decreased 2.8-3.5s -> 2.8 -> 3.1s
+- Panzergrenadier mid accuracy increased 0.37 -> 0.4
+- Panzergrenadier near accuracy increased 0.58 -> 0.6
+- Sniper cooldown time increased 2.8-3.4s -> 3.5-3.9s
+- Sniper cost 320mp -> 340mp
+
+
+=================================================================
+## v0.22
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- B4 medium aoe range increased 3.5 -> 4.2
+- Sniper team hitpoints 85/75 -> 75/65
+
+Ostheer:
+- Pak43 range 88 -> 83
+- Sniper range 56 -> 58
+- Sniper hitpoints 90 -> 82
+
+OKW:
+- Pak43 range 88 -> 83
+- Luchs weapon rework:
+ * Angle scatter increased 4 -> 4.3
+ * Aim time on distance reduced 1/1.1/1.2 -> 1/1.05/1.1
+ * Mid aoe damage reduced 0.35 -> 0.15
+ * Near aoe range reduced 0.4 -> 0.1
+ * Near accuracy reduced 0.093 -> 0.087
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Upkeep multiplier decreased 1.32 -> 1.3
+
+
+=================================================================
+## v0.21
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Cover search radius 3 -> 2.5 (thanks Cruzz)
+- Percentage of sim box over ice before entity sinks 0.2 -> 0.3 (thanks Cruzz)
+- Retreat proximity radii increased 3/8 -> 5/10 (thanks Cruzz)
+
+Soviet:
+- 76mm Sherman damage decrease reverted 120 -> 160
+- 76mm Sherman CP cost increased 9 -> 10
+
+USF:
+- 105mm sherman mid range aoe damage reduced 0.35 -> 0.25
+- M10 Wolverine base damage reduced 180 -> 160
+
+Ostheer:
+- Sniper cooldown duration increased, randomness reduced 1.7-3.2s -> 2.8-3.4s
+- Sniper hitpoints 100 -> 90
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Starting resources are no longer increased
+- Upkeep multiplier decreased 1.35 -> 1.32
+- Base manpower income increase per minute decreased 32 -> 30
+- Victory point bleed speed increase reduced 25% -> 20%
+
+
+=================================================================
 ## v0.20 (February bug fix patch)
 =================================================================
 
 -----------------------------------------------------------------
 ## Attributes:
-- Create casualty critical reenabled
+
+General:
+- Fuel upkeep slightly increased across the board
+
+Soviet:
+- Conscript cost increased 220mp -> 240mp
+- Tank depot cost increased 240mp/135f -> 240mp/145f
+- T34 mid aoe radius reduced 1.1 -> 0.9
+- T34 scatter reworked to be make the weapon slightly less effective at consistently hitting infantry
+
+USF:
+- Riflemen mid accuracy increased 0.46 -> 0.51
+- Riflemen far accuracy increased 0.23 -> 0.29
+- Riflemen base received accuracy reduced 0.92 -> 0.9
+- Rear echelon near range accuracy increased 0.44 -> 0.53
+- M36 Jackson population cost reduced 14 -> 11
 
 Ostheer:
-- Reverted all previous changes to Panzer IV entity due to a missing animator problem introduced with the patch
+- Grenadier kar98k rifle rework:
+ * Base damage decreased 24 -> 19
+ * Ready aim time reduced 0.125-0.625s -> 0.125-0.375s
+ * Aim time multipliers reduced 0.125/2.5/3.25 -> 0.125/1.5/3
+ * Mid accuracy decreased 0.6 -> 0.57
+ * Near accuracy decreased 0.79 -> 0 71
+- Sniper hitpoints reduced 120 -> 100
+- Sniper reload duration increased 3.0-4.5s -> 4.0-4.5s
+- Elefant Focused Sight ability sight range increase reduced 35 -> 10
+
+OKW:
+- Volksgrenadier rifle rework:
+ * Cooldown reduced 0.75-1.25s -> 0.75-1.00s
+ * Ready aim time reduced 0.125-0.625s -> 0.125-0.375s
+ * Far cooldown multiplier reduced 1.5 -> 1.3
+ * Far accuracy 0.36 -> 0.32
+ * Near accuracy 0.7 -> 0.68
+- Raketenwerfer rework:
+ * Acceleration increased 2.5 -> 2.7
+ * Rotation rate increased 75 -> 83
+ * Deceleration increased 3.5 -> 3.7
+ * Ready aim time reduced 0.25-0.375s -> 0.125 -> 0.25s
+ * Aim time multipliers reduced 1/3/7 -> 0.75/1/4
+- le.IG Infantry Support Gun weapon rework:
+ * Far aoe range increased 3.8 -> 5
+ * Mid aoe range increased 1.8 -> 2.2
+ * Barrage reload time and randomness reduced 2.3-3.6s -> 2.3-3.0s
+ * Autofire reload time increased, randomness reduced 6.5-7.1s -> 6.9-7.2s
+ * Autofire scatter slightly reduced
+- Panzer IV cost reduced to match Ostheer Panzer IV 360mp/135f -> 350mp/110f
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Sight radius is now correctly increased by 5% as it was intented, rather than 10%
+- VP ticker bleed now increased by 25%
+- Upkeep multiplier reduced 1.41 -> 1.35
+- Base manpower income decreased 34 -> 31
 
 
 =================================================================
@@ -20,7 +285,7 @@ Ostheer:
 General:
 - All barbed wire target size increased 1 -> 7 (easier to target fire with ballistic weapons)
 - All small arms accuracies decreased:
- * Far by 4% (overall effectiveness ~0.84 -> 0.80)
+ * Far by 4% (overall effectiveness ~0.84 -> ~0.80)
  * Mid by 4% (overall effectiveness ~1.31 -> ~1.25)
  * Near by 7% (overall effectiveness ~2.09 -> ~1.95)
 

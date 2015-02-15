@@ -104,7 +104,7 @@
 			<group name="unit_type_list">
 				<enum name="unit_type00" value="" />
 				<enum name="unit_type01" value="tactical_structure" />
-				<enum name="unit_type02" value="tank_traps" />
+				<enum name="unit_type02" value="" />
 				<enum name="unit_type03" value="wire_sandbags" />
 				<enum name="unit_type04" value="wire" />
 				<enum name="unit_type05" value="" />
@@ -215,7 +215,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11053628" />
 			<string name="hotkey_name" value="W" />
-			<string name="icon_name" value="Icons_buildings_building_reinforced_barbwire" />
+			<icon name="icon_name" value="Icons_buildings_building_reinforced_barbwire" />
 			<enum name="kill_type" value="" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="85" />
@@ -255,7 +255,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_building_west_german_reinforced_barbed_wire_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -274,7 +274,7 @@
 			<locstring name="extra_text_world" value="11073149" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<string name="symbol_icon_name" value="Icons_symbols_building_west_german_reinforced_barbed_wire_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_west_german_reinforced_barbed_wire_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
