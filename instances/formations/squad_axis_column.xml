@@ -1,0 +1,84 @@
+<instance template="formations" description="">
+	<group name="formation_bag">
+		<float name="clockwise_facing_angle" value="0" />
+		<float name="look_ahead_time" value="2.5" />
+		<float name="follower_move_slop" value="0" />
+		<float name="facing_angle_attention_weight" value="0" />
+		<float name="time_to_hold_facing_angle" value="0" />
+		<group name="spots">
+			<group name="spot_09">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_07">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_02">
+				<float name="pos_x" value="-0.75" />
+				<float name="pos_y" value="0" />
+			</group>
+			<group name="spot_15">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_06">
+				<float name="pos_x" value="-0.75" />
+				<float name="pos_y" value="-0.75" />
+			</group>
+			<group name="spot_11">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_17">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_16">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_10">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_12">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_05">
+				<float name="pos_x" value="0" />
+				<float name="pos_y" value="-0.75" />
+			</group>
+			<group name="spot_03">
+				<float name="pos_x" value="-3" />
+				<float name="pos_y" value="-8" />
+			</group>
+			<group name="spot_14">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_13">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_08">
+				<float name="pos_x" value="-9999" />
+				<float name="pos_y" value="-9999" />
+			</group>
+			<group name="spot_01">
+				<float name="pos_x" value="0" />
+				<float name="pos_y" value="0" />
+			</group>
+			<group name="spot_04">
+				<float name="pos_x" value="3.5" />
+				<float name="pos_y" value="-7" />
+			</group>
+		</group>
+		<float name="scale" value="1.25" />
+		<float name="rotation_time_max" value="1" />
+		<float name="rotation_rate" value="60" />
+		<float name="chance_to_use_facing_angle" value="0" />
+	</group>
+	<uniqueid name="pbgid" value="41" />
+</instance>
