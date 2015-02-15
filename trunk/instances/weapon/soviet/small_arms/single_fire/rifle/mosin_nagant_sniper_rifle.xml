@@ -1,7 +1,8 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="1.6" />
 		</group>
@@ -259,18 +260,18 @@
 				<float name="near" value="10" />
 				<float name="mid" value="-1" />
 			</group>
-			<float name="max" value="52" />
+			<float name="max" value="51" />
 		</group>
 		<float name="fx_delay_in_building" value="0" />
 		<group name="deflection">
 			<bool name="has_deflection_damage" value="False" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<uniqueid name="id" value="62431" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -282,7 +283,7 @@
 					</list>
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<list name="action_table">
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<instance_reference name="critical" value="critical\soldier_sniped" />
 							<uniqueid name="id" value="62432" />
 							<float name="remove_at_health" value="1" />
@@ -297,12 +298,12 @@
 						<int name="phrase_order" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<uniqueid name="id" value="62433" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -314,7 +315,7 @@
 					</list>
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<list name="action_table">
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<instance_reference name="critical" value="critical\world_object_destroy" />
 							<uniqueid name="id" value="62434" />
 							<float name="remove_at_health" value="1" />
@@ -329,16 +330,16 @@
 						<int name="phrase_order" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<uniqueid name="id" value="62435" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_any_in_list" name="required">
+						<template_reference name="required" value="requirements\required_any_in_list">
 							<locstring name="ui_name" value="0" />
 							<enum name="reason" value="usage" />
 							<list name="requirements">
-								<template_reference value="requirements\required_player_upgrade" name="requirement">
+								<template_reference name="requirement" value="requirements\required_player_upgrade">
 									<locstring name="ui_name" value="0" />
 									<float name="max_completed" value="100" />
 									<enum name="reason" value="usage" />
@@ -351,12 +352,12 @@
 					</list>
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
+						<template_reference name="action" value="action\random_action">
 							<uniqueid name="id" value="62436" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<list name="actions">
-										<template_reference value="action\no_action" name="action">
+										<template_reference name="action" value="action\no_action">
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
 											<uniqueid name="id" value="391905" />
@@ -366,7 +367,7 @@
 								</group>
 								<group name="action_choice">
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<instance_reference name="critical" value="critical\vehicle_kill_top_gunner_hardpoint_2" />
 											<uniqueid name="id" value="62437" />
 											<float name="remove_at_health" value="1" />
@@ -409,18 +410,19 @@
 				<float name="min" value="4" />
 				<float name="max" value="4" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 		</group>
 		<group name="damage">
 			<float name="max" value="0" />
 			<float name="min" value="0" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<uniqueid name="id" value="62423" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -432,12 +434,12 @@
 					</list>
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<list name="action_table">
-						<template_reference value="action\requirement_action" name="action">
+						<template_reference name="action" value="action\requirement_action">
 							<uniqueid name="id" value="62424" />
 							<bool name="validate_all_sub_actions" value="True" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<list name="requirement_table">
-								<template_reference value="requirements\required_player_upgrade" name="required">
+								<template_reference name="required" value="requirements\required_player_upgrade">
 									<locstring name="ui_name" value="0" />
 									<float name="max_completed" value="100" />
 									<enum name="reason" value="usage" />
@@ -448,14 +450,14 @@
 							</list>
 							<bool name="kill_action_on_failed_requirements" value="False" />
 							<list name="action_table">
-								<template_reference value="action\timed_action" name="action">
+								<template_reference name="action" value="action\timed_action">
 									<uniqueid name="id" value="62425" />
 									<float name="duration" value="5" />
 									<bool name="fire_and_forget" value="True" />
 									<list name="subactions">
-										<template_reference value="action\apply_modifiers_action" name="action">
+										<template_reference name="action" value="action\apply_modifiers_action">
 											<list name="modifiers">
-												<template_reference value="modifiers\posture_speed_modifier" name="modifier">
+												<template_reference name="modifier" value="modifiers\posture_speed_modifier">
 													<string name="target_type_name" value="" />
 													<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
 													<bool name="exclusive" value="True" />
@@ -469,7 +471,7 @@
 											<float name="duration" value="5" />
 											<bool name="permanent" value="False" />
 										</template_reference>
-										<template_reference value="action\scar_function_call" name="action">
+										<template_reference name="action" value="action\scar_function_call">
 											<string name="function_name" value="Kaluga_SniperReaction" />
 											<uniqueid name="id" value="62427" />
 										</template_reference>
@@ -485,7 +487,7 @@
 								<int name="phrase_order" value="0" />
 							</template_reference>
 						</template_reference>
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<instance_reference name="critical" value="critical\soldier_sniped" />
 							<uniqueid name="id" value="62428" />
 							<float name="remove_at_health" value="1" />
@@ -500,12 +502,12 @@
 						<int name="phrase_order" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<uniqueid name="id" value="62429" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -517,7 +519,7 @@
 					</list>
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<list name="action_table">
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<instance_reference name="critical" value="critical\world_object_destroy" />
 							<uniqueid name="id" value="62430" />
 							<float name="remove_at_health" value="1" />
@@ -671,7 +673,7 @@
 			<float name="rotation" value="-0.035" />
 			<float name="threat" value="20" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<enum name="weapon_type" value="small_arms" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="flinch_radius" value="0" />

@@ -24,7 +24,8 @@
 		</group>
 		<string name="name" value="Stuke 50kg Smoke Bomb" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -57,7 +58,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="0" />
@@ -68,7 +70,7 @@
 			</group>
 			<float name="max" value="175" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -120,11 +122,11 @@
 		<group name="damage">
 			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="unit_type" value="vehicle" />
 							<enum name="reason" value="usage" />
@@ -136,14 +138,14 @@
 					</list>
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
+						<template_reference name="action" value="action\random_action">
 							<uniqueid name="id" value="62328" />
 							<bool name="instant" value="True" />
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="65" />
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="0.75" />
 											<uniqueid name="id" value="62329" />
 											<instance_reference name="critical" value="critical\vehicle_crew_shocked" />
@@ -153,7 +155,7 @@
 								<group name="action_choice">
 									<int name="weight" value="35" />
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="0.75" />
 											<uniqueid name="id" value="62330" />
 											<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
@@ -190,8 +192,8 @@
 			<float name="tilt_max_distance" value="10" />
 			<float name="distance_scatter_obj_hit_min" value="5" />
 			<float name="distance_scatter_ratio" value="1" />
-			<float name="fow_angle_multiplier" value="1.25" />
-			<float name="fow_distance_multiplier" value="1.25" />
+			<float name="fow_angle_multiplier" value="1" />
+			<float name="fow_distance_multiplier" value="1" />
 		</group>
 		<group name="moving">
 			<bool name="disable_moving_firing" value="False" />
@@ -210,7 +212,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

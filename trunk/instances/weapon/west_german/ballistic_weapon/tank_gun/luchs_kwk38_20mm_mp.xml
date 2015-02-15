@@ -13,9 +13,9 @@
 				<float name="max" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="far" value="1.2" />
+				<float name="far" value="1.1" />
 				<float name="near" value="1" />
-				<float name="mid" value="1.1" />
+				<float name="mid" value="1.05" />
 			</group>
 			<group name="ready_aim_time">
 				<float name="min" value="0.5" />
@@ -70,7 +70,7 @@
 			</group>
 			<float name="max" value="44" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
 			<instance_reference name="projectile" value="ebps\projectile\kwk38_20mm_mp" />
@@ -138,7 +138,7 @@
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
-			<float name="angle_scatter" value="4" />
+			<float name="angle_scatter" value="4.2" />
 			<float name="distance_scatter_offset" value="0.2" />
 			<float name="tilt_max_distance" value="4" />
 			<float name="distance_bracket_count_ground" value="15" />
@@ -341,7 +341,7 @@
 			<group name="damage">
 				<float name="near" value="1" />
 				<float name="far" value="0.05" />
-				<float name="mid" value="0.35" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -363,7 +363,7 @@
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="near" value="0.4" />
+				<float name="near" value="0.1" />
 				<float name="far" value="1.9" />
 				<float name="mid" value="1" />
 			</group>
@@ -436,7 +436,7 @@
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="accuracy">
 			<float name="far" value="0.033" />
-			<float name="near" value="0.093" />
+			<float name="near" value="0.087" />
 			<float name="mid" value="0.041" />
 		</group>
 	</group>

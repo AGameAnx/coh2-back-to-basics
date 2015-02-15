@@ -13,13 +13,13 @@
 				<float name="max" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="far" value="7" />
-				<float name="near" value="1" />
-				<float name="mid" value="3" />
+				<float name="far" value="4" />
+				<float name="near" value="0.75" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="ready_aim_time">
-				<float name="min" value="0.25" />
-				<float name="max" value="0.375" />
+				<float name="min" value="0.125" />
+				<float name="max" value="0.25" />
 			</group>
 		</group>
 		<string name="name" value="8.8cm Raketenwerfer 43" />
@@ -135,7 +135,7 @@
 			</group>
 			<float name="max" value="55" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
 			<instance_reference name="projectile" value="ebps\projectile\raketenwefer_43_88cm_mp" />

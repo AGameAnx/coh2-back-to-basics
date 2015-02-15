@@ -156,7 +156,7 @@
 			</group>
 			<float name="max" value="44" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<instance_reference name="projectile" value="ebps\projectile\soviet_76mm_tank_shell_mp" />
 			<bool name="delete_previous_on_hit" value="False" />
@@ -226,7 +226,7 @@
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
-			<float name="distance_scatter_obj_hit_min" value="5" />
+			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_ratio" value="1" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />
@@ -295,13 +295,13 @@
 				<float name="angle_right" value="0" />
 				<float name="radius" value="3.1" />
 			</group>
-			<bool name="damage_all_in_hold" value="True" />
+			<bool name="damage_all_in_hold" value="False" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<bool name="can_harm_shooter" value="False" />
 			<group name="distance">
 				<float name="far" value="2.3" />
 				<float name="near" value="0.4" />
-				<float name="mid" value="1.1" />
+				<float name="mid" value="0.9" />
 			</group>
 			<group name="accuracy">
 				<float name="far" value="5" />

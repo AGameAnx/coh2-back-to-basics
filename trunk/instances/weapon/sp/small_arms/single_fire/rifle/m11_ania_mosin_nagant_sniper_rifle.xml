@@ -4,7 +4,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="1.6" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<group name="setup">
 			<float name="duration" value="0" />
@@ -12,14 +13,15 @@
 			<float name="attach_duration" value="0" />
 			<bool name="can_interrupt_setup" value="False" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<float name="flinch_radius" value="0" />
 		<group name="reload">
 			<group name="frequency">
 				<float name="max" value="4" />
 				<float name="min" value="4" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="max" value="6" />
 				<float name="min" value="4.5" />
@@ -286,7 +288,7 @@
 			<bool name="has_deflection_damage" value="False" />
 			<float name="deflection_damage_multiplier" value="0" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="instant_requirement_check" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -295,7 +297,7 @@
 					<bool name="no_retrigger" value="False" />
 					<uniqueid name="id" value="62495" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -310,7 +312,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 					<list name="action_table">
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<uniqueid name="id" value="62496" />
 							<instance_reference name="critical" value="critical\soldier_sniped" />
 							<float name="remove_at_health" value="1" />
@@ -318,7 +320,7 @@
 					</list>
 					<bool name="validate_all_sub_actions" value="True" />
 				</template_reference>
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="instant_requirement_check" value="False" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -327,7 +329,7 @@
 					<bool name="no_retrigger" value="False" />
 					<uniqueid name="id" value="62497" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -342,7 +344,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 					<list name="action_table">
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<uniqueid name="id" value="62498" />
 							<instance_reference name="critical" value="critical\world_object_destroy" />
 							<float name="remove_at_health" value="1" />
@@ -437,7 +439,7 @@
 		<group name="damage">
 			<float name="min" value="0" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="instant_requirement_check" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -446,7 +448,7 @@
 					<bool name="no_retrigger" value="False" />
 					<uniqueid name="id" value="62487" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -461,7 +463,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 					<list name="action_table">
-						<template_reference value="action\requirement_action" name="action">
+						<template_reference name="action" value="action\requirement_action">
 							<bool name="instant_requirement_check" value="True" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<bool name="global_fire_and_forget_on_success" value="False" />
@@ -470,7 +472,7 @@
 							<bool name="no_retrigger" value="False" />
 							<uniqueid name="id" value="62488" />
 							<list name="requirement_table">
-								<template_reference value="requirements\required_player_upgrade" name="required">
+								<template_reference name="required" value="requirements\required_player_upgrade">
 									<instance_reference name="upgrade_name" value="upgrade\campaign\mission04_upgrade" />
 									<bool name="is_present" value="True" />
 									<enum name="reason" value="usage" />
@@ -484,14 +486,14 @@
 								<locstring name="phrase" value="0" />
 							</template_reference>
 							<list name="action_table">
-								<template_reference value="action\timed_action" name="action">
+								<template_reference name="action" value="action\timed_action">
 									<bool name="fire_and_forget" value="True" />
 									<float name="duration" value="5" />
 									<list name="subactions">
-										<template_reference value="action\apply_modifiers_action" name="action">
+										<template_reference name="action" value="action\apply_modifiers_action">
 											<bool name="permanent" value="False" />
 											<list name="modifiers">
-												<template_reference value="modifiers\posture_speed_modifier" name="modifier">
+												<template_reference name="modifier" value="modifiers\posture_speed_modifier">
 													<bool name="exclusive" value="True" />
 													<string name="modifier_id" value="" />
 													<float name="value" value="-2" />
@@ -504,7 +506,7 @@
 											<float name="duration" value="5" />
 											<uniqueid name="id" value="62490" />
 										</template_reference>
-										<template_reference value="action\scar_function_call" name="action">
+										<template_reference name="action" value="action\scar_function_call">
 											<string name="function_name" value="Kaluga_SniperReaction" />
 											<uniqueid name="id" value="62491" />
 										</template_reference>
@@ -514,7 +516,7 @@
 							</list>
 							<bool name="validate_all_sub_actions" value="True" />
 						</template_reference>
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<uniqueid name="id" value="62492" />
 							<instance_reference name="critical" value="critical\soldier_sniped" />
 							<float name="remove_at_health" value="1" />
@@ -522,7 +524,7 @@
 					</list>
 					<bool name="validate_all_sub_actions" value="True" />
 				</template_reference>
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="instant_requirement_check" value="False" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -531,7 +533,7 @@
 					<bool name="no_retrigger" value="False" />
 					<uniqueid name="id" value="62493" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -546,7 +548,7 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 					<list name="action_table">
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<uniqueid name="id" value="62494" />
 							<instance_reference name="critical" value="critical\world_object_destroy" />
 							<float name="remove_at_health" value="1" />

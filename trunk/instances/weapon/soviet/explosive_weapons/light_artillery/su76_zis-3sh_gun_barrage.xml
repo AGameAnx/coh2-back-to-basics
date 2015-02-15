@@ -70,7 +70,7 @@
 			</group>
 			<float name="max" value="100" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">

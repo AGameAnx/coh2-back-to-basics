@@ -123,7 +123,7 @@
 			</group>
 			<float name="max" value="53" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
 			<instance_reference name="projectile" value="ebps\projectile\flak_shell_20mm_mp" />

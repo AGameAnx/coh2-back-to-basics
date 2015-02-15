@@ -80,7 +80,7 @@
 			</group>
 			<float name="max" value="275" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<instance_reference name="projectile" value="ebps\projectile\203mm_b-4_projectile_direct_fire_mp" />
 			<bool name="delete_previous_on_hit" value="False" />
@@ -433,7 +433,7 @@
 			<enum name="reaction_type" value="normal" />
 			<bool name="substitute_weapon" value="False" />
 			<bool name="enable_auto_target_search" value="False" />
-			<bool name="ignore_shot_blocking" value="False" />
+			<bool name="ignore_shot_blocking" value="True" />
 			<bool name="non_moving_setup" value="False" />
 			<bool name="point_blank" value="False" />
 			<bool name="can_be_offhanded" value="False" />

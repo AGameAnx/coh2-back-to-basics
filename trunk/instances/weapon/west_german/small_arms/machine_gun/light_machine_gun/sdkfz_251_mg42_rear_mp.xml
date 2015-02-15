@@ -53,7 +53,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="2" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="2" />
 		</group>
 		<group name="area_effect">
@@ -245,7 +246,8 @@
 		<string name="name" value="MG42 Rear" />
 		<group name="fire">
 			<float name="wind_up" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 		</group>
 		<group name="reload">
@@ -258,14 +260,16 @@
 				<float name="min" value="12" />
 				<float name="max" value="12" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="6" />
 				<float name="max" value="6" />
 			</group>
 		</group>
 		<group name="deflection">
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="False" />
 			<float name="deflection_damage_multiplier" value="0" />
 		</group>
@@ -415,7 +419,7 @@
 			</group>
 			<float name="post_firing_cooldown_interval" value="0" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="penetration">
 			<float name="far" value="1" />
 			<float name="near" value="1" />

@@ -393,7 +393,7 @@
 		</group>
 		<bool name="fx_always_visible" value="False" />
 		<enum name="weapon_type" value="ballistic" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
