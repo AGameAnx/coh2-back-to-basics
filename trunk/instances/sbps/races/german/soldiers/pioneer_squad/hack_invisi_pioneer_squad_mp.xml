@@ -11,9 +11,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="0" />
 						<string name="hotkey_name" value="" />
-						<string name="icon_name" value="" />
+						<icon name="icon_name" value="" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="0" />
@@ -41,20 +41,20 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="46" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="0" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="False" />
-						<string name="symbol_icon_name" value="" />
+						<icon name="symbol_icon_name" value="" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 					</group>
@@ -506,7 +506,7 @@
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\repair_ability\soviet_repair_ability_mp" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\german_hulldown_ability" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\infantry_medkits_mp" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\infantry_medkits_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
@@ -529,7 +529,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="0" />
 				<string name="hotkey_name" value="reinforce" />
-				<string name="icon_name" value="Icons_odds_reinforce" />
+				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="0" />
@@ -659,7 +659,7 @@
 							<int name="ui_position" value="0" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" />
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="0" />
 						</group>
 						<group name="construction_item">

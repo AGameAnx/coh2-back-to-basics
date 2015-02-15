@@ -1,5 +1,4 @@
-<instance description="This is the lighter, less deadly version of the RGD_33
-Multiplayer Clone." template="weapon">
+<instance description="This is the lighter, less deadly version of the RGD_33&#xD;&#xA;Multiplayer Clone." template="weapon">
 	<uniqueid name="pbgid" value="15649" />
 	<group name="weapon_bag">
 		<group name="damage_over_time">
@@ -25,7 +24,8 @@ Multiplayer Clone." template="weapon">
 		</group>
 		<string name="name" value="RGD_33" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -59,11 +59,11 @@ Multiplayer Clone." template="weapon">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="unit_type" value="vehicle" />
 							<enum name="reason" value="usage" />
@@ -75,11 +75,11 @@ Multiplayer Clone." template="weapon">
 					</list>
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference value="action\timed_action" name="action">
+						<template_reference name="action" value="action\timed_action">
 							<list name="subactions">
-								<template_reference value="action\apply_modifiers_action" name="action">
+								<template_reference name="action" value="action\apply_modifiers_action">
 									<list name="modifiers">
-										<template_reference value="modifiers\sight_radius_modifier" name="modifier">
+										<template_reference name="modifier" value="modifiers\sight_radius_modifier">
 											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 											<bool name="exclusive" value="False" />
 											<enum name="usage_type" value="multiplication" />
@@ -88,7 +88,7 @@ Multiplayer Clone." template="weapon">
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="" />
 										</template_reference>
-										<template_reference value="modifiers\speed_maximum_modifier" name="modifier">
+										<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
 											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 											<bool name="exclusive" value="False" />
 											<enum name="usage_type" value="multiplication" />
@@ -102,9 +102,9 @@ Multiplayer Clone." template="weapon">
 									<float name="duration" value="8" />
 									<bool name="permanent" value="False" />
 								</template_reference>
-								<template_reference value="action\change_target_action" name="action">
+								<template_reference name="action" value="action\change_target_action">
 									<list name="actions">
-										<template_reference value="action\animator_set_state" name="action">
+										<template_reference name="action" value="action\animator_set_state">
 											<string name="undo_action_state_name" value="off" />
 											<bool name="retrigger" value="True" />
 											<string name="do_action_state_name" value="on" />
@@ -112,11 +112,11 @@ Multiplayer Clone." template="weapon">
 											<string name="state_machine_name" value="ability_attack_debuff_state" />
 											<bool name="apply_to_leader_only" value="True" />
 										</template_reference>
-										<template_reference value="action\ui_unit_modifier_action" name="action">
+										<template_reference name="action" value="action\ui_unit_modifier_action">
 											<template_reference name="ui_info" value="tables\ui_info">
 												<string name="hotkey_name" value="" />
 												<locstring name="help_text" value="11073195" />
-												<string name="icon_name" value="Icons_abilities_ability_soviet_rgd_1_smoke_grenade" />
+												<icon name="icon_name" value="Icons_abilities_ability_soviet_rgd_1_smoke_grenade" />
 												<locstring name="screen_name" value="11066906" />
 											</template_reference>
 											<bool name="die_with_creator" value="False" />
@@ -153,7 +153,7 @@ Multiplayer Clone." template="weapon">
 			</group>
 			<float name="max" value="40" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -204,7 +204,8 @@ Multiplayer Clone." template="weapon">
 		</group>
 		<group name="damage">
 			<float name="min" value="0" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="0" />
 		</group>
 		<group name="scatter">
@@ -241,7 +242,8 @@ Multiplayer Clone." template="weapon">
 		<group name="fire">
 			<float name="wind_up" value="1.25" />
 			<float name="wind_down" value="0.75" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

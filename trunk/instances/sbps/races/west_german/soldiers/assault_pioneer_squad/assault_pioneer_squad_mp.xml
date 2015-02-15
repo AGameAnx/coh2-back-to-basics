@@ -11,9 +11,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051557" />
 						<string name="hotkey_name" value="S" />
-						<string name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051162" />
@@ -41,13 +41,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="46" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_west_german_assault_pioneer_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_west_german_assault_pioneer_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_west_german_assault_pioneer_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_west_german_assault_pioneer_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051555" />
 						<locstring name="screen_name_short" value="0" />
@@ -55,7 +55,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\west_german" />
@@ -67,9 +67,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051557" />
 						<string name="hotkey_name" value="A" />
-						<string name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051162" />
@@ -97,13 +97,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="46" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051555" />
 						<locstring name="screen_name_short" value="0" />
@@ -111,7 +111,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\aef" />
@@ -123,9 +123,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051557" />
 						<string name="hotkey_name" value="A" />
-						<string name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051162" />
@@ -153,13 +153,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="46" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051555" />
 						<locstring name="screen_name_short" value="0" />
@@ -167,7 +167,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\german" />
@@ -179,9 +179,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051557" />
 						<string name="hotkey_name" value="A" />
-						<string name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051162" />
@@ -209,13 +209,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="46" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051555" />
 						<locstring name="screen_name_short" value="0" />
@@ -223,7 +223,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\soviet" />
@@ -235,9 +235,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051557" />
 						<string name="hotkey_name" value="S" />
-						<string name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051162" />
@@ -265,13 +265,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="46" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_west_german_assault_pioneer_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_west_german_assault_pioneer_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_west_german_assault_pioneer_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_west_german_assault_pioneer_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051555" />
 						<locstring name="screen_name_short" value="0" />
@@ -279,7 +279,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_west_german_sturmpioneers_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="" />
@@ -683,7 +683,7 @@
 						<float name="max_persistent_squads" value="0" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<float name="experience_value" value="600" />
+								<float name="experience_value" value="480" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11065017" />
 								<bool name="single_player_only" value="False" />
@@ -711,7 +711,51 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="1200" />
+								<float name="experience_value" value="960" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="41" mod="23d6cdb82724460dbcb21e1a9162e473" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\construction_rate">
+												<enum name="application_type" value="apply_to_entity" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\construction_rate" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="189882" />
+									</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="228941" />
+									</template_reference>
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="1400" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11071313" />
 								<bool name="single_player_only" value="False" />
@@ -764,51 +808,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="1600" />
-								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11071314" />
-								<bool name="single_player_only" value="False" />
-								<list name="leader_actions">
-								</list>
-								<list name="non_leader_actions">
-								</list>
-								<list name="squad_actions">
-									<template_reference name="action" value="action\apply_modifiers_action">
-										<float name="duration" value="0" />
-										<bool name="permanent" value="True" />
-										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\construction_rate">
-												<enum name="application_type" value="apply_to_entity" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
-												<instance_reference name="tooltip" value="modifier_tooltip\construction_rate" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="189882" />
-									</template_reference>
-									<template_reference name="action" value="action\apply_modifiers_action">
-										<float name="duration" value="0" />
-										<bool name="permanent" value="True" />
-										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
-												<enum name="application_type" value="apply_to_squad" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="" />
-												<enum name="usage_type" value="multiply_add" />
-												<float name="value" value="0.2" />
-												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="228941" />
-									</template_reference>
-								</list>
-							</group>
-							<group name="veterancy_rank">
-								<float name="experience_value" value="2400" />
+								<float name="experience_value" value="2000" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11071315" />
 								<bool name="single_player_only" value="False" />
@@ -861,7 +861,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="3200" />
+								<float name="experience_value" value="3000" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11071316" />
 								<bool name="single_player_only" value="False" />
@@ -915,11 +915,12 @@
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\repair_ability\west_german_repair_ability_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\pioneer_volks_salvage" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\pioneer_stun_grenade_mp" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\smoke_grenade_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\assault_pioneer_drop_medpack_ability_mp" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\commander_ability\pioneer_volks_through_salvage" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\sp\refuel_tank_wg_sp" />
 				<instance_reference name="ability" value="abilities\west_german\toggle_ability\minesweeper_deploy_mp" />
+				<instance_reference name="ability" value="abilities\west_german\toggle_ability\minesweeper_put_away_mp" />
 				<instance_reference name="ability" value="abilities\global\btb\antiblob" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
@@ -942,7 +943,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="11071790" />
 				<string name="hotkey_name" value="reinforce" />
-				<string name="icon_name" value="Icons_odds_reinforce" />
+				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="11071801" />
@@ -1088,11 +1089,11 @@
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\west_german\buildings\observation_post\fuel_post_german_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
-							<int name="ui_position" value="21" />
+							<int name="ui_position" value="22" />
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\west_german\buildings\observation_post\munition_post_german_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
-							<int name="ui_position" value="22" />
+							<int name="ui_position" value="21" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_engineer_basic" />

@@ -70,7 +70,8 @@
 			<float name="duration" value="0" />
 		</group>
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
 		</group>
@@ -252,7 +253,8 @@
 		<instance_reference name="ui_setfacing" value="" />
 		<instance_reference name="ui_range" value="" />
 		<group name="deflection">
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
 		</group>
@@ -323,14 +325,15 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="reload">
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
 				<float name="near" value="1" />
 				<float name="mid" value="1" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="frequency">
 				<float name="max" value="15" />
 				<float name="min" value="15" />
@@ -423,7 +426,8 @@
 		</group>
 		<group name="damage">
 			<float name="max" value="55" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="min" value="55" />
 		</group>
 		<float name="fx_delay_in_building" value="0" />

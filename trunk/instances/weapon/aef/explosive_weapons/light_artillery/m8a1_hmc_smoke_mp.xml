@@ -300,7 +300,7 @@
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.5" />
 			<float name="burst_multiplier" value="1" />
@@ -368,8 +368,8 @@
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0.3" />
 			<float name="distance_scatter_ratio" value="0.125" />
-			<float name="fow_angle_multiplier" value="1.25" />
-			<float name="fow_distance_multiplier" value="1.25" />
+			<float name="fow_angle_multiplier" value="1" />
+			<float name="fow_distance_multiplier" value="1" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
