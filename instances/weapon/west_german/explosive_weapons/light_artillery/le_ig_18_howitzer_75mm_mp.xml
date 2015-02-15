@@ -70,7 +70,7 @@
 			</group>
 			<float name="max" value="100" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -134,13 +134,13 @@
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
-			<float name="distance_scatter_max" value="12" />
+			<float name="distance_scatter_max" value="11" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="5" />
 			<float name="distance_scatter_ratio" value="0.15" />
-			<float name="fow_angle_multiplier" value="1.25" />
-			<float name="fow_distance_multiplier" value="1.25" />
+			<float name="fow_angle_multiplier" value="1" />
+			<float name="fow_distance_multiplier" value="1" />
 		</group>
 		<group name="moving">
 			<bool name="disable_moving_firing" value="True" />
@@ -354,7 +354,7 @@
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="5" />
+				<float name="radius" value="4" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
@@ -386,9 +386,9 @@
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="distance">
-				<float name="near" value="0.7" />
-				<float name="far" value="3.8" />
-				<float name="mid" value="1.8" />
+				<float name="near" value="0.55" />
+				<float name="far" value="4" />
+				<float name="mid" value="2" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="0.2" />

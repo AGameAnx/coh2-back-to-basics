@@ -53,7 +53,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="6" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="6" />
 		</group>
 		<group name="area_effect">
@@ -245,7 +246,8 @@
 		<string name="name" value="MG42 Top (King Tiger)" />
 		<group name="fire">
 			<float name="wind_up" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 		</group>
 		<group name="reload">
@@ -258,7 +260,8 @@
 				<float name="min" value="8" />
 				<float name="max" value="10" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="3" />
 				<float name="max" value="4" />
@@ -266,7 +269,7 @@
 		</group>
 		<group name="deflection">
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="no_retrigger" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -276,12 +279,12 @@
 					<bool name="validate_all_sub_actions" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
+						<template_reference name="action" value="action\random_action">
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="104" />
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<uniqueid name="id" value="194512" />
 											<instance_reference name="critical" value="critical\vehicle_destroy" />
@@ -291,7 +294,7 @@
 								<group name="action_choice">
 									<int name="weight" value="9896" />
 									<list name="actions">
-										<template_reference value="action\no_action" name="action">
+										<template_reference name="action" value="action\no_action">
 											<uniqueid name="id" value="391941" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
@@ -305,7 +308,7 @@
 					</list>
 					<bool name="check_self" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<enum name="unit_type" value="aircraft" />
 							<template_reference name="qualify_option" value="options\none">
@@ -469,7 +472,7 @@
 			</group>
 			<float name="post_firing_cooldown_interval" value="0" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="penetration">
 			<float name="far" value="1.5" />
 			<float name="near" value="3" />

@@ -3,7 +3,8 @@
 		<string name="fx_tracer_name" value="fx_20mm_turret_tracer" />
 		<group name="damage">
 			<float name="max" value="15" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="min" value="15" />
 		</group>
 		<group name="suppressed">
@@ -363,7 +364,8 @@
 		</group>
 		<float name="fx_building_hit_delay" value="0" />
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
 		</group>
@@ -391,7 +393,7 @@
 		</group>
 		<bool name="fx_always_visible" value="False" />
 		<enum name="weapon_type" value="ballistic" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
@@ -453,7 +455,8 @@
 				<float name="max" value="4.5" />
 				<float name="min" value="4" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="mid" value="1" />

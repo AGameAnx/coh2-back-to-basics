@@ -2,8 +2,8 @@
 	<group name="weapon_building_damage_bag">
 		<group name="range_multipliers">
 			<float name="near" value="1" />
-			<float name="mid" value="0.2" />
-			<float name="far" value="0.05" />
+			<float name="mid" value="0.5" />
+			<float name="far" value="0" />
 		</group>
 	</group>
 	<uniqueid name="pbgid" value="85931" />

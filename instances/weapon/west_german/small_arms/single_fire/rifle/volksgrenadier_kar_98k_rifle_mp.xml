@@ -1,5 +1,4 @@
-<instance template="weapon" description="rifle for ostruppen.
-Multiplayer Clone.">
+<instance description="rifle for ostruppen.&#xD;&#xD;&#xD;&#xA;Multiplayer Clone." template="weapon">
 	<group name="weapon_bag">
 		<group name="cover_table">
 			<group name="tp_light">
@@ -127,7 +126,7 @@ Multiplayer Clone.">
 		</group>
 		<group name="aim">
 			<group name="ready_aim_time">
-				<float name="max" value="0.625" />
+				<float name="max" value="0.375" />
 				<float name="min" value="0.125" />
 			</group>
 			<float name="post_firing_cooldown_interval" value="0" />
@@ -145,9 +144,9 @@ Multiplayer Clone.">
 		<enum name="weapon_type" value="small_arms" />
 		<string name="fx_action_target_name" value="kar98_target" />
 		<group name="accuracy">
-			<float name="mid" value="0.57" />
-			<float name="far" value="0.36" />
-			<float name="near" value="0.7" />
+			<float name="mid" value="0.58" />
+			<float name="far" value="0.33" />
+			<float name="near" value="0.67" />
 		</group>
 		<group name="setup">
 			<bool name="can_interrupt_setup" value="False" />
@@ -174,11 +173,11 @@ Multiplayer Clone.">
 		<group name="cooldown">
 			<group name="duration_multiplier">
 				<float name="mid" value="1" />
-				<float name="far" value="1.5" />
+				<float name="far" value="1.3" />
 				<float name="near" value="0.125" />
 			</group>
 			<group name="duration">
-				<float name="max" value="1.25" />
+				<float name="max" value="1" />
 				<float name="min" value="0.75" />
 			</group>
 		</group>
@@ -220,7 +219,8 @@ Multiplayer Clone.">
 				<float name="max" value="2.6" />
 				<float name="min" value="1.5" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="frequency">
 				<float name="max" value="6" />
 				<float name="min" value="5" />
@@ -249,7 +249,8 @@ Multiplayer Clone.">
 		</group>
 		<group name="deflection">
 			<bool name="has_deflection_damage" value="False" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<float name="deflection_damage_multiplier" value="0" />
 		</group>
 		<group name="scatter">
@@ -272,9 +273,10 @@ Multiplayer Clone.">
 		<string name="fx_tracer_name" value="kar98_tracer" />
 		<float name="fx_tracer_speed" value="75" />
 		<group name="damage">
-			<float name="max" value="16" />
-			<float name="min" value="16" />
-			<list name="on_penetrated_actions" />
+			<float name="max" value="18" />
+			<float name="min" value="18" />
+			<list name="on_penetrated_actions">
+			</list>
 		</group>
 		<group name="projectile">
 			<instance_reference name="projectile" value="" />
@@ -415,10 +417,11 @@ Multiplayer Clone.">
 		<float name="flinch_radius" value="0" />
 		<group name="fire">
 			<float name="wind_up" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="1.3" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<locstring name="ui_name" value="0" />
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

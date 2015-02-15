@@ -13,7 +13,8 @@
 				<instance_reference name="dot_weapon" value="weapon\west_german\explosive_weapons\grenade\blendkorper_2h_smoke_grenade_dot_mp" />
 				<float name="damage_frequency" value="0.2" />
 				<float name="radius_max" value="6" />
-				<list name="dot_spawn_actions" />
+				<list name="dot_spawn_actions">
+				</list>
 				<float name="dots_max" value="1" />
 				<group name="damage_distance_table">
 					<group name="distance_03">
@@ -60,7 +61,8 @@
 		</group>
 		<string name="name" value="Blendkorper 2H" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -93,7 +95,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="5" />
@@ -104,7 +107,7 @@
 			</group>
 			<float name="max" value="15" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -155,7 +158,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="1" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="1" />
 		</group>
 		<group name="scatter">
@@ -192,7 +196,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0.25" />
 			<float name="wind_down" value="0.75" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

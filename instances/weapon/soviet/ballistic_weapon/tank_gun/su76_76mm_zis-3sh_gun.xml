@@ -80,7 +80,7 @@
 			</group>
 			<float name="max" value="66" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<instance_reference name="projectile" value="ebps\projectile\su76_at_76mm_shell" />
 			<bool name="delete_previous_on_hit" value="False" />
@@ -161,9 +161,9 @@
 			<float name="offhand_start_time" value="0" />
 		</group>
 		<group name="penetration">
-			<float name="near" value="160" />
-			<float name="far" value="110" />
-			<float name="mid" value="140" />
+			<float name="near" value="180" />
+			<float name="far" value="140" />
+			<float name="mid" value="160" />
 		</group>
 		<locstring name="help_text" value="0" />
 		<group name="damage_over_time">

@@ -121,7 +121,7 @@
 			</group>
 		</group>
 		<float name="flinch_radius" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="offhand">
 			<float name="offhand_start_time" value="0" />
 			<float name="offhand_end_time" value="0" />

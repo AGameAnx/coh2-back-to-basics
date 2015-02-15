@@ -1,7 +1,8 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
 		</group>
@@ -265,12 +266,12 @@
 		<group name="deflection">
 			<bool name="has_deflection_damage" value="False" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<uniqueid name="id" value="62417" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -282,16 +283,17 @@
 					</list>
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
+						<template_reference name="action" value="action\random_action">
 							<uniqueid name="id" value="62418" />
 							<list name="random_actions">
 								<group name="action_choice">
-									<list name="actions" />
+									<list name="actions">
+									</list>
 									<int name="weight" value="99" />
 								</group>
 								<group name="action_choice">
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
 											<uniqueid name="id" value="62419" />
 											<float name="remove_at_health" value="0.75" />
@@ -334,12 +336,14 @@
 				<float name="min" value="5" />
 				<float name="max" value="5" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 		</group>
 		<group name="damage">
 			<float name="max" value="0" />
 			<float name="min" value="0" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<instance_reference name="ui_setfacing" value="" />
@@ -478,7 +482,7 @@
 			<float name="rotation" value="-0.035" />
 			<float name="threat" value="20" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<enum name="weapon_type" value="small_arms" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="flinch_radius" value="0" />

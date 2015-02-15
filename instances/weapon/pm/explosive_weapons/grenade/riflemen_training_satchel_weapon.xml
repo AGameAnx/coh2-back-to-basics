@@ -1,5 +1,4 @@
-<instance description="This is the lighter, less deadly version of the RGD_33
-Multiplayer Clone." template="weapon">
+<instance description="This is the lighter, less deadly version of the RGD_33&#xD;&#xA;Multiplayer Clone." template="weapon">
 	<uniqueid name="pbgid" value="16012" />
 	<group name="weapon_bag">
 		<group name="damage_over_time">
@@ -25,7 +24,8 @@ Multiplayer Clone." template="weapon">
 		</group>
 		<string name="name" value="Satchel Charge (Throw)" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -58,7 +58,8 @@ Multiplayer Clone." template="weapon">
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="5" />
@@ -69,7 +70,7 @@ Multiplayer Clone." template="weapon">
 			</group>
 			<float name="max" value="15" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -120,7 +121,8 @@ Multiplayer Clone." template="weapon">
 		</group>
 		<group name="damage">
 			<float name="min" value="140" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="140" />
 		</group>
 		<group name="scatter">
@@ -157,7 +159,8 @@ Multiplayer Clone." template="weapon">
 		<group name="fire">
 			<float name="wind_up" value="0.25" />
 			<float name="wind_down" value="0.75" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

@@ -14,7 +14,7 @@
 				<float name="damage_frequency" value="1.65" />
 				<float name="radius_max" value="4" />
 				<list name="dot_spawn_actions">
-					<template_reference value="action\trigger_dca_action" name="action">
+					<template_reference name="action" value="action\trigger_dca_action">
 						<string name="dca_action_name" value="Weapons\Splash_Damage\splashdmg_incendiary_mortar" />
 						<float name="duration" value="20" />
 						<uniqueid name="id" value="194119" />
@@ -67,7 +67,8 @@
 		</group>
 		<string name="name" value="stuka flame bombs" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0.125" />
 				<float name="max" value="0.125" />
@@ -101,11 +102,11 @@
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="unit_type" value="building" />
 							<enum name="reason" value="usage" />
@@ -117,7 +118,7 @@
 					</list>
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference value="action\damage" name="action">
+						<template_reference name="action" value="action\damage">
 							<float name="damage" value="3" />
 							<enum name="crit_weapon_type" value="small_arms" />
 							<bool name="cause_criticals" value="False" />
@@ -147,7 +148,7 @@
 			</group>
 			<float name="max" value="300" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="True" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -198,7 +199,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="10" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="10" />
 		</group>
 		<group name="scatter">
@@ -235,7 +237,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

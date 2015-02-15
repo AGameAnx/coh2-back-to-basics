@@ -1,10 +1,11 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<group name="weapon_bag">
 		<string name="fx_tracer_name" value="kar98_tracer" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="fire">
 			<float name="wind_down" value="1.3" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 		</group>
 		<instance_reference name="ui_range" value="" />
@@ -28,7 +29,7 @@
 			<string name="track_horizontal" value="Rifle_Angle" />
 		</group>
 		<float name="fx_building_hit_delay" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
 			<instance_reference name="projectile" value="" />
@@ -393,7 +394,8 @@
 				<float name="min" value="5" />
 				<float name="max" value="6" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="far" value="1" />
@@ -402,7 +404,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="12" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="12" />
 		</group>
 		<group name="cooldown">
@@ -426,7 +429,8 @@
 		<enum name="weapon_type" value="small_arms" />
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="False" />
 		</group>
 		<group name="penetration">

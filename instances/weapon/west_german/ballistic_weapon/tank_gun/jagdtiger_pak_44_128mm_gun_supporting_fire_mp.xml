@@ -18,8 +18,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="ready_aim_time">
-				<float name="min" value="0.125" />
-				<float name="max" value="0.125" />
+				<float name="min" value="2.5" />
+				<float name="max" value="2.5" />
 			</group>
 		</group>
 		<string name="name" value="12.8cm PaK 44 L/55 Anti-Tank Gun (Supporting Fire)" />
@@ -135,10 +135,10 @@
 			</group>
 			<float name="max" value="138" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\pak44_128mm_supporting_fire_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\pak44_128mm_shell_mp" />
 		</group>
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -174,7 +174,7 @@
 			<float name="attach_duration" value="0" />
 			<float name="duration" value="0" />
 			<bool name="can_interrupt_setup" value="True" />
-			<bool name="has_instant_setup" value="False" />
+			<bool name="has_instant_setup" value="True" />
 		</group>
 		<group name="suppressed">
 			<float name="pinned_cooldown_multiplier" value="1" />
@@ -196,10 +196,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="240" />
+			<float name="min" value="160" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="240" />
+			<float name="max" value="160" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -379,7 +379,7 @@
 			</group>
 			<float name="amount" value="0" />
 		</group>
-		<string name="fx_munition_name" value="shell_jagdtiger" />
+		<string name="fx_munition_name" value="shell_heavy_he" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="anim_table">
 			<string name="track_horizontal" value="" />
@@ -406,7 +406,7 @@
 			<group name="damage">
 				<float name="near" value="1" />
 				<float name="far" value="0.05" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -424,12 +424,12 @@
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<group name="damage_friendly">
 				<float name="near" value="0.5" />
-				<float name="far" value="0.025" />
-				<float name="mid" value="0.075" />
+				<float name="far" value="0.1" />
+				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
-				<float name="near" value="0.8" />
-				<float name="far" value="4.2" />
+				<float name="near" value="0.5" />
+				<float name="far" value="5.6" />
 				<float name="mid" value="2" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
@@ -478,7 +478,7 @@
 			<bool name="aa_weapon" value="False" />
 			<bool name="fire_at_building_combat_slot" value="False" />
 			<float name="reaction_radius" value="1.5" />
-			<bool name="can_be_pilfered" value="True" />
+			<bool name="can_be_pilfered" value="False" />
 			<bool name="can_be_substituted" value="False" />
 			<bool name="can_be_offhanded" value="False" />
 			<bool name="single_handed_weapon" value="False" />

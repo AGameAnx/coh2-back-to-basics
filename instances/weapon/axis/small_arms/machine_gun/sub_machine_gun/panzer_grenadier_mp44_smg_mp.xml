@@ -39,7 +39,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<string name="fx_tracer_name" value="mp40_tracer" />
 		<bool name="fx_always_visible" value="False" />
@@ -57,7 +58,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="7" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="7" />
 		</group>
 		<group name="anim_table">
@@ -223,7 +225,8 @@
 				<float name="min" value="4" />
 				<float name="max" value="5" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="mid" value="1" />
@@ -231,11 +234,11 @@
 			</group>
 			<group name="duration">
 				<float name="min" value="2.8" />
-				<float name="max" value="3.5" />
+				<float name="max" value="3.1" />
 			</group>
 		</group>
 		<float name="flinch_radius" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="cover_table">
 			<group name="tp_z_ice">
 				<float name="suppression_multiplier" value="1" />
@@ -366,7 +369,8 @@
 		</group>
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="False" />
 		</group>
 		<group name="suppression">

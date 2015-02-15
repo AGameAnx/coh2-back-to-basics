@@ -24,7 +24,8 @@
 		</group>
 		<string name="name" value="zis-3_76mm_HE" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -57,7 +58,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="15" />
@@ -68,7 +70,7 @@
 			</group>
 			<float name="max" value="60" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -120,7 +122,7 @@
 		<group name="damage">
 			<float name="min" value="10" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\scar_function_call" name="action">
+				<template_reference name="action" value="action\scar_function_call">
 					<uniqueid name="id" value="62454" />
 					<string name="function_name" value="AE_DamageIce_atHighExplosive" />
 				</template_reference>
@@ -161,7 +163,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="1" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

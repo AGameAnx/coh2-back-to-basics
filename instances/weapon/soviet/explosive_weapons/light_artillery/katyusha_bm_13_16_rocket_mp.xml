@@ -70,7 +70,7 @@
 			</group>
 			<float name="max" value="200" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -139,8 +139,8 @@
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_ratio" value="0.1667" />
-			<float name="fow_angle_multiplier" value="1.25" />
-			<float name="fow_distance_multiplier" value="1.25" />
+			<float name="fow_angle_multiplier" value="1" />
+			<float name="fow_distance_multiplier" value="1" />
 		</group>
 		<group name="moving">
 			<bool name="disable_moving_firing" value="True" />

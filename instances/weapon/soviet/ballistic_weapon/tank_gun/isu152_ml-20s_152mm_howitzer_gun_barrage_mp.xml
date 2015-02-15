@@ -80,7 +80,7 @@
 			</group>
 			<float name="max" value="110" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<instance_reference name="projectile" value="ebps\projectile\isu_152_shell_mp" />
 			<bool name="delete_previous_on_hit" value="False" />
