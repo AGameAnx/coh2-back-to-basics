@@ -196,7 +196,7 @@
 									<template_reference name="ui_info" value="tables\ui_info">
 										<locstring name="screen_name" value="11046559" />
 										<locstring name="help_text" value="11046558" />
-										<string name="icon_name" value="Icons_abilities_ability_german_hull_down_set" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_hull_down_set" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
 									<uniqueid name="id" value="1073741835" />
@@ -404,7 +404,7 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_stug_iii_g_sdkfz_141_1_gameplay" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="200" />
+			<float name="armor" value="170" />
 			<float name="rear_armor" value="70" />
 			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -667,7 +667,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11038272" />
 			<string name="hotkey_name" value="axis_stug" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_german_stug_iii_g" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_german_stug_iii_g" />
 			<enum name="kill_type" value="medium_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -707,7 +707,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11049276" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
@@ -725,7 +725,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="11049312" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_stug_iii_g_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_stug_iii_g_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -1146,6 +1146,7 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="55" />
+			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
 			<float name="acceleration" value="2.1" />
@@ -1153,7 +1154,7 @@
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
-			<float name="rotation_rate" value="28" />
+			<float name="rotation_rate" value="22" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
@@ -1193,7 +1194,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
-			<enum name="cover_type" value="type_cover\tp_heavy.lua" />
+			<enum name="cover_type" value="tp_heavy" />
 			<bool name="is_cover_directional" value="True" />
 			<bool name="is_shoot_through" value="False" />
 			<bool name="lengthwise_spots" value="False" />

@@ -346,7 +346,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="14" />
+			<float name="personnel_pop" value="11" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -401,7 +401,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11071692" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_aef_m36_jackson" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_aef_m36_jackson" />
 			<enum name="kill_type" value="medium_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -441,7 +441,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11071579" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_aef_m36_jackson_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -460,7 +460,7 @@
 			<locstring name="extra_text_world" value="11071663" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_m36_jackson_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_aef_m36_jackson_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="fx_ui" />
 			<bool name="skin_pack_override" value="False" />
@@ -504,6 +504,21 @@
 							</group>
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\m36_m4_90mm_gun_mp" />
+						</group>
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="4.752" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2.5" />
+								<float name="z" value="0.25" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\m36_m4_90mm_ap_gun_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -948,6 +963,7 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="110" />
+			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
 			<float name="deceleration" value="4.3" />

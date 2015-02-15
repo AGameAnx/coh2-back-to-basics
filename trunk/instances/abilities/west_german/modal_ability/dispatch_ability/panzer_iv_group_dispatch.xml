@@ -106,11 +106,11 @@
 			<locstring name="extra_text" value="9" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<locstring name="help_text" value="11072515" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_commander_cmdr_west_german_veteran_panzer_iv_battle_group" />
+			<icon name="icon_name" value="Icons_commander_cmdr_west_german_veteran_panzer_iv_battle_group" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11072019" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

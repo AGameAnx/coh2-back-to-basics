@@ -333,7 +333,7 @@
 			<group name="unit_type_list">
 				<enum name="unit_type00" value="vehicle" />
 				<enum name="unit_type01" value="armour" />
-				<enum name="unit_type02" value="mobile_artillery" />
+				<enum name="unit_type02" value="" />
 				<enum name="unit_type03" value="tank_awareness_ally" />
 				<enum name="unit_type04" value="light_vehicle" />
 				<enum name="unit_type05" value="german_tanks" />
@@ -360,7 +360,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11038267" />
 			<string name="hotkey_name" value="axis_stug" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_german_panzerwerfer" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_german_panzerwerfer" />
 			<enum name="kill_type" value="light_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -400,7 +400,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11049271" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_german_panzerwerfer_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -418,7 +418,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="11049316" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzerwerfer_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzerwerfer_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -854,6 +854,7 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="55" />
+			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
 			<float name="acceleration" value="3" />
@@ -900,7 +901,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
-			<enum name="cover_type" value="type_cover\tp_heavy.lua" />
+			<enum name="cover_type" value="tp_heavy" />
 			<bool name="is_cover_directional" value="True" />
 			<bool name="is_shoot_through" value="False" />
 			<bool name="lengthwise_spots" value="False" />

@@ -112,7 +112,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="120" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="100" />
+		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_sync_mortar_barrage" />
@@ -144,11 +144,11 @@
 			<locstring name="extra_text" value="11038532" />
 			<locstring name="help_text" value="11007847" />
 			<string name="hotkey_name" value="B" />
-			<string name="icon_name" value="Icons_abilities_ability_german_rocket_barrage" />
+			<icon name="icon_name" value="Icons_abilities_ability_german_rocket_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11007846" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

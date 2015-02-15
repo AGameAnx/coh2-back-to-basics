@@ -819,7 +819,7 @@ AIControl.MainControl = {
 							AIControl.MainControl.VehicleControl.RepairsRetreat[team][squadGameID] = nil
 						end
 						
-						local dangerRequiredToRetreat = 58 - 10*math.min(1, 1-healthPercentage/0.55)
+						local dangerRequiredToRetreat = 72 - 20*math.min(1, 1-healthPercentage/0.55)
 						if healthPercentage == 1 then
 							dangerRequiredToRetreat = dangerRequiredToRetreat + 12
 						end

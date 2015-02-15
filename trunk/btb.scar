@@ -9,8 +9,16 @@ import("WinConditions/Annihilate.scar")
 
 import('WinConditions/aicontrol.scar')
 
+
 SetGlobals()
-Scar_AddInit(VPTicker_OnInit)
+
+function VPTicker_CustomInit()
+	VPTicker_OnInit()
+	Rule_Remove(VPTicker_MainRule)
+	Rule_AddInterval(VPTicker_MainRule, 3.2)
+end
+
+Scar_AddInit(VPTicker_CustomInit)
 
 local function BtB_IsSquadVehicle(squad)
 	return Squad_GetMax(squad) == 1 and Squad_GetHealthMax(squad) > 150
@@ -184,16 +192,16 @@ function BtB_Init()
 		local p = World_GetPlayerAt(i)
 		
 		-- TODO: Save modifiers and reset on init
-		Modify_PlayerResourceRate(p, RT_Manpower, 34/60/8, MUT_Addition)
+		Modify_PlayerResourceRate(p, RT_Manpower, 30/60/8, MUT_Addition)
 		--Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Action, 0.65, MUT_Multiplication)
-		Modify_PlayerSightRadius(p, 1.1)
-		Modify_Upkeep(p, 1.41)
+		Modify_PlayerSightRadius(p, 1.05)
+		Modify_Upkeep(p, 1.3)
 		
 		Player_SetMaxPopulation(p, CT_Personnel, 120)
 		Player_SetMaxCapPopulation(p, CT_Personnel, 120)
 		
-		Player_SetResource(p, RT_Manpower, Player_GetResource(p, RT_Manpower)+25)
+		--Player_SetResource(p, RT_Manpower, Player_GetResource(p, RT_Manpower)+25)
 		
 		if not Player_IsHuman(p) then
 			BtB.SetupAIPlayer(p)

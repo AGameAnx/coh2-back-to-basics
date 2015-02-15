@@ -108,7 +108,7 @@
 		<template_reference name="ui_info" value="tables\ui_info">
 			<locstring name="screen_name" value="11036979" />
 			<locstring name="help_text" value="33" mod="23d6cdb82724460dbcb21e1a9162e473" />
-			<string name="icon_name" value="Icons_criticals_temp_stun" />
+			<icon name="icon_name" value="Icons_criticals_temp_stun" />
 			<string name="hotkey_name" value="" />
 		</template_reference>
 		<bool name="repairable" value="False" />

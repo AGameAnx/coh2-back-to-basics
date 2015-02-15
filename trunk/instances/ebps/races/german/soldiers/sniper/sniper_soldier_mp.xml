@@ -29,7 +29,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="320" />
+					<float name="manpower" value="340" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -43,7 +43,7 @@
 			<float name="death_seconds" value="30" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="120" />
+			<float name="hitpoints" value="82" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -308,7 +308,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_units_unit_german_sniper" />
+			<icon name="icon_name" value="Icons_units_unit_german_sniper" />
 			<enum name="kill_type" value="infantry" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -348,7 +348,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -367,7 +367,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<string name="symbol_icon_name" value="Icons_symbols_unit_german_sniper_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_unit_german_sniper_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
