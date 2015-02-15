@@ -5,284 +5,284 @@
 		<template_reference value="sbpextensions\squad_ui_ext" name="squadexts">
 			<list name="race_list">
 				<group name="race_data">
+					<group name="info">
+						<instance_reference name="modal_ability" value="" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
+						<bool name="tacmap_team_only" value="False" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="help_text" value="11007824" />
+						<bool name="has_speech_code" value="True" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
+						<string name="hotkey_name" value="E" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
+						<bool name="decoratable" value="True" />
+						<locstring name="brief_text" value="11038791" />
+						<locstring name="extra_text" value="11009049" />
+						<locstring name="screen_name_short" value="11045747" />
+						<group name="speaker_specific_alt">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<enum name="map_rotation_type_override" value="no_override" />
+						<icon name="minimap_texture" value="" />
+						<enum name="ui_style" value="default" />
+						<int name="ui_priority" value="40" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<locstring name="screen_name" value="11007744" />
+						<bool name="allow_spawner_production" value="False" />
+						<group name="speech_code_2">
+							<string name="code_2" value="ar" />
+							<string name="code_3" value="ha" />
+							<string name="code_1" value="el" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="ht" />
+						</group>
+						<float name="minimap_texture_scale" value="1" />
+						<bool name="minimap_team_only" value="False" />
+						<group name="speech_code_3">
+							<string name="code_2" value="arm" />
+							<string name="code_3" value="har" />
+							<string name="code_1" value="ele" />
+						</group>
+						<bool name="show_in_build_log" value="True" />
+						<string name="selection_group" value="elefant" />
+						<bool name="reveal_for_decryption" value="True" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
+						<bool name="speaker_highest_priority" value="False" />
+					</group>
 					<instance_reference name="ext_key" value="racebps\german" />
-					<group name="info">
-						<locstring name="screen_name_short" value="11045747" />
-						<locstring name="screen_name" value="11007744" />
-						<bool name="speaker_highest_priority" value="False" />
-						<bool name="tacmap_team_only" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
-						<group name="speech_code_2">
-							<string name="code_2" value="ar" />
-							<string name="code_1" value="el" />
-							<string name="code_3" value="ha" />
-						</group>
-						<locstring name="brief_text" value="11038791" />
-						<group name="speech_code_3">
-							<string name="code_2" value="arm" />
-							<string name="code_1" value="ele" />
-							<string name="code_3" value="har" />
-						</group>
-						<group name="speaker_specific_alt">
-							<string name="code_2" value="" />
-							<string name="code_1" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<string name="hotkey_name" value="E" />
-						<group name="speaker_specific">
-							<string name="code_2" value="" />
-							<string name="code_1" value="ht" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="reveal_for_decryption" value="True" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
-						<bool name="minimap_team_only" value="False" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
-						<enum name="ui_style" value="default" />
-						<float name="minimap_texture_scale" value="1" />
-						<string name="selection_group" value="elefant" />
-						<locstring name="extra_text" value="11009049" />
-						<int name="ui_priority" value="40" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
-						<bool name="decoratable" value="True" />
-						<bool name="allow_spawner_production" value="False" />
-						<string name="minimap_texture" value="" />
-						<bool name="has_speech_code" value="True" />
-						<instance_reference name="modal_ability" value="" />
-						<group name="speaker_generic">
-							<string name="code_2" value="" />
-							<string name="code_1" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<locstring name="help_text" value="11007824" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="use_random_entity_speaker" value="False" />
-					</group>
 				</group>
 				<group name="race_data">
+					<group name="info">
+						<instance_reference name="modal_ability" value="" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
+						<bool name="tacmap_team_only" value="False" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="help_text" value="11007824" />
+						<bool name="has_speech_code" value="True" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
+						<string name="hotkey_name" value="E" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
+						<bool name="decoratable" value="True" />
+						<locstring name="brief_text" value="11038791" />
+						<locstring name="extra_text" value="11009049" />
+						<locstring name="screen_name_short" value="11045747" />
+						<group name="speaker_specific_alt">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<enum name="map_rotation_type_override" value="no_override" />
+						<icon name="minimap_texture" value="" />
+						<enum name="ui_style" value="default" />
+						<int name="ui_priority" value="40" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<locstring name="screen_name" value="11007744" />
+						<bool name="allow_spawner_production" value="False" />
+						<group name="speech_code_2">
+							<string name="code_2" value="ar" />
+							<string name="code_3" value="ha" />
+							<string name="code_1" value="el" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="ht" />
+						</group>
+						<float name="minimap_texture_scale" value="1" />
+						<bool name="minimap_team_only" value="False" />
+						<group name="speech_code_3">
+							<string name="code_2" value="arm" />
+							<string name="code_3" value="har" />
+							<string name="code_1" value="ele" />
+						</group>
+						<bool name="show_in_build_log" value="True" />
+						<string name="selection_group" value="elefant" />
+						<bool name="reveal_for_decryption" value="True" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
+						<bool name="speaker_highest_priority" value="False" />
+					</group>
 					<instance_reference name="ext_key" value="racebps\soviet" />
-					<group name="info">
-						<locstring name="screen_name_short" value="11045747" />
-						<locstring name="screen_name" value="11007744" />
-						<bool name="speaker_highest_priority" value="False" />
-						<bool name="tacmap_team_only" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
-						<group name="speech_code_2">
-							<string name="code_2" value="ar" />
-							<string name="code_1" value="el" />
-							<string name="code_3" value="ha" />
-						</group>
-						<locstring name="brief_text" value="11038791" />
-						<group name="speech_code_3">
-							<string name="code_2" value="arm" />
-							<string name="code_1" value="ele" />
-							<string name="code_3" value="har" />
-						</group>
-						<group name="speaker_specific_alt">
-							<string name="code_2" value="" />
-							<string name="code_1" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<string name="hotkey_name" value="E" />
-						<group name="speaker_specific">
-							<string name="code_2" value="" />
-							<string name="code_1" value="ht" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="reveal_for_decryption" value="True" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
-						<bool name="minimap_team_only" value="False" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
-						<enum name="ui_style" value="default" />
-						<float name="minimap_texture_scale" value="1" />
-						<string name="selection_group" value="elefant" />
-						<locstring name="extra_text" value="11009049" />
-						<int name="ui_priority" value="40" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
-						<bool name="decoratable" value="True" />
-						<bool name="allow_spawner_production" value="False" />
-						<string name="minimap_texture" value="" />
-						<bool name="has_speech_code" value="True" />
-						<instance_reference name="modal_ability" value="" />
-						<group name="speaker_generic">
-							<string name="code_2" value="" />
-							<string name="code_1" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<locstring name="help_text" value="11007824" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="use_random_entity_speaker" value="False" />
-					</group>
 				</group>
 				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\west_german" />
 					<group name="info">
-						<locstring name="screen_name_short" value="11045747" />
-						<locstring name="screen_name" value="11007744" />
-						<bool name="speaker_highest_priority" value="False" />
+						<instance_reference name="modal_ability" value="" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
 						<bool name="tacmap_team_only" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
-						<group name="speech_code_2">
-							<string name="code_2" value="ar" />
-							<string name="code_1" value="el" />
-							<string name="code_3" value="ha" />
-						</group>
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="help_text" value="11007824" />
+						<bool name="has_speech_code" value="True" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
+						<string name="hotkey_name" value="E" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
+						<bool name="decoratable" value="True" />
 						<locstring name="brief_text" value="11038791" />
-						<group name="speech_code_3">
-							<string name="code_2" value="arm" />
-							<string name="code_1" value="ele" />
-							<string name="code_3" value="har" />
-						</group>
+						<locstring name="extra_text" value="11009049" />
+						<locstring name="screen_name_short" value="11045747" />
 						<group name="speaker_specific_alt">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="" />
 						</group>
-						<string name="hotkey_name" value="E" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<icon name="minimap_texture" value="" />
+						<enum name="ui_style" value="default" />
+						<int name="ui_priority" value="40" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<locstring name="screen_name" value="11007744" />
+						<bool name="allow_spawner_production" value="False" />
+						<group name="speech_code_2">
+							<string name="code_2" value="ar" />
+							<string name="code_3" value="ha" />
+							<string name="code_1" value="el" />
+						</group>
 						<group name="speaker_specific">
 							<string name="code_2" value="" />
+							<string name="code_3" value="" />
 							<string name="code_1" value="wh" />
-							<string name="code_3" value="" />
 						</group>
-						<bool name="reveal_for_decryption" value="True" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
-						<bool name="minimap_team_only" value="False" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
-						<enum name="ui_style" value="default" />
 						<float name="minimap_texture_scale" value="1" />
-						<string name="selection_group" value="elefant" />
-						<locstring name="extra_text" value="11009049" />
-						<int name="ui_priority" value="40" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
-						<bool name="decoratable" value="True" />
-						<bool name="allow_spawner_production" value="False" />
-						<string name="minimap_texture" value="" />
-						<bool name="has_speech_code" value="True" />
-						<instance_reference name="modal_ability" value="" />
-						<group name="speaker_generic">
-							<string name="code_2" value="" />
-							<string name="code_1" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<locstring name="help_text" value="11007824" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="use_random_entity_speaker" value="False" />
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\aef" />
-					<group name="info">
-						<locstring name="screen_name_short" value="11045747" />
-						<locstring name="screen_name" value="11007744" />
-						<bool name="speaker_highest_priority" value="False" />
-						<bool name="tacmap_team_only" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
-						<group name="speech_code_2">
-							<string name="code_2" value="ar" />
-							<string name="code_1" value="el" />
-							<string name="code_3" value="ha" />
-						</group>
-						<locstring name="brief_text" value="11038791" />
+						<bool name="minimap_team_only" value="False" />
 						<group name="speech_code_3">
 							<string name="code_2" value="arm" />
-							<string name="code_1" value="ele" />
 							<string name="code_3" value="har" />
+							<string name="code_1" value="ele" />
 						</group>
+						<bool name="show_in_build_log" value="True" />
+						<string name="selection_group" value="elefant" />
+						<bool name="reveal_for_decryption" value="True" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
+						<bool name="speaker_highest_priority" value="False" />
+					</group>
+					<instance_reference name="ext_key" value="racebps\west_german" />
+				</group>
+				<group name="race_data">
+					<group name="info">
+						<instance_reference name="modal_ability" value="" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
+						<bool name="tacmap_team_only" value="False" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="help_text" value="11007824" />
+						<bool name="has_speech_code" value="True" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
+						<string name="hotkey_name" value="E" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
+						<bool name="decoratable" value="True" />
+						<locstring name="brief_text" value="11038791" />
+						<locstring name="extra_text" value="11009049" />
+						<locstring name="screen_name_short" value="11045747" />
 						<group name="speaker_specific_alt">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="" />
 						</group>
-						<string name="hotkey_name" value="E" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<icon name="minimap_texture" value="" />
+						<enum name="ui_style" value="default" />
+						<int name="ui_priority" value="40" />
+						<group name="speaker_generic">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="" />
+						</group>
+						<locstring name="screen_name" value="11007744" />
+						<bool name="allow_spawner_production" value="False" />
+						<group name="speech_code_2">
+							<string name="code_2" value="ar" />
+							<string name="code_3" value="ha" />
+							<string name="code_1" value="el" />
+						</group>
 						<group name="speaker_specific">
 							<string name="code_2" value="" />
+							<string name="code_3" value="" />
 							<string name="code_1" value="mt" />
-							<string name="code_3" value="" />
 						</group>
-						<bool name="reveal_for_decryption" value="True" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
-						<bool name="minimap_team_only" value="False" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
-						<enum name="ui_style" value="default" />
 						<float name="minimap_texture_scale" value="1" />
-						<string name="selection_group" value="elefant" />
-						<locstring name="extra_text" value="11009049" />
-						<int name="ui_priority" value="40" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
-						<bool name="decoratable" value="True" />
-						<bool name="allow_spawner_production" value="False" />
-						<string name="minimap_texture" value="" />
-						<bool name="has_speech_code" value="True" />
-						<instance_reference name="modal_ability" value="" />
-						<group name="speaker_generic">
-							<string name="code_2" value="" />
-							<string name="code_1" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<locstring name="help_text" value="11007824" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="use_random_entity_speaker" value="False" />
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="" />
-					<group name="info">
-						<locstring name="screen_name_short" value="11045747" />
-						<locstring name="screen_name" value="11007744" />
-						<bool name="speaker_highest_priority" value="False" />
-						<bool name="tacmap_team_only" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
-						<group name="speech_code_2">
-							<string name="code_2" value="ar" />
-							<string name="code_1" value="el" />
-							<string name="code_3" value="ha" />
-						</group>
-						<locstring name="brief_text" value="11038791" />
+						<bool name="minimap_team_only" value="False" />
 						<group name="speech_code_3">
 							<string name="code_2" value="arm" />
-							<string name="code_1" value="ele" />
 							<string name="code_3" value="har" />
+							<string name="code_1" value="ele" />
 						</group>
+						<bool name="show_in_build_log" value="True" />
+						<string name="selection_group" value="elefant" />
+						<bool name="reveal_for_decryption" value="True" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
+						<bool name="speaker_highest_priority" value="False" />
+					</group>
+					<instance_reference name="ext_key" value="racebps\aef" />
+				</group>
+				<group name="race_data">
+					<group name="info">
+						<instance_reference name="modal_ability" value="" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
+						<bool name="tacmap_team_only" value="False" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<locstring name="help_text" value="11007824" />
+						<bool name="has_speech_code" value="True" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_w_portrait" />
+						<string name="hotkey_name" value="E" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
+						<bool name="decoratable" value="True" />
+						<locstring name="brief_text" value="11038791" />
+						<locstring name="extra_text" value="11009049" />
+						<locstring name="screen_name_short" value="11045747" />
 						<group name="speaker_specific_alt">
 							<string name="code_2" value="" />
+							<string name="code_3" value="" />
 							<string name="code_1" value="" />
-							<string name="code_3" value="" />
 						</group>
-						<string name="hotkey_name" value="E" />
-						<group name="speaker_specific">
-							<string name="code_2" value="" />
-							<string name="code_1" value="ht" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="reveal_for_decryption" value="True" />
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_elephant_tank_destroyer_s_portrait" />
-						<bool name="minimap_team_only" value="False" />
 						<enum name="map_rotation_type_override" value="no_override" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
+						<icon name="minimap_texture" value="" />
 						<enum name="ui_style" value="default" />
-						<float name="minimap_texture_scale" value="1" />
-						<string name="selection_group" value="elefant" />
-						<locstring name="extra_text" value="11009049" />
 						<int name="ui_priority" value="40" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_elefant_tank_destroyer_symbol" />
-						<bool name="decoratable" value="True" />
-						<bool name="allow_spawner_production" value="False" />
-						<string name="minimap_texture" value="" />
-						<bool name="has_speech_code" value="True" />
-						<instance_reference name="modal_ability" value="" />
 						<group name="speaker_generic">
 							<string name="code_2" value="" />
-							<string name="code_1" value="" />
 							<string name="code_3" value="" />
+							<string name="code_1" value="" />
 						</group>
-						<locstring name="help_text" value="11007824" />
+						<locstring name="screen_name" value="11007744" />
+						<bool name="allow_spawner_production" value="False" />
+						<group name="speech_code_2">
+							<string name="code_2" value="ar" />
+							<string name="code_3" value="ha" />
+							<string name="code_1" value="el" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+							<string name="code_1" value="ht" />
+						</group>
+						<float name="minimap_texture_scale" value="1" />
+						<bool name="minimap_team_only" value="False" />
+						<group name="speech_code_3">
+							<string name="code_2" value="arm" />
+							<string name="code_3" value="har" />
+							<string name="code_1" value="ele" />
+						</group>
 						<bool name="show_in_build_log" value="True" />
-						<bool name="use_random_entity_speaker" value="False" />
+						<string name="selection_group" value="elefant" />
+						<bool name="reveal_for_decryption" value="True" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_elefant_tank_destroyer" />
+						<bool name="speaker_highest_priority" value="False" />
 					</group>
+					<instance_reference name="ext_key" value="" />
 				</group>
 			</list>
 		</template_reference>
@@ -291,90 +291,90 @@
 			<string name="default_stance_name" value="stance_attack" />
 		</template_reference>
 		<template_reference value="sbpextensions\squad_formation_ext" name="squadexts">
+			<float name="combat_follower_cover_search_radius" value="0" />
 			<bool name="support_weapons_to_flanks" value="False" />
 			<float name="move_dest_cover_search_radius" value="0" />
-			<group name="squad_distribution_table">
-				<group name="05_soldiers">
-					<float name="units_in_left_flank" value="1" />
-					<float name="units_in_core" value="3" />
-					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="1" />
-				</group>
-				<group name="04_soldiers">
-					<float name="units_in_left_flank" value="1" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="1" />
-				</group>
-				<group name="10_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="4" />
-					<float name="units_in_scout" value="2" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
-				<group name="09_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="3" />
-					<float name="units_in_scout" value="2" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
-				<group name="08_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="2" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
-				<group name="06_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
-				<group name="03_soldiers">
-					<float name="units_in_left_flank" value="0" />
-					<float name="units_in_core" value="3" />
-					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="0" />
-				</group>
-				<group name="02_soldiers">
-					<float name="units_in_left_flank" value="0" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="0" />
-				</group>
-				<group name="01_soldiers">
-					<float name="units_in_left_flank" value="0" />
-					<float name="units_in_core" value="1" />
-					<float name="units_in_scout" value="0" />
-					<float name="units_in_right_flank" value="0" />
-				</group>
-				<group name="07_soldiers">
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_core" value="2" />
-					<float name="units_in_scout" value="1" />
-					<float name="units_in_right_flank" value="2" />
-				</group>
-			</group>
-			<float name="combat_follower_cover_search_radius" value="0" />
 			<group name="cover_formation_table">
-				<instance_reference name="tp_garrison_cover" value="squad_formations\default" />
+				<instance_reference name="tp_garrison_halftrack" value="squad_formations\default" />
 				<instance_reference name="tp_trench" value="squad_formations\default" />
-				<instance_reference name="tp_defcover" value="squad_formations\wedge" />
 				<instance_reference name="tp_zz_deep_snow" value="squad_formations\default" />
-				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
-				<instance_reference name="tp_smoke" value="squad_formations\wedge" />
-				<instance_reference name="tp_light" value="squad_formations\wedge" />
-				<instance_reference name="tp_zz_mud" value="squad_formations\default" />
-				<instance_reference name="tp_water" value="squad_formations\wedge" />
-				<instance_reference name="tp_heavy" value="squad_formations\wedge" />
-				<instance_reference name="tp_open" value="squad_formations\line" />
-				<instance_reference name="tp_z_snow" value="squad_formations\default" />
+				<instance_reference name="tp_z_bunker" value="squad_formations\wedge" />
 				<instance_reference name="tp_z_emplacement" value="squad_formations\default" />
+				<instance_reference name="tp_light" value="squad_formations\wedge" />
+				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
+				<instance_reference name="tp_water" value="squad_formations\wedge" />
+				<instance_reference name="tp_garrison_cover" value="squad_formations\default" />
+				<instance_reference name="tp_z_snow" value="squad_formations\default" />
+				<instance_reference name="tp_smoke" value="squad_formations\wedge" />
+				<instance_reference name="tp_negative" value="squad_formations\wedge" />
 				<instance_reference name="tp_defcover_narrow" value="squad_formations\line" />
 				<instance_reference name="tp_z_ice" value="squad_formations\default" />
-				<instance_reference name="tp_negative" value="squad_formations\wedge" />
-				<instance_reference name="tp_z_bunker" value="squad_formations\wedge" />
-				<instance_reference name="tp_garrison_halftrack" value="squad_formations\default" />
+				<instance_reference name="tp_zz_mud" value="squad_formations\default" />
+				<instance_reference name="tp_defcover" value="squad_formations\wedge" />
+				<instance_reference name="tp_heavy" value="squad_formations\wedge" />
+				<instance_reference name="tp_open" value="squad_formations\line" />
+			</group>
+			<group name="squad_distribution_table">
+				<group name="06_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_left_flank" value="2" />
+					<float name="units_in_scout" value="0" />
+				</group>
+				<group name="07_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_left_flank" value="2" />
+					<float name="units_in_scout" value="1" />
+				</group>
+				<group name="08_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_left_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+				</group>
+				<group name="09_soldiers">
+					<float name="units_in_core" value="3" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_left_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+				</group>
+				<group name="03_soldiers">
+					<float name="units_in_core" value="3" />
+					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_left_flank" value="0" />
+					<float name="units_in_scout" value="0" />
+				</group>
+				<group name="02_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_left_flank" value="0" />
+					<float name="units_in_scout" value="0" />
+				</group>
+				<group name="05_soldiers">
+					<float name="units_in_core" value="3" />
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_left_flank" value="1" />
+					<float name="units_in_scout" value="0" />
+				</group>
+				<group name="04_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_left_flank" value="1" />
+					<float name="units_in_scout" value="0" />
+				</group>
+				<group name="01_soldiers">
+					<float name="units_in_core" value="1" />
+					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_left_flank" value="0" />
+					<float name="units_in_scout" value="0" />
+				</group>
+				<group name="10_soldiers">
+					<float name="units_in_core" value="4" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_left_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+				</group>
 			</group>
 		</template_reference>
 		<template_reference value="sbpextensions\squad_item_slot_ext" name="squadexts">
@@ -384,8 +384,8 @@
 		<template_reference value="sbpextensions\squad_loadout_ext" name="squadexts">
 			<list name="unit_list">
 				<group name="loadout_data">
-					<instance_reference name="type" value="ebps\races\german\vehicles\elefant_sdkfz_184\elefant_sdkfz_184" />
 					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\races\german\vehicles\elefant_sdkfz_184\elefant_sdkfz_184" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -395,12 +395,12 @@
 		<template_reference value="sbpextensions\squad_requirement_ext" name="squadexts">
 			<list name="requirement_table">
 				<template_reference value="requirements\required_player_upgrade" name="required">
-					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_4" />
-					<locstring name="ui_name" value="11032633" />
-					<enum name="reason" value="usage" />
-					<bool name="is_present" value="True" />
-					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
+					<bool name="is_present" value="True" />
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11032633" />
+					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_4" />
+					<float name="max_completed" value="100" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -408,42 +408,45 @@
 			<list name="upgrades" />
 		</template_reference>
 		<template_reference value="sbpextensions\squad_upgrade_ext" name="squadexts">
-			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
 				<instance_reference value="upgrade\german\items\vehicles_optics" name="upgrade" />
 			</list>
+			<float name="number_of_slots" value="-1" />
 		</template_reference>
 		<template_reference value="sbpextensions\squad_action_apply_ext" name="squadexts">
 			<list name="actions">
 				<template_reference value="action\requirement_action" name="action">
+					<uniqueid name="id" value="65736869" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="check_self" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
 						<template_reference value="action\apply_modifiers_action" name="action">
+							<uniqueid name="id" value="127231666" />
 							<list name="modifiers">
 								<template_reference value="modifiers\income_fuel_player_modifier" name="modifier">
-									<enum name="usage_type" value="addition" />
-									<instance_reference name="tooltip" value="modifier_tooltip\income_fuel_player_modifier" />
-									<float name="value" value="-0.01" />
+									<string name="modifier_id" value="vehicle_upkeep" />
+									<string name="target_type_name" value="" />
 									<enum name="application_type" value="apply_to_player" />
 									<bool name="exclusive" value="False" />
-									<string name="target_type_name" value="" />
-									<string name="modifier_id" value="vehicle_upkeep" />
+									<instance_reference name="tooltip" value="modifier_tooltip\income_fuel_player_modifier" />
+									<enum name="usage_type" value="addition" />
+									<float name="value" value="-0.014" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="127231666" />
 							<bool name="permanent" value="False" />
 							<float name="duration" value="0" />
 						</template_reference>
 					</list>
-					<bool name="check_self" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="True" />
 					<list name="requirement_table">
 						<template_reference value="requirements\required_not" name="required">
-							<locstring name="ui_name" value="0" />
-							<enum name="reason" value="usage" />
 							<list name="requirement_table">
 								<template_reference value="requirements\required_ownership" name="required">
 									<locstring name="ui_name" value="0" />
@@ -451,55 +454,90 @@
 									<enum name="ownership_type" value="neutral" />
 								</template_reference>
 							</list>
+							<locstring name="ui_name" value="0" />
+							<enum name="reason" value="usage" />
 						</template_reference>
 					</list>
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<uniqueid name="id" value="65736869" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
+					<bool name="no_retrigger" value="False" />
 				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference value="sbpextensions\squad_combat_behaviour_ext" name="squadexts">
-			<float name="heavy_weapon_setup_delay" value="0" />
-			<float name="reaction_delay_seconds" value="8" />
-			<float name="reaction_combat_delay_seconds" value="8" />
+			<string name="squad_ai_file" value="empty-plan" />
+			<group name="pilfer">
+				<group name="weapon">
+					<group name="heading">
+						<float name="y" value="0" />
+						<float name="x" value="0" />
+						<float name="z" value="1" />
+					</group>
+					<enum name="type" value="default" />
+					<group name="origin">
+						<float name="y" value="0.5" />
+						<float name="x" value="0" />
+						<float name="z" value="0" />
+					</group>
+					<float name="length" value="0" />
+					<instance_reference name="weapon" value="" />
+				</group>
+				<bool name="can_pilfer" value="False" />
+				<instance_reference name="remove_weapon" value="" />
+			</group>
+			<float name="reveal_self_attacker_time" value="0" />
+			<string name="squad_ai_retaliation_file" value="empty-plan" />
+			<string name="squad_ai_sniped_file" value="" />
+			<string name="squad_ai_reaction_file" value="empty-plan" />
 			<group name="suppression">
-				<float name="pin_down_recover_threshold" value="0.2" />
-				<list name="pin_down_activate_actions" />
-				<float name="noncombat_delay" value="1" />
-				<list name="suppressed_activate_actions" />
-				<float name="pin_down_activate_threshold" value="0.3" />
 				<float name="suppressed_activate_threshold" value="0.15" />
-				<float name="suppressed_recover_threshold" value="0.05" />
+				<float name="pin_down_activate_threshold" value="0.3" />
+				<list name="pin_down_activate_actions" />
 				<group name="cover_info">
-					<group name="tp_garrison_cover">
+					<group name="tp_garrison_halftrack">
 						<float name="recover_multiplier" value="1" />
 					</group>
 					<group name="tp_trench">
 						<float name="recover_multiplier" value="1" />
 					</group>
-					<group name="tp_defcover">
-						<float name="recover_multiplier" value="1" />
-					</group>
 					<group name="tp_zz_deep_snow">
 						<float name="recover_multiplier" value="1" />
 					</group>
-					<group name="tp_zz_team_weapon_heavy">
+					<group name="tp_z_bunker">
 						<float name="recover_multiplier" value="1" />
 					</group>
-					<group name="tp_smoke">
+					<group name="tp_z_emplacement">
 						<float name="recover_multiplier" value="1" />
 					</group>
 					<group name="tp_light">
 						<float name="recover_multiplier" value="2.5" />
 					</group>
-					<group name="tp_zz_mud">
+					<group name="tp_zz_team_weapon_heavy">
 						<float name="recover_multiplier" value="1" />
 					</group>
 					<group name="tp_water">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_garrison_cover">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_z_snow">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_smoke">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_negative">
+						<float name="recover_multiplier" value="0.5" />
+					</group>
+					<group name="tp_defcover_narrow">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_z_ice">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_zz_mud">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_defcover">
 						<float name="recover_multiplier" value="1" />
 					</group>
 					<group name="tp_heavy">
@@ -508,60 +546,22 @@
 					<group name="tp_open">
 						<float name="recover_multiplier" value="0.75" />
 					</group>
-					<group name="tp_z_snow">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_z_emplacement">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_defcover_narrow">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_z_ice">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_negative">
-						<float name="recover_multiplier" value="0.5" />
-					</group>
-					<group name="tp_z_bunker">
-						<float name="recover_multiplier" value="1" />
-					</group>
-					<group name="tp_garrison_halftrack">
-						<float name="recover_multiplier" value="1" />
-					</group>
 				</group>
+				<float name="pin_down_recover_threshold" value="0.2" />
+				<float name="noncombat_delay" value="1" />
+				<list name="suppressed_activate_actions" />
+				<float name="suppressed_recover_threshold" value="0.05" />
+				<float name="noncombat_recover_multiplier" value="1" />
 				<float name="recover_rate" value="0.002" />
 				<bool name="can_be_suppressed" value="False" />
-				<float name="noncombat_recover_multiplier" value="1" />
 			</group>
-			<float name="reveal_self_attacker_time" value="0" />
-			<string name="squad_ai_retaliation_file" value="empty-plan" />
-			<group name="pilfer">
-				<bool name="can_pilfer" value="False" />
-				<group name="weapon">
-					<float name="length" value="0" />
-					<group name="heading">
-						<float name="y" value="0" />
-						<float name="z" value="1" />
-						<float name="x" value="0" />
-					</group>
-					<instance_reference name="weapon" value="" />
-					<group name="origin">
-						<float name="y" value="0.5" />
-						<float name="z" value="0" />
-						<float name="x" value="0" />
-					</group>
-					<enum name="type" value="default" />
-				</group>
-				<instance_reference name="remove_weapon" value="" />
-			</group>
+			<float name="reaction_delay_seconds" value="8" />
 			<bool name="reveal_self_attacker_time_use" value="False" />
-			<string name="squad_ai_reaction_file" value="empty-plan" />
 			<template_reference name="can_recrew_abandoned_option" value="options\none">
 			</template_reference>
+			<float name="heavy_weapon_setup_delay" value="0" />
+			<float name="reaction_combat_delay_seconds" value="8" />
 			<string name="squad_ai_pinned_file" value="empty-plan" />
-			<string name="squad_ai_file" value="empty-plan" />
-			<string name="squad_ai_sniped_file" value="" />
 		</template_reference>
 		<template_reference value="sbpextensions\squad_ability_ext" name="squadexts">
 			<list name="abilities" />
@@ -569,97 +569,97 @@
 		<template_reference value="sbpextensions\squad_veterancy_ext" name="squadexts">
 			<list name="race_list">
 				<group name="race_data">
-					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<enum name="shared_veterancy_type" value="no_sharing" />
 						<float name="max_persistent_squads" value="0" />
-						<bool name="can_receive_shared_veterancy" value="False" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<locstring name="screen_name" value="11047278" />
+								<list name="squad_actions" />
 								<float name="experience_value" value="1500" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<list name="leader_actions" />
+								<locstring name="screen_name" value="11047278" />
 								<list name="non_leader_actions" />
 								<bool name="single_player_only" value="False" />
-								<list name="squad_actions" />
-								<list name="leader_actions" />
-								<bool name="hide_ingame_veterancy_art" value="False" />
 							</group>
 							<group name="veterancy_rank">
-								<locstring name="screen_name" value="11047294" />
-								<float name="experience_value" value="3000" />
-								<list name="non_leader_actions" />
-								<bool name="single_player_only" value="False" />
 								<list name="squad_actions">
 									<template_reference value="action\apply_modifiers_action" name="action">
+										<uniqueid name="id" value="59874" />
 										<list name="modifiers">
 											<template_reference value="modifiers\received_damage_modifier" name="modifier">
-												<enum name="usage_type" value="multiplication" />
-												<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-												<float name="value" value="0.45" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
 												<enum name="application_type" value="apply_to_entity" />
 												<bool name="exclusive" value="False" />
-												<string name="target_type_name" value="" />
-												<string name="modifier_id" value="" />
+												<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.45" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="59874" />
 										<bool name="permanent" value="False" />
 										<float name="duration" value="0" />
 									</template_reference>
 									<template_reference value="action\animator_set_state" name="action">
+										<bool name="retrigger" value="False" />
+										<string name="do_action_state_name" value="on" />
+										<uniqueid name="id" value="59875" />
 										<string name="state_machine_name" value="Upgrade_Armour" />
 										<bool name="apply_to_leader_only" value="False" />
 										<string name="undo_action_state_name" value="" />
-										<string name="do_action_state_name" value="on" />
-										<uniqueid name="id" value="59875" />
-										<bool name="retrigger" value="False" />
 									</template_reference>
 								</list>
-								<list name="leader_actions" />
+								<float name="experience_value" value="3000" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-							</group>
-							<group name="veterancy_rank">
-								<locstring name="screen_name" value="11047302" />
-								<float name="experience_value" value="6000" />
+								<list name="leader_actions" />
+								<locstring name="screen_name" value="11047294" />
 								<list name="non_leader_actions" />
 								<bool name="single_player_only" value="False" />
+							</group>
+							<group name="veterancy_rank">
 								<list name="squad_actions">
 									<template_reference value="action\apply_modifiers_action" name="action">
+										<uniqueid name="id" value="59876" />
 										<list name="modifiers">
 											<template_reference value="modifiers\damage_weapon_modifier" name="modifier">
-												<enum name="usage_type" value="multiplication" />
-												<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
-												<float name="value" value="1.78" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="application_type" value="apply_to_weapon" />
 												<bool name="exclusive" value="False" />
-												<string name="target_type_name" value="hardpoint_01" />
-												<string name="modifier_id" value="" />
+												<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.78" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="59876" />
 										<bool name="permanent" value="False" />
 										<float name="duration" value="0" />
 									</template_reference>
 								</list>
-								<list name="leader_actions" />
+								<float name="experience_value" value="6000" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
+								<list name="leader_actions" />
+								<locstring name="screen_name" value="11047302" />
+								<list name="non_leader_actions" />
+								<bool name="single_player_only" value="False" />
 							</group>
 						</list>
+						<enum name="shared_veterancy_type" value="no_sharing" />
+						<bool name="can_receive_shared_veterancy" value="False" />
 					</group>
+					<instance_reference name="ext_key" value="" />
 				</group>
 			</list>
 		</template_reference>
 		<template_reference value="sbpextensions\squad_retreat_ext" name="squadexts">
 			<list name="modifiers" />
-			<group name="retreat_building_types">
-				<enum name="unit_type01" value="hq_wreck" />
-				<enum name="unit_type02" value="alternate_retreat_point" />
-				<enum name="unit_type03" value="" />
-				<enum name="unit_type04" value="" />
-				<enum name="unit_type00" value="hq" />
-			</group>
 			<list name="actions" />
 			<bool name="withdraw_only" value="True" />
+			<group name="retreat_building_types">
+				<enum name="unit_type00" value="hq" />
+				<enum name="unit_type01" value="hq_wreck" />
+				<enum name="unit_type03" value="" />
+				<enum name="unit_type04" value="" />
+				<enum name="unit_type02" value="alternate_retreat_point" />
+			</group>
 		</template_reference>
 		<template_reference value="sbpextensions\squad_type_ext" name="squadexts">
 			<list name="squad_type_list">

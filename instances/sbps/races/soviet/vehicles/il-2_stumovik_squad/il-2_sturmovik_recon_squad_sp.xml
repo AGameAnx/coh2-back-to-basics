@@ -18,9 +18,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11038460" />
 						<string name="hotkey_name" value="" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_soviet_il2" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_il2" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="Icons_minimap_airplane" />
+						<icon name="minimap_texture" value="Icons_minimap_airplane" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="False" />
 						<locstring name="screen_name" value="11038439" />
@@ -48,20 +48,20 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="0" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_il2_sturmovik_aircraft_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_il2_sturmovik_aircraft_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="il" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_il2_sturmovik_aircraft_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_il2_sturmovik_aircraft_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11038698" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_il2_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_il2_symbol" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 					</group>

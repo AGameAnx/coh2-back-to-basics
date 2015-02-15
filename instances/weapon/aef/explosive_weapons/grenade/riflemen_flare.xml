@@ -24,7 +24,8 @@
 		</group>
 		<string name="name" value="Kar 98k Rifle Grenade" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -57,7 +58,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="range">
 			<float name="min" value="20" />
@@ -68,7 +70,7 @@
 			</group>
 			<float name="max" value="150" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="True" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -119,7 +121,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="0" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="0" />
 		</group>
 		<group name="scatter">
@@ -156,7 +159,8 @@
 		<group name="fire">
 			<float name="wind_up" value="1.25" />
 			<float name="wind_down" value="1.625" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

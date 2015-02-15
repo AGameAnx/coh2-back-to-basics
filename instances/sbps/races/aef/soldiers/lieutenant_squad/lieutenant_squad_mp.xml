@@ -11,9 +11,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051350" />
 						<string name="hotkey_name" value="L" />
-						<string name="icon_name" value="Icons_units_unit_aef_officer_lieutenant" />
+						<icon name="icon_name" value="Icons_units_unit_aef_officer_lieutenant" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051143" />
@@ -41,13 +41,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="80" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_aef_lieutenant_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_aef_lieutenant_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_aef_lieutenant_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_aef_lieutenant_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="0" />
 						<locstring name="screen_name_short" value="0" />
@@ -55,7 +55,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="True" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_aef_officer_lieutenant_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_aef_officer_lieutenant_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="" />
@@ -568,7 +568,7 @@
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11069235" />
 								<locstring name="help_text" value="11069236" />
-								<string name="icon_name" value="Icons_abilities_ability_west_german_medical_field_kit" />
+								<icon name="icon_name" value="Icons_abilities_ability_west_german_medical_field_kit" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="391323" />
@@ -618,7 +618,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="11071946" />
 				<string name="hotkey_name" value="Reinforce" />
-				<string name="icon_name" value="Icons_odds_reinforce" />
+				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="11071924" />
@@ -894,7 +894,7 @@
 												<template_reference name="ui_info" value="tables\ui_info">
 													<locstring name="screen_name" value="11075030" />
 													<locstring name="help_text" value="11075031" />
-													<string name="icon_name" value="Icons_abilities_ability_aef_sprint_hmg" />
+													<icon name="icon_name" value="Icons_abilities_ability_aef_sprint_hmg" />
 													<string name="hotkey_name" value="" />
 												</template_reference>
 												<uniqueid name="id" value="405847" />
@@ -926,7 +926,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.8" />
+												<float name="value" value="0.9" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>

@@ -9,7 +9,7 @@
 			<group name="damage">
 				<float name="far" value="0.05" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.35" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -181,7 +181,7 @@
 			</group>
 			<float name="max" value="50" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">

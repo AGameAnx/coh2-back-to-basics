@@ -24,7 +24,8 @@
 		</group>
 		<string name="name" value="37mm Stuka BK 37" />
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="min" value="0" />
 				<float name="max" value="0" />
@@ -58,14 +59,14 @@
 			<float name="deflection_damage_multiplier" value="0.6667" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\random_action" name="action">
+				<template_reference name="action" value="action\random_action">
 					<uniqueid name="id" value="404820" />
 					<bool name="instant" value="False" />
 					<list name="random_actions">
 						<group name="action_choice">
 							<int name="weight" value="5" />
 							<list name="actions">
-								<template_reference value="action\trigger_critical_action" name="action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<uniqueid name="id" value="404815" />
 									<instance_reference name="critical" value="critical\vehicle_loader_injured" />
@@ -75,7 +76,7 @@
 						<group name="action_choice">
 							<int name="weight" value="5" />
 							<list name="actions">
-								<template_reference value="action\trigger_critical_action" name="action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<uniqueid name="id" value="404816" />
 									<instance_reference name="critical" value="critical\vehicle_crew_shocked" />
@@ -85,7 +86,7 @@
 						<group name="action_choice">
 							<int name="weight" value="5" />
 							<list name="actions">
-								<template_reference value="action\trigger_critical_action" name="action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<uniqueid name="id" value="404817" />
 									<instance_reference name="critical" value="critical\vehicle_damage_engine" />
@@ -95,7 +96,7 @@
 						<group name="action_choice">
 							<int name="weight" value="5" />
 							<list name="actions">
-								<template_reference value="action\trigger_critical_action" name="action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<uniqueid name="id" value="404818" />
 									<instance_reference name="critical" value="critical\stunned_cannot_shoot_10_seconds" />
@@ -105,7 +106,7 @@
 						<group name="action_choice">
 							<int name="weight" value="80" />
 							<list name="actions">
-								<template_reference value="action\trigger_critical_action" name="action">
+								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<uniqueid name="id" value="404819" />
 									<instance_reference name="critical" value="critical\_no_critical" />
@@ -125,7 +126,7 @@
 			</group>
 			<float name="max" value="225" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="True" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -176,7 +177,8 @@
 		</group>
 		<group name="damage">
 			<float name="min" value="120" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="120" />
 		</group>
 		<group name="scatter">
@@ -213,7 +215,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
 		<group name="anim_table">

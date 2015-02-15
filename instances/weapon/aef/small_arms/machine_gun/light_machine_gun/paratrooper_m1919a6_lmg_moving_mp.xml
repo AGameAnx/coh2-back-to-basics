@@ -46,8 +46,8 @@
 			<float name="duration" value="0" />
 		</group>
 		<group name="accuracy">
-			<float name="mid" value="0.35" />
-			<float name="far" value="0.2" />
+			<float name="mid" value="0.33" />
+			<float name="far" value="0.17" />
 			<float name="near" value="0.67" />
 		</group>
 		<instance_reference name="ui_setfacing" value="" />
@@ -133,7 +133,8 @@
 			</group>
 		</group>
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="mid" value="1" />
 				<float name="far" value="1" />
@@ -151,7 +152,8 @@
 		<float name="fx_tracer_speed" value="120" />
 		<locstring name="ui_name" value="0" />
 		<group name="damage">
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="7" />
 			<float name="min" value="7" />
 		</group>
@@ -213,7 +215,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<group name="ui_map_colour">
 			<int name="alpha" value="0" />
@@ -230,7 +233,8 @@
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<group name="cover_table">
 			<group name="tp_z_emplacement">
@@ -425,7 +429,7 @@
 			</group>
 		</group>
 		<string name="fx_action_target_name" value="lmg_bar_target" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<instance_reference name="ui_range" value="" />
 		<group name="moving">
 			<bool name="disable_moving_firing" value="False" />

@@ -181,7 +181,7 @@
 			</group>
 			<float name="max" value="45" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -231,10 +231,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="180" />
+			<float name="min" value="160" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="180" />
+			<float name="max" value="160" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />

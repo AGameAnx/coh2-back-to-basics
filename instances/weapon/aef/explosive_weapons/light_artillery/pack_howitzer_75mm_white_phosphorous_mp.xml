@@ -11,7 +11,7 @@
 				</group>
 				<float name="radius_min" value="6" />
 				<instance_reference name="dot_weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_white_phosphorous_dot_mp" />
-				<float name="damage_frequency" value="0.3" />
+				<float name="damage_frequency" value="0.2" />
 				<float name="radius_max" value="6" />
 				<list name="dot_spawn_actions">
 				</list>
@@ -107,7 +107,7 @@
 			</group>
 			<float name="max" value="160" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -176,8 +176,8 @@
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="7" />
 			<float name="distance_scatter_ratio" value="0.0857" />
-			<float name="fow_angle_multiplier" value="1.25" />
-			<float name="fow_distance_multiplier" value="1.25" />
+			<float name="fow_angle_multiplier" value="1" />
+			<float name="fow_distance_multiplier" value="1" />
 		</group>
 		<group name="moving">
 			<bool name="disable_moving_firing" value="False" />

@@ -67,7 +67,8 @@
 				<float name="min" value="1.5" />
 				<float name="max" value="2" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
 				<float name="near" value="1" />
@@ -93,11 +94,11 @@
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="unit_type" value="vehicle" />
 							<locstring name="ui_name" value="0" />
@@ -109,7 +110,7 @@
 					</list>
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<uniqueid name="id" value="348120" />
 							<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
@@ -136,7 +137,7 @@
 			</group>
 			<float name="max" value="44" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -188,11 +189,11 @@
 		<group name="damage">
 			<float name="min" value="40" />
 			<list name="on_penetrated_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<bool name="owned_by_player_only" value="True" />
 							<enum name="unit_type" value="vehicle" />
 							<locstring name="ui_name" value="0" />
@@ -204,7 +205,7 @@
 					</list>
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
-						<template_reference value="action\trigger_critical_action" name="action">
+						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<uniqueid name="id" value="348116" />
 							<instance_reference name="critical" value="critical\vehicle_shell_shocked" />
@@ -314,8 +315,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="ready_aim_time">
-				<float name="min" value="0.25" />
-				<float name="max" value="0.5" />
+				<float name="min" value="0.75" />
+				<float name="max" value="1" />
 			</group>
 		</group>
 		<instance_reference name="ui_range" value="" />
@@ -330,7 +331,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<group name="offhand">
 			<float name="offhand_end_time" value="0" />

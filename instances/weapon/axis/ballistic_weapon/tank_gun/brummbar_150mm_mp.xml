@@ -161,7 +161,7 @@
 			</group>
 			<float name="max" value="55" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
 			<instance_reference name="projectile" value="ebps\projectile\brummbar_150mm_he_shell_mp" />

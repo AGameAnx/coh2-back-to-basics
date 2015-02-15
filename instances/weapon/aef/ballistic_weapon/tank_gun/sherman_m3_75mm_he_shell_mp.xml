@@ -15,7 +15,7 @@
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="5" />
+				<float name="radius" value="4" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
@@ -43,7 +43,7 @@
 			</group>
 			<group name="distance">
 				<float name="far" value="2.8" />
-				<float name="near" value="0.5" />
+				<float name="near" value="0.3" />
 				<float name="mid" value="1.3" />
 			</group>
 			<template_reference name="aoe_penetration" value="tables\range_table">
@@ -181,7 +181,7 @@
 			</group>
 			<float name="max" value="44" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">

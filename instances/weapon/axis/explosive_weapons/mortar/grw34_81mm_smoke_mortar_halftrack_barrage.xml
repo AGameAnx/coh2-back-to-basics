@@ -57,7 +57,7 @@
 			</group>
 			<group name="distance">
 				<float name="far" value="3" />
-				<float name="near" value="1.5" />
+				<float name="near" value="0.55" />
 				<float name="mid" value="2.25" />
 			</group>
 			<bool name="has_friendly_fire" value="False" />
@@ -300,7 +300,7 @@
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="1" />
 			<float name="burst_multiplier" value="1" />

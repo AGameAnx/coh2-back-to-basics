@@ -68,9 +68,9 @@
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
-			<float name="max" value="110" />
+			<float name="max" value="100" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
 			<instance_reference name="projectile" value="ebps\projectile\pak_88mm_pak43_shell_mp" />

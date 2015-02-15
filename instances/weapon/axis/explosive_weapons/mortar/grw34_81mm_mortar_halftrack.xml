@@ -70,7 +70,7 @@
 			</group>
 			<float name="max" value="70" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<group name="burst">
 			<group name="incremental_target_table">
@@ -374,7 +374,7 @@
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="distance">
-				<float name="near" value="0.7" />
+				<float name="near" value="0.55" />
 				<float name="far" value="3.8" />
 				<float name="mid" value="1.8" />
 			</group>

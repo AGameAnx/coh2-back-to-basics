@@ -70,7 +70,7 @@
 			</group>
 			<float name="max" value="66" />
 		</group>
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
 			<instance_reference name="projectile" value="ebps\projectile\kwk_40_75mm_panzeriv_tank_gun_mp" />
