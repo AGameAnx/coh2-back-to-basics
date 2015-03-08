@@ -335,14 +335,14 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.05" />
-				<float name="mid" value="0.35" />
+				<float name="far" value="0.005" />
+				<float name="mid" value="0.3" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="7.5" />
+				<float name="radius" value="9.5" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
@@ -359,14 +359,14 @@
 			<bool name="can_harm_shooter" value="False" />
 			<group name="accuracy">
 				<float name="near" value="5" />
-				<float name="far" value="0.6" />
-				<float name="mid" value="2.8" />
+				<float name="far" value="5" />
+				<float name="mid" value="5" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<group name="suppression_friendly">
-				<float name="near" value="0" />
-				<float name="far" value="0" />
-				<float name="mid" value="0" />
+				<float name="near" value="1" />
+				<float name="far" value="0.5" />
+				<float name="mid" value="0.65" />
 			</group>
 			<group name="building_damage">
 				<float name="near" value="1.0023" />
@@ -374,14 +374,14 @@
 				<float name="mid" value="0.5" />
 			</group>
 			<group name="distance">
-				<float name="near" value="1" />
-				<float name="far" value="3.8" />
-				<float name="mid" value="2" />
+				<float name="near" value="0.5" />
+				<float name="far" value="7.5" />
+				<float name="mid" value="2.1" />
 			</group>
 			<group name="suppression">
-				<float name="near" value="0.2" />
-				<float name="far" value="0.1" />
-				<float name="mid" value="0.15" />
+				<float name="near" value="1" />
+				<float name="far" value="0.5" />
+				<float name="mid" value="0.65" />
 			</group>
 		</group>
 		<string name="fx_tracer_name" value="" />

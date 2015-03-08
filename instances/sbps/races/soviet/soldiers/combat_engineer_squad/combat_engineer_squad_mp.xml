@@ -708,7 +708,7 @@
 			<float name="recharge_time" value="0" />
 			<group name="ui_info">
 				<locstring name="extra_text" value="11042785" />
-				<locstring name="help_text" value="11007439" />
+				<locstring name="help_text" value="45" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<string name="hotkey_name" value="D" />
 				<string name="icon_name" value="Icons_abilities_ability_soviet_demo_charge" />
 				<string name="overlay_name" value="" />

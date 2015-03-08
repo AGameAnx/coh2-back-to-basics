@@ -161,10 +161,10 @@
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="mid" value="26" />
-				<float name="far" value="50" />
+				<float name="far" value="47" />
 				<float name="near" value="10" />
 			</group>
-			<float name="max" value="50" />
+			<float name="max" value="47" />
 		</group>
 		<group name="damage_over_time">
 			<template_reference name="damage_over_time" value="dot_type\none">

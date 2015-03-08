@@ -74,7 +74,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="20" />
+		<float name="range" value="25" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="30" />
 		<bool name="refundable" value="True" />
@@ -125,8 +125,8 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_squad_veterancy">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11065041" />
-				<float name="veterancy_rank" value="3" />
+				<locstring name="ui_name" value="43" mod="23d6cdb82724460dbcb21e1a9162e473" />
+				<float name="veterancy_rank" value="2" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_not">
 				<enum name="reason" value="usage" />

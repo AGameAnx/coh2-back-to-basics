@@ -223,7 +223,7 @@
 		<string name="fx_action_target_name" value="" />
 		<group name="range">
 			<float name="min" value="0" />
-			<float name="max" value="47" />
+			<float name="max" value="45" />
 			<group name="distance">
 				<float name="near" value="-1" />
 				<float name="far" value="-1" />

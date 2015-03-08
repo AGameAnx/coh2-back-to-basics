@@ -160,7 +160,7 @@
 		<group name="range">
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="mid" value="16" />
+				<float name="mid" value="19" />
 				<float name="far" value="39" />
 				<float name="near" value="3" />
 			</group>

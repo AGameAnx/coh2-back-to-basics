@@ -131,9 +131,9 @@
 			</group>
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="aim_time_multiplier">
-				<float name="mid" value="2.5" />
-				<float name="far" value="4" />
-				<float name="near" value="0.125" />
+				<float name="mid" value="1.25" />
+				<float name="far" value="2" />
+				<float name="near" value="0.5" />
 			</group>
 			<group name="fire_aim_time">
 				<float name="max" value="0.5" />
@@ -144,8 +144,8 @@
 		<enum name="weapon_type" value="small_arms" />
 		<string name="fx_action_target_name" value="kar98_target" />
 		<group name="accuracy">
-			<float name="mid" value="0.58" />
-			<float name="far" value="0.33" />
+			<float name="mid" value="0.44" />
+			<float name="far" value="0.23" />
 			<float name="near" value="0.67" />
 		</group>
 		<group name="setup">
@@ -273,8 +273,8 @@
 		<string name="fx_tracer_name" value="kar98_tracer" />
 		<float name="fx_tracer_speed" value="75" />
 		<group name="damage">
-			<float name="max" value="18" />
-			<float name="min" value="18" />
+			<float name="max" value="15" />
+			<float name="min" value="15" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
@@ -430,11 +430,11 @@
 			<int name="blue" value="0" />
 		</group>
 		<group name="range">
-			<float name="max" value="39" />
+			<float name="max" value="38" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="mid" value="26" />
-				<float name="far" value="39" />
+				<float name="mid" value="23" />
+				<float name="far" value="38" />
 				<float name="near" value="0" />
 			</group>
 		</group>

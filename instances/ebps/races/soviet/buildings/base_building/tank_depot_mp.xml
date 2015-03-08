@@ -183,7 +183,7 @@
 							<string name="modifier_id" value="high_tech_cost_fuel_reduction" />
 							<instance_reference name="target_type_name" value="ebps\races\soviet\buildings\base_building\motorpool_mp" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="-45" />
+							<float name="value" value="-65" />
 							<instance_reference name="tooltip" value="modifier_tooltip\cost_fuel_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\cost_manpower_modifier">
@@ -192,7 +192,7 @@
 							<string name="modifier_id" value="high_tech_cost_manpower_reduction" />
 							<instance_reference name="target_type_name" value="ebps\races\soviet\buildings\base_building\motorpool_mp" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="-60" />
+							<float name="value" value="-100" />
 							<instance_reference name="tooltip" value="modifier_tooltip\cost_manpower_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\cost_fuel_modifier">
@@ -201,7 +201,7 @@
 							<string name="modifier_id" value="high_tech_cost_fuel_reduction" />
 							<instance_reference name="target_type_name" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="-45" />
+							<float name="value" value="-65" />
 							<instance_reference name="tooltip" value="modifier_tooltip\cost_fuel_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\cost_manpower_modifier">
@@ -210,7 +210,7 @@
 							<string name="modifier_id" value="high_tech_cost_manpower_reduction" />
 							<instance_reference name="target_type_name" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="-60" />
+							<float name="value" value="-100" />
 							<instance_reference name="tooltip" value="modifier_tooltip\cost_manpower_modifier" />
 						</template_reference>
 					</list>

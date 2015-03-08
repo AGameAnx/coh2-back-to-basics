@@ -52,10 +52,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="7" />
+			<float name="min" value="12" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="7" />
+			<float name="max" value="12" />
 		</group>
 		<group name="area_effect">
 			<bool name="has_friendly_fire" value="False" />
@@ -110,9 +110,9 @@
 			</group>
 		</group>
 		<group name="accuracy">
-			<float name="far" value="0.18" />
-			<float name="near" value="0.63" />
-			<float name="mid" value="0.36" />
+			<float name="far" value="0.1" />
+			<float name="near" value="0.37" />
+			<float name="mid" value="0.21" />
 		</group>
 		<string name="fx_action_target_name" value="mp44_default_target" />
 		<group name="projectile">

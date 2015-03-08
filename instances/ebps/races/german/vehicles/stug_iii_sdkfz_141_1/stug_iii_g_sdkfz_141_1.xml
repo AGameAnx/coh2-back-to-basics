@@ -278,8 +278,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="25" />
-					<float name="manpower" value="320" />
+					<float name="fuel" value="90" />
+					<float name="manpower" value="270" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -1037,7 +1037,7 @@
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<float name="speed_max" value="6" />
+			<float name="speed_max" value="5.7" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0.2" />

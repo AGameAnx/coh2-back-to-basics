@@ -2,10 +2,10 @@
 	<group name="weapon_bag">
 		<string name="fx_tracer_name" value="fx_20mm_turret_tracer" />
 		<group name="damage">
-			<float name="max" value="15" />
+			<float name="max" value="20" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="min" value="15" />
+			<float name="min" value="20" />
 		</group>
 		<group name="suppressed">
 			<float name="pinned_burst_multiplier" value="1" />
@@ -223,17 +223,17 @@
 		<string name="fx_action_target_name" value="fx_20mm_turret_target" />
 		<group name="range">
 			<float name="min" value="3" />
-			<float name="max" value="44" />
+			<float name="max" value="48" />
 			<group name="distance">
 				<float name="near" value="10" />
-				<float name="far" value="44" />
+				<float name="far" value="48" />
 				<float name="mid" value="24" />
 			</group>
 		</group>
 		<group name="accuracy">
-			<float name="near" value="0.093" />
-			<float name="far" value="0.033" />
-			<float name="mid" value="0.041" />
+			<float name="near" value="0.115" />
+			<float name="far" value="0.041" />
+			<float name="mid" value="0.093" />
 		</group>
 		<group name="damage_over_time">
 			<template_reference name="damage_over_time" value="dot_type\none">

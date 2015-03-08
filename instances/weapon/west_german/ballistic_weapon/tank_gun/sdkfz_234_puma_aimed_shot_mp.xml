@@ -64,11 +64,11 @@
 		<group name="range">
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="far" value="55" />
+				<float name="far" value="52" />
 				<float name="near" value="25" />
 				<float name="mid" value="40" />
 			</group>
-			<float name="max" value="88" />
+			<float name="max" value="80" />
 		</group>
 		<icon name="icon_name" value="" />
 		<group name="projectile">

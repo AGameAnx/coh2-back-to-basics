@@ -187,7 +187,7 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="40" />
+			<float name="min" value="30" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
@@ -222,7 +222,7 @@
 					<bool name="instant_requirement_check" value="False" />
 				</template_reference>
 			</list>
-			<float name="max" value="40" />
+			<float name="max" value="30" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -244,9 +244,9 @@
 		<float name="fx_building_hit_delay" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="penetration">
-			<float name="far" value="40" />
-			<float name="near" value="60" />
-			<float name="mid" value="45" />
+			<float name="far" value="60" />
+			<float name="near" value="100" />
+			<float name="mid" value="80" />
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />

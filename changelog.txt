@@ -1,4 +1,226 @@
 =================================================================
+## v0.30
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- A new penetration system has been introduced that considers side armor and angle of attack for all ballistic weapons. The system utilizes a mix between the old and the new models, applying additional damage and additional penetration calculations on hit. As a result of this system. Noteworthy things:
+ * Only tank and antitank weapons are affected (not artillery)
+ * Base damage reduced by up to 120 (lower reduction for lower damage weapons)
+ * Base penetration chance increased by 15% (this is done for the sake of visuals)
+ * Area of effect damage and building damage modified proportionally to the base damage reduction to maintain their previous effectiveness and behavior
+ * Every hit and bounce now has a calculation on the script-side that can cause the hit to apply up to 180 additional damage
+ * Script-side damage does not apply criticals but the criticals of the actual weapon shot are applied after the application of the script-side damage, making the issue not as important
+ * The amount of damage applied differs for every weapon - higher damage weapons have higher script-side damage and larger reduction in the original weapon damage. Overall damage per time should not change much, but has the potential to increase with perfectly angled shots and rear shots, or decrease in other cases
+ * Front armor hit multiplier - 0.25, side armor hit multiplier - 0.75, rear armor hit multiplier - 1.25
+ * The angle of the hit changes the outcome by up to 50% of base likelihood
+ * The damage of a penetrating script-side hit is calculated as follows: 160 * min(1, armorRatio*0.5 + 0.5) * (slopeRatio*0.5+0.5). On max slope angle a penetrating hit will cause a minimum of 80 rear armor damage, 70 side armor damage, 50 frontal armor damage
+ * Rear armor kicker message removed
+ * A new kicker message for each script-side penetrating hit added
+
+Soviets:
+- SU-76 penetration reduced 130/160/170 -> 80/120/160
+- SU-76 range reduced 63 -> 61
+- KV-2 aoe profile reworked so that direct and indirect fire profiles match each other (overall less squad wipe potential)
+- KV-2 damage decreased 240 -> 210
+
+OKW:
+- Volksgrenadier mid range accuracy increased 0.37 -> 0.44
+- Fixed panther requirement description
+
+-----------------------------------------------------------------
+## Win condition:
+
+AI Changes:
+- Disabled the script that was attempting to face tanks in a correct direction, as it wasn't working correctly
+
+
+=================================================================
+## v0.29
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Shock trooper weapon damage increased 6 -> 7
+- Shock trooper smoke grenade range 20 -> 25
+
+USF:
+- Riflemen mid range increased 16 -> 19 (they were losing decisively vs many german troops on mid range)
+- Slight adjustments made to Paratrooper LMG suppressive fire ability to make it more useful (work in progress):
+ * Suppresses faster
+ * Duration increased 11.1s -> 15s
+ * 'Slowed!' kicker message removed, because no actual slow effect is applied
+ * Cost reduced 20mu -> 10mu
+- Lieutenant tier cost reduced 200mp/50f -> 200mp/45f
+- Captain tier cost increased 200mp/50f -> 200mp/55f
+- M20 Utility Car cost changed 340mp/20f -> 280mp/30f
+- Stuart base weapon damage reduced 80 -> 60
+- Stuart all penetration stats increased 40/45/60 -> 60/80/100
+- Stuart shell shock and damage engine shot damage decreased 40 -> 30
+- Stuart hitpoints increased 320 -> 360
+- Stuart size decreased 19 -> 18
+
+Ostheer:
+- Sdkfz 222 rework:
+ * Cost increased 210mp/20f -> 210mp/25f
+ * Build time reduced 30s -> 25s
+ * Size reduced 18 -> 15
+ * Rear armor increased 4.5 -> 6
+ * Hitpoints 240 -> 250
+ * Weapon damage increased 20 -> 25
+ * Weapon penetration increased 45/45/45 -> 45/65/75
+- Grenadier weapon rework (work in progress):
+ * Far accuracy 0.29 -> 0.25
+ * Far aim time multiplier 2.5 -> 2
+ * Mid aim time multiplier 1.5 -> 1.25
+ * Mid accuracy 0.56 -> 0.51
+ * Near aim time multiplier 0.125 -> 0.25
+- Puma movement reworked to be inline with OKW Puma:
+ * Acceleration 2.5 -> 3.5
+ * On ice overturn scale 3 -> 2
+ * On land overturn scale 0.07 -> 0.25
+ 
+OKW:
+- Sturmpioneer weapon reworked to have less accuracy, more damage but overall very similar DPS to previous iteration:
+ * Damage 7 -> 12
+ * Far accuracy 0.18 -> 0.1
+ * Mid accuracy 0.36 -> 0.21
+ * Near accuracy 0.63 -> 0.37
+- Obersoldatten cost increased 360mp -> 380mp
+- Raketenwerfer rework:
+ * Base range increased 55 -> 57
+ * Vet 4 range increase reduced 10 -> 5
+ * Veterancy requirements significantly reduced
+ * Cost reduced 270mp -> 260mp
+ * Cone of fire reduced 60deg -> 50deg
+- Volksgrenadier cost increased 235mp -> 250mp
+- Volksgrenadier build time reduced 24s -> 22s
+- Volksgrenadier weapon reworked (work in progress):
+ * Damage 18 -> 15
+ * Max range 39 -> 38
+ * Mid range 26 -> 23
+ * Far accuracy 0.33 -> 0.23
+ * Far aim time multiplier 4 -> 2
+ * Mid 0.58 -> 0.39
+ * Mid aim time multiplier 2.75 -> 1.25
+ * Near aim time multiplier 0.125 -> 0.5
+- Volksgrenadier grenade range 20 -> 22
+- Volksgrenadier grenade cost reduced 30mu -> 25mu
+- Sturmpioneer smoke grenade range 20 -> 25
+- Kubelwagen cost 240mp/5f -> 200mp/10f
+- The Mechanized Regiment HQ cost reduced 220mp/55f -> 180mp/55f
+- The Battlegroup Headquarters cost reduced 250mp/75f -> 210mp/55f
+- The Schwerer Panzer Headquarters cost reduced 200mp/40f -> 160mp/40f
+- Obersoldatten LMG damage reduced 12 -> 11
+- King Tiger hitpoints reduced 1280 -> 1140
+- SWS Halftrack hitpoints reduced 300 -> 230
+- Sdkfz 251 Flak Halftrack setup duration increased 4s/2s -> 4.5s/3.5s
+- Sdkfz 251 Flak Halftrack weapon tracking speed decreased 90 -> 65
+- MG34 dispatch ability cost increased 220mp -> 230mp
+- Puma movement reworked to be inline with Ostheer Puma:
+ * Acceleration 4.5 -> 3.5
+ * Deceleration 5.5 -> 4.7
+
+ 
+=================================================================
+## v0.28
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Lowered base defenses ranges a bit to improve map compatibility
+
+Soviet:
+- Penal squad cost reduced 290mp -> 280mp
+- Constructing a T3 or T4 structure will now reduce their cost by 65 fuel and 100 manpower (vs previous 60mp/45f reduction)
+- T3 cost reduced 240mp/135f -> 220mp/135f
+- T2 cost reduced 160mp/30f -> 140mp/25f
+- T1 cost reduced 120mp/40f -> 120mp/30f
+
+USF:
+- Rear Echelon will now automatically repair vehicles upon exit, the same way vehicle crews do
+- Bazooka accuracy increased to match Panzerschrek
+
+Ostheer:
+- Sniper hitpoints increased 82 -> 90
+- Sniper received accuracy increased 1.3 -> 1.375
+- Puma max range reduced 55 -> 53
+- Puma sight radius reduced 50 -> 46
+- Panzer IV short barrel near aoe range reduced 0.7 -> 0.635
+
+OKW:
+- Puma max range reduced 55 -> 53
+- Puma sight radius reduced 50 -> 46
+
+
+=================================================================
+## v0.27
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Snipers now deal 30 damage per shot, which makes their behavior more consistent for instances where their critical does not go off
+
+Soviet:
+- Katyusha rocket rework:
+ * Max radius 7.5 -> 9.5
+ * Far aoe damage 0.04 -> 0.005
+ * Mid aoe damage 0.35 -> 0.3
+ * Far aoe range suppression 0.3 -> 0.5
+ * Mid aoe range 2.8 -> 2.1
+ * Base angle scatter 10 -> 12
+ * Max distance scatter 15 -> 10
+ * Reaction radius 5.1 -> 6
+ * Distance scatter ratio 0.1667 -> 0.14
+
+Ostheer:
+- Grenadier kar98k far accuracy reduced 0.3 -> 0.29
+- Grenadier kar98k mid accuracy reduced 0.57 -> 0.56
+- Panzerwerfer rocket rework:
+ * Max radius 7.5 -> 9.5
+ * Far aoe damage 0.04 -> 0.005
+ * Mid aoe damage 0.35 -> 0.3
+ * Far aoe range suppression 0.3 -> 0.5
+ * Mid aoe range 2.1 -> 1.9
+ * Base angle scatter 15 -> 17
+ * Max distance scatter 20 -> 15
+ * Reaction radius 5.1 -> 6
+ * Distance scatter ratio 0.156 -> 0.13
+- Significantly reduced sniper veterancy bonuses:
+ * Vet 2 reload duration multiplier 0.8 -> 0.85
+ * Vet 2 cooldown duration multiplier 0.8 -> 0.925
+ * Vet 2 sight radius multiplication 1.2 -> 1.1
+ * Vet 3 reload duration multiplier 0.7 -> 0.85
+ * Vet 3 cooldown duration multiplier 0.7 -> 0.9
+- Stug G and Stug E max speed 6 -> 5.7
+- Stug G cost increased 230mp/80f -> 270mp/90f
+- Stug E cost increased 200mp/75f -> 240mp/80f
+
+OKW:
+- Removed HQ sandbag land impass to prevent starting squad from getting stuck on them (thanks Cruzz)
+- Fixed Sturmpioneers requiring vet3 to throw smoke grenades, now requires vet2 as intended
+- Adjusted le.IG projectile attributes to be more similar to the new Pack Howitzer projectile (lowering obstacle avoiding arc)
+- Flak emplacement rework:
+ * Emplacement hitpoints 470 -> 700
+ * Armor 0 -> 35 (to match base emplacement)
+ * Crew now has passive health regeneration
+ * Crew now received 50% incoming damage
+ * Crew now has 40% received accuracy
+ * Crew can no longer be sniped
+ * Max range 44 -> 48 (base emplacement unaffected)
+ * Accuracy 0.033/0.041/0.093 -> 0.041/0.093/0.115 (this is done to make the emplacement more effective on uneven terrain) (base emplacement unaffected)
+ * Damage 15 -> 20 (base emplacement unaffected)
+
+
+=================================================================
 ## v0.26
 =================================================================
 
@@ -16,7 +238,7 @@ USF:
  * Suppression addition decreased 0.015 -> 0.01
 
 Ostheer:
-- Panzerwerfer barrage cooldown duration reduced 100s -> 90s
+- Panzerwerfer barrage recharge time reduced 100s -> 90s
 
 OKW:
 - Sturmpioneer vet2 and vet3 bonuses switched
