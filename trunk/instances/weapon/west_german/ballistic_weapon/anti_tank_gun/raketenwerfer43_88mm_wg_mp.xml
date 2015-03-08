@@ -45,8 +45,8 @@
 			<float name="pivot_end_time" value="0" />
 			<group name="normal">
 				<float name="speed_vertical" value="25" />
-				<float name="max_right" value="30" />
-				<float name="max_left" value="-30" />
+				<float name="max_right" value="25" />
+				<float name="max_left" value="-25" />
 				<float name="max_up" value="20" />
 				<float name="speed_horizontal" value="12" />
 				<float name="max_down" value="-90" />
@@ -129,11 +129,11 @@
 		<group name="range">
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="far" value="55" />
+				<float name="far" value="57" />
 				<float name="near" value="0" />
 				<float name="mid" value="25" />
 			</group>
-			<float name="max" value="55" />
+			<float name="max" value="57" />
 		</group>
 		<icon name="icon_name" value="" />
 		<group name="projectile">

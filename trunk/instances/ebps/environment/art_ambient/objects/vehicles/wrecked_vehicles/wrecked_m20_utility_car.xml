@@ -121,7 +121,7 @@
 			<bool name="is_salvagable_wreck" value="True" />
 			<bool name="keep_wreck_ownership" value="False" />
 			<bool name="rear_damage_enabled" value="False" />
-			<instance_reference name="rebuilt_entity" value="ebps\races\aef\vehicles\m20_utility_car\m20_utility_car_mp" />
+			<instance_reference name="rebuilt_entity" value="ebps\races\aef\vehicles\m20_utility_car\m20_utility_car_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<instance_reference name="rebuilt_squad" value="sbps\races\aef\vehicles\m20_utility_car_squad\m20_utility_car_squad_mp" />
 			<bool name="rebuilt_use_wreck_owner" value="False" />
 			<bool name="receive_weapon_cover_modifiers" value="True" />

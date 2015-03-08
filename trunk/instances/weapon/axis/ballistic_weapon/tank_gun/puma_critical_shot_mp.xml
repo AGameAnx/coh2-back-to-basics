@@ -65,10 +65,10 @@
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="10" />
-				<float name="far" value="55" />
+				<float name="far" value="53" />
 				<float name="mid" value="30" />
 			</group>
-			<float name="max" value="55" />
+			<float name="max" value="80" />
 		</group>
 		<icon name="icon_name" value="" />
 		<group name="projectile">

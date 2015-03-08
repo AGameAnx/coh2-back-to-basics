@@ -48,7 +48,7 @@
 				<float name="max_right" value="180" />
 				<float name="max_left" value="-180" />
 				<float name="max_up" value="45" />
-				<float name="speed_horizontal" value="90" />
+				<float name="speed_horizontal" value="65" />
 				<float name="max_down" value="-90" />
 			</group>
 			<float name="pivot_start_time" value="0" />
@@ -160,7 +160,7 @@
 		</group>
 		<group name="setup">
 			<float name="attach_duration" value="0" />
-			<float name="duration" value="2" />
+			<float name="duration" value="3.5" />
 			<bool name="can_interrupt_setup" value="True" />
 			<bool name="has_instant_setup" value="False" />
 		</group>

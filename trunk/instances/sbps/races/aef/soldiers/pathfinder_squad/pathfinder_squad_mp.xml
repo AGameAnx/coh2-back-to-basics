@@ -202,7 +202,7 @@
 							<bool name="is_present" value="True" />
 							<float name="max_completed" value="100" />
 							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\aef\research\lieutenant_dispatched_upgrade_mp" />
+							<instance_reference name="upgrade_name" value="upgrade\aef\research\lieutenant_dispatched_upgrade_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 						</template_reference>
 					</list>
 				</template_reference>

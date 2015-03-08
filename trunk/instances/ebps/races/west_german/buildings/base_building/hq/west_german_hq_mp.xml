@@ -458,7 +458,7 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="14" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\team_weapons\at_gun_squad\raketenwerfer43_88mm_puppchen_antitank_gun_squad_mp" />
+					<instance_reference name="squad" value="sbps\races\west_german\team_weapons\at_gun_squad\raketenwerfer43_88mm_puppchen_antitank_gun_squad_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="21" />

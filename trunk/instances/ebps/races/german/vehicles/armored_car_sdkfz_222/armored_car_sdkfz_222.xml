@@ -238,12 +238,12 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="15" />
-					<float name="manpower" value="240" />
+					<float name="fuel" value="25" />
+					<float name="manpower" value="210" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="24" />
+				<float name="time_seconds" value="25" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -253,7 +253,7 @@
 			<float name="death_seconds" value="1.8" />
 			<bool name="delete_when_dead" value="False" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="240" />
+			<float name="hitpoints" value="250" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -270,9 +270,9 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_armored_car_sdkfz_222" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="25" />
-			<float name="rear_armor" value="15" />
-			<float name="target_size" value="20" />
+			<float name="armor" value="9" />
+			<float name="rear_armor" value="6" />
+			<float name="target_size" value="15" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">

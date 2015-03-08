@@ -9,7 +9,6 @@ import("WinConditions/Annihilate.scar")
 
 import('WinConditions/aicontrol.scar')
 
-
 SetGlobals()
 
 function VPTicker_CustomInit()
@@ -108,9 +107,9 @@ BtB.RetreatTactic = function(squad)
 	for i=1,squadsNearSG_enemyCount do
 		local enemySquad = SGroup_GetSpawnedSquadAt(squadsNearSG_enemy, i)
 		if BtB_IsSquadVehicle(enemySquad) then
-			enemyValue = enemyValue + Squad_GetHealth(enemySquad)/50
+			enemyValue = enemyValue + Squad_GetHealth(enemySquad)/150
 		else
-			enemyValue = enemyValue + Squad_Count(enemySquad)
+			enemyValue = enemyValue + Squad_Count(enemySquad)/2
 		end
 		local dist = World_DistanceSquaredPointToPoint(pos, Squad_GetPosition(enemySquad))
 		if not closestEnemyDistaceSq or closestEnemyDistaceSq > closestEnemyDistaceSq then
@@ -120,14 +119,14 @@ BtB.RetreatTactic = function(squad)
 	for i=1,squadsNearSG_alliedCount do
 		local friendlySquad = SGroup_GetSpawnedSquadAt(squadsNearSG_allied, i)
 		if not BtB_IsSquadVehicle(friendlySquad) then
-			friendlyValue = friendlyValue + Squad_GetHealth(friendlySquad)/50
+			friendlyValue = friendlyValue + Squad_GetHealth(friendlySquad)/150
 		else
-			friendlyValue = friendlyValue + Squad_Count(friendlySquad)
+			friendlyValue = friendlyValue + Squad_Count(friendlySquad)/2
 		end
 	end
 	
 	if closestEnemyDistaceSq and closestEnemyDistaceSq < 400 then
-		result = result + (420-closestEnemyDistaceSq)/130
+		result = result + (420-closestEnemyDistaceSq)/180
 	end
 	
 	SGroup_Destroy(squadsNearSG_enemy)
@@ -212,6 +211,9 @@ function BtB_Init()
 	Camera_SetDefault(42, 40, -45)
 	
 	Rule_AddInterval(BtB_MainUpdate, 2)
+	
+	loadfile('_modscripts/btb_customdebug.scar')()
+	loadfile('_modscripts/btb_ballistics.scar')()
 end
 
 Scar_AddInit(BtB_Init)

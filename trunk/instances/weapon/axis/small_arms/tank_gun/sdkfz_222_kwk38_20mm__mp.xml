@@ -470,9 +470,9 @@
 			<float name="duration" value="0" />
 		</group>
 		<group name="penetration">
-			<float name="mid" value="45" />
+			<float name="mid" value="65" />
 			<float name="far" value="45" />
-			<float name="near" value="45" />
+			<float name="near" value="75" />
 		</group>
 		<group name="suppression">
 			<float name="nearby_suppression_radius" value="0" />

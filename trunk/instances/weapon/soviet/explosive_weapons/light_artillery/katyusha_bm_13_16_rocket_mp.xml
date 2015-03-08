@@ -127,18 +127,18 @@
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
-			<float name="angle_scatter" value="10" />
+			<float name="angle_scatter" value="12" />
 			<float name="distance_scatter_offset" value="0.1" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
-			<float name="distance_scatter_max" value="15" />
+			<float name="distance_scatter_max" value="10" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
-			<float name="distance_scatter_ratio" value="0.1667" />
+			<float name="distance_scatter_ratio" value="0.14" />
 			<float name="fow_angle_multiplier" value="1" />
 			<float name="fow_distance_multiplier" value="1" />
 		</group>
@@ -335,14 +335,14 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.04" />
-				<float name="mid" value="0.35" />
+				<float name="far" value="0.005" />
+				<float name="mid" value="0.3" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="7.5" />
+				<float name="radius" value="9.5" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
@@ -365,7 +365,7 @@
 			<bool name="has_friendly_fire" value="True" />
 			<group name="suppression_friendly">
 				<float name="near" value="1" />
-				<float name="far" value="0.3" />
+				<float name="far" value="0.5" />
 				<float name="mid" value="0.65" />
 			</group>
 			<group name="building_damage">
@@ -376,11 +376,11 @@
 			<group name="distance">
 				<float name="near" value="0.5" />
 				<float name="far" value="7.5" />
-				<float name="mid" value="2.8" />
+				<float name="mid" value="2.1" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="1" />
-				<float name="far" value="0.3" />
+				<float name="far" value="0.5" />
 				<float name="mid" value="0.65" />
 			</group>
 		</group>

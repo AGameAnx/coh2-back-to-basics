@@ -223,10 +223,10 @@
 		<string name="fx_action_target_name" value="fx_20mm_turret_target" />
 		<group name="range">
 			<float name="min" value="3" />
-			<float name="max" value="44" />
+			<float name="max" value="43" />
 			<group name="distance">
 				<float name="near" value="10" />
-				<float name="far" value="44" />
+				<float name="far" value="43" />
 				<float name="mid" value="24" />
 			</group>
 		</group>

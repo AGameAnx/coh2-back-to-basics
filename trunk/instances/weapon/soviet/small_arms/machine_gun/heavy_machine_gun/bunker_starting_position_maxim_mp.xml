@@ -260,7 +260,7 @@
 				<float name="near" value="10" />
 				<float name="mid" value="-1" />
 			</group>
-			<float name="max" value="50" />
+			<float name="max" value="47" />
 		</group>
 		<float name="fx_delay_in_building" value="0" />
 		<group name="deflection">

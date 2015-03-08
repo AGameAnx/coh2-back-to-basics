@@ -14,8 +14,8 @@
 		<float name="fx_tracer_speed" value="75" />
 		<group name="accuracy">
 			<float name="near" value="0.71" />
-			<float name="far" value="0.3" />
-			<float name="mid" value="0.57" />
+			<float name="far" value="0.25" />
+			<float name="mid" value="0.51" />
 		</group>
 		<group name="anim_table">
 			<string name="cooldown_time_name" value="Rifle_CoolDownTime" />
@@ -314,8 +314,8 @@
 		</group>
 		<group name="aim">
 			<group name="aim_time_multiplier">
-				<float name="near" value="0.125" />
-				<float name="far" value="2.5" />
+				<float name="near" value="0.25" />
+				<float name="far" value="2" />
 				<float name="mid" value="1.5" />
 			</group>
 			<group name="fire_aim_time">

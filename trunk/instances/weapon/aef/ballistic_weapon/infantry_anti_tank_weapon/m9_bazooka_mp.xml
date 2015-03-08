@@ -435,9 +435,9 @@
 		</group>
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="accuracy">
-			<float name="far" value="0.025" />
-			<float name="near" value="0.1" />
-			<float name="mid" value="0.038" />
+			<float name="far" value="0.033" />
+			<float name="near" value="0.093" />
+			<float name="mid" value="0.041" />
 		</group>
 	</group>
 </instance>

@@ -292,8 +292,8 @@
 			</list>
 		</group>
 		<group name="damage">
-			<float name="max" value="6" />
-			<float name="min" value="6" />
+			<float name="max" value="7" />
+			<float name="min" value="7" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>

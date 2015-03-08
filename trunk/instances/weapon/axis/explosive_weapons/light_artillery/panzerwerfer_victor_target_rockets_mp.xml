@@ -127,14 +127,14 @@
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
-			<float name="angle_scatter" value="15" />
+			<float name="angle_scatter" value="17" />
 			<float name="distance_scatter_offset" value="0.1" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
-			<float name="distance_scatter_max" value="20" />
+			<float name="distance_scatter_max" value="22" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
@@ -180,7 +180,7 @@
 		<group name="suppression">
 			<group name="target_suppressed_multipliers">
 				<float name="suppression_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.7" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="1" />
 			</group>
@@ -188,7 +188,7 @@
 			<float name="nearby_suppression_radius" value="0" />
 			<group name="target_pinned_multipliers">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.6" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="1" />
 			</group>
@@ -335,14 +335,14 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.04" />
-				<float name="mid" value="0.35" />
+				<float name="far" value="0.01" />
+				<float name="mid" value="0.3" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="7.5" />
+				<float name="radius" value="9.5" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
@@ -365,7 +365,7 @@
 			<bool name="has_friendly_fire" value="True" />
 			<group name="suppression_friendly">
 				<float name="near" value="1" />
-				<float name="far" value="0.3" />
+				<float name="far" value="0.5" />
 				<float name="mid" value="0.65" />
 			</group>
 			<group name="building_damage">
@@ -376,11 +376,11 @@
 			<group name="distance">
 				<float name="near" value="0.5" />
 				<float name="far" value="7.5" />
-				<float name="mid" value="2.1" />
+				<float name="mid" value="1.9" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="1" />
-				<float name="far" value="0.3" />
+				<float name="far" value="0.5" />
 				<float name="mid" value="0.65" />
 			</group>
 		</group>
@@ -411,7 +411,7 @@
 			<bool name="enable_auto_target_search" value="False" />
 			<bool name="aa_weapon" value="False" />
 			<bool name="fire_at_building_combat_slot" value="False" />
-			<float name="reaction_radius" value="5.1" />
+			<float name="reaction_radius" value="6" />
 			<bool name="point_blank" value="False" />
 			<bool name="can_be_substituted" value="False" />
 			<bool name="can_be_offhanded" value="False" />
