@@ -82,7 +82,7 @@
 		</group>
 		<icon name="icon_name" value="" />
 		<group name="projectile">
-			<instance_reference name="projectile" value="ebps\projectile\soviet_76mm_tank_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\kv2_m10_152mm_tow" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<bool name="delete_previous_on_hit" value="False" />
 		</group>
 		<group name="burst">

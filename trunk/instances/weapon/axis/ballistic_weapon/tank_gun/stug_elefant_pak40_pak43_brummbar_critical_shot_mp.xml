@@ -73,7 +73,7 @@
 		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\pak_88mm_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\stug_elefant_pak40_pak43_brummbar_critical_shot_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 		</group>
 		<group name="burst">
 			<group name="incremental_target_table">

@@ -123,7 +123,7 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="320" />
+			<float name="min" value="240" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="kill_action_on_failed_requirements" value="False" />
@@ -169,7 +169,7 @@
 					<bool name="instant_requirement_check" value="True" />
 				</template_reference>
 			</list>
-			<float name="max" value="320" />
+			<float name="max" value="240" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />

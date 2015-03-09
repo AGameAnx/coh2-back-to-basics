@@ -138,7 +138,7 @@
 		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\raketenwefer_43_88cm_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\dummy_setup" mod="23d6cdb82724460dbcb21e1a9162e473" />
 		</group>
 		<group name="burst">
 			<group name="incremental_target_table">

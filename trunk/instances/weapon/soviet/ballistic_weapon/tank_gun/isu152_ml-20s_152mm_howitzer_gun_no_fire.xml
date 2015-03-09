@@ -82,7 +82,7 @@
 		</group>
 		<icon name="icon_name" value="" />
 		<group name="projectile">
-			<instance_reference name="projectile" value="ebps\projectile\isu_152_shell" />
+			<instance_reference name="projectile" value="ebps\projectile\isu_152_shell_nofire" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<bool name="delete_previous_on_hit" value="False" />
 		</group>
 		<group name="burst">
@@ -133,10 +133,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="270" />
+			<float name="min" value="180" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="270" />
+			<float name="max" value="180" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />

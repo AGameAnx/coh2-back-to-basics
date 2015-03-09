@@ -138,7 +138,7 @@
 		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\pak44_128mm_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\pak44_128mm_supporting_fire_shell_mp" />
 		</group>
 		<group name="burst">
 			<group name="incremental_target_table">
