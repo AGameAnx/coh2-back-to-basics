@@ -123,10 +123,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="120" />
+			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="120" />
+			<float name="max" value="80" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />

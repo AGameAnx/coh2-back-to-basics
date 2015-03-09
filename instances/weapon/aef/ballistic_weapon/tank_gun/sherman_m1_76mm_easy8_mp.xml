@@ -262,7 +262,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\aef_76mm_high_velocity_tank_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\aef_76mm_high_velocity_tank_shell_e8_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 		</group>
 		<group name="priority">
 			<float name="threat" value="20" />

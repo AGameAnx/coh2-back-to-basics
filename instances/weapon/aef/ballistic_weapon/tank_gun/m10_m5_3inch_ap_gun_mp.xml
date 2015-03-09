@@ -406,7 +406,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="True" />
-			<instance_reference name="projectile" value="ebps\projectile\aef_m36_m10_ap_round" />
+			<instance_reference name="projectile" value="ebps\projectile\aef_m10_ap_round" mod="23d6cdb82724460dbcb21e1a9162e473" />
 		</group>
 		<group name="range">
 			<float name="max" value="45" />

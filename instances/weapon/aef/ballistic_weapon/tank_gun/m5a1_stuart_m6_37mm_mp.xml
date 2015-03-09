@@ -186,7 +186,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\soviet_45mm_t70_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\stuart_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 		</group>
 		<group name="priority">
 			<float name="threat" value="20" />
