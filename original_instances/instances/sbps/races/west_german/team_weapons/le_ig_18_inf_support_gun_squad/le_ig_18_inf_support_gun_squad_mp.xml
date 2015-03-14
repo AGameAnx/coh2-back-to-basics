@@ -11,9 +11,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051475" />
 						<string name="hotkey_name" value="G" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051477" />
@@ -41,13 +41,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="28" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051473" />
 						<locstring name="screen_name_short" value="11051476" />
@@ -55,7 +55,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\west_german" />
@@ -67,9 +67,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051475" />
 						<string name="hotkey_name" value="F" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051477" />
@@ -97,13 +97,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="28" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051473" />
 						<locstring name="screen_name_short" value="11051476" />
@@ -111,7 +111,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\aef" />
@@ -123,9 +123,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051475" />
 						<string name="hotkey_name" value="F" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051477" />
@@ -153,13 +153,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="28" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051473" />
 						<locstring name="screen_name_short" value="11051476" />
@@ -167,7 +167,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\german" />
@@ -179,9 +179,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051475" />
 						<string name="hotkey_name" value="F" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051477" />
@@ -209,13 +209,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="28" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051473" />
 						<locstring name="screen_name_short" value="11051476" />
@@ -223,7 +223,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\soviet" />
@@ -235,9 +235,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051475" />
 						<string name="hotkey_name" value="G" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_ig18_infantry_support_gun" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11051477" />
@@ -265,13 +265,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="28" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_ig18_infantry_support_gun_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11051473" />
 						<locstring name="screen_name_short" value="11051476" />
@@ -279,7 +279,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_ig18_infantry_support_gun_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="" />
@@ -1077,7 +1077,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="11075049" />
 				<string name="hotkey_name" value="reinforce" />
-				<string name="icon_name" value="Icons_odds_reinforce" />
+				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="11071801" />

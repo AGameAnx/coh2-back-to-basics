@@ -65,7 +65,7 @@
 		<template_reference name="ui_info" value="tables\ui_info">
 			<locstring name="screen_name" value="0" />
 			<locstring name="help_text" value="11042003" />
-			<string name="icon_name" value="Icons_criticals_killed_engine_light" />
+			<icon name="icon_name" value="Icons_criticals_killed_engine_light" />
 			<string name="hotkey_name" value="" />
 		</template_reference>
 		<bool name="repairable" value="True" />

@@ -3,7 +3,7 @@
 		<locstring name="name" value="11068337" />
 		<instance_reference name="archetype_upgrade" value="upgrade\aef\commander\archetype\tech_tree_v1" />
 		<locstring name="description" value="11075209" />
-		<string name="icon" value="Icons_commander_portrait_us_forces_commander_04" />
+		<icon name="icon" value="Icons_commander_portrait_us_forces_commander_04" />
 		<string name="icon_secondary" value="Icons_commander_portrait_us_forces_commander_04_large" />
 		<int name="ui_position" value="0" />
 		<locstring name="description_short" value="0" />
@@ -18,6 +18,11 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/297510/ss_3d84de7c0516bdc8cc92d30326a321a354f290fa.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>

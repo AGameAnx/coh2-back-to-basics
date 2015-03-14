@@ -109,11 +109,11 @@
 			<locstring name="extra_text" value="11038388" />
 			<locstring name="help_text" value="11037872" />
 			<string name="hotkey_name" value="V" />
-			<string name="icon_name" value="Icons_abilities_ability_soviet_82mm_concentrated_mortar_barrage" />
+			<icon name="icon_name" value="Icons_abilities_ability_soviet_82mm_concentrated_mortar_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11037873" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

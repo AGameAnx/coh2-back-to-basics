@@ -2,7 +2,7 @@
 	<group name="ribbon_bag">
 		<locstring name="name" value="11049624" />
 		<locstring name="description" value="11049625" />
-		<string name="icon" value="Icons_faceplate_medallions_faceplate_medallion_m01_medium" />
+		<icon name="icon" value="Icons_faceplate_medallions_faceplate_medallion_m01_medium" />
 		<bool name="is_medal" value="True" />
 		<int name="priority" value="1005" />
 		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_1_med" />

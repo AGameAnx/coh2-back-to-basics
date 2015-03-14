@@ -177,6 +177,11 @@
 					</template_reference>
 					<list name="spawned_entity_actions">
 					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
 				</template_reference>
 				<template_reference name="action" value="action\spawn_entity">
 					<float name="duration" value="20" />
@@ -192,6 +197,11 @@
 					</template_reference>
 					<list name="spawned_entity_actions">
 					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
 				</template_reference>
 			</list>
 		</template_reference>

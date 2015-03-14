@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\german\light-vehicles\251_halftrack_mobility" />
 		<locstring name="name" value="11076495" />
 		<locstring name="description" value="11076509" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_ger_sdkfz251_speed_rotation" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_ger_sdkfz251_speed_rotation" />
 		<locstring name="description_short" value="11076494" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="387939" />

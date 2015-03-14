@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\soviet\mortar\pm_41_scatter" />
 		<locstring name="name" value="11076895" />
 		<locstring name="description" value="11076897" />
-		<string name="icon" value="Icons_intel_bulletins_mortar_sov_pm41_scatter" />
+		<icon name="icon" value="Icons_intel_bulletins_mortar_sov_pm41_scatter" />
 		<locstring name="description_short" value="11076896" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388303" />

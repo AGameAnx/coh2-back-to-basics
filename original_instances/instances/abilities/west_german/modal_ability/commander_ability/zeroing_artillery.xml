@@ -15,7 +15,7 @@
 					<uniqueid name="id" value="259297" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="1" />
+					<float name="delay" value="3" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
@@ -33,8 +33,8 @@
 									</group>
 									<float name="duration" value="45" />
 									<float name="interval" value="5" />
-									<float name="interval_min" value="5" />
-									<float name="interval_multiplier" value="0.8" />
+									<float name="interval_min" value="0.5" />
+									<float name="interval_multiplier" value="0.85" />
 									<float name="interval_reset_delay" value="2" />
 									<group name="target_info">
 										<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
@@ -59,7 +59,7 @@
 											<float name="num_salvo" value="1" />
 											<float name="radius" value="7" />
 											<float name="source_offset_x" value="1" />
-											<float name="source_offset_y" value="300" />
+											<float name="source_offset_y" value="100" />
 											<float name="source_offset_z" value="1" />
 											<float name="time_range_between_shells_max" value="1" />
 											<float name="time_range_between_shells_min" value="1" />
@@ -158,11 +158,11 @@
 			<locstring name="extra_text" value="11072229" />
 			<locstring name="help_text" value="11072228" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_commander_cmdr_west_german_zeroing_artillery" />
+			<icon name="icon_name" value="Icons_commander_cmdr_west_german_zeroing_artillery" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11072227" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

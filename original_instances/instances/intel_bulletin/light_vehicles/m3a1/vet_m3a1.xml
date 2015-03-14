@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\light_vehicle\m3a1\gain_vet_m3a1" />
 		<locstring name="name" value="11034245" />
 		<locstring name="description" value="11034334" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_lightvehicle10" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_lightvehicle10" />
 		<locstring name="description_short" value="11036781" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5792" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\artillery\pack_howitzer\ability_recharge_pack" />
 		<locstring name="name" value="11072340" />
 		<locstring name="description" value="11072344" />
-		<string name="icon" value="Icons_intel_bulletins_artillery_aef_pack01" />
+		<icon name="icon" value="Icons_intel_bulletins_artillery_aef_pack01" />
 		<locstring name="description_short" value="11072342" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="259869" />

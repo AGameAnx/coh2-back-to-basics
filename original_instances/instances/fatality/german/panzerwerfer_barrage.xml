@@ -15,7 +15,7 @@
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
-		<string name="icon" value="Icons_fatalities_fatality_panzerwerfer_barrage" />
+		<icon name="icon" value="Icons_fatalities_fatality_panzerwerfer_barrage" />
 		<string name="lua_function_name" value="Fatality_PanzerwerferBarrage" />
 		<locstring name="description" value="11073994" />
 		<instance_reference name="store_item" value="" />

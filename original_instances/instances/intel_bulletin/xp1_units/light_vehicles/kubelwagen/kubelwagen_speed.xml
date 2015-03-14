@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\light_vehicles\kubelwagen\movespeed_kubelwagen" />
 		<locstring name="name" value="11072503" />
 		<locstring name="description" value="11072505" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_kubel_speed" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_kubel_speed" />
 		<locstring name="description_short" value="11072504" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260227" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\german\medium_tank\ostwind_vet" />
 		<locstring name="name" value="11081668" />
 		<locstring name="description" value="11079695" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_ger_ostwind_vet" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_ger_ostwind_vet" />
 		<locstring name="description_short" value="11080243" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396531" />

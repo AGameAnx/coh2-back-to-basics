@@ -447,7 +447,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11071694" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_aef_m4a3_sherman_bulldozer" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_aef_m4a3_sherman_bulldozer" />
 			<enum name="kill_type" value="medium_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -487,7 +487,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11071581" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_aef_m4a3_sherman_bulldozer_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="ft" />
@@ -506,7 +506,7 @@
 			<locstring name="extra_text_world" value="11070886" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_aef_m4a3_sherman_bulldozer_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_aef_m4a3_sherman_bulldozer_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="fx_ui" />
 			<bool name="skin_pack_override" value="False" />
@@ -1032,6 +1032,7 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="110" />
+			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
 			<float name="deceleration" value="4" />

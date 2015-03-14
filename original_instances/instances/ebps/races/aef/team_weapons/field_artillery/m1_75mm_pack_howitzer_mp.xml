@@ -16,9 +16,8 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_mp" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_vet3_mp" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_white_phosphorous_barrage_ability_mp" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_heat_mp" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_white_phosphorous_barrage_ability_mp" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -87,7 +86,7 @@
 					</list>
 				</group>
 			</list>
-			<float name="weapon_priority" value="0" />
+			<float name="weapon_priority" value="-100" />
 			<template_reference name="wreck_entity_option" value="options\none">
 			</template_reference>
 		</template_reference>
@@ -165,7 +164,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_aef_pack_howitzer" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_aef_pack_howitzer" />
 			<enum name="kill_type" value="heavy_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -205,7 +204,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11052914" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_unmanned_aef_m1_75mm_pack_howitzer_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -224,7 +223,7 @@
 			<locstring name="extra_text_world" value="11052913" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_ml20_artillery_gun_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_ml20_artillery_gun_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
@@ -314,6 +313,27 @@
 							</group>
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_victor_target_mp" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_heat_mp" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

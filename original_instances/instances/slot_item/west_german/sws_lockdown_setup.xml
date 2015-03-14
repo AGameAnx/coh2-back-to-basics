@@ -10,7 +10,7 @@
 		<bool name="is_entity_user" value="False" />
 		<float name="item_uses" value="0" />
 		<enum name="owner_type" value="squad" />
-		<string name="package_icon" value="" />
+		<icon name="package_icon" value="" />
 		<float name="recharge_time" value="0" />
 		<float name="slot_size" value="0" />
 		<group name="speech_code_2">
@@ -88,7 +88,7 @@
 				<bool name="reserve_sector_only" value="False" />
 			</template_reference>
 			<template_reference name="action" value="action\ui_decorator_action">
-				<string name="symbol_icon" value="Icons_symbols_vehicle_west_german_halftrack_sws_setup_symbol" />
+				<icon name="symbol_icon" value="Icons_symbols_vehicle_west_german_halftrack_sws_setup_symbol" />
 				<uniqueid name="id" value="68363" />
 			</template_reference>
 			<template_reference name="action" value="action\speech_action">

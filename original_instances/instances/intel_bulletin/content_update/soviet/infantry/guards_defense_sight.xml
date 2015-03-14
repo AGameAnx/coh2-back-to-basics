@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\soviet\infantry\guards_defense_sight" />
 		<locstring name="name" value="11077256" />
 		<locstring name="description" value="11077211" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_sov_guards_defense_sight" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_sov_guards_defense_sight" />
 		<locstring name="description_short" value="11077649" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="389794" />

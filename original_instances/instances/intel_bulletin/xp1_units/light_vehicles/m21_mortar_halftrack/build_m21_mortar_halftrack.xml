@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\light_vehicles\m21_mortar_halftrack\build_m21_m_halftrack" />
 		<locstring name="name" value="11072576" />
 		<locstring name="description" value="11072575" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_aef_m21_dispatch" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_aef_m21_dispatch" />
 		<locstring name="description_short" value="11072577" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260742" />

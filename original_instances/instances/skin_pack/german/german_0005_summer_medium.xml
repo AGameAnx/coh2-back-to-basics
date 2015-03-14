@@ -1,8 +1,8 @@
 <instance description="German dapple three-colour" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="german_0005_summer" />
-		<string name="icon" value="Icons_swatches_swatch_german_0005_summer_medium" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_german_0005_summer_medium" />
+		<icon name="icon" value="Icons_swatches_swatch_german_0005_summer_medium" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_german_0005_summer_medium" />
 		<locstring name="name" value="11050436" />
 		<locstring name="description" value="11050434" />
 		<enum name="kill_type" value="medium_armour" />
@@ -21,6 +21,11 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231492/ss_7b5826f053ad3495472b5bd0f43d6d2464849bc1.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231492/header.jpg" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\summer_medium" />
 		</template_reference>

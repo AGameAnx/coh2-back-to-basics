@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\german\light-vehicles\221_autocannon_cost" />
 		<locstring name="name" value="11077064" />
 		<locstring name="description" value="11077063" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_ger_221_scout_autocannon_cost" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_ger_221_scout_autocannon_cost" />
 		<locstring name="description_short" value="11077065" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388827" />

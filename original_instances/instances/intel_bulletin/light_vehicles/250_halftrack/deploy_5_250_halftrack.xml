@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\light_vehicle\250\armor_250_halftracks" />
 		<locstring name="name" value="11054584" />
 		<locstring name="description" value="11054589" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_cmdr_german_mechanized_assault_group_bulletin" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_cmdr_german_mechanized_assault_group_bulletin" />
 		<locstring name="description_short" value="11054585" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="18423" />

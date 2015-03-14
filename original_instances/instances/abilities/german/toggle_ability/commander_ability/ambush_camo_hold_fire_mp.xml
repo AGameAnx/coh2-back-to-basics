@@ -9,16 +9,6 @@
 				<template_reference name="action" value="action\cancel_forced_attack">
 					<uniqueid name="id" value="51990" />
 				</template_reference>
-				<template_reference name="action" value="action\ui_unit_modifier_action">
-					<bool name="die_with_creator" value="True" />
-					<template_reference name="ui_info" value="tables\ui_info">
-						<locstring name="screen_name" value="0" />
-						<locstring name="help_text" value="0" />
-						<string name="icon_name" value="Icons_abilities_hold_fire_on" />
-						<string name="hotkey_name" value="" />
-					</template_reference>
-					<uniqueid name="id" value="51991" />
-				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
 					<bool name="permanent" value="False" />
@@ -79,6 +69,16 @@
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\ui_unit_modifier_action">
+					<bool name="die_with_creator" value="False" />
+					<template_reference name="ui_info" value="tables\ui_info">
+						<locstring name="screen_name" value="11042898" />
+						<locstring name="help_text" value="11085115" />
+						<icon name="icon_name" value="Icons_abilities_hold_fire_on" />
+						<string name="hotkey_name" value="" />
+					</template_reference>
+					<uniqueid name="id" value="394291" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -151,11 +151,11 @@
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="11042897" />
 			<string name="hotkey_name" value="H" />
-			<string name="icon_name" value="Icons_abilities_hold_fire_off" />
+			<icon name="icon_name" value="Icons_abilities_hold_fire_off" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11042898" />
-			<string name="icon_alternate_name" value="Icons_abilities_hold_fire_on" />
+			<icon name="icon_alternate_name" value="Icons_abilities_hold_fire_on" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="11045364" />
 			<locstring name="screen_name_alternate" value="11045661" />

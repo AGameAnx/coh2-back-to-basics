@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\heavy_tank\tiger\tiger_ace_sight" />
 		<locstring name="name" value="11054634" />
 		<locstring name="description" value="11054632" />
-		<string name="icon" value="Icons_intel_bulletins_heavytank_cmdr_german_tiger_ace_bulletin" />
+		<icon name="icon" value="Icons_intel_bulletins_heavytank_cmdr_german_tiger_ace_bulletin" />
 		<locstring name="description_short" value="11054633" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="18449" />

@@ -2,7 +2,7 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11074258" />
 		<locstring name="description" value="11074259" />
-		<string name="icon" value="Icons_vehicles_vehicle_german_251_halftrack" />
+		<icon name="icon" value="Icons_vehicles_vehicle_german_251_halftrack" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>

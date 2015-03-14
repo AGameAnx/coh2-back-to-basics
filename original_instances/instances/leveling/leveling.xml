@@ -4,7 +4,7 @@
 			<group name="level">
 				<locstring name="name" value="11035034" />
 				<float name="total_xp_required_multiplier" value="0" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_01_private" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_01_private" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6780" />
 				<int name="stars" value="0" />
@@ -12,7 +12,7 @@
 			<group name="level">
 				<locstring name="name" value="11050048" />
 				<float name="total_xp_required_multiplier" value="1.0448" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_01_private_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_01_private_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6781" />
 				<int name="stars" value="0" />
@@ -20,7 +20,7 @@
 			<group name="level">
 				<locstring name="name" value="11050049" />
 				<float name="total_xp_required_multiplier" value="2.1156" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_01_private_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_01_private_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6782" />
 				<int name="stars" value="0" />
@@ -28,7 +28,7 @@
 			<group name="level">
 				<locstring name="name" value="11050050" />
 				<float name="total_xp_required_multiplier" value="3.2148" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_01_private_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_01_private_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6783" />
 				<int name="stars" value="0" />
@@ -36,7 +36,7 @@
 			<group name="level">
 				<locstring name="name" value="11035035" />
 				<float name="total_xp_required_multiplier" value="4.3448" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_02_senior_private" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_02_senior_private" />
 				<string name="steam_achievement_id" value="progression_rank_reached_2" />
 				<uniqueid name="server_id" value="6784" />
 				<int name="stars" value="0" />
@@ -44,7 +44,7 @@
 			<group name="level">
 				<locstring name="name" value="11050051" />
 				<float name="total_xp_required_multiplier" value="5.508" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_02_senior_private_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_02_senior_private_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6785" />
 				<int name="stars" value="0" />
@@ -52,7 +52,7 @@
 			<group name="level">
 				<locstring name="name" value="11050052" />
 				<float name="total_xp_required_multiplier" value="6.7068" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_02_senior_private_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_02_senior_private_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6786" />
 				<int name="stars" value="0" />
@@ -60,7 +60,7 @@
 			<group name="level">
 				<locstring name="name" value="11050053" />
 				<float name="total_xp_required_multiplier" value="7.9436" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_02_senior_private_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_02_senior_private_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6787" />
 				<int name="stars" value="0" />
@@ -68,7 +68,7 @@
 			<group name="level">
 				<locstring name="name" value="11050054" />
 				<float name="total_xp_required_multiplier" value="9.2208" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_02_senior_private_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_02_senior_private_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6788" />
 				<int name="stars" value="0" />
@@ -76,7 +76,7 @@
 			<group name="level">
 				<locstring name="name" value="11035036" />
 				<float name="total_xp_required_multiplier" value="10.5408" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_03_corporal" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_03_corporal" />
 				<string name="steam_achievement_id" value="progression_rank_reached_3" />
 				<uniqueid name="server_id" value="6789" />
 				<int name="stars" value="0" />
@@ -84,7 +84,7 @@
 			<group name="level">
 				<locstring name="name" value="11050055" />
 				<float name="total_xp_required_multiplier" value="11.906" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_03_corporal_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_03_corporal_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6790" />
 				<int name="stars" value="0" />
@@ -92,7 +92,7 @@
 			<group name="level">
 				<locstring name="name" value="11050056" />
 				<float name="total_xp_required_multiplier" value="13.3188" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_03_corporal_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_03_corporal_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6791" />
 				<int name="stars" value="0" />
@@ -100,7 +100,7 @@
 			<group name="level">
 				<locstring name="name" value="11050057" />
 				<float name="total_xp_required_multiplier" value="14.7816" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_03_corporal_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_03_corporal_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6792" />
 				<int name="stars" value="0" />
@@ -108,7 +108,7 @@
 			<group name="level">
 				<locstring name="name" value="11050058" />
 				<float name="total_xp_required_multiplier" value="16.2968" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_03_corporal_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_03_corporal_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6793" />
 				<int name="stars" value="0" />
@@ -116,7 +116,7 @@
 			<group name="level">
 				<locstring name="name" value="11035037" />
 				<float name="total_xp_required_multiplier" value="17.8668" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal" />
 				<string name="steam_achievement_id" value="progression_rank_reached_4" />
 				<uniqueid name="server_id" value="6794" />
 				<int name="stars" value="0" />
@@ -124,7 +124,7 @@
 			<group name="level">
 				<locstring name="name" value="11050059" />
 				<float name="total_xp_required_multiplier" value="19.494" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6795" />
 				<int name="stars" value="0" />
@@ -132,7 +132,7 @@
 			<group name="level">
 				<locstring name="name" value="11050060" />
 				<float name="total_xp_required_multiplier" value="21.1808" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6796" />
 				<int name="stars" value="0" />
@@ -140,7 +140,7 @@
 			<group name="level">
 				<locstring name="name" value="11050061" />
 				<float name="total_xp_required_multiplier" value="22.9296" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6797" />
 				<int name="stars" value="0" />
@@ -148,7 +148,7 @@
 			<group name="level">
 				<locstring name="name" value="11050062" />
 				<float name="total_xp_required_multiplier" value="24.7428" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_04_senior_corporal_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6798" />
 				<int name="stars" value="0" />
@@ -156,7 +156,7 @@
 			<group name="level">
 				<locstring name="name" value="11035038" />
 				<float name="total_xp_required_multiplier" value="26.6228" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant" />
 				<string name="steam_achievement_id" value="progression_rank_reached_5" />
 				<uniqueid name="server_id" value="6799" />
 				<int name="stars" value="0" />
@@ -164,7 +164,7 @@
 			<group name="level">
 				<locstring name="name" value="11050063" />
 				<float name="total_xp_required_multiplier" value="28.572" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6800" />
 				<int name="stars" value="0" />
@@ -172,7 +172,7 @@
 			<group name="level">
 				<locstring name="name" value="11050064" />
 				<float name="total_xp_required_multiplier" value="30.5928" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6801" />
 				<int name="stars" value="0" />
@@ -180,7 +180,7 @@
 			<group name="level">
 				<locstring name="name" value="11050065" />
 				<float name="total_xp_required_multiplier" value="32.6876" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6802" />
 				<int name="stars" value="0" />
@@ -188,7 +188,7 @@
 			<group name="level">
 				<locstring name="name" value="11050066" />
 				<float name="total_xp_required_multiplier" value="34.8588" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_05_junior_sergeant_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6803" />
 				<int name="stars" value="0" />
@@ -196,7 +196,7 @@
 			<group name="level">
 				<locstring name="name" value="11035039" />
 				<float name="total_xp_required_multiplier" value="37.1088" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_06_sergeant" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_06_sergeant" />
 				<string name="steam_achievement_id" value="progression_rank_reached_6" />
 				<uniqueid name="server_id" value="6804" />
 				<int name="stars" value="1" />
@@ -204,7 +204,7 @@
 			<group name="level">
 				<locstring name="name" value="11050067" />
 				<float name="total_xp_required_multiplier" value="39.44" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_06_sergeant_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_06_sergeant_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6805" />
 				<int name="stars" value="1" />
@@ -212,7 +212,7 @@
 			<group name="level">
 				<locstring name="name" value="11050068" />
 				<float name="total_xp_required_multiplier" value="41.8548" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_06_sergeant_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_06_sergeant_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6806" />
 				<int name="stars" value="1" />
@@ -220,7 +220,7 @@
 			<group name="level">
 				<locstring name="name" value="11050069" />
 				<float name="total_xp_required_multiplier" value="44.3556" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_06_sergeant_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_06_sergeant_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6807" />
 				<int name="stars" value="1" />
@@ -228,7 +228,7 @@
 			<group name="level">
 				<locstring name="name" value="11050070" />
 				<float name="total_xp_required_multiplier" value="46.9448" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_06_sergeant_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_06_sergeant_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6808" />
 				<int name="stars" value="1" />
@@ -236,7 +236,7 @@
 			<group name="level">
 				<locstring name="name" value="11035040" />
 				<float name="total_xp_required_multiplier" value="49.6248" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant" />
 				<string name="steam_achievement_id" value="progression_rank_reached_7" />
 				<uniqueid name="server_id" value="6809" />
 				<int name="stars" value="1" />
@@ -244,7 +244,7 @@
 			<group name="level">
 				<locstring name="name" value="11050071" />
 				<float name="total_xp_required_multiplier" value="52.398" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6810" />
 				<int name="stars" value="1" />
@@ -252,7 +252,7 @@
 			<group name="level">
 				<locstring name="name" value="11050072" />
 				<float name="total_xp_required_multiplier" value="55.2668" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6811" />
 				<int name="stars" value="1" />
@@ -260,7 +260,7 @@
 			<group name="level">
 				<locstring name="name" value="11050073" />
 				<float name="total_xp_required_multiplier" value="58.2336" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6812" />
 				<int name="stars" value="1" />
@@ -268,7 +268,7 @@
 			<group name="level">
 				<locstring name="name" value="11050074" />
 				<float name="total_xp_required_multiplier" value="61.3008" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_07_senior_sergeant_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6813" />
 				<int name="stars" value="1" />
@@ -276,7 +276,7 @@
 			<group name="level">
 				<locstring name="name" value="11035041" />
 				<float name="total_xp_required_multiplier" value="64.4708" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant" />
 				<string name="steam_achievement_id" value="progression_rank_reached_8" />
 				<uniqueid name="server_id" value="6814" />
 				<int name="stars" value="1" />
@@ -284,7 +284,7 @@
 			<group name="level">
 				<locstring name="name" value="11050075" />
 				<float name="total_xp_required_multiplier" value="67.746" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6815" />
 				<int name="stars" value="1" />
@@ -292,7 +292,7 @@
 			<group name="level">
 				<locstring name="name" value="11050076" />
 				<float name="total_xp_required_multiplier" value="71.1288" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6816" />
 				<int name="stars" value="1" />
@@ -300,7 +300,7 @@
 			<group name="level">
 				<locstring name="name" value="11050077" />
 				<float name="total_xp_required_multiplier" value="74.6216" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6817" />
 				<int name="stars" value="1" />
@@ -308,7 +308,7 @@
 			<group name="level">
 				<locstring name="name" value="11050078" />
 				<float name="total_xp_required_multiplier" value="78.2268" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_08_master_sergeant_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6818" />
 				<int name="stars" value="1" />
@@ -316,7 +316,7 @@
 			<group name="level">
 				<locstring name="name" value="11035042" />
 				<float name="total_xp_required_multiplier" value="81.9468" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major" />
 				<string name="steam_achievement_id" value="progression_rank_reached_9" />
 				<uniqueid name="server_id" value="6819" />
 				<int name="stars" value="1" />
@@ -324,7 +324,7 @@
 			<group name="level">
 				<locstring name="name" value="11050079" />
 				<float name="total_xp_required_multiplier" value="85.784" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6820" />
 				<int name="stars" value="1" />
@@ -332,7 +332,7 @@
 			<group name="level">
 				<locstring name="name" value="11050080" />
 				<float name="total_xp_required_multiplier" value="89.7408" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6821" />
 				<int name="stars" value="1" />
@@ -340,7 +340,7 @@
 			<group name="level">
 				<locstring name="name" value="11050081" />
 				<float name="total_xp_required_multiplier" value="93.8196" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6822" />
 				<int name="stars" value="1" />
@@ -348,7 +348,7 @@
 			<group name="level">
 				<locstring name="name" value="11050082" />
 				<float name="total_xp_required_multiplier" value="98.0228" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_09_sergeant_major_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6823" />
 				<int name="stars" value="1" />
@@ -356,7 +356,7 @@
 			<group name="level">
 				<locstring name="name" value="11035043" />
 				<float name="total_xp_required_multiplier" value="102.3528" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer" />
 				<string name="steam_achievement_id" value="progression_rank_reached_10" />
 				<uniqueid name="server_id" value="6824" />
 				<int name="stars" value="1" />
@@ -364,7 +364,7 @@
 			<group name="level">
 				<locstring name="name" value="11050083" />
 				<float name="total_xp_required_multiplier" value="106.812" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6825" />
 				<int name="stars" value="1" />
@@ -372,7 +372,7 @@
 			<group name="level">
 				<locstring name="name" value="11050084" />
 				<float name="total_xp_required_multiplier" value="111.4028" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6826" />
 				<int name="stars" value="1" />
@@ -380,7 +380,7 @@
 			<group name="level">
 				<locstring name="name" value="11050085" />
 				<float name="total_xp_required_multiplier" value="116.1276" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6827" />
 				<int name="stars" value="1" />
@@ -388,7 +388,7 @@
 			<group name="level">
 				<locstring name="name" value="11050086" />
 				<float name="total_xp_required_multiplier" value="120.9888" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_10_warrant_officer_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6828" />
 				<int name="stars" value="1" />
@@ -396,7 +396,7 @@
 			<group name="level">
 				<locstring name="name" value="11035044" />
 				<float name="total_xp_required_multiplier" value="125.9888" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer" />
 				<string name="steam_achievement_id" value="progression_rank_reached_11" />
 				<uniqueid name="server_id" value="6829" />
 				<int name="stars" value="1" />
@@ -404,7 +404,7 @@
 			<group name="level">
 				<locstring name="name" value="11050087" />
 				<float name="total_xp_required_multiplier" value="131.13" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6830" />
 				<int name="stars" value="1" />
@@ -412,7 +412,7 @@
 			<group name="level">
 				<locstring name="name" value="11050088" />
 				<float name="total_xp_required_multiplier" value="136.4148" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6831" />
 				<int name="stars" value="1" />
@@ -420,7 +420,7 @@
 			<group name="level">
 				<locstring name="name" value="11050089" />
 				<float name="total_xp_required_multiplier" value="141.8456" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6832" />
 				<int name="stars" value="1" />
@@ -428,7 +428,7 @@
 			<group name="level">
 				<locstring name="name" value="11050090" />
 				<float name="total_xp_required_multiplier" value="147.4248" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_11_senior_warrant_officer_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6833" />
 				<int name="stars" value="1" />
@@ -436,7 +436,7 @@
 			<group name="level">
 				<locstring name="name" value="11035045" />
 				<float name="total_xp_required_multiplier" value="153.1548" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant" />
 				<string name="steam_achievement_id" value="progression_rank_reached_12" />
 				<uniqueid name="server_id" value="6834" />
 				<int name="stars" value="1" />
@@ -444,7 +444,7 @@
 			<group name="level">
 				<locstring name="name" value="11050091" />
 				<float name="total_xp_required_multiplier" value="159.038" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6835" />
 				<int name="stars" value="1" />
@@ -452,7 +452,7 @@
 			<group name="level">
 				<locstring name="name" value="11050092" />
 				<float name="total_xp_required_multiplier" value="165.0768" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6836" />
 				<int name="stars" value="1" />
@@ -460,7 +460,7 @@
 			<group name="level">
 				<locstring name="name" value="11050093" />
 				<float name="total_xp_required_multiplier" value="171.2736" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6837" />
 				<int name="stars" value="1" />
@@ -468,7 +468,7 @@
 			<group name="level">
 				<locstring name="name" value="11050094" />
 				<float name="total_xp_required_multiplier" value="177.6308" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_12_junior_lieutenant_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6838" />
 				<int name="stars" value="1" />
@@ -476,7 +476,7 @@
 			<group name="level">
 				<locstring name="name" value="11035046" />
 				<float name="total_xp_required_multiplier" value="184.1508" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant" />
 				<string name="steam_achievement_id" value="progression_rank_reached_13" />
 				<uniqueid name="server_id" value="6839" />
 				<int name="stars" value="2" />
@@ -484,7 +484,7 @@
 			<group name="level">
 				<locstring name="name" value="11050095" />
 				<float name="total_xp_required_multiplier" value="190.836" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6840" />
 				<int name="stars" value="2" />
@@ -492,7 +492,7 @@
 			<group name="level">
 				<locstring name="name" value="11050096" />
 				<float name="total_xp_required_multiplier" value="197.6888" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6841" />
 				<int name="stars" value="2" />
@@ -500,7 +500,7 @@
 			<group name="level">
 				<locstring name="name" value="11050097" />
 				<float name="total_xp_required_multiplier" value="204.7116" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6842" />
 				<int name="stars" value="2" />
@@ -508,7 +508,7 @@
 			<group name="level">
 				<locstring name="name" value="11050098" />
 				<float name="total_xp_required_multiplier" value="211.9068" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_13_lieutenant_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6843" />
 				<int name="stars" value="2" />
@@ -516,7 +516,7 @@
 			<group name="level">
 				<locstring name="name" value="11035047" />
 				<float name="total_xp_required_multiplier" value="219.2768" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant" />
 				<string name="steam_achievement_id" value="progression_rank_reached_14" />
 				<uniqueid name="server_id" value="6844" />
 				<int name="stars" value="2" />
@@ -524,7 +524,7 @@
 			<group name="level">
 				<locstring name="name" value="11050099" />
 				<float name="total_xp_required_multiplier" value="226.824" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6845" />
 				<int name="stars" value="2" />
@@ -532,7 +532,7 @@
 			<group name="level">
 				<locstring name="name" value="11050100" />
 				<float name="total_xp_required_multiplier" value="234.5508" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6846" />
 				<int name="stars" value="2" />
@@ -540,7 +540,7 @@
 			<group name="level">
 				<locstring name="name" value="11050101" />
 				<float name="total_xp_required_multiplier" value="242.4596" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6847" />
 				<int name="stars" value="2" />
@@ -548,7 +548,7 @@
 			<group name="level">
 				<locstring name="name" value="11050102" />
 				<float name="total_xp_required_multiplier" value="250.5528" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_14_senior_lieutenant_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6848" />
 				<int name="stars" value="2" />
@@ -556,7 +556,7 @@
 			<group name="level">
 				<locstring name="name" value="11035048" />
 				<float name="total_xp_required_multiplier" value="258.8328" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_15_captain" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_15_captain" />
 				<string name="steam_achievement_id" value="progression_rank_reached_15" />
 				<uniqueid name="server_id" value="6849" />
 				<int name="stars" value="2" />
@@ -564,7 +564,7 @@
 			<group name="level">
 				<locstring name="name" value="11050103" />
 				<float name="total_xp_required_multiplier" value="267.302" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_15_captain_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_15_captain_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6850" />
 				<int name="stars" value="2" />
@@ -572,7 +572,7 @@
 			<group name="level">
 				<locstring name="name" value="11050104" />
 				<float name="total_xp_required_multiplier" value="275.9628" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_15_captain_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_15_captain_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6851" />
 				<int name="stars" value="2" />
@@ -580,7 +580,7 @@
 			<group name="level">
 				<locstring name="name" value="11050105" />
 				<float name="total_xp_required_multiplier" value="284.8176" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_15_captain_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_15_captain_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6852" />
 				<int name="stars" value="2" />
@@ -588,7 +588,7 @@
 			<group name="level">
 				<locstring name="name" value="11050106" />
 				<float name="total_xp_required_multiplier" value="293.8688" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_15_captain_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_15_captain_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6853" />
 				<int name="stars" value="2" />
@@ -596,7 +596,7 @@
 			<group name="level">
 				<locstring name="name" value="11035049" />
 				<float name="total_xp_required_multiplier" value="303.1188" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain" />
 				<string name="steam_achievement_id" value="progression_rank_reached_16" />
 				<uniqueid name="server_id" value="6854" />
 				<int name="stars" value="2" />
@@ -604,7 +604,7 @@
 			<group name="level">
 				<locstring name="name" value="11050107" />
 				<float name="total_xp_required_multiplier" value="312.57" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6855" />
 				<int name="stars" value="2" />
@@ -612,7 +612,7 @@
 			<group name="level">
 				<locstring name="name" value="11050108" />
 				<float name="total_xp_required_multiplier" value="322.2248" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6856" />
 				<int name="stars" value="2" />
@@ -620,7 +620,7 @@
 			<group name="level">
 				<locstring name="name" value="11050109" />
 				<float name="total_xp_required_multiplier" value="332.0856" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6857" />
 				<int name="stars" value="2" />
@@ -628,7 +628,7 @@
 			<group name="level">
 				<locstring name="name" value="11050110" />
 				<float name="total_xp_required_multiplier" value="342.1548" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_16_senior_captain_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6858" />
 				<int name="stars" value="2" />
@@ -636,7 +636,7 @@
 			<group name="level">
 				<locstring name="name" value="11035050" />
 				<float name="total_xp_required_multiplier" value="352.4348" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_17_major" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_17_major" />
 				<string name="steam_achievement_id" value="progression_rank_reached_17" />
 				<uniqueid name="server_id" value="6859" />
 				<int name="stars" value="3" />
@@ -644,7 +644,7 @@
 			<group name="level">
 				<locstring name="name" value="11050111" />
 				<float name="total_xp_required_multiplier" value="362.928" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_17_major_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_17_major_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6860" />
 				<int name="stars" value="3" />
@@ -652,7 +652,7 @@
 			<group name="level">
 				<locstring name="name" value="11050112" />
 				<float name="total_xp_required_multiplier" value="373.6368" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_17_major_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_17_major_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6861" />
 				<int name="stars" value="3" />
@@ -660,7 +660,7 @@
 			<group name="level">
 				<locstring name="name" value="11050113" />
 				<float name="total_xp_required_multiplier" value="384.5636" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_17_major_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_17_major_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6862" />
 				<int name="stars" value="3" />
@@ -668,7 +668,7 @@
 			<group name="level">
 				<locstring name="name" value="11050114" />
 				<float name="total_xp_required_multiplier" value="395.7108" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_17_major_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_17_major_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6863" />
 				<int name="stars" value="3" />
@@ -676,7 +676,7 @@
 			<group name="level">
 				<locstring name="name" value="11035051" />
 				<float name="total_xp_required_multiplier" value="407.0808" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel" />
 				<string name="steam_achievement_id" value="progression_rank_reached_18" />
 				<uniqueid name="server_id" value="6864" />
 				<int name="stars" value="3" />
@@ -684,7 +684,7 @@
 			<group name="level">
 				<locstring name="name" value="11050115" />
 				<float name="total_xp_required_multiplier" value="418.676" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6865" />
 				<int name="stars" value="3" />
@@ -692,7 +692,7 @@
 			<group name="level">
 				<locstring name="name" value="11050116" />
 				<float name="total_xp_required_multiplier" value="430.4988" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6866" />
 				<int name="stars" value="3" />
@@ -700,7 +700,7 @@
 			<group name="level">
 				<locstring name="name" value="11050117" />
 				<float name="total_xp_required_multiplier" value="442.5516" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6867" />
 				<int name="stars" value="3" />
@@ -708,7 +708,7 @@
 			<group name="level">
 				<locstring name="name" value="11050118" />
 				<float name="total_xp_required_multiplier" value="454.8368" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_18_lieutenant_colonel_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6868" />
 				<int name="stars" value="3" />
@@ -716,7 +716,7 @@
 			<group name="level">
 				<locstring name="name" value="11035052" />
 				<float name="total_xp_required_multiplier" value="467.3568" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_19_colonel" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_19_colonel" />
 				<string name="steam_achievement_id" value="progression_rank_reached_19" />
 				<uniqueid name="server_id" value="6869" />
 				<int name="stars" value="4" />
@@ -724,7 +724,7 @@
 			<group name="level">
 				<locstring name="name" value="11050119" />
 				<float name="total_xp_required_multiplier" value="480.114" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_19_colonel_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_19_colonel_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6870" />
 				<int name="stars" value="4" />
@@ -732,7 +732,7 @@
 			<group name="level">
 				<locstring name="name" value="11050120" />
 				<float name="total_xp_required_multiplier" value="493.1108" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_19_colonel_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_19_colonel_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6871" />
 				<int name="stars" value="4" />
@@ -740,7 +740,7 @@
 			<group name="level">
 				<locstring name="name" value="11050121" />
 				<float name="total_xp_required_multiplier" value="506.3496" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_19_colonel_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_19_colonel_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6872" />
 				<int name="stars" value="4" />
@@ -748,7 +748,7 @@
 			<group name="level">
 				<locstring name="name" value="11050122" />
 				<float name="total_xp_required_multiplier" value="519.8328" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_19_colonel_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_19_colonel_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6873" />
 				<int name="stars" value="4" />
@@ -756,7 +756,7 @@
 			<group name="level">
 				<locstring name="name" value="11035053" />
 				<float name="total_xp_required_multiplier" value="533.5628" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general" />
 				<string name="steam_achievement_id" value="progression_rank_reached_20" />
 				<uniqueid name="server_id" value="6874" />
 				<int name="stars" value="4" />
@@ -764,7 +764,7 @@
 			<group name="level">
 				<locstring name="name" value="11050123" />
 				<float name="total_xp_required_multiplier" value="547.542" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general_class_1" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general_class_1" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6875" />
 				<int name="stars" value="4" />
@@ -772,7 +772,7 @@
 			<group name="level">
 				<locstring name="name" value="11050124" />
 				<float name="total_xp_required_multiplier" value="561.7728" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general_class_2" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general_class_2" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6876" />
 				<int name="stars" value="4" />
@@ -780,7 +780,7 @@
 			<group name="level">
 				<locstring name="name" value="11050125" />
 				<float name="total_xp_required_multiplier" value="576.2576" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general_class_3" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general_class_3" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6877" />
 				<int name="stars" value="4" />
@@ -788,7 +788,7 @@
 			<group name="level">
 				<locstring name="name" value="11050126" />
 				<float name="total_xp_required_multiplier" value="590.9988" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general_class_4" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_20_brigadier_general_class_4" />
 				<string name="steam_achievement_id" value="" />
 				<uniqueid name="server_id" value="6878" />
 				<int name="stars" value="4" />
@@ -796,7 +796,7 @@
 			<group name="level">
 				<locstring name="name" value="11050127" />
 				<float name="total_xp_required_multiplier" value="605.9988" />
-				<string name="icon" value="Icons_faceplate_playericons_rank_21_major_general" />
+				<icon name="icon" value="Icons_faceplate_playericons_rank_21_major_general" />
 				<string name="steam_achievement_id" value="progression_rank_reached_21" />
 				<uniqueid name="server_id" value="6879" />
 				<int name="stars" value="5" />
@@ -805,25 +805,25 @@
 		<int name="base_xp" value="10000" />
 		<list name="prestige_levels">
 			<group name="prestige">
-				<string name="icon" value="Icons_faceplate_prestige_prestige_level_01_achieved" />
+				<icon name="icon" value="Icons_faceplate_prestige_prestige_level_01_achieved" />
 				<float name="level_curve_xp_multiplier" value="1" />
 				<string name="steam_achievement_id" value="" />
 				<locstring name="name" value="11070938" />
-				<string name="backgroundIcon" value="Icons_faceplate_prestige_prestige_level_01_background" />
+				<icon name="backgroundIcon" value="Icons_faceplate_prestige_prestige_level_01_background" />
 			</group>
 			<group name="prestige">
-				<string name="icon" value="Icons_faceplate_prestige_prestige_level_02_achieved" />
+				<icon name="icon" value="Icons_faceplate_prestige_prestige_level_02_achieved" />
 				<float name="level_curve_xp_multiplier" value="1.1" />
 				<string name="steam_achievement_id" value="" />
 				<locstring name="name" value="11070939" />
-				<string name="backgroundIcon" value="Icons_faceplate_prestige_prestige_level_02_background" />
+				<icon name="backgroundIcon" value="Icons_faceplate_prestige_prestige_level_02_background" />
 			</group>
 			<group name="prestige">
-				<string name="icon" value="Icons_faceplate_prestige_prestige_level_03_achieved" />
+				<icon name="icon" value="Icons_faceplate_prestige_prestige_level_03_achieved" />
 				<float name="level_curve_xp_multiplier" value="1.2" />
 				<string name="steam_achievement_id" value="" />
 				<locstring name="name" value="11070940" />
-				<string name="backgroundIcon" value="Icons_faceplate_prestige_prestige_level_03_background" />
+				<icon name="backgroundIcon" value="Icons_faceplate_prestige_prestige_level_03_background" />
 			</group>
 		</list>
 	</group>

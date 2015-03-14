@@ -345,7 +345,7 @@
 											<template_reference name="ui_info" value="tables\ui_info">
 												<locstring name="screen_name" value="11066906" />
 												<locstring name="help_text" value="11073195" />
-												<string name="icon_name" value="Icons_abilities_ability_soviet_rgd_1_smoke_grenade" />
+												<icon name="icon_name" value="Icons_abilities_ability_soviet_rgd_1_smoke_grenade" />
 												<string name="hotkey_name" value="" />
 											</template_reference>
 											<uniqueid name="id" value="347459" />
@@ -383,7 +383,7 @@
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="False" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="1" />
 			<float name="burst_multiplier" value="1" />

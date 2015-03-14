@@ -1,6 +1,6 @@
 <instance description="" template="material">
 	<group name="material_bag">
-		<enum name="cover_type" value="type_cover\tp_heavy.lua" />
+		<enum name="cover_type" value="tp_heavy" />
 		<instance_reference name="hit_material" value="hit_material\wood" />
 		<float name="priority" value="7" />
 		<group name="ui_info">

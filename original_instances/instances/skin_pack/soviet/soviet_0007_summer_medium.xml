@@ -1,14 +1,14 @@
 <instance description="Soviet two colour - blobs" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="soviet_0007_summer" />
-		<string name="icon" value="Icons_swatches_swatch_soviet_0007_summer_medium" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0007_summer_medium" />
+		<icon name="icon" value="Icons_swatches_swatch_soviet_0007_summer_medium" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0007_summer_medium" />
 		<locstring name="name" value="11050141" />
 		<locstring name="description" value="11047007" />
 		<enum name="kill_type" value="medium_armour" />
 		<enum name="season" value="summer" />
 		<locstring name="description_short" value="11050146" />
-		<instance_reference name="store_item" value="" />
+		<instance_reference name="store_item" value="thq_store\skins\soviet\soviet_0007_summer_medium" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="6327" />
 			<list name="search_tags">

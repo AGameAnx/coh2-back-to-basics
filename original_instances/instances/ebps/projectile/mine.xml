@@ -84,7 +84,7 @@
 			<float name="explosion_time" value="5" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="type_cover\tp_light.lua" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
 					<bool name="limited" value="True" />

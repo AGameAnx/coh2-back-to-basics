@@ -1,8 +1,8 @@
 <instance description="Soviet Bi-tone Winter" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="soviet_0009_winter" />
-		<string name="icon" value="Icons_swatches_swatch_soviet_0009_winter_medium" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0009_winter_medium" />
+		<icon name="icon" value="Icons_swatches_swatch_soviet_0009_winter_medium" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0009_winter_medium" />
 		<locstring name="name" value="11051080" />
 		<locstring name="description" value="11051077" />
 		<enum name="kill_type" value="medium_armour" />
@@ -21,6 +21,11 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/249110/ss_36b0ea9a125bf5c01149f0c10acef8f524ba5a50.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/249110/header.jpg" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\winter_medium" />
 		</template_reference>

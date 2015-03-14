@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\aef\artillery\hmc_barrage_recharge" />
 		<locstring name="name" value="11081663" />
 		<locstring name="description" value="11079684" />
-		<string name="icon" value="Icons_intel_bulletins_artillery_aef_hmc_barrage_recharge" />
+		<icon name="icon" value="Icons_intel_bulletins_artillery_aef_hmc_barrage_recharge" />
 		<locstring name="description_short" value="11080232" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396513" />

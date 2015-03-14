@@ -22,6 +22,17 @@
 				<float name="mid" value="0.5" />
 			</group>
 		</group>
+		<group name="anim_table">
+			<string name="cooldown_time_name" value="HeavyMachineGun_CoolDownTime" />
+			<string name="state_name" value="HeavyMachineGun_State" />
+			<string name="track_horizontal" value="HeavyMachineGun_Angle" />
+			<string name="track_horizontal_speed" value="" />
+			<string name="track_vertical" value="HeavyMachineGun_Tilt" />
+			<string name="track_vertical_speed" value="" />
+			<string name="variety_name" value="" />
+			<string name="visibility_name" value="MG42_Tripod_Visible" />
+			<string name="target_range_name" value="" />
+		</group>
 		<group name="area_effect">
 			<group name="accuracy">
 				<float name="far" value="0.6" />
@@ -73,17 +84,6 @@
 				<float name="far" value="1" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
-		</group>
-		<group name="anim_table">
-			<string name="cooldown_time_name" value="HeavyMachineGun_CoolDownTime" />
-			<string name="state_name" value="HeavyMachineGun_State" />
-			<string name="track_horizontal" value="HeavyMachineGun_Angle" />
-			<string name="track_horizontal_speed" value="" />
-			<string name="track_vertical" value="HeavyMachineGun_Tilt" />
-			<string name="track_vertical_speed" value="" />
-			<string name="variety_name" value="" />
-			<string name="visibility_name" value="MG42_Tripod_Visible" />
-			<string name="target_range_name" value="" />
 		</group>
 		<group name="behaviour">
 			<bool name="aa_weapon" value="False" />
@@ -300,7 +300,7 @@
 		<float name="fx_tracer_speed" value="200" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.5" />
 			<float name="burst_multiplier" value="1" />

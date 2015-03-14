@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\medium_tank\m36_tank_destroyer\m36_reload_speed" />
 		<locstring name="name" value="11072771" />
 		<locstring name="description" value="11072769" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_aef_m36_reload" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_aef_m36_reload" />
 		<locstring name="description_short" value="11072770" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="261275" />

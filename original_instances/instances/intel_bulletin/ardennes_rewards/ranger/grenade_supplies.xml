@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\ardennes_rewards\ranger\grenade_supplies" />
 		<locstring name="name" value="11079353" />
 		<locstring name="description" value="11079352" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_grenade_cost" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_grenade_cost" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="395927" />
 			<list name="search_tags">

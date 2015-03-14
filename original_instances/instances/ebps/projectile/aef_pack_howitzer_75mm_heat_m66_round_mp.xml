@@ -17,7 +17,7 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="type_cover\tp_light.lua" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
 					<bool name="limited" value="True" />
@@ -173,7 +173,7 @@
 				<bool name="is_target_only" value="False" />
 				<float name="speed_distance_multiplier" value="0.1" />
 				<float name="speed_increment" value="0.5" />
-				<enum name="firing_angle_type" value="low_angle" />
+				<enum name="firing_angle_type" value="lowest_non_collide_angle" />
 				<bool name="use_homing_when_no_blocker" value="False" />
 				<float name="non_collide_start_angle" value="10" />
 				<float name="non_collide_end_angle" value="75" />

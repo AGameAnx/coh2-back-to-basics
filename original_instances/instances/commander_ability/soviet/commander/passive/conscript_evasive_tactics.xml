@@ -2,11 +2,14 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11025833" />
 		<locstring name="description" value="11025834" />
-		<string name="icon" value="Icons_commander_cmdr_soviet_evasive_tactics" />
+		<icon name="icon" value="Icons_commander_cmdr_soviet_evasive_tactics" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082342" />
+				<locstring name="tag" value="11082346" />
+				<locstring name="tag" value="11082294" />
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="uncommon" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\soviet" />
 			</list>
@@ -14,7 +17,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402711" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\other" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\soviet\commander\passive\conscript_evasive_tactics" />
 		<instance_reference name="ability" value="" />

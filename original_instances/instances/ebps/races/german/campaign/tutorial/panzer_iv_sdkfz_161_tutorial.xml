@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\vehicles\panzer_iv\panzer_iv" />
+			<file name="animator" value="armies\west_german\vehicles\panzer_iv_sdkfz_ausf_i\panzer_iv_sdkfz_ausf_i" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="0.5" />
 		</template_reference>
@@ -185,7 +185,7 @@
 									<template_reference name="ui_info" value="tables\ui_info">
 										<locstring name="screen_name" value="11046559" />
 										<locstring name="help_text" value="11046558" />
-										<string name="icon_name" value="Icons_abilities_ability_german_hull_down_set" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_hull_down_set" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
 									<uniqueid name="id" value="56746" />
@@ -536,7 +536,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11038265" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
 			<enum name="kill_type" value="medium_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -576,7 +576,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11049269" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_german_panzer_iv_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -594,7 +594,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="11049320" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -1072,6 +1072,7 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="110" />
+			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
 			<float name="acceleration" value="2" />
@@ -1118,7 +1119,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
-			<enum name="cover_type" value="type_cover\tp_heavy.lua" />
+			<enum name="cover_type" value="tp_heavy" />
 			<bool name="is_cover_directional" value="True" />
 			<bool name="is_shoot_through" value="False" />
 			<bool name="lengthwise_spots" value="False" />

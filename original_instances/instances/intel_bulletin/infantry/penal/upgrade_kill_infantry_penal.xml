@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\infantry\penal\health_dmg_penal" />
 		<locstring name="name" value="11034273" />
 		<locstring name="description" value="11034364" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_sov_penal_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_sov_penal_acc" />
 		<locstring name="description_short" value="11036810" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5821" />

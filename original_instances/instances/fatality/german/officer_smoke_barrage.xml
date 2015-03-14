@@ -15,7 +15,7 @@
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
-		<string name="icon" value="Icons_fatalities_fatality_smoke_barrage" />
+		<icon name="icon" value="Icons_fatalities_fatality_smoke_barrage" />
 		<string name="lua_function_name" value="Fatality_SmokeBarrage" />
 		<locstring name="description" value="11076551" />
 		<instance_reference name="store_item" value="" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\soviet\assault_gun\su76_reload" />
 		<locstring name="name" value="11081673" />
 		<locstring name="description" value="11079696" />
-		<string name="icon" value="Icons_intel_bulletins_assault_gun_sov_su76_reload" />
+		<icon name="icon" value="Icons_intel_bulletins_assault_gun_sov_su76_reload" />
 		<locstring name="description_short" value="11080244" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396519" />

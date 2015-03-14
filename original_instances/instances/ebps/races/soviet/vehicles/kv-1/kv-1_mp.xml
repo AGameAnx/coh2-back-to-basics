@@ -325,7 +325,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11038305" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_soviet_kv1_heavy_tank" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_kv1_heavy_tank" />
 			<enum name="kill_type" value="heavy_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -365,7 +365,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11049230" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_soviet_kv1_heavy_tank_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -383,7 +383,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="11049288" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_kv1_heavy_tank_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_kv1_heavy_tank_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -704,6 +704,7 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="170" />
+			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
 			<float name="acceleration" value="1.7" />

@@ -2,11 +2,11 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11064207" />
 		<locstring name="description" value="11064208" />
-		<string name="icon" value="Icons_commander_cmdr_aef_elite_vehicle_crews" />
+		<icon name="icon" value="Icons_commander_cmdr_aef_elite_vehicle_crews" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="epic" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\aef" />
 			</list>
@@ -14,7 +14,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402626" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\other" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\aef\commander\passive\elite_vehicle_crews" />
 		<instance_reference name="ability" value="" />

@@ -2,7 +2,7 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11050874" />
 		<locstring name="description" value="11050875" />
-		<string name="icon" value="Icons_units_unit_soviet_officer" />
+		<icon name="icon" value="Icons_units_unit_soviet_officer" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>
@@ -14,7 +14,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402708" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\units_and_buildings" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\soviet\commander\passive\commissar_squad" />
 		<instance_reference name="ability" value="" />

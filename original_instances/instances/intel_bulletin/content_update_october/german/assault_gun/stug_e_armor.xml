@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\german\assault_gun\stug_e_armor" />
 		<locstring name="name" value="11081671" />
 		<locstring name="description" value="11079691" />
-		<string name="icon" value="Icons_intel_bulletins_assault_gun_ger_stug_e_armor" />
+		<icon name="icon" value="Icons_intel_bulletins_assault_gun_ger_stug_e_armor" />
 		<locstring name="description_short" value="11080239" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396532" />

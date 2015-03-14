@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\light_vehicles\m20_car\ability_cost_m20" />
 		<locstring name="name" value="11072920" />
 		<locstring name="description" value="11072921" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_m20_cost" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_m20_cost" />
 		<locstring name="description_short" value="11072922" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="274560" />

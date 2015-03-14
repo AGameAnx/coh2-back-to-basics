@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\artillery\b4\scatter_b4" />
 		<locstring name="name" value="11054601" />
 		<locstring name="description" value="11054599" />
-		<string name="icon" value="Icons_intel_bulletins_artillery_sov_b4_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_artillery_sov_b4_acc" />
 		<locstring name="description_short" value="11054600" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="18438" />

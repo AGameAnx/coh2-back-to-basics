@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\heavy_tank\is-2\reload_speed_is2" />
 		<locstring name="name" value="11034217" />
 		<locstring name="description" value="11034300" />
-		<string name="icon" value="Icons_intel_bulletins_heavytank_heavytank17" />
+		<icon name="icon" value="Icons_intel_bulletins_heavytank_heavytank17" />
 		<locstring name="description_short" value="11036755" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5764" />

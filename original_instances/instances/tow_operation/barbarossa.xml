@@ -158,8 +158,8 @@
 			<instance_reference name="complete_challenge" value="post_game_achievement\tow\tow_complete_challenges" />
 			<instance_reference name="complete_skirmish" value="post_game_achievement\tow\tow_complete_skirmishes" />
 		</group>
-		<string name="ui_icon_low" value="Icons_operations_barbarossa_low" />
-		<string name="ui_icon_high" value="Icons_operations_barbarossa_high" />
+		<icon name="ui_icon_low" value="Icons_operations_barbarossa_low" />
+		<icon name="ui_icon_high" value="Icons_operations_barbarossa_high" />
 		<string name="ui_movie" value="" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="257238" />

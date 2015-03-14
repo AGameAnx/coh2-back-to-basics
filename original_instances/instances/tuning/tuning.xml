@@ -332,7 +332,7 @@
 		<enum name="priority_20" value="" />
 	</group>
 	<group name="cover_table">
-		<enum name="cover_type_for_water" value="type_cover\tp_water.lua" />
+		<enum name="cover_type_for_water" value="tp_water" />
 		<group name="tp_defcover">
 			<enum name="cursor" value="" />
 			<string name="obj_cover_preview_icon" value="DATA:Art\ui_visuals\cover\cover_preview_default" />
@@ -852,10 +852,10 @@
 			</group>
 			<group name="combat_slot">
 				<group name="acceptable_types">
-					<enum name="acceptable_type_01" value="type_holdable\hold_infantry.lua" />
-					<enum name="acceptable_type_02" value="type_holdable\hold_sniper.lua" />
+					<enum name="acceptable_type_01" value="hold_infantry" />
+					<enum name="acceptable_type_02" value="hold_sniper" />
 					<enum name="acceptable_type_03" value="" />
-					<enum name="acceptable_type_04" value="type_holdable\hold_heavy_machine_gun.lua" />
+					<enum name="acceptable_type_04" value="hold_heavy_machine_gun" />
 				</group>
 				<bool name="combat_enabled" value="False" />
 				<bool name="enabled_on_destroy" value="False" />
@@ -867,7 +867,7 @@
 			</group>
 			<group name="combat_slot">
 				<group name="acceptable_types">
-					<enum name="acceptable_type_01" value="type_holdable\hold_sniper.lua" />
+					<enum name="acceptable_type_01" value="hold_sniper" />
 					<enum name="acceptable_type_02" value="" />
 					<enum name="acceptable_type_03" value="" />
 					<enum name="acceptable_type_04" value="" />
@@ -3175,7 +3175,7 @@
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11039005" />
 								<locstring name="help_text" value="11039008" />
-								<string name="icon_name" value="Icons_events_event_cue_network" />
+								<icon name="icon_name" value="Icons_events_event_cue_network" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="61312" />
@@ -3185,7 +3185,7 @@
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11038987" />
 								<locstring name="help_text" value="11038988" />
-								<string name="icon_name" value="Icons_events_event_cue_blizzard" />
+								<icon name="icon_name" value="Icons_events_event_cue_blizzard" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="61313" />
@@ -3224,7 +3224,7 @@
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11038987" />
 								<locstring name="help_text" value="11038988" />
-								<string name="icon_name" value="Icons_events_event_cue_blizzard" />
+								<icon name="icon_name" value="Icons_events_event_cue_blizzard" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="61316" />
@@ -3255,7 +3255,7 @@
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11038987" />
 								<locstring name="help_text" value="11038988" />
-								<string name="icon_name" value="Icons_events_event_cue_blizzard" />
+								<icon name="icon_name" value="Icons_events_event_cue_blizzard" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="61318" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\ardennes_rewards\airborne\assassinate" />
 		<locstring name="name" value="11079338" />
 		<locstring name="description" value="11079339" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_pathfinder_assassinate" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_pathfinder_assassinate" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="395920" />
 			<list name="search_tags">

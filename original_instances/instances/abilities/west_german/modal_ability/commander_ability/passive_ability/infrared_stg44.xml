@@ -77,11 +77,11 @@
 			<locstring name="extra_text" value="11065410" />
 			<locstring name="help_text" value="11065409" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_upgrades_icon_upgrade_west_german_smg_mp44_infrared" />
+			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_west_german_smg_mp44_infrared" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11065411" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

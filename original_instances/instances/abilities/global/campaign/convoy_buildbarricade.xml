@@ -36,6 +36,11 @@
 							</template_reference>
 							<list name="spawned_entity_actions">
 							</list>
+							<group name="offset">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
 						</template_reference>
 						<template_reference name="action" value="action\make_dead">
 							<enum name="death_intensity" value="death_intensity_low" />
@@ -119,11 +124,11 @@
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="E" />
-			<string name="icon_name" value="Icons_abilities_repair" />
+			<icon name="icon_name" value="Icons_abilities_repair" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="0" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

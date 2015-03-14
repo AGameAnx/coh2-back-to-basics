@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\aef\hmgs\m2hb_supp" />
 		<locstring name="name" value="11078716" />
 		<locstring name="description" value="11078671" />
-		<string name="icon" value="Icons_intel_bulletins_hmg_aef_m2hb_supp" />
+		<icon name="icon" value="Icons_intel_bulletins_hmg_aef_m2hb_supp" />
 		<locstring name="description_short" value="11078717" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="394328" />

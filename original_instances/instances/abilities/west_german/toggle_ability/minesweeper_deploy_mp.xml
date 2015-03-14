@@ -6,17 +6,16 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
-				<template_reference name="action" value="action\slot_item_remove">
-					<bool name="fire_and_forget" value="False" />
-					<bool name="random" value="False" />
+				<template_reference name="action" value="action\slot_item_add">
 					<instance_reference name="slot_item" value="slot_item\minesweeper\west_german_minesweeper" />
-					<uniqueid name="id" value="274686" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="423535" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
 			</list>
 		</group>
-		<enum name="activation" value="toggle" />
+		<enum name="activation" value="timed" />
 		<bool name="can_interrupt" value="True" />
 		<bool name="can_target_in_fow" value="False" />
 		<float name="caster_close_in_distance" value="2" />
@@ -33,7 +32,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="3" />
+		<float name="duration_time" value="0" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -44,7 +43,7 @@
 		<bool name="fire_and_forget" value="False" />
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
-		<float name="initial_delay_time" value="10" />
+		<float name="initial_delay_time" value="0" />
 		<bool name="initial_recharge" value="False" />
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
@@ -83,14 +82,14 @@
 			<locstring name="extra_text" value="11073092" />
 			<locstring name="help_text" value="11073081" />
 			<string name="hotkey_name" value="H" />
-			<string name="icon_name" value="Icons_abilities_ability_west_german_activate_minesweeper_on" />
+			<icon name="icon_name" value="Icons_abilities_ability_west_german_activate_minesweeper_off" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11073079" />
-			<string name="icon_alternate_name" value="Icons_abilities_ability_west_german_activate_minesweeper_off" />
+			<locstring name="screen_name" value="11073080" />
+			<icon name="icon_alternate_name" value="Icons_abilities_ability_west_german_activate_minesweeper_off" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="help_text_alternate" value="11073081" />
-			<locstring name="screen_name_alternate" value="11073080" />
+			<locstring name="help_text_alternate" value="0" />
+			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
 		</group>
 		<locstring name="ui_usage_txt" value="0" />
@@ -108,6 +107,15 @@
 				<bool name="include_queued" value="False" />
 				<bool name="is_present" value="True" />
 				<instance_reference name="upgrade_name" value="upgrade\west_german\items\assault_pioneer_repair_upgrade" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_slot_item">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="check_item_on_entity" value="True" />
+				<bool name="display_requirement" value="False" />
+				<float name="max_owned" value="0" />
+				<float name="min_owned" value="0" />
+				<instance_reference name="slot_item" value="slot_item\minesweeper\west_german_minesweeper" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

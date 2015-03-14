@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\west_german\artillery\ig18_reload" />
 		<locstring name="name" value="11076501" />
 		<locstring name="description" value="11076512" />
-		<string name="icon" value="Icons_intel_bulletins_artillery_wgr_leig18_reload" />
+		<icon name="icon" value="Icons_intel_bulletins_artillery_wgr_leig18_reload" />
 		<locstring name="description_short" value="11076500" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="387941" />

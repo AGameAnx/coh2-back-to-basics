@@ -3,7 +3,7 @@
 		<locstring name="name" value="11063830" />
 		<instance_reference name="archetype_upgrade" value="upgrade\soviet\commander\archetype\shock_archetype" />
 		<locstring name="description" value="11074838" />
-		<string name="icon" value="Icons_commander_portrait_oberkommand_west_commander_02" />
+		<icon name="icon" value="Icons_commander_portrait_oberkommand_west_commander_02" />
 		<string name="icon_secondary" value="Icons_commander_portrait_oberkommand_west_commander_02_large" />
 		<int name="ui_position" value="0" />
 		<locstring name="description_short" value="0" />

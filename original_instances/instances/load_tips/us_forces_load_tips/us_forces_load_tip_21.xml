@@ -1,7 +1,7 @@
 <instance description="" template="load_tips">
 	<group name="tip">
 		<locstring name="loadtip" value="11074678" />
-		<string name="icon" value="Icons_abilities_ability_aef_m8a1_smoke_barrage" />
+		<icon name="icon" value="Icons_abilities_ability_aef_m8a1_smoke_barrage" />
 		<enum name="tip_type" value="generic" />
 		<enum name="tip_season_type" value="any" />
 		<list name="scenario_names">

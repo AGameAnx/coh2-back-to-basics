@@ -2,11 +2,11 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11068315" />
 		<locstring name="description" value="11068314" />
-		<string name="icon" value="Icons_commander_cmdr_aef_air_dropped_combat_group" />
+		<icon name="icon" value="Icons_commander_cmdr_aef_air_dropped_combat_group" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="uncommon" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\aef" />
 			</list>
@@ -14,7 +14,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402612" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\units_and_buildings" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\aef\commander\ability\paradropped_support_drop" />
 		<instance_reference name="ability" value="" />

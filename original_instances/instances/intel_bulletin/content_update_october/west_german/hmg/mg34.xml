@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\west_german\hmgs\mg34_acc" />
 		<locstring name="name" value="11081685" />
 		<locstring name="description" value="11079703" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_wgr_mg34_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_wgr_mg34_acc" />
 		<locstring name="description_short" value="11080251" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396525" />

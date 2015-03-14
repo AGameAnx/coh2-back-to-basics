@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\infantry\captain\cap_vet_up" />
 		<locstring name="name" value="11072261" />
 		<locstring name="description" value="11072259" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_capt01" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_capt01" />
 		<locstring name="description_short" value="11072260" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="259628" />

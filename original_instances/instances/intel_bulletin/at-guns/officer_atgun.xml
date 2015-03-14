@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\at_gun\officer_acc_arpen_atgun" />
 		<locstring name="name" value="11048249" />
 		<locstring name="description" value="11048283" />
-		<string name="icon" value="Icons_intel_bulletins_at_gun_atgun12" />
+		<icon name="icon" value="Icons_intel_bulletins_at_gun_atgun12" />
 		<locstring name="description_short" value="11048862" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="6109" />

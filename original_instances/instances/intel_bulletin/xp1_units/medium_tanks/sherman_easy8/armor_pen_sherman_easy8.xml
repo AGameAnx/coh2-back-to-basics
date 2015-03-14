@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\medium_tank\sherman_easy8\armor_pen_sherman_easy8" />
 		<locstring name="name" value="11072650" />
 		<locstring name="description" value="11072651" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_aef_sherman_e8_ap" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_aef_sherman_e8_ap" />
 		<locstring name="description_short" value="11072648" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260910" />

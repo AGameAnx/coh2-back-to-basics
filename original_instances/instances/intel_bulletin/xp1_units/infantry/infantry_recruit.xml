@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\infantry\recruit_infantry" />
 		<locstring name="name" value="11072122" />
 		<locstring name="description" value="11072123" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_infantry01" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_infantry01" />
 		<locstring name="description_short" value="11072156" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="259078" />

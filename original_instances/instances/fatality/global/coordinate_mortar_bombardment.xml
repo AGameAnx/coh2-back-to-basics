@@ -14,7 +14,7 @@
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
-		<string name="icon" value="Icons_fatalities_fatality_coordinated_mortar_barrage" />
+		<icon name="icon" value="Icons_fatalities_fatality_coordinated_mortar_barrage" />
 		<string name="lua_function_name" value="Fatality_CoordinateMortarBombardment" />
 		<locstring name="description" value="11073999" />
 		<instance_reference name="store_item" value="" />

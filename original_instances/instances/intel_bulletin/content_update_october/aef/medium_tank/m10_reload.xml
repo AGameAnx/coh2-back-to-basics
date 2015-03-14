@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\aef\medium_tanks\m10_destroyer_reload" />
 		<locstring name="name" value="11081664" />
 		<locstring name="description" value="11079688" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_aef_m10_reload" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_aef_m10_reload" />
 		<locstring name="description_short" value="11080236" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396518" />

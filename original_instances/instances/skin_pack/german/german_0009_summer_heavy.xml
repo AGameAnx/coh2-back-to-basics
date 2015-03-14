@@ -1,8 +1,8 @@
 <instance description="German Vronezh improvised camouflage" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="german_0009_summer" />
-		<string name="icon" value="Icons_swatches_swatch_german_0009_summer_heavy" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_german_0009_summer_heavy" />
+		<icon name="icon" value="Icons_swatches_swatch_german_0009_summer_heavy" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_german_0009_summer_heavy" />
 		<locstring name="name" value="11051103" />
 		<locstring name="description" value="11051102" />
 		<enum name="kill_type" value="heavy_armour" />
@@ -21,6 +21,11 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/249102/ss_f37871bd2257b2b817f63b767006b25beb36a1b8.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/249102/header.jpg" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\summer_heavy" />
 		</template_reference>

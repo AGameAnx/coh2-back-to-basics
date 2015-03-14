@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\soviet\hmgs\maxim_suppression" />
 		<locstring name="name" value="11081675" />
 		<locstring name="description" value="11079700" />
-		<string name="icon" value="Icons_intel_bulletins_hmg_sov_maxim_suppression" />
+		<icon name="icon" value="Icons_intel_bulletins_hmg_sov_maxim_suppression" />
 		<locstring name="description_short" value="11080248" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396521" />

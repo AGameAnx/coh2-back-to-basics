@@ -62,8 +62,8 @@
 			<instance_reference name="complete_challenge" value="" />
 			<instance_reference name="complete_skirmish" value="" />
 		</group>
-		<string name="ui_icon_low" value="Icons_operations_mars_low" />
-		<string name="ui_icon_high" value="Icons_operations_mars_high" />
+		<icon name="ui_icon_low" value="Icons_operations_mars_low" />
+		<icon name="ui_icon_high" value="Icons_operations_mars_high" />
 		<string name="ui_movie" value="tow_operation_intro/vas_intro" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="257241" />

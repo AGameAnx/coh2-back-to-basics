@@ -1,10 +1,10 @@
 <instance description="Soviet four colour variation" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="soviet_0006_summer" />
-		<string name="icon" value="Icons_swatches_swatch_soviet_0006_summer_heavy" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0006_summer_heavy" />
+		<icon name="icon" value="Icons_swatches_swatch_soviet_0006_summer_heavy" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0006_summer_heavy" />
 		<locstring name="name" value="11050431" />
-		<locstring name="description" value="11050433" />
+		<locstring name="description" value="11050428" />
 		<enum name="kill_type" value="heavy_armour" />
 		<enum name="season" value="summer" />
 		<locstring name="description_short" value="11050432" />
@@ -21,6 +21,11 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231482/ss_a67f0c815012d2ad45114bb9c99b4e7157f0d8c8.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231482/header.jpg" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\summer_heavy" />
 		</template_reference>

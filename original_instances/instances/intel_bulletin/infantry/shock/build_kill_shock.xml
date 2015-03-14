@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\infantry\shock\dmg_reduc_shock" />
 		<locstring name="name" value="11034270" />
 		<locstring name="description" value="11034361" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_sov_shock_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_sov_shock_acc" />
 		<locstring name="description_short" value="11036807" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5818" />

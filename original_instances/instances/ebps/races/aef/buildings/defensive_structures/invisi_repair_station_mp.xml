@@ -239,7 +239,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="B" />
-			<string name="icon_name" value="Icons_buildings_building_german_bunker" />
+			<icon name="icon_name" value="Icons_buildings_building_german_bunker" />
 			<enum name="kill_type" value="building" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="227" />
@@ -279,7 +279,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="Icons_symbols_gunnest" />
+			<icon name="minimap_icon" value="Icons_symbols_gunnest" />
 			<string name="portrait_icon_winter" value="Icons_portraits_building_german_bunker_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -298,7 +298,7 @@
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="heading" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<string name="symbol_icon_name" value="Icons_symbols_building_german_bunker_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_german_bunker_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
@@ -347,10 +347,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hold_ext">
 			<group name="acceptable_types">
-				<enum name="acceptable_type_01" value="type_holdable\hold_infantry.lua" />
-				<enum name="acceptable_type_02" value="type_holdable\hold_sniper.lua" />
+				<enum name="acceptable_type_01" value="hold_infantry" />
+				<enum name="acceptable_type_02" value="hold_sniper" />
 				<enum name="acceptable_type_03" value="" />
-				<enum name="acceptable_type_04" value="type_holdable\hold_heavy_machine_gun.lua" />
+				<enum name="acceptable_type_04" value="hold_heavy_machine_gun" />
 				<enum name="acceptable_type_05" value="" />
 			</group>
 			<bool name="attach_passenger_animator" value="False" />

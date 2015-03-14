@@ -256,7 +256,7 @@
 				<enum name="unit_type04" value="tank_awareness" />
 				<enum name="unit_type05" value="soviet_vehicles" />
 				<enum name="unit_type06" value="katyusha" />
-				<enum name="unit_type07" value="mobile_artillery" />
+				<enum name="unit_type07" value="" />
 				<enum name="unit_type08" value="" />
 				<enum name="unit_type09" value="" />
 				<enum name="unit_type10" value="" />
@@ -278,7 +278,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11038303" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_soviet_katyush_rocket_truck" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_katyush_rocket_truck" />
 			<enum name="kill_type" value="light_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -318,7 +318,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="11049228" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_soviet_katyush_rocket_truck_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -336,7 +336,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="11049286" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<string name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_katyush_rocket_truck_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_katyush_rocket_truck_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -796,6 +796,7 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="55" />
+			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\mine_clearer_ext">
 		</template_reference>

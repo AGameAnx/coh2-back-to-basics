@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\infantry\pathfinders\rifle_pathfinders" />
 		<locstring name="name" value="11072494" />
 		<locstring name="description" value="11072495" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_pathfinder_cooldown" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_pathfinder_cooldown" />
 		<locstring name="description_short" value="11072493" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260215" />

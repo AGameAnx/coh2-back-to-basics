@@ -353,7 +353,7 @@
 		<float name="fx_tracer_speed" value="220" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.4" />
 			<float name="burst_multiplier" value="1" />

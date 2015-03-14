@@ -2,7 +2,7 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11031935" />
 		<locstring name="description" value="11039314" />
-		<string name="icon" value="Icons_commander_cmdr_soviet_conscript_repair_kit" />
+		<icon name="icon" value="Icons_commander_cmdr_soviet_conscript_repair_kit" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>
@@ -14,7 +14,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402713" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\other" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\soviet\commander\passive\conscript_repair_kit" />
 		<instance_reference name="ability" value="" />

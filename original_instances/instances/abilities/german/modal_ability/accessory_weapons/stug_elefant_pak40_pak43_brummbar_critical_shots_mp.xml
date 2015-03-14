@@ -112,11 +112,11 @@
 			<locstring name="extra_text" value="11039186" />
 			<locstring name="help_text" value="11032104" />
 			<string name="hotkey_name" value="W" />
-			<string name="icon_name" value="Icons_abilities_ability_german_stun_critical" />
+			<icon name="icon_name" value="Icons_abilities_ability_german_stun_critical" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11032103" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="11039184" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

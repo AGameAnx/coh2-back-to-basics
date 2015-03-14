@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\hmgs\dshk\penetration_dshk" />
 		<locstring name="name" value="11054759" />
 		<locstring name="description" value="11054757" />
-		<string name="icon" value="Icons_intel_bulletins_hmg_vehicle_soviet_dshk_38_50_cal_hmg_bulletin" />
+		<icon name="icon" value="Icons_intel_bulletins_hmg_vehicle_soviet_dshk_38_50_cal_hmg_bulletin" />
 		<locstring name="description_short" value="11054758" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="18458" />

@@ -96,7 +96,7 @@
 			<bool name="enable_auto_target_search" value="False" />
 			<bool name="fire_at_building_combat_slot" value="False" />
 			<float name="ground_hit_rate" value="1" />
-			<bool name="ignore_shot_blocking" value="False" />
+			<bool name="ignore_shot_blocking" value="True" />
 			<bool name="non_moving_setup" value="False" />
 			<bool name="point_blank" value="False" />
 			<bool name="prevents_prone" value="False" />
@@ -313,7 +313,7 @@
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.5" />
 			<float name="burst_multiplier" value="1" />
@@ -372,7 +372,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="7.5" />
+			<float name="angle_scatter" value="5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />

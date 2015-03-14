@@ -3,7 +3,7 @@
 		<locstring name="name" value="11039325" />
 		<instance_reference name="archetype_upgrade" value="upgrade\german\commander\archetype\jaeger_archetype" />
 		<locstring name="description" value="11048917" />
-		<string name="icon" value="Icons_commander_portrait_german_commander_08" />
+		<icon name="icon" value="Icons_commander_portrait_german_commander_08" />
 		<string name="icon_secondary" value="Icons_commander_portrait_german_commander_08_large" />
 		<int name="ui_position" value="5" />
 		<locstring name="description_short" value="11048926" />
@@ -18,6 +18,16 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2029100/movie480.webm" />
+					<enum name="content_type" value="video" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2029100/movie.184x123.jpg" />
+				</template_reference>
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231465/ss_b3b068ca9b1b60bdea79886f85a65aee72ef266d.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231465/ss_b3b068ca9b1b60bdea79886f85a65aee72ef266d.116x65.jpg" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>

@@ -10,7 +10,7 @@
 		<bool name="is_entity_user" value="False" />
 		<float name="item_uses" value="0" />
 		<enum name="owner_type" value="squad" />
-		<string name="package_icon" value="" />
+		<icon name="package_icon" value="" />
 		<float name="recharge_time" value="0" />
 		<float name="slot_size" value="1" />
 		<group name="speech_code_2">
@@ -45,7 +45,7 @@
 				<float name="z" value="0" />
 			</group>
 			<enum name="type" value="squad" />
-			<instance_reference name="weapon" value="weapon\west_german\small_arms\machine_gun\light_machine_gun\generic_mg34_lmg_mp" />
+			<instance_reference name="weapon" value="weapon\west_german\small_arms\machine_gun\light_machine_gun\obersoldaten_mg34_lmg_generic_mp" />
 		</group>
 		<list name="on_add_actions">
 		</list>

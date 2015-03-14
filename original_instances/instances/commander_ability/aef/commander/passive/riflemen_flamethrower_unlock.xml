@@ -2,11 +2,14 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11072808" />
 		<locstring name="description" value="11072809" />
-		<string name="icon" value="Icons_upgrades_icon_upgrade_aef_m2_flamethrower" />
+		<icon name="icon" value="Icons_upgrades_icon_upgrade_aef_m2_flamethrower" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082341" />
+				<locstring name="tag" value="11082343" />
+				<locstring name="tag" value="11082342" />
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="uncommon" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\aef" />
 			</list>
@@ -14,7 +17,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402630" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\other" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\aef\commander\passive\riflemen_flamethrower_unlock" />
 		<instance_reference name="ability" value="" />

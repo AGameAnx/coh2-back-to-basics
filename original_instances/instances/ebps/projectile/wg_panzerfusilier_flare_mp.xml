@@ -17,7 +17,7 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="type_cover\tp_light.lua" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
 					<bool name="limited" value="True" />
@@ -200,11 +200,11 @@
 			<float name="deathtimer" value="0.2" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
-			<string name="launcher_marker" value="marker_rifle_grenade_launcher" />
+			<string name="launcher_marker" value="marker_kar98_barrel_end" />
 			<float name="rotation_speed" value="0" />
 			<bool name="spawn_collision_fx" value="False" />
 			<float name="speed" value="21.5" />
-			<float name="life_time_while_alive" value="2.5" />
+			<float name="life_time_while_alive" value="1.8" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_gen_ext">

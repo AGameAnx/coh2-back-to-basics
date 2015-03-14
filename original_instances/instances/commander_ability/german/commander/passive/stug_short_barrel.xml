@@ -2,11 +2,14 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11050463" />
 		<locstring name="description" value="11050464" />
-		<string name="icon" value="Icons_vehicles_vehicle_german_stug_iii_e" />
+		<icon name="icon" value="Icons_vehicles_vehicle_german_stug_iii_e" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082348" />
+				<locstring name="tag" value="11082334" />
+				<locstring name="tag" value="11082335" />
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="uncommon" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\german" />
 			</list>
@@ -14,7 +17,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402683" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\units_and_buildings" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\german\commander\passive\stug_short_barrel" />
 		<instance_reference name="ability" value="" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\at_gun\m-42\reload_m42" />
 		<locstring name="name" value="11054605" />
 		<locstring name="description" value="11054603" />
-		<string name="icon" value="Icons_intel_bulletins_at_gun_atgun16" />
+		<icon name="icon" value="Icons_intel_bulletins_at_gun_atgun16" />
 		<locstring name="description_short" value="11054604" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="18439" />

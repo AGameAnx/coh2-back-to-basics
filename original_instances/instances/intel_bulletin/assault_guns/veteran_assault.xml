@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\assault_gun\veteran_rotrate_dmg_assault" />
 		<locstring name="name" value="11048246" />
 		<locstring name="description" value="11048282" />
-		<string name="icon" value="Icons_intel_bulletins_assault_gun_assaultgun20" />
+		<icon name="icon" value="Icons_intel_bulletins_assault_gun_assaultgun20" />
 		<locstring name="description_short" value="11048851" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="6106" />

@@ -10,7 +10,7 @@
 		<bool name="is_entity_user" value="False" />
 		<float name="item_uses" value="0" />
 		<enum name="owner_type" value="squad" />
-		<string name="package_icon" value="" />
+		<icon name="package_icon" value="" />
 		<float name="recharge_time" value="0" />
 		<float name="slot_size" value="2" />
 		<group name="speech_code_2">

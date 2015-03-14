@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.125" />
-				<float name="min" value="0.125" />
+				<float name="max" value="2.5" />
+				<float name="min" value="2.5" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -46,18 +46,18 @@
 				<float name="radius" value="4.5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.05" />
+				<float name="far" value="0.2" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.4" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.025" />
+				<float name="far" value="0.1" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.075" />
+				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
-				<float name="far" value="3.375" />
-				<float name="near" value="1.125" />
+				<float name="far" value="3.5" />
+				<float name="near" value="0.5" />
 				<float name="mid" value="2.25" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
@@ -108,7 +108,7 @@
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
 			<float name="reaction_radius" value="1.5" />
-			<bool name="can_be_pilfered" value="True" />
+			<bool name="can_be_pilfered" value="False" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
 			<enum name="reaction_type" value="normal" />
@@ -269,8 +269,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="320" />
-			<float name="min" value="320" />
+			<float name="max" value="160" />
+			<float name="min" value="160" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
@@ -360,12 +360,12 @@
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
-		<string name="fx_munition_name" value="shell_jagdtiger" />
+		<string name="fx_munition_name" value="shell_heavy_he" />
 		<string name="fx_tracer_name" value="" />
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.5" />
 			<float name="burst_multiplier" value="1" />
@@ -395,7 +395,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\pak44_128mm_supporting_fire_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\pak44_128mm_shell_mp" />
 		</group>
 		<group name="range">
 			<float name="max" value="125" />
@@ -442,7 +442,7 @@
 		</group>
 		<group name="setup">
 			<float name="duration" value="0" />
-			<bool name="has_instant_setup" value="False" />
+			<bool name="has_instant_setup" value="True" />
 			<bool name="can_interrupt_setup" value="True" />
 			<float name="attach_duration" value="0" />
 		</group>

@@ -10,7 +10,7 @@
 		<bool name="is_entity_user" value="False" />
 		<float name="item_uses" value="0" />
 		<enum name="owner_type" value="squad" />
-		<string name="package_icon" value="" />
+		<icon name="package_icon" value="" />
 		<float name="recharge_time" value="0" />
 		<float name="slot_size" value="0" />
 		<group name="speech_code_2">
@@ -53,7 +53,7 @@
 				<template_reference name="ui_info" value="tables\ui_info">
 					<locstring name="screen_name" value="11075479" />
 					<locstring name="help_text" value="11075480" />
-					<string name="icon_name" value="Icons_abilities_ability_aef_white_phospherous_barrage" />
+					<icon name="icon_name" value="Icons_abilities_ability_aef_white_phospherous_barrage" />
 					<string name="hotkey_name" value="" />
 				</template_reference>
 				<uniqueid name="id" value="348968" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\infantry\grenadiers\ability_cost_grenadiers" />
 		<locstring name="name" value="11034262" />
 		<locstring name="description" value="11034353" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_infantry01" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_infantry01" />
 		<locstring name="description_short" value="11036799" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5810" />

@@ -59,7 +59,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="ally_barracks_checkpoint_aid_station" />
-			<string name="icon_name" value="" />
+			<icon name="icon_name" value="" />
 			<enum name="kill_type" value="" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="200" />
@@ -99,7 +99,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -117,7 +117,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<string name="symbol_icon_name" value="Icons_symbols_generic_ambient_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_generic_ambient_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -386,10 +386,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hold_ext">
 			<group name="acceptable_types">
-				<enum name="acceptable_type_01" value="type_holdable\hold_infantry.lua" />
-				<enum name="acceptable_type_02" value="type_holdable\hold_sniper.lua" />
-				<enum name="acceptable_type_03" value="type_holdable\hold_mg42_hmg.lua" />
-				<enum name="acceptable_type_04" value="type_holdable\hold_heavy_machine_gun.lua" />
+				<enum name="acceptable_type_01" value="hold_infantry" />
+				<enum name="acceptable_type_02" value="hold_sniper" />
+				<enum name="acceptable_type_03" value="" />
+				<enum name="acceptable_type_04" value="hold_heavy_machine_gun" />
 				<enum name="acceptable_type_05" value="" />
 			</group>
 			<bool name="attach_passenger_animator" value="False" />

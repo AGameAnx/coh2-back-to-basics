@@ -80,7 +80,7 @@
 		<template_reference name="ui_info" value="tables\ui_info">
 			<locstring name="screen_name" value="11036987" />
 			<locstring name="help_text" value="11036988" />
-			<string name="icon_name" value="Icons_criticals_killed_weapon" />
+			<icon name="icon_name" value="Icons_criticals_killed_weapon" />
 			<string name="hotkey_name" value="" />
 		</template_reference>
 		<bool name="repairable" value="True" />

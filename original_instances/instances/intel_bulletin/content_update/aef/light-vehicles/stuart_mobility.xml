@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\aef\light-vehicles\stuart_mobility" />
 		<locstring name="name" value="11076880" />
 		<locstring name="description" value="11076882" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_aef_stuart_mobility" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_aef_stuart_mobility" />
 		<locstring name="description_short" value="11076881" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388297" />

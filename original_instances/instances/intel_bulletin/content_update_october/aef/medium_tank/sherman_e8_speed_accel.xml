@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\aef\medium_tanks\sherman_e8_mobility" />
 		<locstring name="name" value="11081665" />
 		<locstring name="description" value="11079689" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_aef_sherman_e8_speed_accel" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_aef_sherman_e8_speed_accel" />
 		<locstring name="description_short" value="11080237" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396517" />

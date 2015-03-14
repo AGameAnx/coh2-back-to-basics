@@ -159,7 +159,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11053860" />
 							<locstring name="help_text" value="11053861" />
-							<string name="icon_name" value="Icons_abilities_ability_german_inspiration" />
+							<icon name="icon_name" value="Icons_abilities_ability_german_inspiration" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="68801" />
@@ -219,7 +219,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11053862" />
 							<locstring name="help_text" value="11053863" />
-							<string name="icon_name" value="Icons_abilities_ability_german_inspiration" />
+							<icon name="icon_name" value="Icons_abilities_ability_german_inspiration" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="68804" />

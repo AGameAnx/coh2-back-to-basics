@@ -153,7 +153,7 @@
 					<template_reference name="ui_info" value="tables\ui_info">
 						<locstring name="screen_name" value="11046896" />
 						<locstring name="help_text" value="11046897" />
-						<string name="icon_name" value="Icons_events_event_cue_blizzard" />
+						<icon name="icon_name" value="Icons_events_event_cue_blizzard" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
 					<uniqueid name="id" value="52233" />
@@ -229,11 +229,11 @@
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="" />
+			<icon name="icon_name" value="" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="0" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

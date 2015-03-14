@@ -86,7 +86,7 @@
 			<group name="unit_type_list">
 				<enum name="unit_type00" value="defence_building" />
 				<enum name="unit_type01" value="tactical_structure" />
-				<enum name="unit_type02" value="pinpoint_target" />
+				<enum name="unit_type02" value="" />
 				<enum name="unit_type03" value="" />
 				<enum name="unit_type04" value="" />
 				<enum name="unit_type05" value="" />
@@ -112,7 +112,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="A" />
-			<string name="icon_name" value="Icons_buildings_building_aef_m7_light_at_mine" />
+			<icon name="icon_name" value="Icons_buildings_building_aef_m7_light_at_mine" />
 			<enum name="kill_type" value="" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -152,7 +152,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="" />
+			<icon name="minimap_icon" value="" />
 			<string name="portrait_icon_winter" value="Icons_portraits_building_aef_m7_light_at_mine_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -172,7 +172,7 @@
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<string name="symbol_icon_name" value="Icons_symbols_building_aef_m7_light_at_mine_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_aef_m7_light_at_mine_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />

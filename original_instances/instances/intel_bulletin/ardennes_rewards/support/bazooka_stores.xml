@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\ardennes_rewards\support\bazooka_stores" />
 		<locstring name="name" value="11079364" />
 		<locstring name="description" value="11079365" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_bazooka_cost" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_bazooka_cost" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="395931" />
 			<list name="search_tags">

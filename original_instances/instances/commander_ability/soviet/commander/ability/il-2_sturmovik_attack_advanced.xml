@@ -2,11 +2,11 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11053991" />
 		<locstring name="description" value="11053990" />
-		<string name="icon" value="Icons_abilities_ability_soviet_strafing_run" />
+		<icon name="icon" value="Icons_abilities_ability_soviet_strafing_run" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="rare" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\soviet" />
 			</list>

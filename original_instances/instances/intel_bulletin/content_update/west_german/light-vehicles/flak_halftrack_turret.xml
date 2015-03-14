@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\west_german\light-vehicles\flak_halftrack_turret" />
 		<locstring name="name" value="11078676" />
 		<locstring name="description" value="11078675" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_wgr_flak_halftrack_turret" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_wgr_flak_halftrack_turret" />
 		<locstring name="description_short" value="11078720" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="394349" />

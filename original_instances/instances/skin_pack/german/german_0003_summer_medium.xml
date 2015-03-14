@@ -1,14 +1,14 @@
 <instance description="German Medium Summer 3 (progression)" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="german_0003_summer" />
-		<string name="icon" value="Icons_swatches_swatch_german_0003_summer_medium" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_german_0003_summer_medium" />
+		<icon name="icon" value="Icons_swatches_swatch_german_0003_summer_medium" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_german_0003_summer_medium" />
 		<locstring name="name" value="11046778" />
 		<locstring name="description" value="11046989" />
 		<enum name="kill_type" value="medium_armour" />
 		<enum name="season" value="summer" />
 		<locstring name="description_short" value="11048872" />
-		<instance_reference name="store_item" value="" />
+		<instance_reference name="store_item" value="thq_store\skins\german\german_0003_summer_medium" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="6007" />
 			<list name="search_tags">

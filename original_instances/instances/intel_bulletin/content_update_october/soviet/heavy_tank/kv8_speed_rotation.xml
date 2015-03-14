@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\soviet\heavy_tank\kv8_speed_rotation" />
 		<locstring name="name" value="11081676" />
 		<locstring name="description" value="11079699" />
-		<string name="icon" value="Icons_intel_bulletins_heavytank_sov_kv8_speed_rotate" />
+		<icon name="icon" value="Icons_intel_bulletins_heavytank_sov_kv8_speed_rotate" />
 		<locstring name="description_short" value="11080247" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396524" />
