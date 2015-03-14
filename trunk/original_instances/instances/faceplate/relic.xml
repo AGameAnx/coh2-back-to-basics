@@ -1,7 +1,7 @@
 <instance description="This is a relic faceplate for Relic staff" template="faceplate">
 	<group name="faceplate_bag">
 		<locstring name="name" value="11074527" />
-		<string name="icon" value="Icons_faceplate_frames_faceplate_frame_relic_icon" />
+		<icon name="icon" value="Icons_faceplate_frames_faceplate_frame_relic_icon" />
 		<instance_reference name="store_item" value="thq_store\faceplates\faceplate_relic" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="346851" />
@@ -23,7 +23,7 @@
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
-		<string name="icon_secondary" value="Icons_faceplate_frames_faceplate_frame_relic_00" />
+		<icon name="icon_secondary" value="Icons_faceplate_frames_faceplate_frame_relic_00" />
 		<string name="frame_selector" value="" />
 	</group>
 	<uniqueid name="pbgid" value="17184" />

@@ -95,7 +95,7 @@
 									<template_reference name="ui_info" value="tables\ui_info">
 										<locstring name="screen_name" value="11046713" />
 										<locstring name="help_text" value="11046712" />
-										<string name="icon_name" value="Icons_abilities_hold_fire_on" />
+										<icon name="icon_name" value="Icons_abilities_hold_fire_on" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
 									<uniqueid name="id" value="51946" />
@@ -183,11 +183,11 @@
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="11032080" />
 			<string name="hotkey_name" value="H" />
-			<string name="icon_name" value="Icons_abilities_ability_soviet_mortar_on" />
+			<icon name="icon_name" value="Icons_abilities_ability_soviet_mortar_on" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11006605" />
-			<string name="icon_alternate_name" value="Icons_abilities_ability_soviet_mortar_off" />
+			<icon name="icon_alternate_name" value="Icons_abilities_ability_soviet_mortar_off" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="11045364" />
 			<locstring name="screen_name_alternate" value="11045661" />

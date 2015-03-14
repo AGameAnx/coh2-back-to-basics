@@ -32,7 +32,7 @@
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="11072052" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_west_german_234_puma_armored_car" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_234_puma_armored_car" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11072053" />
 			<locstring name="brief_text" value="0" />
@@ -59,7 +59,7 @@
 			</template_reference>
 		</list>
 		<int name="ui_position" value="60" />
-		<string name="ui_kicker_icon_name" value="" />
+		<icon name="ui_kicker_icon_name" value="" />
 		<locstring name="ui_squad_name_override" value="0" />
 		<locstring name="ui_squad_help_text_override" value="0" />
 		<locstring name="ui_squad_extra_text_override" value="0" />

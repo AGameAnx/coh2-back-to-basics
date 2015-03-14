@@ -2,11 +2,11 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11064657" />
 		<locstring name="description" value="11064658" />
-		<string name="icon" value="Icons_units_unit_west_german_terror_officer" />
+		<icon name="icon" value="Icons_units_unit_west_german_terror_officer" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="rare" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\west_german" />
 			</list>
@@ -14,7 +14,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402756" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\units_and_buildings" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\west_german\commander\ability\terror_officer" />
 		<instance_reference name="ability" value="" />

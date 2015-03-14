@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\infantry\sturmpioneer\build_wirefield_sovmine_sturmpioneer" />
 		<locstring name="name" value="11072662" />
 		<locstring name="description" value="11072664" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_wgr_sturmpioneer_build" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_wgr_sturmpioneer_build" />
 		<locstring name="description_short" value="11072663" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260918" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\light_vehicle\recruit_health_movespeed_halftrack" />
 		<locstring name="name" value="11037005" />
 		<locstring name="description" value="11037006" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_lightvehicle18" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_lightvehicle18" />
 		<locstring name="description_short" value="11037939" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5914" />

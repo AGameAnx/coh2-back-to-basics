@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\infantry\engineer\dmg_engineer" />
 		<locstring name="name" value="11036940" />
 		<locstring name="description" value="11036939" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_infantry13" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_infantry13" />
 		<locstring name="description_short" value="11037934" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5908" />

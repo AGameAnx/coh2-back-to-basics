@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\infantry\recruit_acc_health_infantry" />
 		<locstring name="name" value="11037004" />
 		<locstring name="description" value="11037001" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_infantry19" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_infantry19" />
 		<locstring name="description_short" value="11037938" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5913" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\west_german\infantry\obersoldaten_accuracy" />
 		<locstring name="name" value="11076503" />
 		<locstring name="description" value="11076513" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_wgr_obersoldaten_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_wgr_obersoldaten_acc" />
 		<locstring name="description_short" value="11076502" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="387940" />

@@ -55,7 +55,7 @@
 					<template_reference name="ui_info" value="tables\ui_info">
 						<locstring name="screen_name" value="11053941" />
 						<locstring name="help_text" value="11053942" />
-						<string name="icon_name" value="Icons_abilities_ability_soviet_recon_mode" />
+						<icon name="icon_name" value="Icons_abilities_ability_soviet_recon_mode" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
 					<uniqueid name="id" value="53376" />
@@ -147,11 +147,11 @@
 			<locstring name="extra_text" value="11038359" />
 			<locstring name="help_text" value="11017407" />
 			<string name="hotkey_name" value="R" />
-			<string name="icon_name" value="Icons_abilities_ability_soviet_recon_mode" />
+			<icon name="icon_name" value="Icons_abilities_ability_soviet_recon_mode" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11017406" />
-			<string name="icon_alternate_name" value="Icons_abilities_ability_soviet_recon_mode_off" />
+			<icon name="icon_alternate_name" value="Icons_abilities_ability_soviet_recon_mode_off" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="11045824" />
 			<locstring name="screen_name_alternate" value="11045823" />

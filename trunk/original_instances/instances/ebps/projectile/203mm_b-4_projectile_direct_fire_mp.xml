@@ -21,13 +21,13 @@
 				<bool name="is_target_only" value="True" />
 				<float name="speed_distance_multiplier" value="0.2" />
 				<float name="speed_increment" value="0.5" />
-				<enum name="firing_angle_type" value="low_angle" />
+				<enum name="firing_angle_type" value="lowest_non_collide_angle" />
 				<bool name="use_homing_when_no_blocker" value="True" />
 				<float name="non_collide_start_angle" value="10" />
 				<float name="non_collide_end_angle" value="89" />
 			</group>
 			<float name="building_hit_fx_delay" value="0" />
-			<bool name="collision_building_wall_panel_ignore" value="False" />
+			<bool name="collision_building_wall_panel_ignore" value="True" />
 			<group name="collision_type">
 				<template_reference name="collision_type" value="type_projectile_collision\tp_homing">
 				</template_reference>
@@ -40,7 +40,7 @@
 			<float name="rotation_speed" value="10000" />
 			<bool name="spawn_collision_fx" value="False" />
 			<float name="speed" value="75" />
-			<bool name="collision_land_ignore" value="False" />
+			<bool name="collision_land_ignore" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
@@ -58,7 +58,7 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="type_cover\tp_light.lua" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="mortar_crater" />
 					<bool name="limited" value="True" />

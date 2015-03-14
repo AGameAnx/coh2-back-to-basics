@@ -97,6 +97,11 @@
 									</template_reference>
 									<list name="spawned_entity_actions">
 									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="63166" />
@@ -191,11 +196,11 @@
 			<locstring name="extra_text" value="11074055" />
 			<locstring name="help_text" value="11052584" />
 			<string name="hotkey_name" value="P" />
-			<string name="icon_name" value="Icons_commander_cmdr_soviet_booby_trap" />
+			<icon name="icon_name" value="Icons_commander_cmdr_soviet_booby_trap" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11052616" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

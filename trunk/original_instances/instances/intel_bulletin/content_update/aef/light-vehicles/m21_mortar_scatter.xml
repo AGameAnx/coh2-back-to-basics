@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\aef\light-vehicles\m21_mortar_scatter" />
 		<locstring name="name" value="11078670" />
 		<locstring name="description" value="11078669" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_aef_mortar_halftrack_scatter" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_aef_mortar_halftrack_scatter" />
 		<locstring name="description_short" value="11078715" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="394319" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\aef\infantry\echelon_acc_cooldown" />
 		<locstring name="name" value="11076462" />
 		<locstring name="description" value="11076463" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_echelon_acc_cool" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_echelon_acc_cool" />
 		<locstring name="description_short" value="11076472" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="387931" />

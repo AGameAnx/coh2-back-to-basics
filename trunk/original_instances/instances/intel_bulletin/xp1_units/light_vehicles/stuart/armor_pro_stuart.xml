@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\light_vehicles\stuart\armor_pro_stuart" />
 		<locstring name="name" value="11072506" />
 		<locstring name="description" value="11072507" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_aef_stuart_armor" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_aef_stuart_armor" />
 		<locstring name="description_short" value="11072508" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260238" />

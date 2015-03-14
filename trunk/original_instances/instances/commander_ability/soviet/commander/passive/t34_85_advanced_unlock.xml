@@ -2,11 +2,14 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11053979" />
 		<locstring name="description" value="11053980" />
-		<string name="icon" value="Icons_commander_cmdr_soviet_t34_85" />
+		<icon name="icon" value="Icons_commander_cmdr_soviet_t34_85" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082335" />
+				<locstring name="tag" value="11082334" />
+				<locstring name="tag" value="11082348" />
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="epic" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\soviet" />
 			</list>
@@ -14,7 +17,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402737" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\units_and_buildings" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\soviet\commander\passive\t34_85_advanced_unlock" />
 		<instance_reference name="ability" value="" />

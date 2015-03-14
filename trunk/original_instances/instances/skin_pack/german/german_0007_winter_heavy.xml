@@ -1,8 +1,8 @@
 <instance description="German Winter Grey three tone" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="german_0007_winter" />
-		<string name="icon" value="Icons_swatches_swatch_german_0007_winter_heavy" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_german_0007_winter_heavy" />
+		<icon name="icon" value="Icons_swatches_swatch_german_0007_winter_heavy" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_german_0007_winter_heavy" />
 		<locstring name="name" value="11046789" />
 		<locstring name="description" value="11046993" />
 		<enum name="kill_type" value="heavy_armour" />
@@ -21,6 +21,11 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231478/ss_2f8b7a7e1b1f244b3f035679feff8ee8aaa3e8d9.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231478/header.jpg" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\winter_heavy" />
 		</template_reference>

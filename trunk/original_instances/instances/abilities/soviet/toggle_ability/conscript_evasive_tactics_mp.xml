@@ -67,6 +67,11 @@
 							</template_reference>
 							<list name="spawned_entity_actions">
 							</list>
+							<group name="offset">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
 						</template_reference>
 					</list>
 					<enum name="change_target_type" value="entities" />
@@ -77,7 +82,7 @@
 					<template_reference name="ui_info" value="tables\ui_info">
 						<locstring name="screen_name" value="11046728" />
 						<locstring name="help_text" value="11046729" />
-						<string name="icon_name" value="Icons_abilities_ability_soviet_evasive_tactics_on" />
+						<icon name="icon_name" value="Icons_abilities_ability_soviet_evasive_tactics_on" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
 					<uniqueid name="id" value="69959" />
@@ -187,11 +192,11 @@
 			<locstring name="extra_text" value="11039301" />
 			<locstring name="help_text" value="11026019" />
 			<string name="hotkey_name" value="D" />
-			<string name="icon_name" value="Icons_abilities_ability_soviet_evasive_tactics_on" />
+			<icon name="icon_name" value="Icons_abilities_ability_soviet_evasive_tactics_on" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11026018" />
-			<string name="icon_alternate_name" value="Icons_abilities_ability_soviet_evasive_tactics_off" />
+			<icon name="icon_alternate_name" value="Icons_abilities_ability_soviet_evasive_tactics_off" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="11045818" />
 			<locstring name="screen_name_alternate" value="11045819" />

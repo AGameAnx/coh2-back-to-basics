@@ -2,11 +2,13 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11025856" />
 		<locstring name="description" value="11025858" />
-		<string name="icon" value="Icons_commander_cmdr_german_off_map_dora_support" />
+		<icon name="icon" value="Icons_commander_cmdr_german_off_map_dora_support" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082348" />
+				<locstring name="tag" value="11082292" />
 			</list>
-			<enum name="rarity" value="common" />
+			<enum name="rarity" value="epic" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\german" />
 			</list>
@@ -14,7 +16,7 @@
 			<list name="default_metadata">
 			</list>
 			<uniqueid name="server_id" value="402646" />
-			<instance_reference name="inventory_item_category" value="" />
+			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\artillerys" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\german\commander\ability\railway_artillery_support" />
 		<instance_reference name="ability" value="" />

@@ -1,7 +1,7 @@
 <instance description="" template="load_tips">
 	<group name="tip">
 		<locstring name="loadtip" value="11051575" />
-		<string name="icon" value="Icons_abilities_ability_german_panzerfaust" />
+		<icon name="icon" value="Icons_abilities_ability_german_panzerfaust" />
 		<enum name="tip_type" value="generic" />
 		<enum name="tip_season_type" value="any" />
 		<list name="scenario_names">

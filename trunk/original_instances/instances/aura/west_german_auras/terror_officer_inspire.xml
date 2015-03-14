@@ -191,7 +191,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11069046" />
 							<locstring name="help_text" value="11069045" />
-							<string name="icon_name" value="Icons_units_unit_west_german_terror_officer" />
+							<icon name="icon_name" value="Icons_units_unit_west_german_terror_officer" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="208828" />
@@ -353,7 +353,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11069048" />
 							<locstring name="help_text" value="11069047" />
-							<string name="icon_name" value="Icons_units_unit_west_german_terror_officer" />
+							<icon name="icon_name" value="Icons_units_unit_west_german_terror_officer" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="208835" />
@@ -515,7 +515,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11069049" />
 							<locstring name="help_text" value="11069050" />
-							<string name="icon_name" value="Icons_units_unit_west_german_terror_officer" />
+							<icon name="icon_name" value="Icons_units_unit_west_german_terror_officer" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="208842" />
@@ -677,7 +677,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11069049" />
 							<locstring name="help_text" value="11069050" />
-							<string name="icon_name" value="Icons_units_unit_west_german_terror_officer" />
+							<icon name="icon_name" value="Icons_units_unit_west_german_terror_officer" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="348182" />

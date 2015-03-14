@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\medium_tank\sherman_bulldozer\build_sherman_bull" />
 		<locstring name="name" value="11072572" />
 		<locstring name="description" value="11072573" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_aef_sherman_bulldozer_build" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_aef_sherman_bulldozer_build" />
 		<locstring name="description_short" value="11072574" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260730" />

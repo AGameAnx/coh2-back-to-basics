@@ -113,7 +113,8 @@
 			<bool name="can_abort_winddown" value="False" />
 			<enum name="reaction_type" value="normal" />
 			<bool name="ignore_relations" value="False" />
-			<template_reference name="wants_prone_firing_option" value="options\none">
+			<template_reference name="wants_prone_firing_option" value="options\weapon\wants_prone_firing">
+				<float name="time_to_stay_prone_after_combat" value="3" />
 			</template_reference>
 			<enum name="attack_ground_type" value="not_allowed" />
 		</group>
@@ -300,7 +301,7 @@
 		<float name="fx_tracer_speed" value="120" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.75" />
 			<float name="burst_multiplier" value="0.5" />

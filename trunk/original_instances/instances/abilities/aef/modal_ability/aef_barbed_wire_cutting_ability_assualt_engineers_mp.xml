@@ -160,11 +160,11 @@
 			<locstring name="extra_text" value="11075540" />
 			<locstring name="help_text" value="11075541" />
 			<string name="hotkey_name" value="cut_wires" />
-			<string name="icon_name" value="Icons_abilities_ability_german_hazard_removal" />
+			<icon name="icon_name" value="Icons_abilities_ability_german_hazard_removal" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11075539" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\heavy_tank\elefant\arpen_elefant" />
 		<locstring name="name" value="11034225" />
 		<locstring name="description" value="11035025" />
-		<string name="icon" value="Icons_intel_bulletins_heavytank_heavytank11" />
+		<icon name="icon" value="Icons_intel_bulletins_heavytank_heavytank11" />
 		<locstring name="description_short" value="11036762" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5772" />

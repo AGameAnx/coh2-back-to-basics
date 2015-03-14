@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\war_effort\german\pak40_ap_received_acc" />
 		<locstring name="name" value="11076764" />
 		<locstring name="description" value="11076763" />
-		<string name="icon" value="Icons_intel_bulletins_at_gun_ger_wareffort_pak40_ap_received_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_at_gun_ger_wareffort_pak40_ap_received_acc" />
 		<locstring name="description_short" value="11076787" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388396" />

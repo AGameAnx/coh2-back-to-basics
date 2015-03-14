@@ -72,6 +72,11 @@
 							</template_reference>
 							<list name="spawned_entity_actions">
 							</list>
+							<group name="offset">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
 						</template_reference>
 					</list>
 					<enum name="change_target_type" value="entities" />
@@ -82,7 +87,7 @@
 					<template_reference name="ui_info" value="tables\ui_info">
 						<locstring name="screen_name" value="11064652" />
 						<locstring name="help_text" value="11064654" />
-						<string name="icon_name" value="Icons_abilities_ability_aef_defensive_stance_off" />
+						<icon name="icon_name" value="Icons_abilities_ability_aef_defensive_stance_off" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
 					<uniqueid name="id" value="189777" />
@@ -157,7 +162,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="10" />
+		<float name="duration_time" value="-1" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -197,7 +202,7 @@
 			</template_reference>
 		</group>
 		<float name="toggled_recharge_time_off" value="10" />
-		<float name="toggled_recharge_time_on" value="10" />
+		<float name="toggled_recharge_time_on" value="-1" />
 		<group name="ui_cursor">
 			<string name="cursor_bad" value="modal_ability_cancel" />
 			<string name="cursor_good" value="modal_ability" />
@@ -207,47 +212,27 @@
 			<locstring name="extra_text" value="11064655" />
 			<locstring name="help_text" value="11064654" />
 			<string name="hotkey_name" value="E" />
-			<string name="icon_name" value="Icons_abilities_ability_aef_defensive_stance_off" />
+			<icon name="icon_name" value="Icons_abilities_ability_aef_defensive_stance_off" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11064652" />
-			<string name="icon_alternate_name" value="Icons_abilities_ability_aef_defensive_stance_on" />
+			<icon name="icon_alternate_name" value="Icons_abilities_ability_aef_defensive_stance_on" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="11068290" />
 			<locstring name="screen_name_alternate" value="11064653" />
 			<locstring name="screen_name_short" value="0" />
 		</group>
 		<locstring name="ui_usage_txt" value="0" />
-		<bool name="validate_actions" value="True" />
+		<bool name="validate_actions" value="False" comment="Ability will fail to untoggle if this is TRUE. /C-Mart (1/16/2015)" />
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_not">
+			<template_reference name="required" value="requirements\required_squad_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_in_state">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="11072675" />
-						<bool name="garrisoned" value="False" />
-						<bool name="healed" value="False" />
-						<float name="in_combat_since" value="5" />
-						<bool name="injured" value="False" />
-						<bool name="leader" value="False" />
-						<bool name="not_moving" value="False" />
-						<bool name="not_retreating" value="False" />
-						<bool name="pinned" value="True" />
-						<bool name="suppressed" value="True" />
-					</template_reference>
-					<template_reference name="required" value="requirements\required_player_upgrade">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="11079039" />
-						<bool name="is_present" value="True" />
-						<float name="max_completed" value="100" />
-						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\pm\american\specializations\cover_specialization\pm_hunker_down_active" />
-					</template_reference>
-				</list>
+				<locstring name="ui_name" value="11079039" />
+				<bool name="include_queued" value="False" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\pm\american\specializations\cover_specialization\pm_hunker_down_active" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_slot_item">
 				<enum name="reason" value="usage" />

@@ -4,7 +4,7 @@
 		<template_reference name="ui_info" value="tables\ui_info">
 			<locstring name="screen_name" value="11007730" />
 			<locstring name="help_text" value="11032079" />
-			<string name="icon_name" value="Icons_commands_icon_command_build_advanced" />
+			<icon name="icon_name" value="Icons_commands_icon_command_build_advanced" />
 			<string name="hotkey_name" value="V" />
 		</template_reference>
 	</group>

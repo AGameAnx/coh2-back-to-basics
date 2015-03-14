@@ -45,7 +45,7 @@
 		<template_reference name="ui_info" value="tables\ui_info">
 			<locstring name="screen_name" value="0" />
 			<locstring name="help_text" value="0" />
-			<string name="icon_name" value="" />
+			<icon name="icon_name" value="" />
 			<string name="hotkey_name" value="" />
 		</template_reference>
 		<bool name="repairable" value="True" />

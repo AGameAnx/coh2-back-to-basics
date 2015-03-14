@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\light_vehicle\m15_aa_halftrack\build_m15_aa_halftrack" />
 		<locstring name="name" value="11072779" />
 		<locstring name="description" value="11072791" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_aef_m15aa_build" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_aef_m15aa_build" />
 		<locstring name="description_short" value="11072780" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="261290" />

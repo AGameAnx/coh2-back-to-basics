@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\west_german\light-vehicles\puma_reload" />
 		<locstring name="name" value="11076505" />
 		<locstring name="description" value="11076514" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_wgr_puma_reload" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_wgr_puma_reload" />
 		<locstring name="description_short" value="11076504" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="387942" />

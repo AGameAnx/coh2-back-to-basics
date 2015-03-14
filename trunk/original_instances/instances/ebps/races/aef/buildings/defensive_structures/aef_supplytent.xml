@@ -82,7 +82,7 @@
 		<template_reference name="exts" value="ebpextensions\marker_ext">
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
-			<enum name="cover_type" value="type_cover\tp_heavy.lua" />
+			<enum name="cover_type" value="tp_heavy" />
 			<bool name="is_cover_directional" value="False" />
 			<bool name="is_shoot_through" value="False" />
 			<bool name="lengthwise_spots" value="False" />

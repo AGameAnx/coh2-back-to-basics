@@ -63,7 +63,7 @@
 		<template_reference name="ui_info" value="tables\ui_info">
 			<locstring name="screen_name" value="11055525" />
 			<locstring name="help_text" value="11055526" />
-			<string name="icon_name" value="Icons_criticals_critical_deep_mud" />
+			<icon name="icon_name" value="Icons_criticals_critical_deep_mud" />
 			<string name="hotkey_name" value="" />
 		</template_reference>
 		<bool name="repairable" value="False" />

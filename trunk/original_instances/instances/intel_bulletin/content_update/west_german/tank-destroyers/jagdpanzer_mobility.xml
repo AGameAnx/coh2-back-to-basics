@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\west_german\tank_destroyer\jagdpanzer_mobility" />
 		<locstring name="name" value="11076904" />
 		<locstring name="description" value="11076906" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_wgr_jagdpanzer_mobility" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_wgr_jagdpanzer_mobility" />
 		<locstring name="description_short" value="11076905" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388306" />

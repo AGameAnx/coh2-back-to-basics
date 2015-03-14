@@ -124,11 +124,11 @@
 			<locstring name="extra_text" value="11053034" />
 			<locstring name="help_text" value="11075544" />
 			<string name="hotkey_name" value="B" />
-			<string name="icon_name" value="Icons_buildings_building_west_german_mechanized_regiment_hq" />
+			<icon name="icon_name" value="Icons_buildings_building_west_german_mechanized_regiment_hq" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11052440" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="11072859" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

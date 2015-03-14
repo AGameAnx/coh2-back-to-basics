@@ -221,7 +221,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="11071241" />
 			<string name="hotkey_name" value="axis_foundation_hq" />
-			<string name="icon_name" value="Icons_buildings_building_west_german_hq" />
+			<icon name="icon_name" value="Icons_buildings_building_west_german_hq" />
 			<enum name="kill_type" value="building" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -261,7 +261,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="Icons_taskbar_coh_taskbar_west_german_hq" />
+			<icon name="minimap_icon" value="Icons_taskbar_coh_taskbar_west_german_hq" />
 			<string name="portrait_icon_winter" value="Icons_portraits_building_west_german_hq_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -280,7 +280,7 @@
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<string name="symbol_icon_name" value="Icons_symbols_building_west_german_hq_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_west_german_hq_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
@@ -402,7 +402,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
-			<enum name="cover_type" value="type_cover\tp_garrison_cover.lua" />
+			<enum name="cover_type" value="tp_garrison_cover" />
 			<bool name="is_cover_directional" value="False" />
 			<bool name="is_shoot_through" value="False" />
 			<bool name="lengthwise_spots" value="False" />

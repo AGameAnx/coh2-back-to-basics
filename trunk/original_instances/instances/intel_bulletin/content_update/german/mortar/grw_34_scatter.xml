@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\german\mortar\grw_34_scatter" />
 		<locstring name="name" value="11076497" />
 		<locstring name="description" value="11076510" />
-		<string name="icon" value="Icons_intel_bulletins_mortar_ger_grw34_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_mortar_ger_grw34_acc" />
 		<locstring name="description_short" value="11076496" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="387937" />

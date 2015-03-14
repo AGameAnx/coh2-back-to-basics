@@ -14,7 +14,7 @@
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
-		<string name="icon" value="Icons_fatalities_fatality_time_on_target_artillery" />
+		<icon name="icon" value="Icons_fatalities_fatality_time_on_target_artillery" />
 		<string name="lua_function_name" value="Fatality_TimeOnTargetArtillery" />
 		<locstring name="description" value="11074089" />
 		<instance_reference name="store_item" value="" />

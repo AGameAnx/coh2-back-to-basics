@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\light_vehicles\251_infrared_halftrack\build_251_infrared_halftrack" />
 		<locstring name="name" value="11073086" />
 		<locstring name="description" value="11073088" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_infrared_build" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_infrared_build" />
 		<locstring name="description_short" value="11073089" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="274726" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\soviet\medium-tanks\t34_85_armor" />
 		<locstring name="name" value="11077257" />
 		<locstring name="description" value="11077212" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_sov_t34_85_armor" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_sov_t34_85_armor" />
 		<locstring name="description_short" value="11077650" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="389795" />

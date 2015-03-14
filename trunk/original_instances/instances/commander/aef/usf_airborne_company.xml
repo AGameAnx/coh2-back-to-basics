@@ -3,7 +3,7 @@
 		<locstring name="name" value="11063826" />
 		<instance_reference name="archetype_upgrade" value="upgrade\aef\commander\archetype\tech_tree_v1" />
 		<locstring name="description" value="11074832" />
-		<string name="icon" value="Icons_commander_portrait_us_forces_commander_01" />
+		<icon name="icon" value="Icons_commander_portrait_us_forces_commander_01" />
 		<string name="icon_secondary" value="Icons_commander_portrait_us_forces_commander_01_large" />
 		<int name="ui_position" value="0" />
 		<locstring name="description_short" value="0" />

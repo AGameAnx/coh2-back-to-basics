@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="" />
 		<locstring name="name" value="11072666" />
 		<locstring name="description" value="11072668" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_echelon_build" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_echelon_build" />
 		<locstring name="description_short" value="11072667" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260923" />

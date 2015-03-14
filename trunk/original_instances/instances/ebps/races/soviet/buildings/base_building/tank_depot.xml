@@ -240,7 +240,7 @@
 			<bool name="has_speech_code" value="False" />
 			<locstring name="help_text" value="2102050" />
 			<string name="hotkey_name" value="T" />
-			<string name="icon_name" value="Icons_buildings_building_soviet_heavy_factory" />
+			<icon name="icon_name" value="Icons_buildings_building_soviet_heavy_factory" />
 			<enum name="kill_type" value="building" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -280,7 +280,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
-			<string name="minimap_icon" value="Icons_taskbar_coh_taskbar_01_sc_icon_05" />
+			<icon name="minimap_icon" value="Icons_taskbar_coh_taskbar_01_sc_icon_05" />
 			<string name="portrait_icon_winter" value="Icons_portraits_building_soviet_heavy_factory_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
@@ -298,7 +298,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<string name="symbol_icon_name" value="Icons_symbols_building_soviet_heavy_factory_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_soviet_heavy_factory_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />

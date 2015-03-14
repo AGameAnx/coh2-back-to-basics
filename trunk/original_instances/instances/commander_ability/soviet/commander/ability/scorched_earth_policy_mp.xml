@@ -2,7 +2,7 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11050878" />
 		<locstring name="description" value="11050879" />
-		<string name="icon" value="Icons_abilities_ability_scorched_earth_generic" />
+		<icon name="icon" value="Icons_abilities_ability_scorched_earth_generic" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>

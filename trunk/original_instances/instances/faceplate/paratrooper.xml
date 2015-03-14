@@ -1,7 +1,7 @@
 <instance description="special event paratrooper faceplate" template="faceplate">
 	<group name="faceplate_bag">
 		<locstring name="name" value="11075610" />
-		<string name="icon" value="Icons_faceplate_frames_faceplate_frame_paratrooper_icon" />
+		<icon name="icon" value="Icons_faceplate_frames_faceplate_frame_paratrooper_icon" />
 		<instance_reference name="store_item" value="" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="349753" />
@@ -15,7 +15,7 @@
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
-		<string name="icon_secondary" value="Icons_faceplate_frames_faceplate_frame_paratrooper_00" />
+		<icon name="icon_secondary" value="Icons_faceplate_frames_faceplate_frame_paratrooper_00" />
 		<string name="frame_selector" value="" />
 	</group>
 	<uniqueid name="pbgid" value="17758" />

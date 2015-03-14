@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\west_german\infantry\panzerfus_cooldown" />
 		<locstring name="name" value="11081683" />
 		<locstring name="description" value="11079704" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_wgr_panzerfusiliers_cooldown" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_wgr_panzerfusiliers_cooldown" />
 		<locstring name="description_short" value="11080252" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396527" />

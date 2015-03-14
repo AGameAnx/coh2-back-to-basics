@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\light_vehicles\puma\armor_pen_puma" />
 		<locstring name="name" value="11072654" />
 		<locstring name="description" value="11072656" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_puma_armor_pen" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_puma_armor_pen" />
 		<locstring name="description_short" value="11072655" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260911" />

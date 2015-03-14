@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\aef\light_vehicles\greyhound_ap" />
 		<locstring name="name" value="11081666" />
 		<locstring name="description" value="11079687" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_aef_greyhound_ap" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_aef_greyhound_ap" />
 		<locstring name="description_short" value="11080235" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396516" />

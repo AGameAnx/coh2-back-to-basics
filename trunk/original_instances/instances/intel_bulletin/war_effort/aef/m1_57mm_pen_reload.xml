@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\war_effort\aef\m1_57mm_ap_reload" />
 		<locstring name="name" value="11076760" />
 		<locstring name="description" value="11076759" />
-		<string name="icon" value="Icons_intel_bulletins_at_gun_aef_wareffort_m157mm_ap_reload" />
+		<icon name="icon" value="Icons_intel_bulletins_at_gun_aef_wareffort_m157mm_ap_reload" />
 		<locstring name="description_short" value="11076790" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388389" />

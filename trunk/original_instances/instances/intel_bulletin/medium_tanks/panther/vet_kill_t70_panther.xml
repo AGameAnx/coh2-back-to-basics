@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\medium_tank\panther\armor_gain_vet_panther" />
 		<locstring name="name" value="11036927" />
 		<locstring name="description" value="11036926" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_ger_panther_vet" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_ger_panther_vet" />
 		<locstring name="description_short" value="11047650" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5904" />

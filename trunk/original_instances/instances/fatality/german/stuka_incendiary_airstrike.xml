@@ -15,7 +15,7 @@
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
-		<string name="icon" value="Icons_fatalities_fatality_incendiary_airstrike" />
+		<icon name="icon" value="Icons_fatalities_fatality_incendiary_airstrike" />
 		<string name="lua_function_name" value="Fatality_IncendiaryAirstrike" />
 		<locstring name="description" value="11077099" />
 		<instance_reference name="store_item" value="" />

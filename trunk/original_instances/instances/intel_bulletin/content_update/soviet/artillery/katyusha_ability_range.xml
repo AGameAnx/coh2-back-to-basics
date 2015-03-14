@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\soviet\artillery\katyusha_ability_range" />
 		<locstring name="name" value="11076898" />
 		<locstring name="description" value="11076900" />
-		<string name="icon" value="Icons_intel_bulletins_artillery_sov_katyusha_range" />
+		<icon name="icon" value="Icons_intel_bulletins_artillery_sov_katyusha_range" />
 		<locstring name="description_short" value="11076899" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388304" />

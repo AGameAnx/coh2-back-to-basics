@@ -17,7 +17,7 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="type_cover\tp_light.lua" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
 					<bool name="limited" value="True" />
@@ -169,7 +169,7 @@
 			<float name="acceleration" value="20" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
-				<bool name="is_artillery" value="True" />
+				<bool name="is_artillery" value="False" />
 				<bool name="is_target_only" value="False" />
 				<float name="speed_distance_multiplier" value="0.2" />
 				<float name="speed_increment" value="0.5" />

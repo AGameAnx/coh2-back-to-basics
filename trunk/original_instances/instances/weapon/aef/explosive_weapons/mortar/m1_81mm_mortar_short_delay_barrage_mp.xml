@@ -394,7 +394,7 @@
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="1" />
 			<float name="burst_multiplier" value="1" />
@@ -427,7 +427,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\aef_m56_heavy_he_short_delay_81mm_mortar_round_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="56" />
+			<float name="max" value="106" />
 			<float name="min" value="15" />
 			<group name="distance">
 				<float name="near" value="-1" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\assault_gun\build_brummbar_isu152_su85" />
 		<locstring name="name" value="11034426" />
 		<locstring name="description" value="11034425" />
-		<string name="icon" value="Icons_intel_bulletins_assault_gun_assaultgun10" />
+		<icon name="icon" value="Icons_intel_bulletins_assault_gun_assaultgun10" />
 		<locstring name="description_short" value="11036842" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5855" />

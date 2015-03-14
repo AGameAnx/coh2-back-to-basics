@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\assault_gun\priest\gain_vet_priest" />
 		<locstring name="name" value="11072312" />
 		<locstring name="description" value="11072315" />
-		<string name="icon" value="Icons_intel_bulletins_artillery_aef_priest01" />
+		<icon name="icon" value="Icons_intel_bulletins_artillery_aef_priest01" />
 		<locstring name="description_short" value="11072316" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="259809" />

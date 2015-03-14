@@ -30,7 +30,7 @@
 					<template_reference name="ui_info" value="tables\ui_info">
 						<locstring name="screen_name" value="11055076" />
 						<locstring name="help_text" value="11075491" />
-						<string name="icon_name" value="Icons_abilities_ability_west_german_fuel" />
+						<icon name="icon_name" value="Icons_abilities_ability_west_german_fuel" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
 					<uniqueid name="id" value="349631" />
@@ -106,11 +106,11 @@
 			<locstring name="extra_text" value="11075492" />
 			<locstring name="help_text" value="11075491" />
 			<string name="hotkey_name" value="F" />
-			<string name="icon_name" value="Icons_abilities_ability_west_german_fuel_transfer_enable" />
+			<icon name="icon_name" value="Icons_abilities_ability_west_german_fuel_transfer_enable" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11055076" />
-			<string name="icon_alternate_name" value="Icons_abilities_ability_west_german_fuel_transfer_disable" />
+			<icon name="icon_alternate_name" value="Icons_abilities_ability_west_german_fuel_transfer_disable" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="11075497" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\infantry\irregulars\accuracy_irregulars" />
 		<locstring name="name" value="11054613" />
 		<locstring name="description" value="11054611" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_sov_irregular_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_sov_irregular_acc" />
 		<locstring name="description_short" value="11054612" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="18442" />

@@ -88,7 +88,7 @@
 								<template_reference name="ui_info" value="tables\ui_info">
 									<locstring name="screen_name" value="11053817" />
 									<locstring name="help_text" value="11053818" />
-									<string name="icon_name" value="Icons_vehicles_vehicle_german_panther" />
+									<icon name="icon_name" value="Icons_vehicles_vehicle_german_panther" />
 									<string name="hotkey_name" value="" />
 								</template_reference>
 								<uniqueid name="id" value="347911" />

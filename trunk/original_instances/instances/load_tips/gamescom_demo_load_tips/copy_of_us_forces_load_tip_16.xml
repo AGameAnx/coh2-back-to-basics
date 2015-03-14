@@ -1,7 +1,7 @@
 <instance description="load_tips\gamescom_load_tips\us_forces_load_tip_16" template="load_tips">
 	<group name="tip">
 		<locstring name="loadtip" value="11074673" />
-		<string name="icon" value="Icons_vehicles_vehicle_aef_wc51_ambulance" />
+		<icon name="icon" value="Icons_vehicles_vehicle_aef_wc51_ambulance" />
 		<enum name="tip_type" value="generic" />
 		<enum name="tip_season_type" value="any" />
 		<list name="scenario_names">

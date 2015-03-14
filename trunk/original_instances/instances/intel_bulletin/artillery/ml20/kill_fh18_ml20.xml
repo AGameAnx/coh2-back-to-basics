@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\artillery\ml20\range_ml20" />
 		<locstring name="name" value="11034255" />
 		<locstring name="description" value="11034345" />
-		<string name="icon" value="Icons_intel_bulletins_artillery_sov_ml20_reload" />
+		<icon name="icon" value="Icons_intel_bulletins_artillery_sov_ml20_reload" />
 		<locstring name="description_short" value="11036792" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5802" />

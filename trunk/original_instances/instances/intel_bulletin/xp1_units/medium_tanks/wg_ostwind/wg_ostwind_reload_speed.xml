@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\medium_tank\wg_ostwind\wg_ostwind_reload_speed" />
 		<locstring name="name" value="11075379" />
 		<locstring name="description" value="11075381" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_wgr_ostwind_reload" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_wgr_ostwind_reload" />
 		<locstring name="description_short" value="11075380" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="348143" />

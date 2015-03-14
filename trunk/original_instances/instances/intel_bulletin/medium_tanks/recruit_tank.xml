@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\medium_tank\recruit_acc_armor_tank" />
 		<locstring name="name" value="11037008" />
 		<locstring name="description" value="11037007" />
-		<string name="icon" value="Icons_intel_bulletins_mediumtank_mediumtank22" />
+		<icon name="icon" value="Icons_intel_bulletins_mediumtank_mediumtank22" />
 		<locstring name="description_short" value="11037940" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5915" />

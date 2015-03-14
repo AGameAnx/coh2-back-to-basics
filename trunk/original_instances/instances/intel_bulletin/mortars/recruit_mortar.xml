@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\mortars\recruit_arpen_dmg_mortar" />
 		<locstring name="name" value="11037012" />
 		<locstring name="description" value="11037011" />
-		<string name="icon" value="Icons_intel_bulletins_mortar_mortar17" />
+		<icon name="icon" value="Icons_intel_bulletins_mortar_mortar17" />
 		<locstring name="description_short" value="11037942" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5917" />

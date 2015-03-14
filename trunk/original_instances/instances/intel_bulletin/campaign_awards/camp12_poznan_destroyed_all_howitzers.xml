@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="" />
 		<locstring name="name" value="0" />
 		<locstring name="description" value="0" />
-		<string name="icon" value="" />
+		<icon name="icon" value="" />
 		<locstring name="description_short" value="0" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="6043" />

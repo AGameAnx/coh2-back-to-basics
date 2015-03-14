@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\soviet\infantry\t35_mine_price" />
 		<locstring name="name" value="11077037" />
 		<locstring name="description" value="11077036" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_sov_t35_cost" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_sov_t35_cost" />
 		<locstring name="description_short" value="11077038" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388789" />

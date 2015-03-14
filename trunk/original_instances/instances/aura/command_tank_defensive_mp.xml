@@ -47,7 +47,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11046567" />
 							<locstring name="help_text" value="11046568" />
-							<string name="icon_name" value="Icons_commander_cmdr_german_armor_commander" />
+							<icon name="icon_name" value="Icons_commander_cmdr_german_armor_commander" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="53404" />

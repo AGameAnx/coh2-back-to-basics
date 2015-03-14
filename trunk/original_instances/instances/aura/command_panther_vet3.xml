@@ -106,7 +106,7 @@
 								<template_reference name="ui_info" value="tables\ui_info">
 									<locstring name="screen_name" value="11069528" />
 									<locstring name="help_text" value="11069527" />
-									<string name="icon_name" value="Icons_vehicles_vehicle_west_german_panther_command_tank" />
+									<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_panther_command_tank" />
 									<string name="hotkey_name" value="" />
 								</template_reference>
 								<uniqueid name="id" value="347954" />

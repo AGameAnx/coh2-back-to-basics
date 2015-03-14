@@ -121,11 +121,11 @@
 			<locstring name="extra_text" value="11039220" />
 			<locstring name="help_text" value="11006749" />
 			<string name="hotkey_name" value="allies_artillery" />
-			<string name="icon_name" value="Icons_commander_cmdr_soviet_fear_propaganda" />
+			<icon name="icon_name" value="Icons_commander_cmdr_soviet_fear_propaganda" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11006615" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="11039222" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

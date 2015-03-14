@@ -1,8 +1,8 @@
 <instance description="" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="us_0004_summer" />
-		<string name="icon" value="Icons_swatches_swatch_aef_0004_summer_light" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_aef_0004_summer_light" />
+		<icon name="icon" value="Icons_swatches_swatch_aef_0004_summer_light" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_aef_0004_summer_light" />
 		<locstring name="name" value="11080224" />
 		<locstring name="description" value="11082319" />
 		<enum name="kill_type" value="light_armour" />

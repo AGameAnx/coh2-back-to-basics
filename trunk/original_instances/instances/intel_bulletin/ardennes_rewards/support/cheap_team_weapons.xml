@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\ardennes_rewards\support\cheap_team_weapons" />
 		<locstring name="name" value="11079366" />
 		<locstring name="description" value="11079367" />
-		<string name="icon" value="Icons_intel_bulletins_teamweapons_aef_team_weapons_cost" />
+		<icon name="icon" value="Icons_intel_bulletins_teamweapons_aef_team_weapons_cost" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="395929" />
 			<list name="search_tags">

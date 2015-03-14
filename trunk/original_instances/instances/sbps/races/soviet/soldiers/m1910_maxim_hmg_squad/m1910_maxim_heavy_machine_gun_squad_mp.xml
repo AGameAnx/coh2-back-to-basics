@@ -11,9 +11,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11048742" />
 						<string name="hotkey_name" value="H" />
-						<string name="icon_name" value="Icons_units_unit_soviet_mg" />
+						<icon name="icon_name" value="Icons_units_unit_soviet_mg" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11048748" />
@@ -41,20 +41,20 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="39" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_german_mg42_crew_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_mg42_crew_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_german_mg42_crew_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_mg42_crew_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11048744" />
 						<locstring name="screen_name_short" value="11045777" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 					</group>
@@ -67,9 +67,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11002188" />
 						<string name="hotkey_name" value="H" />
-						<string name="icon_name" value="Icons_units_unit_soviet_mg" />
+						<icon name="icon_name" value="Icons_units_unit_soviet_mg" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11048771" />
@@ -97,20 +97,20 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="40" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_soviet_maxim_hmg_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_soviet_maxim_hmg_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_soviet_maxim_hmg_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_soviet_maxim_hmg_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11038708" />
 						<locstring name="screen_name_short" value="11048772" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 					</group>
@@ -123,9 +123,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11048742" />
 						<string name="hotkey_name" value="H" />
-						<string name="icon_name" value="Icons_units_unit_soviet_mg" />
+						<icon name="icon_name" value="Icons_units_unit_soviet_mg" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11048748" />
@@ -153,13 +153,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="39" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_west_german_volksgrenadier_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_west_german_volksgrenadier_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_west_german_volksgrenadier_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_west_german_volksgrenadier_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11048744" />
 						<locstring name="screen_name_short" value="11045777" />
@@ -167,7 +167,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\west_german" />
@@ -179,9 +179,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11002188" />
 						<string name="hotkey_name" value="H" />
-						<string name="icon_name" value="Icons_units_unit_soviet_mg" />
+						<icon name="icon_name" value="Icons_units_unit_soviet_mg" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11048771" />
@@ -209,13 +209,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="40" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_aef_mg_crew_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_aef_mg_crew_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_aef_mg_crew_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_aef_mg_crew_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11038708" />
 						<locstring name="screen_name_short" value="11048772" />
@@ -223,7 +223,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\aef" />
@@ -235,9 +235,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11048742" />
 						<string name="hotkey_name" value="H" />
-						<string name="icon_name" value="Icons_units_unit_soviet_mg" />
+						<icon name="icon_name" value="Icons_units_unit_soviet_mg" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11048748" />
@@ -265,20 +265,20 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="39" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_unit_german_mg42_crew_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_mg42_crew_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_unit_german_mg42_crew_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_mg42_crew_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="11048744" />
 						<locstring name="screen_name_short" value="11045777" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<string name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_soviet_mg_symbol" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 					</group>
@@ -879,7 +879,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="11075049" />
 				<string name="hotkey_name" value="Reinforce" />
-				<string name="icon_name" value="Icons_odds_reinforce" />
+				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="11007514" />

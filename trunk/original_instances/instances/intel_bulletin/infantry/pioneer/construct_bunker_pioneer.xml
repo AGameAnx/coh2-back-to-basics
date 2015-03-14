@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\infantry\pioneer\bunker_hp_armor_pioneer" />
 		<locstring name="name" value="11036946" />
 		<locstring name="description" value="11036945" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_ger_pioneer_bunker_build" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_ger_pioneer_bunker_build" />
 		<locstring name="description_short" value="11037936" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5910" />

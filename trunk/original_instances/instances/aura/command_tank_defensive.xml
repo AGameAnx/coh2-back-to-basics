@@ -41,7 +41,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11046567" />
 							<locstring name="help_text" value="11046568" />
-							<string name="icon_name" value="Icons_abilities_ability_german_blitzkrieg_assault" />
+							<icon name="icon_name" value="Icons_abilities_ability_german_blitzkrieg_assault" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="53397" />

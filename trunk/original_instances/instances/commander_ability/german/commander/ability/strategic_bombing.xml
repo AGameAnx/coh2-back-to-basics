@@ -2,7 +2,7 @@
 	<group name="commander_ability_bag">
 		<locstring name="name" value="11052716" />
 		<locstring name="description" value="11052717" />
-		<string name="icon" value="Icons_commander_cmdr_german_strategic_bombing" />
+		<icon name="icon" value="Icons_commander_cmdr_german_strategic_bombing" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>

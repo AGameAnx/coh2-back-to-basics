@@ -150,7 +150,7 @@
 						<template_reference name="ui_info" value="tables\ui_info">
 							<locstring name="screen_name" value="11051931" />
 							<locstring name="help_text" value="11051932" />
-							<string name="icon_name" value="Icons_commander_cmdr_soviet_forward_hq" />
+							<icon name="icon_name" value="Icons_commander_cmdr_soviet_forward_hq" />
 							<string name="hotkey_name" value="" />
 						</template_reference>
 						<uniqueid name="id" value="53474" />
@@ -335,7 +335,7 @@
 			<template_reference name="action" value="action\change_target_action">
 				<list name="actions">
 					<template_reference name="action" value="action\ui_decorator_action">
-						<string name="symbol_icon" value="Icons_symbols_building_military_field_hospital_symbol" />
+						<icon name="symbol_icon" value="Icons_symbols_building_military_field_hospital_symbol" />
 						<uniqueid name="id" value="53482" />
 					</template_reference>
 				</list>

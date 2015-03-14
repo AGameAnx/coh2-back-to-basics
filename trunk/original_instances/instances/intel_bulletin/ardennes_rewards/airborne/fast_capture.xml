@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\ardennes_rewards\airborne\fast_capture" />
 		<locstring name="name" value="11079336" />
 		<locstring name="description" value="11079337" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_paratrooper_capture" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_paratrooper_capture" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="395919" />
 			<list name="search_tags">

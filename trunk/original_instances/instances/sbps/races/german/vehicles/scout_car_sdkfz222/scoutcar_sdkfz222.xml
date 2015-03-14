@@ -11,9 +11,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11008216" />
 						<string name="hotkey_name" value="S" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
+						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11008217" />
@@ -41,20 +41,20 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="27" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
 						<float name="minimap_texture_scale" value="0.65" />
 						<locstring name="brief_text" value="11038760" />
 						<locstring name="screen_name_short" value="11047898" />
 						<enum name="map_rotation_type_override" value="heading" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 					</group>
@@ -67,9 +67,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11008216" />
 						<string name="hotkey_name" value="S" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
+						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11008217" />
@@ -97,20 +97,20 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="27" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
 						<float name="minimap_texture_scale" value="0.65" />
 						<locstring name="brief_text" value="11038760" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="heading" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 					</group>
@@ -123,9 +123,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11008216" />
 						<string name="hotkey_name" value="S" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
+						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11008217" />
@@ -153,13 +153,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="27" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
 						<float name="minimap_texture_scale" value="0.65" />
 						<locstring name="brief_text" value="11038761" />
 						<locstring name="screen_name_short" value="11047899" />
@@ -167,7 +167,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\west_german" />
@@ -179,9 +179,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11008216" />
 						<string name="hotkey_name" value="S" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
+						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11008217" />
@@ -209,13 +209,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="27" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
 						<float name="minimap_texture_scale" value="0.65" />
 						<locstring name="brief_text" value="11038761" />
 						<locstring name="screen_name_short" value="0" />
@@ -223,7 +223,7 @@
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="racebps\aef" />
@@ -235,9 +235,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11008216" />
 						<string name="hotkey_name" value="S" />
-						<string name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="Icons_minimap_unit_scout_car" />
+						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11008217" />
@@ -265,20 +265,20 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="27" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
 						<float name="minimap_texture_scale" value="0.65" />
 						<locstring name="brief_text" value="11038760" />
 						<locstring name="screen_name_short" value="11047898" />
 						<enum name="map_rotation_type_override" value="heading" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<string name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 					</group>

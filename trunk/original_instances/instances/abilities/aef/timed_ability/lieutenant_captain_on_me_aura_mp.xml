@@ -17,7 +17,7 @@
 					</group>
 					<bool name="die_with_creator" value="True" />
 					<bool name="do_recalc_targets" value="True" />
-					<float name="duration" value="0.5" />
+					<float name="duration" value="4" />
 					<bool name="entity_targets" value="False" />
 					<instance_reference name="entity_types_to_choose" value="" />
 					<bool name="stationary" value="False" />
@@ -62,7 +62,7 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\timed_action">
 							<float name="duration" value="4" />
-							<bool name="fire_and_forget" value="True" />
+							<bool name="fire_and_forget" value="False" />
 							<list name="subactions">
 								<template_reference name="action" value="action\suppression">
 									<float name="suppression" value="0" />
@@ -70,7 +70,7 @@
 									<float name="supressionrecovertime" value="0" />
 								</template_reference>
 								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
+									<float name="duration" value="4" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
 										<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
@@ -83,22 +83,13 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 										</template_reference>
 										<template_reference name="modifier" value="modifiers\posture_speed_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="True" />
+											<enum name="application_type" value="apply_to_squad" />
+											<bool name="exclusive" value="False" />
 											<string name="modifier_id" value="lieutenant" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="addition" />
 											<float name="value" value="1" />
 											<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
-										</template_reference>
-										<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="addition" />
-											<float name="value" value="1.8" />
-											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="207432" />
@@ -157,7 +148,7 @@
 						</template_reference>
 						<template_reference name="action" value="action\timed_action">
 							<float name="duration" value="8" />
-							<bool name="fire_and_forget" value="True" />
+							<bool name="fire_and_forget" value="False" />
 							<list name="subactions">
 								<template_reference name="action" value="action\change_target_action">
 									<list name="actions">
@@ -166,7 +157,7 @@
 											<bool name="permanent" value="False" />
 											<list name="modifiers">
 												<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-													<enum name="application_type" value="apply_to_entity" />
+													<enum name="application_type" value="apply_to_squad" />
 													<bool name="exclusive" value="False" />
 													<string name="modifier_id" value="" />
 													<string name="target_type_name" value="" />
@@ -195,7 +186,7 @@
 											<uniqueid name="id" value="259478" />
 										</template_reference>
 									</list>
-									<enum name="change_target_type" value="entities" />
+									<enum name="change_target_type" value="squad" />
 									<uniqueid name="id" value="259324" />
 								</template_reference>
 							</list>
@@ -212,7 +203,7 @@
 											<template_reference name="ui_info" value="tables\ui_info">
 												<locstring name="screen_name" value="11066585" />
 												<locstring name="help_text" value="11066586" />
-												<string name="icon_name" value="Icons_abilities_ability_aef_on_me" />
+												<icon name="icon_name" value="Icons_abilities_ability_aef_on_me" />
 												<string name="hotkey_name" value="" />
 											</template_reference>
 											<uniqueid name="id" value="275581" />
@@ -247,7 +238,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="0.5" />
+		<float name="duration_time" value="8" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -297,18 +288,18 @@
 			<locstring name="extra_text" value="11071765" />
 			<locstring name="help_text" value="11066586" />
 			<string name="hotkey_name" value="N" />
-			<string name="icon_name" value="Icons_abilities_ability_aef_on_me" />
+			<icon name="icon_name" value="Icons_abilities_ability_aef_on_me" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11066585" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
 		</group>
 		<locstring name="ui_usage_txt" value="0" />
-		<bool name="validate_actions" value="False" />
+		<bool name="validate_actions" value="True" />
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">

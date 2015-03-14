@@ -299,16 +299,16 @@
 										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<instance_reference name="critical" value="critical\vehicle_crew_shocked" />
-											<uniqueid name="id" value="62049" />
+											<uniqueid name="id" value="424473" />
 										</template_reference>
 									</list>
 									<int name="weight" value="100" />
 								</group>
 							</list>
-							<uniqueid name="id" value="62048" />
+							<uniqueid name="id" value="424474" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="62047" />
+					<uniqueid name="id" value="424475" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -366,7 +366,7 @@
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.5" />
 			<float name="burst_multiplier" value="1" />
@@ -396,7 +396,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\pak_88mm_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\pak_88mm_pak43_shell_mp" />
 		</group>
 		<group name="range">
 			<float name="max" value="100" />

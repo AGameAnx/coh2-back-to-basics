@@ -3,7 +3,7 @@
 		<locstring name="name" value="11040316" />
 		<instance_reference name="archetype_upgrade" value="upgrade\soviet\commander\archetype\shock_archetype" />
 		<locstring name="description" value="11040318" />
-		<string name="icon" value="Icons_commander_portrait_soviet_commander_09" />
+		<icon name="icon" value="Icons_commander_portrait_soviet_commander_09" />
 		<string name="icon_secondary" value="Icons_commander_portrait_soviet_commander_09_large" />
 		<int name="ui_position" value="7" />
 		<locstring name="description_short" value="11048937" />
@@ -18,6 +18,16 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2028899/movie480.webm" />
+					<enum name="content_type" value="video" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2028899/movie.184x123.jpg" />
+				</template_reference>
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231456/ss_a3e74fe0ec368f84db0e114b7e6fef96db4a12a2.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231456/ss_a3e74fe0ec368f84db0e114b7e6fef96db4a12a2.116x65.jpg" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>

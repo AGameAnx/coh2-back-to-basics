@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update\aef\light-vehicles\wc51_acc" />
 		<locstring name="name" value="11078668" />
 		<locstring name="description" value="11078667" />
-		<string name="icon" value="Icons_intel_bulletins_lightvehicle_aef_wc51_acc" />
+		<icon name="icon" value="Icons_intel_bulletins_lightvehicle_aef_wc51_acc" />
 		<locstring name="description_short" value="11078718" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="394318" />

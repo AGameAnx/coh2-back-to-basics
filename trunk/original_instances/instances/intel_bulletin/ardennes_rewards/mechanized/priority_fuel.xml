@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\ardennes_rewards\mechanized\priority_fuel" />
 		<locstring name="name" value="11079346" />
 		<locstring name="description" value="11079347" />
-		<string name="icon" value="Icons_intel_bulletins_buildings_aef_cache_fuel_cost" />
+		<icon name="icon" value="Icons_intel_bulletins_buildings_aef_cache_fuel_cost" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="395924" />
 			<list name="search_tags">

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\hmgs\recruit_acc_dmg_hmg" />
 		<locstring name="name" value="11037010" />
 		<locstring name="description" value="11037009" />
-		<string name="icon" value="Icons_intel_bulletins_hmg_hmg10" />
+		<icon name="icon" value="Icons_intel_bulletins_hmg_hmg10" />
 		<locstring name="description_short" value="11037941" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5916" />

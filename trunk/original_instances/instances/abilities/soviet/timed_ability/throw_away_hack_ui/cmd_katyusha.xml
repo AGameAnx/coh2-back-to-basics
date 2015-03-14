@@ -81,11 +81,11 @@
 			<locstring name="extra_text" value="11007976" />
 			<locstring name="help_text" value="11008011" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_vehicles_vehicle_soviet_katyush_rocket_truck" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_katyush_rocket_truck" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
 			<locstring name="screen_name" value="11008012" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

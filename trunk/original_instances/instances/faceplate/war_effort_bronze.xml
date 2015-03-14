@@ -1,7 +1,7 @@
 <instance description="Bronze reward for participation in the War Effort" template="faceplate">
 	<group name="faceplate_bag">
 		<locstring name="name" value="11077345" />
-		<string name="icon" value="_WarEffort_Bronze_Icon" />
+		<icon name="icon" value="_WarEffort_Bronze_Icon" />
 		<instance_reference name="store_item" value="" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="402117" />
@@ -17,7 +17,7 @@
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
-		<string name="icon_secondary" value="_WarEffort_Bronze" />
+		<icon name="icon_secondary" value="_WarEffort_Bronze" />
 		<string name="frame_selector" value="" />
 	</group>
 	<uniqueid name="pbgid" value="85900" />

@@ -67,7 +67,7 @@
 								<template_reference name="ui_info" value="tables\ui_info">
 									<locstring name="screen_name" value="11070870" />
 									<locstring name="help_text" value="11069508" />
-									<string name="icon_name" value="Icons_abilities_ability_aef_command_radio_net_01" />
+									<icon name="icon_name" value="Icons_abilities_ability_aef_command_radio_net_01" />
 									<string name="hotkey_name" value="" />
 								</template_reference>
 								<uniqueid name="id" value="254603" />
@@ -113,7 +113,7 @@
 								<template_reference name="ui_info" value="tables\ui_info">
 									<locstring name="screen_name" value="11070871" />
 									<locstring name="help_text" value="11069508" />
-									<string name="icon_name" value="Icons_abilities_ability_aef_command_radio_net_02" />
+									<icon name="icon_name" value="Icons_abilities_ability_aef_command_radio_net_02" />
 									<string name="hotkey_name" value="" />
 								</template_reference>
 								<uniqueid name="id" value="254605" />
@@ -164,7 +164,7 @@
 								<template_reference name="ui_info" value="tables\ui_info">
 									<locstring name="screen_name" value="11070872" />
 									<locstring name="help_text" value="11069508" />
-									<string name="icon_name" value="Icons_abilities_ability_aef_command_radio_net_03" />
+									<icon name="icon_name" value="Icons_abilities_ability_aef_command_radio_net_03" />
 									<string name="hotkey_name" value="" />
 								</template_reference>
 								<uniqueid name="id" value="254608" />

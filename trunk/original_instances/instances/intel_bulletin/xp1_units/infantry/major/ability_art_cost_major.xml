@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\infantry\major\ability_cost_major" />
 		<locstring name="name" value="11072940" />
 		<locstring name="description" value="11072941" />
-		<string name="icon" value="Icons_intel_bulletins_infantry_aef_major_cost" />
+		<icon name="icon" value="Icons_intel_bulletins_infantry_aef_major_cost" />
 		<locstring name="description_short" value="11072939" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="274587" />

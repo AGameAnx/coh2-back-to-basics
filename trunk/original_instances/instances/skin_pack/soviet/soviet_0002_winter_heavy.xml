@@ -1,8 +1,8 @@
 <instance description="Collector's Soviet Heavy Winter" template="skin_pack">
 	<group name="skin_pack_bag">
 		<string name="skin_name" value="soviet_0002_winter" />
-		<string name="icon" value="Icons_swatches_swatch_soviet_0002_winter_heavy" />
-		<string name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0002_winter_heavy" />
+		<icon name="icon" value="Icons_swatches_swatch_soviet_0002_winter_heavy" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0002_winter_heavy" />
 		<locstring name="name" value="11035405" />
 		<locstring name="description" value="11046998" />
 		<enum name="kill_type" value="heavy_armour" />
@@ -21,6 +21,11 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
+				<template_reference name="metadata" value="item_metadata\content_url_metadata">
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231470/ss_17f6f5fd6bc8fcb7ee3759517cf1cdbe5dddb06e.600x338.jpg" />
+					<enum name="content_type" value="image" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231470/header.jpg" />
+				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\winter_heavy" />
 		</template_reference>

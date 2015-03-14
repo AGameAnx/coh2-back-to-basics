@@ -115,7 +115,7 @@
 			<bool name="ignore_relations" value="False" />
 			<template_reference name="wants_prone_firing_option" value="options\none">
 			</template_reference>
-			<enum name="attack_ground_type" value="outside_hold_only" />
+			<enum name="attack_ground_type" value="not_allowed" />
 		</group>
 		<group name="burst">
 			<bool name="can_burst" value="False" />
@@ -300,7 +300,7 @@
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
-		<string name="icon_name" value="" />
+		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.5" />
 			<float name="burst_multiplier" value="1" />

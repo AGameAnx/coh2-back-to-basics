@@ -38,7 +38,7 @@
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11072867" />
 								<locstring name="help_text" value="11072868" />
-								<string name="icon_name" value="Icons_abilities_ability_west_german_jagdpanzer_prowl_off" />
+								<icon name="icon_name" value="Icons_abilities_ability_west_german_jagdpanzer_prowl_off" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="257947" />
@@ -130,11 +130,11 @@
 			<locstring name="extra_text" value="11071448" />
 			<locstring name="help_text" value="11071447" />
 			<string name="hotkey_name" value="C" />
-			<string name="icon_name" value="Icons_abilities_ability_west_german_jagdpanzer_prowl_off" />
+			<icon name="icon_name" value="Icons_abilities_ability_west_german_jagdpanzer_prowl_off" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11071446" />
-			<string name="icon_alternate_name" value="Icons_abilities_ability_west_german_jagdpanzer_prowl_on" />
+			<icon name="icon_alternate_name" value="Icons_abilities_ability_west_german_jagdpanzer_prowl_on" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="11075033" />
 			<locstring name="screen_name_alternate" value="11075032" />

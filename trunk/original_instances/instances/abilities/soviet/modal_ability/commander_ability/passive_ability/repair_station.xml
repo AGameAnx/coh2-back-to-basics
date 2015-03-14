@@ -77,11 +77,11 @@
 			<locstring name="extra_text" value="11051992" />
 			<locstring name="help_text" value="11051990" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_buildings_building_common_support_bay" />
+			<icon name="icon_name" value="Icons_buildings_building_common_support_bay" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11051991" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

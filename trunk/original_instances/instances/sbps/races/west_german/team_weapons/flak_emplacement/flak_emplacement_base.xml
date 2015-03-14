@@ -11,9 +11,9 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11073990" />
 						<string name="hotkey_name" value="K" />
-						<string name="icon_name" value="Icons_buildings_building_west_german_flak_emplacement" />
+						<icon name="icon_name" value="Icons_buildings_building_west_german_flak_emplacement" />
 						<bool name="minimap_team_only" value="False" />
-						<string name="minimap_texture" value="Icons_symbols_gunnest" />
+						<icon name="minimap_texture" value="Icons_symbols_gunnest" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="False" />
 						<locstring name="screen_name" value="11073989" />
@@ -41,13 +41,13 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="29" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<string name="portrait_name_winter" value="Icons_portraits_building_west_german_flak_emplacement_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_building_west_german_flak_emplacement_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<string name="portrait_name_summer" value="Icons_portraits_building_west_german_flak_emplacement_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_building_west_german_flak_emplacement_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
 						<locstring name="brief_text" value="0" />
 						<locstring name="screen_name_short" value="0" />
@@ -55,7 +55,7 @@
 						<bool name="decoratable" value="False" />
 						<bool name="show_in_build_log" value="False" />
 						<bool name="speaker_highest_priority" value="False" />
-						<string name="symbol_icon_name" value="Icons_symbols_building_west_german_flak_emplacement_symbol" />
+						<icon name="symbol_icon_name" value="Icons_symbols_building_west_german_flak_emplacement_symbol" />
 						<enum name="ui_style" value="default" />
 					</group>
 					<instance_reference name="ext_key" value="" />
@@ -421,7 +421,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="11075049" />
 				<string name="hotkey_name" value="reinforce" />
-				<string name="icon_name" value="Icons_odds_reinforce" />
+				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="11071801" />

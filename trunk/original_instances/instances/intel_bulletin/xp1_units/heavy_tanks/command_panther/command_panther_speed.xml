@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\xp1_units\heavy_tank\command_panther\movespeed_command_panther" />
 		<locstring name="name" value="11072607" />
 		<locstring name="description" value="11072608" />
-		<string name="icon" value="Icons_intel_bulletins_heavytank_cmd_panther_speed" />
+		<icon name="icon" value="Icons_intel_bulletins_heavytank_cmd_panther_speed" />
 		<locstring name="description_short" value="11072606" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="260824" />

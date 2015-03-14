@@ -87,11 +87,11 @@
 			<locstring name="extra_text" value="11042873" />
 			<locstring name="help_text" value="11042868" />
 			<string name="hotkey_name" value="U" />
-			<string name="icon_name" value="Icons_abilities_ability_german_ambush_camo_off" />
+			<icon name="icon_name" value="Icons_abilities_ability_german_ambush_camo_off" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11042874" />
-			<string name="icon_alternate_name" value="" />
+			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />

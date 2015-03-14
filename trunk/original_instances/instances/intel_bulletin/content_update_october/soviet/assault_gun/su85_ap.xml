@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\content_update_october\soviet\assault_gun\su85_penetration" />
 		<locstring name="name" value="11081674" />
 		<locstring name="description" value="11079697" />
-		<string name="icon" value="Icons_intel_bulletins_assault_gun_sov_su85_ap" />
+		<icon name="icon" value="Icons_intel_bulletins_assault_gun_sov_su85_ap" />
 		<locstring name="description_short" value="11080245" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396520" />

@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\heavy_tank\elefant\gain_vet_elefant" />
 		<locstring name="name" value="11034227" />
 		<locstring name="description" value="11035027" />
-		<string name="icon" value="Icons_intel_bulletins_heavytank_heavytank12" />
+		<icon name="icon" value="Icons_intel_bulletins_heavytank_heavytank12" />
 		<locstring name="description_short" value="11036764" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="5774" />

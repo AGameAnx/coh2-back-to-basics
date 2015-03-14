@@ -3,7 +3,7 @@
 		<instance_reference name="reward_upgrade" value="upgrade\intel_bulletins\war_effort\soviet\su85_armor_speed" />
 		<locstring name="name" value="11076769" />
 		<locstring name="description" value="11076770" />
-		<string name="icon" value="Icons_intel_bulletins_assault_gun_sov_wareffort_su85_armor_speed" />
+		<icon name="icon" value="Icons_intel_bulletins_assault_gun_sov_wareffort_su85_armor_speed" />
 		<locstring name="description_short" value="11076783" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="388399" />
