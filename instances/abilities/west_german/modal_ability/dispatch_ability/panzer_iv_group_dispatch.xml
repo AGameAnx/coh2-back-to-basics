@@ -90,7 +90,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
-		<enum name="target" value="tp_position" />
+		<enum name="target" value="tp_entity_and_position" />
 		<group name="target_special_validation">
 			<template_reference name="target_special_validation" value="type_ability_target_type\all">
 			</template_reference>

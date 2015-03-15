@@ -1,4 +1,57 @@
 =================================================================
+## v0.31
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- New penetration system changes:
+ * High penetration weapons can now deal additional damage to high health targets to speed up medium and heavy armor combat to approximately where it was prior to the implementation of the new penetration system
+ * Projectiles with special effects on penetration (critical shot) are no longer a part of the system to make sure they work correctly
+ * Fixed an issue where scatter weapon shots would never penetrate
+ * Fixed an issue where modded projectiles would never penetrate
+ * Fixed an issue where criticals would get applied to unintended entities
+ * Ballistic weapons associated with the system can no longer daze the enemy (ISU-152, SU-85, Tiger, Elefant), this is removed because the chance to daze was possible even on penetration which means it happened too often
+ * Changed the way range table is calculated for the new penetration system when ranges are -1
+ * Added a 40% likelihood to cause a damage engine critical on 15%-0% health range, there is now a total of 60% likelihood that a tank will be disabled in some way when reaching this percentage of health
+
+USF:
+- Added 105mm Sherman projectile to the new penetration system
+
+Soviet:
+- KV-2 aoe improved:
+ * Far aoe range 4.7 -> 6.3
+ * Mid aoe range 2.3 -> 2.6
+- B4 artillery rework:
+ * Barrage rrecharge time reduced 130s -> 90s
+ * Precision shot ability removed
+ * Base scatter reduced 9.25 -> 7.75
+ * Scatter max reduced 18.5 -> 17
+ * Mid aoe range 4.2 -> 5.5
+ * Direct fire range reduced 150 -> 90
+- PTRS accuracy increased to make it slightly more viable against enemy infantry:
+ * Near 0.08 -> 0.4
+ * Mid 0.046 -> 0.2
+ * Far 0.035 -> 0.05
+
+Ostheer:
+- Increased the area of effect damage of railway artillery:
+ * Far aoe range 15 -> 18
+ * Max aoe range 15 -> 18
+ * Mid aoe range 6 -> 7.5
+ * All aoe accuracies are now at 5 to fix instances where this artillery would not deal any damage to an entity at all
+- Panzerwerfer damage increased 80 -> 86
+- Added Puma projectile to the new penetration system
+- Updated sniper incendiary round to make it more reliable
+- Tiger can no longer daze the enemy on failed penetration
+- Panzergrenadiers now receive an additional 10% received accuracy reduction at vet 3 (to contend better with riflemen)
+
+OKW:
+- Added Puma projectile to the new penetration system
+
+
+=================================================================
 ## v0.30
 =================================================================
 
@@ -6,35 +59,57 @@
 ## Attributes:
 
 General:
-- A new penetration system has been introduced that considers side armor and angle of attack for all ballistic weapons. The system utilizes a mix between the old and the new models, applying additional damage and additional penetration calculations on hit. As a result of this system. Noteworthy things:
- * Only tank and antitank weapons are affected (not artillery)
- * Base damage reduced by up to 120 (lower reduction for lower damage weapons)
- * Base penetration chance increased by 15% (this is done for the sake of visuals)
- * Area of effect damage and building damage modified proportionally to the base damage reduction to maintain their previous effectiveness and behavior
- * Every hit and bounce now has a calculation on the script-side that can cause the hit to apply up to 180 additional damage
- * Script-side damage does not apply criticals but the criticals of the actual weapon shot are applied after the application of the script-side damage, making the issue not as important
- * The amount of damage applied differs for every weapon - higher damage weapons have higher script-side damage and larger reduction in the original weapon damage. Overall damage per time should not change much, but has the potential to increase with perfectly angled shots and rear shots, or decrease in other cases
- * Front armor hit multiplier - 0.25, side armor hit multiplier - 0.75, rear armor hit multiplier - 1.25
- * The angle of the hit changes the outcome by up to 50% of base likelihood
- * The damage of a penetrating script-side hit is calculated as follows: 160 * min(1, armorRatio*0.5 + 0.5) * (slopeRatio*0.5+0.5). On max slope angle a penetrating hit will cause a minimum of 80 rear armor damage, 70 side armor damage, 50 frontal armor damage
+- A new penetration system has been introduced that considers side armor and angle of attack for all ballistic weapons. Noteworthy things:
+ * Only tank and antitank weapons are affected (not artillery or explosive weapons), for a weapon to be included, it needs to have more or equal to 60 base damage
+ * Affected weapon base weapon penetration reduced to 0.01 for script to work correctly
+ * Affected weapons will now always penetrate targets that aren't vehicles
+ * All of the weapon damage is now applied on the script side
+ * Original armor values are used for every calculation. Side armor is calculated as an average between entity's original front and rear armor
+ * The criticals are applied slightly differently, this is due to the fact that everything has to be done manually with scripting. The overall behavior should mimic the actual attribute criticals pretty closely
+ * The experience is granted slightly differently. The amount of experience depends on the amount of damage dealt and target's max health and target's current veterancy level. The experience granted is doubled if the target is destroyed. The receiving squad's granted experience overall about 10 times smaller and is based on damage dealt, enemy squad max health and veterancy level. Overall experience granted is increased by 20% per veterancy level
+ * Compared to vanilla, overall penetration chance can be increased by up to 43% on perfectly angled shots, and worst case angling results in a penetration chance that is still 3.5% bigger than vanilla. This is done to mitigate the balance impact of reduced damage per hit
+ * The angle of the hit changes the outcome by up to 35% of base penetration likelihood and 45% of base damage (up to 40% reduction on frontal armor on worst angle, up to 30% reduction for side shots, up to 24% on rear shots)
+ * The angle of the hit effect is reduced or negated when weapon penetration is higher than vehicle's armor, further increasing the importance of hitting rear and side armor and reducing or removing the importance of angling for light vehicles
+ * Front and Rear are both hit at 45 degrees to each side (80 in total) from vehicle heading, making side armor be 100 degrees for each side
  * Rear armor kicker message removed
- * A new kicker message for each script-side penetrating hit added
+ * A new kicker message for each script-side penetrations added
+- A new level of criticals have been added to all vehicles. At 15 to 0 percent health a vehicle may now receive destroyed engine and destroyed main gun criticals
+- All non-lethal criticals removed 0 hitpoint critical level for vehicles, eliminating the last hit tank survival (vehicles reaching 0% health but taking crits instead of dying)
+- Abandon critical likelihood reduced (5% -> 2%)
 
 Soviets:
 - SU-76 penetration reduced 130/160/170 -> 80/120/160
 - SU-76 range reduced 63 -> 61
 - KV-2 aoe profile reworked so that direct and indirect fire profiles match each other (overall less squad wipe potential)
 - KV-2 damage decreased 240 -> 210
+- Fear propaganda artillery rework:
+ * Effect radius increased 15 -> 18
+ * Retreat chance reduced 10% -> 5%
+ * Suppression reduced by 60% (1 -> 0.4)
+ * Recharge time 60s -> 90s
+
+Ostheer:
+- Elefant damage increased 240 -> 300
 
 OKW:
 - Volksgrenadier mid range accuracy increased 0.37 -> 0.44
 - Fixed panther requirement description
+- New Panzer IV (properly colored) icon (thanks Mandead)
+- Fix for Panzer IV battlegroup not being usable
+- Jagdtiger damage increased 240 -> 300
 
 -----------------------------------------------------------------
 ## Win condition:
 
+General:
+- Added a script that handles the new penetration system
+
 AI Changes:
 - Disabled the script that was attempting to face tanks in a correct direction, as it wasn't working correctly
+- Increased the range at which AI considers it safe to stop retreating its tanks
+- Minor tweaks to tank retreat on low health logic
+- Slightly increased AI resource bonuses
+- Improved the way AI considers its health left percentage for retreat
 
 
 =================================================================
@@ -53,7 +128,7 @@ USF:
 - Slight adjustments made to Paratrooper LMG suppressive fire ability to make it more useful (work in progress):
  * Suppresses faster
  * Duration increased 11.1s -> 15s
- * 'Slowed!' kicker message removed, because no actual slow effect is applied
+ * 'Slowed!' kicker message removed as there is no actual slow effect applied
  * Cost reduced 20mu -> 10mu
 - Lieutenant tier cost reduced 200mp/50f -> 200mp/45f
 - Captain tier cost increased 200mp/50f -> 200mp/55f

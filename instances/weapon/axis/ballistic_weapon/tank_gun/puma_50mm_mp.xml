@@ -22,7 +22,7 @@
 				<float name="max" value="0.125" />
 			</group>
 		</group>
-		<string name="name" value="Kwk40 75mm Tank Gun (Panzer IV)" />
+		<string name="name" value="Puma Weapon" />
 		<group name="reload">
 			<group name="frequency">
 				<float name="min" value="0" />
@@ -155,9 +155,9 @@
 		</group>
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="penetration">
-			<float name="near" value="160" />
-			<float name="far" value="80" />
-			<float name="mid" value="120" />
+			<float name="near" value="0.01" />
+			<float name="far" value="0.01" />
+			<float name="mid" value="0.01" />
 		</group>
 		<group name="suppressed">
 			<float name="pinned_burst_multiplier" value="1" />

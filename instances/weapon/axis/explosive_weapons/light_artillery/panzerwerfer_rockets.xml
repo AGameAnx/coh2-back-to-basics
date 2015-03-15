@@ -120,10 +120,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="80" />
+			<float name="min" value="86" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="80" />
+			<float name="max" value="86" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -256,7 +256,7 @@
 			</group>
 			<group name="tp_garrison_cover">
 				<float name="suppression_multiplier" value="0" />
-				<float name="damage_multiplier" value="2" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="1" />
 			</group>
@@ -352,9 +352,9 @@
 				<float name="mid" value="0.075" />
 			</group>
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="25" />
-				<float name="near" value="50" />
-				<float name="mid" value="37.5" />
+				<float name="far" value="30.38" />
+				<float name="near" value="37.5" />
+				<float name="mid" value="33.75" />
 			</template_reference>
 			<bool name="can_harm_shooter" value="False" />
 			<group name="accuracy">

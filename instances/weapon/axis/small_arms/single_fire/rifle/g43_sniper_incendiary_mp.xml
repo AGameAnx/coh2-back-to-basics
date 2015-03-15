@@ -268,8 +268,8 @@
 			</group>
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.25" />
-				<float name="mid" value="0.625" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
 			</group>
 			<bool name="has_friendly_fire" value="False" />
 			<group name="building_damage">

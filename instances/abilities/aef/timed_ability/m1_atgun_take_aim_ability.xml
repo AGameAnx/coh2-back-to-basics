@@ -97,6 +97,14 @@
 							<enum name="change_target_type" value="entities" />
 							<uniqueid name="id" value="1073743552" />
 						</template_reference>
+						<template_reference name="action" value="action\override_weapon_attributes">
+							<float name="hardpoint" value="1" />
+							<string name="munition_name" value="shell_90mm" />
+							<instance_reference name="projectile" value="ebps\projectile\aef_57mm_at_gun_take_aim" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<string name="target_name" value="" />
+							<string name="tracer_name" value="" />
+							<uniqueid name="id" value="1073744144" />
+						</template_reference>
 					</list>
 					<enum name="change_target_type" value="squad" />
 					<uniqueid name="id" value="1073743553" />

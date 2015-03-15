@@ -171,7 +171,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical_rear" />
+							<instance_reference name="critical" value="critical\_no_critical_rear" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="False" />
 								<bool name="rear" value="True" />
@@ -204,7 +204,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical_rear" />
+							<instance_reference name="critical" value="critical\_no_critical_rear" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="False" />
 								<bool name="rear" value="True" />
@@ -241,7 +241,7 @@
 					</list>
 				</group>
 				<group name="critical_group">
-					<float name="max_health_percentage" value="0.25" />
+					<float name="max_health_percentage" value="0.15" />
 					<list name="critical_info">
 						<group name="info">
 							<float name="weight" value="90" />
@@ -265,7 +265,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical_rear" />
+							<instance_reference name="critical" value="critical\_no_critical_rear" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="False" />
 								<bool name="rear" value="True" />

@@ -134,7 +134,7 @@
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
-			<float name="distance_scatter_max" value="18.5" />
+			<float name="distance_scatter_max" value="17" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
@@ -389,7 +389,7 @@
 			<group name="distance">
 				<float name="near" value="1.7" />
 				<float name="far" value="9.4" />
-				<float name="mid" value="4.2" />
+				<float name="mid" value="5.5" />
 			</group>
 			<group name="suppression">
 				<float name="near" value="1" />

@@ -22,7 +22,7 @@
 				<float name="max" value="1.5" />
 			</group>
 		</group>
-		<string name="name" value="Stug Target Weak Point" />
+		<string name="name" value="Puma Target Weak Point" />
 		<group name="reload">
 			<group name="frequency">
 				<float name="min" value="0" />
@@ -73,7 +73,7 @@
 		<icon name="icon_name" value="" />
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\50mm_puma_gun_projectile" />
+			<instance_reference name="projectile" value="ebps\projectile\50mm_puma_gun_projectile_critical" mod="23d6cdb82724460dbcb21e1a9162e473" />
 		</group>
 		<group name="burst">
 			<group name="incremental_target_table">
