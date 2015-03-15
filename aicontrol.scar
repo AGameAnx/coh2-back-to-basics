@@ -1,6 +1,4 @@
 
---loadfile('_modscripts/coh2aicontrol.scar')()
-
 --string.lpad = function(str, len, char)
 --	if char == nil then char = ' ' end
 --	return string.rep(char, len - string.len(str))..str
@@ -317,10 +315,16 @@ UNIT_CONTROL_TYPE = {
 	KEEP_DISTANCE = 3, -- (mobile arty) - NOT IMPLEMENTED YET
 }
 
+local function AIControl_IsSquadVehicle(squad)
+	return Squad_GetMax(squad) == 1 and Entity_IsVehicle(Squad_EntityAt(squad, 0))
+end
+
 AIControl.MainControl = {
 	Settings = {
 		Init_UpdateFreq = 1, -- how many normal AI control updates we'll update this script
 		SecondaryUpdateTicks = 9, -- every n updates we'll check for new HQs
+		
+		RetreatTactic_BattleRadius = 50,
 		
 		UnitControl = {
 			UnitSettings = { -- [Blueprint] = {control type, default range, step count, setup target angle check threshold}
@@ -508,6 +512,91 @@ AIControl.MainControl = {
 		return result
 	end,
 	
+	RetreatTactic = function(squad)
+		local result = -0.5
+		
+		local pos = Squad_GetPosition(squad)
+		local p = Squad_GetPlayerOwner(squad)
+		local team = Player_GetTeam(p)
+		local enemyTeam = Team_GetEnemyTeam(team)
+		local squadsNearSG_enemy = SGroup_CreateIfNotFound("BtB_RetreatTactic_squadsNear_enemy")
+		local squadsNearSG_allied = SGroup_CreateIfNotFound("BtB_RetreatTactic_squadsNear_allied")
+		SGroup_Clear(squadsNearSG_enemy)
+		SGroup_Clear(squadsNearSG_allied)
+		Team_GetAllSquadsNearMarker(Team_GetPlayers(enemyTeam), squadsNearSG_enemy , pos, AIControl.MainControl.Settings.RetreatTactic_BattleRadius)
+		Team_GetAllSquadsNearMarker(Team_GetPlayers(team)     , squadsNearSG_allied, pos, AIControl.MainControl.Settings.RetreatTactic_BattleRadius)
+		
+		--local maxHealth = Squad_GetHealthMax(squad)
+		local healthLeft = Squad_GetHealth(squad)
+		local healthLeftPercentage = Squad_GetHealthPercentage(squad)
+		result = result + 5*math.max(0, 0.35 - healthLeftPercentage)
+		
+		if Squad_IsInHoldEntity(squad) then
+			result = result - 1.5
+			if Squad_IsUnderAttack(squad, 5) then
+				if Squad_Count(squad) == 1 then result = result + 1.75 end
+				result = result + 0.5
+				if healthLeftPercentage < 0.275 or healthLeft < 70 then
+					result = result + 5
+				end
+				result = result + math.max(0, math.min((90-healthLeft)/11, 5))
+			end
+			if Squad_IsAttacking(squad, 5) then
+				result = result - 1.5
+			end
+		else
+			if Squad_IsUnderAttack(squad, 5) then
+				if Squad_Count(squad) == 1 then result = result + 1.75 end
+				result = result + 0.25
+				if healthLeftPercentage < 0.275 or healthLeft < 80 then
+					result = result + 5
+				end
+				result = result + math.max(0, math.min((90-healthLeft)/11, 5))
+			end
+			if Squad_IsAttacking(squad, 5) then result = result - 0.35 end
+		end
+		
+		--if AIPlayer_IsFireConePosition(s_selfplayer, pos) then result = result + 1.5 end
+		if Squad_IsPinned(squad) then result = result + 2.5 end
+		
+		local closestEnemyDistaceSq -- squared
+		local enemyValue = 0
+		local friendlyValue = 0
+		local squadsNearSG_enemyCount = SGroup_Count(squadsNearSG_enemy)
+		local squadsNearSG_alliedCount = SGroup_Count(squadsNearSG_allied)
+		for i=1,squadsNearSG_enemyCount do
+			local enemySquad = SGroup_GetSpawnedSquadAt(squadsNearSG_enemy, i)
+			if AIControl_IsSquadVehicle(enemySquad) then
+				enemyValue = enemyValue + Squad_GetHealth(enemySquad)/150
+			else
+				enemyValue = enemyValue + Squad_Count(enemySquad)/2
+			end
+			local dist = World_DistanceSquaredPointToPoint(pos, Squad_GetPosition(enemySquad))
+			if not closestEnemyDistaceSq or closestEnemyDistaceSq > closestEnemyDistaceSq then
+				closestEnemyDistaceSq = dist
+			end
+		end
+		for i=1,squadsNearSG_alliedCount do
+			local friendlySquad = SGroup_GetSpawnedSquadAt(squadsNearSG_allied, i)
+			if not AIControl_IsSquadVehicle(friendlySquad) then
+				friendlyValue = friendlyValue + Squad_GetHealth(friendlySquad)/150
+			else
+				friendlyValue = friendlyValue + Squad_Count(friendlySquad)/2
+			end
+		end
+		
+		if closestEnemyDistaceSq and closestEnemyDistaceSq < 400 then
+			result = result + (420-closestEnemyDistaceSq)/180
+		end
+		
+		SGroup_Destroy(squadsNearSG_enemy)
+		SGroup_Destroy(squadsNearSG_allied)
+		
+		result = result + enemyValue/4.5 - math.min(friendlyValue, enemyValue)/5.75
+		
+		return math.max(0, result)
+	end,
+	
 	Update = function()
 		if g_AIControl_Pause then
 			return
@@ -515,25 +604,60 @@ AIControl.MainControl = {
 		
 		--print("Updating")
 		
-		-- Manual reinforcing
+		-- Manual reinforcing and retreating
 		for i=1,AIControl.PlayerCount do
 			local player = World_GetPlayerAt(AIControl.Players[i])
 			local squads = Player_GetSquads(player)
 			for j=1,SGroup_CountSpawned(squads) do
-				local s = SGroup_GetSpawnedSquadAt(squads, j)
+				local squad = SGroup_GetSpawnedSquadAt(squads, j)
 				
+				-- reinforcing
 				local tmpSG = SGroup_CreateIfNotFound("tempsg")
-				SGroup_Single(tmpSG, s)
+				SGroup_Single(tmpSG, squad)
 				
-				if Squad_CanInstantReinforceNow(s) then
-					if not Squad_IsReinforcing(s) or Squad_GetProductionQueueSize(s) < 2 then
+				if Squad_CanInstantReinforceNow(squad) then
+					if not Squad_IsReinforcing(squad) or Squad_GetProductionQueueSize(squad) < 2 then
 						Cmd_ReinforceUnit(tmpSG, 1)
 					end
-				elseif Squad_IsReinforcing(s) then -- Fix for reinforce bug
+				elseif Squad_IsReinforcing(squad) then -- Fix for reinforce bug
 					Command_Squad(player, tmpSG, SCMD_CancelProduction, false)
 				end
 				
 				SGroup_Destroy(tmpSG)
+				
+				-- retreating
+				if Squad_IsUnderAttack(squad, 2) and not Squad_IsRetreating(squad) and not AIControl_IsSquadVehicle(squad) then
+					local retreatDemand = AIControl.MainControl.RetreatTactic(squad)
+					CustomDebug.Print('Squad: ['..BP_GetName(Squad_GetBlueprint(squad))..'] Retreat Demand: '..retreatDemand)
+					if retreatDemand > 0 then
+						local r = World_GetRand(0, 8)
+						if r <= retreatDemand then
+							local retreatSG = SGroup_CreateIfNotFound('BtB_retreat')
+							SGroup_Clear(retreatSG)
+							SGroup_Add(retreatSG, squad)
+							if Squad_IsInHoldEntity(squad) then -- eject squads in entity hold
+								local holdEntity = Squad_GetHoldEntity(squad)
+								local tmpEG = EGroup_CreateIfNotFound('BtB_tmp')
+								EGroup_Clear(tmpEG)
+								EGroup_Add(tmpEG, holdEntity)
+								Cmd_EjectOccupants(tmpEG)
+								EGroup_Destroy(tmpEG)
+								Cmd_Retreat(retreatSG, nil, nil, true) -- queued retreat
+							elseif Squad_IsInHoldSquad(squad) then -- eject squads in squad hold
+								local holdSquad = Squad_GetHoldSquad(squad)
+								local tmpSG = SGroup_CreateIfNotFound('BtB_tmp')
+								SGroup_Clear(tmpSG)
+								SGroup_Add(tmpSG, holdSquad)
+								Cmd_EjectOccupants(tmpSG)
+								SGroup_Destroy(tmpSG)
+								Cmd_Retreat(retreatSG, nil, nil, true) -- queued retreat
+							else
+								Cmd_Retreat(retreatSG)
+							end
+							SGroup_Destroy(retreatSG)
+						end
+					end
+				end
 			end
 		end
 		

@@ -1,0 +1,29 @@
+<instance description="Soviet two colour - blocks" template="skin_pack">
+	<group name="skin_pack_bag">
+		<icon name="icon" value="Icons_swatches_swatch_soviet_0008_summer_medium" />
+		<enum name="kill_type" value="medium_armour" />
+		<enum name="season" value="summer" />
+		<instance_reference name="store_item" value="thq_store\skins\soviet\soviet_0008_summer_medium" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="396504" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074008" />
+				<locstring name="tag" value="11074085" />
+			</list>
+			<enum name="rarity" value="common" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\soviet" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\summer_medium" />
+		</template_reference>
+		<string name="skin_name" value="soviet_0008_summer" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_soviet_0008_summer_medium" />
+		<locstring name="name" value="11085012" />
+		<locstring name="description" value="11050147" />
+		<locstring name="description_short" value="11050146" />
+	</group>
+	<uniqueid name="pbgid" value="19621" />
+</instance>

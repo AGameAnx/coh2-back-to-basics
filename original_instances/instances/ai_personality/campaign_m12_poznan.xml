@@ -1,0 +1,25 @@
+<instance description="custom AI personality for Campaign mission 12 Poznan" template="ai_personality">
+	<group name="ai_personality_bag">
+		<group name="easy">
+			<instance_reference name="settings" value="ai_settings\default_campaign_easy" />
+			<file name="lua_script" value="campaign_m12_poznan" />
+			<instance_reference name="economy" value="ai_economy_group\default" />
+		</group>
+		<group name="standard">
+			<instance_reference name="settings" value="ai_settings\default_campaign_standard" />
+			<file name="lua_script" value="campaign_m12_poznan" />
+			<instance_reference name="economy" value="ai_economy_group\default" />
+		</group>
+		<group name="hard">
+			<instance_reference name="settings" value="ai_settings\default_campaign_hard" />
+			<file name="lua_script" value="campaign_m12_poznan" />
+			<instance_reference name="economy" value="ai_economy_group\default" />
+		</group>
+		<group name="hardest">
+			<instance_reference name="settings" value="ai_settings\default_campaign_hardest" />
+			<file name="lua_script" value="campaign_m12_poznan" />
+			<instance_reference name="economy" value="ai_economy_group\default" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="91166" />
+</instance>

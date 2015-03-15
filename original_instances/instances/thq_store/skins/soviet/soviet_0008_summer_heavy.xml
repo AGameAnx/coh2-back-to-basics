@@ -1,0 +1,13 @@
+<instance description="Soviet Four Colour Variation (more rectilinear) Medium" template="thq_store">
+	<group name="unlock_item">
+		<enum name="item_category" value="skins" />
+		<instance_reference name="unlock_upgrade" value="" />
+		<bool name="community" value="False" />
+		<bool name="purchaseable" value="True" />
+		<list name="dlc_tokens">
+			<string name="dlc_token" value="344722" />
+			<string name="dlc_token" value="231573" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="91404" />
+</instance>
