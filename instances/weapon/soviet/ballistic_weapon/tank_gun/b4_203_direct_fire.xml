@@ -133,10 +133,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="350" />
+			<float name="min" value="450" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="350" />
+			<float name="max" value="450" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -238,7 +238,7 @@
 			<group name="distance">
 				<float name="far" value="9.4" />
 				<float name="near" value="1.7" />
-				<float name="mid" value="4.6" />
+				<float name="mid" value="5.5" />
 			</group>
 			<group name="accuracy">
 				<float name="far" value="5" />
