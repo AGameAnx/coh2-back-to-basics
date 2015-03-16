@@ -628,7 +628,6 @@ AIControl.MainControl = {
 				-- retreating
 				if Squad_IsUnderAttack(squad, 2) and not Squad_IsRetreating(squad) and not AIControl_IsSquadVehicle(squad) then
 					local retreatDemand = AIControl.MainControl.RetreatTactic(squad)
-					CustomDebug.Print('Squad: ['..BP_GetName(Squad_GetBlueprint(squad))..'] Retreat Demand: '..retreatDemand)
 					if retreatDemand > 0 then
 						local r = World_GetRand(0, 8)
 						if r <= retreatDemand then
