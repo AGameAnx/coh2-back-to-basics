@@ -31,8 +31,12 @@ OKW:
 -----------------------------------------------------------------
 ## Win condition:
 
+General:
+- Command point gain rate increased 65% -> 75%
+
 AI Changes:
-- Large improvements to unit retreat logic
+- Large improvements to infantry retreat logic
+- Large improvements to vehicle retreat, safety and repair logic
 
 
 =================================================================

@@ -889,7 +889,7 @@ AIControl.MainControl = {
 						
 						local directionToHq = normalizeVector(Util_ScarPos(playerHQPosition.x - pos.x, playerHQPosition.z - pos.z))
 						local initialStep = 0
-						local stepsTotal = 13
+						local stepsTotal = 11
 						local maxDist = initialStep + stepsTotal
 						local surroundingSafety = AIControl.MainControl.GetSurroundingSafety({x, y}, initialStep, stepsTotal, team)
 						table.sort(surroundingSafety, function(a, b) return a[3] > b[3] end)
@@ -932,7 +932,7 @@ AIControl.MainControl = {
 						end
 						if (AIControl.MainControl.VehicleControl.RepairsRetreat[team][squadGameID] and healthPercentage < 0.9)
 								or hasDamageCritical
-								or healthPercentage < 0.55 then
+								or healthPercentage < 0.5 then
 							lockSquad = true
 							lowHealth = true
 							--print('  RETREATING DUE TO LOW HEALTH!')
@@ -940,9 +940,9 @@ AIControl.MainControl = {
 							AIControl.MainControl.VehicleControl.RepairsRetreat[team][squadGameID] = nil
 						end
 						
-						local dangerRequiredToRetreat = 90 - 85*math.min(1, 1-healthPercentage/0.525)
+						local dangerRequiredToRetreat = 85 - 70*math.min(1, 1-healthPercentage/0.525)
 						if healthPercentage == 1 then
-							dangerRequiredToRetreat = dangerRequiredToRetreat + 12
+							dangerRequiredToRetreat = dangerRequiredToRetreat + 15
 						end
 						
 						local retreatDistance
@@ -952,8 +952,9 @@ AIControl.MainControl = {
 							retreatDistance = math.min(120, 3*(collectiveDanger-dangerRequiredToRetreat))
 						end
 						
-						local retreatLocation = Util_ScarPos(
+						local retreatLocation = World_Pos(
 							pos.x + retreatDirection.x*retreatDistance,
+							pos.y,
 							pos.z + retreatDirection.z*retreatDistance
 						)
 						
@@ -972,19 +973,19 @@ AIControl.MainControl = {
 							
 							local inSafety = false
 							if lowHealth then
-								local enemySafetyData = AIControl.MainControl.GetSafetyData(x, y, enemyTeam)
-								if collectiveDanger < -5 then
+								if collectiveDanger < -14 then
 									Cmd_Stop(sg)
 									inSafety = true
 								end
-							elseif retreatDistance < 10 then
+							elseif retreatDistance < 5 then
 								inSafety = true
 							end
 							
 							if not inSafety then
-								if (not lowHealth or World_DistancePointToPoint(pos, retreatLocation) > 15) and World_DistancePointToPoint(pos, playerHQPosition) > 15 then
-									Command_SquadMovePosFacing(player, sg, retreatLocation, Util_ScarPos(pos.x - retreatDirection.x*10, pos.z - retreatDirection.z*10), false, true)
+								if (not lowHealth or World_DistancePointToPoint(pos, retreatLocation) > 5) and World_DistancePointToPoint(pos, playerHQPosition) > 15 then
+									Command_SquadMovePosFacing(player, sg, retreatLocation, World_Pos(pos.x - retreatDirection.x*10, retreatLocation.y, pos.z - retreatDirection.z*10), false, true)
 								else
+									CustomDebug.Print('1')
 									Cmd_Stop(sg)
 									lockSquad = false
 								end
@@ -994,10 +995,10 @@ AIControl.MainControl = {
 						end
 						
 						if not lockSquad then
-							local angleThreshold
+							--[[local angleThreshold
 							
 							-- Rotate if facing badly
-							--[[if table.getn(surroundingSafety) > 0 and surroundingSafety[1][3] > 0.15 then
+							if table.getn(surroundingSafety) > 0 and surroundingSafety[1][3] > 0.15 then
 								angleThreshold = 30
 								
 								local highestDangerPosition = AIControl.Grid.AveragePosData[ surroundingSafety[1][1] ][ surroundingSafety[1][2] ][enemyTeam]

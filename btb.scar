@@ -33,7 +33,7 @@ function BtB_Init()
 		-- TODO: Save modifiers and reset on init
 		Modify_PlayerResourceRate(p, RT_Manpower, 30/60/8, MUT_Addition)
 		--Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
-		Modify_PlayerResourceRate(p, RT_Action, 0.65, MUT_Multiplication)
+		Modify_PlayerResourceRate(p, RT_Action, 0.75, MUT_Multiplication)
 		Modify_PlayerSightRadius(p, 1.05)
 		Modify_Upkeep(p, 1.3)
 		
