@@ -391,7 +391,7 @@
 		<group name="accuracy">
 			<float name="far" value="0.14" />
 			<float name="near" value="0.59" />
-			<float name="mid" value="0.35" />
+			<float name="mid" value="0.39" />
 		</group>
 		<group name="damage_over_time">
 			<template_reference name="damage_over_time" value="dot_type\none">

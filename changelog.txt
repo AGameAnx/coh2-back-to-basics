@@ -7,10 +7,26 @@
 
 Soviet:
 - IS-2 projectile added to the new penetration system
+- SU-76 main weapon area of effect improved:
+ * Near 0.3 -> 0.35
+ * Mid 0.6 -> 0.8
+ * Far 1.2 -> 1.5
+- Conscript sandbag construction time 80s -> 100s
+- Conscript mid range accuracy increased 0.35 -> 0.39
+- Conscript build time reduced 25s -> 22s
+
+Ostheer:
+- Panzerschrek damage decreased 150 -> 140
+- Panzerschrek no longer deals 25% increased damage (due to 25% damage on deflection)
 
 OKW:
 - Increased Sturmpioneer veterancy requirements
 - Sturmpioneer base repair rate increased 2 -> 2.5, but repair rate bonuses reduced for both the veterancy bonus and the minesweeper upgrade bonus (both 1 -> 0.5). Max repair rate is now 3.5, compared to vanilla 5 and 4 of previous mod version
+- Panzerschrek damage decreased 150 -> 140
+- Panzerschrek no longer deals 25% increased damage (due to 25% damage on deflection)
+- Raketenwerfer damage decreased 160 -> 145
+- Raketenwerfer aim times increased significantly to prevent it from firing instantly upon setup, new aim times are still vastly superior to vanilla
+- Raketenwerfer penetration reduced 200/190/180 -> 200/180/160, long range penetration now matches panzerschrek penetration more closely
 
 -----------------------------------------------------------------
 ## Win condition:

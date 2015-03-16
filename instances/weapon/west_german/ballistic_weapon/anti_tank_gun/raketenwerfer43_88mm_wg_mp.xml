@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="teardown">
 			<float name="duration" value="0" />
@@ -179,7 +179,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0.5" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<group name="moving">
 			<float name="moving_start_time" value="0.5" />
@@ -276,7 +277,8 @@
 				<float name="min" value="3.8" />
 				<float name="max" value="4.3" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="mid" value="1" />
 				<float name="far" value="1" />
@@ -290,18 +292,18 @@
 		<float name="fx_building_hit_delay" value="0" />
 		<group name="aim">
 			<group name="aim_time_multiplier">
-				<float name="mid" value="1" />
+				<float name="mid" value="1.25" />
 				<float name="far" value="4" />
-				<float name="near" value="0.75" />
+				<float name="near" value="1" />
 			</group>
 			<group name="ready_aim_time">
-				<float name="min" value="0.125" />
-				<float name="max" value="0.25" />
+				<float name="min" value="0.375" />
+				<float name="max" value="0.625" />
 			</group>
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="fire_aim_time">
-				<float name="min" value="0.125" />
-				<float name="max" value="0.25" />
+				<float name="min" value="0.375" />
+				<float name="max" value="0.625" />
 			</group>
 			<float name="post_firing_aim_time" value="2" />
 		</group>
@@ -310,79 +312,15 @@
 		<bool name="fx_always_visible" value="False" />
 		<group name="deflection">
 			<list name="on_deflected_actions">
-				<template_reference name="action" value="action\requirement_action">
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_all_in_list">
-							<locstring name="ui_name" value="0" />
-							<enum name="reason" value="usage" />
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_unit_type">
-									<locstring name="ui_name" value="0" />
-									<bool name="search_load_out" value="False" />
-									<template_reference name="qualify_option" value="options\none">
-									</template_reference>
-									<enum name="unit_type" value="wg_jagdtiger" />
-									<bool name="owned_by_player_only" value="True" />
-									<enum name="reason" value="usage" />
-								</template_reference>
-								<template_reference name="requirement" value="requirements\required_critical">
-									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="False" />
-									<enum name="reason" value="usage" />
-									<instance_reference name="critical_name" value="critical\vehicle_crew_dazed_jagdtiger" />
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<uniqueid name="id" value="66289" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<locstring name="phrase" value="0" />
-						<int name="phrase_order" value="0" />
-					</template_reference>
-					<bool name="no_retrigger" value="True" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="action_table">
-						<template_reference name="action" value="action\random_action">
-							<list name="random_actions">
-								<group name="action_choice">
-									<list name="actions">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="1" />
-											<instance_reference name="critical" value="critical\vehicle_crew_dazed_jagdtiger" />
-											<uniqueid name="id" value="66291" />
-										</template_reference>
-									</list>
-									<int name="weight" value="3" />
-								</group>
-								<group name="action_choice">
-									<list name="actions">
-										<template_reference name="action" value="action\no_action">
-											<uniqueid name="id" value="391909" />
-											<template_reference name="ui_help_text" value="options\none">
-											</template_reference>
-										</template_reference>
-									</list>
-									<int name="weight" value="3" />
-								</group>
-							</list>
-							<bool name="instant" value="False" />
-							<uniqueid name="id" value="66290" />
-						</template_reference>
-					</list>
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="check_self" value="False" />
-				</template_reference>
 			</list>
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
 		</group>
 		<group name="damage">
-			<float name="max" value="160" />
-			<float name="min" value="160" />
-			<list name="on_penetrated_actions" />
+			<float name="max" value="145" />
+			<float name="min" value="145" />
+			<list name="on_penetrated_actions">
+			</list>
 		</group>
 		<group name="damage_over_time">
 			<template_reference name="damage_over_time" value="dot_type\none">

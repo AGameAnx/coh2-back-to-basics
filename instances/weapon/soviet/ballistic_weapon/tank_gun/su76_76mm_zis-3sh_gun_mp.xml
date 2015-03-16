@@ -326,9 +326,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="distance">
-				<float name="mid" value="0.6" />
-				<float name="far" value="1.2" />
-				<float name="near" value="0.3" />
+				<float name="mid" value="0.8" />
+				<float name="far" value="1.5" />
+				<float name="near" value="0.35" />
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
 			<group name="building_damage">
@@ -350,7 +350,7 @@
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
 				<float name="angle_left" value="0" />
-				<float name="radius" value="1.2" />
+				<float name="radius" value="1.5" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<group name="damage">

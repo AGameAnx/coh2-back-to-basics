@@ -313,12 +313,12 @@
 		<group name="deflection">
 			<list name="on_deflected_actions">
 			</list>
-			<float name="deflection_damage_multiplier" value="0.25" />
+			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
 		</group>
 		<group name="damage">
-			<float name="max" value="150" />
-			<float name="min" value="150" />
+			<float name="max" value="140" />
+			<float name="min" value="140" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
