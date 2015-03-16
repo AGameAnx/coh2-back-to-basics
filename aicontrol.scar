@@ -940,16 +940,16 @@ AIControl.MainControl = {
 							AIControl.MainControl.VehicleControl.RepairsRetreat[team][squadGameID] = nil
 						end
 						
-						local dangerRequiredToRetreat = 90 - 70*math.min(1, 1-healthPercentage/0.525)
+						local dangerRequiredToRetreat = 90 - 85*math.min(1, 1-healthPercentage/0.525)
 						if healthPercentage == 1 then
 							dangerRequiredToRetreat = dangerRequiredToRetreat + 12
 						end
 						
 						local retreatDistance
 						if lowHealth then
-							retreatDistance = 110
+							retreatDistance = 120
 						else
-							retreatDistance = math.min(110, 3*(collectiveDanger-dangerRequiredToRetreat))
+							retreatDistance = math.min(120, 3*(collectiveDanger-dangerRequiredToRetreat))
 						end
 						
 						local retreatLocation = Util_ScarPos(
