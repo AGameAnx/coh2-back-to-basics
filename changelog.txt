@@ -5,6 +5,12 @@
 -----------------------------------------------------------------
 ## Attributes:
 
+Soviet:
+- IS-2 projectile added to the new penetration system
+
+OKW:
+- Increased Sturmpioneer veterancy requirements
+- Sturmpioneer base repair rate increased 2 -> 2.5, but repair rate bonuses reduced for both the veterancy bonus and the minesweeper upgrade bonus (both 1 -> 0.5). Max repair rate is now 3.5, compared to vanilla 5 and 4 of previous mod version
 
 -----------------------------------------------------------------
 ## Win condition:

@@ -154,7 +154,7 @@
 													<uniqueid name="id" value="1073742540" />
 												</template_reference>
 												<template_reference name="action" value="action\heal_action">
-													<float name="amount" value="2" />
+													<float name="amount" value="2.5" />
 													<group name="target_info">
 														<template_reference name="target_info" value="type_ability_target_type\has_any_in_list">
 															<list name="target_infos">
@@ -197,7 +197,7 @@
 													</list>
 													<list name="action_table">
 														<template_reference name="action" value="action\heal_action">
-															<float name="amount" value="1" />
+															<float name="amount" value="0.5" />
 															<group name="target_info">
 																<template_reference name="target_info" value="type_ability_target_type\has_any_in_list">
 																	<list name="target_infos">
@@ -250,7 +250,7 @@
 													</list>
 													<list name="action_table">
 														<template_reference name="action" value="action\heal_action">
-															<float name="amount" value="1" />
+															<float name="amount" value="0.5" />
 															<group name="target_info">
 																<template_reference name="target_info" value="type_ability_target_type\has_any_in_list">
 																	<list name="target_infos">
