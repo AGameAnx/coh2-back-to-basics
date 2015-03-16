@@ -873,6 +873,7 @@ AIControl.MainControl = {
 				if not hasDisableCritical then
 					local squadGameID = Squad_GetGameID(squad)
 					local healthPercentage = Squad_GetHealthPercentage(squad)
+					local health = Squad_GetHealth(squad)
 					--print("["..BP_GetName(Squad_GetBlueprint(squad)).."] --- "..team.." "..World_GetPlayerIndex(player))
 					
 					SGroup_Single(sg, squad)
@@ -944,6 +945,9 @@ AIControl.MainControl = {
 						if healthPercentage == 1 then
 							dangerRequiredToRetreat = dangerRequiredToRetreat + 15
 						end
+						if health < 450 then
+							dangerRequiredToRetreat = dangerRequiredToRetreat - 30 * (1 - math.max(0, health - 250) / 200)
+						end
 						
 						local retreatDistance
 						if lowHealth then
@@ -985,7 +989,6 @@ AIControl.MainControl = {
 								if (not lowHealth or World_DistancePointToPoint(pos, retreatLocation) > 5) and World_DistancePointToPoint(pos, playerHQPosition) > 15 then
 									Command_SquadMovePosFacing(player, sg, retreatLocation, World_Pos(pos.x - retreatDirection.x*10, retreatLocation.y, pos.z - retreatDirection.z*10), false, true)
 								else
-									CustomDebug.Print('1')
 									Cmd_Stop(sg)
 									lockSquad = false
 								end
