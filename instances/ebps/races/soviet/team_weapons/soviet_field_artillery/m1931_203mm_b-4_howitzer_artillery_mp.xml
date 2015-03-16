@@ -27,8 +27,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="150" />
-					<float name="manpower" value="120" />
+					<float name="fuel" value="105" />
+					<float name="manpower" value="150" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
