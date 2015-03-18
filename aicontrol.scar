@@ -1173,3 +1173,4 @@ function AIControl_Init()
 end
 
 Scar_AddInit(AIControl_Init)
+

@@ -9,7 +9,7 @@ import("WinConditions/Annihilate.scar")
 
 -- Deployment
 import('WinConditions/btb_ballistics.scar')
-import('WinConditions/aicontrol.scar')
+--import('WinConditions/aicontrol.scar')
 
 -- Development
 --loadfile('_modscripts/btb_customdebug.scar')()
