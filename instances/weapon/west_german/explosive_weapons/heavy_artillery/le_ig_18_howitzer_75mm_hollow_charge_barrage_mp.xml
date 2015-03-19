@@ -27,8 +27,8 @@
 			<list name="on_reload_actions">
 			</list>
 			<group name="duration">
-				<float name="min" value="2.3" />
-				<float name="max" value="3.6" />
+				<float name="min" value="2" />
+				<float name="max" value="2.4" />
 			</group>
 			<group name="frequency">
 				<float name="min" value="0" />
@@ -120,25 +120,25 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="80" />
+			<float name="min" value="100" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="80" />
+			<float name="max" value="100" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
-			<float name="angle_scatter" value="6" />
+			<float name="angle_scatter" value="4.5" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
-			<float name="distance_scatter_max" value="9" />
+			<float name="distance_scatter_max" value="7" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="5" />
-			<float name="distance_scatter_ratio" value="0.9" />
+			<float name="distance_scatter_ratio" value="0.75" />
 			<float name="fow_angle_multiplier" value="1" />
 			<float name="fow_distance_multiplier" value="1" />
 		</group>
@@ -335,14 +335,14 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.05" />
+				<float name="far" value="0.01" />
 				<float name="mid" value="0.15" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="5" />
+				<float name="radius" value="4" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
@@ -374,7 +374,7 @@
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="distance">
-				<float name="near" value="0.7" />
+				<float name="near" value="0.4" />
 				<float name="far" value="3.8" />
 				<float name="mid" value="1.8" />
 			</group>

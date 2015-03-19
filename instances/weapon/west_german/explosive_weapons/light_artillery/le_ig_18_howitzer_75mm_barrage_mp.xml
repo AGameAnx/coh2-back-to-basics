@@ -28,7 +28,7 @@
 			</list>
 			<group name="duration">
 				<float name="min" value="2.3" />
-				<float name="max" value="3" />
+				<float name="max" value="2.8" />
 			</group>
 			<group name="frequency">
 				<float name="min" value="0" />

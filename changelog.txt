@@ -1,4 +1,24 @@
 =================================================================
+## v0.33
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Ostheer:
+- MG42 damage increased 8 -> 9 (hits to kill 10 -> 9)
+- MG42 armor piercing ammunition damage multiplication reduced 2 -> 1.25
+
+OKW:
+- le.IG hollow rounds barrage rework:
+ * Reload speed reduced, it was slower than normal barrage, now slightly faster 2.3-3.6s -> 2-2.4s
+ * Scatter reduced significantly
+ * Area of effect is no longer stronger than normal barrage
+ * Damage increased 80 -> 100
+- le.IG standard barrage reload speed increased, randomness reduced 2.3-3.1s -> 2.3-2.8s
+
+
+=================================================================
 ## v0.32
 =================================================================
 

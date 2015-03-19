@@ -57,10 +57,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="8" />
+			<float name="min" value="9" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="8" />
+			<float name="max" value="9" />
 		</group>
 		<group name="anim_table">
 			<string name="variety_name" value="" />
