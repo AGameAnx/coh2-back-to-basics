@@ -7,6 +7,9 @@
 
 Soviet:
 - KV-2 area of effect reduced slightly to prevent instant squad wipes:
+ * Far range distance 4.7 -> 6.3
+ * Indirect max range distance 6.3 -> 7
+ * Indirect far range distance 6.3 -> 7
  * Mid range damage 0.25 -> 0.2
  * Near range distance 0.5 -> 0.35
  * Indirect fire aoe is now more similar to normal fire

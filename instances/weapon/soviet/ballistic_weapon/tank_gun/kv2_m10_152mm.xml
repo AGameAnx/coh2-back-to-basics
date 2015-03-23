@@ -327,7 +327,7 @@
 		<group name="area_effect">
 			<group name="distance">
 				<float name="mid" value="2.3" />
-				<float name="far" value="4.7" />
+				<float name="far" value="6.3" />
 				<float name="near" value="0.35" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
