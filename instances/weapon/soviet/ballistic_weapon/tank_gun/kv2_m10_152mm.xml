@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="teardown">
 			<float name="duration" value="0" />
@@ -136,7 +136,8 @@
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<group name="moving">
 			<float name="moving_start_time" value="0" />
@@ -311,7 +312,8 @@
 				<float name="min" value="10" />
 				<float name="max" value="12" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration_multiplier">
 				<float name="mid" value="1" />
 				<float name="far" value="1" />
@@ -326,7 +328,7 @@
 			<group name="distance">
 				<float name="mid" value="2.3" />
 				<float name="far" value="4.7" />
-				<float name="near" value="0.5" />
+				<float name="near" value="0.35" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<group name="building_damage">
@@ -350,9 +352,9 @@
 				<float name="angle_left" value="0" />
 				<float name="radius" value="6.3" />
 			</group>
-			<instance_reference name="weapon_building_damage" mod="23d6cdb82724460dbcb21e1a9162e473" value="weapon_building_damage\aoe_profile_he_shell" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<group name="damage">
-				<float name="mid" value="0.25" />
+				<float name="mid" value="0.22" />
 				<float name="far" value="0.05" />
 				<float name="near" value="1" />
 			</group>
@@ -361,7 +363,7 @@
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="120" />
 				<float name="mid" value="135" />
-				<float name="near" value="150" />
+				<float name="near" value="180" />
 			</template_reference>
 			<group name="accuracy">
 				<float name="mid" value="5" />
@@ -397,7 +399,8 @@
 		<group name="damage">
 			<float name="max" value="210" />
 			<float name="min" value="210" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 		</group>
 		<group name="cooldown">
 			<group name="duration">
@@ -416,7 +419,8 @@
 		</group>
 		<bool name="fx_always_visible" value="False" />
 		<group name="deflection">
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="True" />
 		</group>
