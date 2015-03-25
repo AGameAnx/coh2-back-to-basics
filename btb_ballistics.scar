@@ -2,10 +2,9 @@
 local modID = '23d6cdb82724460dbcb21e1a9162e473'
 local modIDlength = string.len(modID)
 
+-- TODO: All veterancy multipliers
+-- TODO: All abilities that modify receieved penetration & damage
 -- TODO: More criticals (Brew up, kill gunner, sturmtiger abandon)
--- TODO: AP shells (weapons done: usf at, pak40, pak43, stug-g, elefant)
--- TODO: Fix crew shock for heavy tanks
--- TODO: Improve visuals for heavily angled hits (take angle of attack depending on projectile position, not just heading)
 
 local ballistics_settings = {
 	["aef_57mm_at_gun"] = {
@@ -586,6 +585,37 @@ local ballistics_vehicles = {
 	["sws_halftrack_sp"] = {11, true, 5.5},
 }
 
+local ballistics_veterancySettings = {
+	['m36_tank_destroyer_mp'] = {
+		[3] = {
+			['penetration'] = {
+				{'mult', 1.3}
+			}
+		}
+	},
+	['su_76m'] = {
+		[2] = {
+			['damage'] = {
+				{'add', 20}
+			}
+		}
+	},
+	['su_76m_mp'] = {
+		[2] = {
+			['damage'] = {
+				{'add', 20}
+			}
+		}
+	},
+}
+local ballistics_upgradeSettings = {
+	['mark_vehicle_upg'] = {
+		['damage'] = {
+			{'mult', 1.35}
+		}
+	}
+}
+
 local ballistics_criticals = {
 	['damage_engine'] = BP_GetCriticalBlueprint('vehicle_damage_engine'),
 	['destroy_engine'] = BP_GetCriticalBlueprint('vehicle_destroy_engine'),
@@ -746,7 +776,7 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 		return
 	end
 	
-	-- Extra splats for ballistic weaponry
+	-- Extra effects for ballistic weaponry
 	--if scartype(target) == ST_SCARPOS then
 	--	Misc_DoWeaponHitEffectOnPosition(Util_GetRandomPosition(hitPosition, 0.65), BP_GetWeaponBlueprint('panzerschreck_atw_mp'), true)
 	--end
@@ -793,10 +823,10 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 				if owner then
 					--CustomDebug.Print('    has owner')
 					local tmpsg = SGroup_CreateIfNotFound('ballistics_tmp')
-					World_GetSquadsNearPoint(owner, tmpsg, hitPosition, 2, OT_Enemy)
+					World_GetSquadsNearPoint(owner, tmpsg, hitPosition, 2.5, OT_Enemy)
 					local targetCount = SGroup_CountSpawned(tmpsg)
 					if targetCount <= 0 then
-						World_GetSquadsNearPoint(owner, tmpsg, addedHeadingHitPosition, 2, OT_Enemy)
+						World_GetSquadsNearPoint(owner, tmpsg, addedHeadingHitPosition, 2.5, OT_Enemy)
 						targetCount = SGroup_CountSpawned(tmpsg)
 					end
 					if targetCount > 0 then
@@ -816,10 +846,10 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 					
 					if scartype(target) ~= ST_ENTITY then
 						local tmpeg = EGroup_CreateIfNotFound('ballistics_tmp')
-						World_GetEntitiesNearPoint(owner, tmpeg, hitPosition, 2, OT_Enemy)
+						World_GetEntitiesNearPoint(owner, tmpeg, hitPosition, 2.5, OT_Enemy)
 						local targetCount = EGroup_CountSpawned(tmpeg)
 						if targetCount <= 0 then
-							World_GetEntitiesNearPoint(owner, tmpeg, addedHeadingHitPosition, 2, OT_Enemy)
+							World_GetEntitiesNearPoint(owner, tmpeg, addedHeadingHitPosition, 2.5, OT_Enemy)
 							targetCount = EGroup_CountSpawned(tmpeg)
 						end
 						if targetCount > 0 then
@@ -831,10 +861,10 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 			end
 			if scartype(target) ~= ST_ENTITY then
 				local tmpeg = EGroup_CreateIfNotFound('ballistics_tmp')
-				World_GetNeutralEntitiesNearPoint(tmpeg, hitPosition, 2)
+				World_GetNeutralEntitiesNearPoint(tmpeg, hitPosition, 2.5)
 				local targetCount = EGroup_CountSpawned(tmpeg)
 				if targetCount <= 0 then
-					World_GetNeutralEntitiesNearPoint(tmpeg, addedHeadingHitPosition, 2)
+					World_GetNeutralEntitiesNearPoint(tmpeg, addedHeadingHitPosition, 2.5)
 					targetCount = EGroup_CountSpawned(tmpeg)
 				end
 				if targetCount > 0 then
@@ -933,16 +963,81 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 			
 			slope = math.min(1, slope + math.max(0, weaponPenetration/vehicleArmor/2 - 1)) -- slope is not as important if penetration value is larger than vehicle armor
 			
-			local penetrationChance = 1000 * math.max(0, weaponPenetration*1.15/vehicleArmor) * (0.9 + slope*0.35)
+			-- Modify base weapon damage for high hitpoint targets
 			if Entity_GetHealthMax(target) > 400 then
 				weaponDamage = weaponDamage * (1 + 0.175 * math.max(0, math.min(1, (Entity_GetHealthMax(target) - 400)/350)) * math.max(0, math.min(1, weaponPenetration/vehicleArmor)))
 			end
-			--[[if shootingEntity then
-				local shootingEntitySquad = Entity_GetSquad(shootingEntity)
-				if shootingEntitySquad then
-					penetrationChance = penetrationChance * (1 + Squad_GetVeterancyRank(shootingEntitySquad)*0.05)
+			
+			-- Apply modifiers for veterancy and entity upgrades
+			if shootingEntity then
+				local veterancySettings = ballistics_veterancySettings[removeModID(BP_GetName(Entity_GetBlueprint(shootingEntity)))]
+				if veterancySettings then
+					local shootingEntitySquad = Entity_GetSquad(shootingEntity)
+					local shootingEntitySquadVeterancy = Squad_GetVeterancyRank(shootingEntitySquad)
+					if shootingEntitySquad then
+						for i,v in pairs(veterancySettings) do
+							if i <= shootingEntitySquadVeterancy then
+								if v['damage'] then
+									for j,w in pairs(v['damage']) do
+										if w[1] == 'mult' then
+											--CustomDebug.Print('Applied veterancy damage multiplier '..w[2])
+											weaponDamage = weaponDamage * w[2]
+										elseif w[1] == 'add' then
+											--CustomDebug.Print('Applied veterancy damage addition '..w[2])
+											weaponDamage = weaponDamage + w[2]
+										end
+									end
+								end
+								if v['penetration'] then
+									for j,w in pairs(v['penetration']) do
+										if w[1] == 'mult' then
+											--CustomDebug.Print('Applied veterancy penetration multiplier '..w[2])
+											weaponPenetration = weaponPenetration * w[2]
+										elseif w[1] == 'add' then
+											--CustomDebug.Print('Applied veterancy penetration addition '..w[2])
+											weaponPenetration = weaponPenetration + w[2]
+										end
+									end
+								end
+							end
+						end
+					end
 				end
-			end]]
+			end
+			
+			for i,v in pairs(ballistics_upgradeSettings) do
+				local upgradePBG = BP_GetUpgradeBlueprint(modID..':'..i)
+				if not upgradePBG then
+					upgradePBG = BP_GetUpgradeBlueprint(i)
+				end
+				local targetSquad = Entity_GetSquad(target)
+				if Entity_HasUpgrade(target, upgradePBG) or (targetSquad and Squad_HasUpgrade(targetSquad, upgradePBG)) then
+					if v['damage'] then
+						for j,w in pairs(v['damage']) do
+							if w[1] == 'mult' then
+								--CustomDebug.Print('Applied upgrade damage multiplier '..w[2])
+								weaponDamage = weaponDamage * w[2]
+							elseif w[1] == 'add' then
+								--CustomDebug.Print('Applied upgrade damage addition '..w[2])
+								weaponDamage = weaponDamage + w[2]
+							end
+						end
+					end
+					if v['penetration'] then
+						for j,w in pairs(v['penetration']) do
+							if w[1] == 'mult' then
+								--CustomDebug.Print('Applied upgrade penetration multiplier '..w[2])
+								weaponPenetration = weaponPenetration * w[2]
+							elseif w[1] == 'add' then
+								--CustomDebug.Print('Applied upgrade penetration addition '..w[2])
+								weaponPenetration = weaponPenetration + w[2]
+							end
+						end
+					end
+				end
+			end
+			
+			local penetrationChance = 1000 * math.max(0, weaponPenetration*1.15/vehicleArmor) * (0.9 + slope*0.35)
 			
 			--[[CustomDebug.Print('Weapon penetration: '..string.format('%.0f', weaponPenetration))
 			CustomDebug.Print('Vehicle armor: '..string.format('%.0f', vehicleArmor))
