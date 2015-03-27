@@ -14,6 +14,9 @@ Soviet:
  * Near range distance 0.5 -> 0.35
  * Indirect fire aoe is now more similar to normal fire
 
+OKW:
+- Raketenwerfer no longer received 100000 penetration when shooting out of camouflage, this value is changed to 50
+
 -----------------------------------------------------------------
 ## Win condition:
 
@@ -22,6 +25,7 @@ General:
  * Increased penetration system scatter projectile search radius 2 -> 2.5
  * Added veterancy modifier functionality
  * Added target entity upgrade modifier functionality
+ * Added all weapons that have veterancy or damage modifiers on any abilities to the system
 
 
 =================================================================

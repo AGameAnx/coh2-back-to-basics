@@ -879,33 +879,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\modifier_apply_ext">
 			<list name="modifiers">
-				<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-					<enum name="application_type" value="apply_to_weapon" />
-					<bool name="exclusive" value="False" />
-					<string name="modifier_id" value="" />
-					<string name="target_type_name" value="hardpoint_01" />
-					<enum name="usage_type" value="multiplication" />
-					<float name="value" value="1" />
-					<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-				</template_reference>
-				<template_reference name="modifier" value="modifiers\damage_weapon_modifier">
-					<enum name="application_type" value="apply_to_weapon" />
-					<bool name="exclusive" value="False" />
-					<string name="modifier_id" value="" />
-					<string name="target_type_name" value="hardpoint_01" />
-					<enum name="usage_type" value="multiplication" />
-					<float name="value" value="1" />
-					<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
-				</template_reference>
-				<template_reference name="modifier" value="modifiers\received_damage_modifier">
-					<enum name="application_type" value="apply_to_entity" />
-					<bool name="exclusive" value="False" />
-					<string name="modifier_id" value="" />
-					<string name="target_type_name" value="" />
-					<enum name="usage_type" value="multiplication" />
-					<float name="value" value="1" />
-					<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">

@@ -609,6 +609,24 @@ local ballistics_veterancySettings = {
 	},
 }
 local ballistics_upgradeSettings = {
+	['raketenwerfer_first_shot'] = {
+		['damage'] = {
+			{'mult', 1.25}
+		},
+		['penetration'] = {
+			{'add', 50}
+		}
+	},
+	['jagdpanzer_first_shot'] = {
+		['damage'] = {
+			{'mult', 1.25}
+		},
+		['penetration'] = {
+			{'mult', 1.25}
+		}
+	}
+}
+local ballistics_enemyUpgradeSettings = {
 	['mark_vehicle_upg'] = {
 		['damage'] = {
 			{'mult', 1.35}
@@ -1003,9 +1021,41 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 						end
 					end
 				end
+			
+				for i,v in pairs(ballistics_upgradeSettings) do
+					local upgradePBG = BP_GetUpgradeBlueprint(modID..':'..i)
+					if not upgradePBG then
+						upgradePBG = BP_GetUpgradeBlueprint(i)
+					end
+					local shootingEntitySquad = Entity_GetSquad(shootingEntity)
+					if Entity_HasUpgrade(shootingEntity, upgradePBG) or (shootingEntitySquad and Squad_HasUpgrade(shootingEntitySquad, upgradePBG)) then
+						if v['damage'] then
+							for j,w in pairs(v['damage']) do
+								if w[1] == 'mult' then
+									--CustomDebug.Print('Applied upgrade damage multiplier '..w[2])
+									weaponDamage = weaponDamage * w[2]
+								elseif w[1] == 'add' then
+									--CustomDebug.Print('Applied upgrade damage addition '..w[2])
+									weaponDamage = weaponDamage + w[2]
+								end
+							end
+						end
+						if v['penetration'] then
+							for j,w in pairs(v['penetration']) do
+								if w[1] == 'mult' then
+									--CustomDebug.Print('Applied upgrade penetration multiplier '..w[2])
+									weaponPenetration = weaponPenetration * w[2]
+								elseif w[1] == 'add' then
+									--CustomDebug.Print('Applied upgrade penetration addition '..w[2])
+									weaponPenetration = weaponPenetration + w[2]
+								end
+							end
+						end
+					end
+				end
 			end
 			
-			for i,v in pairs(ballistics_upgradeSettings) do
+			for i,v in pairs(ballistics_enemyUpgradeSettings) do
 				local upgradePBG = BP_GetUpgradeBlueprint(modID..':'..i)
 				if not upgradePBG then
 					upgradePBG = BP_GetUpgradeBlueprint(i)
@@ -1015,10 +1065,10 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 					if v['damage'] then
 						for j,w in pairs(v['damage']) do
 							if w[1] == 'mult' then
-								--CustomDebug.Print('Applied upgrade damage multiplier '..w[2])
+								--CustomDebug.Print('Applied enemy upgrade damage multiplier '..w[2])
 								weaponDamage = weaponDamage * w[2]
 							elseif w[1] == 'add' then
-								--CustomDebug.Print('Applied upgrade damage addition '..w[2])
+								--CustomDebug.Print('Applied enemy upgrade damage addition '..w[2])
 								weaponDamage = weaponDamage + w[2]
 							end
 						end
@@ -1026,10 +1076,10 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 					if v['penetration'] then
 						for j,w in pairs(v['penetration']) do
 							if w[1] == 'mult' then
-								--CustomDebug.Print('Applied upgrade penetration multiplier '..w[2])
+								--CustomDebug.Print('Applied enemy upgrade penetration multiplier '..w[2])
 								weaponPenetration = weaponPenetration * w[2]
 							elseif w[1] == 'add' then
-								--CustomDebug.Print('Applied upgrade penetration addition '..w[2])
+								--CustomDebug.Print('Applied enemy upgrade penetration addition '..w[2])
 								weaponPenetration = weaponPenetration + w[2]
 							end
 						end

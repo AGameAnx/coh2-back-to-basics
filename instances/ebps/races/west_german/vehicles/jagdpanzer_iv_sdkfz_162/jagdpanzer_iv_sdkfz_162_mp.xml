@@ -899,51 +899,35 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\timed_action">
-							<float name="duration" value="2" />
-							<bool name="fire_and_forget" value="True" />
-							<list name="subactions">
-								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
-									<bool name="permanent" value="False" />
-									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\damage_weapon_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiply_add" />
-											<float name="value" value="1.5" />
-											<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
-										</template_reference>
-										<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiply_add" />
-											<float name="value" value="1.5" />
-											<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-										</template_reference>
-										<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiply_add" />
-											<float name="value" value="1.5" />
-											<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073741925" />
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\damage_weapon_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_01" />
+									<enum name="usage_type" value="multiply_add" />
+									<float name="value" value="1.5" />
+									<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_01" />
+									<enum name="usage_type" value="multiply_add" />
+									<float name="value" value="1.5" />
+									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073741926" />
+							<uniqueid name="id" value="1073744191" />
 						</template_reference>
 						<template_reference name="action" value="action\change_target_action">
 							<list name="actions">
 								<template_reference name="action" value="action\timed_action">
-									<float name="duration" value="3" />
+									<float name="duration" value="2" />
 									<bool name="fire_and_forget" value="False" />
 									<list name="subactions">
 										<template_reference name="action" value="action\animator_set_state">
@@ -956,6 +940,27 @@
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073741928" />
+								</template_reference>
+								<template_reference name="action" value="action\upgrade_add">
+									<bool name="apply_to_entities_in_squad" value="False" />
+									<bool name="trigger_publish_event" value="False" />
+									<instance_reference name="upgrade" value="upgrade\west_german\jagdpanzer_first_shot" mod="23d6cdb82724460dbcb21e1a9162e473" />
+									<uniqueid name="id" value="1073744187" />
+								</template_reference>
+								<template_reference name="action" value="action\delay">
+									<float name="delay" value="2" />
+									<float name="delay_min" value="0" />
+									<bool name="progress_bar" value="False" />
+									<bool name="randomize" value="False" />
+									<list name="delayed_actions">
+										<template_reference name="action" value="action\upgrade_remove">
+											<bool name="apply_to_entities_in_squad" value="False" />
+											<instance_reference name="upgrade" value="upgrade\west_german\jagdpanzer_first_shot" mod="23d6cdb82724460dbcb21e1a9162e473" />
+											<uniqueid name="id" value="1073744199" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073744198" />
+									<bool name="can_prevent_refund" value="True" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
