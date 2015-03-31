@@ -39,6 +39,7 @@ OKW:
 ## Win condition:
 
 General:
+- Penetration system base weapon penetration increase on perfect angle reduced from 15% to 10%
 - Upkeep now slowly increases with player's total population
 - Base upkeep reduced 1.3 -> 1.2
 - Upkeep may grow to up to 1.35 upon reaching popcap
