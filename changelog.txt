@@ -1,4 +1,50 @@
 =================================================================
+## v0.35
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- All small arms weapons reworked:
+ * Damage increased by 22.5%
+ * Far accuracy decreased by 34%
+ * Min accuracy decreased by 40%
+ * Near accuracy decreased by 10%
+- All HMG suppression radii decreased 20-18 -> 15-13
+
+Soviet:
+- Mounted Dshk 38 HMG penetration reduced 2/3/4 -> 1/2/3
+- Katyusha damage increased 80 -> 85
+- IL-2 Sturmovik autocannon rework:
+ * Damage increased 8 -> 30
+ * Now has a chance to miss making cover important
+ * AOE damage added
+ * AOE profile improved
+- 152mm M-30 field artillery base scatter reduced 5 -> 3.5
+- B-4 base scatter reduced 7.75 -> 6.5
+
+USF:
+- All 50cal machine gun near penetration reduced 1.5/2/3 -> 1/1.5/2
+- M2hb 50cal HMG damage reduced 35 -> 30
+
+Ostheer:
+- MG42 penetration reduced 1.4/1.8/2.2 -> 1/1.4/1.8
+- Grenadier LMG42 damage increased 7 -> 9
+
+OKW:
+- MG34 penetration reduced 1.3/1.7/2.1 -> 0.9/1.3/1.7
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Upkeep now slowly increases with player's total population
+- Base upkeep reduced 1.3 -> 1.2
+- Upkeep may grow to up to 1.35 upon reaching popcap
+
+
+=================================================================
 ## v0.34
 =================================================================
 

@@ -761,113 +761,122 @@ function BtB_ProjectileFired(projectile, shootingEntity, target)
 		CustomDebug.Print('  Target: {'..string.format('%.0f, %.0f, %.0f', target.x, target.y, target.z)..'}')
 	end]]
 	
-	if not projectile or not ballistics_settings[projectileName] or not target then
-		return
+	if projectile and ballistics_settings[projectileName] and target then
+		cleanupProjectileData()
+		
+		table.insert(projectileData, {
+			World_GetGameTime(),
+			Entity_GetGameID(projectile),
+			Entity_GetPosition(projectile)--[[,
+			projectile,
+			Entity_GetGameID(shootingEntity),
+			shootingEntity,
+			Entity_GetGameID(target),
+			target,]]
+		})
 	end
-	cleanupProjectileData()
-	
-	table.insert(projectileData, {
-		World_GetGameTime(),
-		Entity_GetGameID(projectile),
-		Entity_GetPosition(projectile)--[[,
-		projectile,
-		Entity_GetGameID(shootingEntity),
-		shootingEntity,
-		Entity_GetGameID(target),
-		target,]]
-	})
-	
-	--CustomDebug.Print('  Cached projectile data')
 end
 function BtB_ProjectileLanded(projectile, shootingEntity, target)
 	local projectileName = removeModID(BP_GetName(Entity_GetBlueprint(projectile)))
 	--CustomDebug.Print('Projectile landed: '..projectileName)
 	
-	if not projectile or not target then
-		return
-	end
-	
-	local hitPosition = Entity_GetPosition(projectile)
-	
-	local weaponSettings = ballistics_settings[projectileName]
-	if not weaponSettings then
-		return
-	end
-	
-	-- Extra effects for ballistic weaponry
-	--if scartype(target) == ST_SCARPOS then
-	--	Misc_DoWeaponHitEffectOnPosition(Util_GetRandomPosition(hitPosition, 0.65), BP_GetWeaponBlueprint('panzerschreck_atw_mp'), true)
-	--end
-	
-	local weaponDamage = weaponSettings[1]
-	
-	local projectileIndex = nil
-	local projectileGameID = Entity_GetGameID(projectile)
-	for i,v in pairs(projectileData) do
-		if v[2] == projectileGameID then
-			projectileIndex = i
-			break
-		end
-	end
-	
-	if projectileIndex then
-		--CustomDebug.Print('  Projectile data found')
-		--[[if scartype(target) == ST_ENTITY then
-			CustomDebug.Print('  Target: '..removeModID(BP_GetName(Entity_GetBlueprint(target))))
-		else
-			CustomDebug.Print('  Target: {'..string.format('%.0f, %.0f, %.0f', target.x, target.y, target.z)..'}')
-		end]]
-		local origin = projectileData[projectileIndex]
-		local originPosition = origin[3]
-		local projectileHeading = World_Pos(originPosition.x - hitPosition.x, originPosition.y - hitPosition.y, originPosition.z - hitPosition.z)
-		local travelDistance = math.sqrt(projectileHeading.x^2 + projectileHeading.y^2 + projectileHeading.z^2)
-		if travelDistance < 8 and shootingEntity then
-			originPosition = Entity_GetPosition(shootingEntity)
-			projectileHeading = World_Pos(originPosition.x - hitPosition.x, originPosition.y - hitPosition.y, originPosition.z - hitPosition.z)
-			travelDistance = math.sqrt(projectileHeading.x^2 + projectileHeading.y^2 + projectileHeading.z^2)
-		end
-		projectileHeading = normalizeVector(projectileHeading)
-		if scartype(target) ~= ST_ENTITY then
-			--[[CustomDebug.Print('  Height at location: '..World_GetHeightAt(target.x, target.z))
-			CustomDebug.Print('  Height difference: '..math.abs(World_GetHeightAt(target.x, target.z) - target.y))
-			if math.abs(World_GetHeightAt(target.x, target.z) - target.y) <= 0.1 then
-				return
-			end]]
-			local addedHeadingHitPosition = World_Pos(hitPosition.x + projectileHeading.x*2, hitPosition.y + projectileHeading.y*2, hitPosition.z + projectileHeading.z*2)
-			--CustomDebug.Print('  ## Looking for closest target')
-			if shootingEntity and not World_OwnsEntity(shootingEntity) then
-				--CustomDebug.Print('    has shooting entity')
-				local owner = Entity_GetPlayerOwner(shootingEntity)
-				if owner then
-					--CustomDebug.Print('    has owner')
-					local tmpsg = SGroup_CreateIfNotFound('ballistics_tmp')
-					World_GetSquadsNearPoint(owner, tmpsg, hitPosition, 2.5, OT_Enemy)
-					local targetCount = SGroup_CountSpawned(tmpsg)
-					if targetCount <= 0 then
-						World_GetSquadsNearPoint(owner, tmpsg, addedHeadingHitPosition, 2.5, OT_Enemy)
-						targetCount = SGroup_CountSpawned(tmpsg)
-					end
-					if targetCount > 0 then
-						for i=1,targetCount do
-							local sq = SGroup_GetSpawnedSquadAt(tmpsg, i)
-							if Squad_Count(sq) == 1 then
-								local entity = Squad_EntityAt(sq, 0)
-								if Entity_IsVehicle(entity) then
-									--CustomDebug.Print('    got enemy target!')
-									target = entity
-									break
+	if projectile and target then
+		local hitPosition = Entity_GetPosition(projectile)
+		
+		local weaponSettings = ballistics_settings[projectileName]
+		if weaponSettings then
+			-- Extra effects for ballistic weaponry
+			--if scartype(target) == ST_SCARPOS then
+			--	Misc_DoWeaponHitEffectOnPosition(Util_GetRandomPosition(hitPosition, 0.65), BP_GetWeaponBlueprint('panzerschreck_atw_mp'), true)
+			--end
+			
+			local weaponDamage = weaponSettings[1]
+			
+			local projectileIndex = nil
+			local projectileGameID = Entity_GetGameID(projectile)
+			for i,v in pairs(projectileData) do
+				if v[2] == projectileGameID then
+					projectileIndex = i
+					break
+				end
+			end
+			
+			if projectileIndex then
+				--CustomDebug.Print('  Projectile data found')
+				--[[if scartype(target) == ST_ENTITY then
+					CustomDebug.Print('  Target: '..removeModID(BP_GetName(Entity_GetBlueprint(target))))
+				else
+					CustomDebug.Print('  Target: {'..string.format('%.0f, %.0f, %.0f', target.x, target.y, target.z)..'}')
+				end]]
+				local origin = projectileData[projectileIndex]
+				local originPosition = origin[3]
+				local projectileHeading = Entity_GetHeading(projectile)
+				projectileHeading = World_Pos(-projectileHeading.x, -projectileHeading.y, -projectileHeading.z)
+				
+				local travelVector = World_Pos(originPosition.x - hitPosition.x, originPosition.y - hitPosition.y, originPosition.z - hitPosition.z)
+				local travelDistance = math.sqrt(travelVector.x^2 + travelVector.y^2 + travelVector.z^2)
+				if travelDistance < 8 and shootingEntity then
+					originPosition = Entity_GetPosition(shootingEntity)
+					--projectileHeading = World_Pos(originPosition.x - hitPosition.x, originPosition.y - hitPosition.y, originPosition.z - hitPosition.z)
+					travelDistance = math.sqrt(projectileHeading.x^2 + projectileHeading.y^2 + projectileHeading.z^2)
+				end
+				--projectileHeading = normalizeVector(projectileHeading)
+				if scartype(target) ~= ST_ENTITY then
+					--[[CustomDebug.Print('  Height at location: '..World_GetHeightAt(target.x, target.z))
+					CustomDebug.Print('  Height difference: '..math.abs(World_GetHeightAt(target.x, target.z) - target.y))
+					if math.abs(World_GetHeightAt(target.x, target.z) - target.y) <= 0.1 then
+						return
+					end]]
+					local addedHeadingHitPosition = World_Pos(hitPosition.x + projectileHeading.x*2, hitPosition.y + projectileHeading.y*2, hitPosition.z + projectileHeading.z*2)
+					--CustomDebug.Print('  ## Looking for closest target')
+					if shootingEntity and not World_OwnsEntity(shootingEntity) then
+						--CustomDebug.Print('    has shooting entity')
+						local owner = Entity_GetPlayerOwner(shootingEntity)
+						if owner then
+							--CustomDebug.Print('    has owner')
+							local tmpsg = SGroup_CreateIfNotFound('ballistics_tmp')
+							World_GetSquadsNearPoint(owner, tmpsg, hitPosition, 2.5, OT_Enemy)
+							local targetCount = SGroup_CountSpawned(tmpsg)
+							if targetCount <= 0 then
+								World_GetSquadsNearPoint(owner, tmpsg, addedHeadingHitPosition, 2.5, OT_Enemy)
+								targetCount = SGroup_CountSpawned(tmpsg)
+							end
+							if targetCount > 0 then
+								for i=1,targetCount do
+									local sq = SGroup_GetSpawnedSquadAt(tmpsg, i)
+									if Squad_Count(sq) == 1 then
+										local entity = Squad_EntityAt(sq, 0)
+										if Entity_IsVehicle(entity) then
+											--CustomDebug.Print('    got enemy target!')
+											target = entity
+											break
+										end
+									end
 								end
+							end
+							SGroup_Destroy(tmpsg)
+							
+							if scartype(target) ~= ST_ENTITY then
+								local tmpeg = EGroup_CreateIfNotFound('ballistics_tmp')
+								World_GetEntitiesNearPoint(owner, tmpeg, hitPosition, 2.5, OT_Enemy)
+								local targetCount = EGroup_CountSpawned(tmpeg)
+								if targetCount <= 0 then
+									World_GetEntitiesNearPoint(owner, tmpeg, addedHeadingHitPosition, 2.5, OT_Enemy)
+									targetCount = EGroup_CountSpawned(tmpeg)
+								end
+								if targetCount > 0 then
+									target = EGroup_GetSpawnedEntityAt(tmpeg, 1)
+								end
+								EGroup_Destroy(tmpeg)
 							end
 						end
 					end
-					SGroup_Destroy(tmpsg)
-					
 					if scartype(target) ~= ST_ENTITY then
 						local tmpeg = EGroup_CreateIfNotFound('ballistics_tmp')
-						World_GetEntitiesNearPoint(owner, tmpeg, hitPosition, 2.5, OT_Enemy)
+						World_GetNeutralEntitiesNearPoint(tmpeg, hitPosition, 2.5)
 						local targetCount = EGroup_CountSpawned(tmpeg)
 						if targetCount <= 0 then
-							World_GetEntitiesNearPoint(owner, tmpeg, addedHeadingHitPosition, 2.5, OT_Enemy)
+							World_GetNeutralEntitiesNearPoint(tmpeg, addedHeadingHitPosition, 2.5)
 							targetCount = EGroup_CountSpawned(tmpeg)
 						end
 						if targetCount > 0 then
@@ -876,132 +885,181 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 						EGroup_Destroy(tmpeg)
 					end
 				end
-			end
-			if scartype(target) ~= ST_ENTITY then
-				local tmpeg = EGroup_CreateIfNotFound('ballistics_tmp')
-				World_GetNeutralEntitiesNearPoint(tmpeg, hitPosition, 2.5)
-				local targetCount = EGroup_CountSpawned(tmpeg)
-				if targetCount <= 0 then
-					World_GetNeutralEntitiesNearPoint(tmpeg, addedHeadingHitPosition, 2.5)
-					targetCount = EGroup_CountSpawned(tmpeg)
-				end
-				if targetCount > 0 then
-					target = EGroup_GetSpawnedEntityAt(tmpeg, 1)
-				end
-				EGroup_Destroy(tmpeg)
-			end
-		end
-		if scartype(target) ~= ST_ENTITY then
-			return
-		end
-		
-		local targetName = removeModID(BP_GetName(Entity_GetBlueprint(target)))
-		--CustomDebug.Print('  Final Target: '..targetName)
-		
-		local vehicleSettings = ballistics_vehicles[targetName]
-		if vehicleSettings then
-			local heading = normalizeVector(Entity_GetHeading(target))
-			
-			local angleOfAttack =
-				math.acos((projectileHeading.x*heading.x + projectileHeading.y*heading.y + projectileHeading.z*heading.z)
-				/(
-					math.sqrt(projectileHeading.x^2 + projectileHeading.y^2 + projectileHeading.z^2)*
-					math.sqrt(heading.x^2 + heading.y^2 + heading.z^2))
-				)
-				*180/3.14159
-			
-			local vehicleArmor
-			local slope
-			local damageMultiplier
-			local hitType
-			
-			local frontAndRearAngle = 45
-			if
-					   (angleOfAttack > -frontAndRearAngle and angleOfAttack < frontAndRearAngle)
-					or (angleOfAttack > 360 - frontAndRearAngle or angleOfAttack < -(360 - frontAndRearAngle))
-						then
-				if angleOfAttack > -frontAndRearAngle and angleOfAttack < frontAndRearAngle then
-					slope = math.abs(angleOfAttack)
-				else
-					slope = 360 - math.abs(angleOfAttack)
-				end
-				damageMultiplier = 1
-				slope = 0.2 + slope / frontAndRearAngle * 0.8
-				hitType = 1
-				vehicleArmor = vehicleSettings[1]
-			elseif
-					   (angleOfAttack > 180 - frontAndRearAngle and angleOfAttack < 180 + frontAndRearAngle)
-					or (angleOfAttack > -(180 - frontAndRearAngle) and angleOfAttack < -(180 + frontAndRearAngle))
-						then
-				damageMultiplier = 1.275
-				slope = 0.3 + math.abs(math.abs(angleOfAttack) - 180) / frontAndRearAngle * 0.7
-				hitType = 3
-				if vehicleSettings[2] then
-					vehicleArmor = vehicleSettings[3]
-				else
-					vehicleArmor = vehicleSettings[1]
-				end
-			else
-				if math.abs(angleOfAttack) > 180 then
-					slope = math.abs(math.abs(angleOfAttack) - 270)
-				else
-					slope = math.abs(math.abs(angleOfAttack) - 90)
-				end
-				damageMultiplier = 1.175
-				slope = slope / (90 - frontAndRearAngle)
-				hitType = 2
-				if vehicleSettings[2] then
-					vehicleArmor = (vehicleSettings[3] + vehicleSettings[1]) / 2
-				else
-					vehicleArmor = vehicleSettings[1]
-				end
-			end
-			slope = 1 - slope
-			
-			local weaponRangeTable = weaponSettings[5]
-			if weaponRangeTable[1] == -1 then
-				weaponRangeTable[1] = weaponSettings[4][1]
-			end
-			if weaponRangeTable[2] == -1 then
-				weaponRangeTable[2] = (weaponSettings[4][2] - weaponSettings[4][1]) / 2
-			end
-			if weaponRangeTable[3] == -1 then
-				weaponRangeTable[3] = weaponSettings[4][2]
-			end
-			local weaponPenetration
-			if travelDistance <= weaponRangeTable[1] then
-				weaponPenetration = weaponSettings[3][1]
-			elseif travelDistance <= weaponRangeTable[2] then
-				weaponPenetration = weaponSettings[3][1] + (weaponSettings[3][2] - weaponSettings[3][1])*(travelDistance - weaponRangeTable[1])/(weaponRangeTable[2] - weaponRangeTable[1])
-			elseif travelDistance <= weaponRangeTable[3] then
-				weaponPenetration = weaponSettings[3][2] + (weaponSettings[3][3] - weaponSettings[3][2])*(travelDistance - weaponRangeTable[2])/(weaponRangeTable[3] - weaponRangeTable[2])
-			else
-				weaponPenetration = weaponSettings[3][3]
-			end
-			
-			slope = math.min(1, slope + math.max(0, weaponPenetration/vehicleArmor/2 - 1)) -- slope is not as important if penetration value is larger than vehicle armor
-			
-			-- Modify base weapon damage for high hitpoint targets
-			if Entity_GetHealthMax(target) > 400 then
-				weaponDamage = weaponDamage * (1 + 0.175 * math.max(0, math.min(1, (Entity_GetHealthMax(target) - 400)/350)) * math.max(0, math.min(1, weaponPenetration/vehicleArmor)))
-			end
-			
-			-- Apply modifiers for veterancy and entity upgrades
-			if shootingEntity then
-				local veterancySettings = ballistics_veterancySettings[removeModID(BP_GetName(Entity_GetBlueprint(shootingEntity)))]
-				if veterancySettings then
-					local shootingEntitySquad = Entity_GetSquad(shootingEntity)
-					local shootingEntitySquadVeterancy = Squad_GetVeterancyRank(shootingEntitySquad)
-					if shootingEntitySquad then
-						for i,v in pairs(veterancySettings) do
-							if i <= shootingEntitySquadVeterancy then
+				if scartype(target) == ST_ENTITY then
+					local targetName = removeModID(BP_GetName(Entity_GetBlueprint(target)))
+					--CustomDebug.Print('  Final Target: '..targetName)
+					
+					local vehicleSettings = ballistics_vehicles[targetName]
+					if vehicleSettings then
+						local heading = normalizeVector(Entity_GetHeading(target))
+						
+						local angleOfAttack =
+							math.acos((projectileHeading.x*heading.x + projectileHeading.y*heading.y + projectileHeading.z*heading.z)
+							/(
+								math.sqrt(projectileHeading.x^2 + projectileHeading.y^2 + projectileHeading.z^2)*
+								math.sqrt(heading.x^2 + heading.y^2 + heading.z^2))
+							)
+							*180/3.14159
+						
+						local vehicleArmor
+						local slope
+						local damageMultiplier
+						local hitType
+						
+						local frontAndRearAngle = 45
+						if
+								   (angleOfAttack > -frontAndRearAngle and angleOfAttack < frontAndRearAngle)
+								or (angleOfAttack > 360 - frontAndRearAngle or angleOfAttack < -(360 - frontAndRearAngle))
+									then
+							if angleOfAttack > -frontAndRearAngle and angleOfAttack < frontAndRearAngle then
+								slope = math.abs(angleOfAttack)
+							else
+								slope = 360 - math.abs(angleOfAttack)
+							end
+							damageMultiplier = 1
+							slope = 0.2 + slope / frontAndRearAngle * 0.8
+							hitType = 1
+							vehicleArmor = vehicleSettings[1]
+						elseif
+								   (angleOfAttack > 180 - frontAndRearAngle and angleOfAttack < 180 + frontAndRearAngle)
+								or (angleOfAttack > -(180 - frontAndRearAngle) and angleOfAttack < -(180 + frontAndRearAngle))
+									then
+							damageMultiplier = 1.275
+							slope = 0.3 + math.abs(math.abs(angleOfAttack) - 180) / frontAndRearAngle * 0.7
+							hitType = 3
+							if vehicleSettings[2] then
+								vehicleArmor = vehicleSettings[3]
+							else
+								vehicleArmor = vehicleSettings[1]
+							end
+						else
+							if math.abs(angleOfAttack) > 180 then
+								slope = math.abs(math.abs(angleOfAttack) - 270)
+							else
+								slope = math.abs(math.abs(angleOfAttack) - 90)
+							end
+							damageMultiplier = 1.175
+							slope = slope / (90 - frontAndRearAngle)
+							hitType = 2
+							if vehicleSettings[2] then
+								vehicleArmor = (vehicleSettings[3] + vehicleSettings[1]) / 2
+							else
+								vehicleArmor = vehicleSettings[1]
+							end
+						end
+						slope = 1 - slope
+						
+						local weaponRangeTable = weaponSettings[5]
+						if weaponRangeTable[1] == -1 then
+							weaponRangeTable[1] = weaponSettings[4][1]
+						end
+						if weaponRangeTable[2] == -1 then
+							weaponRangeTable[2] = (weaponSettings[4][2] - weaponSettings[4][1]) / 2
+						end
+						if weaponRangeTable[3] == -1 then
+							weaponRangeTable[3] = weaponSettings[4][2]
+						end
+						local weaponPenetration
+						if travelDistance <= weaponRangeTable[1] then
+							weaponPenetration = weaponSettings[3][1]
+						elseif travelDistance <= weaponRangeTable[2] then
+							weaponPenetration = weaponSettings[3][1] + (weaponSettings[3][2] - weaponSettings[3][1])*(travelDistance - weaponRangeTable[1])/(weaponRangeTable[2] - weaponRangeTable[1])
+						elseif travelDistance <= weaponRangeTable[3] then
+							weaponPenetration = weaponSettings[3][2] + (weaponSettings[3][3] - weaponSettings[3][2])*(travelDistance - weaponRangeTable[2])/(weaponRangeTable[3] - weaponRangeTable[2])
+						else
+							weaponPenetration = weaponSettings[3][3]
+						end
+						
+						slope = math.min(1, slope + math.max(0, weaponPenetration/vehicleArmor/2 - 1)) -- slope is not as important if penetration value is larger than vehicle armor
+						
+						-- Modify base weapon damage for high hitpoint targets
+						if Entity_GetHealthMax(target) > 400 then
+							weaponDamage = weaponDamage * (1 + 0.175 * math.max(0, math.min(1, (Entity_GetHealthMax(target) - 400)/350)) * math.max(0, math.min(1, weaponPenetration/vehicleArmor)))
+						end
+						
+						-- Apply modifiers for veterancy and entity upgrades
+						if shootingEntity then
+							local veterancySettings = ballistics_veterancySettings[removeModID(BP_GetName(Entity_GetBlueprint(shootingEntity)))]
+							if veterancySettings then
+								local shootingEntitySquad = Entity_GetSquad(shootingEntity)
+								local shootingEntitySquadVeterancy = Squad_GetVeterancyRank(shootingEntitySquad)
+								if shootingEntitySquad then
+									for i,v in pairs(veterancySettings) do
+										if i <= shootingEntitySquadVeterancy then
+											if v['damage'] then
+												for j,w in pairs(v['damage']) do
+													if w[1] == 'mult' then
+														--CustomDebug.Print('Applied veterancy damage multiplier '..w[2])
+														weaponDamage = weaponDamage * w[2]
+													elseif w[1] == 'add' then
+														--CustomDebug.Print('Applied veterancy damage addition '..w[2])
+														weaponDamage = weaponDamage + w[2]
+													end
+												end
+											end
+											if v['penetration'] then
+												for j,w in pairs(v['penetration']) do
+													if w[1] == 'mult' then
+														--CustomDebug.Print('Applied veterancy penetration multiplier '..w[2])
+														weaponPenetration = weaponPenetration * w[2]
+													elseif w[1] == 'add' then
+														--CustomDebug.Print('Applied veterancy penetration addition '..w[2])
+														weaponPenetration = weaponPenetration + w[2]
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+						
+							for i,v in pairs(ballistics_upgradeSettings) do
+								local upgradePBG = BP_GetUpgradeBlueprint(modID..':'..i)
+								if not upgradePBG then
+									upgradePBG = BP_GetUpgradeBlueprint(i)
+								end
+								local shootingEntitySquad = Entity_GetSquad(shootingEntity)
+								if Entity_HasUpgrade(shootingEntity, upgradePBG) or (shootingEntitySquad and Squad_HasUpgrade(shootingEntitySquad, upgradePBG)) then
+									if v['damage'] then
+										for j,w in pairs(v['damage']) do
+											if w[1] == 'mult' then
+												--CustomDebug.Print('Applied upgrade damage multiplier '..w[2])
+												weaponDamage = weaponDamage * w[2]
+											elseif w[1] == 'add' then
+												--CustomDebug.Print('Applied upgrade damage addition '..w[2])
+												weaponDamage = weaponDamage + w[2]
+											end
+										end
+									end
+									if v['penetration'] then
+										for j,w in pairs(v['penetration']) do
+											if w[1] == 'mult' then
+												--CustomDebug.Print('Applied upgrade penetration multiplier '..w[2])
+												weaponPenetration = weaponPenetration * w[2]
+											elseif w[1] == 'add' then
+												--CustomDebug.Print('Applied upgrade penetration addition '..w[2])
+												weaponPenetration = weaponPenetration + w[2]
+											end
+										end
+									end
+								end
+							end
+						end
+						
+						for i,v in pairs(ballistics_enemyUpgradeSettings) do
+							local upgradePBG = BP_GetUpgradeBlueprint(modID..':'..i)
+							if not upgradePBG then
+								upgradePBG = BP_GetUpgradeBlueprint(i)
+							end
+							local targetSquad = Entity_GetSquad(target)
+							if Entity_HasUpgrade(target, upgradePBG) or (targetSquad and Squad_HasUpgrade(targetSquad, upgradePBG)) then
 								if v['damage'] then
 									for j,w in pairs(v['damage']) do
 										if w[1] == 'mult' then
-											--CustomDebug.Print('Applied veterancy damage multiplier '..w[2])
+											--CustomDebug.Print('Applied enemy upgrade damage multiplier '..w[2])
 											weaponDamage = weaponDamage * w[2]
 										elseif w[1] == 'add' then
-											--CustomDebug.Print('Applied veterancy damage addition '..w[2])
+											--CustomDebug.Print('Applied enemy upgrade damage addition '..w[2])
 											weaponDamage = weaponDamage + w[2]
 										end
 									end
@@ -1009,106 +1067,42 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 								if v['penetration'] then
 									for j,w in pairs(v['penetration']) do
 										if w[1] == 'mult' then
-											--CustomDebug.Print('Applied veterancy penetration multiplier '..w[2])
+											--CustomDebug.Print('Applied enemy upgrade penetration multiplier '..w[2])
 											weaponPenetration = weaponPenetration * w[2]
 										elseif w[1] == 'add' then
-											--CustomDebug.Print('Applied veterancy penetration addition '..w[2])
+											--CustomDebug.Print('Applied enemy upgrade penetration addition '..w[2])
 											weaponPenetration = weaponPenetration + w[2]
 										end
 									end
 								end
 							end
 						end
+						
+						local penetrationChance = 1000 * math.max(0, weaponPenetration*1.05/vehicleArmor) * (0.9 + slope*0.35)
+						
+						--[[CustomDebug.Print('Weapon penetration: '..string.format('%.0f', weaponPenetration))
+						CustomDebug.Print('Vehicle armor: '..string.format('%.0f', vehicleArmor))
+						CustomDebug.Print('Penetration chance: '..string.format('%.1f', penetrationChance/10))]]
+						
+						local penetrated = World_GetRand(0, 1000) <= penetrationChance
+						if penetrated then
+							local appliedDamage = math.ceil(math.min(weaponDamage, math.ceil(weaponDamage) * (slope*0.45 + 0.6) * damageMultiplier) / 5) * 5
+							applyDamage(shootingEntity, target, hitPosition, appliedDamage, true, true, hitType, slope)
+						else
+							--[[for p=1,World_GetPlayerCount() do
+								UI_CreateColouredPositionKickerMessage(World_GetPlayerAt(p), hitPosition, Util_CreateLocString('Shot bounced. '..string.format('%.0f', slope*100)..'% slope bonus'), 0, 100, 200, 50)
+							end]]
+						end
+					else
+						applyDamage(shootingEntity, target, hitPosition, weaponDamage, false, false, nil, nil)
 					end
 				end
-			
-				for i,v in pairs(ballistics_upgradeSettings) do
-					local upgradePBG = BP_GetUpgradeBlueprint(modID..':'..i)
-					if not upgradePBG then
-						upgradePBG = BP_GetUpgradeBlueprint(i)
-					end
-					local shootingEntitySquad = Entity_GetSquad(shootingEntity)
-					if Entity_HasUpgrade(shootingEntity, upgradePBG) or (shootingEntitySquad and Squad_HasUpgrade(shootingEntitySquad, upgradePBG)) then
-						if v['damage'] then
-							for j,w in pairs(v['damage']) do
-								if w[1] == 'mult' then
-									--CustomDebug.Print('Applied upgrade damage multiplier '..w[2])
-									weaponDamage = weaponDamage * w[2]
-								elseif w[1] == 'add' then
-									--CustomDebug.Print('Applied upgrade damage addition '..w[2])
-									weaponDamage = weaponDamage + w[2]
-								end
-							end
-						end
-						if v['penetration'] then
-							for j,w in pairs(v['penetration']) do
-								if w[1] == 'mult' then
-									--CustomDebug.Print('Applied upgrade penetration multiplier '..w[2])
-									weaponPenetration = weaponPenetration * w[2]
-								elseif w[1] == 'add' then
-									--CustomDebug.Print('Applied upgrade penetration addition '..w[2])
-									weaponPenetration = weaponPenetration + w[2]
-								end
-							end
-						end
-					end
-				end
+				
+				table.remove(projectileData, projectileIndex)
 			end
-			
-			for i,v in pairs(ballistics_enemyUpgradeSettings) do
-				local upgradePBG = BP_GetUpgradeBlueprint(modID..':'..i)
-				if not upgradePBG then
-					upgradePBG = BP_GetUpgradeBlueprint(i)
-				end
-				local targetSquad = Entity_GetSquad(target)
-				if Entity_HasUpgrade(target, upgradePBG) or (targetSquad and Squad_HasUpgrade(targetSquad, upgradePBG)) then
-					if v['damage'] then
-						for j,w in pairs(v['damage']) do
-							if w[1] == 'mult' then
-								--CustomDebug.Print('Applied enemy upgrade damage multiplier '..w[2])
-								weaponDamage = weaponDamage * w[2]
-							elseif w[1] == 'add' then
-								--CustomDebug.Print('Applied enemy upgrade damage addition '..w[2])
-								weaponDamage = weaponDamage + w[2]
-							end
-						end
-					end
-					if v['penetration'] then
-						for j,w in pairs(v['penetration']) do
-							if w[1] == 'mult' then
-								--CustomDebug.Print('Applied enemy upgrade penetration multiplier '..w[2])
-								weaponPenetration = weaponPenetration * w[2]
-							elseif w[1] == 'add' then
-								--CustomDebug.Print('Applied enemy upgrade penetration addition '..w[2])
-								weaponPenetration = weaponPenetration + w[2]
-							end
-						end
-					end
-				end
-			end
-			
-			local penetrationChance = 1000 * math.max(0, weaponPenetration*1.15/vehicleArmor) * (0.9 + slope*0.35)
-			
-			--[[CustomDebug.Print('Weapon penetration: '..string.format('%.0f', weaponPenetration))
-			CustomDebug.Print('Vehicle armor: '..string.format('%.0f', vehicleArmor))
-			CustomDebug.Print('Penetration chance: '..string.format('%.1f', penetrationChance/10))]]
-			
-			local penetrated = World_GetRand(0, 1000) <= penetrationChance
-			if penetrated then
-				local appliedDamage = math.ceil(math.min(weaponDamage, math.ceil(weaponDamage) * (slope*0.45 + 0.6) * damageMultiplier) / 5) * 5
-				applyDamage(shootingEntity, target, hitPosition, appliedDamage, true, true, hitType, slope)
-			else
-				--[[for p=1,World_GetPlayerCount() do
-					UI_CreateColouredPositionKickerMessage(World_GetPlayerAt(p), hitPosition, Util_CreateLocString('Shot bounced. '..string.format('%.0f', slope*100)..'% slope bonus'), 0, 100, 200, 50)
-				end]]
-			end
-		else
-			applyDamage(shootingEntity, target, hitPosition, weaponDamage, false, false, nil, nil)
+			cleanupProjectileData()
 		end
-		
-		table.remove(projectileData, projectileIndex)
 	end
-	cleanupProjectileData()
 end
 
 Rule_RemoveGlobalEvent(BtB_ProjectileFired)

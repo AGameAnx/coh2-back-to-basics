@@ -127,7 +127,7 @@
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
-			<float name="angle_scatter" value="9.25" />
+			<float name="angle_scatter" value="3.5" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
