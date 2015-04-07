@@ -5,7 +5,20 @@
 -----------------------------------------------------------------
 ## Attributes:
 
+General:
+- Antiblob now increaases received suppression by 5%
+
+Soviet:
+- All infantry suppression activation threshold slightly increased 0.2 -> 0.21
+- PTRS rework:
+ * Penetration target priority decreased 140 -> 80 (stops it from prioritizing team weapons)
+ * Rotation priority added
+ * Far accuracy increased 0.05 -> 0.07
+ * Near accuracy increased 0.4 -> 0.55
+- IL-2 Sturmovik autocannon damage increased slightly 30 -> 35
+
 USF:
+- All infantry suppression activation threshold slightly increased 0.2 -> 0.21
 - Riflemen accuracy rework:
  * Mid range decreased 0.31 -> 0.29
  * Far range increased 0.19 -> 0.2
@@ -16,6 +29,8 @@ USF:
 Ostheer:
 - Grenadiers LMG42 mid range distance reduced 29 -> 23
 - Ostruppen accuracy bonus reduced from 3x to 2.35x. This accuracy multiplier was impacting outcomes too much due to the new damage and accuracy for their weapons
+- Rifle grenade damage modifier vs green cover increased 0.5 -> 0.75
+- Rifle grenade damage increased 80 -> 85
 
 
 =================================================================
@@ -2030,4 +2045,3 @@ AI changes:
 - Increased experience gain speed by 5%
 - Increased all manpower income by 15%
 - Decreased all fuel income by 5%
-

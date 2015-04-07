@@ -254,7 +254,7 @@
 				<float name="pin_down_activate_threshold" value="0.6" />
 				<float name="pin_down_recover_threshold" value="0.5" />
 				<float name="recover_rate" value="0.008" />
-				<float name="suppressed_activate_threshold" value="0.2" />
+				<float name="suppressed_activate_threshold" value="0.21" />
 				<float name="suppressed_recover_threshold" value="0.15" />
 				<list name="pin_down_activate_actions">
 					<template_reference name="action" value="action\apply_modifiers_action">

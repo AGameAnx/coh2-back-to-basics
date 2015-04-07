@@ -120,10 +120,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="80" />
+			<float name="min" value="85" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="80" />
+			<float name="max" value="85" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -268,7 +268,7 @@
 			</group>
 			<group name="tp_heavy">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.75" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="1" />
 			</group>

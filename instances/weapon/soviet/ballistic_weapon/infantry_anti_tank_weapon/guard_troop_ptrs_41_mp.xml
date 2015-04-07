@@ -301,8 +301,8 @@
 		</group>
 		<group name="accuracy">
 			<float name="mid" value="0.2" />
-			<float name="far" value="0.05" />
-			<float name="near" value="0.4" />
+			<float name="far" value="0.07" />
+			<float name="near" value="0.55" />
 		</group>
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.5" />
@@ -413,8 +413,8 @@
 		<string name="fx_tracer_name" value="fx_ptrs41_tracer" />
 		<group name="priority">
 			<float name="suggested_target" value="1000" />
-			<float name="rotation" value="0" />
-			<float name="penetration" value="140" />
+			<float name="rotation" value="-0.15" />
+			<float name="penetration" value="80" />
 			<bool name="over_penetration_priority_penalty" value="True" />
 			<group name="distance">
 				<float name="near" value="6" />
