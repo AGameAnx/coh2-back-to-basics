@@ -56,7 +56,7 @@
 			<group name="distance">
 				<float name="near" value="0" />
 				<float name="far" value="39" />
-				<float name="mid" value="29" />
+				<float name="mid" value="23" />
 			</group>
 			<float name="max" value="39" />
 			<float name="min" value="0" />

@@ -1,4 +1,24 @@
 =================================================================
+## v0.36
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+USF:
+- Riflemen accuracy rework:
+ * Mid range decreased 0.31 -> 0.29
+ * Far range increased 0.19 -> 0.2
+- Paratrooper carbine long range accuracy increased 0.12 -> 0.14
+- Pathfinder snipe required health percentage requirements reduced 0.4-0 -> 0.5-0
+- Rear Echelon far accuracy increased 0.09 -> 0.11
+
+Ostheer:
+- Grenadiers LMG42 mid range distance reduced 29 -> 23
+- Ostruppen accuracy bonus reduced from 3x to 2.35x. This accuracy multiplier was impacting outcomes too much due to the new damage and accuracy for their weapons
+
+
+=================================================================
 ## v0.35
 =================================================================
 
