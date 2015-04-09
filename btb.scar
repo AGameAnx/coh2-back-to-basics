@@ -10,12 +10,12 @@ import("WinConditions/Annihilate.scar")
 import('WinConditions/btb_ballistics_data.scar')
 
 -- Deployment
---import('WinConditions/btb_ballistics.scar')
+import('WinConditions/btb_ballistics.scar')
 --import('WinConditions/aicontrol.scar')
 
 -- Development
-loadfile('_modscripts/btb_customdebug.scar')()
-loadfile('_modscripts/btb_ballistics.scar')()
+--loadfile('_modscripts/btb_customdebug.scar')()
+--loadfile('_modscripts/btb_ballistics.scar')()
 --loadfile('_modscripts/btb_aicontrol.scar')()
 
 SetGlobals()
