@@ -34,6 +34,10 @@
 									<BurnSettings i:nil="true" />
 									<RelativeName>btb_ballistics.scar</RelativeName>
 								</d2p1:anyType>
+								<d2p1:anyType i:type="BurnFile">
+									<BurnSettings i:nil="true" />
+									<RelativeName>btb_ballistics_data.scar</RelativeName>
+								</d2p1:anyType>
 							</Children>
 							<Name>winconditions</Name>
 						</d2p1:anyType>

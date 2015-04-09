@@ -7,13 +7,15 @@ import("Prototype/SpecialAEFunctions.scar")
 import("PrintOnScreen.scar")
 import("WinConditions/Annihilate.scar")
 
+import('WinConditions/btb_ballistics_data.scar')
+
 -- Deployment
-import('WinConditions/btb_ballistics.scar')
+--import('WinConditions/btb_ballistics.scar')
 --import('WinConditions/aicontrol.scar')
 
 -- Development
---loadfile('_modscripts/btb_customdebug.scar')()
---loadfile('_modscripts/btb_ballistics.scar')()
+loadfile('_modscripts/btb_customdebug.scar')()
+loadfile('_modscripts/btb_ballistics.scar')()
 --loadfile('_modscripts/btb_aicontrol.scar')()
 
 SetGlobals()
@@ -34,7 +36,7 @@ function BtB_UpdateUpkeep()
 	upkeepModifiers = {}
 	for i=1,World_GetPlayerCount() do
 		local p = World_GetPlayerAt(i)
-		upkeepModifiers[table.getn(upkeepModifiers)+1] = Modify_Upkeep(p, 1.2 + 0.15 * Player_GetCurrentPopulation(p, CT_Personnel) / 120)
+		upkeepModifiers[table.getn(upkeepModifiers)+1] = Modify_Upkeep(p, 1.15 + 0.175 * Player_GetCurrentPopulation(p, CT_Personnel) / 120)
 	end
 end
 function BtB_Init()

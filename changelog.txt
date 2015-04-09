@@ -15,7 +15,10 @@ Soviet:
  * Rotation priority added
  * Far accuracy increased 0.05 -> 0.07
  * Near accuracy increased 0.4 -> 0.55
-- IL-2 Sturmovik autocannon damage increased slightly 30 -> 35
+- IL-2 Sturmovik autocannon rework:
+ * Damage increased slightly 30 -> 20
+ * Accuracy increased 0.55 -> 0.75
+ * Penetration decreased 42.5 -> 35
 
 USF:
 - All infantry suppression activation threshold slightly increased 0.2 -> 0.21
@@ -31,6 +34,22 @@ Ostheer:
 - Ostruppen accuracy bonus reduced from 3x to 2.35x. This accuracy multiplier was impacting outcomes too much due to the new damage and accuracy for their weapons
 - Rifle grenade damage modifier vs green cover increased 0.5 -> 0.75
 - Rifle grenade damage increased 80 -> 85
+- MG42 rework - should suppress less randomly, and shouldn't suppress squads that walk into its arc of fire at max range on first burst, damage output increased:
+ * Burst duration length and randomness reduced 1.4s-1.75s -> 1.375s-1.5s
+ * Cooldown duration length and randomness reduced 2.5s-3.0s -> 2.5s-2.75s
+ * Damage increased 12 -> 14
+ * Reload duration reduced 6s -> 5s
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Penetration system updates:
+ * An attempt to fix the sync issues
+ * Cleaned up and optimized the code
+ * Reduced search radius for scatter shots
+ * Fixed an issue with scatter shots that would sometimes cause the system find targets incorrectly (behind projectile)
+ * Scatter shots will now choose the closest correct target rather than a random one within the radius
 
 
 =================================================================
