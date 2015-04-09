@@ -12,6 +12,10 @@
 									<BurnSettings i:nil="true" />
 									<RelativeName>BtB.win</RelativeName>
 								</d2p1:anyType>
+								<d2p1:anyType i:type="BurnFile">
+									<BurnSettings i:nil="true" />
+									<RelativeName>BtB_annihilate.win</RelativeName>
+								</d2p1:anyType>
 							</Children>
 							<Name>winconditions</Name>
 						</d2p1:anyType>
@@ -37,6 +41,14 @@
 								<d2p1:anyType i:type="BurnFile">
 									<BurnSettings i:nil="true" />
 									<RelativeName>btb_ballistics_data.scar</RelativeName>
+								</d2p1:anyType>
+								<d2p1:anyType i:type="BurnFile">
+									<BurnSettings i:nil="true" />
+									<RelativeName>btb_annihilate.scar</RelativeName>
+								</d2p1:anyType>
+								<d2p1:anyType i:type="BurnFile">
+									<BurnSettings i:nil="true" />
+									<RelativeName>btb_mainscript.scar</RelativeName>
 								</d2p1:anyType>
 							</Children>
 							<Name>winconditions</Name>

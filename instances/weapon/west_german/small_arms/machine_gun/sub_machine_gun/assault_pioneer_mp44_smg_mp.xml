@@ -47,7 +47,8 @@
 		<string name="name" value="MP44 Sub Machine Gun" />
 		<group name="fire">
 			<float name="wind_down" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 		</group>
 		<float name="fx_tracer_speed" value="120" />
@@ -244,14 +245,16 @@
 			<float name="duration" value="0" />
 		</group>
 		<group name="damage">
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="min" value="15" />
 			<float name="max" value="15" />
 		</group>
 		<group name="deflection">
 			<bool name="has_deflection_damage" value="False" />
 			<float name="deflection_damage_multiplier" value="0" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 		</group>
 		<instance_reference name="ui_setfacing" value="" />
 		<icon name="icon_name" value="" />
@@ -273,7 +276,7 @@
 		<group name="accuracy">
 			<float name="far" value="0.07" />
 			<float name="near" value="0.33" />
-			<float name="mid" value="0.14" />
+			<float name="mid" value="0.17" />
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="scatter">
@@ -352,7 +355,8 @@
 				<float name="min" value="3" />
 				<float name="max" value="3.3" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 		</group>
 		<locstring name="ui_name" value="0" />
 		<group name="aim">

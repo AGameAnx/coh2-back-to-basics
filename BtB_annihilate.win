@@ -1,0 +1,13 @@
+name = "back_to_basics_annihilate"
+scar_file = "data:scar/winconditions/btb_annihilate.scar"
+fe_name = "Back to Basics - Annihilate"
+fe_priority = 0
+score_display = time
+show_time = true
+entity_replacements =
+{
+	{
+		original = "victory_point",
+		replacement = "territory_point_mp",
+	}
+}

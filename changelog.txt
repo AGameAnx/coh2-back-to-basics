@@ -1,4 +1,45 @@
 =================================================================
+## v0.37
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Conscript ppsh rework:
+ * Damage increased 8 -> 9
+ * Long range accuracy increased 0.03 -> 0.06
+ * Mid range accuracy increased 0.15 -> 0.21
+- Shock troop ppsh mid range accuracy increased 0.22 -> 0.24
+
+USF:
+- Paratrooper LMG short range accuracy reduced 0.6 -> 0.45
+- Paratrooper LMG mid range accuracy reduced 0.21 -> 0.22
+- Paratrooper thompson long range accuracy increased 0.03 -> 0.06
+- Paratrooper thompson mid range accuracy increased 0.08 -> 0.15
+- Combat Engineer grease gun mid range accuracy increased 0.08 -> 0.14
+- Captain thompson mid range accuracy increased 0.1 -> 0.15
+- Captain thompson far range accuracy increased 0.03 -> 0.06
+
+Ostheer:
+- Pioneer short range accuracy decreased 0.4 -> 0.38
+- Assault grenadier mid range accuracy increased 0.1 -> 0.15
+- Panzer grenadier mid range accuracy increased 0.23 -> 0.25
+- Weapon crew accuracies normalized
+
+OKW:
+- Sturmpioneer mid range accuracy increased 0.14 -> 0.17
+- Volksgrenadier mid range accuracy increased 0.28 -> 0.3
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Upkeep increased slightly (now 1.15 + 0.1875 at max population)
+- Added an annihilate win condition
+
+
+=================================================================
 ## v0.36
 =================================================================
 
@@ -44,6 +85,7 @@ Ostheer:
 ## Win condition:
 
 General:
+- Upkeep reduced slightly, lategame upkeep reduced slightly
 - Penetration system updates:
  * An attempt to fix the sync issues
  * Cleaned up and optimized the code

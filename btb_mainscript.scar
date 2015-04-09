@@ -1,0 +1,53 @@
+
+import("ScarUtil.scar")
+import("Fatalities/Fatalities.scar")
+import("Prototype/WorldEntityCollector.scar")
+import("Prototype/SpecialAEFunctions.scar")
+import("PrintOnScreen.scar")
+import("WinConditions/Annihilate.scar")
+
+import('WinConditions/btb_ballistics_data.scar')
+
+-- Deployment
+import('WinConditions/btb_ballistics.scar')
+--import('WinConditions/aicontrol.scar')
+
+-- Development
+--loadfile('_modscripts/btb_customdebug.scar')()
+--loadfile('_modscripts/btb_ballistics.scar')()
+--loadfile('_modscripts/btb_aicontrol.scar')()
+
+local upkeepModifiers = {}
+function BtB_UpdateUpkeep()
+	for i=1,table.getn(upkeepModifiers) do
+		Modifier_Remove(upkeepModifiers[i])
+	end
+	upkeepModifiers = {}
+	for i=1,World_GetPlayerCount() do
+		local p = World_GetPlayerAt(i)
+		upkeepModifiers[table.getn(upkeepModifiers)+1] = Modify_Upkeep(p, 1.15 + 0.1875 * Player_GetCurrentPopulation(p, CT_Personnel) / 120)
+	end
+end
+function BtB_Init()
+	for i=1,World_GetPlayerCount() do
+		local p = World_GetPlayerAt(i)
+		
+		-- TODO: Save modifiers and reset on init
+		Modify_PlayerResourceRate(p, RT_Manpower, 30/60/8, MUT_Addition)
+		--Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
+		Modify_PlayerResourceRate(p, RT_Action, 0.75, MUT_Multiplication)
+		Modify_PlayerSightRadius(p, 1.05)
+		
+		Player_SetMaxPopulation(p, CT_Personnel, 120)
+		Player_SetMaxCapPopulation(p, CT_Personnel, 120)
+		
+		--Player_SetResource(p, RT_Manpower, Player_GetResource(p, RT_Manpower)+25)
+	end
+	
+	Camera_SetTuningValue(TV_DistMax, 42)
+	Camera_SetDefault(42, 40, -45)
+	
+	Rule_AddInterval(BtB_UpdateUpkeep, 1)
+end
+
+Scar_AddInit(BtB_Init)
