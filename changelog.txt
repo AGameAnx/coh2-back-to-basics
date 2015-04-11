@@ -30,12 +30,13 @@ Ostheer:
 - Ostruppen cover bonus rework:
  * Base accuracy increase reduced 2.35 -> 1.15 (this makes base squad performance with picked up weapon on par with other ostheer squads)
  * Now grants 20% increased sight range
- * Reduces received accuracy by 25%
+ * Reduces received accuracy by 15%
  * Increases weapon range by 20%
+ * Now requires 0.5s time to activate
 - Ostruppen reserves rework:
  * No longer can come in with an LMG42
  * No longer have a chance to come in with veterancy level 3
- * The chance of getting base veterancy is slightly increased
+ * The chance of not getting veterancy is decreased
 
 OKW:
 - Panzerfusilier population cost increased 1.5 -> 1.75
