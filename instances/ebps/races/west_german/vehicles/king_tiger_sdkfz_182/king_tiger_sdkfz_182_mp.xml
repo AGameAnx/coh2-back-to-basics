@@ -153,7 +153,7 @@
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="425" />
+			<float name="armor" value="375" />
 			<float name="rear_armor" value="225" />
 			<float name="target_size" value="26" />
 			<bool name="dies_from_broken_ice" value="True" />

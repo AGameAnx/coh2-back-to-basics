@@ -1,4 +1,48 @@
 =================================================================
+## v0.38
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Updated building panel health and min damages to make them slightly more sturdy
+- Mortars will now have an easier time destroying buildings and building panels (building damage profile updated)
+
+Soviet:
+- Combat Engineers now have a received accuracy penalty of 5%
+- Combat Engineer mosin nagant rifle mid range accuracy increased 0.21 -> 0.23
+- Combat Engineer mosin nagant mid range distance increased 21 -> 24
+- Combat Engineer ROKS-3 flame thrower now has increased cooldown duration based on range 1/1/1 -> 1.5/1.25/1, reducing damage output and critical chance with range
+- Conscript mid range aim time multiplier reduced, increasing fire rate 2.25 -> 1.75
+
+Ostheer:
+- Assault Grenadier mp40 accuracy rework:
+ * Far increased 0.03 -> 0.04
+ * Mid decreased 0.15 -> 0.14
+ * Near decreased 0.55 -> 0.5
+- Ostruppen weapon rework:
+ * Far accuracy 0.17 -> 0.12
+ * Mid accuracy 0.26 -> 0.24
+ * Near accuracy 0.62 -> 0.55
+ * Damage 15 -> 25
+ * All ranges reduced by 15%
+- Ostruppen cover bonus rework:
+ * Base accuracy increase reduced 2.35 -> 1.15 (this makes base squad performance with picked up weapon on par with other ostheer squads)
+ * Now grants 20% increased sight range
+ * Reduces received accuracy by 25%
+ * Increases weapon range by 20%
+- Ostruppen reserves rework:
+ * No longer can come in with an LMG42
+ * No longer have a chance to come in with veterancy level 3
+ * The chance of getting base veterancy is slightly increased
+
+OKW:
+- Panzerfusilier population cost increased 1.5 -> 1.75
+- King Tiger frontal armor reduced 425 -> 375
+
+
+=================================================================
 ## v0.37
 =================================================================
 
@@ -23,9 +67,9 @@ USF:
 
 Ostheer:
 - Pioneer short range accuracy decreased 0.4 -> 0.38
-- Assault grenadier mid range accuracy increased 0.1 -> 0.15
-- Panzer grenadier mid range accuracy increased 0.23 -> 0.25
-- Weapon crew accuracies normalized
+- Assault Grenadier mid range accuracy increased 0.1 -> 0.15
+- Panzer Grenadier mid range accuracy increased 0.23 -> 0.25
+- Weapon Crew accuracies normalized
 
 OKW:
 - Sturmpioneer mid range accuracy increased 0.14 -> 0.17

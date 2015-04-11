@@ -416,9 +416,9 @@
 		</group>
 		<string name="fx_action_target_name" value="mp40_target" />
 		<group name="accuracy">
-			<float name="near" value="0.55" />
-			<float name="far" value="0.03" />
-			<float name="mid" value="0.15" />
+			<float name="near" value="0.5" />
+			<float name="far" value="0.04" />
+			<float name="mid" value="0.14" />
 		</group>
 		<group name="tracking">
 			<group name="normal">

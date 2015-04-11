@@ -1,8 +1,8 @@
 <instance description="" template="weapon_building_damage">
 	<group name="weapon_building_damage_bag">
 		<group name="range_multipliers">
-			<float name="near" value="2" />
-			<float name="mid" value="0.5" />
+			<float name="near" value="4" />
+			<float name="mid" value="0.75" />
 			<float name="far" value="0" />
 		</group>
 	</group>
