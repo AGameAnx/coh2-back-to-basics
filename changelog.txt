@@ -11,9 +11,10 @@ General:
 
 Soviet:
 - Combat Engineers now have a received accuracy penalty of 5%
+- Combat Engineer ROKS-3 flame thrower now has increased cooldown duration based on range 1/1/1 -> 1.5/1.25/1, reducing damage output and critical chance with range
 - Combat Engineer mosin nagant rifle mid range accuracy increased 0.21 -> 0.23
 - Combat Engineer mosin nagant mid range distance increased 21 -> 24
-- Combat Engineer ROKS-3 flame thrower now has increased cooldown duration based on range 1/1/1 -> 1.5/1.25/1, reducing damage output and critical chance with range
+- Combat Engineer mid range aim time multiplier reduced, increasing fire rate 2.25 -> 1.75
 - Conscript mid range aim time multiplier reduced, increasing fire rate 2.25 -> 1.75
 
 Ostheer:

@@ -93,7 +93,7 @@
 			<group name="aim_time_multiplier">
 				<float name="near" value="0.25" />
 				<float name="far" value="3.5" />
-				<float name="mid" value="2.25" />
+				<float name="mid" value="1.75" />
 			</group>
 			<group name="fire_aim_time">
 				<float name="min" value="0.375" />
