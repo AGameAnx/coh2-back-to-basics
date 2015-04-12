@@ -6,7 +6,7 @@
 			<group name="distance">
 				<float name="near" value="4" />
 				<float name="far" value="39" />
-				<float name="mid" value="24" />
+				<float name="mid" value="23" />
 			</group>
 			<float name="max" value="39" />
 		</group>
@@ -93,7 +93,7 @@
 			<group name="aim_time_multiplier">
 				<float name="near" value="0.25" />
 				<float name="far" value="3.5" />
-				<float name="mid" value="1.75" />
+				<float name="mid" value="2.25" />
 			</group>
 			<group name="fire_aim_time">
 				<float name="min" value="0.375" />
@@ -125,8 +125,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="30" />
-			<float name="min" value="30" />
+			<float name="max" value="25" />
+			<float name="min" value="25" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
