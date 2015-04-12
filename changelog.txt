@@ -32,12 +32,12 @@ Ostheer:
  * All ranges reduced by 15%
  * Aim, ready and cooldown times closer to grenadier rifle
 - Ostruppen reserves and normal ostruppen squads no longer differ in the fact that normal ostruppen received 35% increased received accuracy
-- Ostruppen squad now receives 15% received accuracy penalty
+- Ostruppen squad now receives 25% received accuracy penalty
 - Ostruppen squad weapon modifier changed from 0.575 to 0.8
 - Ostruppen cover bonus rework:
  * Base accuracy increase reduced 2.35 -> 1.4. This makes base squad performance almost on par with other ostheer squads (overall 12% weapon accuracy bonus compared to 15% of normal squads)
  * Now grants 15% increased sight range
- * Reduces received accuracy by 35% (removes initial penalty)
+ * Reduces received accuracy by 25% (removes initial penalty)
  * Increases weapon range by 15%
  * Now requires 0.5s time to activate
 - Ostruppen reserves rework:

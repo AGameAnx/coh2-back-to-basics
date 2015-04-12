@@ -426,7 +426,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />
 							<enum name="usage_type" value="multiply_add" />
-							<float name="value" value="0.35" />
+							<float name="value" value="0.25" />
 							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 						</template_reference>
 					</list>
