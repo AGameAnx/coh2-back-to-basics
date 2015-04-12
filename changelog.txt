@@ -18,30 +18,39 @@ Soviet:
 - Conscript mid range aim time multiplier reduced, increasing fire rate 2.25 -> 1.75
 
 Ostheer:
+- Minefield construction time increased from 10s per minefield to 15s (total 60s -> 90s)
 - Assault Grenadier mp40 accuracy rework:
  * Far increased 0.03 -> 0.04
  * Mid decreased 0.15 -> 0.14
  * Near decreased 0.55 -> 0.5
 - Ostruppen weapon rework:
+ Overall DPS decreased, long range effectiveness decreased, comes somewhere to 75% effectiveness of a grenadier squad with penalties on the move and out of cover
  * Far accuracy 0.17 -> 0.12
- * Mid accuracy 0.26 -> 0.24
- * Near accuracy 0.62 -> 0.55
+ * Mid accuracy 0.26 -> 0.23
+ * Near accuracy 0.62 -> 0.59
  * Damage 15 -> 25
  * All ranges reduced by 15%
+ * Aim, ready and cooldown times closer to grenadier rifle
+- Ostruppen reserves and normal ostruppen squads no longer differ in the fact that normal ostruppen received 35% increased received accuracy
+- Ostruppen squad now receives 15% received accuracy penalty
+- Ostruppen squad weapon modifier changed from 0.575 to 0.8
 - Ostruppen cover bonus rework:
- * Base accuracy increase reduced 2.35 -> 1.15 (this makes base squad performance with picked up weapon on par with other ostheer squads)
- * Now grants 20% increased sight range
- * Reduces received accuracy by 15%
- * Increases weapon range by 20%
+ * Base accuracy increase reduced 2.35 -> 1.4. This makes base squad performance almost on par with other ostheer squads (overall 12% weapon accuracy bonus compared to 15% of normal squads)
+ * Now grants 15% increased sight range
+ * Reduces received accuracy by 35% (removes initial penalty)
+ * Increases weapon range by 15%
  * Now requires 0.5s time to activate
 - Ostruppen reserves rework:
  * No longer can come in with an LMG42
  * No longer have a chance to come in with veterancy level 3
- * The chance of not getting veterancy is decreased
+ * Additional veterancy rewards added which grant 50% of vet1, 25% and 50% of vet2
+ * The chance of not getting veterancy is decreased significantly
+- Ostwind penetration reduced 35/40/45 -> 30/35/40
 
 OKW:
 - Panzerfusilier population cost increased 1.5 -> 1.75
 - King Tiger frontal armor reduced 425 -> 375
+- Minefield construction time increased from 10s per minefield to 15s (total 60s -> 90s)
 
 
 =================================================================

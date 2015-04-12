@@ -208,9 +208,9 @@
 		</group>
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<group name="penetration">
-			<float name="near" value="45" />
-			<float name="far" value="35" />
-			<float name="mid" value="40" />
+			<float name="near" value="40" />
+			<float name="far" value="30" />
+			<float name="mid" value="35" />
 		</group>
 		<group name="suppressed">
 			<float name="pinned_burst_multiplier" value="1" />

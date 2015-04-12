@@ -126,14 +126,14 @@
 		<float name="fx_delay_in_building" value="0" />
 		<group name="aim">
 			<group name="ready_aim_time">
-				<float name="max" value="0.625" />
+				<float name="max" value="0.375" />
 				<float name="min" value="0.125" />
 			</group>
 			<float name="post_firing_aim_time" value="0.25" />
 			<group name="aim_time_multiplier">
 				<float name="near" value="0.375" />
-				<float name="mid" value="2.5" />
-				<float name="far" value="3.25" />
+				<float name="mid" value="1.75" />
+				<float name="far" value="2.5" />
 			</group>
 			<group name="fire_aim_time">
 				<float name="max" value="0.5" />
@@ -252,10 +252,10 @@
 			<bool name="has_instant_setup" value="False" />
 		</group>
 		<group name="damage">
-			<float name="max" value="15" />
+			<float name="max" value="25" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="min" value="15" />
+			<float name="min" value="25" />
 		</group>
 		<string name="fx_action_target_name" value="kar98_target" />
 		<string name="fx_tracer_name" value="kar98_tracer" />
@@ -313,9 +313,9 @@
 			<instance_reference name="projectile" value="" />
 		</group>
 		<group name="accuracy">
-			<float name="near" value="0.62" />
-			<float name="mid" value="0.26" />
-			<float name="far" value="0.17" />
+			<float name="near" value="0.55" />
+			<float name="mid" value="0.23" />
+			<float name="far" value="0.13" />
 		</group>
 		<group name="offhand">
 			<float name="offhand_end_time" value="0.75" />

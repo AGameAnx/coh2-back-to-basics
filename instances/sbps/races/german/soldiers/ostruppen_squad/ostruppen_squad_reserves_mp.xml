@@ -417,27 +417,20 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.5" />
+							<float name="value" value="0.8" />
 							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiply_add" />
+							<float name="value" value="0.35" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="256240" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.15" />
-							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="256246" />
 				</template_reference>
 				<template_reference name="action" value="action\random_action">
 					<bool name="instant" value="True" />
@@ -455,6 +448,15 @@
 						<group name="action_choice">
 							<list name="actions">
 								<template_reference name="action" value="action\veterancy_action">
+									<float name="number_of_experience_points" value="200" />
+									<uniqueid name="id" value="1073744207" />
+								</template_reference>
+							</list>
+							<int name="weight" value="10" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\veterancy_action">
 									<float name="number_of_experience_points" value="400" />
 									<uniqueid name="id" value="256259" />
 								</template_reference>
@@ -464,11 +466,38 @@
 						<group name="action_choice">
 							<list name="actions">
 								<template_reference name="action" value="action\veterancy_action">
+									<float name="number_of_experience_points" value="600" />
+									<uniqueid name="id" value="1073744208" />
+								</template_reference>
+							</list>
+							<int name="weight" value="20" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\veterancy_action">
 									<float name="number_of_experience_points" value="800" />
 									<uniqueid name="id" value="256260" />
 								</template_reference>
 							</list>
-							<int name="weight" value="25" />
+							<int name="weight" value="15" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\veterancy_action">
+									<float name="number_of_experience_points" value="1000" />
+									<uniqueid name="id" value="1073744205" />
+								</template_reference>
+							</list>
+							<int name="weight" value="15" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\veterancy_action">
+									<float name="number_of_experience_points" value="1200" />
+									<uniqueid name="id" value="1073744206" />
+								</template_reference>
+							</list>
+							<int name="weight" value="10" />
 						</group>
 					</list>
 					<uniqueid name="id" value="256258" />
