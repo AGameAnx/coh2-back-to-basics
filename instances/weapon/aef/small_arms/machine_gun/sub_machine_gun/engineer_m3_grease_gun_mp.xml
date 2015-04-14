@@ -120,7 +120,7 @@
 			<instance_reference name="projectile" value="" />
 		</group>
 		<group name="accuracy">
-			<float name="mid" value="0.14" />
+			<float name="mid" value="0.16" />
 			<float name="far" value="0.03" />
 			<float name="near" value="0.62" />
 		</group>

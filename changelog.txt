@@ -1,4 +1,51 @@
 =================================================================
+## v0.39
+=================================================================
+
+Weapon consistency balancing and fixes
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Penal troop SVT rifle rework - squad's DPS was exceptionally underwhelming, it is now very slightly higher than riflemen:
+ * Damage increased 15 -> 25
+ * Far range cooldown duration multiplier 1.5 -> 1.35
+ * Mid range cooldown multiplier 0.75 -> 1
+ * Near range cooldown multiplier 0.25 -> 0.75
+ * Far range accuracy decreased 0.13 -> 0.12
+ * Mid range accuracy decreased 0.22 -> 0.2
+ * Near range accuracy decreased 0.59 -> 0.55
+- Penal Battalion population cost per entity increased 1 -> 1.5 (6 -> 9 in total)
+
+USF:
+- Paratrooper and Captain thompson close range accuracy decreased 0.57 -> 0.54
+- Paratrooper and Captain thompson mid range accuracy increased 0.15 -> 0.16
+- Captain thompson damage decreased to match Paratrooper thompson 9 damage more closely 12 -> 10
+- Captain thompson reload time decreased to match Paratrooper thompson 2.9-3.7 -> 2.1-3.2
+- Captain thompson reload frequency decreased to match Paratrooper thompson 5-5 -> 5-6
+- Combat Engineer m3 grease gun near accuracy decreased 0.62 -> 0.59
+- Combat Engineer m3 grease gun mid accuracy increased 0.14 -> 0.16	
+- Vehicle Crew m3 grease gun near accuracy increased 0.45 -> 0.5
+- Vehicle Crew m3 grease gun damage increased 4 -> 7 to match Combat Engineer weapon 8 damage more closely
+
+Ostheer:
+- Panzergrenadier near range distance reduced 5 -> 0
+- Panzergrenadier mid range distance increased 19 -> 22
+
+OKW:
+- Jaeger light infantry long range accuracy decreased 1 -> 0.5
+- Panzerfusilier G43 damage reduced 27 -> 23. This upgrade previously made the most well rounded squad in the game. It'll be a slightly less obvious choice now
+- Panzerfusilier G43 close range cooldown multiplier decreased 0.25 -> 0.5
+- Panzerfusilier G43 long range accuracy increased 0.15 -> 0.16
+- Panzerfusilier kar98k rifle long range accuracy reduced 0.22 -> 0.18. This is done for consistency between kar98k and G43 dps
+- Obersoldatten LMG42 damage decreased 14 -> 12. Their base weapons are stronger than vanilla, making it, and Field Officer, potent without an exceptionally strong LMG
+- Obersoldatten LMG42 close range accuracy decreased 0.58 -> 0.5
+- Rebalanced Field Officer Luger pistol
+- Field officer accuracy multiplier increased 10% -> 17.5%
+
+
+=================================================================
 ## v0.38
 =================================================================
 

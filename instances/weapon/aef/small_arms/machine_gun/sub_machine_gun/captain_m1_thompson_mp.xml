@@ -120,9 +120,9 @@
 			<instance_reference name="projectile" value="" />
 		</group>
 		<group name="accuracy">
-			<float name="mid" value="0.15" />
+			<float name="mid" value="0.16" />
 			<float name="far" value="0.06" />
-			<float name="near" value="0.57" />
+			<float name="near" value="0.54" />
 		</group>
 		<group name="suppression">
 			<float name="nearby_suppression_multiplier" value="0" />
@@ -388,8 +388,8 @@
 		</group>
 		<string name="fx_tracer_name" value="smg_thompson_tracer" />
 		<group name="damage">
-			<float name="max" value="12" />
-			<float name="min" value="12" />
+			<float name="max" value="10" />
+			<float name="min" value="10" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
@@ -429,12 +429,12 @@
 			<list name="on_reload_actions">
 			</list>
 			<group name="frequency">
-				<float name="max" value="5" />
+				<float name="max" value="6" />
 				<float name="min" value="5" />
 			</group>
 			<group name="duration">
-				<float name="max" value="3.7" />
-				<float name="min" value="2.9" />
+				<float name="max" value="3.2" />
+				<float name="min" value="2.1" />
 			</group>
 		</group>
 		<bool name="fx_always_visible" value="False" />

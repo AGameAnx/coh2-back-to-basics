@@ -122,7 +122,7 @@
 		<group name="accuracy">
 			<float name="mid" value="0.14" />
 			<float name="far" value="0.02" />
-			<float name="near" value="0.45" />
+			<float name="near" value="0.5" />
 		</group>
 		<group name="suppression">
 			<float name="nearby_suppression_multiplier" value="0" />
@@ -388,8 +388,8 @@
 		</group>
 		<string name="fx_tracer_name" value="smg_m3_greasegun_tracer" />
 		<group name="damage">
-			<float name="max" value="4" />
-			<float name="min" value="4" />
+			<float name="max" value="7" />
+			<float name="min" value="7" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
