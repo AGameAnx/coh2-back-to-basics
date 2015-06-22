@@ -27,7 +27,7 @@
 			<locstring name="extra_text" value="11046311" />
 			<locstring name="help_text" value="11046313" />
 			<string name="hotkey_name" value="" />
-			<string name="icon_name" value="Icons_weapons_weapon_ptrs" />
+			<icon name="icon_name" value="Icons_weapons_weapon_ptrs" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
 			<locstring name="screen_name" value="11007680" />

@@ -375,7 +375,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="4" />
+								<float name="value" value="1.5" />
 								<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 							</template_reference>
 							<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -384,7 +384,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="4" />
+								<float name="value" value="1.25" />
 								<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 							</template_reference>
 							<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
@@ -393,7 +393,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="0.25" />
+								<float name="value" value="0.7" />
 								<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 							</template_reference>
 						</list>
@@ -797,6 +797,10 @@
 							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\tank_trap" />
 							<int name="ui_position" value="23" />
 						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\german_sandbag_fence_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<int name="ui_position" value="24" />
+						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_german_pioneer_basic" />
 				</group>
@@ -831,6 +835,10 @@
 							<instance_reference name="ebp" value="ebps\races\german\buildings\base_building\hintere_panzerwerk_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 							<int name="ui_position" value="13" />
 						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\wg_sandbag_fence_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<int name="ui_position" value="23" />
+						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_german_pioneer_advanced" />
 				</group>
@@ -859,7 +867,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="0" />
 				<string name="hotkey_name" value="" />
-				<string name="icon_name" value="" />
+				<icon name="icon_name" value="" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="0" />

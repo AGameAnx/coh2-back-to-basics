@@ -118,7 +118,8 @@
 			<float name="duration" value="0" />
 		</group>
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0.25" />
 			<float name="wind_up" value="0" />
 		</group>
@@ -166,7 +167,8 @@
 				<float name="max" value="3.5" />
 				<float name="min" value="2" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="frequency">
 				<float name="max" value="8" />
 				<float name="min" value="8" />
@@ -251,7 +253,8 @@
 		</group>
 		<group name="damage">
 			<float name="max" value="30" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="min" value="30" />
 		</group>
 		<string name="fx_action_target_name" value="fx_g34_sniperfire_target" />
@@ -319,7 +322,8 @@
 			<float name="offhand_start_time" value="0.125" />
 		</group>
 		<group name="deflection">
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<float name="deflection_damage_multiplier" value="0" />
 			<bool name="has_deflection_damage" value="False" />
 		</group>
@@ -382,6 +386,7 @@
 				<float name="mid" value="1" />
 				<float name="far" value="1" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<group name="behaviour">
 			<bool name="artillery_force_obey_los" value="False" />

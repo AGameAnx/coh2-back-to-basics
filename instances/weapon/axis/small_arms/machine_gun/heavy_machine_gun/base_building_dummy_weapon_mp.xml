@@ -83,7 +83,8 @@
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="99" />
-									<list name="actions" />
+									<list name="actions">
+									</list>
 								</group>
 								<group name="action_choice">
 									<int name="weight" value="1" />
@@ -181,7 +182,8 @@
 		</group>
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
 		</group>
@@ -189,7 +191,8 @@
 		<group name="damage">
 			<float name="min" value="2" />
 			<float name="max" value="2" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 		</group>
 		<icon name="icon_name" value="" />
 		<group name="reload">
@@ -197,7 +200,8 @@
 				<float name="max" value="5" />
 				<float name="min" value="5" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="max" value="6" />
 				<float name="min" value="6" />
@@ -259,6 +263,7 @@
 				<float name="far" value="0" />
 				<float name="mid" value="0" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="damage_over_time">

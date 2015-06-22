@@ -162,6 +162,7 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="303" />
 </instance>

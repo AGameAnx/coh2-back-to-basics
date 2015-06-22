@@ -385,7 +385,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\german\team_weapons\at_gun\pak40_75mm_at_gun_mp" />
+					<instance_reference name="type" value="ebps\races\german\team_weapons\at_gun\pak40_75mm_at_gun_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</group>
 				<group name="loadout_data">
 					<float name="num" value="4" />

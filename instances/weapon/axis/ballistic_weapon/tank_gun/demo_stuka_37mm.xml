@@ -394,6 +394,7 @@
 				<float name="far" value="1" />
 				<float name="mid" value="1" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<group name="aim">
 			<float name="post_firing_aim_time" value="0" />

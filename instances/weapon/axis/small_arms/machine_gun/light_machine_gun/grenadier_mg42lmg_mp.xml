@@ -216,6 +216,7 @@
 				<float name="far" value="0" />
 				<float name="mid" value="0" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="damage_over_time">

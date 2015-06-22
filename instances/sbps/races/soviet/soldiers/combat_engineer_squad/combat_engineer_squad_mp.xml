@@ -348,7 +348,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="4" />
+								<float name="value" value="1.5" />
 								<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 							</template_reference>
 							<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -357,7 +357,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="4" />
+								<float name="value" value="1.25" />
 								<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 							</template_reference>
 							<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
@@ -366,7 +366,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="0.25" />
+								<float name="value" value="0.7" />
 								<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 							</template_reference>
 						</list>
@@ -719,7 +719,7 @@
 				<locstring name="extra_text" value="11042785" />
 				<locstring name="help_text" value="45" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<string name="hotkey_name" value="D" />
-				<string name="icon_name" value="Icons_abilities_ability_soviet_demo_charge" />
+				<icon name="icon_name" value="Icons_abilities_ability_soviet_demo_charge" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="11006709" />

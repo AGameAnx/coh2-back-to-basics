@@ -150,7 +150,7 @@
 			<bool name="remove_from_pathfinding_on_death" value="True" />
 			<bool name="reveal_to_all_on_death" value="False" />
 			<bool name="ui_can_scuttle" value="False" />
-			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panther_sdkfz_171" mod="23d6cdb82724460dbcb21e1a9162e473" />
+			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panther_sdkfz_171" />
 			<list name="death_actions">
 			</list>
 			<float name="armor" value="280" />
@@ -496,8 +496,8 @@
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_west_german_panther_w_portrait" />
-			<string name="portrait_icon_summer" value="Icons_portraits_vehicle_west_german_panther_s_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_vehicle_west_german_panther_w_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_vehicle_west_german_panther_s_portrait" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="extra_text" value="11074146" />
 			<locstring name="screen_name_short" value="0" />

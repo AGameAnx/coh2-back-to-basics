@@ -387,6 +387,7 @@
 				<float name="near" value="0.2" />
 				<float name="far" value="0.1" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<group name="damage_over_time">
 			<template_reference name="damage_over_time" value="dot_type\none">

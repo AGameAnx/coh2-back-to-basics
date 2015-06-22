@@ -258,6 +258,7 @@
 				<float name="near" value="0" />
 				<float name="mid" value="0" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<locstring name="ui_name" value="0" />
 		<group name="cover_table">

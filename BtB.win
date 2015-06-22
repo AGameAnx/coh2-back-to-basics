@@ -5,3 +5,21 @@ fe_priority = 0
 score_display = vp_ticker
 show_time = true
 requires_vp_ticker = true
+options =
+{
+    {
+        default = false,
+        fe_name = "400 points",
+        value = 400,
+    },
+    {
+        default = true,
+        fe_name = "500 points",
+        value = 500,
+    },
+    {
+        default = false,
+        fe_name = "800 points",
+        value = 800,
+    }
+}

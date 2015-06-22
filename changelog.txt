@@ -1,12 +1,152 @@
 =================================================================
+## v0.41
+=================================================================
+
+June mod tools patch
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Fuel and Ammunition point capture and revert times reduced 30s/20s -> 20s/15s
+- Fuel point income rate decreased +7 -> +6
+- Increased the effectiveness of heavy team weapon directional cover (0.5->0.4 accuracy 0.5->0.4 damage)
+
+Soviet:
+- B4 barrage damage increased 450 -> 600
+- B4 artillery construction time reduced 240s -> 180s
+- B4 artillery cost reduced 450mp/105f -> 400mp/90f
+- ML-20 artillery construction time reduced 240s -> 180s
+
+USF:
+- Major artillery cost reduced 120mu -> 70mu
+- P47 rocket attack cost reduced 240mu -> 180mu
+- 240mm artillery cost increased 180mu -> 200mu
+- 155mm artillery cost decreased 180mu -> 120mu
+- Time on target artillery cost decreased 180mu -> 120mu
+- Priest creeping barrage cost reduced 50mu -> 25mu
+- M36 Jackson damage decreased 220/240 -> 200/220
+- M1 57mm AT gun damage decreased 160 -> 150
+- M1 57mm AT gun far penetration decreased 115 -> 100
+
+Ostheer:
+- Panzer IV hitpoints reduced 640 -> 600
+- Panzer IV armor increased 180 -> 200
+- Pak40 damage increased 160 -> 180
+- Pak40 far accuracy decreased 0.047 -> 0.04
+- Pak40 far penetration reduced 120 -> 110
+- leFH18 artillery construction time reduced 240s -> 180s
+- Elefant hitpoints increased 1040 -> 1190
+- Elefant main gun reworked:
+ * Area of effect max radius 0.6 -> 1.75
+ * Area of effect penetration reduced 180/200/220 -> 50/120/220
+ * Area of effect distances increased 0.3/0.2/0.1 -> 1.65/0.75/0.1
+- Tiger CP cost reduced 14 -> 13
+- Railway gun artillery cost reduced 200mu -> 160mu
+
+OKW:
+- Infrared halftrack cost reduced 200mp/25f -> 150mp/20f
+
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Overall manpower income increased +30 -> +60
+- Command point gain rate increased 0.75 -> 0.85
+- Base fuel income rate increased by 1.75 per minute
+- Base upkeep increased 1.15 -> 1.2
+- A large logic update to ballistics script:
+ * Global events are no longer being listened to, the system is based on squad and player events. This is an attempt to fix sync issues
+ * The system no longer requires ballistic weapons affected by the script to have no penetration, the weapon damage is correctly disabled if it is being applied by the script making sure it never gets applied twice
+ * The system no longer applies damage to neutral targets manually and relies on the engine again fixing a number of issues which stemmed from the previous implementation
+- Victory Point win condition now has custom selectable point objectives: 400 points, 500 points (default) and 800 points
+
+AI:
+- Adjusted most of the available default AI preset values to more closely represent human behavior and improve its combat performance
+- Almost all units in the game have seen utility, purchase history and per unit utility decrease updates, making AI construct believable and diverse compositions
+- Massively lowered AI squad point capture priority, made an attempt to remove instances where AI blindly captures points under fire
+- Adjusted min non-support units number 4 -> 2
+- Reduced clump search refresh time
+- Hardest AI will no longer have a chance to ignore abilities targeted at it
+- Hardest AI will now have a chance of having a small delay before avoiding abilities targeted near their squads
+- Hard AI ability ignoring chance 25% -> 10%
+- Tactic retry timers now match between Hardest and Hard AI
+- Tactic retry timers for Standard AI are now equal to vanilla Hard AI retry timers
+- Adjusted resource multipliers for Hardest AI:
+ * Manpower multiplier 1.6 -> 1.7
+ * Munitions multiplier 1.3 -> 1.45
+ * Fuel multiplier kept at 1.6
+- Adjusted resource multipliers for Hard AI:
+ * Manpower multiplier 1.25 -> 1.45
+ * Munitions multiplier 1 -> 1.2
+ * Fuel multiplier kept at 1.25
+- Hard AI now has a 1.2 catchup manpower bonus
+- Hardest AI catchup manpower bonus increased 1.2 -> 1.35
+- Hard AI may now have up to 4 max attack objectives (as opposed to previous max of 2)
+- Retreat delays lowered drastically for all AI difficulties
+- Squads no longer retreat on suppression. This is handled in a custom retreat function
+- Retreat health ratio 0.1 -> 0.2
+- Fallback health and capacity ratio set to 0. This should make AI stay in the fight rather than turning its back towards the enemy just before needing to retreat
+- Retreat combat rating ratio 0 -> 0.2. This should make AI retreat its units if it's losing decisively
+- Fallback combat ratio 0.5 -> 0.65. This should make AI reposition its units if it is losing a fight
+- Easy AI will now reinforce
+- AI will now evaluate artillery and grenade abilities when squads are still moving out of combat
+- Major can now use his recon run
+- AI will no longer capture team weapons while its under fire
+- Hold tactic range reduced. This should prevent AI from randomly moving its squads while in combat
+- Hold tactic priority slightly reduced
+- Cover tactic max range reduced significantly. This should make AI take cover more logically and not move too much while in combat
+
+AIControl:
+- Completed a large performance pass nearly removing the impact of this system on the game, whereas it was stalling the game quite badly before
+- Implemented a plethora of updated to unit control portion of the script, adding additional parameters and settings allowing for very detailed custom behaviors for snipers, AT guns and mobile artillery
+- Implemented a new manual barrage control system:
+ * Uses custom clump scan data
+ * Clump scan data relies heavily on history if the units are not visible, making sure that AI doesn't barrage blindly
+ * Can use special position filters, allowing for implementation of advanced AI abilities such as smoke barrages in front of enemy MGs
+- Implemented a new combat unit control system:
+ * Allows the script to manually control any infantry that's currently in combat
+ * This system, however, is disabled for the time being because of issues with squad tactics being executed even on squads that are supposed to be locked from normal AI
+ * Includes custom behavior for assault troops, making them close in to effective distance rather than stay away simply using attack move in engagements
+ * Abilities may use custom behaviors queueing commands on certain game events, chaining abilities together
+- Large improvements to infantry retreat logic
+
+
+=================================================================
 ## v0.40
 =================================================================
 
 -----------------------------------------------------------------
 ## Attributes:
 
+General:
+- Point blank range (weapons start ignoring cover) reduced  10 -> 2
+- Distance at which squads get out of the way of vehicles reduced 4 -> 3
+- Pathfinding vehicle turn weighting increased 1.5 -> 1.75, vehicles will try to move along their current rotation more than previously
+- There is no longer an upkeep limit of 200mp/minute
+- All infantry suppression effects reduced:
+ * Cooldown multiplier 4 -> 1.5
+ * Reload multiplier 4 -> 1.25
+ * Accuracy multiplier 0.25 -> 0.7
+
 Ostheer:
 - Elefant Focused sight addition modifier increased +10 -> +15 (the total sight radius also gets increased by a win condition LOS percentage modifier)
+- IS-2 can now penetrate enemy vehicles (bug fix)
+- OKW Puma no longer deals double damage (bug fix)
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Victory point drain is no longer sped up
+
+AI:
+- Large improvements to vehicle retreat logic
+- Large improvements to vehicle movement logic
+- Large improvements to team weapon setup, facing, fallback and retreat
+- Upkeep multiplier 0.95 -> 0.85
+- AI players now have 160 population cap
 
 
 =================================================================

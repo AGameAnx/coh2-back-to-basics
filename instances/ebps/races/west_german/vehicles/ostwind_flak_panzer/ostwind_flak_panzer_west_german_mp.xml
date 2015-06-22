@@ -458,8 +458,8 @@
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_german_ostwind_w_portrait" />
-			<string name="portrait_icon_summer" value="Icons_portraits_vehicle_german_ostwind_s_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_vehicle_german_ostwind_w_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_vehicle_german_ostwind_s_portrait" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="extra_text" value="11049101" />
 			<locstring name="screen_name_short" value="0" />

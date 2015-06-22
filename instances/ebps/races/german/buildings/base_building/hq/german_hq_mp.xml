@@ -34,7 +34,7 @@
 			<bool name="remove_from_pathfinding_on_death" value="False" />
 			<bool name="reveal_to_all_on_death" value="True" />
 			<bool name="ui_can_scuttle" value="False" />
-			<instance_reference name="wreck_entity" value="ebps\races\german\buildings\base_building\hq\german_hq_wreck_mp" />
+			<instance_reference name="wreck_entity" value="ebps\races\german\buildings\base_building\hq\german_hq_wreck_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			<list name="death_actions">
 			</list>
 			<float name="armor" value="35" />
@@ -260,14 +260,14 @@
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
 			<icon name="minimap_icon" value="Icons_taskbar_coh_taskbar_01_sc_icon_01" />
-			<string name="portrait_icon_winter" value="Icons_portraits_building_german_headquarters_w_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_building_german_headquarters_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<string name="portrait_icon_summer" value="Icons_portraits_building_german_headquarters_s_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_building_german_headquarters_s_portrait" />
 			<locstring name="brief_text" value="11038998" />
 			<locstring name="extra_text" value="11041840" />
 			<bool name="show_in_build_log" value="True" />

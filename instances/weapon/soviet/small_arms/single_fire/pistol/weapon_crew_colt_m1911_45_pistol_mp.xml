@@ -127,7 +127,8 @@
 		<group name="damage">
 			<float name="max" value="2" />
 			<float name="min" value="2" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 		</group>
 		<group name="damage_over_time">
 			<template_reference name="damage_over_time" value="dot_type\none">
@@ -184,6 +185,7 @@
 				<float name="near" value="1" />
 			</template_reference>
 			<bool name="damage_all_in_hold" value="False" />
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="behaviour">
@@ -343,18 +345,21 @@
 				<float name="min" value="3" />
 				<float name="max" value="3" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 		</group>
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<bool name="has_deflection_damage" value="False" />
 		</group>
 		<float name="fx_tracer_speed" value="120" />
 		<group name="fire">
 			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<instance_reference name="ui_setfacing" value="" />
 		<locstring name="ui_name" value="0" />

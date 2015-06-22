@@ -56,6 +56,7 @@
 				<float name="near" value="1" />
 				<float name="mid" value="1" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<string name="name" value="37mm Cannon (M8 Greyhound)" />
 		<group name="reload">

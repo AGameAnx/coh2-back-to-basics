@@ -1,4 +1,4 @@
-<instance template="weapon" description="">
+<instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="scatter">
 			<float name="distance_scatter_offset" value="0.8" />
@@ -92,11 +92,13 @@
 				<float name="far" value="0.25" />
 				<float name="near" value="1" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<group name="fire">
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="1.625" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
@@ -606,7 +608,8 @@
 				<float name="far" value="1" />
 				<float name="near" value="0.5" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="frequency">
 				<float name="max" value="4" />
 				<float name="min" value="4" />

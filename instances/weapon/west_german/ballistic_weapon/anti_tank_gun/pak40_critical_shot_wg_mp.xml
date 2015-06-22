@@ -175,6 +175,7 @@
 				<float name="far" value="0.1" />
 				<float name="near" value="0.2" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<group name="fire">
 			<float name="wind_up" value="0.25" />

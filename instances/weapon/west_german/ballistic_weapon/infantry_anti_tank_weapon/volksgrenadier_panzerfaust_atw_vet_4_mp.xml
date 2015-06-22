@@ -441,6 +441,7 @@
 				<float name="far" value="0.1" />
 				<float name="mid" value="0.15" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<float name="fx_delay_in_building" value="0" />
 		<enum name="weapon_type" value="ballistic" />

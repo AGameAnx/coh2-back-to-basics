@@ -372,14 +372,14 @@
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="100" />
 			<icon name="minimap_icon" value="Icons_taskbar_coh_taskbar_west_german_mechanized_regiment_hq" />
-			<string name="portrait_icon_winter" value="Icons_portraits_building_west_german_mechanized_regiment_hq_w_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_building_west_german_mechanized_regiment_hq_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<string name="portrait_icon_summer" value="Icons_portraits_building_west_german_mechanized_regiment_hq_s_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_building_west_german_mechanized_regiment_hq_s_portrait" />
 			<locstring name="brief_text" value="11055049" />
 			<locstring name="extra_text" value="11075550" />
 			<bool name="show_in_build_log" value="True" />

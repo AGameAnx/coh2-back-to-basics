@@ -1,0 +1,39 @@
+<instance description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
+			<string name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="True" />
+			<file name="animator" value="gameplay\military_ai\high\high" />
+			<bool name="is_visible_in_game" value="False" />
+			<float name="precise_size" value="-1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext">
+			<bool name="is_in_spatial_bucket" value="False" />
+			<float name="rotate_snap" value="360" />
+			<float name="transferable" value="0" />
+			<bool name="kill_paradrop" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext">
+			<group name="unit_type_list">
+				<enum name="unit_type00" value="strategic_node" />
+				<enum name="unit_type01" value="" />
+				<enum name="unit_type02" value="" />
+				<enum name="unit_type03" value="" />
+				<enum name="unit_type04" value="" />
+				<enum name="unit_type05" value="" />
+				<enum name="unit_type06" value="" />
+				<enum name="unit_type07" value="" />
+				<enum name="unit_type08" value="" />
+				<enum name="unit_type09" value="" />
+				<enum name="unit_type10" value="" />
+				<enum name="unit_type11" value="" />
+				<enum name="unit_type12" value="" />
+				<enum name="unit_type13" value="" />
+				<enum name="unit_type14" value="" />
+				<enum name="unit_type15" value="" />
+			</group>
+			<enum name="weapon_targeting" value="no_targeting" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1236" />
+</instance>

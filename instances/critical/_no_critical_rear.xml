@@ -8,12 +8,12 @@
 		<string name="description" value="Weak Penetration" />
 		<bool name="is_unique" value="True" />
 		<group name="kicker_message">
-			<locstring name="message" value="0" />
+			<locstring name="message" value="2153950" />
 			<float name="message_colour_a" value="0" />
 			<float name="message_colour_b" value="0" />
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
-			<float name="message_seconds" value="1" />
+			<float name="message_seconds" value="1.5" />
 		</group>
 		<enum name="target" value="tp_entity" />
 		<list name="actions">

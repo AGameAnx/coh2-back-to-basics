@@ -56,6 +56,7 @@
 				<float name="near" value="0.5" />
 				<float name="mid" value="0.2" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<string name="name" value="37mm Cannon (M15A1 AA Half-track)" />
 		<group name="reload">

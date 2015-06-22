@@ -119,6 +119,7 @@
 				<float name="mid" value="0.075" />
 				<float name="far" value="0.025" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<float name="flinch_radius" value="0" />
 		<icon name="icon_name" value="" />

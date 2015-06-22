@@ -622,7 +622,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="4" />
+								<float name="value" value="1.5" />
 								<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 							</template_reference>
 							<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -631,7 +631,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="4" />
+								<float name="value" value="1.25" />
 								<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 							</template_reference>
 							<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
@@ -640,7 +640,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="0.25" />
+								<float name="value" value="0.7" />
 								<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 							</template_reference>
 							<template_reference name="modifier" value="modifiers\speed_maximum_modifier">

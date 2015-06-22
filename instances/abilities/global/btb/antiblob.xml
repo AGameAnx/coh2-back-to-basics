@@ -216,6 +216,7 @@
 		</group>
 		<enum name="squad_caster" value="squad" />
 		<float name="move_back_distance" value="10" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="1073741823" />
 </instance>

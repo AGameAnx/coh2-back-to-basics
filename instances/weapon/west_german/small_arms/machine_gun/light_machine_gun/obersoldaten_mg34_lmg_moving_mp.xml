@@ -428,6 +428,7 @@
 				<float name="far" value="1" />
 				<float name="near" value="1" />
 			</template_reference>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<group name="range">
 			<group name="distance">

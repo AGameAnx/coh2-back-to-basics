@@ -359,6 +359,7 @@
 				<float name="near" value="5" />
 				<float name="far" value="0.6" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<icon name="icon_name" value="" />
 		<group name="suppressed">

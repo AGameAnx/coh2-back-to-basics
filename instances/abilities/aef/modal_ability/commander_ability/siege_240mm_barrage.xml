@@ -59,7 +59,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="180" />
+			<float name="munition" value="200" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -196,6 +196,7 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="15017" />
 </instance>

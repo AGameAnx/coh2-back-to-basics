@@ -8,14 +8,31 @@ import("WinConditions/Annihilate.scar")
 
 import('WinConditions/btb_ballistics_data.scar')
 
+modID = '23d6cdb82724460dbcb21e1a9162e473'
+modIDlength = string.len(modID)
+function removeModID(str)
+	if string.sub(str, 1, modIDlength+1) == modID..':' then
+		return string.sub(str, modIDlength+2)
+	end
+	return str
+end
+
+function normalizeVector(v)
+	local length = math.sqrt(v.x^2 + v.z^2)
+	if length == 0 then return World_Pos(1, 0, 0) end
+	local lengthM = 1/length
+	return World_Pos(v.x * lengthM, 0, v.z * lengthM)
+end
+
 -- Deployment
 import('WinConditions/btb_ballistics.scar')
---import('WinConditions/aicontrol.scar')
+import('WinConditions/aicontrol.scar')
 
 -- Development
 --loadfile('_modscripts/btb_customdebug.scar')()
 --loadfile('_modscripts/btb_ballistics.scar')()
 --loadfile('_modscripts/btb_aicontrol.scar')()
+--loadfile('_modscripts/btb_softretreat.scar')()
 
 local upkeepModifiers = {}
 function BtB_UpdateUpkeep()
@@ -25,7 +42,7 @@ function BtB_UpdateUpkeep()
 	upkeepModifiers = {}
 	for i=1,World_GetPlayerCount() do
 		local p = World_GetPlayerAt(i)
-		upkeepModifiers[table.getn(upkeepModifiers)+1] = Modify_Upkeep(p, 1.15 + 0.1875 * Player_GetCurrentPopulation(p, CT_Personnel) / 120)
+		upkeepModifiers[table.getn(upkeepModifiers)+1] = Modify_Upkeep(p, 1.2 + 0.1875 * Player_GetCurrentPopulation(p, CT_Personnel) / 120)
 	end
 end
 function BtB_Init()
@@ -33,9 +50,9 @@ function BtB_Init()
 		local p = World_GetPlayerAt(i)
 		
 		-- TODO: Save modifiers and reset on init
-		Modify_PlayerResourceRate(p, RT_Manpower, 30/60/8, MUT_Addition)
-		--Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
-		Modify_PlayerResourceRate(p, RT_Action, 0.75, MUT_Multiplication)
+		Modify_PlayerResourceRate(p, RT_Manpower, 60/60/8, MUT_Addition)
+		Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
+		Modify_PlayerResourceRate(p, RT_Action, 0.85, MUT_Multiplication)
 		Modify_PlayerSightRadius(p, 1.05)
 		
 		Player_SetMaxPopulation(p, CT_Personnel, 120)
@@ -46,6 +63,7 @@ function BtB_Init()
 	
 	Camera_SetTuningValue(TV_DistMax, 42)
 	Camera_SetDefault(42, 40, -45)
+	Camera_ResetToDefault()
 	
 	Rule_AddInterval(BtB_UpdateUpkeep, 1)
 end

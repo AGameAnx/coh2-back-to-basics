@@ -1,11 +1,10 @@
-
 import('WinConditions/btb_mainscript.scar')
 import("Prototype/VPTickerWin-Annihilate_Functions.scar")
 
 function VPTicker_CustomInit()
 	VPTicker_OnInit()
 	Rule_Remove(VPTicker_MainRule)
-	Rule_AddInterval(VPTicker_MainRule, 3.2)
+	Rule_AddInterval(VPTicker_MainRule, 4.0) -- vanilla is 4.0
 end
 
 Scar_AddInit(VPTicker_CustomInit)

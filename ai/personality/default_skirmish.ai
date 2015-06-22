@@ -1,0 +1,8 @@
+import("skirmish.ai")
+
+function InitializeAIPersonality()
+	
+end
+
+InitializeSkirmishAI()
+InitializeAIPersonality()

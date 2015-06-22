@@ -3,19 +3,10 @@
 -- TODO: All abilities that modify receieved penetration & damage
 -- TODO: More criticals (Brew up, kill gunner, sturmtiger abandon)
 
-local modID = '23d6cdb82724460dbcb21e1a9162e473'
-local modIDlength = string.len(modID)
-
 local function Util_CreateLocString(text)
 	local tmpstr = LOC(text)
 	tmpstr[1] = text
 	return tmpstr
-end
-local function removeModID(str)
-	if string.sub(str, 1, modIDlength+1) == modID..':' then
-		return string.sub(str, modIDlength+2)
-	end
-	return str
 end
 
 local function BtB_Ballistics_FindClosestHitTarget(hitPosition, projectileHeading, shootingEntity)
@@ -392,10 +383,8 @@ end
 ---------------------------------------------------------------------------------------------------------
 
 function BtB_ProjectileLanded(projectile, shootingEntity, target)
-	local projectileName = removeModID(BP_GetName(Entity_GetBlueprint(projectile)))
 	if projectile and target then
-		local hitPosition = Entity_GetPosition(projectile)
-		
+		local projectileName = removeModID(BP_GetName(Entity_GetBlueprint(projectile)))
 		local weaponSettings = btb_ballistics_settings[projectileName]
 		if weaponSettings then
 			-- Extra effects for ballistic weaponry
@@ -403,7 +392,13 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 			--	Misc_DoWeaponHitEffectOnPosition(Util_GetRandomPosition(hitPosition, 0.65), BP_GetWeaponBlueprint('panzerschreck_atw_mp'), true)
 			--end
 			
-			local originPosition = Entity_GetPosition(shootingEntity)
+			local hitPosition = Entity_GetPosition(projectile)
+			local originPosition
+			if shootingEntity then
+				originPosition = Entity_GetPosition(shootingEntity)
+			else
+				originPosition = Entity_GetPosition(projectile)
+			end
 			local projectileHeading = Entity_GetHeading(projectile)
 			
 			if scartype(target) ~= ST_ENTITY then
@@ -413,12 +408,98 @@ function BtB_ProjectileLanded(projectile, shootingEntity, target)
 				local weaponDamage, weaponPenetration = BtB_Ballistics_GetWeaponStatistics(weaponSettings, originPosition, hitPosition, target)
 				local vehicleSettings = btb_ballistics_vehicles[removeModID(BP_GetName(Entity_GetBlueprint(target)))]
 				if vehicleSettings then
+					Entity_SetProjectileCanExplode(projectile, false)
 					BtB_Ballistics_ProcessVehicleHit(shootingEntity, target, hitPosition, projectileHeading, vehicleSettings, weaponDamage, weaponPenetration)
-				else
-					BtB_Ballistics_ProcessStandardHit(shootingEntity, target, hitPosition, weaponDamage)
+				--else
+					--BtB_Ballistics_ProcessStandardHit(shootingEntity, target, hitPosition, weaponDamage)
 				end
 			end
 		end
 	end
 end
-Rule_AddGlobalEvent(BtB_ProjectileLanded, GE_ProjectileLanded)
+--[[function BtB_ProjectileFired(projectile, shootingEntity)
+	CustomDebug.Print('projectile fired')
+	if projectile then
+		local projectileName = removeModID(BP_GetName(Entity_GetBlueprint(projectile)))
+		local weaponSettings = btb_ballistics_settings[projectileName]
+		if weaponSettings then
+			Entity_SetProjectileCanExplode(projectile, false)
+		end
+	end
+end]]
+
+---------------------------------------------------------------------------------------------------------
+
+local BtB_Ballistics_Squads = {}
+local BtB_Ballistics_NextPlayerToScan = 1
+
+local function BtB_Ballistics_ScanPlayer(player)
+	local playerIndex = World_GetPlayerIndex(player)
+	local playerSquads = Player_GetSquads(player)
+	for i=1,SGroup_CountSpawned(playerSquads) do
+		local squad = SGroup_GetSpawnedSquadAt(playerSquads, i)
+		local squadGameID = Squad_GetGameID(squad)
+		if not BtB_Ballistics_Squads[playerIndex][squadGameID] then
+			BtB_Ballistics_Squads[playerIndex][squadGameID] = true
+			--Rule_AddSquadEvent(BtB_ProjectileFired, squad, GE_ProjectileFired)
+			Rule_AddSquadEvent(BtB_ProjectileLanded, squad, GE_ProjectileLanded)
+		end
+	end
+end
+function BtB_Ballistics_Event_BuildItemComplete(player, blueprint)
+	BtB_Ballistics_ScanPlayer(player)
+end
+function BtB_Ballistics_ScanNextPlayer()
+	local player = World_GetPlayerAt(BtB_Ballistics_NextPlayerToScan)
+	BtB_Ballistics_ScanPlayer(player)
+	if BtB_Ballistics_NextPlayerToScan == World_GetPlayerCount() then
+		BtB_Ballistics_NextPlayerToScan = 1
+	else
+		BtB_Ballistics_NextPlayerToScan = BtB_Ballistics_NextPlayerToScan + 1
+	end
+end
+
+--[[function BtB_Ballistics_PreviewRule()
+	local s_sg = SGroup_CreateIfNotFound('ballistics_selection')
+	local mo_sg = SGroup_CreateIfNotFound('ballistics_mouseover')
+	Misc_GetSelectedSquads(s_sg, true)
+	if SGroup_Count(s_sg) == 1 then
+		local s1 = SGroup_GetSpawnedSquadAt(s_sg, 1)
+		local s1Owner = Squad_GetPlayerOwner(s1)
+		
+		local localPlayer = Game_GetLocalPlayer()
+		
+		if s1Owner == localPlayer then
+			Util_AddMouseoverSquadToSGroup(mo_sg, true)
+			if SGroup_Count(mo_sg) == 1 then
+				local s2 = SGroup_GetSpawnedSquadAt(mo_sg, 1)
+				if Player_GetRelationship(localPlayer, Squad_GetPlayerOwner(s2)) == RT_Enemy then
+					local posDiff = 
+					
+					-- TODO
+					
+					local angleOfAttack =
+						math.acos((-projectileHeading.x*targetHeading.x - projectileHeading.y*targetHeading.y - projectileHeading.z*targetHeading.z)
+						/(
+							math.sqrt(projectileHeading.x^2 + projectileHeading.y^2 + projectileHeading.z^2)*
+							math.sqrt(targetHeading.x^2 + targetHeading.y^2 + targetHeading.z^2))
+						)*180/3.14159
+					
+					dr_text3d('aicontrol_maincontrol', pos.x, pos.y+9, pos.z, string.format('%.2f', angleOfAttack)..'deg', 255, 255, 255)
+				end
+			end
+		end
+	end
+end]]
+
+function BtB_Ballistics_Init()
+	--Rule_AddGlobalEvent(BtB_ProjectileLanded, GE_ProjectileLanded)
+	for i=1,World_GetPlayerCount() do
+		BtB_Ballistics_Squads[i] = {}
+		Rule_AddPlayerEvent(BtB_Ballistics_Event_BuildItemComplete, World_GetPlayerAt(i), GE_BuildItemComplete)
+		--Rule_AddPlayerEvent(BtB_Ballistics_Event_SpawnActionComplete, World_GetPlayerAt(i), GE_SpawnActionComplete)
+	end
+	Rule_AddInterval(BtB_Ballistics_ScanNextPlayer, 2)
+	--Rule_Add(BtB_Ballistics_PreviewRule)
+end
+Scar_AddInit(BtB_Ballistics_Init)

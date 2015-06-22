@@ -396,6 +396,7 @@
 				<float name="far" value="1" />
 				<float name="mid" value="1" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<string name="fx_tracer_name" value="" />
 		<group name="projectile">

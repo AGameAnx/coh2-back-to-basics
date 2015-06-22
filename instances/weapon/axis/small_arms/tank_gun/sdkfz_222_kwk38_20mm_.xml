@@ -284,6 +284,7 @@
 				<float name="mid" value="0.15" />
 				<float name="near" value="0.2" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

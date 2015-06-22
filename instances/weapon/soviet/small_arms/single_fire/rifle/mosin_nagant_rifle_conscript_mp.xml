@@ -185,6 +185,7 @@
 				<float name="near" value="1" />
 			</template_reference>
 			<bool name="damage_all_in_hold" value="False" />
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="behaviour">

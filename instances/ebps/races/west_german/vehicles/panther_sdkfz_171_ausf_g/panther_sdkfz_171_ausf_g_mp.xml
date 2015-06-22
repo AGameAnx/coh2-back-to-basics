@@ -483,8 +483,8 @@
 			<float name="weapon_priority" value="0" />
 			<template_reference name="wreck_entity_option" value="options\ebpextensions\healthext\wreck_table">
 				<enum_table name="wreck_entities">
-					<instance_reference name="default" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panther_sdkfz_171" mod="23d6cdb82724460dbcb21e1a9162e473" />
-					<instance_reference name="brewup" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panther_sdkfz_171_brewup" mod="23d6cdb82724460dbcb21e1a9162e473" />
+					<instance_reference name="default" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panther_sdkfz_171" />
+					<instance_reference name="brewup" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panther_sdkfz_171_brewup" />
 				</enum_table>
 			</template_reference>
 		</template_reference>
@@ -619,8 +619,8 @@
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<string name="portrait_icon_winter" value="Icons_portraits_vehicle_west_german_panther_w_portrait" />
-			<string name="portrait_icon_summer" value="Icons_portraits_vehicle_west_german_panther_s_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_vehicle_west_german_panther_w_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_vehicle_west_german_panther_s_portrait" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="extra_text" value="11071537" />
 			<locstring name="screen_name_short" value="0" />

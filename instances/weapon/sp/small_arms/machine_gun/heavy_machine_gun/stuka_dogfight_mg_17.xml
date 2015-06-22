@@ -343,6 +343,7 @@
 				<float name="mid" value="0.625" />
 				<float name="far" value="0.25" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<group name="tracking">
 			<float name="pivot_end_time" value="0" />

@@ -77,14 +77,14 @@
 		</group>
 		<group name="deflection">
 			<list name="on_deflected_actions">
-				<template_reference value="action\requirement_action" name="action">
+				<template_reference name="action" value="action\requirement_action">
 					<list name="action_table">
-						<template_reference value="action\random_action" name="action">
+						<template_reference name="action" value="action\random_action">
 							<list name="random_actions">
 								<group name="action_choice">
 									<int name="weight" value="104" />
 									<list name="actions">
-										<template_reference value="action\trigger_critical_action" name="action">
+										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<uniqueid name="id" value="62228" />
 											<instance_reference name="critical" value="critical\vehicle_destroy" />
@@ -94,7 +94,7 @@
 								<group name="action_choice">
 									<int name="weight" value="9896" />
 									<list name="actions">
-										<template_reference value="action\no_action" name="action">
+										<template_reference name="action" value="action\no_action">
 											<uniqueid name="id" value="391881" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
@@ -119,7 +119,7 @@
 						<int name="phrase_order" value="0" />
 					</template_reference>
 					<list name="requirement_table">
-						<template_reference value="requirements\required_unit_type" name="required">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<locstring name="ui_name" value="0" />
 							<enum name="reason" value="usage" />
 							<template_reference name="qualify_option" value="options\none">
@@ -187,7 +187,8 @@
 		</group>
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
 		</group>
@@ -195,7 +196,8 @@
 		<group name="damage">
 			<float name="min" value="8" />
 			<float name="max" value="8" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 		</group>
 		<icon name="icon_name" value="" />
 		<group name="reload">
@@ -203,7 +205,8 @@
 				<float name="max" value="4" />
 				<float name="min" value="4" />
 			</group>
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="duration">
 				<float name="max" value="4.6" />
 				<float name="min" value="4.1" />
@@ -265,6 +268,7 @@
 				<float name="far" value="0" />
 				<float name="mid" value="0" />
 			</group>
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="damage_over_time">
