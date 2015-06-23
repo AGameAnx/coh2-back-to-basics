@@ -390,9 +390,9 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_defcover_narrow">
@@ -408,9 +408,9 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.85" />
+				<float name="damage_multiplier" value="0.65" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
 			<group name="tp_smoke">
@@ -456,9 +456,9 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_garrison_cover">
@@ -470,9 +470,9 @@
 		</group>
 		<string name="fx_action_target_name" value="mg42_turret_mounted_target" />
 		<group name="accuracy">
-			<float name="near" value="0.46" />
-			<float name="far" value="0.11" />
-			<float name="mid" value="0.17" />
+			<float name="near" value="0.368" />
+			<float name="far" value="0.088" />
+			<float name="mid" value="0.136" />
 		</group>
 		<group name="tracking">
 			<group name="normal">

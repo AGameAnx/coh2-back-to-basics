@@ -374,6 +374,8 @@ local function BtB_Ballistics_ProcessVehicleHit(shootingEntity, target, hitPosit
 	if penetrated then
 		local appliedDamage = math.ceil(math.min(weaponDamage, math.ceil(weaponDamage) * (slope*0.45 + 0.6) * damageMultiplier) / 5) * 5
 		BtB_Ballistics_ApplyDamage(shootingEntity, target, hitPosition, appliedDamage, true, true, hitType, slope)
+	else
+		Misc_DoWeaponHitEffectOnEntity(target, hitPosition, Entity_GetWeaponBlueprint(shootingEntity, 0), false)
 	end
 end
 local function BtB_Ballistics_ProcessStandardHit(shootingEntity, target, hitPosition, weaponDamage)

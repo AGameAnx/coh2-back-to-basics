@@ -302,7 +302,7 @@
 			<list name="death_actions">
 			</list>
 			<float name="armor" value="110" />
-			<float name="rear_armor" value="70" />
+			<float name="rear_armor" value="55" />
 			<float name="target_size" value="22" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">

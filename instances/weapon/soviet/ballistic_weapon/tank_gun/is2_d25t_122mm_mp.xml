@@ -36,7 +36,8 @@
 		</group>
 		<group name="deflection">
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<float name="deflection_damage_multiplier" value="0" />
 		</group>
 		<group name="area_effect">
@@ -102,7 +103,8 @@
 			<bool name="disable_moving_firing" value="False" />
 		</group>
 		<group name="fire">
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_up" value="0" />
 			<float name="wind_down" value="0" />
 		</group>
@@ -154,7 +156,8 @@
 			<bool name="delete_previous_on_hit" value="False" />
 		</group>
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="frequency">
 				<float name="max" value="0" />
 				<float name="min" value="0" />
@@ -171,7 +174,8 @@
 		</group>
 		<string name="fx_action_target_name" value="" />
 		<group name="damage">
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="max" value="160" />
 			<float name="min" value="160" />
 		</group>
@@ -357,8 +361,8 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>

@@ -274,9 +274,9 @@
 			<float name="suggested_target" value="1000" />
 		</group>
 		<group name="accuracy">
-			<float name="far" value="0.09" />
-			<float name="near" value="0.42" />
-			<float name="mid" value="0.17" />
+			<float name="far" value="0.072" />
+			<float name="near" value="0.336" />
+			<float name="mid" value="0.136" />
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="scatter">

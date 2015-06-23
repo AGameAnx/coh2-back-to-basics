@@ -91,7 +91,8 @@
 		<float name="fx_delay_in_building" value="0" />
 		<group name="fire">
 			<float name="wind_up" value="0.0125" />
-			<list name="on_fire_actions" />
+			<list name="on_fire_actions">
+			</list>
 			<float name="wind_down" value="1" />
 		</group>
 		<icon name="icon_name" value="" />
@@ -142,7 +143,8 @@
 			<instance_reference name="projectile" value="ebps\projectile\isu_152_shell_piercing_shot_mp" />
 		</group>
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="frequency">
 				<float name="max" value="0" />
 				<float name="min" value="0" />
@@ -191,7 +193,8 @@
 		</group>
 		<group name="deflection">
 			<bool name="has_deflection_damage" value="True" />
-			<list name="on_deflected_actions" />
+			<list name="on_deflected_actions">
+			</list>
 			<float name="deflection_damage_multiplier" value="0.333" />
 		</group>
 		<group name="accuracy">
@@ -212,7 +215,8 @@
 		<string name="name" value="ml-20s 152mm gun main gun" />
 		<group name="damage">
 			<float name="max" value="240" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="min" value="240" />
 		</group>
 		<group name="tracking">
@@ -355,8 +359,8 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>

@@ -448,8 +448,8 @@
 				<float name="penetration_multiplier" value="1" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="suppression_multiplier" value="0.1" />
 				<float name="penetration_multiplier" value="1" />
 			</group>

@@ -351,8 +351,8 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
@@ -416,7 +416,8 @@
 		</group>
 		<group name="damage">
 			<float name="max" value="320" />
-			<list name="on_penetrated_actions" />
+			<list name="on_penetrated_actions">
+			</list>
 			<float name="min" value="320" />
 		</group>
 		<group name="tracking">
@@ -459,7 +460,8 @@
 			<float name="moving_start_time" value="1.8" />
 		</group>
 		<group name="reload">
-			<list name="on_reload_actions" />
+			<list name="on_reload_actions">
+			</list>
 			<group name="frequency">
 				<float name="max" value="0" />
 				<float name="min" value="0" />

@@ -272,8 +272,8 @@
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
 				<float name="penetration_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.5" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_z_emplacement">
@@ -290,8 +290,8 @@
 			</group>
 			<group name="tp_light">
 				<float name="penetration_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.85" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.65" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
 			<group name="tp_trench">
@@ -320,8 +320,8 @@
 			</group>
 			<group name="tp_heavy">
 				<float name="penetration_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.5" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_water">
@@ -381,9 +381,9 @@
 			<bool name="has_instant_setup" value="False" />
 		</group>
 		<group name="accuracy">
-			<float name="near" value="0.68" />
-			<float name="far" value="0.06" />
-			<float name="mid" value="0.2" />
+			<float name="near" value="0.336" />
+			<float name="far" value="0.072" />
+			<float name="mid" value="0.136" />
 		</group>
 		<instance_reference name="ui_range" value="" />
 		<group name="scatter">

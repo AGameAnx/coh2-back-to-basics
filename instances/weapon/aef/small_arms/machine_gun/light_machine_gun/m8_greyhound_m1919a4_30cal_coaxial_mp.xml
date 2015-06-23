@@ -121,9 +121,9 @@
 			<instance_reference name="projectile" value="" />
 		</group>
 		<group name="accuracy">
-			<float name="mid" value="0.28" />
+			<float name="mid" value="0.224" />
 			<float name="far" value="0.12" />
-			<float name="near" value="0.78" />
+			<float name="near" value="0.624" />
 		</group>
 		<group name="suppression">
 			<float name="nearby_suppression_multiplier" value="0" />
@@ -280,8 +280,8 @@
 		<group name="cover_table">
 			<group name="tp_zz_team_weapon_heavy">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="0.5" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 			</group>
 			<group name="tp_garrison_halftrack">
@@ -328,8 +328,8 @@
 			</group>
 			<group name="tp_light">
 				<float name="suppression_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.85" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.65" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 			</group>
 			<group name="tp_zz_deep_snow">
@@ -340,8 +340,8 @@
 			</group>
 			<group name="tp_heavy">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="0.5" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 			</group>
 			<group name="tp_open">

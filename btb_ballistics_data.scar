@@ -1,15 +1,15 @@
 
 btb_ballistics_settings = {
 	["aef_57mm_at_gun"] = {
-		160,
-		{160, 160},
+		150,
+		{150, 150},
 		{140, 125, 115},
 		{0, 66},
 		{-1, 30, -1}
 	},
 	["aef_57mm_at_gun_sabot_round"] = {
-		160,
-		{160, 160},
+		150,
+		{150, 150},
 		{140*1.5, 125*1.5, 115*1.5},
 		{0, 66},
 		{-1, 30, -1}
@@ -43,15 +43,15 @@ btb_ballistics_settings = {
 		{0, 28, 45}
 	},
 	["aef_m36_m10_ap_round"] = {
-		240,
-		{240, 240},
+		220,
+		{220, 220},
 		{280, 250, 220},
 		{0, 51},
 		{0, 30, 51}
 	},
 	["aef_m36_90mm"] = {
-		220,
-		{220, 220},
+		200,
+		{200, 200},
 		{200, 180, 160},
 		{0, 51},
 		{0, 30, 51}
@@ -120,16 +120,16 @@ btb_ballistics_settings = {
 		{10, 35, 60}
 	},
 	["pak40_75mm"] = {
-		80,
-		{80, 80},
-		{170, 170, 170},
+		190,
+		{190, 190},
+		{210, 180, 110},
 		{0, 63},
 		{10, 25, 60}
 	},
 	["pak40_75mm_mp"] = { -- used in an OKW pak40 (unused ingame), stats match
-		160,
-		{160, 160},
-		{210, 180, 120},
+		180,
+		{180, 180},
+		{210, 180, 110},
 		{0, 63},
 		{10, 25, 60}
 	},
@@ -515,12 +515,12 @@ btb_ballistics_vehicles = {
 	["panzerwerfer_sdkfz_4_1"] = {25, true, 15},
 	["panzerwerfer_sdkfz_4_1_mp"] = {20, true, 10},
 	["panzer_iii_mp"] = {90, true, 45},
-	["panzer_iv_commander_sdkfz_161"] = {150, true, 100},
-	["panzer_iv_commander_sdkfz_161_mp"] = {180, true, 90},
-	["panzer_iv_sdkfz_161"] = {150, true, 100},
-	["panzer_iv_sdkfz_161_mp"] = {180, true, 90},
-	["panzer_iv_sdkfz_ausf1"] = {150, true, 100},
-	["panzer_iv_sdkfz_ausf1_mp"] = {180, true, 90},
+	["panzer_iv_commander_sdkfz_161"] = {190, true, 90},
+	["panzer_iv_commander_sdkfz_161_mp"] = {190, true, 90},
+	["panzer_iv_sdkfz_161"] = {190, true, 90},
+	["panzer_iv_sdkfz_161_mp"] = {190, true, 90},
+	["panzer_iv_sdkfz_ausf1"] = {190, true, 90},
+	["panzer_iv_sdkfz_ausf1_mp"] = {190, true, 90},
 	["puma_east_german"] = {25, true, 12.5},
 	["stug_iii_e_sdkfz_141_1"] = {170, true, 75},
 	["stug_iii_e_sdkfz_141_1_commander_mp"] = {170, true, 70},

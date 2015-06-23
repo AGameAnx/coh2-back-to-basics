@@ -15,7 +15,7 @@
 					<uniqueid name="id" value="1073744286" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="4" />
+					<float name="delay" value="3" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
@@ -44,7 +44,7 @@
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="5" />
+					<float name="delay" value="4" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
@@ -84,7 +84,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="120" />
+			<float name="munition" value="180" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />

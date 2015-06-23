@@ -133,10 +133,10 @@
 		<float name="fx_delay_in_building" value="0" />
 		<group name="cover_table">
 			<group name="tp_heavy">
-				<float name="damage_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
 			</group>
 			<group name="tp_z_emplacement">
 				<float name="damage_multiplier" value="1" />
@@ -151,10 +151,10 @@
 				<float name="accuracy_multiplier" value="1.25" />
 			</group>
 			<group name="tp_light">
-				<float name="damage_multiplier" value="0.85" />
+				<float name="damage_multiplier" value="0.65" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
 			</group>
 			<group name="tp_smoke">
 				<float name="damage_multiplier" value="1" />
@@ -217,10 +217,10 @@
 				<float name="accuracy_multiplier" value="1.25" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="damage_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.25" />
 			</group>
 			<group name="tp_water">
 				<float name="damage_multiplier" value="1.5" />
@@ -274,9 +274,9 @@
 			<float name="suggested_target" value="1000" />
 		</group>
 		<group name="accuracy">
-			<float name="far" value="0.12" />
-			<float name="near" value="0.78" />
-			<float name="mid" value="0.28" />
+			<float name="far" value="0.096" />
+			<float name="near" value="0.624" />
+			<float name="mid" value="0.224" />
 		</group>
 		<enum name="weapon_type" value="small_arms" />
 		<group name="scatter">

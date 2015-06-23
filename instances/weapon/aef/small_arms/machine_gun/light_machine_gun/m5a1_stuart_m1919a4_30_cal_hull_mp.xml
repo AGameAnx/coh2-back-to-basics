@@ -121,9 +121,9 @@
 			<instance_reference name="projectile" value="" />
 		</group>
 		<group name="accuracy">
-			<float name="mid" value="0.23" />
-			<float name="far" value="0.09" />
-			<float name="near" value="0.68" />
+			<float name="mid" value="0.184" />
+			<float name="far" value="0.072" />
+			<float name="near" value="0.544" />
 		</group>
 		<group name="suppression">
 			<float name="nearby_suppression_multiplier" value="0" />
