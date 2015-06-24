@@ -154,7 +154,6 @@
 				<float name="priority" value="350" />
 				<string name="tactic_filter_start" value="" />
 				<string name="tactic_filter_abort" value="" />
-				<float name="tactic_max_range_override" value="-1" />
 			</group>
 			<group name="vehicle_decrew_tactic">
 				<enum_table name="class">
