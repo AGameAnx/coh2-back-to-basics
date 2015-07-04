@@ -17,11 +17,11 @@
 									<RelativeName>BtB_annihilate.win</RelativeName>
 								</d2p1:anyType>
 							</Children>
-							<IsExpanded>false</IsExpanded>
+							<IsExpanded>true</IsExpanded>
 							<Name>winconditions</Name>
 						</d2p1:anyType>
 					</Children>
-					<IsExpanded>false</IsExpanded>
+					<IsExpanded>true</IsExpanded>
 					<Name>game</Name>
 				</d2p1:anyType>
 				<d2p1:anyType i:type="Folder">
@@ -52,6 +52,10 @@
 									<BurnSettings i:nil="true" />
 									<RelativeName>btb_mainscript.scar</RelativeName>
 								</d2p1:anyType>
+								<d2p1:anyType i:type="BurnFile">
+									<BurnSettings i:nil="true" />
+									<RelativeName>btb_battleeffects.scar</RelativeName>
+								</d2p1:anyType>
 							</Children>
 							<IsExpanded>true</IsExpanded>
 							<Name>winconditions</Name>
@@ -59,23 +63,6 @@
 					</Children>
 					<IsExpanded>true</IsExpanded>
 					<Name>scar</Name>
-				</d2p1:anyType>
-				<d2p1:anyType i:type="Folder">
-					<Children>
-						<d2p1:anyType i:type="Folder">
-							<Children>
-								<d2p1:anyType i:type="BurnFolder">
-									<BurnSettings />
-									<Hint>Default</Hint>
-									<RelativeName>ai\personality</RelativeName>
-								</d2p1:anyType>
-							</Children>
-							<IsExpanded>true</IsExpanded>
-							<Name>personality</Name>
-						</d2p1:anyType>
-					</Children>
-					<IsExpanded>false</IsExpanded>
-					<Name>ai</Name>
 				</d2p1:anyType>
 			</Children>
 			<IsExpanded>true</IsExpanded>

@@ -143,12 +143,6 @@
 			</template_reference>
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_number_of_squad_members">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<enum name="comparison" value="less_than_or_equal_to" />
-				<float name="number_of_members" value="1" />
-			</template_reference>
 			<template_reference name="required" value="requirements\required_any_in_list">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
@@ -209,6 +203,12 @@
 					</template_reference>
 				</list>
 			</template_reference>
+			<template_reference name="required" value="requirements\required_number_of_squad_members">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<enum name="comparison" value="less_than_or_equal_to" />
+				<float name="number_of_members" value="1" />
+			</template_reference>
 		</list>
 		<template_reference name="ui_info" value="tables\ui_info">
 			<locstring name="screen_name" value="0" />
@@ -216,7 +216,7 @@
 			<icon name="icon_name" value="" />
 			<string name="hotkey_name" value="" />
 		</template_reference>
-		<bool name="repairable" value="False" />
+		<bool name="repairable" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="36" />
 </instance>

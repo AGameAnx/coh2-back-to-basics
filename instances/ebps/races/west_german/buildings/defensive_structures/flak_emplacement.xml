@@ -37,7 +37,7 @@
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="35" />
+			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
 			<float name="target_size" value="10" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -72,13 +72,13 @@
 			<float name="hit_percentage" value="1" />
 			<bool name="pass_through" value="False" />
 			<group name="projectile_pass_through">
-				<bool name="tp_artillery" value="False" />
-				<bool name="tp_artillery_inf" value="False" />
-				<bool name="tp_artillery_overwatch" value="False" />
-				<bool name="tp_homing" value="False" />
-				<bool name="tp_homing_inf" value="False" />
-				<bool name="tp_sticky" value="False" />
-				<bool name="tp_throw" value="False" />
+				<bool name="tp_artillery" value="True" />
+				<bool name="tp_artillery_inf" value="True" />
+				<bool name="tp_artillery_overwatch" value="True" />
+				<bool name="tp_homing" value="True" />
+				<bool name="tp_homing_inf" value="True" />
+				<bool name="tp_sticky" value="True" />
+				<bool name="tp_throw" value="True" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\line_of_sight_ext">
@@ -447,6 +447,22 @@
 					<bool name="undoable" value="False" />
 					<uniqueid name="id" value="1073743938" />
 				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="2" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073743967" />
+				</template_reference>
 				<template_reference name="action" value="action\change_target_action">
 					<list name="actions">
 						<template_reference name="action" value="action\apply_modifiers_action">
@@ -486,22 +502,6 @@
 					</list>
 					<enum name="change_target_type" value="squad" />
 					<uniqueid name="id" value="1073743966" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\received_damage_modifier">
-							<enum name="application_type" value="apply_to_entity" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="2" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073743967" />
 				</template_reference>
 			</list>
 		</template_reference>

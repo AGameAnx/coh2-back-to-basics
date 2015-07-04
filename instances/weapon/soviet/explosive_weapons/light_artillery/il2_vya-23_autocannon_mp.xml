@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.75" />
-			<float name="far" value="0.75" />
-			<float name="mid" value="0.75" />
+			<float name="near" value="0.6" />
+			<float name="far" value="0.6" />
+			<float name="mid" value="0.6" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="4" />
+				<float name="radius" value="2" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.01" />
@@ -56,9 +56,9 @@
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="far" value="4" />
+				<float name="far" value="2" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="2.5" />
+				<float name="mid" value="1" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -185,16 +185,16 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.75" />
 				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="0.75" />
+				<float name="damage_multiplier" value="0.75" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="0.5" />
+				<float name="suppression_multiplier" value="0.75" />
 			</group>
 			<group name="tp_negative">
 				<float name="accuracy_multiplier" value="1.25" />
@@ -270,8 +270,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="20" />
-			<float name="min" value="20" />
+			<float name="max" value="19" />
+			<float name="min" value="19" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>

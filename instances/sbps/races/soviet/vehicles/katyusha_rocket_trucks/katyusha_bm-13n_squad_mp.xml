@@ -1,5 +1,4 @@
-<instance template="sbps" description="squad blueprint for russian rocket truck
-Multiplayer Clone.">
+<instance description="squad blueprint for russian rocket truck&#xD;&#xD;&#xD;&#xD;&#xA;Multiplayer Clone." template="sbps">
 	<uniqueid name="pbgid" value="159" />
 	<list name="extensions">
 		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext">
@@ -412,10 +411,12 @@ Multiplayer Clone.">
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 			<float name="number_of_slots" value="-1" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -423,7 +424,8 @@ Multiplayer Clone.">
 			</template_reference>
 			<group name="suppression">
 				<float name="pin_down_activate_threshold" value="0.3" />
-				<list name="suppressed_activate_actions" />
+				<list name="suppressed_activate_actions">
+				</list>
 				<float name="noncombat_recover_multiplier" value="1" />
 				<bool name="can_be_suppressed" value="False" />
 				<float name="recover_rate" value="0.001" />
@@ -487,7 +489,8 @@ Multiplayer Clone.">
 						<float name="recover_multiplier" value="1" />
 					</group>
 				</group>
-				<list name="pin_down_activate_actions" />
+				<list name="pin_down_activate_actions">
+				</list>
 			</group>
 			<string name="squad_ai_sniped_file" value="" />
 			<string name="squad_ai_reaction_file" value="empty-plan" />
@@ -583,7 +586,8 @@ Multiplayer Clone.">
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<bool name="permanent" value="True" />
@@ -603,13 +607,15 @@ Multiplayer Clone.">
 									</template_reference>
 								</list>
 								<float name="experience_value" value="1570" />
-								<list name="leader_actions" />
-								<locstring name="screen_name" value="11047217" />
+								<list name="leader_actions">
+								</list>
+								<locstring name="screen_name" value="11070912" />
 								<bool name="single_player_only" value="False" />
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<bool name="permanent" value="False" />
@@ -663,13 +669,15 @@ Multiplayer Clone.">
 									</template_reference>
 								</list>
 								<float name="experience_value" value="3140" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<locstring name="screen_name" value="11047220" />
 								<bool name="single_player_only" value="False" />
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<bool name="permanent" value="False" />
@@ -711,7 +719,8 @@ Multiplayer Clone.">
 									</template_reference>
 								</list>
 								<float name="experience_value" value="6280" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<locstring name="screen_name" value="11047372" />
 								<bool name="single_player_only" value="False" />
 							</group>
@@ -726,14 +735,15 @@ Multiplayer Clone.">
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
-				<instance_reference value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_rocket_truck_barrage_mp" mod="23d6cdb82724460dbcb21e1a9162e473" name="ability" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_rocket_truck_barrage_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\vehicle_crew_repair_toggle_mp" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
 			<bool name="withdraw_only" value="True" />
-			<list name="actions" />
+			<list name="actions">
+			</list>
 			<group name="retreat_building_types">
 				<enum name="unit_type01" value="hq_wreck" />
 				<enum name="unit_type03" value="" />
@@ -741,7 +751,8 @@ Multiplayer Clone.">
 				<enum name="unit_type00" value="hq" />
 				<enum name="unit_type02" value="alternate_retreat_point" />
 			</group>
-			<list name="modifiers" />
+			<list name="modifiers">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">

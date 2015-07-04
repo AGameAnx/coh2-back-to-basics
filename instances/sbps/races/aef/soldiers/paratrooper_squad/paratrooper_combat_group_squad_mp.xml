@@ -562,22 +562,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="True" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.15" />
-							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="348280" />
-				</template_reference>
 				<template_reference name="action" value="action\override_move_type_action">
 					<instance_reference name="move_type" value="move_type\assault_stance_test_move" />
 					<float name="priority" value="1200" />
@@ -778,6 +762,22 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="True" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1.15" />
+							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="348280" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext">
@@ -822,10 +822,29 @@
 				<template_reference name="required" value="requirements\required_near_entity">
 					<enum name="alliance_requirement" value="ally" />
 					<float name="radius_requirement" value="35" />
-					<instance_reference name="entity_pbg" value="ebps\races\aef\buildings\defensive_structures\airborne_beacon_mp" />
+					<instance_reference name="entity_pbg" value="" />
 					<enum name="reason" value="usage_and_display" />
 					<locstring name="ui_name" value="0" />
 					<list name="near_entity_requirement">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="airborne_reinforcement" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="False" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_ownership">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="ownership_type" value="ally" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_constructionstate">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="do_construction_completion_check" value="True" />
+						</template_reference>
 					</list>
 				</template_reference>
 			</list>

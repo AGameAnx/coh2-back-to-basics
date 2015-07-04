@@ -25,13 +25,15 @@ function normalizeVector(v)
 end
 
 -- Deployment
-import('WinConditions/btb_ballistics.scar')
+--import('WinConditions/btb_ballistics.scar')
 import('WinConditions/aicontrol.scar')
+--import('WinConditions/btb_battleeffects.scar')
 
 -- Development
 --loadfile('_modscripts/btb_customdebug.scar')()
 --loadfile('_modscripts/btb_ballistics.scar')()
 --loadfile('_modscripts/btb_aicontrol.scar')()
+--loadfile('_modscripts/btb_battleeffects.scar')()
 --loadfile('_modscripts/btb_softretreat.scar')()
 
 local upkeepModifiers = {}
@@ -42,14 +44,13 @@ function BtB_UpdateUpkeep()
 	upkeepModifiers = {}
 	for i=1,World_GetPlayerCount() do
 		local p = World_GetPlayerAt(i)
-		upkeepModifiers[table.getn(upkeepModifiers)+1] = Modify_Upkeep(p, 1.2 + 0.1875 * Player_GetCurrentPopulation(p, CT_Personnel) / 120)
+		upkeepModifiers[table.getn(upkeepModifiers)+1] = Modify_Upkeep(p, 1.225 + 0.1875 * Player_GetCurrentPopulation(p, CT_Personnel) / 120)
 	end
 end
 function BtB_Init()
 	for i=1,World_GetPlayerCount() do
 		local p = World_GetPlayerAt(i)
 		
-		-- TODO: Save modifiers and reset on init
 		Modify_PlayerResourceRate(p, RT_Manpower, 60/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Action, 0.85, MUT_Multiplication)

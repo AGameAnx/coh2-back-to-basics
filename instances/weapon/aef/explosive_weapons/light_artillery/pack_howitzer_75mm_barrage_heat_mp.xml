@@ -236,6 +236,19 @@
 			<float name="wind_up" value="0.5" />
 			<float name="wind_down" value="2" />
 			<list name="on_fire_actions">
+				<template_reference name="action" value="action\use_hold_action">
+					<list name="actions">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="fire" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="artillery_state" />
+							<string name="undo_action_state_name" value="ready" />
+							<uniqueid name="id" value="1073744346" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073744347" />
+				</template_reference>
 			</list>
 		</group>
 		<float name="fx_tracer_speed" value="0" />
@@ -260,15 +273,15 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="0.5" />
 			</group>
-			<float name="nearby_suppression_multiplier" value="0" />
-			<float name="nearby_suppression_radius" value="0" />
+			<float name="nearby_suppression_multiplier" value="2.2" />
+			<float name="nearby_suppression_radius" value="60" />
 			<group name="target_pinned_multipliers">
 				<float name="suppression_multiplier" value="0.1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="accuracy_multiplier" value="0.25" />
 			</group>
-			<float name="amount" value="0" />
+			<float name="amount" value="0.8" />
 		</group>
 		<string name="fx_action_target_name" value="" />
 		<group name="priority">

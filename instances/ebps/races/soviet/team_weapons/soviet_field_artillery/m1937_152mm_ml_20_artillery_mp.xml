@@ -17,7 +17,6 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml_20_152mm_barrage_ability_mp" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml_20_152mm_barrage_ability_vet3_mp" />
-				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml_20_152mm_barrage_precison_ability_mp" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml_20_152mm_barrage_ability_victortarget_mp" />
 			</list>
 		</template_reference>
@@ -45,7 +44,7 @@
 			<float name="death_seconds" value="1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="580" />
+			<float name="hitpoints" value="700" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />

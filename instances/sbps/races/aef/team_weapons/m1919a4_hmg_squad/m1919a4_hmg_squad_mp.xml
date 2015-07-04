@@ -416,6 +416,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
 			<list name="upgrades">
+				<instance_reference name="upgrade" value="upgrade\is_manned" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
@@ -875,6 +876,8 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\m2hb_hmg_sprint_mp" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing_unset" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">

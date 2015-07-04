@@ -431,15 +431,6 @@
 					<string name="undo_action_state_name" value="" />
 					<uniqueid name="id" value="1073743213" />
 				</template_reference>
-				<template_reference name="action" value="action\apply_stamp_action">
-					<string name="stamp_name" value="data:art\stamps\german_bunker.stamp" />
-					<float name="rotation" value="0" />
-					<uniqueid name="id" value="1073743214" />
-					<float name="offset_x" value="0.2" />
-					<float name="offset_y" value="0" />
-					<float name="offset_z" value="0.1" />
-					<bool name="camera_relative_rotation" value="False" />
-				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="1" />
 					<float name="delay_min" value="1" />
@@ -521,8 +512,8 @@
 			<group name="acceptable_types">
 				<enum name="acceptable_type_01" value="hold_infantry" />
 				<enum name="acceptable_type_02" value="hold_sniper" />
-				<enum name="acceptable_type_03" value="" />
-				<enum name="acceptable_type_04" value="hold_heavy_machine_gun" />
+				<enum name="acceptable_type_03" value="hold_heavy_machine_gun" />
+				<enum name="acceptable_type_04" value="" />
 				<enum name="acceptable_type_05" value="" />
 			</group>
 			<bool name="attach_passenger_animator" value="False" />
@@ -541,7 +532,7 @@
 			<float name="min_hold_seconds" value="1" />
 			<float name="num_slots" value="6" />
 			<float name="num_squad_slots" value="1" />
-			<float name="percent_unload_on_death" value="0" />
+			<float name="percent_unload_on_death" value="0.75" />
 			<bool name="revert_ownership" value="False" />
 			<bool name="scavenge_enabled" value="False" />
 			<group name="scavenge_resource">

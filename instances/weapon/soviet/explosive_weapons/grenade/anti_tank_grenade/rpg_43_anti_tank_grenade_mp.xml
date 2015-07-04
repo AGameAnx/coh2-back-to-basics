@@ -147,7 +147,7 @@
 					<bool name="fire_and_forget_non_global" value="False" />
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
+							<float name="remove_at_health" value="0.75" />
 							<uniqueid name="id" value="1073743394" />
 							<instance_reference name="critical" value="critical\vehicle_damage_engine" />
 						</template_reference>

@@ -394,7 +394,7 @@
 				<float name="far" value="1" />
 			</group>
 			<group name="duration">
-				<float name="max" value="3.9" />
+				<float name="max" value="4.2" />
 				<float name="min" value="3.7" />
 			</group>
 		</group>

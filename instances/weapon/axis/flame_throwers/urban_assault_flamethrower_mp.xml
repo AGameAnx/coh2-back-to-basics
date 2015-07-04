@@ -426,8 +426,8 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.18" />
-				<float name="mid" value="0.625" />
+				<float name="far" value="0.4" />
+				<float name="mid" value="0.7" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />

@@ -32,9 +32,9 @@
 			</group>
 			<group name="incremental_target_table">
 				<group name="search_radius">
-					<float name="mid" value="8" />
-					<float name="far" value="10" />
-					<float name="near" value="6" />
+					<float name="mid" value="12.5" />
+					<float name="far" value="15" />
+					<float name="near" value="10" />
 				</group>
 				<float name="accuracy_multiplier" value="1.04" />
 			</group>
@@ -121,7 +121,7 @@
 			<instance_reference name="projectile" value="" />
 		</group>
 		<group name="accuracy">
-			<float name="mid" value="0.26" />
+			<float name="mid" value="0.3" />
 			<float name="far" value="0.12" />
 			<float name="near" value="0.6" />
 		</group>

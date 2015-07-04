@@ -1,4 +1,4 @@
-<instance template="sbps" description="">
+<instance description="" template="sbps">
 	<uniqueid name="pbgid" value="2641" />
 	<list name="extensions">
 		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext">
@@ -442,10 +442,12 @@
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
-			<list name="upgrades" />
+			<list name="upgrades">
+			</list>
 			<float name="number_of_slots" value="-1" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
@@ -518,7 +520,8 @@
 			</template_reference>
 			<group name="suppression">
 				<float name="pin_down_activate_threshold" value="0.3" />
-				<list name="suppressed_activate_actions" />
+				<list name="suppressed_activate_actions">
+				</list>
 				<float name="noncombat_recover_multiplier" value="1" />
 				<bool name="can_be_suppressed" value="False" />
 				<float name="recover_rate" value="0.002" />
@@ -582,7 +585,8 @@
 						<float name="recover_multiplier" value="1" />
 					</group>
 				</group>
-				<list name="pin_down_activate_actions" />
+				<list name="pin_down_activate_actions">
+				</list>
 			</group>
 			<string name="squad_ai_sniped_file" value="" />
 			<string name="squad_ai_reaction_file" value="empty-plan" />
@@ -627,7 +631,8 @@
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<bool name="permanent" value="True" />
@@ -645,15 +650,24 @@
 										<float name="duration" value="0" />
 										<uniqueid name="id" value="228825" />
 									</template_reference>
+									<template_reference name="action" value="action\change_move_data_action">
+										<float name="acceleration_multiplier" value="1.15" />
+										<float name="deceleration_multiplier" value="1.15" />
+										<float name="pathfinding_size_x" value="0" />
+										<float name="pathfinding_size_y" value="0" />
+										<uniqueid name="id" value="1073744345" />
+									</template_reference>
 								</list>
 								<float name="experience_value" value="1290" />
-								<list name="leader_actions" />
-								<locstring name="screen_name" value="11072270" />
+								<list name="leader_actions">
+								</list>
+								<locstring name="screen_name" value="11095102" />
 								<bool name="single_player_only" value="False" />
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<bool name="permanent" value="False" />
@@ -705,13 +719,15 @@
 									</template_reference>
 								</list>
 								<float name="experience_value" value="2580" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<locstring name="screen_name" value="11072269" />
 								<bool name="single_player_only" value="False" />
 							</group>
 							<group name="veterancy_rank">
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<list name="non_leader_actions" />
+								<list name="non_leader_actions">
+								</list>
 								<list name="squad_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<bool name="permanent" value="False" />
@@ -756,7 +772,8 @@
 									</template_reference>
 								</list>
 								<float name="experience_value" value="5160" />
-								<list name="leader_actions" />
+								<list name="leader_actions">
+								</list>
 								<locstring name="screen_name" value="11072271" />
 								<bool name="single_player_only" value="False" />
 							</group>
@@ -771,7 +788,8 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
 			<bool name="withdraw_only" value="True" />
-			<list name="actions" />
+			<list name="actions">
+			</list>
 			<group name="retreat_building_types">
 				<enum name="unit_type01" value="hq_wreck" />
 				<enum name="unit_type03" value="" />
@@ -779,7 +797,8 @@
 				<enum name="unit_type00" value="hq" />
 				<enum name="unit_type02" value="alternate_retreat_point" />
 			</group>
-			<list name="modifiers" />
+			<list name="modifiers">
+			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">

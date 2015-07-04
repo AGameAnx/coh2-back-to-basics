@@ -1,0 +1,71 @@
+
+-- This script is used to spawn some extra effects in locations of heavy combat
+
+local BtB_EffectsList = {
+	'fx_ambient\\lingering_smoke_spray_00',
+	--'fx_ambient\\lingering_smoke_spray_02',
+	--'fx_ambient\\lingering_smoke_spray_03',
+	'fx_ambient\\smoke_fog\\fog_light_drifting_med_01',
+	'fx_ambient\\smoke_fog\\fog_light_drifting_med_05',
+	'fx_ambient\\smoke_fog\\caen_06_01_nis_fog_02',
+	--'fx_ambient\\dust_layers\\generic_warm_ground_dust_wind_00',
+	'fx_ambient\\rolling_fog_combo_00_m_07_bluish',
+}
+
+local BtB_ProjectileLandHeatmapDimensions = {1, 1, 12, 12}
+local BtB_ProjectileLandHeatmap = {}
+
+local wHalfWidth = World_GetWidth()*0.5
+local wHalfLength = World_GetLength()*0.5
+
+local function BtB_GetProjectileLandXY(pos)
+	return
+		math.max(1, math.min(BtB_ProjectileLandHeatmapDimensions[1], math.ceil((pos.x+wHalfWidth)/BtB_ProjectileLandHeatmapDimensions[3]))),
+		math.max(1, math.min(BtB_ProjectileLandHeatmapDimensions[2], math.ceil((pos.z+wHalfLength)/BtB_ProjectileLandHeatmapDimensions[4])))
+end
+local function BtB_GetCellMiddlePosition(i,j)
+	return
+		-wHalfWidth  + i*BtB_ProjectileLandHeatmapDimensions[3] - BtB_ProjectileLandHeatmapDimensions[3]/2,
+		-wHalfLength + j*BtB_ProjectileLandHeatmapDimensions[4] - BtB_ProjectileLandHeatmapDimensions[4]/2
+end
+function BtB_Effects_ProjectileLanded(projectile, shootingEntity, target)
+	if projectile then
+		local i,j = BtB_GetProjectileLandXY(Entity_GetPosition(projectile))
+		BtB_ProjectileLandHeatmap[i][j] = BtB_ProjectileLandHeatmap[i][j] + 1
+		if BtB_ProjectileLandHeatmap[i][j] == 15 or BtB_ProjectileLandHeatmap[i][j] == 40 then
+			local x,y = BtB_GetCellMiddlePosition(i, j)
+			Misc_SpawnEffect(BtB_EffectsList[World_GetRand(1, #BtB_EffectsList)],
+				x-BtB_ProjectileLandHeatmapDimensions[3]/2+World_GetRand(0, BtB_ProjectileLandHeatmapDimensions[3]*5)/10,
+				World_GetHeightAt(x, y)+0.5,
+				y-BtB_ProjectileLandHeatmapDimensions[4]/2+World_GetRand(0, BtB_ProjectileLandHeatmapDimensions[4]*5)/10)
+		end
+	end
+end
+
+function BtB_Effects_Update()
+	--dr_clear("ballistics")
+	for i=1,BtB_ProjectileLandHeatmapDimensions[1] do
+		for j=1,BtB_ProjectileLandHeatmapDimensions[2] do
+			local x,y = BtB_GetCellMiddlePosition(i, j)
+			--dr_text3d('ballistics', x, World_GetHeightAt(x, y)+1, y, BtB_ProjectileLandHeatmap[i][j], 0, 255, 255)
+		end
+	end
+end
+
+function BtB_Effects_Init()
+	--dr_setdisplay("ballistics", true)
+	--dr_setautoclear("ballistics", false)
+	--dr_clear("ballistics")
+	BtB_ProjectileLandHeatmapDimensions[1] = World_GetWidth() / BtB_ProjectileLandHeatmapDimensions[3]
+	BtB_ProjectileLandHeatmapDimensions[2] = World_GetLength() / BtB_ProjectileLandHeatmapDimensions[4]
+	for i=1,BtB_ProjectileLandHeatmapDimensions[1] do
+		BtB_ProjectileLandHeatmap[i] = {}
+		for j=1,BtB_ProjectileLandHeatmapDimensions[2] do
+			BtB_ProjectileLandHeatmap[i][j] = 0
+		end
+	end
+	Rule_AddGlobalEvent(BtB_Effects_ProjectileLanded, GE_ProjectileLanded)
+	
+	--Rule_Add(BtB_Effects_Update)
+end
+Scar_AddInit(BtB_Effects_Init)

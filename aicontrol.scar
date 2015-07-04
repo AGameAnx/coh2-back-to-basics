@@ -6,6 +6,7 @@
 --	return string.rep(char, len - string.len(str))..str
 --end
 
+local abs = math.abs
 local min = math.min
 local max = math.max
 local ceil = math.ceil
@@ -25,7 +26,11 @@ g_AIControl_Components = {
 	REINFORCING = true,
 	VEHICLE_CONTROL = true,
 	VEHICLE_CONTROL_RETREAT = true,
-	COMBATUNIT_CONTROL = false,
+	COMBATUNIT_CONTROL = true,
+	COMBATUNIT_CONTROL_ABILITIES = true,
+	COMBATUNIT_CONTROL_HELP = false,
+	COMBATUNIT_CONTROL_ASSAULT = true,
+	COMBATUNIT_CONTROL_TAKECOVER = false,
 	UNIT_CONTROL = true,
 	UNIT_CONTROL_RETREAT = true,
 	BARRAGE_CONTROL = true,
@@ -71,7 +76,7 @@ local AIControl_PlayerCount = 0
 AIControl.Grid = {
 	Settings = {
 		SplitUpdates = true, -- If true, the update will be split to be performed over the course of UpdateInterval rather than once per UpdateInterval
-		SplitUpdateIncreasePerSquadCount = 8,
+		SplitUpdateIncreasePerSquadCount = 3,
 		
 		-- These settings will only be used on game start, changing them later on will not affect the actual values
 		Init_Dimensions = {11, 11}, -- Initial dimensions table
@@ -80,9 +85,7 @@ AIControl.Grid = {
 		                             -- Otherwise, init dimensions will be used directly to divide map into that many parts
 		HistoryGrowthModifier = 0.775, -- Higher modifiers mean faster growth and higher max history values
 		HistoryDecrementPerTick = 0.0015, --
-		ExcludedUnits = {
-			
-		},
+		ExcludedUnits = {},
 	},
 	
 	Dimensions = {0, 0, 1, 1}, -- {x divisions, y divisions, cell width, cell height}
@@ -257,7 +260,21 @@ AIControl.Grid = {
 				
 				AIControl_Grid.SplitUpdateCount = max(8, ceil(sqCount / AIControl_Grid_Settings.SplitUpdateIncreasePerSquadCount))
 				
-				local sqPerStep = AIControl_Grid_Settings.SplitUpdateIncreasePerSquadCount
+				for i=1,AIControl_Grid.SplitUpdateCount do
+					AIControl_Grid.SplitUpdateSquads[i] = SGroup_CreateIfNotFound("sg_aicontrol_splitupdatesquads_"..i)
+					SGroup_Clear(AIControl_Grid.SplitUpdateSquads[i])
+				end
+				
+				local curUpdateIndex = 1
+				for i=1,sqCount do
+					SGroup_Add(AIControl_Grid.SplitUpdateSquads[curUpdateIndex], allSquads[i])
+					curUpdateIndex = curUpdateIndex + 1
+					if curUpdateIndex > AIControl_Grid.SplitUpdateCount then
+						curUpdateIndex = 1
+					end
+				end
+				
+				--[[local sqPerStep = AIControl_Grid_Settings.SplitUpdateIncreasePerSquadCount
 				for i=1,AIControl_Grid.SplitUpdateCount do
 					AIControl_Grid.SplitUpdateSquads[i] = SGroup_CreateIfNotFound("sg_aicontrol_splitupdatesquads_"..i)
 					SGroup_Clear(AIControl_Grid.SplitUpdateSquads[i])
@@ -268,7 +285,7 @@ AIControl.Grid = {
 							end
 						end
 					end
-				end
+				end]]
 			end
 		end
 		
@@ -303,8 +320,8 @@ AIControl.Grid = {
 			local position = Squad_GetPosition(s)
 			local x,y = AIControl_Grid.GetXY(position)
 			
-			local retreated = false
-			if not Player_IsHuman(player) then
+			local retreated = Squad_IsRetreating(s)
+			if not Player_IsHuman(player) and not retreated then
 				
 				-- retreating
 				if g_AIControl_Components.RETREAT then
@@ -383,9 +400,18 @@ AIControl.Grid = {
 					end
 					if g_AIControl_Components.COMBATUNIT_CONTROL and not ucSetting and not vcUnit and not bcSetting and not isVehicle then
 						local squadGameID = Squad_GetGameID(s)
-						if not AIControl_MainControl_LockedSquads[team][squadGameID] or AIControl_MainControl_LockedSquads[team][squadGameID] == -1 or AIControl_MainControl_LockedSquads[team][squadGameID] == 4 then
+						if
+								not AIControl_MainControl_LockedSquads[team][squadGameID]
+								or AIControl_MainControl_LockedSquads[team][squadGameID] == -1
+								or AIControl_MainControl_LockedSquads[team][squadGameID] == 4
+								or AIControl_MainControl_LockedSquads[team][squadGameID] == 5
+								or AIControl_MainControl_LockedSquads[team][squadGameID] == 6 then
 							local inCombat = Squad_IsAttacking(s, 5) or Squad_IsUnderAttack(s, 5)
-							if AIControl_MainControl_LockedSquads[team][squadGameID] == 4 or inCombat then
+							if
+									inCombat
+									or AIControl_MainControl_LockedSquads[team][squadGameID] == 4
+									or AIControl_MainControl_LockedSquads[team][squadGameID] == 5
+									or AIControl_MainControl_LockedSquads[team][squadGameID] == 6 then
 								AIControl_MainControl.FCombatUnitControl(s, inCombat)
 							end
 						end
@@ -561,30 +587,34 @@ local UNIT_CONTROL_PRESET = {
 	}
 }
 
+local HMGBlueprints = {
+	['dshk_38_hmg_squad_mp'] = true,
+	['m1910_maxim_heavy_machine_gun_squad_mp'] = true,
+	
+	['mg42_heavy_machine_gun_squad_mp'] = true,
+	
+	['m2hb_50cal_hmg_squad_mp'] = true,
+	
+	['mg34_heavy_machine_gun_squad_mp'] = true,
+}
+
 local BARRAGE_CONTROL_POSITION
 BARRAGE_CONTROL_POSITION = {
-	SMOKE_BARRAGE = function(squad, setting)
-		local HMGBlueprints = {
-			['dshk_38_hmg_squad_mp'] = true,
-			['m1910_maxim_heavy_machine_gun_squad_mp'] = true,
-			
-			['mg42_heavy_machine_gun_squad_mp'] = true,
-			
-			['m2hb_50cal_hmg_squad_mp'] = true,
-			
-			['mg34_heavy_machine_gun_squad_mp'] = true,
-		}
+	SMOKE_BARRAGE = function(squad, setting, checkForFriendlySquads, distanceInFront, onlyHMGs)
+		if checkForFriendlySquads == nil then checkForFriendlySquads = true end
+		if distanceInFront == nil then distanceInFront = 10 end
+		if onlyHMGs == nil then onlyHMGs = true end
 		local player = Squad_GetPlayerOwner(squad)
 		local selfPos = Squad_GetPosition(squad)
 		local sg = SGroup_CreateIfNotFound('tactics_infrontofmgpos')
 		SGroup_Clear(sg)
 		World_GetSquadsNearPoint(player, sg, selfPos, setting.searchrange, OT_Enemy)
 		local closestDist = setting.searchrange+5
-		local closestSquad = nil
+		local closestPos = nil
 		for i=1,SGroup_CountSpawned(sg) do
 			local s = SGroup_GetSpawnedSquadAt(sg, i)
-			local sbp = BP_GetName(Squad_GetBlueprint(s))
-			if HMGBlueprints[sbp] then
+			local sbp = removeModID(BP_GetName(Squad_GetBlueprint(s)))
+			if not Squad_IsMoving(s) and not onlyHMGs or HMGBlueprints[sbp] then
 				local heading = false
 				for j=0,Squad_Count(s)-1 do
 					local e = Squad_EntityAt(s, j)
@@ -596,19 +626,36 @@ BARRAGE_CONTROL_POSITION = {
 				if not heading then
 					heading = Squad_GetHeading(s)
 				end
-				local sg2 = SGroup_CreateIfNotFound('tactics_infrontofmgpos2')
 				local squadPos = Squad_GetPosition(s)
-				local searchPos = World_Pos(squadPos.x+heading.x*30, squadPos.y, squadPos.z+heading.z*30)
-				World_GetSquadsNearPoint(player, sg2, searchPos, 45, OT_Ally)
-				if SGroup_CountSpawned(sg2) > 0 then
+				local posValid = true
+				if checkForFriendlySquads then
+					local searchPos = World_Pos(squadPos.x+heading.x*30, squadPos.y, squadPos.z+heading.z*30)
+					local sg2 = SGroup_CreateIfNotFound('tactics_infrontofmgpos2')
+					World_GetSquadsNearPoint(player, sg2, searchPos, 45, OT_Ally)
+					
+					posValid = SGroup_CountSpawned(sg2) > 0
+					
 					SGroup_Destroy(sg2)
-					SGroup_Destroy(sg)
-					return World_Pos(squadPos.x+heading.x*10, squadPos.y, squadPos.z+heading.z*10)
 				end
-				SGroup_Destroy(sg2)
+				if posValid then
+					local pos
+					if not onlyHMGs and AIControl_IsSquadVehicle(s) then
+						pos = squadPos
+					else
+						pos = World_Pos(squadPos.x+heading.x*distanceInFront, squadPos.y, squadPos.z+heading.z*distanceInFront)
+					end
+					local dist = sqrt((selfPos.x - pos.x)^2 + (selfPos.z - pos.z)^2)
+					if dist < closestDist then
+						closestDist = dist
+						closestPos = pos
+					end
+				end
 			end
 		end
 		SGroup_Destroy(sg)
+		if closestPos then
+			return closestPos
+		end
 		return false
 	end,
 }
@@ -619,6 +666,7 @@ local CUCONTROL_BEHAVIORS
 
 CUCONTROL_TACTIC = {
 	FILTER = {
+		
 	},
 	POSITION_FILTER = {
 		GRENADE = function(squad, custom_range, custom_starting_position)
@@ -655,6 +703,9 @@ CUCONTROL_TACTIC = {
 				return false
 			end
 		end,
+		SMOKE_GRENADE = function(squad)
+			return BARRAGE_CONTROL_POSITION.SMOKE_BARRAGE(squad, {searchrange = 50}, false, 15, false)
+		end,
 	},
 	SQUAD_FILTER = {
 		
@@ -679,6 +730,15 @@ CUCONTROL_ABILITY_PRESET = {
 		position = CUCONTROL_TACTIC.POSITION_FILTER.GRENADE,
 		positionVerify = CUCONTROL_TACTIC.POSITION_VERIFY.GRENADE
 	},
+	SMOKE_GRENADE = {
+		blueprint = BP_GetAbilityBlueprint('m23_smoke_stream_rifle_grenade_mp'),
+		lockDuration = 15,
+		verifyPosition = false,
+		weight = 10,
+		queued = false,
+		type = 'targeted',
+		position = CUCONTROL_TACTIC.POSITION_FILTER.SMOKE_GRENADE,
+	},
 }
 
 CUCONTROL_BEHAVIORS = {
@@ -690,10 +750,10 @@ CUCONTROL_BEHAVIORS = {
 
 AIControl.MainControl = {
 	Settings = {
-		RetreatTactic_BattleRadius = 50,
 		RetreatTactic_BaseSafety = 0.85, -- Higher value means higher danger is required for a squad to retreat
+		RetreatTactic_BattleRadius = 50, -- How far do we search for enemy squads when considering retreat
 		
-		AIMarkerToSpawn = BP_GetEntityBlueprint('high'),
+		--AIMarkerToSpawn = BP_GetEntityBlueprint('high'),
 		
 		UnitControl = {
 			UnitSettings = {
@@ -781,8 +841,8 @@ AIControl.MainControl = {
 		},
 		
 		VehicleControl = {
-			DefaultBaseDangerRequiredToRetreat = 75,
-			DefaultDangerRequiredDecreaseWithHealth = 75,
+			DefaultBaseDangerRequiredToRetreat = 70,
+			DefaultDangerRequiredDecreaseWithHealth = 85,
 			DefaultDangerRequiredDecreaseWithFriendlyArmor = 0.1,
 			DangerRequiredToRetreatDecreaseForLightVehicles = 50,
 			DangerRequiredToRetreatIncreaseNearHQ = 50,
@@ -860,101 +920,61 @@ AIControl.MainControl = {
 		},
 		
 		CombatUnitControl = {
-			BaseLockChance = 65,
+			BaseLockChance = 20,
+			DefaultAbilityChance = 40,
+			HelpRadius = 55,
+			DefaultCloseInDistance = 10,
 			UnitSettings = {
-				-- USF
-				['rifle_squad_mp'] = {
-					assault_troops = function(squad) return Squad_HasSlotItem(squad, BP_GetSlotItemBlueprint('riflemen_m1918_bar_mp')) end,
-					lock_chance = 90,
-					ability_chance = 40,
-					abilities = {
-						-- todo: add smoke grenades and rifle grenades
-						{
-							preset = CUCONTROL_ABILITY_PRESET.GRENADE,
-							overrides = {
-								blueprint = BP_GetAbilityBlueprint('mk2_fragmentation_grenade_mp')
-							}
-						},
-					},
-				},
-				['rifle_squad_veteran_mp'] = {
-					assault_troops = function(squad) return Squad_HasSlotItem(squad, BP_GetSlotItemBlueprint('riflemen_m1918_bar_mp')) end,
-					lock_chance = 80,
-					ability_chance = 40,
-					abilities = {
-						-- todo: add smoke grenades and rifle grenades
-						{
-							preset = CUCONTROL_ABILITY_PRESET.GRENADE,
-							overrides = {
-								blueprint = BP_GetAbilityBlueprint('mk2_fragmentation_grenade_mp')
-							}
-						},
-					},
-				},
-				['rear_echelon_squad_mp'] = {
-					assault_troops = function(squad) return Squad_HasSlotItem(squad, BP_GetSlotItemBlueprint('riflemen_m1918_bar_mp')) end,
+				-- Soviet
+				['shock_troops_mp'] = {
+					assault_troops = true,
+					ability_chance = 100,
 					lock_chance = 100,
-					ability_chance = 40,
 					abilities = {
-						-- todo: add suppressive volley
+						{preset = CUCONTROL_ABILITY_PRESET.SMOKE_GRENADE, overrides = {blueprint = BP_GetAbilityBlueprint('rgd_1_smoke_grenade_mp')}},
+					},
+				},
+				
+				-- Ostheer
+				['panzer_grenadier_squad_mp'] = {
+					assault_troops = true,
+					lock_chance = 100,
+					close_in_distance = 20,
+				},
+				
+				-- USF
+				['riflemen_squad_mp'] = {
+					assault_troops = function(squad) return Squad_HasSlotItem(squad, BP_GetSlotItemBlueprint('riflemen_m1918_bar_mp')) end,
+					abilities = {
+						{preset = CUCONTROL_ABILITY_PRESET.SMOKE_GRENADE, overrides = {blueprint = BP_GetAbilityBlueprint('m23_smoke_stream_rifle_grenade_mp')}},
+						{preset = CUCONTROL_ABILITY_PRESET.SMOKE_GRENADE, overrides = {blueprint = BP_GetAbilityBlueprint('m23_smoke_stream_rifle_grenade_vet_mp')}},
+					},
+				},
+				['riflemen_squad_veteran_mp'] = {
+					assault_troops = function(squad) return Squad_HasSlotItem(squad, BP_GetSlotItemBlueprint('riflemen_m1918_bar_mp')) end,
+					abilities = {
+						{preset = CUCONTROL_ABILITY_PRESET.SMOKE_GRENADE, overrides = {blueprint = BP_GetAbilityBlueprint('m23_smoke_stream_rifle_grenade_mp')}},
+						{preset = CUCONTROL_ABILITY_PRESET.SMOKE_GRENADE, overrides = {blueprint = BP_GetAbilityBlueprint('m23_smoke_stream_rifle_grenade_vet_mp')}},
 					},
 				},
 				['lieutenant_squad_mp'] = {
 					assault_troops = function(squad) return Squad_HasSlotItem(squad, BP_GetSlotItemBlueprint('riflemen_m1918_bar_mp')) end,
-					lock_chance = 80,
-					ability_chance = 40,
-					abilities = {
-						-- todo: add smoke grenades
-						{
-							preset = CUCONTROL_ABILITY_PRESET.GRENADE,
-							overrides = {
-								blueprint = BP_GetAbilityBlueprint('mk2_fragmentation_grenade_mp')
-							}
-						},
-					},
-				},
-				['captain_squad_mp'] = {
-					assault_troops = false,
 					lock_chance = 100,
-					ability_chance = 40,
 					abilities = {
-						-- todo: add 'on me!' ability
+						{preset = CUCONTROL_ABILITY_PRESET.SMOKE_GRENADE, overrides = {blueprint = BP_GetAbilityBlueprint('m23_smoke_stream_rifle_grenade_mp')}},
+						{preset = CUCONTROL_ABILITY_PRESET.SMOKE_GRENADE, overrides = {blueprint = BP_GetAbilityBlueprint('m23_smoke_stream_rifle_grenade_vet_mp')}},
 					},
-				},
-				['paratrooper_squad_mp'] = {
-					assault_troops = function(squad) return Squad_HasSlotItem(squad, BP_GetSlotItemBlueprint('paratrooper_thompson_mp')) end,
-					lock_chance = 100,
-					ability_chance = 40,
-					abilities = {
-						{
-							preset = CUCONTROL_ABILITY_PRESET.GRENADE,
-							overrides = {
-								blueprint = BP_GetAbilityBlueprint('paratrooper_mk2_fragmentation_grenade_mp')
-							}
-						},
-					},
-				},
-				['pathfinder_squad_mp'] = {
-					assault_troops = false,
-					lock_chance = 100,
-					ability_chance = 40,
-					abilities = {
-						-- todo: add smoke grenades and rifle grenades
-						{
-							preset = CUCONTROL_ABILITY_PRESET.GRENADE,
-							overrides = {
-								blueprint = BP_GetAbilityBlueprint('mk2_fragmentation_grenade_mp')
-							}
-						},
-					},
-				},
-				['assault_engineer_squad_mp'] = {
-					assault_troops = true,
-					lock_chance = 100,
-					ability_chance = 40,
-					abilities = {},
 				},
 				
+				-- OKW
+				['assault_pioneer_squad_mp'] = {
+					assault_troops = true,
+					close_in_distance = 17,
+					ability_chance = 100,
+					abilities = {
+						{preset = CUCONTROL_ABILITY_PRESET.SMOKE_GRENADE, overrides = {blueprint = BP_GetAbilityBlueprint('23d6cdb82724460dbcb21e1a9162e473:smoke_grenade_mp')}},
+					},
+				},
 			},
 		},
 		
@@ -968,7 +988,7 @@ AIControl.MainControl = {
 			StartingResources = 1.35,
 			ExperienceReceived = 1.15,
 			ProductionRate = 1.5,
-			Upkeep = 0.75,
+			Upkeep = 0.825,
 			SightRadius = 1,
 		},
 	},
@@ -983,6 +1003,7 @@ AIControl.MainControl = {
 	
 	BarrageControlLockTimers = {},
 	CombatUnitControlAbilityLockTimers = {},
+	CombatUnitControlHelpLockTimers = {},
 	
 	VehicleControl = {
 		RepairsRetreat = {{}, {}},
@@ -1947,7 +1968,7 @@ AIControl.MainControl = {
 	GetSquadCoverPosition = function(squad, targetSquadPos)
 		local pos = Squad_GetPosition(squad)
 		
-		if targetSquadPos then
+		--[[if targetSquadPos then
 			local posDiff = World_Pos(targetSquadPos.x - pos.x, 0, targetSquadPos.z - pos.z)
 			local posDiffLength = sqrt(posDiff.x*posDiff.x + posDiff.z*posDiff.z)
 			if posDiffLength > 0 then
@@ -1955,29 +1976,28 @@ AIControl.MainControl = {
 				posDiff.x = posDiff.x*posDiffLengthM
 				posDiff.z = posDiff.z*posDiffLengthM
 				
-				pos.x = pos.x + posDiff.x*5
-				pos.z = pos.z + posDiff.z*5
+				pos.x = pos.x + posDiff.x*7
+				pos.z = pos.z + posDiff.z*7
 			end
-		end
+		end]]
 		
-		-- get the cover pos, this function returns the anchor pos if it couldn't find cover
-		local posCover = Squad_FindCoverCompareCurrent(squad, pos, 12, 15, true)
-		if World_DistanceSquaredPointToPoint(pos, posCover) > 36 then
-			return posCover
-		end
-		return false
+		return Squad_FindCoverCompareCurrent(squad, pos, 25, 30, true)
 	end,
 	ExecuteCombatUnitAbility = function(sg, squad, ability)
 		if ability.type == 'targeted' then
 			local castPosition, castPosition2 = ability.position(squad)
-			if castPosition then
+			if castPosition and Squad_CanCastAbilityOnPosition(squad, ability.blueprint, castPosition) then
+				local pos = Squad_GetPosition(squad)
+				--dr_drawline(World_Pos(pos.x, pos.y+2, pos.z), World_Pos(castPosition.x, castPosition.y+2, castPosition.z), 0, 90, 0, 'aicontrol_maincontrol')
 				local secondPosition = castPosition2 or World_Pos(0,0,0)
 				Cmd_Ability(sg, ability.blueprint, castPosition, secondPosition, false, ability.queued)
 				return true, castPosition, secondPosition
 			end
 		elseif ability.type == 'default' then
-			Cmd_Ability(sg, ability.blueprint, nil, nil, false, ability.queued)
-			return true, nil, nil
+			if Squad_CanCastAbilityOnSquad(squad, ability.blueprint, squad) then
+				Cmd_Ability(sg, ability.blueprint, nil, nil, false, ability.queued)
+				return true, nil, nil
+			end
 		end
 		return false, nil, nil
 	end,
@@ -1992,157 +2012,305 @@ AIControl.MainControl = {
 		if not AIControl_MainControl_LockedSquads[team][squadGameID]
 				or AIControl_MainControl_LockedSquads[team][squadGameID] == 4
 				or AIControl_MainControl_LockedSquads[team][squadGameID] == 5
+				or AIControl_MainControl_LockedSquads[team][squadGameID] == 6
 				or AIControl_MainControl_LockedSquads[team][squadGameID] == -1 then
 			
-			local bpID = removeModID(BP_GetName(Squad_GetBlueprint(squad)))
-			local setting = AIControl_MainControl_Settings_CombatUnitControl.UnitSettings[bpID]
-			if setting then
-				if setting.preset and setting.overrides then
-					local finalSetting = {}
-					for i,v in pairs(setting.preset) do
-						if setting.overrides[i] then
-							finalSetting[i] = setting.overrides[i]
-						else
-							finalSetting[i] = v
-						end
-					end
-					setting = finalSetting
-				end
+			local lockType = 4
+			local lockSquad = false
+			
+			local targetSquadPos = false
+			local targetSG = SGroup_Create('aicontrol_cuc_target_tempsg')
+			Squad_GetAttackTargets(squad, targetSG)
+			local targetSquad = nil
+			if SGroup_CountSpawned(targetSG) > 0 then
+				targetSquad = SGroup_GetSpawnedSquadAt(targetSG, 1)
+			end
+			SGroup_Destroy(targetSG)
+			if targetSquad then
+				targetSquadPos = Squad_GetPosition(targetSquad)
 			end
 			
-			local lockType = 4
-			local lockSquad = true
+			-- ask for support from surrounding squads
+			if g_AIControl_Components.COMBATUNIT_CONTROL_HELP and inCombat and targetSquadPos then
+				local sgNearby = SGroup_Create('aicontrol_cuc_tmpsurrounding')
+				
+				World_GetSquadsNearPoint(player, sgNearby, pos, AIControl_MainControl_Settings_CombatUnitControl.HelpRadius, OT_Ally)
+				for i=1,SGroup_CountSpawned(sgNearby) do
+					local nearbySquad = SGroup_GetSpawnedSquadAt(sgNearby, i)
+					if
+							not AIControl_IsSquadVehicle(nearbySquad)
+							and not Squad_IsRetreating(nearbySquad)
+							and not Squad_IsAttacking(nearbySquad, 20)
+							and not Squad_IsSuppressed(nearbySquad)
+							and not Squad_IsPinned(nearbySquad)
+							and not Squad_IsInHoldSquad(nearbySquad)
+							and not Squad_IsInHoldEntity(nearbySquad)
+							and (
+								not Squad_HasActiveCommand(nearbySquad)
+								or (
+									Squad_GetActiveCommand(nearbySquad) ~= SQUADSTATEID_Capture
+									and Squad_GetActiveCommand(nearbySquad) ~= SQUADSTATEID_CaptureTeamWeapon
+									and Squad_GetActiveCommand(nearbySquad) ~= SQUADSTATEID_DefuseMine
+									and Squad_GetActiveCommand(nearbySquad) ~= SQUADSTATEID_Construction
+								)
+							) then
+						local nearbySquadPlayer = Squad_GetPlayerOwner(nearbySquad)
+						local nearbySquadTeam = Player_GetTeam(nearbySquadPlayer)+1
+						local nearbySquadID = Squad_GetGameID(nearbySquad)
+						if
+								not Player_IsHuman(nearbySquadPlayer)
+								and (
+									not AIControl_MainControl_LockedSquads[nearbySquadTeam][nearbySquadID]
+									or (AIControl_MainControl.CombatUnitControlHelpLockTimers[nearbySquadID] and AIControl_MainControl.CombatUnitControlHelpLockTimers[nearbySquadID] <= 1)
+								) then
+							local raceStr = Player_GetRaceName(nearbySquadPlayer)
+							local nearbySquadSBP = removeModID(BP_GetName(Squad_GetBlueprint(nearbySquad)))
+							local ucSetting = AIControl_MainControl_Settings_UnitControl.UnitSettings[nearbySquadSBP]
+							local bcSetting = AIControl_MainControl_Settings_BarrageControl.UnitSettings[nearbySquadSBP]
+							if not ucSetting and not bcSetting
+									and (
+										not AIControl_MainControl_LockedSquads[nearbySquadTeam][nearbySquadID]
+										or AIControl_MainControl_LockedSquads[nearbySquadTeam][nearbySquadID] == 4
+										or AIControl_MainControl_LockedSquads[nearbySquadTeam][nearbySquadID] == 6
+									) then
+								
+								local nearbySquadPos = Squad_GetPosition(nearbySquad)
+								local hqPos = Player_GetStartingPosition(nearbySquadPlayer)
+								local distToHQ = sqrt((nearbySquadPos.x - hqPos.x)^2 + (nearbySquadPos.z - hqPos.z)^2)
+								if distToHQ > 30 then
+									
+									AIControl_MainControl.CombatUnitControlHelpLockTimers[nearbySquadID] = 10
+									if not AIControl_MainControl_LockedSquads[nearbySquadTeam][nearbySquadID] then
+										AIControl_MainControl_LockedSquads[team][nearbySquadID] = 6
+										if AI_IsAIPlayer(nearbySquadPlayer) and AI_IsEnabled(nearbySquadPlayer) then
+											AI_LockSquad(nearbySquadPlayer, nearbySquad)
+										end
+									end
+									
+									local diffV = World_Pos(nearbySquadPos.x - targetSquadPos.x, 0, nearbySquadPos.z - targetSquadPos.z)
+									diffVLengthM = 1/sqrt(diffV.x^2 + diffV.z^2)
+									diffV.x = -diffV.z * diffVLengthM
+									diffV.z =  diffV.x * diffVLengthM
+									
+									local xRand = abs(diffV.x*40)
+									local yRand = abs(diffV.z*40)
+									
+									local attackPos = World_Pos(
+										targetSquadPos.x - xRand + World_GetRand(0, ceil(xRand*20))/10,
+										0,
+										targetSquadPos.z - yRand + World_GetRand(0, ceil(yRand*20))/10
+									)
+									attackPos.y = World_GetHeightAt(attackPos.x, attackPos.z)
+									
+									local sg2 = SGroup_Create('aicontrol_cuc_tempsg2')
+									SGroup_Single(sg2, nearbySquad)
+									
+									--dr_drawline(World_Pos(nearbySquadPos.x, nearbySquadPos.y+1, nearbySquadPos.z), World_Pos(attackPos.x, attackPos.y+1, attackPos.z), 255, 255, 0, 'aicontrol_maincontrol')
+									
+									Cmd_AttackMove(sg2, attackPos, false, nil, 12)
+									SGroup_Destroy(sg2)
+								end
+								
+							end
+						end
+					end
+				end
+				
+				SGroup_Destroy(sgNearby)
+			end
+			
 			if AIControl_MainControl_LockedSquads[team][squadGameID] == 5 then
 				local timerData = AIControl_MainControl.CombatUnitControlAbilityLockTimers[squadGameID]
 				if timerData then
 					timerData.timer = timerData.timer - 1
 					if timerData.timer <= 0 or (timerData.ability.verifyPosition and not timerData.ability.positionVerify(squad, timerData.position1, timerData.position2)) then
 						AIControl_MainControl.CombatUnitControlAbilityLockTimers[squadGameID] = nil
-						lockSquad = false
+					else
+						lockSquad = true
 					end
-				else
-					lockSquad = false
 				end
-			else
-				local lockChance = AIControl_MainControl_Settings_CombatUnitControl.BaseLockChance
-				if setting and setting.lock_chance ~= nil then
-					lockChance = setting.lock_chance
+			elseif AIControl_MainControl_LockedSquads[team][squadGameID] == 6 and not inCombat then
+				if AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] then
+					AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] = AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] - 1
+					if AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] <= 0 then
+						AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] = nil
+					else
+						lockSquad = true
+					end
 				end
-				lockSquad = inCombat and World_GetRand(0, 100) < lockChance
+			elseif inCombat then
+				
+				local bpID = removeModID(BP_GetName(Squad_GetBlueprint(squad)))
+				local setting = AIControl_MainControl_Settings_CombatUnitControl.UnitSettings[bpID]
+				if setting then
+					if setting.preset and setting.overrides then
+						local finalSetting = {}
+						for i,v in pairs(setting.preset) do
+							if setting.overrides[i] then
+								finalSetting[i] = setting.overrides[i]
+							else
+								finalSetting[i] = v
+							end
+						end
+						setting = finalSetting
+					end
+				end
+				
+				local lockChance = 0
+				if setting then
+					lockChance = AIControl_MainControl_Settings_CombatUnitControl.BaseLockChance
+					if setting.lock_chance ~= nil then
+						lockChance = setting.lock_chance
+					end
+				elseif g_AIControl_Components.COMBATUNIT_CONTROL_ASSAULT or g_AIControl_Components.COMBATUNIT_CONTROL_TAKECOVER then
+					lockChance = AIControl_MainControl_Settings_CombatUnitControl.BaseLockChance
+				end
+				lockSquad = World_GetRand(0, 100) < lockChance
 				
 				if lockSquad then
 					local doingSomething = false
 					
-					local tryCastAnAbility = setting and World_GetRand(0, 100) < setting.ability_chance
-					if tryCastAnAbility then
-						local abilities = {}
-						
-						local totalAbilityWeight = 0
-						for i=1,#setting.abilities do
-							local ability = setting.abilities[i]
-							if ability.preset and ability.overrides then
-								local finalAbility = {}
-								for j,v in pairs(ability.preset) do
-									if ability.overrides[j] then
-										finalAbility[j] = ability.overrides[j]
-									else
-										finalAbility[j] = v
+					if g_AIControl_Components.COMBATUNIT_CONTROL_ABILITIES and setting and setting.abilities then
+						local ability_chance = setting.ability_chance or AIControl_MainControl_Settings_CombatUnitControl.DefaultAbilityChance
+						if World_GetRand(0, 100) < ability_chance then
+							local abilities = {}
+							
+							local totalAbilityWeight = 0
+							for i=1,#setting.abilities do
+								local ability = setting.abilities[i]
+								if ability.preset and ability.overrides then
+									local finalAbility = {}
+									for j,v in pairs(ability.preset) do
+										if ability.overrides[j] then
+											finalAbility[j] = ability.overrides[j]
+										else
+											finalAbility[j] = v
+										end
 									end
+									ability = finalAbility
 								end
-								ability = finalAbility
+								abilities[i] = ability
+								totalAbilityWeight = totalAbilityWeight + ability.weight
 							end
-							abilities[i] = ability
-							totalAbilityWeight = totalAbilityWeight + ability.weight
-						end
-						
-						local weightRand = World_GetRand(0, totalAbilityWeight)
-						local curWeight = 0
-						for i=1,#abilities do
-							local ability = abilities[i]
-							curWeight = curWeight + ability.weight
-							if curWeight >= weightRand then
-								local shouldCast = true
-								if ability.filter then
-									shouldCast = ability.filter(squad)
-								end
-								if shouldCast then
-									local position1, position2
-									if ability.behavior then
-										ability.behavior(squad, function()
+							
+							local weightRand = World_GetRand(0, totalAbilityWeight)
+							local curWeight = 0
+							for i=1,#abilities do
+								local ability = abilities[i]
+								curWeight = curWeight + ability.weight
+								if curWeight >= weightRand then
+									local shouldCast = true
+									if ability.filter then
+										shouldCast = ability.filter(squad)
+									end
+									if shouldCast then
+										local position1, position2
+										if ability.behavior then
+											ability.behavior(squad, function()
+												doingSomething, position1, position2 = AIControl_MainControl.ExecuteCombatUnitAbility(sg, squad, ability)
+											end)
+										else
 											doingSomething, position1, position2 = AIControl_MainControl.ExecuteCombatUnitAbility(sg, squad, ability)
-										end)
-									else
-										doingSomething, position1, position2 = AIControl_MainControl.ExecuteCombatUnitAbility(sg, squad, ability)
+										end
+										
+										if doingSomething then
+											lockType = 5
+											AIControl_MainControl.CombatUnitControlAbilityLockTimers[squadGameID] = {
+												timer = ability.lockDuration/AIControl_Grid.SplitUpdateCount,
+												ability = ability,
+												position1 = position1,
+												position2 = position2
+											}
+										end
 									end
 									
-									if doingSomething then
-										lockType = 5
-										AIControl_MainControl.CombatUnitControlAbilityLockTimers[squadGameID] = {
-											timer = ability.lockDuration/AIControl_Grid.SplitUpdateCount,
-											ability = ability,
-											position1 = position1,
-											position2 = position2
-										}
-									end
+									break
 								end
-								
-								break
 							end
 						end
 					end
 					
 					if not doingSomething then
-						local targetSquadPos = false
-						local targetSG = SGroup_Create('aicontrol_cuc_target_tempsg')
-						Squad_GetAttackTargets(squad, targetSG)
-						local targetSquad = nil
-						if SGroup_CountSpawned(targetSG) > 0 then
-							targetSquad = SGroup_GetSpawnedSquadAt(targetSG, 1)
-						end
-						SGroup_Destroy(targetSG)
-						if targetSquad then
-							targetSquadPos = Squad_GetPosition(targetSquad)
-						end
-						
-						local shouldAssault = targetSquadPos and setting
-						if shouldAssault and setting.assault_troops ~= nil then
-							if type(setting.assault_troops) == 'function' then
-								shouldAssault = setting.assault_troops(squad)
+						if (g_AIControl_Components.COMBATUNIT_CONTROL_ASSAULT or g_AIControl_Components.COMBATUNIT_CONTROL_TAKECOVER) and
+								(not Squad_HasActiveCommand(squad) or Squad_GetActiveCommand(squad) ~= SQUADSTATEID_Ability) then
+							local closestSquadPos = targetSquadPos
+							local closestSquadDist
+							if targetSquadPos then
+								closestSquadDist = World_DistancePointToPoint(pos, targetSquadPos)
 							else
-								shouldAssault = setting.assault_troops
+								closestSquadDist = 45
 							end
-						end
-						if shouldAssault then
-							local closeInDistance = setting.close_in_distance or 15
-							local posDiff = World_Pos(pos.x - targetSquadPos.x, 0, pos.z - targetSquadPos.z)
-							local posDiffLength = sqrt(posDiff.x*posDiff.x + posDiff.z*posDiff.z)
-							shouldAssault = posDiffLength > closeInDistance
-							if shouldAssault then
-								local posDiffLengthM = 1/posDiffLength
-								posDiff.x = posDiff.x*posDiffLengthM
-								posDiff.z = posDiff.z*posDiffLengthM
-								
-								local targetPos = World_Pos(
-									targetSquadPos.x + posDiff.x*closeInDistance,
-									0,
-									targetSquadPos.z + posDiff.z*closeInDistance)
-								
-								local coverPos = Squad_FindCoverCompareCurrent(squad, targetPos, 3, closeInDistance*1.25, false)
-								if World_DistanceSquaredPointToPoint(pos, coverPos) > 16 then
-									Command_SquadMovePosFacing(player, sg, coverPos, targetSquadPos, false, false)
-									--dr_drawline(World_Pos(pos.x, pos.y+1, pos.z), World_Pos(coverPos.x, coverPos.y+1, coverPos.z), 255, 0, 0, 'aicontrol_maincontrol')
+							local sgNearby = SGroup_Create('aicontrol_cuc_tmpsurrounding')
+							World_GetSquadsNearPoint(player, sgNearby, pos, closestSquadDist-10, OT_Enemy)
+							for i=1,SGroup_CountSpawned(sgNearby) do
+								local s = SGroup_GetSpawnedSquadAt(sgNearby, i)
+								if not AIControl_IsSquadVehicle(s) then
+									local sPos = Squad_GetPosition(s)
+									local dist = World_DistancePointToPoint(pos, sPos)
+									if dist < closestSquadDist then
+										closestDist = dist
+										closestSquadPos = sPos
+									end
 								end
 							end
-						end
-						if not shouldAssault then
-							local coverPos = AIControl_MainControl.GetSquadCoverPosition(squad, targetSquadPos)
-							if coverPos then
-								if targetSquadPos then
-									Command_SquadMovePosFacing(player, sg, coverPos, targetSquadPos, false, false)
+							SGroup_Destroy(sgNearby)
+							
+							local shouldAssault = false
+							if g_AIControl_Components.COMBATUNIT_CONTROL_ASSAULT then
+								shouldAssault = closestSquadPos and setting
+								if shouldAssault and setting.assault_troops ~= nil then
+									if type(setting.assault_troops) == 'function' then
+										shouldAssault = setting.assault_troops(squad)
+									else
+										shouldAssault = setting.assault_troops
+									end
+								end
+								if shouldAssault then
+									local closeInDistance = setting.close_in_distance or AIControl_MainControl_Settings_CombatUnitControl.DefaultCloseInDistance
+									local posDiff = World_Pos(pos.x - closestSquadPos.x, 0, pos.z - closestSquadPos.z)
+									local posDiffLength = sqrt(posDiff.x*posDiff.x + posDiff.z*posDiff.z)
+									shouldAssault = posDiffLength > closeInDistance
+									if shouldAssault then
+										local posDiffLengthM = 1/posDiffLength
+										posDiff.x = posDiff.x*posDiffLengthM
+										posDiff.z = posDiff.z*posDiffLengthM
+										
+										local targetPos = World_Pos(
+											closestSquadPos.x + posDiff.x*closeInDistance,
+											0,
+											closestSquadPos.z + posDiff.z*closeInDistance)
+										
+										local coverPos = Squad_FindCover(squad, targetPos, 5)
+										if World_DistanceSquaredPointToPoint(pos, coverPos) > 60 then
+											Command_SquadMovePosFacing(player, sg, coverPos, closestSquadPos, false, false)
+											--dr_drawline(World_Pos(pos.x, pos.y+1, pos.z), World_Pos(coverPos.x, coverPos.y+1, coverPos.z), 255, 0, 0, 'aicontrol_maincontrol')
+										else
+											Cmd_Stop(sg)
+										end
+									end
+								end
+							end
+							if not shouldAssault then
+								if g_AIControl_Components.COMBATUNIT_CONTROL_TAKECOVER then
+									local coverPos = AIControl_MainControl.GetSquadCoverPosition(squad, closestSquadPos)
+									if coverPos then
+										if World_DistanceSquaredPointToPoint(pos, coverPos) > 16 then
+											if closestSquadPos then
+												Command_SquadMovePosFacing(player, sg, coverPos, closestSquadPos, false, false)
+											else
+												Command_SquadMovePos(player, sg, coverPos, false, false)
+											end
+											--dr_drawline(World_Pos(pos.x, pos.y+1, pos.z), World_Pos(coverPos.x, coverPos.y+1, coverPos.z), 0, 100, 0, 'aicontrol_maincontrol')
+										--else
+										--	Cmd_Stop(sg)
+										end
+									end
 								else
-									Command_SquadMovePos(player, sg, coverPos, false, false)
+									lockSquad = false
 								end
 							end
+						else
+							lockSquad = false
 						end
 					end
 				end
@@ -2156,6 +2324,12 @@ AIControl.MainControl = {
 					end
 				end
 			else
+				if AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] then
+					AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] = nil
+				end
+				if AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] then
+					AIControl_MainControl.CombatUnitControlHelpLockTimers[squadGameID] = nil
+				end
 				if AIControl_MainControl_LockedSquads[team][squadGameID] then
 					if AI_IsAIPlayer(player) and AI_IsEnabled(player) then
 						AI_UnlockSquad(player, squad)

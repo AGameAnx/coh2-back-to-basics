@@ -96,9 +96,9 @@
 			<float name="max" value="44" />
 		</group>
 		<group name="penetration">
-			<float name="mid" value="0.01" />
-			<float name="far" value="0.01" />
-			<float name="near" value="0.01" />
+			<float name="mid" value="100" />
+			<float name="far" value="80" />
+			<float name="near" value="120" />
 		</group>
 		<string name="fx_munition_name" value="shell_medium" />
 		<group name="behaviour">

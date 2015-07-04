@@ -98,7 +98,7 @@
 				<float name="capture_max_territory_ratio" value="1" />
 				<group name="weights">
 					<float name="capture_dist_from_base_weight" value="1" />
-					<float name="capture_threat_weight" value="0" />
+					<float name="capture_threat_weight" value="1" />
 					<float name="capture_victory_point_weight" value="0.25" />
 					<float name="capture_next_to_in_supply_weight" value="0.1" />
 					<float name="capture_next_to_out_of_supply_weight" value="0.3" />
@@ -168,10 +168,10 @@
 					<float name="class_rating_multiplier" value="4" />
 				</group>
 				<group name="tp_heavy">
-					<float name="class_rating_multiplier" value="4" />
+					<float name="class_rating_multiplier" value="6" />
 				</group>
 				<group name="tp_light">
-					<float name="class_rating_multiplier" value="3" />
+					<float name="class_rating_multiplier" value="5" />
 				</group>
 				<group name="tp_negative">
 					<float name="class_rating_multiplier" value="0.6" />

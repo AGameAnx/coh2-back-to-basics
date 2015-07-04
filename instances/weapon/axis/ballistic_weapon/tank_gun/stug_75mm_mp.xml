@@ -168,7 +168,7 @@
 			<bool name="can_be_offhanded" value="False" />
 			<bool name="can_abort_winddown" value="False" />
 			<bool name="artillery_force_obey_los" value="False" />
-			<float name="reaction_radius" value="1.2" />
+			<float name="reaction_radius" value="0.5" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="non_moving_setup" value="False" />
 			<bool name="attack_team_weapon_user" value="False" />
@@ -333,7 +333,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_bracket_count_air" value="0" />
-			<float name="distance_scatter_max" value="4" />
+			<float name="distance_scatter_max" value="8" />
 			<float name="distance_scatter_offset" value="0.25" />
 		</group>
 		<group name="damage">
@@ -365,11 +365,11 @@
 			<float name="rotation" value="-0.1" />
 			<float name="window_bonus" value="0" />
 			<float name="current_target" value="3" />
-			<float name="penetration" value="40" />
-			<float name="threat" value="20" />
+			<float name="penetration" value="50" />
+			<float name="threat" value="30" />
 			<group name="distance">
-				<float name="mid" value="1.5" />
-				<float name="near" value="2" />
+				<float name="mid" value="1.25" />
+				<float name="near" value="1.5" />
 				<float name="far" value="1" />
 			</group>
 		</group>
@@ -410,9 +410,9 @@
 		</group>
 		<string name="fx_munition_name" value="shell_medium" />
 		<group name="penetration">
-			<float name="mid" value="120" />
-			<float name="near" value="130" />
-			<float name="far" value="110" />
+			<float name="mid" value="140" />
+			<float name="near" value="200" />
+			<float name="far" value="120" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">

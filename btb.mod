@@ -10,9 +10,11 @@
 							<RelativeName>btb_attrib.xml</RelativeName>
 						</d2p1:anyType>
 					</Children>
+					<IsExpanded>true</IsExpanded>
 					<Name>attrib</Name>
 				</d2p1:anyType>
 			</Children>
+			<IsExpanded>true</IsExpanded>
 		</d2p1:anyType>
 		<d2p1:anyType i:type="TableOfContents">
 			<Alias>Locale</Alias>
@@ -24,9 +26,11 @@
 							<RelativeName>locale\english\english.ucs</RelativeName>
 						</d2p1:anyType>
 					</Children>
+					<IsExpanded>false</IsExpanded>
 					<Name>english</Name>
 				</d2p1:anyType>
 			</Children>
+			<IsExpanded>false</IsExpanded>
 		</d2p1:anyType>
 		<d2p1:anyType i:type="TableOfContents">
 			<Alias>Info</Alias>
@@ -38,6 +42,7 @@
 					<Name>Back to Basics</Name>
 				</d2p1:anyType>
 			</Children>
+			<IsExpanded>false</IsExpanded>
 		</d2p1:anyType>
 		<d2p1:anyType i:type="TableOfContents">
 			<Alias>Data</Alias>
@@ -49,11 +54,14 @@
 							<RelativeName>icons</RelativeName>
 						</d2p1:anyType>
 					</Children>
+					<IsExpanded>false</IsExpanded>
 					<Name>ui</Name>
 				</d2p1:anyType>
 			</Children>
+			<IsExpanded>true</IsExpanded>
 		</d2p1:anyType>
 	</Children>
 	<Guid>23d6cdb8-2724-460d-bcb2-1e1a9162e473</Guid>
+	<IsExpanded>false</IsExpanded>
 	<Type>PropertyBagGroupPack</Type>
 </Document>

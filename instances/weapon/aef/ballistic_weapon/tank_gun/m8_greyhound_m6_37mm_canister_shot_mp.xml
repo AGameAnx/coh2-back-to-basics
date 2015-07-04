@@ -464,7 +464,7 @@
 			<bool name="support_weapon" value="False" />
 			<template_reference name="wants_prone_firing_option" value="options\none">
 			</template_reference>
-			<bool name="piercing" value="False" />
+			<bool name="piercing" value="True" />
 			<bool name="substitute_weapon" value="False" />
 			<bool name="aa_weapon" value="False" />
 			<bool name="fire_at_building_combat_slot" value="False" />

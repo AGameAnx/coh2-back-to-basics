@@ -1014,6 +1014,8 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\german\always_on_ability\commander_ability\ambush_camouflage_upgrade" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\commander_ability\ambush_camo_hold_fire_mp" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing_unset" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">

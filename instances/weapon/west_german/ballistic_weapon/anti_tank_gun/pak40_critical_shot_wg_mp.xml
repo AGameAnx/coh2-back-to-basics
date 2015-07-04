@@ -119,9 +119,9 @@
 			<float name="max" value="66" />
 		</group>
 		<group name="penetration">
-			<float name="mid" value="0.01" />
-			<float name="far" value="0.01" />
-			<float name="near" value="0.01" />
+			<float name="mid" value="400" />
+			<float name="far" value="380" />
+			<float name="near" value="420" />
 		</group>
 		<instance_reference name="ui_range" value="" />
 		<group name="area_effect">

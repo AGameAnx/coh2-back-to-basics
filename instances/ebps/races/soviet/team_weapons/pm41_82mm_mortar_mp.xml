@@ -141,7 +141,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_destroy" />
+							<instance_reference name="critical" value="critical\vehicle_destroy_weapon_team" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
@@ -181,9 +181,9 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\sync_mortar_barrage_mp" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\smoke_sync_mortar_barrage_mp" />
-				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\mortar_precision_barrage_82mm_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_deep_snow_camo" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\sync_mortar_barrage_victortarget_mp" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\mortar_fire_flares_ability_mp" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
@@ -268,7 +268,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\mortar\pm41_82mm_mortar_precision_barrage_mp" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\mortar\pm41_82mm_mortar_flare_mp" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -550,6 +550,11 @@
 			</list>
 			<float name="destroy_on_abandon_health_threshold" value="0.2" />
 			<list name="on_abandon_weapon_action">
+				<template_reference name="action" value="action\upgrade_remove">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<instance_reference name="upgrade" value="upgrade\is_manned" />
+					<uniqueid name="id" value="1073744341" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext">

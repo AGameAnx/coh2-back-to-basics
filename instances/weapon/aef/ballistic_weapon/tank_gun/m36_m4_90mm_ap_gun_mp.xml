@@ -487,9 +487,9 @@
 			<float name="moving_start_time" value="0" />
 		</group>
 		<group name="penetration">
-			<float name="near" value="280" />
-			<float name="far" value="220" />
-			<float name="mid" value="250" />
+			<float name="near" value="300" />
+			<float name="far" value="240" />
+			<float name="mid" value="270" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">

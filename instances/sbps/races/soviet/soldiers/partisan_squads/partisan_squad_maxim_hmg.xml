@@ -610,6 +610,8 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\soviet\timed_ability\sniper_hmg_sprint" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing_unset" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">

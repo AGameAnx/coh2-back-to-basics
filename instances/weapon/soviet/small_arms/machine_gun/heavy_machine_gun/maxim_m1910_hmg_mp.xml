@@ -25,11 +25,11 @@
 			</group>
 			<bool name="focus_fire" value="False" />
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="1.04" />
 				<group name="search_radius">
-					<float name="near" value="6" />
-					<float name="far" value="10" />
-					<float name="mid" value="8" />
+					<float name="near" value="10" />
+					<float name="far" value="15" />
+					<float name="mid" value="12.5" />
 				</group>
 			</group>
 			<group name="duration">

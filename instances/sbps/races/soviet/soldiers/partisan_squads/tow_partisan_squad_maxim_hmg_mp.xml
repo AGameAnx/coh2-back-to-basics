@@ -668,6 +668,8 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\fieldcraft_trip_flare" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing_unset" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">

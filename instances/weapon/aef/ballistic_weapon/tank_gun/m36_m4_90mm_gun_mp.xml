@@ -486,8 +486,8 @@
 			<float name="moving_start_time" value="0" />
 		</group>
 		<group name="penetration">
-			<float name="mid" value="180" />
-			<float name="near" value="200" />
+			<float name="mid" value="190" />
+			<float name="near" value="240" />
 			<float name="far" value="160" />
 		</group>
 		<group name="aim">

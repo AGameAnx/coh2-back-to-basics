@@ -340,7 +340,7 @@
 			<float name="tilt_max_distance" value="10" />
 			<float name="angle_scatter" value="5" />
 			<float name="tilt_scatter_chance" value="0" />
-			<float name="fow_angle_multiplier" value="3" />
+			<float name="fow_angle_multiplier" value="0.25" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="fow_distance_multiplier" value="2" />
 			<float name="delay_bracket_change_chance" value="0" />

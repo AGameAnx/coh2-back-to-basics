@@ -1,4 +1,60 @@
 =================================================================
+## v0.42
+=================================================================
+
+-----------------------------------------------------------------
+
+General:
+- Full file diff pass to include the patch changes in the mod
+- All custom vehicle criticals removed in favor of new relic's criticals
+- All heavy field artillery hitpoints increased 580 -> 700
+- All MGs incremental accuracy radii to match the patch values, but accuracy multiplier is not changed unless specified below
+- All single fire small arms cover tables reworked. The desired effect of these changes is to make single fire weapon engagements against cover slightly more random but lower the prevalence of cover (especially garrisson cover) against spread out groups of enemies that are microed correctly. Clearing cover positions will be slightly easier when dealt with properly, whereas at the same time 1 on 1 fights might result in taking less hitpoint damage (especially in conjunction with green and light cover changes), allowing the squad to remain in cover longer, and not require as much healing after the fight. It is also worth noting that light cover will no longer alter shots required to kill a squad entity, while green and garrisson cover still will, albeit not on all types of weapons.
+ * Heavy cover effectiveness reduced (DPS 0.25 -> 0.315): accuracy 0.5 -> 0.35, damage 0.5 -> 0.9
+ * Garrisson cover effectiveness reduced (DPS 0.275 -> 0.36): accuracy 0.55 -> 0.4, damage 0.5 -> 0.9
+ * Light cover effectiveness increased (DPS 0.425 -> 0.4): accuracy 0.5 -> 0.4, damage 0.85 -> 1
+
+Soviet:
+- IS-2 command point requirement reduced 14 -> 13
+- IL-2 autocannon rework (it had really strong potential to wipe squads on each pass):
+ * damage reduced 35 -> 19
+ * accuracy reduced 0.75 -> 0.6
+ * area of effect range reduced 4 -> 2
+ * area of effect range profile 4/2/0.5 -> 2/1/0.5
+ * damage vs yellow cover reduced 1 -> 0.75
+ * scatter increased 2.5 -> 3
+- Conscript sandbag wall hitpoints increased 320 -> 400
+- SU-76 penetration increased 80/120/160 -> 120/140/180
+- Dshk-38 Sokolov HMG is the only HMG that received the full incremental accuracy change from the patch
+- Maxim HMG incremental accuracy multiplier increased 1 -> 1.04
+- ML-20 artillery weapon reworked:
+ * Aoe damage increased 0.01/0.15/1 -> 0.075/0.15/1
+ * Aoe accuracy reduced 5/5/5 -> 0.2/1.35/5
+ * Damage values increased and normalized for barrages, victor target, precision strikes (220)
+ * Precision strike removed
+- Engineers can now construct sandbags
+- Engineers can now construct MG nests
+
+USF:
+- M2HB 50 cal HMG mid range accuracy increased 0.26 -> 0.3
+
+Ostheer:
+- Stuka 500lb bomb damage increased 550 -> 660
+
+OKW:
+- Base fuel income multiplier toned down 0.66 -> 0.75 (the impact of this is mitigated by the fact that OKW vehicles still have full vehicle fuel upkeep)
+
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Ballistics script is now completely disabled due to causing sync errors
+- Base upkeep increased 1.2 -> 1.225
+- Added a new system that spawns additional smoke effects to the most active areas of the battlefield. The script will spawn only up to two effects in 12x12 cells, based on number of projectiles that landed in the area, to make sure of the minimal performance impact
+
+
+=================================================================
 ## v0.41
 =================================================================
 
@@ -8,12 +64,13 @@ June mod tools patch
 ## Attributes:
 
 General:
+- All tuning changes are reverted since tuning is now locked out from modding
 - Fuel and Ammunition point capture and revert times reduced 30s/20s -> 20s/15s
 - Fuel point income rate decreased +7 -> +6
 - Decreased ballistic and coaxial mg weapon effectiveness versus heavy team weapon directional cover (0.5->0.25 accuracy 0.5->0.25 damage)
 - Across the board decrease of coaxial and mounted mg effectiveness vs heavy cover (0.5->0.25 accuracy 0.5->0.25 damage)
 - Across the board decrease of coaxial and mounted mg effectiveness vs light cover (0.5->0.25 accuracy 0.85->0.65 damage)
-- Across the board 20% decrease in coaxial and mounted mg accuracy
+- Across the board 20% decrease in coaxial mg accuracy
 
 Soviet:
 - B4 barrage damage increased 450 -> 600
@@ -47,6 +104,7 @@ Ostheer:
  * Area of effect distances increased 0.3/0.2/0.1 -> 1.65/0.75/0.1
 - Tiger CP cost reduced 14 -> 13
 - Railway gun artillery cost reduced 200mu -> 160mu
+- Pioneers can now construct sandbag walls
 
 OKW:
 - Panzer IV hitpoints reduced 640 -> 600

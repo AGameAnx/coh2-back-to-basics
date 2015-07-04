@@ -25,11 +25,11 @@
 			</group>
 			<bool name="focus_fire" value="True" />
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="1.15" />
 				<group name="search_radius">
-					<float name="near" value="6" />
-					<float name="far" value="10" />
-					<float name="mid" value="8" />
+					<float name="near" value="10" />
+					<float name="far" value="15" />
+					<float name="mid" value="12.5" />
 				</group>
 			</group>
 			<group name="duration">
@@ -78,9 +78,9 @@
 			<string name="state_name" value="maxim_state" />
 		</group>
 		<group name="penetration">
-			<float name="near" value="2.5" />
+			<float name="near" value="4.5" />
 			<float name="far" value="1.5" />
-			<float name="mid" value="2" />
+			<float name="mid" value="3" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

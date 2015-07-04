@@ -133,10 +133,10 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="min" value="450" />
+			<float name="min" value="600" />
 			<list name="on_penetrated_actions">
 			</list>
-			<float name="max" value="450" />
+			<float name="max" value="600" />
 		</group>
 		<group name="scatter">
 			<float name="tilt_scatter_chance" value="0" />
@@ -145,7 +145,7 @@
 			<float name="distance_scatter_max" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
 			<bool name="burst_pattern_enable" value="False" />
-			<float name="angle_scatter" value="7.5" />
+			<float name="angle_scatter" value="5" />
 			<float name="tilt_max_distance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="max_tilt_angle" value="0" />
@@ -161,9 +161,9 @@
 			<float name="offhand_start_time" value="0" />
 		</group>
 		<group name="penetration">
-			<float name="near" value="340" />
-			<float name="far" value="260" />
-			<float name="mid" value="300" />
+			<float name="near" value="600" />
+			<float name="far" value="600" />
+			<float name="mid" value="600" />
 		</group>
 		<locstring name="help_text" value="0" />
 		<group name="damage_over_time">
@@ -325,9 +325,9 @@
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
 				<float name="suppression_multiplier" value="0.1" />
-				<float name="damage_multiplier" value="0.25" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="accuracy_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="0.5" />
 			</group>
 			<group name="tp_negative">
 				<float name="suppression_multiplier" value="1.5" />
@@ -419,7 +419,7 @@
 			<bool name="support_weapon" value="False" />
 			<template_reference name="wants_prone_firing_option" value="options\none">
 			</template_reference>
-			<bool name="piercing" value="False" />
+			<bool name="piercing" value="True" />
 			<bool name="attack_team_weapon_user" value="False" />
 			<bool name="aa_weapon" value="False" />
 			<bool name="fire_at_building_combat_slot" value="False" />

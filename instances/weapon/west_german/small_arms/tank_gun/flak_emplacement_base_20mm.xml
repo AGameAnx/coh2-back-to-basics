@@ -313,7 +313,7 @@
 									</list>
 								</group>
 								<group name="action_choice">
-									<int name="weight" value="124" />
+									<int name="weight" value="200" />
 									<list name="actions">
 										<template_reference name="action" value="action\no_action">
 											<template_reference name="ui_help_text" value="options\none">

@@ -170,42 +170,6 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_all_in_list">
-					<enum name="reason" value="display" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_player_upgrade">
-							<enum name="reason" value="display" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\pm\american\commanders\airborne\pm_airborne_unlock" />
-						</template_reference>
-						<template_reference name="requirement" value="requirements\required_player_upgrade">
-							<enum name="reason" value="display" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\pm\aef_pm" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_all_in_list">
-					<enum name="reason" value="display" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\aef\research\lieutenant_dispatched_upgrade_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
-						</template_reference>
-					</list>
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
@@ -481,6 +445,16 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
+				<template_reference name="action" value="action\slot_item_add">
+					<instance_reference name="slot_item" value="slot_item\aef\small_arms\m1c_pathfinder_garand" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="346618" />
+				</template_reference>
+				<template_reference name="action" value="action\slot_item_add">
+					<instance_reference name="slot_item" value="slot_item\aef\small_arms\m1c_pathfinder_garand" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="346619" />
+				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
 					<bool name="permanent" value="True" />
@@ -496,16 +470,6 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="189935" />
-				</template_reference>
-				<template_reference name="action" value="action\slot_item_add">
-					<instance_reference name="slot_item" value="slot_item\aef\small_arms\m1c_pathfinder_garand" />
-					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="346618" />
-				</template_reference>
-				<template_reference name="action" value="action\slot_item_add">
-					<instance_reference name="slot_item" value="slot_item\aef\small_arms\m1c_pathfinder_garand" />
-					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="346619" />
 				</template_reference>
 			</list>
 		</template_reference>

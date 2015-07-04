@@ -39,7 +39,7 @@
 			</list>
 			<float name="armor" value="35" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="10" />
+			<float name="target_size" value="2" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">

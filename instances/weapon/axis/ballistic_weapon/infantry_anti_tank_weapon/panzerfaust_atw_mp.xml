@@ -153,7 +153,7 @@
 					</template_reference>
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
+							<float name="remove_at_health" value="0.75" />
 							<instance_reference name="critical" value="critical\vehicle_damage_engine" />
 							<uniqueid name="id" value="1073743395" />
 						</template_reference>

@@ -59,7 +59,7 @@
 			<list name="death_actions">
 			</list>
 			<float name="armor" value="1" />
-			<float name="rear_armor" value="1" />
+			<float name="rear_armor" value="0" />
 			<float name="target_size" value="1" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
@@ -154,7 +154,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\make_casualty" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<instance_reference name="critical" value="critical\make_casualty" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
