@@ -475,7 +475,7 @@
 		<group name="accuracy">
 			<float name="mid" value="0.046" />
 			<float name="near" value="0.098" />
-			<float name="far" value="0.038" />
+			<float name="far" value="0.03" />
 		</group>
 		<group name="moving">
 			<float name="burst_multiplier" value="1" />

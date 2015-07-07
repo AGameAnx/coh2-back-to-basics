@@ -1,7 +1,7 @@
 <instance description="" template="ai_ability">
 	<group name="ai_ability_bag">
 		<list name="abilities">
-			<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\howitzer_105mm_barrage_vet3_ability_mp" />
+			<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\howitzer_105mm_barrage_vet3_ability_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 		</list>
 		<group name="ai_tactic">
 			<string name="entity_target_filter" value="EntityTargetFilter_FirstEnemyStructure" />

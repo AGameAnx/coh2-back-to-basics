@@ -49,9 +49,9 @@
 				<float name="far" value="0" />
 			</group>
 			<group name="accuracy">
-				<float name="mid" value="2.8" />
+				<float name="mid" value="5" />
 				<float name="near" value="5" />
-				<float name="far" value="0.6" />
+				<float name="far" value="5" />
 			</group>
 			<group name="damage_friendly">
 				<float name="mid" value="0.075" />
@@ -70,9 +70,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="mid" value="170" />
-				<float name="near" value="170" />
-				<float name="far" value="170" />
+				<float name="mid" value="95" />
+				<float name="near" value="100" />
+				<float name="far" value="90" />
 			</template_reference>
 			<bool name="can_harm_shooter" value="False" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -82,7 +82,7 @@
 				<float name="far" value="1" />
 			</group>
 			<group name="distance">
-				<float name="mid" value="0.1" />
+				<float name="mid" value="0.2" />
 				<float name="near" value="0.1" />
 				<float name="far" value="0.3" />
 			</group>

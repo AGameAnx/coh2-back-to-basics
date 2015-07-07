@@ -145,8 +145,8 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_halftrack_sdkfz_251_mp" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="9" />
-			<float name="rear_armor" value="4.5" />
+			<float name="armor" value="10" />
+			<float name="rear_armor" value="8" />
 			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">

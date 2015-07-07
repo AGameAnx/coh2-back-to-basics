@@ -1,8 +1,59 @@
 =================================================================
+## v0.43
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Il-2 autocannon effectiveness further reduced to prevent squad wipes
+- ZiS 76mm AT gun far range accuracy reduced 0.047 -> 0.033
+- ZiS 76mm AT gun mid range accuracy reduced 0.053 -> 0.05
+
+USF:
+- Pack howitzer barrage recharge time increased 60s -> 70s
+- Pack howitzer barrage now has initial reload, increasing the time taken before it fires and fixing the issue of rapidly firing follow up shots
+- Pack howitzer white phosphorus barrage scatter reduced to match normal barrage more closely
+- M3 Halftrack (all variants, including AAHT) target size reduced 20/22 -> 18
+- M1 AT gun long range accuracy reduced 0.038 -> 0.03
+
+Ostheer:
+- Pak40 AT gun long range accuracy reduced 0.04 -> 0.033
+- Pak40 AT gun mid range accuracy reduced 0.053 -> 0.05
+- Panzergrenadier hitpoints increased 80 -> 84
+- Panzerwerfer number of rockets per barrage decreased 16 -> 10 (actual number of rocket tubes, vanilla number, tested for squad wipes)
+- Rifle grenade warning delay reduced 1.25s -> 1s
+- LeFH 105mm artillery barrage salvo number increased 6 -> 8
+- LeFH 105mm artillery aoe damage reworked:
+ * Far aoe damage multiplier increased 0.01 -> 0.1
+ * Aoe accuracy reduced 5/5/5 -> 0.3/1.25/5
+ * Max aoe range increased 9.4 -> 10
+ * Far aoe range increased 9.4 -> 10
+- MG42 damage increased 14 -> 17 (6 shot kill -> 5 shot kill)
+- MG42 incendiary rounds reload multiplier reduced 0.5 -> 0.7
+- MG42 incendiary rounds penetration reduced +9 -> +8
+
+OKW:
+- Kubelwagen armor increased 4 -> 5.5, rear armor disabled
+- Kubelwagen target size decreased 10 -> 8
+- 251 flak halftrack armor increased 9/4.5 -> 10/8
+- Raketenwerfer long range accuracy reduced 0.047 -> 0.033
+- Raketenwerfer mid range accuracy reduced 0.053 -> 0.05
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Base upkeep decreased 1.225 -> 1.1875
+- Base manpower income bonus decreased +60 -> +50
+
+
+=================================================================
 ## v0.42
 =================================================================
 
 -----------------------------------------------------------------
+## Attributes:
 
 General:
 - Full file diff pass to include the patch changes in the mod
@@ -16,6 +67,11 @@ General:
 
 Soviet:
 - IS-2 command point requirement reduced 14 -> 13
+- ML-20 artillery weapon reworked:
+ * Aoe damage increased 0.01/0.15/1 -> 0.075/0.15/1
+ * Aoe accuracy reduced 5/5/5 -> 0.2/1.35/5
+ * Damage values increased and normalized for barrages, victor target, precision strikes (220)
+ * Precision strike removed
 - IL-2 autocannon rework (it had really strong potential to wipe squads on each pass):
  * damage reduced 35 -> 19
  * accuracy reduced 0.75 -> 0.6
@@ -27,13 +83,7 @@ Soviet:
 - SU-76 penetration increased 80/120/160 -> 120/140/180
 - Dshk-38 Sokolov HMG is the only HMG that received the full incremental accuracy change from the patch
 - Maxim HMG incremental accuracy multiplier increased 1 -> 1.04
-- ML-20 artillery weapon reworked:
- * Aoe damage increased 0.01/0.15/1 -> 0.075/0.15/1
- * Aoe accuracy reduced 5/5/5 -> 0.2/1.35/5
- * Damage values increased and normalized for barrages, victor target, precision strikes (220)
- * Precision strike removed
 - Engineers can now construct sandbags
-- Engineers can now construct MG nests
 
 USF:
 - M2HB 50 cal HMG mid range accuracy increased 0.26 -> 0.3
@@ -51,7 +101,6 @@ OKW:
 General:
 - Ballistics script is now completely disabled due to causing sync errors
 - Base upkeep increased 1.2 -> 1.225
-- Added a new system that spawns additional smoke effects to the most active areas of the battlefield. The script will spawn only up to two effects in 12x12 cells, based on number of projectiles that landed in the area, to make sure of the minimal performance impact
 
 
 =================================================================

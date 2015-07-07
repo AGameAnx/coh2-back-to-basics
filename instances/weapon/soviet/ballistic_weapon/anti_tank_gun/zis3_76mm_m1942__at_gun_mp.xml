@@ -274,9 +274,9 @@
 			<float name="deflection_damage_multiplier" value="0" />
 		</group>
 		<group name="accuracy">
-			<float name="mid" value="0.053" />
+			<float name="mid" value="0.05" />
 			<float name="near" value="0.102" />
-			<float name="far" value="0.047" />
+			<float name="far" value="0.033" />
 		</group>
 		<group name="setup">
 			<float name="attach_duration" value="0" />

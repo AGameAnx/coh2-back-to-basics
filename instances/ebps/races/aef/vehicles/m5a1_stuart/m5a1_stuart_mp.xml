@@ -155,7 +155,7 @@
 			<float name="death_seconds" value="1.8" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="360" />
+			<float name="hitpoints" value="400" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -291,7 +291,7 @@
 					</list>
 				</group>
 				<group name="critical_group">
-					<float name="max_health_percentage" value="0" />
+					<float name="max_health_percentage" value="0.25" />
 					<list name="critical_info">
 						<group name="info">
 							<float name="weight" value="98" />

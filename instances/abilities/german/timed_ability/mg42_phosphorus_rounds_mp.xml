@@ -37,7 +37,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="9" />
+							<float name="value" value="8" />
 							<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -46,7 +46,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.5" />
+							<float name="value" value="0.7" />
 							<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 						</template_reference>
 					</list>

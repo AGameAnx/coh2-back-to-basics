@@ -22,7 +22,7 @@
 					<uniqueid name="id" value="1073743794" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="1.25" />
+					<float name="delay" value="1" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />

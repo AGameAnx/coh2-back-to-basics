@@ -207,7 +207,7 @@
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
-			<bool name="rear_damage_enabled" value="True" />
+			<bool name="rear_damage_enabled" value="False" />
 			<instance_reference name="rebuilt_entity" value="" />
 			<instance_reference name="rebuilt_squad" value="" />
 			<bool name="rebuilt_use_wreck_owner" value="False" />
@@ -282,9 +282,9 @@
 					</template_reference>
 				</template_reference>
 			</list>
-			<float name="armor" value="4" />
-			<float name="rear_armor" value="2" />
-			<float name="target_size" value="10" />
+			<float name="armor" value="5.5" />
+			<float name="rear_armor" value="5.5" />
+			<float name="target_size" value="8" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">

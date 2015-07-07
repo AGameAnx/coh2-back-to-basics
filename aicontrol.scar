@@ -582,7 +582,7 @@ local UNIT_CONTROL_PRESET = {
 		['move_back_danger'] = 1.35,
 		['retreat_danger'] = -1,
 		['init_step'] = 0,
-		['step_count'] = 6,
+		['step_count'] = 5,
 		['target_angle_threshold'] = 18
 	}
 }
@@ -1715,7 +1715,13 @@ AIControl.MainControl = {
 								if actualSafety then
 									local vehicleCrew = Squad_GetVehicleMobileDriverSquad(squad)
 									if vehicleCrew then
-										Entity_ApplyCritical(Squad_EntityAt(squad, 0), AIControl_MainControl_Settings_VehicleControl.DecrewCritical, 0)
+										local vehicleEntity = Squad_EntityAt(squad, 0)
+										Entity_ApplyCritical(vehicleEntity, AIControl_MainControl_Settings_VehicleControl.DecrewCritical, 0)
+										--local tmpEG = EGroup_Create('aicontrol_tmp') -- can't add squad entity to EG. Should add it one update later?
+										--EGroup_Single(tmpEG, vehicleEntity)
+										--Cmd_RecrewVehicle(sg, tmpEG, true)
+										--EGroup_Destroy(tmpEG)
+										--AI_LockSquad(vehicleCrew)
 									end
 								end
 								inSafety = true

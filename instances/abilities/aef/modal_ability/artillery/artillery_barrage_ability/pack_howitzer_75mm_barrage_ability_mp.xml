@@ -20,6 +20,10 @@
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
+				<template_reference name="action" value="action\force_reload_action">
+					<int name="hardpoint_index" value="2" />
+					<uniqueid name="id" value="1073744392" />
+				</template_reference>
 				<template_reference name="action" value="action\artillery_attack">
 					<bool name="disable_parent_hardpoint" value="True" />
 					<group name="filter_weapons">
@@ -81,7 +85,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="120" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="60" />
+		<float name="recharge_time" value="70" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="aef_pack_howitzer_barrages" />

@@ -309,9 +309,9 @@
 		</group>
 		<string name="fx_munition_name" value="rocket_light" />
 		<group name="accuracy">
-			<float name="mid" value="0.053" />
+			<float name="mid" value="0.05" />
 			<float name="near" value="0.102" />
-			<float name="far" value="0.047" />
+			<float name="far" value="0.033" />
 		</group>
 		<group name="setup">
 			<float name="attach_duration" value="0.733" />

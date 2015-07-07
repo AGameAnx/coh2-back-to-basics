@@ -292,7 +292,7 @@
 					</list>
 				</group>
 				<group name="critical_group">
-					<float name="max_health_percentage" value="0" />
+					<float name="max_health_percentage" value="0.25" />
 					<list name="critical_info">
 						<group name="info">
 							<float name="weight" value="98" />

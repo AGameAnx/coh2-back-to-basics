@@ -406,7 +406,7 @@
 		<group name="accuracy">
 			<float name="mid" value="0.053" />
 			<float name="near" value="0.102" />
-			<float name="far" value="0.04" />
+			<float name="far" value="0.032" />
 		</group>
 		<string name="fx_munition_name" value="shell_medium" />
 		<group name="penetration">

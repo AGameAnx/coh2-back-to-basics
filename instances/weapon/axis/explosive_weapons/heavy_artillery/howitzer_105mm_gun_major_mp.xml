@@ -335,14 +335,14 @@
 		<group name="area_effect">
 			<group name="damage">
 				<float name="near" value="1" />
-				<float name="far" value="0.01" />
+				<float name="far" value="0.1" />
 				<float name="mid" value="0.25" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<enum name="area_type" value="circle" />
 				<float name="angle_right" value="0" />
-				<float name="radius" value="9.4" />
+				<float name="radius" value="10" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell_extreme" />
@@ -359,8 +359,8 @@
 			<bool name="can_harm_shooter" value="False" />
 			<group name="accuracy">
 				<float name="near" value="5" />
-				<float name="far" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="0.3" />
+				<float name="mid" value="1.25" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<group name="suppression_friendly">
@@ -375,7 +375,7 @@
 			</group>
 			<group name="distance">
 				<float name="near" value="1.8" />
-				<float name="far" value="9.4" />
+				<float name="far" value="10" />
 				<float name="mid" value="3.8" />
 			</group>
 			<group name="suppression">
