@@ -17,7 +17,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_rocket_truck_barrage_mp" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\german_hulldown_disable" />
-				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_rocket_truck_precision_barrage_mp" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_rocket_truck_creeping_barrage_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_rocket_truck_barrage_victortarget_mp" />
 			</list>
@@ -422,7 +422,7 @@
 								<float name="z" value="1.3" />
 							</group>
 							<enum name="type" value="squad" />
-							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\light_artillery\katyusha_bm_13_16_precision_rocket_mp" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\light_artillery\katyusha_bm_13_16_creeping_rockets_mp" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

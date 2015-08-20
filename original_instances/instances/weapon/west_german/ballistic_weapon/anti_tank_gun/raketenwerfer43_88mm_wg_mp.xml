@@ -7,14 +7,14 @@
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
-				<float name="max" value="1.25" />
-				<float name="min" value="1" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.125" />
 			</group>
 			<float name="post_firing_aim_time" value="2" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1.5" />
-				<float name="min" value="1" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.375" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -408,8 +408,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="3.6" />
-				<float name="min" value="3" />
+				<float name="max" value="3.8" />
+				<float name="min" value="4.3" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

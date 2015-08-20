@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_medallions_faceplate_medallion_battle_of_oka_river_medium" />
 		<bool name="is_medal" value="True" />
 		<int name="priority" value="2120" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_17_med" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_medal_17_med" />
 		<instance_reference name="achievement" value="" />
 	</group>
 	<uniqueid name="pbgid" value="306" />

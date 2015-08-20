@@ -1,7 +1,7 @@
 <instance description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
-			<string name="alternate_sua" value="armies\german\vehicles\panther\panther" />
+			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="True" />
 			<file name="animator" value="armies\west_german\vehicles\panther_ausf_g\panther_ausf_g" />
 			<bool name="is_visible_in_game" value="True" />

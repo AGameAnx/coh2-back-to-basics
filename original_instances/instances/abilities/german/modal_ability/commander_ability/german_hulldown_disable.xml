@@ -103,7 +103,7 @@
 		<group name="ui_info">
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="11025892" />
-			<string name="hotkey_name" value="H" />
+			<string name="hotkey_name" value="L" />
 			<icon name="icon_name" value="Icons_abilities_ability_german_hull_down_release" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />

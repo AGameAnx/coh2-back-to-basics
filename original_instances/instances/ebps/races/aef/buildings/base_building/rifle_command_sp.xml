@@ -280,7 +280,7 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
-			<string name="portrait_icon_winter" value="Icons_building_aef_rifle_company_and_support_platoon_w_portrait" />
+			<string name="portrait_icon_winter" value="Icons_portraits_building_aef_rifle_company_and_support_platoon_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />

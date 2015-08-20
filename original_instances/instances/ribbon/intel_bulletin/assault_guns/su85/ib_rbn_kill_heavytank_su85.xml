@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_2" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3670" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_2" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_2" />
 		<instance_reference name="achievement" value="achievement\assault_guns\su85\kill_heavytank_su85" />
 	</group>
 	<uniqueid name="pbgid" value="102" />

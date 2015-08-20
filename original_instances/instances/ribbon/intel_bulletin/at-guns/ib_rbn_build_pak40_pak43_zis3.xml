@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_3" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3390" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_3" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_3" />
 		<instance_reference name="achievement" value="achievement\at-guns\build_pak40_pak43_zis3" />
 	</group>
 	<uniqueid name="pbgid" value="103" />

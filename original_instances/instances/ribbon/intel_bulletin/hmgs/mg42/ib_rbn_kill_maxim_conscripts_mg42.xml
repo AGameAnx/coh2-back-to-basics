@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_5" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3110" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_5" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_5" />
 		<instance_reference name="achievement" value="achievement\hmgs\mg42\kill_maxim_conscripts_mg42" />
 	</group>
 	<uniqueid name="pbgid" value="128" />

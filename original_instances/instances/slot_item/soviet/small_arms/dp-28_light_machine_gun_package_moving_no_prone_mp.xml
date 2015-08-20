@@ -4,7 +4,7 @@
 		<bool name="can_stack" value="False" />
 		<float name="can_stack_max" value="1" />
 		<instance_reference name="drop_item_entity" value="ebps\gameplay\props\dp28_lmg_item" />
-		<float name="drop_rate" value="0.33" />
+		<float name="drop_rate" value="0.1" />
 		<float name="hardpoint" value="1" />
 		<bool name="has_speech_code" value="True" />
 		<bool name="is_entity_user" value="False" />

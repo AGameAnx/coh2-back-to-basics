@@ -106,6 +106,13 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\west_german\commander\passive\infrared_stg44" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="True" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\items\waffen_mg34_lmg_mp" />
+			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
 		<locstring name="ui_squad_name_override" value="0" />

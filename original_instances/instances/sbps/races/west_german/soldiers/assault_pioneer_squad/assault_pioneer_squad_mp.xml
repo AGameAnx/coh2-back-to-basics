@@ -406,42 +406,6 @@
 				<instance_reference name="upgrade" value="upgrade\west_german\items\assault_pioneer_repair_upgrade" />
 			</list>
 		</template_reference>
-		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
-			<list name="actions">
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.15" />
-							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="189941" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.87" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="387930" />
-				</template_reference>
-			</list>
-		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
 			<float name="heavy_weapon_setup_delay" value="999" />
 			<float name="reaction_delay_seconds" value="25" />

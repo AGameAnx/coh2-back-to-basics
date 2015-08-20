@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_6" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3010" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_6" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_6" />
 		<instance_reference name="achievement" value="achievement\infantry\engineer\construct_barbedfield_mine_engineer" />
 	</group>
 	<uniqueid name="pbgid" value="132" />

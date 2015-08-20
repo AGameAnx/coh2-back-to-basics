@@ -389,6 +389,8 @@
 				</group>
 			</list>
 			<float name="destroy_on_abandon_health_threshold" value="-1" />
+			<list name="on_abandon_weapon_action">
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\marker_ext">
 		</template_reference>

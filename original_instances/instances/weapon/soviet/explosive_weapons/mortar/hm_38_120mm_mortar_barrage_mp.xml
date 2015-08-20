@@ -46,9 +46,9 @@
 				<float name="radius" value="6" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.05" />
+				<float name="far" value="0.1" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.35" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
@@ -57,8 +57,8 @@
 			</group>
 			<group name="distance">
 				<float name="far" value="4.5" />
-				<float name="near" value="1.5" />
-				<float name="mid" value="3" />
+				<float name="near" value="1.1" />
+				<float name="mid" value="3.5" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -269,8 +269,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="100" />
-			<float name="min" value="100" />
+			<float name="max" value="80" />
+			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>

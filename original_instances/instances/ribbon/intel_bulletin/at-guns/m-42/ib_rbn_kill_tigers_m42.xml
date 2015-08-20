@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_109" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3320" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_109" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_109" />
 		<instance_reference name="achievement" value="achievement\at-guns\m-42\kill_5_tigers" />
 	</group>
 	<uniqueid name="pbgid" value="4360" />

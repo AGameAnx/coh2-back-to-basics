@@ -48,7 +48,7 @@
 			<group name="damage">
 				<float name="far" value="0.05" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.35" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
@@ -359,12 +359,12 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="10" />
+			<float name="angle_scatter" value="6" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="12" />
+			<float name="distance_scatter_max" value="5" />
 			<float name="distance_scatter_obj_hit_min" value="7" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.15" />

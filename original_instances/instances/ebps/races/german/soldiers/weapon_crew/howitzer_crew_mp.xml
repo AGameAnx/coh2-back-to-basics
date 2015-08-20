@@ -81,20 +81,6 @@
 								<bool name="rear" value="True" />
 							</enum_table>
 						</group>
-						<group name="info">
-							<float name="weight" value="5" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="True" />
-								<bool name="ballistic" value="False" />
-								<bool name="explosive" value="False" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\burn_death" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-						</group>
 					</list>
 				</group>
 				<group name="critical_group">
@@ -130,6 +116,20 @@
 						</group>
 						<group name="info">
 							<float name="weight" value="10" />
+							<enum_table name="applicable_weapons">
+								<bool name="small_arms" value="False" />
+								<bool name="flame" value="True" />
+								<bool name="ballistic" value="False" />
+								<bool name="explosive" value="False" />
+							</enum_table>
+							<instance_reference name="critical" value="critical\burn_death" />
+							<enum_table name="applicable_hit_direction">
+								<bool name="front" value="True" />
+								<bool name="rear" value="True" />
+							</enum_table>
+						</group>
+						<group name="info">
+							<float name="weight" value="5" />
 							<enum_table name="applicable_weapons">
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="True" />
@@ -212,6 +212,20 @@
 								<bool name="explosive" value="False" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\burn_death_out_of_control" />
+							<enum_table name="applicable_hit_direction">
+								<bool name="front" value="True" />
+								<bool name="rear" value="True" />
+							</enum_table>
+						</group>
+						<group name="info">
+							<float name="weight" value="25" />
+							<enum_table name="applicable_weapons">
+								<bool name="small_arms" value="True" />
+								<bool name="flame" value="True" />
+								<bool name="ballistic" value="True" />
+								<bool name="explosive" value="True" />
+							</enum_table>
+							<instance_reference name="critical" value="critical\soldier_flamethrower_explode" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
@@ -584,22 +598,6 @@
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
 						<uniqueid name="id" value="57209" />
-					</template_reference>
-					<template_reference name="action" value="action\apply_modifiers_action">
-						<float name="duration" value="0" />
-						<bool name="permanent" value="False" />
-						<list name="modifiers">
-							<template_reference name="modifier" value="modifiers\posture_speed_modifier">
-								<enum name="application_type" value="apply_to_entity" />
-								<bool name="exclusive" value="False" />
-								<string name="modifier_id" value="" />
-								<string name="target_type_name" value="" />
-								<enum name="usage_type" value="addition" />
-								<float name="value" value="-1" />
-								<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
-							</template_reference>
-						</list>
-						<uniqueid name="id" value="57210" />
 					</template_reference>
 				</list>
 			</group>

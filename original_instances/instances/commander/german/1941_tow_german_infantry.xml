@@ -4,7 +4,7 @@
 		<instance_reference name="archetype_upgrade" value="upgrade\german\commander\archetype\tow_1941_german" />
 		<locstring name="description" value="11048777" />
 		<icon name="icon" value="Icons_commander_portrait_german_commander_12" />
-		<string name="icon_secondary" value="Icons_commander_portrait_german_commander_12_large" />
+		<icon name="icon_secondary" value="Icons_commander_portrait_german_commander_12_large" />
 		<int name="ui_position" value="6" />
 		<locstring name="description_short" value="0" />
 		<instance_reference name="store_item" value="" />

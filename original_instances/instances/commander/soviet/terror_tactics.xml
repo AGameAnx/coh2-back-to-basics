@@ -4,7 +4,7 @@
 		<instance_reference name="archetype_upgrade" value="upgrade\soviet\commander\archetype\shock_archetype" />
 		<locstring name="description" value="11040317" />
 		<icon name="icon" value="Icons_commander_portrait_soviet_commander_10" />
-		<string name="icon_secondary" value="Icons_commander_portrait_soviet_commander_10_large" />
+		<icon name="icon_secondary" value="Icons_commander_portrait_soviet_commander_10_large" />
 		<int name="ui_position" value="6" />
 		<locstring name="description_short" value="11048938" />
 		<instance_reference name="store_item" value="thq_store\commanders\soviet\terror_tactics" />

@@ -175,7 +175,7 @@
 								<bool name="ballistic" value="True" />
 								<bool name="explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_destroy" />
+							<instance_reference name="critical" value="critical\vehicle_destroy_weapon_team" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
@@ -567,6 +567,13 @@
 				</group>
 			</list>
 			<float name="destroy_on_abandon_health_threshold" value="0.2" />
+			<list name="on_abandon_weapon_action">
+				<template_reference name="action" value="action\upgrade_remove">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<instance_reference name="upgrade" value="upgrade\is_manned" />
+					<uniqueid name="id" value="452189" />
+				</template_reference>
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext">
 			<group name="unit_type_list">

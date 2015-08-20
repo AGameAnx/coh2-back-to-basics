@@ -322,7 +322,7 @@
 											</template_reference>
 										</template_reference>
 									</list>
-									<int name="weight" value="124" />
+									<int name="weight" value="200" />
 								</group>
 							</list>
 							<uniqueid name="id" value="346645" />

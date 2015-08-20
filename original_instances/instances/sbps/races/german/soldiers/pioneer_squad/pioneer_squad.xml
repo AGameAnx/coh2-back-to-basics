@@ -735,7 +735,7 @@
 				<locstring name="extra_text" value="11043033" />
 				<locstring name="help_text" value="11007439" />
 				<string name="hotkey_name" value="X" />
-				<string name="icon_name" value="Icons_abilities_ability_soviet_demo_charge" />
+				<icon name="icon_name" value="Icons_abilities_ability_soviet_demo_charge" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="11006709" />

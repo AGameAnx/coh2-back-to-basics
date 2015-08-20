@@ -269,6 +269,7 @@
 			<bool name="impassable_edges" value="True" />
 			<float name="seconds_after_death" value="0" />
 			<file name="animator_dgm_name" value="environment\objects\railroads\cargo_03\cargo_03" />
+			<bool name="remove_on_death" value="True" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="588" />

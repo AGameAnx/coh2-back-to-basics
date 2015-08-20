@@ -259,6 +259,7 @@
 			<bool name="impassable_edges" value="False" />
 			<float name="seconds_after_death" value="0" />
 			<file name="animator_dgm_name" value="environment\objects\industrial\wood\wooden_pier\wooden_pier" />
+			<bool name="remove_on_death" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">

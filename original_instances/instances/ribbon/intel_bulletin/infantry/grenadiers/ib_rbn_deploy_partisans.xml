@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_116" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3030" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_116" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_116" />
 		<instance_reference name="achievement" value="achievement\infantry\partisan\deploy_200_partisans" />
 	</group>
 	<uniqueid name="pbgid" value="4362" />

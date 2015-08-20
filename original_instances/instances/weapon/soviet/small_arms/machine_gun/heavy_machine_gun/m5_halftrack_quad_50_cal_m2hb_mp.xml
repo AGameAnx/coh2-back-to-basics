@@ -269,8 +269,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="8" />
-			<float name="min" value="8" />
+			<float name="max" value="12" />
+			<float name="min" value="12" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
@@ -312,7 +312,7 @@
 											<uniqueid name="id" value="62422" />
 										</template_reference>
 									</list>
-									<int name="weight" value="101" />
+									<int name="weight" value="17" />
 								</group>
 								<group name="action_choice">
 									<list name="actions">
@@ -457,7 +457,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0.003" />
+			<float name="amount" value="0.009" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />

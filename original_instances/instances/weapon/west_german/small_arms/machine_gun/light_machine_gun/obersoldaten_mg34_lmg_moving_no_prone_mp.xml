@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.51" />
-			<float name="far" value="0.34" />
-			<float name="mid" value="0.4" />
+			<float name="near" value="0.587" />
+			<float name="far" value="0.391" />
+			<float name="mid" value="0.46" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -269,8 +269,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="8" />
-			<float name="min" value="8" />
+			<float name="max" value="6" />
+			<float name="min" value="6" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
@@ -410,7 +410,6 @@
 			<float name="duration" value="0" />
 		</group>
 		<group name="tracking">
-			<float name="fire_cone_angle" value="3" />
 			<group name="normal">
 				<float name="max_down" value="-90" />
 				<float name="max_left" value="-90" />
@@ -422,6 +421,7 @@
 			<float name="pivot_end_time" value="0" />
 			<bool name="pivot_only" value="False" />
 			<float name="pivot_start_time" value="0" />
+			<float name="fire_cone_angle" value="0" />
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="small_arms" />

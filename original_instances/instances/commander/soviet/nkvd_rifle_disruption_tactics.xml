@@ -4,7 +4,7 @@
 		<instance_reference name="archetype_upgrade" value="upgrade\soviet\commander\archetype\nkvd_archetype" />
 		<locstring name="description" value="11036214" />
 		<icon name="icon" value="Icons_commander_portrait_soviet_commander_06" />
-		<string name="icon_secondary" value="Icons_commander_portrait_soviet_commander_06_large" />
+		<icon name="icon_secondary" value="Icons_commander_portrait_soviet_commander_06_large" />
 		<int name="ui_position" value="2" />
 		<locstring name="description_short" value="11048934" />
 		<instance_reference name="store_item" value="" />

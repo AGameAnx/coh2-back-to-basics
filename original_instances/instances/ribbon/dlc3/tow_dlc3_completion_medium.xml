@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_medallions_faceplate_medallion_tow_sf_southern_fronts_complete_captain" />
 		<bool name="is_medal" value="True" />
 		<int name="priority" value="2001" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_tow_sf_southern_fronts_completed_captain" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_medal_tow_sf_southern_fronts_completed_captain" />
 		<instance_reference name="achievement" value="" />
 	</group>
 	<uniqueid name="pbgid" value="14399" />

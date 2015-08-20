@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_9" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3210" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_9" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_9" />
 		<instance_reference name="achievement" value="achievement\mortars\81mm\squad_kills_81mm" />
 	</group>
 	<uniqueid name="pbgid" value="179" />

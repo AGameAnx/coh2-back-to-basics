@@ -5,7 +5,7 @@
 		<bool name="community" value="False" />
 		<bool name="purchaseable" value="True" />
 		<list name="dlc_tokens">
-			<string name="dlc_token" value="249108" />
+			<string name="dlc_token" value="344392" />
 			<string name="dlc_token" value="231573" />
 		</list>
 	</group>

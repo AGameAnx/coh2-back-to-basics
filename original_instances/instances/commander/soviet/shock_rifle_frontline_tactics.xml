@@ -4,7 +4,7 @@
 		<instance_reference name="archetype_upgrade" value="upgrade\soviet\commander\archetype\shock_archetype" />
 		<locstring name="description" value="11036216" />
 		<icon name="icon" value="Icons_commander_portrait_soviet_commander_08" />
-		<string name="icon_secondary" value="Icons_commander_portrait_soviet_commander_08_large" />
+		<icon name="icon_secondary" value="Icons_commander_portrait_soviet_commander_08_large" />
 		<int name="ui_position" value="0" />
 		<locstring name="description_short" value="11048936" />
 		<instance_reference name="store_item" value="" />

@@ -251,6 +251,7 @@
 			<bool name="impassable_edges" value="True" />
 			<float name="seconds_after_death" value="0" />
 			<file name="animator_dgm_name" value="environment\bridges\bridge_35_01\bridge_35_01_wreck" />
+			<bool name="remove_on_death" value="True" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="17689" />

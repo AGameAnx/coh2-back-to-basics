@@ -63,7 +63,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2" />
+									<float name="value" value="1.4" />
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>

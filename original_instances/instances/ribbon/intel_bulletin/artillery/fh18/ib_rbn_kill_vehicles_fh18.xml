@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_1" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3400" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_1" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_1" />
 		<instance_reference name="achievement" value="achievement\artillery\fh18\kill_vehicles_fh18" />
 	</group>
 	<uniqueid name="pbgid" value="82" />

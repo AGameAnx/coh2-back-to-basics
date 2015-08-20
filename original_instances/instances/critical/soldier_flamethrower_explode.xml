@@ -203,6 +203,12 @@
 					</template_reference>
 				</list>
 			</template_reference>
+			<template_reference name="required" value="requirements\required_number_of_squad_members">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<enum name="comparison" value="equal_to" />
+				<float name="number_of_members" value="1" />
+			</template_reference>
 		</list>
 		<template_reference name="ui_info" value="tables\ui_info">
 			<locstring name="screen_name" value="0" />

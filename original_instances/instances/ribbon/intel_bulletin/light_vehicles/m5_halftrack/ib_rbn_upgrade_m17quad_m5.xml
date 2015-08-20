@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_7" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3440" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_7" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_7" />
 		<instance_reference name="achievement" value="achievement\light_vehicles\m5_halftrack\upgrade_m17quad_m5" />
 	</group>
 	<uniqueid name="pbgid" value="159" />

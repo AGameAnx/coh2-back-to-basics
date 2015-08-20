@@ -3,7 +3,7 @@
 		<icon name="icon" value="Icons_swatches_swatch_soviet_0001_winter_light" />
 		<enum name="kill_type" value="light_armour" />
 		<enum name="season" value="winter" />
-		<instance_reference name="store_item" value="thq_store\skins\german\german_0001_winter_light" />
+		<instance_reference name="store_item" value="thq_store\skins\soviet\soviet_0001_winter_light" />
 		<template_reference name="server_item" value="server_item">
 			<uniqueid name="server_id" value="396469" />
 			<list name="search_tags">

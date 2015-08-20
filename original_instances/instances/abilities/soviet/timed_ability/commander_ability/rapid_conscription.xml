@@ -231,6 +231,10 @@
 							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\dshk_38_hmg_squad\dshk_38_hmg_squad_mp" />
 							<bool name="trigger_on_squad_death" value="True" />
 						</group>
+						<group name="replace_info">
+							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\partisan_squads\tow_partisan_squad_lmg_squad" />
+							<bool name="trigger_on_squad_death" value="False" />
+						</group>
 					</list>
 					<instance_reference name="replacement_squad_type" value="sbps\races\soviet\soldiers\conscript_squad\conscript_squad_mp" />
 					<int name="spawn_count" value="1" />

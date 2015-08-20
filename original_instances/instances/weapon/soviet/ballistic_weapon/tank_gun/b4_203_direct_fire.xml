@@ -106,7 +106,7 @@
 			<bool name="substitute_weapon" value="False" />
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
-			<bool name="piercing" value="False" />
+			<bool name="piercing" value="True" />
 			<float name="reaction_radius" value="9.4" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
@@ -441,9 +441,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="340" />
-			<float name="far" value="260" />
-			<float name="mid" value="300" />
+			<float name="near" value="600" />
+			<float name="far" value="600" />
+			<float name="mid" value="600" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

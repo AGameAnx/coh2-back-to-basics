@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="2.5" />
+				<float name="radius" value="1.75" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
@@ -269,8 +269,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="40" />
-			<float name="min" value="40" />
+			<float name="max" value="60" />
+			<float name="min" value="60" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
@@ -343,8 +343,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4.5" />
-				<float name="min" value="4" />
+				<float name="max" value="4.4" />
+				<float name="min" value="2.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -364,7 +364,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="2.1" />
+			<float name="distance_scatter_max" value="4.2" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0.3" />
 			<float name="distance_scatter_ratio" value="1" />
@@ -429,8 +429,8 @@
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
 			<float name="mid" value="45" />
-			<float name="far" value="35" />
-			<float name="near" value="55" />
+			<float name="far" value="40" />
+			<float name="near" value="60" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

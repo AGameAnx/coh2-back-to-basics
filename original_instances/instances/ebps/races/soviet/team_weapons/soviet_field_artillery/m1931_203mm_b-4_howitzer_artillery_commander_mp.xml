@@ -16,7 +16,6 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_barrage_commander_mp" />
-				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_barrage_commander_precise_mp" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\accessory_weapons\b4_203mm_direct_fire" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_barrage_commander_victortarget_mp" />
 			</list>
@@ -425,6 +424,8 @@
 				</group>
 			</list>
 			<float name="destroy_on_abandon_health_threshold" value="-1" />
+			<list name="on_abandon_weapon_action">
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\marker_ext">
 		</template_reference>

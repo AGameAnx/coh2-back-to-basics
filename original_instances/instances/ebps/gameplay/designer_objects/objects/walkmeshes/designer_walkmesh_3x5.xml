@@ -68,6 +68,7 @@
 			<bool name="impassable_edges" value="False" />
 			<float name="seconds_after_death" value="0" />
 			<file name="animator_dgm_name" value="environment\objects\designer\walkmesh_3x5\walkmesh_3x5" />
+			<bool name="remove_on_death" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\site_ext">
 			<float name="extra_build_test_footprint" value="0" />

@@ -144,6 +144,18 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\theatre_of_war\theatre_of_war_1941" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11095059" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_entity">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="entity_blueprint_name" value="ebps\races\soviet\vehicles\is-2_heavy_tank\is-2_heavy_tank_mp" />
+						<enum name="entity_type" value="" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="110" />

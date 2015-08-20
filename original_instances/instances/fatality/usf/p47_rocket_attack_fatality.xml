@@ -16,8 +16,8 @@
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
 		<icon name="icon" value="Icons_fatalities_fatality_p47_rocket_attack" />
-		<string name="lua_function_name" value="Fatality_P47RocketAttack" />
 		<locstring name="description" value="11074003" />
 		<instance_reference name="store_item" value="" />
+		<instance_reference name="ability" value="abilities\aef\fatality\fatality_p47_rocket_attack" />
 	</group>
 </instance>

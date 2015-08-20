@@ -38,7 +38,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="180" />
+			<float name="munition" value="90" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -61,7 +61,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="150" />
+		<float name="range" value="100" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
@@ -128,9 +128,14 @@
 				<instance_reference name="upgrade_name" value="upgrade\b4_203mm_howitzer_barrage_lockouts" />
 				<bool name="include_queued" value="False" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_veterancy">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11072949" />
+				<float name="veterancy_rank" value="1" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />

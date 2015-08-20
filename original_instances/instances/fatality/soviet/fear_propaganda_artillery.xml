@@ -16,8 +16,8 @@
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
 		<icon name="icon" value="Icons_fatalities_fatality_propaganda_strike" />
-		<string name="lua_function_name" value="Fatality_FearPropagandaArtillery" />
 		<locstring name="description" value="11074090" />
 		<instance_reference name="store_item" value="" />
+		<instance_reference name="ability" value="abilities\soviet\fatality\fatality_fear_propaganda_artillery" />
 	</group>
 </instance>

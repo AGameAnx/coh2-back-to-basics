@@ -59,7 +59,7 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_halftrack_sws" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="5" />
+			<float name="armor" value="4" />
 			<float name="rear_armor" value="4.5" />
 			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -172,20 +172,6 @@
 							<instance_reference name="critical" value="critical\vehicle_out_of_control_fast" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-						</group>
-						<group name="info">
-							<float name="weight" value="10" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="True" />
-								<bool name="flame" value="True" />
-								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_light_destroy_engine" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="False" />
 								<bool name="rear" value="True" />
 							</enum_table>
 						</group>
@@ -980,7 +966,7 @@
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<float name="speed_max" value="4.2" />
+			<float name="speed_max" value="3.2" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0.1" />

@@ -276,6 +276,7 @@
 			<bool name="impassable_edges" value="True" />
 			<float name="seconds_after_death" value="3" />
 			<file name="animator_dgm_name" value="environment\bridges\foot_bridge_25_01\foot_bridge_25_01" />
+			<bool name="remove_on_death" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\demolishable_ext">
 			<bool name="detonate_requires_fully_wired" value="True" />

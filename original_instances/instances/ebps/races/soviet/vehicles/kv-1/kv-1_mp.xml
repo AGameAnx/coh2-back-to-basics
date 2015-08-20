@@ -17,6 +17,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\german_hulldown_disable" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
+				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sov_vehicle_hold_fire_mp" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">

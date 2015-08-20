@@ -67,7 +67,7 @@
 						<string name="modifier_id" value="assault_pioneer_minesweeper" />
 						<string name="target_type_name" value="" />
 						<enum name="usage_type" value="addition" />
-						<float name="value" value="10" />
+						<float name="value" value="25" />
 						<instance_reference name="tooltip" value="modifier_tooltip\detect_specific_camouflage_radius" />
 					</template_reference>
 				</list>

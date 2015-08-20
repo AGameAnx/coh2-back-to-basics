@@ -16,8 +16,8 @@
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
 		<icon name="icon" value="Icons_fatalities_fatality_sturmtiger_saturation" />
-		<string name="lua_function_name" value="Fatality_Sturmtiger" />
 		<locstring name="description" value="11077084" />
 		<instance_reference name="store_item" value="" />
+		<instance_reference name="ability" value="abilities\west_german\fatality\fatality_sturmtiger_saturation" />
 	</group>
 </instance>

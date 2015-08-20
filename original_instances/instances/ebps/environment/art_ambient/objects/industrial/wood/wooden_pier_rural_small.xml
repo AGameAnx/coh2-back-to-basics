@@ -255,6 +255,7 @@
 			<bool name="impassable_edges" value="False" />
 			<float name="seconds_after_death" value="0" />
 			<file name="animator_dgm_name" value="environment\objects\industrial\wood\wooden_pier_rural_small\wooden_pier_rural_small" />
+			<bool name="remove_on_death" value="True" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="529" />

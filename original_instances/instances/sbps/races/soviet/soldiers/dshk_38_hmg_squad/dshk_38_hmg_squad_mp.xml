@@ -310,7 +310,7 @@
 				<instance_reference name="tp_z_snow" value="squad_formations\soviet_team_weapon_triangle" />
 				<instance_reference name="tp_zz_deep_snow" value="squad_formations\default" />
 				<instance_reference name="tp_zz_mud" value="squad_formations\default" />
-				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
+				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\soviet_team_weapon_triangle" />
 			</group>
 			<float name="move_dest_cover_search_radius" value="5" />
 			<group name="squad_distribution_table">
@@ -424,6 +424,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
 			<list name="upgrades">
+				<instance_reference name="upgrade" value="upgrade\is_manned" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
@@ -763,22 +764,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.25" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="392806" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext">
@@ -950,6 +935,8 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing_unset" />
 				<instance_reference name="ability" value="abilities\soviet\timed_ability\sniper_hmg_sprint_mp" />
 			</list>
 		</template_reference>

@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_medallions_faceplate_medallion_battle_of_pripyat_river_easy" />
 		<bool name="is_medal" value="True" />
 		<int name="priority" value="2122" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_22" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_medal_22" />
 		<instance_reference name="achievement" value="" />
 	</group>
 	<uniqueid name="pbgid" value="308" />

@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_113" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3030" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_113" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_113" />
 		<instance_reference name="achievement" value="achievement\infantry\irregulars\kill_100_enemy" />
 	</group>
 	<uniqueid name="pbgid" value="4365" />

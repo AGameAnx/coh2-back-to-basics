@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_107" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3720" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_107" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_107" />
 		<instance_reference name="achievement" value="achievement\heavy_tanks\kv-1\vet_3_kv1" />
 	</group>
 	<uniqueid name="pbgid" value="4358" />

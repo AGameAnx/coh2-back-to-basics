@@ -46,7 +46,7 @@
 				<float name="radius" value="0" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.25" />
+				<float name="far" value="0.5" />
 				<float name="near" value="1" />
 				<float name="mid" value="0.625" />
 			</group>
@@ -120,15 +120,15 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1.25" />
-				<float name="min" value="0.75" />
+				<float name="max" value="1" />
+				<float name="min" value="1" />
 			</group>
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1.04" />
+				<float name="accuracy_multiplier" value="1.15" />
 				<group name="search_radius">
-					<float name="far" value="10" />
-					<float name="near" value="6" />
-					<float name="mid" value="8" />
+					<float name="far" value="15" />
+					<float name="near" value="10" />
+					<float name="mid" value="12.5" />
 				</group>
 			</group>
 			<group name="rate_of_fire">
@@ -444,7 +444,7 @@
 		</group>
 		<group name="suppression">
 			<float name="nearby_suppression_multiplier" value="0.8" />
-			<float name="nearby_suppression_radius" value="10" />
+			<float name="nearby_suppression_radius" value="13" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />

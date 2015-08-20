@@ -265,6 +265,7 @@
 			<bool name="impassable_edges" value="True" />
 			<float name="seconds_after_death" value="0" />
 			<file name="animator_dgm_name" value="environment\bridges\best_bridge_l_01\best_bridge_l_01" />
+			<bool name="remove_on_death" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\modifier_ext">
 		</template_reference>

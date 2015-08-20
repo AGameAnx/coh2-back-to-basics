@@ -410,7 +410,6 @@
 			<float name="duration" value="0" />
 		</group>
 		<group name="tracking">
-			<float name="fire_cone_angle" value="5" />
 			<group name="normal">
 				<float name="max_down" value="-90" />
 				<float name="max_left" value="-60" />
@@ -422,6 +421,7 @@
 			<float name="pivot_end_time" value="0" />
 			<bool name="pivot_only" value="False" />
 			<float name="pivot_start_time" value="0" />
+			<float name="fire_cone_angle" value="0" />
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="small_arms" />

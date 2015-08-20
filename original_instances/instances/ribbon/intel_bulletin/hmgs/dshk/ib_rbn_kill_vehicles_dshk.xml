@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_112" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3100" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_112" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_112" />
 		<instance_reference name="achievement" value="achievement\hmgs\dshk\kill_vehicles_dshk" />
 	</group>
 	<uniqueid name="pbgid" value="4364" />

@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.05" />
-			<float name="far" value="0.025" />
-			<float name="mid" value="0.0375" />
+			<float name="near" value="0.6" />
+			<float name="far" value="0.04" />
+			<float name="mid" value="0.05" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="1.5" />
+				<float name="radius" value="0.5" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
@@ -74,9 +74,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="55" />
-				<float name="mid" value="60" />
-				<float name="near" value="65" />
+				<float name="far" value="100" />
+				<float name="mid" value="107.5" />
+				<float name="near" value="115" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -107,7 +107,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="1.2" />
+			<float name="reaction_radius" value="0.5" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
@@ -280,7 +280,7 @@
 		</group>
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
-			<bool name="has_deflection_damage" value="False" />
+			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -355,7 +355,7 @@
 			<list name="on_fire_actions">
 			</list>
 		</group>
-		<float name="flinch_radius" value="1.5" />
+		<float name="flinch_radius" value="0" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -383,13 +383,13 @@
 			<float name="current_target" value="3" />
 			<group name="distance">
 				<float name="far" value="1" />
-				<float name="near" value="2" />
-				<float name="mid" value="1.5" />
+				<float name="near" value="1.5" />
+				<float name="mid" value="1.25" />
 			</group>
 			<float name="rotation" value="-0.1" />
 			<float name="window_bonus" value="0" />
-			<float name="threat" value="20" />
-			<float name="penetration" value="40" />
+			<float name="threat" value="30" />
+			<float name="penetration" value="50" />
 			<float name="suggested_target" value="1000" />
 			<bool name="over_penetration_priority_penalty" value="True" />
 		</group>
@@ -424,12 +424,12 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="5" />
+			<float name="angle_scatter" value="7.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="4" />
+			<float name="distance_scatter_max" value="8" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0.25" />
 			<float name="distance_scatter_ratio" value="1" />
@@ -493,9 +493,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="130" />
-			<float name="far" value="110" />
-			<float name="mid" value="120" />
+			<float name="near" value="200" />
+			<float name="far" value="170" />
+			<float name="mid" value="185" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

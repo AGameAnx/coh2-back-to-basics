@@ -15,8 +15,8 @@
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
 		<icon name="icon" value="Icons_fatalities_fatality_howitzer_105mm_barrage" />
-		<string name="lua_function_name" value="Fatality_Howitzer105mmBarrage" />
 		<locstring name="description" value="11073997" />
 		<instance_reference name="store_item" value="" />
+		<instance_reference name="ability" value="abilities\global\fatality\fatality_howitzer_105mm_barrage" />
 	</group>
 </instance>

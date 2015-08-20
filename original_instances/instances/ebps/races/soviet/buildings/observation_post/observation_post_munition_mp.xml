@@ -361,7 +361,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="0" />
 				<string name="hotkey_name" value="" />
-				<string name="icon_name" value="Icons_resources_flag_fuel" />
+				<icon name="icon_name" value="Icons_resources_flag_fuel" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="0" />
@@ -370,7 +370,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="0" />
 				<string name="hotkey_name" value="" />
-				<string name="icon_name" value="Icons_resources_flag_null" />
+				<icon name="icon_name" value="Icons_resources_flag_null" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="0" />
@@ -379,7 +379,7 @@
 				<locstring name="extra_text" value="0" />
 				<locstring name="help_text" value="0" />
 				<string name="hotkey_name" value="" />
-				<string name="icon_name" value="Icons_resources_flag_munitions" />
+				<icon name="icon_name" value="Icons_resources_flag_munitions" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
 				<locstring name="screen_name" value="0" />

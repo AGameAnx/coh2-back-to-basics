@@ -105,7 +105,7 @@
 			<locstring name="screen_name" value="0" />
 			<enum name="selection_name" value="prop" />
 			<float name="selection_scale" value="1" />
-			<enum name="selection_type" value="no_select" />
+			<enum name="selection_type" value="targettable" />
 			<bool name="sloppy_selectable" value="False" />
 			<group name="speaker">
 				<string name="code_1" value="" />
@@ -426,7 +426,7 @@
 					<uniqueid name="id" value="260788" />
 				</template_reference>
 			</list>
-			<float name="armor" value="35" />
+			<float name="armor" value="4" />
 			<float name="rear_armor" value="0" />
 			<float name="target_size" value="1" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -476,7 +476,7 @@
 				<enum name="unit_type14" value="" />
 				<enum name="unit_type15" value="" />
 			</group>
-			<enum name="weapon_targeting" value="no_targeting" />
+			<enum name="weapon_targeting" value="manual_only" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="16888" />

@@ -1,0 +1,29 @@
+<instance description="german grey" template="skin_pack">
+	<group name="skin_pack_bag">
+		<string name="skin_name" value="okw_0004_summer" />
+		<icon name="icon" value="Icons_swatches_swatch_german_0012_summer_heavy" />
+		<icon name="icon_secondary" value="Icons_swatches_preview_preview_west_german_0004_summer_heavy" />
+		<locstring name="name" value="11094995" />
+		<locstring name="description" value="11094987" />
+		<enum name="kill_type" value="heavy_armour" />
+		<enum name="season" value="summer" />
+		<locstring name="description_short" value="11048873" />
+		<instance_reference name="store_item" value="" />
+		<template_reference name="server_item" value="server_item">
+			<uniqueid name="server_id" value="450058" />
+			<list name="search_tags">
+				<locstring name="tag" value="11074084" />
+				<locstring name="tag" value="11074085" />
+			</list>
+			<enum name="rarity" value="uncommon" />
+			<list name="races">
+				<instance_reference name="race" value="racebps\west_german" />
+			</list>
+			<bool name="is_in_default_bundle" value="False" />
+			<list name="default_metadata">
+			</list>
+			<instance_reference name="inventory_item_category" value="inventory_item_category\skin_pack\summer_heavy" />
+		</template_reference>
+	</group>
+	<uniqueid name="pbgid" value="90734" />
+</instance>

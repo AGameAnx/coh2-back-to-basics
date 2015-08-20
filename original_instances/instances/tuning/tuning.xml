@@ -803,11 +803,6 @@
 		<float name="posture_submerge_delay_min_second" value="12" />
 		<float name="posture_submerge_delay_max_second" value="15" />
 	</group>
-	<group name="diplomacy">
-		<float name="fuel_donation_inc" value="50" />
-		<float name="manpower_donation_inc" value="50" />
-		<float name="munition_donation_inc" value="100" />
-	</group>
 	<group name="fog_of_war">
 		<float name="attacker_reveal_time" value="3" />
 		<float name="death_reveal_time" value="2" />
@@ -928,6 +923,31 @@
 		</list>
 		<float name="team_weapon_slot_delay_seconds_min" value="4" />
 		<float name="team_weapon_slot_delay_seconds_max" value="4" />
+		<list name="on_fail_to_execute_facing_actions">
+			<template_reference name="action" value="action\kicker_message_action">
+				<float name="loop_interval" value="0" />
+				<locstring name="message" value="11085943" />
+				<float name="message_colour_a" value="255" />
+				<float name="message_colour_b" value="0" />
+				<float name="message_colour_g" value="70" />
+				<float name="message_colour_r" value="249" />
+				<float name="message_duration" value="2" />
+				<bool name="team_only" value="True" />
+				<bool name="check_fow" value="False" />
+				<uniqueid name="id" value="427115" />
+			</template_reference>
+			<template_reference name="action" value="action\upgrade_remove">
+				<bool name="apply_to_entities_in_squad" value="False" />
+				<instance_reference name="upgrade" value="upgrade\facing_order_issued" />
+				<uniqueid name="id" value="427116" />
+			</template_reference>
+			<template_reference name="action" value="action\set_held_squad_target_action">
+				<uniqueid name="id" value="427117" />
+				<bool name="fire_and_forget" value="True" />
+				<float name="height_offset" value="0" />
+			</template_reference>
+		</list>
+		<float name="team_weapon_slot_priority" value="2" />
 	</group>
 	<group name="kicker_messages">
 		<group name="action_point_gain">
@@ -1477,64 +1497,30 @@
 		<float name="arrow_height" value="0.8" />
 		<string name="arrow_texture" value="targeting\target_arrow_yellow" />
 		<float name="arrow_width" value="0.8" />
-		<float name="default_ammo_a" value="200" />
-		<float name="default_ammo_b" value="227" />
-		<float name="default_ammo_g" value="227" />
-		<float name="default_ammo_r" value="227" />
-		<float name="default_fuel_a" value="200" />
-		<float name="default_fuel_b" value="227" />
-		<float name="default_fuel_g" value="227" />
-		<float name="default_fuel_r" value="227" />
-		<float name="default_manpower_a" value="200" />
-		<float name="default_manpower_b" value="227" />
-		<float name="default_manpower_g" value="227" />
-		<float name="default_manpower_r" value="227" />
-		<float name="default_vp_a" value="200" />
-		<float name="default_vp_b" value="227" />
-		<float name="default_vp_g" value="227" />
-		<float name="default_vp_r" value="227" />
 		<float name="hp_fade_begin_alpha" value="1" />
 		<float name="hp_fade_begin_distance" value="50" />
 		<float name="hp_fade_end_alpha" value="0" />
 		<float name="hp_fade_end_distance" value="150" />
-		<group name="ingame_team_colour">
-			<float name="ally_a" value="255" />
-			<float name="ally_b" value="0" />
-			<float name="ally_g" value="225" />
-			<float name="ally_r" value="255" />
-			<float name="enemy_a" value="255" />
-			<float name="enemy_b" value="0" />
-			<float name="enemy_g" value="0" />
-			<float name="enemy_r" value="225" />
-			<float name="local_a" value="255" />
-			<float name="local_b" value="180" />
-			<float name="local_g" value="130" />
-			<float name="local_r" value="90" />
-			<float name="neutral_a" value="255" />
-			<float name="neutral_b" value="255" />
-			<float name="neutral_g" value="255" />
-			<float name="neutral_r" value="255" />
-		</group>
 		<string name="line_texture" value="targeting\target_circle_yellow" />
 		<float name="line_uvscale" value="1" />
 		<float name="line_width" value="0.6" />
-		<group name="map_team_colour">
-			<float name="ally_a" value="255" />
-			<float name="ally_b" value="0" />
-			<float name="ally_g" value="225" />
-			<float name="ally_r" value="255" />
-			<float name="enemy_a" value="255" />
-			<float name="enemy_b" value="0" />
-			<float name="enemy_g" value="0" />
-			<float name="enemy_r" value="225" />
-			<float name="local_a" value="255" />
-			<float name="local_b" value="200" />
-			<float name="local_g" value="140" />
-			<float name="local_r" value="80" />
-			<float name="neutral_a" value="255" />
-			<float name="neutral_b" value="255" />
-			<float name="neutral_g" value="255" />
-			<float name="neutral_r" value="255" />
+		<group name="alliance_colour">
+			<colour name="ally" value="4294967040" />
+			<colour name="enemy" value="4294901760" />
+			<colour name="local" value="4283469000" />
+			<colour name="neutral" value="*" />
+			<list name="ally_players">
+				<colour name="colour" value="4283469000" />
+				<colour name="colour" value="4294967040" />
+				<colour name="colour" value="4278255615" />
+				<colour name="colour" value="4280922386" />
+			</list>
+			<list name="enemy_players">
+				<colour name="colour" value="4294901760" />
+				<colour name="colour" value="4292808423" />
+				<colour name="colour" value="4294920960" />
+				<colour name="colour" value="4288225006" />
+			</list>
 		</group>
 		<group name="retreat">
 			<enum_table name="fx_action_name">
@@ -1551,7 +1537,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="2146745" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1571,7 +1557,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="2135852" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1591,7 +1577,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2158697" />
 					<locstring name="help_text_title" value="2150436" />
-					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<icon name="icon" value="Icons_events_event_cue_upgrade" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1611,7 +1597,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2158682" />
 					<locstring name="help_text_title" value="2158683" />
-					<string name="icon" value="Icons_events_event_cue_building_complete" />
+					<icon name="icon" value="Icons_events_event_cue_building_complete" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1631,7 +1617,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="0" />
-					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<icon name="icon" value="Icons_events_event_cue_upgrade" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1651,7 +1637,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="0" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1671,7 +1657,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="2146738" />
-					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<icon name="icon" value="Icons_events_event_cue_upgrade" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1691,7 +1677,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="0" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="20" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1711,7 +1697,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2158651" />
 					<locstring name="help_text_title" value="2158652" />
-					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<icon name="icon" value="Icons_events_event_cue_upgrade" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1731,7 +1717,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="2150416" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1751,7 +1737,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="2150408" />
 					<locstring name="help_text_title" value="2150409" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1771,7 +1757,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2158655" />
 					<locstring name="help_text_title" value="2158654" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="20" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1791,7 +1777,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="2158674" />
 					<locstring name="help_text_title" value="2158675" />
-					<string name="icon" value="Icons_events_event_cue_map" />
+					<icon name="icon" value="Icons_events_event_cue_map" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1811,7 +1797,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2158659" />
 					<locstring name="help_text_title" value="2158660" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1831,7 +1817,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2150428" />
 					<locstring name="help_text_title" value="2150429" />
-					<string name="icon" value="Icons_events_event_cue_infantry_complete" />
+					<icon name="icon" value="Icons_events_event_cue_infantry_complete" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1851,7 +1837,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2158661" />
 					<locstring name="help_text_title" value="2158662" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1871,7 +1857,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="2158669" />
 					<locstring name="help_text_title" value="2158663" />
-					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<icon name="icon" value="Icons_events_event_cue_upgrade" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1891,7 +1877,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2158694" />
 					<locstring name="help_text_title" value="2158696" />
-					<string name="icon" value="Icons_events_event_cue_map" />
+					<icon name="icon" value="Icons_events_event_cue_map" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="True" />
@@ -1911,7 +1897,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2158672" />
 					<locstring name="help_text_title" value="2158671" />
-					<string name="icon" value="Icons_events_event_cue_map" />
+					<icon name="icon" value="Icons_events_event_cue_map" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="True" />
@@ -1931,7 +1917,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="2150449" />
-					<string name="icon" value="Icons_events_event_cue_map" />
+					<icon name="icon" value="Icons_events_event_cue_map" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="True" />
@@ -1951,7 +1937,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="2158664" />
 					<locstring name="help_text_title" value="2158665" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="20" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1971,7 +1957,7 @@
 					<bool name="disabled" value="True" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="2146734" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -1991,7 +1977,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2150430" />
 					<locstring name="help_text_title" value="2158668" />
-					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<icon name="icon" value="Icons_events_event_cue_upgrade" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2011,7 +1997,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="0" />
-					<string name="icon" value="Icons_events_event_cue_combat" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
 					<float name="lifetime" value="20" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2031,7 +2017,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="11032048" />
 					<locstring name="help_text_title" value="11032049" />
-					<string name="icon" value="Icons_events_event_cue_freezing" />
+					<icon name="icon" value="Icons_events_event_cue_freezing" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2051,7 +2037,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="11032051" />
 					<locstring name="help_text_title" value="11032052" />
-					<string name="icon" value="Icons_events_event_cue_freezing" />
+					<icon name="icon" value="Icons_events_event_cue_freezing" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2071,7 +2057,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="2150428" />
 					<locstring name="help_text_title" value="2150429" />
-					<string name="icon" value="Icons_events_event_cue_vehicle_complete" />
+					<icon name="icon" value="Icons_events_event_cue_vehicle_complete" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2091,7 +2077,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="11035860" />
 					<locstring name="help_text_title" value="11035860" />
-					<string name="icon" value="Icons_events_event_cue_upgrade" />
+					<icon name="icon" value="Icons_events_event_cue_upgrade" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2111,7 +2097,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="0" />
-					<string name="icon" value="Icons_events_event_victory_point" />
+					<icon name="icon" value="Icons_events_event_victory_point" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2131,7 +2117,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="0" />
 					<locstring name="help_text_title" value="0" />
-					<string name="icon" value="Icons_events_event_victory_point" />
+					<icon name="icon" value="Icons_events_event_victory_point" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="False" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2151,7 +2137,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="11047470" />
 					<locstring name="help_text_title" value="11047470" />
-					<string name="icon" value="Icons_events_event_cue_infantry_complete" />
+					<icon name="icon" value="Icons_events_event_cue_infantry_complete" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2171,7 +2157,7 @@
 					<bool name="disabled" value="False" />
 					<locstring name="help_text_desc" value="11047470" />
 					<locstring name="help_text_title" value="11047470" />
-					<string name="icon" value="Icons_events_event_cue_vehicle_complete" />
+					<icon name="icon" value="Icons_events_event_cue_vehicle_complete" />
 					<float name="lifetime" value="10" />
 					<bool name="ping_minimap" value="True" />
 					<bool name="ping_tacticalmap" value="False" />
@@ -2183,6 +2169,26 @@
 					<float name="text_colour_b" value="175" />
 					<float name="text_colour_g" value="137" />
 					<float name="text_colour_r" value="99" />
+				</template_reference>
+			</group>
+			<group name="super_ability">
+				<template_reference name="super_ability" value="tables\event_cue_table">
+					<locstring name="alert_text" value="11095339" />
+					<bool name="disabled" value="False" />
+					<locstring name="help_text_desc" value="11095339" />
+					<locstring name="help_text_title" value="11095339" />
+					<icon name="icon" value="Icons_events_event_cue_combat" />
+					<float name="lifetime" value="10" />
+					<bool name="ping_minimap" value="False" />
+					<bool name="ping_tacticalmap" value="False" />
+					<enum name="ping_type" value="" />
+					<float name="repeat_count" value="0" />
+					<float name="repeat_radius" value="0" />
+					<float name="repeat_time" value="20" />
+					<string name="sound" value="general_alert" />
+					<float name="text_colour_b" value="255" />
+					<float name="text_colour_g" value="255" />
+					<float name="text_colour_r" value="255" />
 				</template_reference>
 			</group>
 		</group>
@@ -2277,16 +2283,36 @@
 			<float name="modal_facing_min_world_distance" value="1" />
 		</group>
 		<float name="command_highlight_time" value="0.75" />
-		<string name="fuel_kicker_texture" value="Icons_minimap_mm_fuel_point" />
-		<string name="ammo_kicker_texture" value="Icons_minimap_mm_ammo_point" />
-		<string name="manpower_kicker_texture" value="Icons_minimap_mm_manpower_point" />
-	</group>
-	<group name="victory_point">
-		<int name="ticker_option_1" value="250" />
-		<int name="ticker_option_2" value="500" />
-		<int name="ticker_option_3" value="1000" />
-		<int name="ticker_option_4" value="25" />
-		<int name="ticker_option_5" value="100" />
+		<icon name="fuel_kicker_texture" value="Icons_minimap_mm_fuel_point" />
+		<icon name="ammo_kicker_texture" value="Icons_minimap_mm_ammo_point" />
+		<icon name="manpower_kicker_texture" value="Icons_minimap_mm_manpower_point" />
+		<colour name="default_ammo" value="3370378211" />
+		<colour name="default_fuel" value="3370378211" />
+		<colour name="default_manpower" value="3370378211" />
+		<colour name="default_vp" value="3370378211" />
+		<group name="team_colour">
+			<list name="teams">
+				<group name="team">
+					<colour name="colour" value="4283469000" />
+					<list name="players">
+						<colour name="colour" value="4283469000" />
+						<colour name="colour" value="4294967040" />
+						<colour name="colour" value="4278255615" />
+						<colour name="colour" value="4280922386" />
+					</list>
+				</group>
+				<group name="team">
+					<colour name="colour" value="4294901760" />
+					<list name="players">
+						<colour name="colour" value="4294901760" />
+						<colour name="colour" value="4292808423" />
+						<colour name="colour" value="4294920960" />
+						<colour name="colour" value="4288225006" />
+					</list>
+				</group>
+			</list>
+			<colour name="neutral" value="*" />
+		</group>
 	</group>
 	<group name="weapon">
 		<group name="animation_state_names">
@@ -4075,76 +4101,19 @@
 			<instance_reference name="tutorial" value="ai_personality\default_skirmish" />
 			<instance_reference name="persistent" value="ai_personality\botb_campaign" />
 			<instance_reference name="persistent_battle" value="ai_personality\default_skirmish" />
+			<instance_reference name="singleplayer_mod" value="ai_personality\default_skirmish" />
 			<instance_reference name="invalid" value="ai_personality\default_skirmish" />
 		</enum_table>
 		<group name="cold">
 			<instance_reference name="blizzard_active_player_upgrade" value="upgrade\blizzard_active" />
+			<list name="heat_auras">
+				<instance_reference name="heat_aura" value="aura\heat_aura" />
+				<instance_reference name="heat_aura" value="aura\heat_aura_mp" />
+			</list>
 		</group>
 		<group name="forward_base_info">
 			<enum name="unit_class_name" value="forward_base" />
 		</group>
-	</group>
-	<group name="persistent_campaign">
-		<list name="xp_amount_per_vet_level">
-			<float name="xp" value="1" />
-			<float name="xp" value="1.5" />
-			<float name="xp" value="2" />
-		</list>
-		<list name="unit_type_xp_multipliers">
-			<group name="unit_type_multiplier">
-				<float name="multiplier" value="1" />
-				<list name="squads">
-					<instance_reference name="squad" value="sbps\races\german\soldiers\grenadier_squad\grenadier_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\mg42_heavy_machine_gun_squad\mg42_heavy_machine_gun_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\mortar_team\mortar_team_81mm_mp" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\ostruppen_squad\ostruppen_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\at_gun_squad\pak40_75mm_at_gun_squad_mp" />
-				</list>
-			</group>
-			<group name="unit_type_multiplier">
-				<float name="multiplier" value="1.2" />
-				<list name="squads">
-					<instance_reference name="squad" value="sbps\races\german\soldiers\officer_squad\assault_officer_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\officer_squad\officer_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\panzer_grenadier_squad\panzer_grenadier_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\sniper_squad\sniper_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\at_gun_squad\pak43_88mm_at_gun_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\howitzer_105mm_le_fh18_artillery\howitzer_105mm_le_fh18_artillery_mp" />
-				</list>
-			</group>
-			<group name="unit_type_multiplier">
-				<float name="multiplier" value="1" />
-				<list name="squads">
-					<instance_reference name="squad" value="sbps\races\german\vehicles\halftrack_squad\mortar_250_halftrack_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\halftrack_squad\sdkfz_251_halftrack_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panzerwerfer_squad\panzerwerfer_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\scout_car_sdkfz222\scoutcar_sdkfz222_mp" />
-				</list>
-			</group>
-			<group name="unit_type_multiplier">
-				<float name="multiplier" value="2" />
-				<list name="squads">
-					<instance_reference name="squad" value="sbps\races\german\vehicles\ostwind_squad\ostwind_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_command_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_e_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_squad_mp" />
-				</list>
-			</group>
-			<group name="unit_type_multiplier">
-				<float name="multiplier" value="2.5" />
-				<list name="squads">
-					<instance_reference name="squad" value="sbps\races\german\vehicles\brummbar_squad\brummbar_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\elefant_tank_destroyer_squad\elefant_tank_destroyer_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panther_squad\panther_squad_mp" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\tiger_squad\tiger_squad_mp" />
-				</list>
-			</group>
-		</list>
-		<float name="division_max_health" value="350" />
-		<instance_reference name="race" value="racebps\aef" />
-		<float name="opportunity_chance" value="1" />
 	</group>
 	<group name="localization">
 		<enum_table name="sector_type_name">

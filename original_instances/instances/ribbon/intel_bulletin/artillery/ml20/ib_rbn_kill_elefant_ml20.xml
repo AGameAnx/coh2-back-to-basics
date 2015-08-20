@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_ribbons_faceplate_ribbon_1" />
 		<bool name="is_medal" value="False" />
 		<int name="priority" value="3420" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_1" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_ribbon_1" />
 		<instance_reference name="achievement" value="achievement\artillery\ml20\kill_elefant_ml20" />
 	</group>
 	<uniqueid name="pbgid" value="87" />

@@ -269,8 +269,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="240" />
-			<float name="min" value="240" />
+			<float name="max" value="200" />
+			<float name="min" value="200" />
 			<list name="on_penetrated_actions">
 			</list>
 		</group>
@@ -504,9 +504,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="180" />
-			<float name="far" value="160" />
-			<float name="near" value="200" />
+			<float name="mid" value="220" />
+			<float name="far" value="200" />
+			<float name="near" value="240" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

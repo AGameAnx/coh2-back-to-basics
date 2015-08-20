@@ -390,7 +390,6 @@
 			<string name="occupied_animator" value="armies\soviet\structures\occupied_object\occupied_object" />
 			<bool name="occupied_building" value="False" />
 			<float name="occupied_revert_seconds" value="-1" />
-			<float name="production_style_id" value="1" />
 			<bool name="revert_on_transfer" value="True" />
 			<bool name="spawner_ext" value="True" />
 			<bool name="supply_ext" value="True" />

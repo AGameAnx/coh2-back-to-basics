@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_medallions_faceplate_medallion_leningrad_approach_hard" />
 		<bool name="is_medal" value="True" />
 		<int name="priority" value="2109" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_15_hard" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_medal_15_hard" />
 		<instance_reference name="achievement" value="" />
 	</group>
 	<uniqueid name="pbgid" value="293" />

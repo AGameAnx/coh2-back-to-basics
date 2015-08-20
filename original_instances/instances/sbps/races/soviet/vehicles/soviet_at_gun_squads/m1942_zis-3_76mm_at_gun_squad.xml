@@ -707,7 +707,7 @@
 				<instance_reference name="tp_z_snow" value="squad_formations\soviet_team_weapon_triangle" />
 				<instance_reference name="tp_zz_deep_snow" value="squad_formations\skirmisher_line" />
 				<instance_reference name="tp_zz_mud" value="squad_formations\road_column" />
-				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
+				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\soviet_team_weapon_triangle" />
 			</group>
 			<float name="move_dest_cover_search_radius" value="0" />
 			<group name="squad_distribution_table">

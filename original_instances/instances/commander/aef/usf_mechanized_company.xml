@@ -4,7 +4,7 @@
 		<instance_reference name="archetype_upgrade" value="upgrade\aef\commander\archetype\tech_tree_v1" />
 		<locstring name="description" value="11074835" />
 		<icon name="icon" value="Icons_commander_portrait_us_forces_commander_05" />
-		<string name="icon_secondary" value="Icons_commander_portrait_us_forces_commander_05_large" />
+		<icon name="icon_secondary" value="Icons_commander_portrait_us_forces_commander_05_large" />
 		<int name="ui_position" value="0" />
 		<locstring name="description_short" value="0" />
 		<instance_reference name="store_item" value="thq_store\commanders\us_forces\xp1_commander5" />

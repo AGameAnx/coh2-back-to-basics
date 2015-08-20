@@ -223,6 +223,7 @@
 			<bool name="impassable_edges" value="True" />
 			<float name="seconds_after_death" value="3" />
 			<file name="animator_dgm_name" value="environment\bridges\bridge_moltke_base_wide\bridge_moltke_base_wide" />
+			<bool name="remove_on_death" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\demolishable_ext">
 			<bool name="detonate_requires_fully_wired" value="True" />

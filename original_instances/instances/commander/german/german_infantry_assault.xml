@@ -4,7 +4,7 @@
 		<instance_reference name="archetype_upgrade" value="upgrade\german\commander\archetype\jaeger_archetype" />
 		<locstring name="description" value="11051308" />
 		<icon name="icon" value="Icons_commander_portrait_german_commander_14" />
-		<string name="icon_secondary" value="Icons_commander_portrait_german_commander_14_large" />
+		<icon name="icon_secondary" value="Icons_commander_portrait_german_commander_14_large" />
 		<int name="ui_position" value="1" />
 		<locstring name="description_short" value="0" />
 		<instance_reference name="store_item" value="thq_store\commanders\german\german_infantry_assault" />

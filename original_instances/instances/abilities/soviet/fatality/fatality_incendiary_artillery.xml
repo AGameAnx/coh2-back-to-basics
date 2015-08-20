@@ -102,7 +102,7 @@
 		<group name="ui_info">
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="0" />
-			<string name="hotkey_name" value="Icons_fatalities_fatality_incendiary_artillery" />
+			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_abilities_ability_incendiary_artillery" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />

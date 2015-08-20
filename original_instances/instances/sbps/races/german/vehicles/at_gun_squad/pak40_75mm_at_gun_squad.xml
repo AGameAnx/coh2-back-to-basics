@@ -306,11 +306,11 @@
 				<instance_reference name="tp_water" value="squad_formations\team_weapon_triangle" />
 				<instance_reference name="tp_z_bunker" value="squad_formations\team_weapon_triangle" />
 				<instance_reference name="tp_z_emplacement" value="squad_formations\team_weapon_triangle" />
-				<instance_reference name="tp_z_ice" value="squad_formations\default" />
-				<instance_reference name="tp_z_snow" value="squad_formations\default" />
-				<instance_reference name="tp_zz_deep_snow" value="squad_formations\default" />
-				<instance_reference name="tp_zz_mud" value="squad_formations\default" />
-				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
+				<instance_reference name="tp_z_ice" value="squad_formations\team_weapon_triangle" />
+				<instance_reference name="tp_z_snow" value="squad_formations\team_weapon_triangle" />
+				<instance_reference name="tp_zz_deep_snow" value="squad_formations\team_weapon_triangle" />
+				<instance_reference name="tp_zz_mud" value="squad_formations\team_weapon_triangle" />
+				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\team_weapon_triangle" />
 			</group>
 			<float name="move_dest_cover_search_radius" value="0" />
 			<group name="squad_distribution_table">

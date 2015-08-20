@@ -561,7 +561,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\german\timed_ability\panzer_panther_tiger_ostwind_blitzkrieg_mp" />
+				<instance_reference name="ability" value="abilities\german\timed_ability\panther_tiger_blitzkrieg_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 			</list>
 		</template_reference>

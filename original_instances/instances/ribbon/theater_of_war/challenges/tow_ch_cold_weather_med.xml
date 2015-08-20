@@ -5,7 +5,7 @@
 		<icon name="icon" value="Icons_faceplate_medallions_faceplate_medallion_cold_weather_medium" />
 		<bool name="is_medal" value="True" />
 		<int name="priority" value="2207" />
-		<string name="icon_large" value="Icons_faceplate_rewards_rewards_medal_75_med" />
+		<icon name="icon_large" value="Icons_faceplate_rewards_rewards_medal_75_med" />
 		<instance_reference name="achievement" value="" />
 	</group>
 	<uniqueid name="pbgid" value="337" />

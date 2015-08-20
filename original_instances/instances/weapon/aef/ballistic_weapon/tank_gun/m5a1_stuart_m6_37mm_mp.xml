@@ -302,7 +302,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.75" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -368,7 +368,7 @@
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0.15" />
 			<float name="distance_scatter_ratio" value="1" />
-			<float name="fow_angle_multiplier" value="3" />
+			<float name="fow_angle_multiplier" value="0.25" />
 			<float name="fow_distance_multiplier" value="2" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
@@ -428,9 +428,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="45" />
+			<float name="mid" value="50" />
 			<float name="far" value="40" />
-			<float name="near" value="60" />
+			<float name="near" value="65" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

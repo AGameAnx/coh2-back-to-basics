@@ -15,7 +15,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
 			<bool name="can_repair" value="False" />
-			<bool name="cuttable" value="False" />
+			<bool name="cuttable" value="True" />
 			<string name="death_event_name" value="Death" />
 			<float name="death_seconds" value="0" />
 			<bool name="delete_when_dead" value="True" />
@@ -104,9 +104,9 @@
 			<group name="unit_type_list">
 				<enum name="unit_type00" value="" />
 				<enum name="unit_type01" value="tactical_structure" />
-				<enum name="unit_type02" value="tank_traps" />
+				<enum name="unit_type02" value="wire_sandbags" />
 				<enum name="unit_type03" value="" />
-				<enum name="unit_type04" value="" />
+				<enum name="unit_type04" value="wire" />
 				<enum name="unit_type05" value="" />
 				<enum name="unit_type06" value="" />
 				<enum name="unit_type07" value="" />
