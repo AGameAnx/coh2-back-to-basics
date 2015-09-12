@@ -168,7 +168,7 @@
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="16" />
+				<float name="command" value="32" />
 				<float name="fuel" value="-1" />
 				<float name="manpower" value="-1" />
 				<float name="munition" value="-1" />
@@ -278,12 +278,13 @@
 				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\hintere_panzerwerk" />
 				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\schweres_kriegswerk" />
 			</list>
-			<list name="player_upgrade_list">
-			</list>
 			<group name="builder_squads">
 				<instance_reference name="base_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
 				<instance_reference name="obs_post_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
+				<instance_reference name="defense_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
 			</group>
+			<list name="unlocking_upgrade_list">
+			</list>
 		</group>
 		<list name="team_size_point_resource_multiplier">
 			<template_reference name="resource_multiplier" value="tables\resource_table">
@@ -403,8 +404,8 @@
 				</list>
 				<list name="player_upgrades">
 					<instance_reference name="player_upgrade" value="upgrade\german\research\battle_phase_2_mp" />
-					<instance_reference name="player_upgrade" value="upgrade\german\research\battle_phase_3_mp" />
-					<instance_reference name="player_upgrade" value="upgrade\german\research\battle_phase_4_mp" />
+					<instance_reference name="player_upgrade" value="upgrade\german\research\battle_phase_3_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
+					<instance_reference name="player_upgrade" value="upgrade\german\research\battle_phase_4_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				</list>
 			</group>
 		</list>

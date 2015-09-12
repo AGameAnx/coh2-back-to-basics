@@ -51,13 +51,15 @@
 								<bool name="small_arms" value="True" />
 								<bool name="flame" value="True" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\building_destroy" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 					</list>
 				</group>
@@ -65,6 +67,10 @@
 			<float name="weapon_priority" value="-20" />
 			<template_reference name="wreck_entity_option" value="options\none">
 			</template_reference>
+			<list name="self_destruct_actions">
+			</list>
+			<list name="rebuilt_entity_actions">
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hit_object_ext">
 			<instance_reference name="hit_material" value="hit_material\sandbag" />
@@ -99,6 +105,8 @@
 			<float name="extra_build_test_footprint" value="0" />
 			<bool name="require_all_cells_clear" value="False" />
 			<bool name="snap_to_terrain" value="True" />
+			<bool name="ignore_impass" value="False" />
+			<bool name="lock_to_impass" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext">
 			<group name="unit_type_list">
@@ -184,6 +192,8 @@
 			<float name="ui_range_radius" value="0" />
 			<instance_reference name="ui_setfacing" value="" />
 			<bool name="query_weapon_for_range_ui" value="True" />
+			<bool name="squad_ignore_pathfinding" value="False" />
+			<bool name="must_not_be_in_command_territory" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
 			<group name="time_cost">
@@ -214,7 +224,7 @@
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="0" />
-			<string name="hotkey_name" value="W" />
+			<string name="hotkey_name" value="S" />
 			<icon name="icon_name" value="Icons_buildings_building_west_german_sandbags" />
 			<enum name="kill_type" value="" />
 			<float name="minimap_color_a" value="255" />

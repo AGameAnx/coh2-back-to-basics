@@ -54,6 +54,7 @@
 									<bool name="not_retreating" value="False" />
 									<bool name="pinned" value="False" />
 									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
 								</template_reference>
 							</list>
 						</template_reference>
@@ -107,6 +108,7 @@
 									<bool name="not_retreating" value="False" />
 									<bool name="pinned" value="False" />
 									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
 								</template_reference>
 							</list>
 						</template_reference>
@@ -189,13 +191,15 @@
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\_no_critical" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="False" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 						<group name="info">
 							<float name="weight" value="100" />
@@ -203,13 +207,52 @@
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical_rear" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<instance_reference name="critical" value="critical\_no_critical_rear" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="False" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
+						</group>
+					</list>
+				</group>
+				<group name="critical_group">
+					<float name="max_health_percentage" value="0.75" />
+					<list name="critical_info">
+						<group name="info">
+							<float name="weight" value="100" />
+							<enum_table name="applicable_weapons">
+								<bool name="small_arms" value="False" />
+								<bool name="flame" value="False" />
+								<bool name="ballistic" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
+							</enum_table>
+							<instance_reference name="critical" value="critical\_no_critical" />
+							<enum_table name="applicable_hit_direction">
+								<bool name="front" value="True" />
+								<bool name="rear" value="False" />
+							</enum_table>
+							<enum name="apply_on" value="penetrate" />
+						</group>
+						<group name="info">
+							<float name="weight" value="100" />
+							<enum_table name="applicable_weapons">
+								<bool name="small_arms" value="False" />
+								<bool name="flame" value="False" />
+								<bool name="ballistic" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
+							</enum_table>
+							<instance_reference name="critical" value="critical\_no_critical_rear" />
+							<enum_table name="applicable_hit_direction">
+								<bool name="front" value="False" />
+								<bool name="rear" value="True" />
+							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 					</list>
 				</group>
@@ -222,13 +265,15 @@
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\_no_critical" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="False" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 						<group name="info">
 							<float name="weight" value="98" />
@@ -236,13 +281,15 @@
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical_rear" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<instance_reference name="critical" value="critical\_no_critical_rear" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="False" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 						<group name="info">
 							<float name="weight" value="2" />
@@ -250,74 +297,68 @@
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\vehicle_damage_engine" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="False" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 					</list>
 				</group>
 				<group name="critical_group">
-					<float name="max_health_percentage" value="0.15" />
+					<float name="max_health_percentage" value="0.25" />
 					<list name="critical_info">
 						<group name="info">
-							<float name="weight" value="80" />
+							<float name="weight" value="90" />
 							<enum_table name="applicable_weapons">
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\_no_critical" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="False" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 						<group name="info">
-							<float name="weight" value="80" />
+							<float name="weight" value="90" />
 							<enum_table name="applicable_weapons">
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical_rear" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<instance_reference name="critical" value="critical\_no_critical_rear" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="False" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 						<group name="info">
 							<float name="weight" value="10" />
 							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="True" />
-								<bool name="flame" value="True" />
+								<bool name="small_arms" value="False" />
+								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\vehicle_destroy_maingun" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
 							</enum_table>
-						</group>
-						<group name="info">
-							<float name="weight" value="10" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="True" />
-								<bool name="flame" value="True" />
-								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_light_destroy_engine" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="False" />
-								<bool name="rear" value="True" />
-							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 					</list>
 				</group>
@@ -325,18 +366,20 @@
 					<float name="max_health_percentage" value="0" />
 					<list name="critical_info">
 						<group name="info">
-							<float name="weight" value="78" />
+							<float name="weight" value="65" />
 							<enum_table name="applicable_weapons">
 								<bool name="small_arms" value="True" />
 								<bool name="flame" value="True" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\vehicle_destroy" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 						<group name="info">
 							<float name="weight" value="20" />
@@ -344,27 +387,31 @@
 								<bool name="small_arms" value="True" />
 								<bool name="flame" value="True" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_out_of_control_fast" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<instance_reference name="critical" value="critical\vehicle_out_of_control_fast" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 						<group name="info">
-							<float name="weight" value="2" />
+							<float name="weight" value="5" />
 							<enum_table name="applicable_weapons">
 								<bool name="small_arms" value="True" />
 								<bool name="flame" value="True" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
 							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_abandon" mod="23d6cdb82724460dbcb21e1a9162e473" />
+							<instance_reference name="critical" value="critical\vehicle_abandon" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 					</list>
 				</group>
@@ -372,6 +419,10 @@
 			<float name="weapon_priority" value="0" />
 			<template_reference name="wreck_entity_option" value="options\none">
 			</template_reference>
+			<list name="self_destruct_actions">
+			</list>
+			<list name="rebuilt_entity_actions">
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hit_object_ext">
 			<instance_reference name="hit_material" value="hit_material\armour" />
@@ -462,7 +513,7 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="0" />
+			<locstring name="help_text" value="11038237" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_vehicles_vehicle_german_222_armored_car" />
 			<enum name="kill_type" value="light_armour" />
@@ -476,7 +527,7 @@
 			<bool name="obb_selectable" value="False" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="11038240" />
 			<enum name="selection_name" value="vehicle" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="squad_select" />
@@ -502,7 +553,7 @@
 				<string name="code_3" value="" />
 			</group>
 			<bool name="tacmap_team_only" value="False" />
-			<locstring name="tooltip_txt" value="0" />
+			<locstring name="tooltip_txt" value="11049256" />
 			<int name="ui_priority" value="0" />
 			<icon name="minimap_icon" value="" />
 			<icon name="portrait_icon_winter" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
@@ -514,13 +565,13 @@
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="0" />
+			<locstring name="extra_text" value="11049091" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />
-			<locstring name="screen_name_world" value="0" />
+			<locstring name="screen_name_world" value="11047936" />
 			<locstring name="help_text_world" value="0" />
-			<locstring name="extra_text_world" value="0" />
+			<locstring name="extra_text_world" value="11049337" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_222_armored_car_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
@@ -822,7 +873,8 @@
 			<list name="crush_target_actions">
 			</list>
 			<float name="ice_damage" value="55" />
-			<bool name="crushes_buildings" value="True" />
+			<template_reference name="additional_simbox_option" value="options\none">
+			</template_reference>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\marker_ext">
 		</template_reference>
@@ -868,7 +920,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\items\sdkfz_222_20mm_gun_mp" />
+				<instance_reference name="upgrade" value="upgrade\german\items\sdkfz_222_20mm_gun_mp" mod="23d6cdb82724460dbcb21e1a9162e473" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
@@ -905,6 +957,8 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
+						<template_reference name="additional_crew_option" value="options\none">
+						</template_reference>
 					</group>
 				</group>
 				<group name="race_data">
@@ -923,6 +977,8 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
+						<template_reference name="additional_crew_option" value="options\none">
+						</template_reference>
 					</group>
 				</group>
 				<group name="race_data">
@@ -941,6 +997,8 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
+						<template_reference name="additional_crew_option" value="options\none">
+						</template_reference>
 					</group>
 				</group>
 				<group name="race_data">
@@ -959,6 +1017,8 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
+						<template_reference name="additional_crew_option" value="options\none">
+						</template_reference>
 					</group>
 				</group>
 				<group name="race_data">
@@ -977,6 +1037,8 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
+						<template_reference name="additional_crew_option" value="options\none">
+						</template_reference>
 					</group>
 				</group>
 			</list>

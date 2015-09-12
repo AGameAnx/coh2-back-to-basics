@@ -89,7 +89,7 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.0025" />
+					<float name="vertical_scale" value="0.001" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
 				<float name="radius_max" value="6" />
@@ -173,10 +173,10 @@
 				<bool name="is_target_only" value="False" />
 				<float name="speed_distance_multiplier" value="0.1" />
 				<float name="speed_increment" value="0.5" />
-				<enum name="firing_angle_type" value="low_angle" />
+				<enum name="firing_angle_type" value="lowest_non_collide_angle" />
 				<bool name="use_homing_when_no_blocker" value="False" />
 				<float name="non_collide_start_angle" value="10" />
-				<float name="non_collide_end_angle" value="60" />
+				<float name="non_collide_end_angle" value="65" />
 			</group>
 			<float name="building_hit_fx_delay" value="0" />
 			<bool name="collision_building_wall_panel_ignore" value="False" />

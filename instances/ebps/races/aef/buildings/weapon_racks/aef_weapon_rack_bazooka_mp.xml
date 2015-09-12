@@ -175,11 +175,11 @@
 			<list name="pickup_requirements">
 				<template_reference name="required" value="requirements\required_player_upgrade">
 					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="11066032" />
+					<locstring name="ui_name" value="11096779" />
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="1" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\aef\research\bazooka_upgrade_mp" />
+					<instance_reference name="upgrade_name" value="upgrade\aef\research\weapon_rack_upgrade_mp" />
 				</template_reference>
 			</list>
 			<template_reference name="unlimited_option" value="options\ebpextensions\slotitem_ext\unlimited_option">
@@ -193,6 +193,7 @@
 				</group>
 				<list name="slot_item_actions">
 				</list>
+				<locstring name="item_screen_name" value="11096513" />
 			</template_reference>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext">
@@ -296,6 +297,8 @@
 			<float name="ui_range_radius" value="0" />
 			<instance_reference name="ui_setfacing" value="" />
 			<bool name="query_weapon_for_range_ui" value="True" />
+			<bool name="squad_ignore_pathfinding" value="False" />
+			<bool name="must_not_be_in_command_territory" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\paradrop_ext">
 			<float name="decoy_priority_increase" value="0" />
@@ -326,6 +329,8 @@
 			<float name="extra_build_test_footprint" value="0" />
 			<bool name="require_all_cells_clear" value="True" />
 			<bool name="snap_to_terrain" value="True" />
+			<bool name="ignore_impass" value="False" />
+			<bool name="lock_to_impass" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">
 			<bool name="cant_build" value="True" />
