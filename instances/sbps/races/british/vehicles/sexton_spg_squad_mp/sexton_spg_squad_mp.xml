@@ -1,0 +1,863 @@
+<instance template="sbps" description="keep calm and carry on">
+	<uniqueid name="pbgid" value="18797" />
+	<list name="extensions">
+		<template_reference value="sbpextensions\squad_blueprint_ext" name="squadexts">
+		</template_reference>
+		<template_reference value="sbpextensions\squad_ui_ext" name="squadexts">
+			<list name="race_list">
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\british" />
+					<group name="info">
+						<locstring name="extra_text" value="11090088" />
+						<locstring name="help_text" value="11090087" />
+						<bool name="decoratable" value="True" />
+						<string name="hotkey_name" value="S" />
+						<int name="ui_priority" value="46" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_sexton_symbol" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_british_sexton" />
+						<instance_reference name="modal_ability" value="" />
+						<icon name="minimap_texture" value="" />
+						<group name="speech_code_2">
+							<string name="code_1" value="sx" />
+							<string name="code_2" value="ma" />
+							<string name="code_3" value="ar" />
+						</group>
+						<bool name="allow_spawner_production" value="False" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_sexton_s_portrait" />
+						<group name="speaker_generic">
+							<string name="code_1" value="mt" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_sexton_w_portrait" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<bool name="has_speech_code" value="True" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="brief_text" value="0" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="reveal_for_decryption" value="True" />
+						<bool name="minimap_team_only" value="False" />
+						<string name="cover_level_icon_postfix" value="" />
+						<bool name="show_in_build_log" value="True" />
+						<group name="speech_code_3">
+							<string name="code_1" value="sex" />
+							<string name="code_2" value="mar" />
+							<string name="code_3" value="arm" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="mt" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<locstring name="screen_name_short" value="0" />
+						<locstring name="screen_name" value="11077896" />
+						<string name="selection_group" value="Sexton" />
+						<float name="minimap_texture_scale" value="1" />
+						<enum name="ui_style" value="default" />
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\german" />
+					<group name="info">
+						<locstring name="extra_text" value="11090088" />
+						<locstring name="help_text" value="11090087" />
+						<bool name="decoratable" value="True" />
+						<string name="hotkey_name" value="S" />
+						<int name="ui_priority" value="46" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_sexton_symbol" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_british_sexton" />
+						<instance_reference name="modal_ability" value="" />
+						<icon name="minimap_texture" value="" />
+						<group name="speech_code_2">
+							<string name="code_1" value="sx" />
+							<string name="code_2" value="ma" />
+							<string name="code_3" value="ar" />
+						</group>
+						<bool name="allow_spawner_production" value="False" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_sexton_s_portrait" />
+						<group name="speaker_generic">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_sexton_w_portrait" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<bool name="has_speech_code" value="True" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="brief_text" value="0" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="reveal_for_decryption" value="True" />
+						<bool name="minimap_team_only" value="False" />
+						<string name="cover_level_icon_postfix" value="" />
+						<bool name="show_in_build_log" value="True" />
+						<group name="speech_code_3">
+							<string name="code_1" value="sex" />
+							<string name="code_2" value="mar" />
+							<string name="code_3" value="arm" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="mt" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<locstring name="screen_name_short" value="0" />
+						<locstring name="screen_name" value="11077896" />
+						<string name="selection_group" value="Sexton" />
+						<float name="minimap_texture_scale" value="1" />
+						<enum name="ui_style" value="default" />
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\soviet" />
+					<group name="info">
+						<locstring name="extra_text" value="11090088" />
+						<locstring name="help_text" value="11090087" />
+						<bool name="decoratable" value="True" />
+						<string name="hotkey_name" value="S" />
+						<int name="ui_priority" value="46" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_sexton_symbol" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_british_sexton" />
+						<instance_reference name="modal_ability" value="" />
+						<icon name="minimap_texture" value="" />
+						<group name="speech_code_2">
+							<string name="code_1" value="sx" />
+							<string name="code_2" value="ma" />
+							<string name="code_3" value="ar" />
+						</group>
+						<bool name="allow_spawner_production" value="False" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_sexton_s_portrait" />
+						<group name="speaker_generic">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_sexton_w_portrait" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<bool name="has_speech_code" value="True" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="brief_text" value="0" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="reveal_for_decryption" value="True" />
+						<bool name="minimap_team_only" value="False" />
+						<string name="cover_level_icon_postfix" value="" />
+						<bool name="show_in_build_log" value="True" />
+						<group name="speech_code_3">
+							<string name="code_1" value="sex" />
+							<string name="code_2" value="mar" />
+							<string name="code_3" value="arm" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="mt" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<locstring name="screen_name_short" value="0" />
+						<locstring name="screen_name" value="11077896" />
+						<string name="selection_group" value="Sexton" />
+						<float name="minimap_texture_scale" value="1" />
+						<enum name="ui_style" value="default" />
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\west_german" />
+					<group name="info">
+						<locstring name="extra_text" value="11090088" />
+						<locstring name="help_text" value="11090087" />
+						<bool name="decoratable" value="True" />
+						<string name="hotkey_name" value="S" />
+						<int name="ui_priority" value="46" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_sexton_symbol" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_british_sexton" />
+						<instance_reference name="modal_ability" value="" />
+						<icon name="minimap_texture" value="" />
+						<group name="speech_code_2">
+							<string name="code_1" value="sx" />
+							<string name="code_2" value="ma" />
+							<string name="code_3" value="ar" />
+						</group>
+						<bool name="allow_spawner_production" value="False" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_sexton_s_portrait" />
+						<group name="speaker_generic">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_sexton_w_portrait" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<bool name="has_speech_code" value="True" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="brief_text" value="0" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="reveal_for_decryption" value="True" />
+						<bool name="minimap_team_only" value="False" />
+						<string name="cover_level_icon_postfix" value="" />
+						<bool name="show_in_build_log" value="True" />
+						<group name="speech_code_3">
+							<string name="code_1" value="sex" />
+							<string name="code_2" value="mar" />
+							<string name="code_3" value="arm" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="wm" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<locstring name="screen_name_short" value="0" />
+						<locstring name="screen_name" value="11077896" />
+						<string name="selection_group" value="Sexton" />
+						<float name="minimap_texture_scale" value="1" />
+						<enum name="ui_style" value="default" />
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\aef" />
+					<group name="info">
+						<locstring name="extra_text" value="11090088" />
+						<locstring name="help_text" value="11090087" />
+						<bool name="decoratable" value="True" />
+						<string name="hotkey_name" value="S" />
+						<int name="ui_priority" value="46" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_sexton_symbol" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_british_sexton" />
+						<instance_reference name="modal_ability" value="" />
+						<icon name="minimap_texture" value="" />
+						<group name="speech_code_2">
+							<string name="code_1" value="sx" />
+							<string name="code_2" value="ma" />
+							<string name="code_3" value="ar" />
+						</group>
+						<bool name="allow_spawner_production" value="False" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_sexton_s_portrait" />
+						<group name="speaker_generic">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_sexton_w_portrait" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<bool name="has_speech_code" value="True" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="brief_text" value="0" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="reveal_for_decryption" value="True" />
+						<bool name="minimap_team_only" value="False" />
+						<string name="cover_level_icon_postfix" value="" />
+						<bool name="show_in_build_log" value="True" />
+						<group name="speech_code_3">
+							<string name="code_1" value="sex" />
+							<string name="code_2" value="mar" />
+							<string name="code_3" value="arm" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="mt" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<locstring name="screen_name_short" value="0" />
+						<locstring name="screen_name" value="11077896" />
+						<string name="selection_group" value="Sexton" />
+						<float name="minimap_texture_scale" value="1" />
+						<enum name="ui_style" value="default" />
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="" />
+					<group name="info">
+						<locstring name="extra_text" value="11090088" />
+						<locstring name="help_text" value="11090087" />
+						<bool name="decoratable" value="True" />
+						<string name="hotkey_name" value="S" />
+						<int name="ui_priority" value="46" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_sexton_symbol" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="icon_name" value="Icons_vehicles_vehicle_british_sexton" />
+						<instance_reference name="modal_ability" value="" />
+						<icon name="minimap_texture" value="" />
+						<group name="speech_code_2">
+							<string name="code_1" value="sh" />
+							<string name="code_2" value="ma" />
+							<string name="code_3" value="ar" />
+						</group>
+						<bool name="allow_spawner_production" value="False" />
+						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_sexton_s_portrait" />
+						<group name="speaker_generic">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_sexton_w_portrait" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<bool name="has_speech_code" value="True" />
+						<bool name="tacmap_team_only" value="False" />
+						<locstring name="brief_text" value="0" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="reveal_for_decryption" value="True" />
+						<bool name="minimap_team_only" value="False" />
+						<string name="cover_level_icon_postfix" value="" />
+						<bool name="show_in_build_log" value="True" />
+						<group name="speech_code_3">
+							<string name="code_1" value="she" />
+							<string name="code_2" value="mar" />
+							<string name="code_3" value="arm" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="mt" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<locstring name="screen_name_short" value="0" />
+						<locstring name="screen_name" value="11077896" />
+						<string name="selection_group" value="Sexton" />
+						<float name="minimap_texture_scale" value="1" />
+						<enum name="ui_style" value="default" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference value="sbpextensions\squad_combat_stance_ext" name="squadexts">
+			<float name="ranged_attackrange" value="0" />
+			<string name="default_stance_name" value="stance_attack" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_formation_ext" name="squadexts">
+			<float name="combat_follower_cover_search_radius" value="0" />
+			<group name="squad_distribution_table">
+				<group name="03_soldiers">
+					<float name="units_in_core" value="3" />
+					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_left_flank" value="0" />
+				</group>
+				<group name="10_soldiers">
+					<float name="units_in_core" value="4" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+					<float name="units_in_left_flank" value="2" />
+				</group>
+				<group name="07_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="1" />
+					<float name="units_in_left_flank" value="2" />
+				</group>
+				<group name="05_soldiers">
+					<float name="units_in_core" value="3" />
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_left_flank" value="1" />
+				</group>
+				<group name="04_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_left_flank" value="1" />
+				</group>
+				<group name="01_soldiers">
+					<float name="units_in_core" value="1" />
+					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_left_flank" value="0" />
+				</group>
+				<group name="02_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="0" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_left_flank" value="0" />
+				</group>
+				<group name="09_soldiers">
+					<float name="units_in_core" value="3" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+					<float name="units_in_left_flank" value="2" />
+				</group>
+				<group name="06_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="0" />
+					<float name="units_in_left_flank" value="2" />
+				</group>
+				<group name="08_soldiers">
+					<float name="units_in_core" value="2" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="2" />
+					<float name="units_in_left_flank" value="2" />
+				</group>
+			</group>
+			<float name="move_dest_cover_search_radius" value="0" />
+			<group name="cover_formation_table">
+				<instance_reference name="tp_zz_deep_snow" value="squad_formations\default" />
+				<instance_reference name="tp_zz_mud" value="squad_formations\default" />
+				<instance_reference name="tp_smoke" value="squad_formations\wedge" />
+				<instance_reference name="tp_heavy" value="squad_formations\wedge" />
+				<instance_reference name="tp_z_bunker" value="squad_formations\wedge" />
+				<instance_reference name="tp_defcover_narrow" value="squad_formations\line" />
+				<instance_reference name="tp_garrison_halftrack" value="squad_formations\default" />
+				<instance_reference name="tp_trench" value="squad_formations\default" />
+				<instance_reference name="tp_z_snow" value="squad_formations\default" />
+				<instance_reference name="tp_water" value="squad_formations\wedge" />
+				<instance_reference name="tp_light" value="squad_formations\wedge" />
+				<instance_reference name="tp_z_emplacement" value="squad_formations\default" />
+				<instance_reference name="tp_garrison_cover" value="squad_formations\default" />
+				<instance_reference name="tp_negative" value="squad_formations\wedge" />
+				<instance_reference name="tp_z_ice" value="squad_formations\default" />
+				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
+				<instance_reference name="tp_open" value="squad_formations\line" />
+				<instance_reference name="tp_defcover" value="squad_formations\wedge" />
+			</group>
+			<bool name="support_weapons_to_flanks" value="False" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_item_slot_ext" name="squadexts">
+			<float name="num_slots" value="2" />
+			<bool name="can_pick_up" value="False" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_loadout_ext" name="squadexts">
+			<list name="unit_list">
+				<group name="loadout_data">
+					<instance_reference name="type" value="ebps\races\british\vehicles\sexton_spg\sexton_spg_mp" />
+					<float name="num" value="1" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_modifier_ext" name="squadexts">
+		</template_reference>
+		<template_reference value="sbpextensions\squad_requirement_ext" name="squadexts">
+			<list name="requirement_table" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_upgrade_apply_ext" name="squadexts">
+			<list name="upgrades" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_upgrade_ext" name="squadexts">
+			<float name="number_of_slots" value="-1" />
+			<list name="upgrades" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_combat_behaviour_ext" name="squadexts">
+			<bool name="reveal_self_attacker_time_use" value="False" />
+			<string name="squad_ai_retaliation_file" value="empty-plan" />
+			<float name="heavy_weapon_setup_delay" value="0" />
+			<string name="squad_ai_pinned_file" value="empty-plan" />
+			<group name="pilfer">
+				<group name="weapon">
+					<float name="length" value="0" />
+					<instance_reference name="weapon" value="" />
+					<group name="origin">
+						<float name="y" value="0.5" />
+						<float name="z" value="0" />
+						<float name="x" value="0" />
+					</group>
+					<enum name="type" value="default" />
+					<group name="heading">
+						<float name="y" value="0" />
+						<float name="z" value="1" />
+						<float name="x" value="0" />
+					</group>
+				</group>
+				<instance_reference name="remove_weapon" value="" />
+				<bool name="can_pilfer" value="False" />
+			</group>
+			<float name="reaction_delay_seconds" value="8" />
+			<float name="reveal_self_attacker_time" value="0" />
+			<string name="squad_ai_reaction_file" value="empty-plan" />
+			<string name="squad_ai_file" value="empty-plan" />
+			<group name="suppression">
+				<list name="pin_down_activate_actions" />
+				<float name="suppressed_activate_threshold" value="0.15" />
+				<group name="cover_info">
+					<group name="tp_zz_deep_snow">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_zz_mud">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_smoke">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_heavy">
+						<float name="recover_multiplier" value="5" />
+					</group>
+					<group name="tp_z_bunker">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_defcover_narrow">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_garrison_halftrack">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_trench">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_z_snow">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_water">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_defcover">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_z_emplacement">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_z_ice">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_negative">
+						<float name="recover_multiplier" value="0.5" />
+					</group>
+					<group name="tp_zz_team_weapon_heavy">
+						<float name="recover_multiplier" value="1" />
+					</group>
+					<group name="tp_light">
+						<float name="recover_multiplier" value="2.5" />
+					</group>
+					<group name="tp_open">
+						<float name="recover_multiplier" value="0.75" />
+					</group>
+					<group name="tp_garrison_cover">
+						<float name="recover_multiplier" value="1" />
+					</group>
+				</group>
+				<bool name="can_be_suppressed" value="False" />
+				<float name="noncombat_recover_multiplier" value="1" />
+				<float name="noncombat_delay" value="1" />
+				<float name="recover_rate" value="0.002" />
+				<float name="suppressed_recover_threshold" value="0.05" />
+				<float name="pin_down_activate_threshold" value="0.3" />
+				<float name="pin_down_recover_threshold" value="0.2" />
+				<list name="suppressed_activate_actions" />
+			</group>
+			<template_reference name="can_recrew_abandoned_option" value="options\none">
+			</template_reference>
+			<float name="reaction_combat_delay_seconds" value="8" />
+			<string name="squad_ai_sniped_file" value="" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_action_apply_ext" name="squadexts">
+			<list name="actions">
+				<template_reference value="action\requirement_action" name="action">
+					<bool name="check_self" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<list name="action_table">
+						<template_reference value="action\apply_modifiers_action" name="action">
+							<uniqueid name="id" value="1073744572" />
+							<list name="modifiers">
+								<template_reference value="modifiers\income_fuel_player_modifier" name="modifier">
+									<string name="modifier_id" value="vehicle_upkeep" />
+									<enum name="application_type" value="apply_to_player" />
+									<bool name="exclusive" value="False" />
+									<instance_reference name="tooltip" value="modifier_tooltip\income_fuel_player_modifier" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="addition" />
+									<float name="value" value="-0.004" />
+								</template_reference>
+							</list>
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+						</template_reference>
+					</list>
+					<bool name="kill_action_on_failed_requirements" value="True" />
+					<bool name="no_retrigger" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<locstring name="phrase" value="0" />
+						<int name="phrase_order" value="0" />
+					</template_reference>
+					<bool name="fire_and_forget_non_global" value="False" />
+					<list name="requirement_table">
+						<template_reference value="requirements\required_not" name="required">
+							<enum name="reason" value="usage" />
+							<list name="requirement_table">
+								<template_reference value="requirements\required_ownership" name="required">
+									<enum name="reason" value="usage" />
+									<enum name="ownership_type" value="neutral" />
+									<locstring name="ui_name" value="0" />
+								</template_reference>
+							</list>
+							<locstring name="ui_name" value="0" />
+						</template_reference>
+					</list>
+					<bool name="validate_all_sub_actions" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<uniqueid name="id" value="1073744571" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference value="sbpextensions\squad_veterancy_ext" name="squadexts">
+			<list name="race_list">
+				<group name="race_data">
+					<instance_reference name="ext_key" value="" />
+					<group name="info">
+						<enum name="shared_veterancy_type" value="no_sharing" />
+						<bool name="can_receive_shared_veterancy" value="False" />
+						<list name="veterancy_rank_info">
+							<group name="veterancy_rank">
+								<bool name="single_player_only" value="False" />
+								<list name="non_leader_actions" />
+								<list name="leader_actions" />
+								<locstring name="screen_name" value="11095151" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<float name="experience_value" value="2020" />
+								<list name="squad_actions">
+									<template_reference value="action\apply_modifiers_action" name="action">
+										<uniqueid name="id" value="391089" />
+										<list name="modifiers">
+											<template_reference value="modifiers\entity_veterency_experience_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+											</template_reference>
+										</list>
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+									</template_reference>
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<bool name="single_player_only" value="False" />
+								<list name="non_leader_actions" />
+								<list name="leader_actions" />
+								<locstring name="screen_name" value="11095152" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<float name="experience_value" value="4040" />
+								<list name="squad_actions">
+									<template_reference value="action\apply_modifiers_action" name="action">
+										<uniqueid name="id" value="440526" />
+										<list name="modifiers">
+											<template_reference value="modifiers\ability_recharge_time_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_artillery_barrage_creeping_victor_target_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.6" />
+											</template_reference>
+											<template_reference value="modifiers\ability_recharge_time_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_concentration_barrage_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.6" />
+											</template_reference>
+											<template_reference value="modifiers\ability_recharge_time_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_pdr_artillery_creeping_barrage_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.6" />
+											</template_reference>
+											<template_reference value="modifiers\ability_recharge_time_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_pdr_supercharge_airburst_barrage_ability_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.6" />
+											</template_reference>
+											<template_reference value="modifiers\ability_recharge_time_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_pdr_supercharge_barrage_ability_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.6" />
+											</template_reference>
+											<template_reference value="modifiers\ability_recharge_time_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_pdr_barrage_ability_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.6" />
+											</template_reference>
+										</list>
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+									</template_reference>
+									<template_reference value="action\apply_modifiers_action" name="action">
+										<uniqueid name="id" value="391093" />
+										<list name="modifiers">
+											<template_reference value="modifiers\entity_veterency_experience_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+											</template_reference>
+										</list>
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+									</template_reference>
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<bool name="single_player_only" value="False" />
+								<list name="non_leader_actions" />
+								<list name="leader_actions" />
+								<locstring name="screen_name" value="11095153" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<float name="experience_value" value="8080" />
+								<list name="squad_actions">
+									<template_reference value="action\apply_modifiers_action" name="action">
+										<uniqueid name="id" value="440527" />
+										<list name="modifiers">
+											<template_reference value="modifiers\ability_max_range_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_concentration_barrage_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.33" />
+											</template_reference>
+											<template_reference value="modifiers\ability_max_range_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_pdr_artillery_creeping_barrage_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.33" />
+											</template_reference>
+											<template_reference value="modifiers\ability_max_range_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_pdr_barrage_ability_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.33" />
+											</template_reference>
+											<template_reference value="modifiers\ability_max_range_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_pdr_supercharge_airburst_barrage_ability_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.33" />
+											</template_reference>
+											<template_reference value="modifiers\ability_max_range_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\sexton_spg_25_pdr_supercharge_barrage_ability_mp" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.33" />
+											</template_reference>
+										</list>
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+									</template_reference>
+									<template_reference value="action\apply_modifiers_action" name="action">
+										<uniqueid name="id" value="391095" />
+										<list name="modifiers">
+											<template_reference value="modifiers\entity_veterency_experience_modifier" name="modifier">
+												<string name="modifier_id" value="" />
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+											</template_reference>
+										</list>
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+									</template_reference>
+								</list>
+							</group>
+						</list>
+						<float name="max_persistent_squads" value="0" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference value="sbpextensions\squad_ability_ext" name="squadexts">
+			<list name="abilities">
+				<instance_reference value="abilities\global\cold\blizzard_effect" name="ability" />
+				<instance_reference value="abilities\british\timed_ability\tune_up_bonus_mp" name="ability" />
+			</list>
+			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_retreat_ext" name="squadexts">
+			<list name="actions" />
+			<list name="modifiers" />
+			<group name="retreat_building_types">
+				<enum name="unit_type04" value="" />
+				<enum name="unit_type03" value="" />
+				<enum name="unit_type00" value="hq" />
+				<enum name="unit_type02" value="alternate_retreat_point" />
+				<enum name="unit_type01" value="hq_wreck" />
+			</group>
+			<bool name="withdraw_only" value="True" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_type_ext" name="squadexts">
+			<list name="squad_type_list">
+				<enum value="medium_tank" name="squad_type" />
+				<enum value="vehicle" name="squad_type" />
+				<enum value="heavy_vehicle" name="squad_type" />
+				<enum value="british_unit" name="squad_type" />
+				<enum value="heavy_vehicle_icon" name="squad_type" />
+			</list>
+		</template_reference>
+		<template_reference value="sbpextensions\squad_capture_strategic_point_ext" name="squadexts">
+			<float name="revert_rate_multiplier" value="0" />
+			<float name="capture_distance" value="4" />
+			<float name="capture_rate_multiplier" value="0" />
+		</template_reference>
+		<template_reference value="sbpextensions\squad_shared_veterancy_ext" name="squadexts">
+			<float name="multiplier_pct_self" value="1" />
+			<float name="radius" value="35" />
+			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
+			<float name="multiplier_pct_share" value="0.25" />
+		</template_reference>
+	</list>
+</instance>

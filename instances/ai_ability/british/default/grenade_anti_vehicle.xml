@@ -1,0 +1,35 @@
+<instance description="" template="ai_ability">
+	<group name="ai_ability_bag">
+		<list name="abilities">
+			<instance_reference name="ability" value="abilities\british\modal_ability\grenades\tommy_gammon_bomb_heavy_mp" />
+			<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\sniper_boys_anti_tank_critical_shot_mp" />
+			<instance_reference name="ability" value="abilities\british\modal_ability\artillery\avre_spigot_mortar_attack_mp" />
+			<instance_reference name="ability" value="abilities\british\modal_ability\artillery\avre_spigot_mortar_attack_vet_3_mp" />
+		</list>
+		<group name="ai_tactic">
+			<string name="entity_target_filter" value="EntityTargetFilter_FirstEnemyStructure" />
+			<string name="position_target_filter" value="" />
+			<float name="priority" value="85" />
+			<string name="squad_target_filter" value="SquadTargetFilter_FirstEnemyVehicle" />
+			<string name="tactic_filter_start" value="" />
+			<float name="tactic_max_range_override" value="30" />
+			<enum_table name="class">
+				<bool name="tactic_Combat" value="True" />
+				<bool name="tactic_OnTask" value="False" />
+				<bool name="tactic_Moving" value="False" />
+			</enum_table>
+			<string name="tactic_filter_abort" value="" />
+			<float name="tactic_min_range_override" value="-1" />
+		</group>
+		<group name="ai_tactic_toggle_off">
+			<float name="priority" value="-1" />
+			<string name="tactic_filter_start" value="" />
+			<enum_table name="class">
+				<bool name="tactic_Combat" value="False" />
+				<bool name="tactic_OnTask" value="False" />
+				<bool name="tactic_Moving" value="False" />
+			</enum_table>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="92522" />
+</instance>
