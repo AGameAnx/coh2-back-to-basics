@@ -6,8 +6,6 @@ import("Prototype/SpecialAEFunctions.scar")
 import("PrintOnScreen.scar")
 import("WinConditions/Annihilate.scar")
 
-import('WinConditions/btb_ballistics_data.scar')
-
 modID = '23d6cdb82724460dbcb21e1a9162e473'
 modIDlength = string.len(modID)
 function removeModID(str)
@@ -25,14 +23,19 @@ function normalizeVector(v)
 end
 
 -- Deployment
---import('WinConditions/btb_ballistics.scar')
+
 import('WinConditions/aicontrol.scar')
+
+--import('WinConditions/btb_ballistics_data.scar')
+--import('WinConditions/btb_ballistics.scar')
 --import('WinConditions/btb_battleeffects.scar')
 
 -- Development
+
 --loadfile('_modscripts/btb_customdebug.scar')()
---loadfile('_modscripts/btb_ballistics.scar')()
 --loadfile('_modscripts/btb_aicontrol.scar')()
+
+--loadfile('_modscripts/btb_ballistics.scar')()
 --loadfile('_modscripts/btb_battleeffects.scar')()
 --loadfile('_modscripts/btb_softretreat.scar')()
 
@@ -53,7 +56,7 @@ function BtB_Init()
 		
 		Modify_PlayerResourceRate(p, RT_Manpower, 50/60/8, MUT_Addition)
 		Modify_PlayerResourceRate(p, RT_Fuel, 1.75/60/8, MUT_Addition)
-		Modify_PlayerResourceRate(p, RT_Action, 0.85, MUT_Multiplication)
+		--Modify_PlayerResourceRate(p, RT_Action, 0.85, MUT_Multiplication)
 		Modify_PlayerSightRadius(p, 1.05)
 		
 		Player_SetMaxPopulation(p, CT_Personnel, 120)

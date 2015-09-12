@@ -8,32 +8,9 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\reinforcements_action">
-					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="28" />
-					<float name="points_total" value="0" />
-					<bool name="spawn_random_squads" value="False" />
-					<list name="entity_table">
-					</list>
-					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\soviet\vehicles\t_34_squad\t_34_85_squad_mp" />
-						<instance_reference name="squad" value="sbps\races\soviet\vehicles\t_34_squad\t_34_85_squad_mp" />
-					</list>
-					<bool name="use_attack_move" value="False" />
-					<uniqueid name="id" value="1073743303" />
-					<bool name="ignore_requirements" value="False" />
-				</template_reference>
-				<template_reference name="action" value="action\game_event_action">
-					<float name="event_extra_param" value="0" />
-					<float name="event_param_begin" value="1" />
-					<float name="event_param_end" value="-1" />
-					<enum name="event_type" value="flag_drop" />
-					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073743304" />
-				</template_reference>
 			</list>
 		</group>
-		<enum name="activation" value="targeted" />
+		<enum name="activation" value="timed" />
 		<bool name="can_interrupt" value="False" />
 		<bool name="can_target_in_fow" value="True" />
 		<float name="caster_close_in_distance" value="2" />
@@ -41,8 +18,8 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="260" />
-			<float name="manpower" value="740" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="0" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -98,14 +75,14 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="11050214" />
-			<locstring name="help_text" value="11050213" />
-			<string name="hotkey_name" value="tiger_ace" />
+			<locstring name="help_text" value="11053980" />
+			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_commander_cmdr_soviet_t34_85" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="11007408" />
+			<locstring name="screen_name" value="11096387" />
 			<icon name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="11050213" />
+			<locstring name="brief_text" value="11053980" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -115,20 +92,6 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_resource">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="25" mod="23d6cdb82724460dbcb21e1a9162e473" />
-				<template_reference name="resource" value="tables\resource_table">
-					<float name="action" value="0" />
-					<float name="command" value="12" />
-					<float name="fuel" value="0" />
-					<float name="manpower" value="0" />
-					<float name="munition" value="0" />
-					<float name="soviet_progression" value="0" />
-					<float name="soviet_227" value="0" />
-					<float name="popcap" value="0" />
-				</template_reference>
-			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
@@ -147,7 +110,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="90" />
+		<int name="ui_position" value="0" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -176,7 +139,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
-		<bool name="ability_super_event_cue" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="360" />
 </instance>

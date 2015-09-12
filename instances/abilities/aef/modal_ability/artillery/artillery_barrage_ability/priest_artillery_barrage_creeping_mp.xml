@@ -87,6 +87,7 @@
 						</group>
 					</list>
 					<uniqueid name="id" value="1073744296" />
+					<bool name="valid_sections_only" value="True" />
 				</template_reference>
 			</list>
 		</group>
@@ -215,6 +216,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="ability_super_event_cue" value="False" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="16624" />
 </instance>

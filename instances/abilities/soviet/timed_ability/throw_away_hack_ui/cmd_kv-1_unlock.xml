@@ -119,7 +119,7 @@
 				<locstring name="ui_name" value="24" mod="23d6cdb82724460dbcb21e1a9162e473" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
-					<float name="command" value="10" />
+					<float name="command" value="9" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />
@@ -167,7 +167,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
-		<bool name="ability_super_event_cue" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="1860" />
 </instance>

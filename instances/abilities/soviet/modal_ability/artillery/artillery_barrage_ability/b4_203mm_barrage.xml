@@ -27,6 +27,7 @@
 					<float name="use_hardpoint" value="1" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073741932" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
 					<float name="event_extra_param" value="0" />
@@ -73,7 +74,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="500" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="90" />
+		<float name="recharge_time" value="70" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="free_fire" />
@@ -152,6 +153,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="ability_super_event_cue" value="False" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="222" />
 </instance>

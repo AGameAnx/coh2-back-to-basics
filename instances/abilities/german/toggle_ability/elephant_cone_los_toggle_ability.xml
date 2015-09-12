@@ -25,7 +25,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="15" />
+							<float name="value" value="25" />
 							<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
@@ -190,6 +190,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="ability_super_event_cue" value="False" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="118" />
 </instance>

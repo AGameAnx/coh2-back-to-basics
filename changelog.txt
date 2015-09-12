@@ -1,4 +1,471 @@
 =================================================================
+## v0.55
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+British:
+- All Bren LMG accuracy normalized at 0.1/0.3/0.7 (tommy damage profile: far (39)=3.10, mid (29)=7.91, near (0)=9.46)
+- Vickers LMG accuracy decreased 0.18/0.3/0.7 -> 0.13/0.27/0.6 (damage profile: far (39)=4.03, mid (29)=7.12, near (0)=8.11)
+
+
+=================================================================
+## v0.54
+=================================================================
+
+A few notes on the ostheer tier structure rework:
+ * Panther, ostwind, brummbar, stug and panzerwerfer all become more attractive options and require a smaller tech cost in general
+ * Getting both T3 and T4 is now more viable due to decreased structure cost
+ * Skipping T2 should be slightly more viable for a stug midgame with strong ostwind presence as the opportunity cost is reduced
+ * Ostwind fuel cost pre-change: 40+45+75+90=250f, post-change:40+55+50+95=240f
+ * Stug fuel cost pre-change: 40+45+75+90=250f, post-change: 40+55+50+90=235f
+ * Panzer IV fuel cost pre-change: 40+45+75+125=285f, post-change: 40+55+30+55+110=290f
+ * T34 fuel cost for comparisson: 30+80+90+80=280f
+ * Cromwell fuel cost for comparisson: 35+10+115+110=270f (likely requires midgame fuel expenditure)
+ * Sherman fuel cost for comparisson: 45+120+110=275f (likely requires midgame fuel expenditure)
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Full balance pass on flame throwers:
+ * Finalizing diffing between live and previous mod versions
+ * All flame thrower aoe accuracy removed (set to 15) to match live game implementation
+ * Some flame thrower accuracy decreased from 11 to 1
+ * Generally increased damage but removed DOT effect from any non-vehicle flame throwers
+ * Removed additional damage action against structures (which is now handled through target tables, and therefore had double effect in the mod)
+ * All weapons that have the DOT effect damage has been normalized to 6
+ * Most DOT effects normalized to do the same, slightly decreased damage (~4 -> 2.5)
+ * All DOT effect distance tables normalized
+ * All DOT effect frequency normalized to be each 0.5s (normally from each 1s)
+ * All DOT effect duration normalized to be 15s long (to match the animation more closely and prevent readability issues)
+ * All DOT effect area of effect normalized to be 4 radius
+ * Added an aoe profile 1/1/1 -> 0.25/0.5/1 based on distance from the center
+ * Reduced friendly damage removed, friendlies now take the same amount of damage from DOT effect as enemies
+- Demo charge rework:
+ * Added about 200 damage to each demo charge
+ * Max area of effect radius increased 8.5 -> 10
+ * Far aoe range increased to 10
+ * Made the UI descriptions more consistent between all different demo charges
+ * Demo charge now counts as building kill type
+- Updates to satchel charge and demo charge building damage profiles
+- Added a new building damage profile to most low aoe weapons to make them damage buildings more consistently
+
+Soviet:
+- KV-1 near penetration increased 120 -> 140
+- KV-1 hitpoints increased 800 -> 940
+- KV-1 armor decreased 270 -> 230
+- Fixed an issue where engineer sandbag hotkey was the same as barbed wire hotkey
+- Molotov DOT rework:
+ * Damage decreased 6 -> 2 to match live game values
+ * Frequency increased 1.5 -> 0.5 to match live game values
+ * Amount increased 1 -> 3 to match live game values
+- Molotov scatter values copied from live implementation (removing a large amount of randomness)
+- Molotov wind up-wind down randomness removed
+- ROKS-3 flamethrower scatter added to match live game values
+- ROKS-3 flamethrower damage increased 13 -> 15
+- ROKS-3 flamethrower min burst duration increased 0.5s -> 1s, burst randomness now removed
+- KV-8 flamethrower scatter added to match live game values
+- KV-8 flamethrower now has 50% decreased accuracy on the move
+- KV-8 now has DOT flamethrower damage
+- KV-8 flamethrower damage reduced 16 -> 10
+- ROKS-2 flamethrower scatter added to match live game values
+- ROKS-2 flamethrower damage increased 13 -> 15
+- ROKS-2 flamethrower min burst duration increased 0.5s -> 1s, burst randomness now removed
+- Improved Satchel Charge building damage profile
+- Satchel charge max aoe range increased 7 -> 7.5
+- Satchel charge far aoe range increased 5 -> 7.5
+- Fixed an issue with satchel charge not dealing any damage to buildings
+
+USF:
+- Pack howitzer suppression per shot reduced 0.8 -> 0.25
+- Fixed an issue with pack howitzer which prevented it from being able to use its main barrage ability
+- Assault engineer flame thrower damage increased 13 -> 15
+- Fixed USF demo charge being non-targettable
+
+British:
+- Royal Engineer sten smg accuracy decreased 0.07/0.2/0.52 -> 0.05/0.15/0.45
+- Commando sten smg accuracy decreased 0.09/0.25/0.55 -> 0.09/0.22/0.52
+- Tommy enfield rifle near accuracy increased 0.8 -> 0.825
+- Fixed the scoped tommy enfield rifle accuracy and aim time multipliers to match the non-scoped rifle
+- Mortar emplacement cost reduced 400mp -> 320mp
+- Forward HQ cost decreased 250mp -> 220mp
+- Churchill Crocodile DOT damage reduced 4 -> 2
+- Churchill Crocodile flamethrower DOT damage cover table normalized to match other DOT damage values
+- WASP DOT damage reduced 4 -> 2
+- WASP base damage increased 4 -> 10
+- Updated gammon bomb building damage profile
+- Commando demo charge armor, size and detection, cover type and aoe values changed to match other demolition charges
+- Churchill AVRE petard far aoe range increased 9.1 -> 10
+- Churchill AVRE petard mid aoe damage decreased 0.5 (320) -> 0.35 (224)
+- Firefly aoe profile reworked 0.1/0.2/0.3 -> 0.1/0.5/1
+- Comet max aoe radius reduced 3.1 -> 2.25 (this does not affect the dps very much as far aoe range is 2)
+- Cromwell max aoe radius reduced 3.1 -> 2.25 (this does not affect the dps very much as far aoe range is 2)
+- Fixed an issue with 17pdr not being able to fire
+
+Ostheer:
+- Major changes to Ostheer tier structure:
+ * Panzer IV is now constructed from T4 structure
+ * Panzerwerfer is now constructed from T3 structure
+ * T2 research cost decreased 150mp/40f -> 100mp/40f to match live game values
+ * T3 research cost increased 100mp/45f -> 100mp/55f
+ * T4 research cost reduced 100mp/45f -> 100mp/30f
+ * T3 structure cost reduced 260mp/75f -> 180mp/50f
+ * T4 structure cost reduced 260mp/75f -> 220mp/55f
+- Panzer IV cost decreased 350mp/125f -> 340mp/110f
+- Panzer IV mid aoe distance increased 1 -> 1.15
+- Ostwind cost increased 320mp/90f/45s -> 320mp/95f/55s
+- Ostwind damage increased 40 -> 55
+- Ostwind munition name changed from flak to flak_defense to improve visuals
+- Ostwind penetration against vehicles increased by 50% but damage reduced by 50%
+- Ostwind min range removed
+- Ostwind aoe profile rework:
+ * Near range reduced 0.7 -> 0.4
+ * Mid range reduced 1.1 -> 1.0
+ * Far range increased 1.9 -> 2.4
+- Brummbar rotation rate increased 24 -> 27
+- 222 20mm weapon penetration increased 45/65/75 -> 55/75/85
+- 222 20mm weapon damage increased 20 -> 22
+- 222 pintle MG accuracy increased 0.09/0.22/0.6 -> 0.12/0.25/0.6
+- Pioneer moving accuracy decreased 0.6 -> 0.45
+- Halftrack flammenwerfer dot damage added
+- Pioneer flamethrower min burst duration increased 0.5s -> 1s, burst randomness now removed
+- Pioneer flamethrower damage increased 13 -> 15
+
+OKW:
+- Sturmpioneer mp44 range table near range reduced 5 -> 0
+- leIG ISG suppression per shot reduced 0.8 -> 0.25
+- leIG ISG area of effect mid distance reduced 2 -> 1.75
+- Panzer IV cost decreased 350mp/110f -> 340mp/110f
+- Panzer IV mid aoe distance increased 1 -> 1.15
+
+
+-----------------------------------------------------------------
+## Win condition:
+
+General:
+- Command point gain rate is no longer slowed down (0.85 modifier removed)
+
+
+=================================================================
+## v0.53
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Removed 0.92 received accuracy modifier from shock troops
+- For mother russia rework:
+ * Cost reduced 100mu -> 80mu
+ * Posture speed modifier removed
+ * Infantry accuracy modifier reduced 1.5 -> 1.15 (team weapon modifier unaffected at 1.25)
+ * Command point requirement reduced 6 -> 4
+- Shock troop damage decreased 9 -> 8 (9 shots to kill to 10)
+
+Ostheer:
+- Grenadier population cost increased 7 -> 8
+
+
+=================================================================
+## v0.52
+=================================================================
+
+Ported some of the new balance patch preview from Relic changes to the mod. Mostly weapon and non-british changes to reduce the amount of work required for when the patch actually goes live.
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- M3 Scout car detection radius increased 10 -> 25
+- Penal battalion troop hitpoints increased 80 -> 82
+
+USF:
+- M20 detection radius increased 15 -> 25
+- WC51 detection radius increased 10 -> 25
+
+British:
+- Churchill armor reduced 280 -> 230
+- Fixed an issue where Churchill AVRE spigot mortar round wouldn't fire at all or would take a really long time to aim
+- Removed prioritize vehicles ability from Churchill AVRE
+- Forward HQ build time reduced 150s -> 120s
+- Forward HQ hitpoints increased 600 -> 1500 to remove instances of it dying from a single offmap strike
+- HQ glider cost increased 540mp -> 600mp. Logic: squad - around 350mp (really, it's not as good as a shocks squad or an actual commando squad), retreat and reinforce point - at least 300mp, can be dropped in without using up an engineer for construction, but can't be repaired, produces units and provides a reinforce point. The only reason cost is smaller than 650mp is because it requires a planned time investment to acquire such a large manpower pool before calling it in. Otherwise, the glider seems to be about as good of a retreat point as the actual non-modded forward HQ - actual HQ has really low health before this version's changes, takes a ton of time to construct, costs 450mp in total to make an actual retreat point.
+- Commander vehicle rework:
+ * Area of influence radius increased 30 -> 40
+ * Increased accuracy multiplier decreased 2 -> 1.25
+ * Received accuracy multiplier decreased 0.5 -> 0.85
+ * Reload length multiplier decreased 0.5 -> 0.8
+ * Cooldown multiplier decreased 0.5 -> 0.75
+ * Vehicle speed penalty multiplier reduced 0.5 -> 0.75
+ * Vehicle reload speed penalty multiplier reduced 2.5 -> 1.75
+ * Vehicle cooldown penalty multiplier reduced 4 -> 2.5
+ * Vehicle weapon accuracy penalty modifier reduced 0.25 -> 0.65
+ * Vehicle received accuracy modifier removed
+- Gammon Bomb damage reduced 240 -> 200
+- Universal carrier detection radius increased 10 -> 25
+- Comet health reduced 800 -> 720
+- Comet max distance scatter increased 3.2 -> 4.2 to bring this unit in line with its other counterparts
+- AEC cost reduced 340mp/60f -> 300mp/50f
+- Stand Fast emplacement heal rate increased 1 -> 1.3
+- Updates done to vehicle weapon tracer speed to attempt to improve visuals
+
+Ostheer:
+- 222 detection radius increased 10 -> 25
+- Elefant focused sight ability removed
+- 251 Flame Halftrack range increased from 25 to 30
+
+OKW:
+- leIG mid range aoe damage reduced 0.35 -> 0.3
+
+
+=================================================================
+## v0.51
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+British:
+- 6 pounder penetration reduced to match Pak40 210/200/190 -> 210/180/110
+- Churchill hitpoints reduced 1400 -> 1280 (this should make it take 1 more shot than a Tiger on average, and about as many as Tiger Ace)
+- Churchill may now use prioritize vehicles
+- Cromwell may now use prioritize vehicles
+
+
+=================================================================
+## v0.50
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Removed left over flat damage of explosive and flame weapons vs British emplacements
+
+British:
+- Slit trench cost reduced 50mp -> 30mp
+- Slit trench hitpoints increased 600 -> 700
+- Squad size upgrade cost and production time reduced 100mp/25f/30s -> 100mp/15f/22s
+- Mills bomb upgrade cost decreased 150mp/15f -> 60mp/10f
+- Engineer vet1 cover combat bonus reduced 0.5 reload/0.3 cooldown -> 0.5 reload/0.7 cooldown
+- Tommy lee enflied aim time mulitpliers reduced 2.5/1.75/0.125 -> 1.5/0.75/0.125
+- Tommy lee enflied cooldown and cooldown randomness reduced 2-1.25s -> 1.75-1.25s
+- Tommy lee enfield accuracy increased 0.27/0.35/0.74 -> 0.28/0.36/0.8
+- Vickers HMG damage increased 8 -> 9
+- Sniper cost increased 360mp -> 380mp
+- Platoon command post cost reduced 280mp/35f -> 240mp/35f
+- Churchill hitpoints decreased 1600 -> 1400
+- Cromwell hitpoints reduced 640 -> 600
+- Piat damage increased 120 -> 140 (to match panzerschrek mod changes)
+- Fixed an issue where British soldiers could die with a burn up critical from 'small explosive' weapon type
+
+Ostheer:
+- Rifle grenade mid aoe damage reduced 0.625 -> 0.55
+
+
+=================================================================
+## v0.49
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- New methods of diffing files (2 new macros), full diff path again after British expansion release and patch:
+ * Wrapping up all previous fixes with much higher precision than before
+ * Implementing all the new features and balance updates
+ * Cleaning up UCS values
+- Fuel point capture time reduced 30s/20s -> 25s/15s (change missing from before)
+- Fuel point income increased to match live version
+- Begun the work on transferring squad received accuracy multipliers into ebps target size property
+
+Soviet:
+- B4 barrage recharge time reduced 90s -> 70s
+- Katyusha creeping barrage 30mu cost added
+
+USF:
+- Easy8 can now use prioritize vehicles ability
+
+British:
+- Sniper now has increased received accuracy (1.375) like all snipers
+- Sniper will now has decreased accuracy against retreating squads (0.6) like all snipers
+- Fixed sniper range (50 -> 55) to match other snipers
+
+OKW:
+- Adjusted veterancy requirements of most infantry squads to more closely resemble Relic values
+
+
+=================================================================
+## v0.48
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+British:
+- Reduced previous mid and far range small arms weapon buff from 25% to 12.5%
+- Tommy lee enfield rifle damage reduced 37 -> 32
+- Vickers HMG accuracy decreased 0.1/0.3/0.61 -> 0.09/0.28/0.6
+- Vickers HMG damage decreased 9 -> 8
+- Weapon crew lee enfield rifle damage reduced 19 -> 16
+- Commando silenced sten smg accuracy reworked 0.05/0.16/0.82 -> 0.09/0.25/0.55
+- Commando silenced sten smg damage decreased 9 -> 8
+- Engineer sten smg accuracy reworked 0.05/0.14/0.56 -> 0.07/0.2/0.52
+- Engineer sten smg damage increased 4 -> 5
+- 17pdr damage decreased 320 -> 300
+- 6pdr damage decreased 160 -> 155
+- Added increased aim time over distance for all ballistic weapons to match other faction behavior
+
+
+=================================================================
+## v0.47
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+USF:
+- Sherman can now cast its targetted abilities on the move
+
+British:
+- All tommy squads gain a received accuracy multiplier of 0.9
+- All small arms received 28% accuracy increase on mid and far range
+- Sniper hitpoints increased 82 -> 90
+- Mortar emplacement hitpoints increased 700 -> 900
+- Bofors emplacement hitpoints increased 1000 -> 1200
+- 17pdr emplacement hitpoints increased 900 -> 1300
+- Mortar emplacement 10lb shell mid range aoe damage reduced 0.6 -> 0.3
+- Mortar emplacement light shell mid range aoe damage reduced 0.5 -> 0.3
+- Universal carrier hitpoints increased 200 -> 260
+- Universal carrier armor increased 10 -> 14
+- Concentrated barrage salvo count increased 3 -> 5
+- British artillery will now suppress like all other artillery
+- All British FOW scatter removed like all other artillery
+- Added custom British squad utility values for AI
+- Fixed a bug where AOC armored car would receive a 20% slower reload modifier at vet3 instead of making it faster
+
+OKW:
+- Reverted the fuel income from 75% of other factions' income to 66%. Due to faction tech changes this buff is no longer needed
+
+
+=================================================================
+## v0.46
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+General:
+- Full diff pass for relic changes for new attributes that come with British expansion
+- Implemented the new teching structure, meaning a lot of tech costs and balancing are reverted to how live game's teching works
+- Most callins can still be used without limit
+- Adjusted building panel strength
+- Combat casualties reenabled 
+- Reverted the change of target priority for field artillery making tanks target them again
+- Updated vehicle fuel upkeep algorithm: fuelCost / 200 * sqrt(max(10, pop))
+- All factions will now have 120 population even when game mode is not selected
+
+Soviet:
+- KV-1 call-in required command points decreased 10 -> 9
+- IS-2 call-in required command points decreased 14 -> 13
+- Advanced T34/85 call-in required command points decreased 12 -> 10
+
+USF:
+- Captain dispatch time reduced 90s -> 70s
+- Major artillery barrage salvo number reduced 6 -> 4
+- Major artillery barrage radius increased 12 -> 13
+- Major artillery barrage delay increased 4 -> 5
+- M20 Utility Car cost reduced 280mp/30f -> 280mp/20f
+- M15A1 AA Halftrack cost reduced 350mp/60f -> 350mp/50f
+
+British:
+- Full mod implementation
+- Vickers HMG cone of fire reduced 120deg -> 100deg
+- Vickers HMG damage increased 7 -> 9
+- Vickers HMG near accuracy reduced 0.95 -> 0.61
+- Tommy Lee Enflied rifle accuracy increased 0.19/0.28/0.73 -> 0.24/0.31/0.74
+- Tommy Lee Enflied rifle damage increased 30 -> 37
+- Tommy Lee Enflied rifle cooldown reduced 2-1.25s -> 1.75-1.25s
+
+Ostheer:
+- Elefant focused sight line of sight increase 15 -> 25
+- Vehicle optics sight multiplier decreased 2 -> 1.5
+- Ostwind cost increased 280mp/85f -> 320mp/90f
+- Panzer IV cost increased 350mp/110f -> 350mp/125f
+
+OKW:
+- Due to assault pioneer reinforcement changes that have been implemented with the patch their cost is reverted back from 300mp to 320mp
+
+-----------------------------------------------------------------
+## Win condition:
+
+AI:
+- Large AIControl improvements
+- Mod change implementation for British faction
+
+
+=================================================================
+## v0.45
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- SU76 penetration increased 120/140/180 -> 180/190/200
+- SU85 penetration increased 180/190/200 -> 210/220/230
+- SU85 veterancy reworked:
+ * vet2 reload multiplier decreased 0.7 -> 0.9
+ * vet2 accuracy multiplier decreased 1.3 -> 1.2
+ * vet3 reload multiplier decreased 0.8 -> 0.85
+ * vet3 max speed multiplier decreased 1.2 -> 1.1
+- Guards mosin nagant rifle accuracy reduced 0.15/0.29/0.74 -> 0.15/0.28/0.69
+- Penal troops SVT rifle accuracy increased 0.12/0.2/0.55 -> 0.14/0.2/0.56
+- M3A1 halftrack armor increased 6.5 -> 8
+- T34/75 cost reduced 310mp/100f -> 300mp/90f
+- IS-2 vet1 secure mode removed, replaced with reduced scatter multiplier (0.9)
+- KV2 vet1 secure mode removed, replaced with reduced scatter multiplier (0.9)
+- KV1 vet1 secure mode removed, replaced with increased penetration multiplier (1.15)
+
+USF:
+- Take aim no longer costs munitions to activate
+
+
+=================================================================
+## v0.44
+=================================================================
+
+-----------------------------------------------------------------
+## Attributes:
+
+Soviet:
+- Katyusha mid range aoe damage reduced 0.3 -> 0.2
+- Katyusha creeping barrage cost removed
+- Katyusha creeping barrage rockets now reworked to work the same as normal rockets
+- Katyusha rocket suppression increased 0.25 -> 0.3
+- Updated Katyusha multipliers vs suppressed units to be consistent for all rocket types: 0.75 damage 0.85 accuracy
+- Updated Katyusha multipliers vs pinned units to be consistent for all rocket types: 0.5 damage 0.25 accuracy
+- Dshk 38 Sokolov accuracy increased 0.09/0.24/0.54 -> 0.12/0.27/0.56
+- M3A1 halftrack armor increased 5.4 -> 6.5
+- M3A1 halftrack cost decreased 190mp/15f -> 155mp/15f
+
+Ostheer:
+- All Panzer IV variants can now prioritize vehicles
+- MG42 incendiary rounds penetration reduced +8 -> +6
+
+OKW:
+- Kubelwagen damage increased 8 -> 10
+- Kubelwagen setup MG suppression multiplier decreased 2.25 -> 2
+- Kubelwagen nearby suppression radius 20 -> 14
+- Kubelwagen cost reduced 200mp/10f -> 160mp/10f
+- Panzerfusilier G43 reload time increased and randomness reduced 2-3.5s -> 3-3.5s
+- Panzerfusilier Kar98k rifle damage reduced 20 -> 19
+- Panzerfusilier G43 accuracy reduced 0.16/0.23/0.47 -> 0.14/0.22/0.48
+
+
+=================================================================
 ## v0.43
 =================================================================
 
@@ -2450,7 +2917,7 @@ Ostheer:
 - Slightly reduced accuracy of grenadier LMG42 on range (0.33 -> 0.29)
 - Stug G and Stug E frontal armor increased from 140 to 225
 
-Oberkommando West:
+OKW:
 - Reduced accuracy and effectiveness of Obersoldatten Infrared mp44 rifle
 - Slightly reduced accuracy of Obersoldatten LMG on max range (0.34 -> 0.3)
 - Jagdpanzer V frontal armor increased from 230 to 300

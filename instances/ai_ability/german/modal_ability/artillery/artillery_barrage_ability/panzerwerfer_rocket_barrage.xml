@@ -13,7 +13,7 @@
 			<enum_table name="class">
 				<bool name="tactic_Combat" value="True" />
 				<bool name="tactic_OnTask" value="True" />
-				<bool name="tactic_Moving" value="True" />
+				<bool name="tactic_Moving" value="False" />
 			</enum_table>
 			<string name="tactic_filter_abort" value="" />
 			<float name="tactic_min_range_override" value="-1" />

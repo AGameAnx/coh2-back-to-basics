@@ -31,6 +31,7 @@
 								</template_reference>
 							</group>
 							<uniqueid name="id" value="1073743299" />
+							<bool name="target_override_direction_times_max_range" value="False" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073743300" />
@@ -161,6 +162,7 @@
 						<bool name="not_retreating" value="False" />
 						<bool name="pinned" value="True" />
 						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>
@@ -196,6 +198,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="ability_super_event_cue" value="False" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="10" />
 </instance>

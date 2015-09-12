@@ -2,6 +2,7 @@
 -- TODO: All veterancy multipliers
 -- TODO: All abilities that modify receieved penetration & damage
 -- TODO: More criticals (Brew up, kill gunner, sturmtiger abandon)
+-- TODO: Vet armor modifiers
 
 local function Util_CreateLocString(text)
 	local tmpstr = LOC(text)
@@ -95,18 +96,16 @@ local function BtB_Ballistics_ApplyDamage(shootingEntity, target, hitPosition, a
 	if showKicker then
 		local color
 		if hitType == 1 then
-			color = {0, 185, 0}
+			color = {0, 200, 0}
 		elseif hitType == 2 then
-			color = {255, 190, 0}
+			color = {255, 220, 0}
 		else
 			color = {255, 0, 0}
 		end
-		for p=1,World_GetPlayerCount() do -- TODO: Display this for one player only?
-			UI_CreateColouredPositionKickerMessage(World_GetPlayerAt(p), hitPosition, Util_CreateLocString(math.ceil(amount)), color[1], color[2], color[3], 50)
-		end
+		UI_CreateColouredPositionKickerMessage(Game_GetLocalPlayer(), hitPosition, Util_CreateLocString(math.ceil(amount)), color[1], color[2], color[3], 50)
 	end
 	
-	local newHealth = math.max(0, Entity_GetHealthPercentage(target) - amount/Entity_GetHealthMax(target))
+	local newHealth = math.ceil(math.max(0, math.min(1, Entity_GetHealthPercentage(target) - amount/Entity_GetHealthMax(target)))*100)/100
 	
 	-- Apply veterancy
 	if shootingEntity then
@@ -114,13 +113,13 @@ local function BtB_Ballistics_ApplyDamage(shootingEntity, target, hitPosition, a
 			local targetSquad = Entity_GetSquad(target)
 			local shootingEntitySquad =  Entity_GetSquad(shootingEntity)
 			if targetSquad and shootingEntitySquad then
-				local experienceGranted = amount*Squad_GetHealthMax(targetSquad)/500*(1+Squad_GetVeterancyRank(targetSquad)*0.2)
+				local experienceGranted = math.ceil(amount*Squad_GetHealthMax(targetSquad)/500*(1+Squad_GetVeterancyRank(targetSquad)*0.2))
 				if newHealth == 0 then
 					experienceGranted = experienceGranted * 2
 				else
 					Squad_IncreaseVeterancyExperience(
 						targetSquad,
-						amount*Squad_GetHealthMax(shootingEntitySquad)/500*(1+Squad_GetVeterancyRank(shootingEntitySquad)*0.2) / 10,
+						math.ceil(amount*Squad_GetHealthMax(shootingEntitySquad)/500*(1+Squad_GetVeterancyRank(shootingEntitySquad)*0.2) / 10),
 						false,
 						true
 					)
@@ -129,8 +128,7 @@ local function BtB_Ballistics_ApplyDamage(shootingEntity, target, hitPosition, a
 					shootingEntitySquad,
 					experienceGranted,
 					false,
-					true
-				)
+					true)
 			end
 		end
 		Misc_DoWeaponHitEffectOnEntity(target, hitPosition, Entity_GetWeaponBlueprint(shootingEntity, 0), true)
@@ -181,11 +179,11 @@ local function BtB_Ballistics_GetHitData(target, projectileHeading, vehicleSetti
 	local targetHeading = Entity_GetHeading(target)
 	
 	local angleOfAttack =
-		math.acos((-projectileHeading.x*targetHeading.x - projectileHeading.y*targetHeading.y - projectileHeading.z*targetHeading.z)
+		math.floor(math.acos((-projectileHeading.x*targetHeading.x - projectileHeading.y*targetHeading.y - projectileHeading.z*targetHeading.z)
 		/(
 			math.sqrt(projectileHeading.x^2 + projectileHeading.y^2 + projectileHeading.z^2)*
 			math.sqrt(targetHeading.x^2 + targetHeading.y^2 + targetHeading.z^2))
-		)*180/3.14159
+		)*180/3.14159)
 	
 	if
 			   (angleOfAttack > -frontAndRearAngle and angleOfAttack < frontAndRearAngle)
@@ -205,7 +203,7 @@ local function BtB_Ballistics_GetHitData(target, projectileHeading, vehicleSetti
 			or (angleOfAttack > -(180 - frontAndRearAngle) and angleOfAttack < -(180 + frontAndRearAngle))
 				then
 		damageMultiplier = 1.275
-		slope = 0.3 + math.abs(math.abs(angleOfAttack) - 180) / frontAndRearAngle * 0.7
+		slope = 0.3 + math.floor((math.abs(math.abs(angleOfAttack) - 180) / frontAndRearAngle * 0.7)*10)/10
 		hitType = 3
 		if vehicleSettings[2] then
 			vehicleArmor = vehicleSettings[3]
@@ -227,7 +225,7 @@ local function BtB_Ballistics_GetHitData(target, projectileHeading, vehicleSetti
 			vehicleArmor = vehicleSettings[1]
 		end
 	end
-	slope = 1 - slope
+	slope = math.floor((1 - slope) * 100)/100
 	
 	return slope, damageMultiplier, vehicleArmor, hitType
 end
@@ -355,16 +353,16 @@ local function BtB_Ballistics_ProcessVehicleHit(shootingEntity, target, hitPosit
 	
 	-- Modify base weapon damage for high hitpoint vehicles
 	if Entity_GetHealthMax(target) > 400 then
-		weaponDamage = weaponDamage * (1 + 0.175 * math.max(0, math.min(1, (Entity_GetHealthMax(target) - 400)/350)) * math.max(0, math.min(1, weaponPenetration/vehicleArmor)))
+		weaponDamage = math.ceil(weaponDamage * (1 + 0.175 * math.max(0, math.min(1, (Entity_GetHealthMax(target) - 400)/350)) * math.max(0, math.min(1, weaponPenetration/vehicleArmor))))
 	end
 	
 	-- Slope is not as important if penetration value is larger than vehicle armor
-	slope = math.min(1, slope + math.max(0, weaponPenetration/vehicleArmor/2 - 1))
+	slope = math.floor(math.min(1, slope + math.max(0, weaponPenetration/vehicleArmor/2 - 1))*100)/100
 	
 	-- Apply modifiers for veterancy and entity upgrades
 	weaponDamage, weaponPenetration = BtB_Ballistics_ApplyWeaponModifiers(weaponDamage, weaponPenetration, shootingEntity, target)
 	
-	local penetrationChance = 1000 * math.max(0, weaponPenetration*1.05/vehicleArmor) * (0.9 + slope*0.35)
+	local penetrationChance = math.floor(1000 * math.max(0, weaponPenetration*1.05/vehicleArmor) * (0.9 + slope*0.35))
 	
 	--CustomDebug.Print('Weapon penetration: '..string.format('%.0f', weaponPenetration))
 	--CustomDebug.Print('Vehicle armor: '..string.format('%.0f', vehicleArmor))
@@ -432,35 +430,6 @@ end]]
 
 ---------------------------------------------------------------------------------------------------------
 
-local BtB_Ballistics_Squads = {}
-local BtB_Ballistics_NextPlayerToScan = 1
-
-local function BtB_Ballistics_ScanPlayer(player)
-	local playerIndex = World_GetPlayerIndex(player)
-	local playerSquads = Player_GetSquads(player)
-	for i=1,SGroup_CountSpawned(playerSquads) do
-		local squad = SGroup_GetSpawnedSquadAt(playerSquads, i)
-		local squadGameID = Squad_GetGameID(squad)
-		if not BtB_Ballistics_Squads[playerIndex][squadGameID] then
-			BtB_Ballistics_Squads[playerIndex][squadGameID] = true
-			--Rule_AddSquadEvent(BtB_ProjectileFired, squad, GE_ProjectileFired)
-			Rule_AddSquadEvent(BtB_ProjectileLanded, squad, GE_ProjectileLanded)
-		end
-	end
-end
-function BtB_Ballistics_Event_BuildItemComplete(player, blueprint)
-	BtB_Ballistics_ScanPlayer(player)
-end
-function BtB_Ballistics_ScanNextPlayer()
-	local player = World_GetPlayerAt(BtB_Ballistics_NextPlayerToScan)
-	BtB_Ballistics_ScanPlayer(player)
-	if BtB_Ballistics_NextPlayerToScan == World_GetPlayerCount() then
-		BtB_Ballistics_NextPlayerToScan = 1
-	else
-		BtB_Ballistics_NextPlayerToScan = BtB_Ballistics_NextPlayerToScan + 1
-	end
-end
-
 --[[function BtB_Ballistics_PreviewRule()
 	local s_sg = SGroup_CreateIfNotFound('ballistics_selection')
 	local mo_sg = SGroup_CreateIfNotFound('ballistics_mouseover')
@@ -495,13 +464,7 @@ end
 end]]
 
 function BtB_Ballistics_Init()
-	--Rule_AddGlobalEvent(BtB_ProjectileLanded, GE_ProjectileLanded)
-	for i=1,World_GetPlayerCount() do
-		BtB_Ballistics_Squads[i] = {}
-		Rule_AddPlayerEvent(BtB_Ballistics_Event_BuildItemComplete, World_GetPlayerAt(i), GE_BuildItemComplete)
-		--Rule_AddPlayerEvent(BtB_Ballistics_Event_SpawnActionComplete, World_GetPlayerAt(i), GE_SpawnActionComplete)
-	end
-	Rule_AddInterval(BtB_Ballistics_ScanNextPlayer, 2)
+	Rule_AddGlobalEvent(BtB_ProjectileLanded, GE_ProjectileLanded)
 	--Rule_Add(BtB_Ballistics_PreviewRule)
 end
 Scar_AddInit(BtB_Ballistics_Init)

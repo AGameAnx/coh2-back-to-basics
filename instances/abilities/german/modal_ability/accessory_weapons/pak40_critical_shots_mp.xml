@@ -2,37 +2,31 @@
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
-				<template_reference name="action" value="action\force_reload_action">
-					<int name="hardpoint_index" value="1" />
-					<uniqueid name="id" value="1073743023" />
-				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
-			</list>
-			<list name="start_target_actions">
-				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\german\ballistic_weapon\pak40_critical_shot_mp" />
-					<instance_reference name="decrement_accessory_item" value="" />
-					<bool name="entity_target_only" value="False" />
-					<bool name="force_squad_to_target" value="False" />
-					<bool name="no_decrement" value="True" />
-					<float name="number_of_shots" value="1" />
-					<group name="target_info">
-						<template_reference name="target_info" value="type_ability_target_type\not">
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
-									<enum name="unit_type" value="infantry" />
-								</template_reference>
-							</group>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="2" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 						</template_reference>
-					</group>
-					<uniqueid name="id" value="1073743026" />
+					</list>
+					<uniqueid name="id" value="1073744951" />
 				</template_reference>
 			</list>
+			<list name="start_target_actions">
+			</list>
 		</group>
-		<enum name="activation" value="targeted" />
+		<enum name="activation" value="timed" />
 		<bool name="can_interrupt" value="True" />
 		<bool name="can_target_in_fow" value="False" />
 		<float name="caster_close_in_distance" value="15" />
@@ -49,10 +43,10 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="-1" />
-		<bool name="enable_in_building" value="True" />
+		<float name="duration_time" value="4" />
+		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
-		<bool name="engage_combat" value="True" />
+		<bool name="engage_combat" value="False" />
 		<float name="entity_busy_time" value="0" />
 		<float name="facing_angle" value="40" />
 		<bool name="facing_ignore" value="False" />
@@ -83,7 +77,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
-		<enum name="target" value="tp_entity_and_squad_entity" />
+		<enum name="target" value="tp_position" />
 		<group name="target_special_validation">
 			<template_reference name="target_special_validation" value="type_ability_target_type\has_any_in_list">
 				<list name="target_infos">
@@ -162,6 +156,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="ability_super_event_cue" value="False" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="14" />
 </instance>

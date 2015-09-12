@@ -37,7 +37,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="8" />
+							<float name="value" value="6" />
 							<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -233,6 +233,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="ability_super_event_cue" value="False" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="104" />
 </instance>

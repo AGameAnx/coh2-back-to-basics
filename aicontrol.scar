@@ -1,10 +1,13 @@
 
---import("systems/aimanager/ai.scar")
-
 --string.lpad = function(str, len, char)
 --	if char == nil then char = ' ' end
 --	return string.rep(char, len - string.len(str))..str
 --end
+
+if not g_AIControl_Enable then
+	
+g_AIControl_Enable = true
+g_AIControl_Pause = false
 
 local abs = math.abs
 local min = math.min
@@ -17,9 +20,6 @@ local sort = table.sort
 function AIControl_IsSquadVehicle(squad)
 	return Squad_GetMax(squad) == 1 and Entity_IsVehicle(Squad_EntityAt(squad, 0))
 end
-
-g_AIControl_Enable = true
-g_AIControl_Pause = false
 
 g_AIControl_Components = {
 	RETREAT = true,
@@ -596,6 +596,25 @@ local HMGBlueprints = {
 	['m2hb_50cal_hmg_squad_mp'] = true,
 	
 	['mg34_heavy_machine_gun_squad_mp'] = true,
+	
+	['british_machine_gun_squad_mp'] = true,
+}
+local EmplacementBlueprints = {
+	['fighting_position_mp'] = true,
+	['fighting_position_riflemen_mp'] = true,
+	['aef_mg_nest'] = true,
+	['aef_mg_nest_aef_base'] = true,
+	['aef_mg_nest_perimeter_mp'] = true,
+	
+	['axis_bunker_starting_position_mp'] = true,
+	['bunker_mp'] = true,
+	
+	['machine_gun_nest_mp'] = true,
+	
+	['bunker_westgerman_mp'] = true,
+	['base_flak_gun_mp'] = true,
+	['flak_emplacement'] = true,
+	['flak_emplacement_base'] = true,
 }
 
 local BARRAGE_CONTROL_POSITION
@@ -606,15 +625,17 @@ BARRAGE_CONTROL_POSITION = {
 		if onlyHMGs == nil then onlyHMGs = true end
 		local player = Squad_GetPlayerOwner(squad)
 		local selfPos = Squad_GetPosition(squad)
+		
+		local closestDist = setting.searchrange+5
+		local closestPos = nil
+		
 		local sg = SGroup_CreateIfNotFound('tactics_infrontofmgpos')
 		SGroup_Clear(sg)
 		World_GetSquadsNearPoint(player, sg, selfPos, setting.searchrange, OT_Enemy)
-		local closestDist = setting.searchrange+5
-		local closestPos = nil
 		for i=1,SGroup_CountSpawned(sg) do
 			local s = SGroup_GetSpawnedSquadAt(sg, i)
 			local sbp = removeModID(BP_GetName(Squad_GetBlueprint(s)))
-			if not Squad_IsMoving(s) and not onlyHMGs or HMGBlueprints[sbp] then
+			if not Squad_IsMoving(s) and not Squad_IsRetreating(s) and not Squad_IsSuppressed(s) and not Squad_IsPinned(s) and (not onlyHMGs or HMGBlueprints[sbp]) then
 				local heading = false
 				for j=0,Squad_Count(s)-1 do
 					local e = Squad_EntityAt(s, j)
@@ -639,7 +660,7 @@ BARRAGE_CONTROL_POSITION = {
 				end
 				if posValid then
 					local pos
-					if not onlyHMGs and AIControl_IsSquadVehicle(s) then
+					if not onlyHMGs and (AIControl_IsSquadVehicle(s) or Squad_IsInHoldEntity(s) or Squad_IsInHoldSquad(s)) then
 						pos = squadPos
 					else
 						pos = World_Pos(squadPos.x+heading.x*distanceInFront, squadPos.y, squadPos.z+heading.z*distanceInFront)
@@ -653,6 +674,29 @@ BARRAGE_CONTROL_POSITION = {
 			end
 		end
 		SGroup_Destroy(sg)
+		
+		if closestPos then
+			return closestPos
+		end
+		
+		local eg = EGroup_CreateIfNotFound('tactics_infrontofmgpos')
+		EGroup_Clear(eg)
+		World_GetEntitiesNearPoint(player, eg, selfPos, setting.searchrange, OT_Enemy)
+		for i=1,EGroup_CountSpawned(eg) do
+			local e = EGroup_GetSpawnedEntityAt(eg, i)
+			local ebp = removeModID(BP_GetName(Entity_GetBlueprint(e)))
+			if EmplacementBlueprints[ebp] then
+				local heading = Entity_GetHeading(e)
+				local entityPos = Entity_GetPosition(e)
+				local dist = sqrt((selfPos.x - entityPos.x)^2 + (selfPos.z - entityPos.z)^2)
+				if dist < closestDist then
+					closestDist = dist
+					closestPos = entityPos
+				end
+			end
+		end
+		EGroup_Destroy(eg)
+		
 		if closestPos then
 			return closestPos
 		end
@@ -834,6 +878,19 @@ AIControl.MainControl = {
 					['target_angle_threshold'] = 18
 				},
 				['le_ig_18_inf_support_gun_squad_mp'] = UNIT_CONTROL_PRESET.MORTAR,
+				
+				-- British
+				['british_machine_gun_squad_mp'] = {
+					['safety_radius_steps'] = UNIT_CONTROL_CONST.DEFAULT_SAFETY_SEARCH_RADIUS_STEPS,
+					['setup_target_danger'] = UNIT_CONTROL_CONST.DEFAULT_SETUP_TARGET_DANGER,
+					['move_back_danger'] = UNIT_CONTROL_CONST.DEFAULT_MOVE_BACK_DANGER,
+					['retreat_danger'] = UNIT_CONTROL_CONST.DEFAULT_RETREAT_DANGER,
+					['init_step'] = 1,
+					['step_count'] = 4,
+					['target_angle_threshold'] = 30
+				},
+				['sniper_british_squad_mp'] = UNIT_CONTROL_PRESET.SNIPER,
+				['brit_6_pounder_at_gun_squad_mp'] = UNIT_CONTROL_PRESET.AT_GUN,
 			},
 			
 			HistoryMultiplier = 0.003, --
@@ -865,7 +922,10 @@ AIControl.MainControl = {
 				},
 				['west_german'] = {
 					['sdkfz_251_wurfrahmen_40_halftrack_squad_mp'] = {3, 3},
-				}
+				},
+				['british'] = {
+					['sexton_spg_squad_mp'] = {3, 3},
+				},
 			},
 			DisableCriticals = {
 				BP_GetCriticalBlueprint('critical/vehicle_stuck_in_mud.lua'),
@@ -899,7 +959,10 @@ AIControl.MainControl = {
 				['west_german'] = {
 					['sws_halftrack_squad_sp'] = true,
 					['sws_halftrack_squad_mp'] = true,
-				}
+				},
+				['british'] = {
+				
+				},
 			}
 		},
 		
@@ -2386,7 +2449,7 @@ function AIControl__Init()
 	AIControl_Grid.ResetData(true)
 	AIControl_MainControl.Init()
 	AIControl_Grid.Update()
-	Rule_Add(AIControl_UpdateRule)
+	Rule_AddInterval(AIControl_UpdateRule, 0.25)
 end
 function AIControl_Init()
 	if g_AIControl_Enable then
@@ -2434,5 +2497,10 @@ AIControl_MainControl_Settings_CombatUnitControl = AIControl_MainControl_Setting
 AIControl_MainControl_LockedSquads = AIControl_MainControl.LockedSquads
 
 g_AIControl_MainControl_Settings = AIControl_MainControl.Settings
-
+	
 Scar_AddInit(AIControl_Init)
+
+g_AIControl_Grid = AIControl.Grid
+g_AIControl_MainControl = AIControl.MainControl
+
+end

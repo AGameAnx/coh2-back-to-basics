@@ -20,10 +20,6 @@
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\force_reload_action">
-					<int name="hardpoint_index" value="2" />
-					<uniqueid name="id" value="1073744392" />
-				</template_reference>
 				<template_reference name="action" value="action\artillery_attack">
 					<bool name="disable_parent_hardpoint" value="True" />
 					<group name="filter_weapons">
@@ -35,6 +31,7 @@
 					<float name="use_hardpoint" value="2" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073743292" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
 					<float name="event_extra_param" value="0" />
@@ -164,6 +161,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="ability_super_event_cue" value="False" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="2291" />
 </instance>

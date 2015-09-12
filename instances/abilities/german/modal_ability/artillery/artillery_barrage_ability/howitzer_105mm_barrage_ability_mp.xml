@@ -31,6 +31,7 @@
 					<float name="use_hardpoint" value="2" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073744395" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
 					<float name="event_extra_param" value="0" />
@@ -178,6 +179,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="ability_super_event_cue" value="False" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="25" />
 </instance>

@@ -116,7 +116,7 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="23" mod="23d6cdb82724460dbcb21e1a9162e473" />
+				<locstring name="ui_name" value="11072018" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
 					<float name="command" value="14" />
@@ -175,7 +175,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
-		<bool name="ability_super_event_cue" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
+		<bool name="can_cast_outside_active_battle_field" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="353" />
 </instance>
