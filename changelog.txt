@@ -5,6 +5,9 @@
 -----------------------------------------------------------------
 ## Attributes:
 
+General:
+- Flame dot damage reduced 2.5 -> 2
+
 British:
 - All Bren LMG accuracy normalized at 0.1/0.3/0.7 (tommy damage profile: far (39)=3.10, mid (29)=7.91, near (0)=9.46)
 - Vickers LMG accuracy decreased 0.18/0.3/0.7 -> 0.13/0.27/0.6 (damage profile: far (39)=4.03, mid (29)=7.12, near (0)=8.11)
