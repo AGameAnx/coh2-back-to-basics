@@ -1,6 +1,0 @@
-<instance description="" template="hit_material">
-	<group name="hit_material_bag">
-		<string name="fx_material_name" value="barbwire" />
-	</group>
-	<uniqueid name="pbgid" value="1" />
-</instance>

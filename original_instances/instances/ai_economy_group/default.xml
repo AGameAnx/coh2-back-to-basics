@@ -1,8 +1,0 @@
-<instance description="" template="ai_economy_group">
-	<group name="ai_economy_group_bag">
-		<instance_reference name="default" value="ai_economy\complete\default" />
-		<list name="overrides">
-		</list>
-	</group>
-	<uniqueid name="pbgid" value="17637" />
-</instance>

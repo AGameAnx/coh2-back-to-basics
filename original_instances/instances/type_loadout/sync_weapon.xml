@@ -1,5 +1,0 @@
-<instance description="" template="type_loadout">
-	<template_reference name="type_loadout" value="type_loadout\sync_weapon">
-		<instance_reference name="type" value="" />
-	</template_reference>
-</instance>

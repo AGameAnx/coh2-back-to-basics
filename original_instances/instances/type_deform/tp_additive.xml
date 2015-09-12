@@ -1,4 +1,0 @@
-<instance description="" template="type_deform">
-	<template_reference name="type_deform" value="type_deform\tp_additive">
-	</template_reference>
-</instance>

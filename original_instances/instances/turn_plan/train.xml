@@ -1,9 +1,0 @@
-<instance description="No turns" template="turn_plan">
-	<group name="turn_plan_bag">
-		<float name="match_direction_bonus_seconds" value="0" />
-		<float name="pivot_bonus_seconds" value="0" />
-		<list name="turn_plan">
-		</list>
-	</group>
-	<uniqueid name="pbgid" value="9" />
-</instance>

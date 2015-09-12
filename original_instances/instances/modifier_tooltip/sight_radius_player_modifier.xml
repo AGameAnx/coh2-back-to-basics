@@ -1,4 +1,0 @@
-<instance description="" template="modifier_tooltip">
-	<locstring name="negative_tooltip" value="11001826" />
-	<locstring name="positive_tooltip" value="11001839" />
-</instance>

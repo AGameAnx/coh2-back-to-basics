@@ -1,6 +1,0 @@
-<instance description="" template="camouflage_stance_type">
-	<group name="camouflage_stance_bag">
-		<enum name="combat_stance_value" value="tp_cease_fire" />
-	</group>
-	<uniqueid name="pbgid" value="1" />
-</instance>

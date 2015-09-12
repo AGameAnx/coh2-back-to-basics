@@ -1,4 +1,0 @@
-<instance description="tooltip for squad_popcap_modifier" template="modifier_tooltip">
-	<locstring name="positive_tooltip" value="11076958" />
-	<locstring name="negative_tooltip" value="11076957" />
-</instance>
