@@ -24,7 +24,7 @@
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="90" />
+			<float name="time_seconds" value="70" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="command_panel" />
@@ -124,6 +124,12 @@
 		<locstring name="ui_squad_name_override" value="0" />
 		<locstring name="ui_squad_help_text_override" value="0" />
 		<locstring name="ui_squad_extra_text_override" value="0" />
+		<list name="ui_preview">
+		</list>
+		<list name="on_cancel_actions">
+		</list>
+		<list name="on_begin_actions">
+		</list>
 	</group>
 	<uniqueid name="pbgid" value="3176" />
 </instance>

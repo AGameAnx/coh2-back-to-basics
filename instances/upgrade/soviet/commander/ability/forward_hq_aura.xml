@@ -54,26 +54,26 @@
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
 						<bool name="is_present" value="True" />
-						<instance_reference name="upgrade_name" value="upgrade\soviet\commander\ability\forward_hq_aura" mod="23d6cdb82724460dbcb21e1a9162e473" />
+						<instance_reference name="upgrade_name" value="upgrade\soviet\commander\ability\forward_hq_aura" />
 						<bool name="include_queued" value="False" />
 					</template_reference>
 				</list>
 				<list name="action_table">
 					<template_reference name="action" value="action\add_aura">
-						<instance_reference name="aura" value="aura\soviet_forward_hq_defensive_boost" mod="23d6cdb82724460dbcb21e1a9162e473" />
+						<instance_reference name="aura" value="aura\soviet_forward_hq_defensive_boost" />
 						<group name="area_info">
 							<float name="angle_left" value="0" />
 							<float name="angle_right" value="0" />
 							<enum name="area_type" value="circle" />
-							<float name="radius" value="35" />
+							<float name="radius" value="25" />
 						</group>
 						<template_reference name="target_info" value="type_ability_target_type\allied">
 						</template_reference>
 						<bool name="permanent" value="False" />
-						<uniqueid name="id" value="1073742937" />
+						<uniqueid name="id" value="1073744978" />
 					</template_reference>
 				</list>
-				<uniqueid name="id" value="1073742938" />
+				<uniqueid name="id" value="1073744979" />
 				<bool name="fire_and_forget_non_global" value="False" />
 				<template_reference name="ui_help_text" value="tables\help_text_phrase">
 					<int name="phrase_order" value="0" />
@@ -87,6 +87,12 @@
 		<locstring name="ui_squad_name_override" value="0" />
 		<locstring name="ui_squad_help_text_override" value="0" />
 		<locstring name="ui_squad_extra_text_override" value="0" />
+		<list name="ui_preview">
+		</list>
+		<list name="on_cancel_actions">
+		</list>
+		<list name="on_begin_actions">
+		</list>
 	</group>
 	<uniqueid name="pbgid" value="1963" />
 </instance>
