@@ -19,6 +19,7 @@
 					<float name="use_hardpoint" value="4" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="51489" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -63,13 +64,13 @@
 		<enum name="shared_timer" value="axis_sync_mortar_barrage" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
-			<string name="code_1" value="" />
-			<string name="code_2" value="sb" />
+			<string name="code_1" value="sb" />
+			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="" />
-			<string name="code_2" value="smb" />
+			<string name="code_1" value="smb" />
+			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
@@ -141,6 +142,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="38" />
 </instance>

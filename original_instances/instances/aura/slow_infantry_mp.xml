@@ -31,6 +31,7 @@
 						<bool name="not_retreating" value="True" />
 						<bool name="pinned" value="False" />
 						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 				<list name="action_table">

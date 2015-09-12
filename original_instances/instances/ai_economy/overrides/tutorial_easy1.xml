@@ -325,6 +325,12 @@
 		</group>
 		<list name="player_upgrades">
 		</list>
+		<group name="default_defensive_structure_utility">
+			<float name="utility" value="-1" />
+			<float name="utility_random_range_offset" value="-1" />
+			<float name="per_unit_scale" value="-1" />
+			<float name="per_unit_scale_historical" value="-1" />
+		</group>
 	</group>
 	<uniqueid name="pbgid" value="14945" />
 </instance>

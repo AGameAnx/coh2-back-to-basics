@@ -74,7 +74,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11052849" />
+			<locstring name="extra_text" value="11083449" />
 			<locstring name="help_text" value="11052848" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_commander_cmdr_soviet_rpg_43_at_grenade_assualt" />
@@ -145,6 +145,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="1838" />
 </instance>

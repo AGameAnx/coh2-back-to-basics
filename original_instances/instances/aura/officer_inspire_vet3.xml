@@ -76,6 +76,7 @@
 										<bool name="not_retreating" value="False" />
 										<bool name="pinned" value="False" />
 										<bool name="suppressed" value="False" />
+										<bool name="camouflaged" value="False" />
 									</template_reference>
 								</list>
 							</template_reference>
@@ -121,6 +122,7 @@
 										<bool name="not_retreating" value="False" />
 										<bool name="pinned" value="False" />
 										<bool name="suppressed" value="False" />
+										<bool name="camouflaged" value="False" />
 									</template_reference>
 									<template_reference name="requirement" value="requirements\required_in_cover">
 										<enum name="reason" value="usage" />

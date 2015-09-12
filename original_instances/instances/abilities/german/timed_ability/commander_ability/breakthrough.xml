@@ -18,9 +18,9 @@
 							<list name="target_infos">
 								<template_reference name="info" value="type_ability_target_type\own">
 								</template_reference>
-							</list>
+			</list>
 						</template_reference>
-					</group>
+		</group>
 					<enum name="deprecated_unit_class_type" value="" />
 					<list name="action_table">
 						<template_reference name="action" value="action\apply_modifiers_action">
@@ -83,7 +83,7 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="40" />
+			<float name="fuel" value="50" />
 			<float name="manpower" value="0" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
@@ -210,6 +210,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="1810" />
 </instance>

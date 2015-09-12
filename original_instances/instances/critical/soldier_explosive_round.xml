@@ -14,6 +14,8 @@
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
 			<float name="message_seconds" value="5" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="0" />
 		</group>
 		<enum name="target" value="tp_squad" />
 		<list name="actions">
@@ -52,8 +54,8 @@
 		<list name="requirements">
 		</list>
 		<template_reference name="ui_info" value="tables\ui_info">
-			<locstring name="screen_name" value="0" />
-			<locstring name="help_text" value="0" />
+			<locstring name="screen_name" value="11053655" />
+			<locstring name="help_text" value="11053656" />
 			<icon name="icon_name" value="Icons_criticals_temp_stun" />
 			<string name="hotkey_name" value="" />
 		</template_reference>

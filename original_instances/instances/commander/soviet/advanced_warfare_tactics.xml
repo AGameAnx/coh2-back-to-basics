@@ -22,7 +22,7 @@
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>
 		<list name="commander_abilities">
-			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\t34_85_advanced_unlock" />
+			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\t34_85_unlock" />
 			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\radio_intercept" />
 			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\ability\il-2_sturmovik_attack_advanced" />
 			<instance_reference name="commander_ability" value="commander_ability\soviet\commander\passive\conscript_assault_package" />

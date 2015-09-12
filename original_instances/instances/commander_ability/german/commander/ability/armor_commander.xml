@@ -5,8 +5,11 @@
 		<icon name="icon" value="Icons_vehicles_vehicle_german_panzer_iv_command_tank" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082348" />
+				<locstring name="tag" value="11082334" />
+				<locstring name="tag" value="11082335" />
 			</list>
-			<enum name="rarity" value="uncommon" />
+			<enum name="rarity" value="common" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\german" />
 			</list>

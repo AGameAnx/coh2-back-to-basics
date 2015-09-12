@@ -4,8 +4,8 @@
 			<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\air_dropped_munitions" />
 		</list>
 		<group name="ai_tactic">
-			<string name="entity_target_filter" value="" />
-			<string name="position_target_filter" value="PositionTargetFilter_BestResourceSupplies" />
+			<string name="entity_target_filter" value="EntityTargetFilter_BestResourceSupplies" />
+			<string name="position_target_filter" value="" />
 			<float name="priority" value="0" />
 			<string name="squad_target_filter" value="" />
 			<string name="tactic_filter_start" value="" />

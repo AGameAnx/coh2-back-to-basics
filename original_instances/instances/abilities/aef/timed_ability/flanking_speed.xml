@@ -30,6 +30,7 @@
 									<bool name="not_retreating" value="False" />
 									<bool name="pinned" value="False" />
 									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
 								</template_reference>
 							</list>
 						</template_reference>
@@ -152,7 +153,7 @@
 		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
-			<string name="code_1" value="" />
+			<string name="code_1" value="fn" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -329,6 +330,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="15661" />
 </instance>

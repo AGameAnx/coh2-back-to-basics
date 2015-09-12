@@ -17,7 +17,7 @@
 					<uniqueid name="id" value="186215" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="2" />
+					<float name="delay" value="3.5" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
@@ -34,6 +34,10 @@
 								<float name="loiter_area_radius" value="15" />
 								<float name="loiter_time_sec" value="0" />
 								<bool name="follow_target" value="False" />
+								<float name="lowest_altitude" value="0" />
+								<bool name="loiter_descend" value="False" />
+								<float name="loiter_circling_time_sec" value="0" />
+								<bool name="can_be_targeted" value="True" />
 							</group>
 							<group name="attack_info">
 								<float name="target_lead_in_distance" value="15" />
@@ -67,6 +71,11 @@
 								<int name="phrase_order" value="0" />
 								<locstring name="phrase" value="0" />
 							</template_reference>
+							<list name="additional_loiter_info">
+							</list>
+							<list name="aircraft_on_spawn_actions">
+							</list>
+							<bool name="enable_landing" value="False" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="186216" />
@@ -227,6 +236,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="14912" />
 </instance>

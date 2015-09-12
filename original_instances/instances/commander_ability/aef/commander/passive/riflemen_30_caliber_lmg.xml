@@ -5,8 +5,11 @@
 		<icon name="icon" value="Icons_upgrades_icon_upgrade_aef_m1919a6" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082344" />
+				<locstring name="tag" value="11082294" />
+				<locstring name="tag" value="11082342" />
 			</list>
-			<enum name="rarity" value="epic" />
+			<enum name="rarity" value="common" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\aef" />
 			</list>

@@ -205,7 +205,6 @@
 								<float name="vertical_scale" value="0.006" />
 								<enum name="deform_type" value="tp_additive" />
 							</group>
-							<float name="rotation" value="0" />
 							<float name="scale_x" value="12" />
 							<float name="scale_y" value="12" />
 							<bool name="undoable" value="False" />
@@ -612,12 +611,13 @@
 						<bool name="not_retreating" value="False" />
 						<bool name="pinned" value="True" />
 						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="33" />
+		<int name="ui_position" value="23" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -646,6 +646,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="55" />
 </instance>

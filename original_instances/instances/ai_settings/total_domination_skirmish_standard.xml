@@ -51,16 +51,16 @@
 				<float name="catchup_max_manpower_deficit" value="1000" />
 			</group>
 			<group name="capture">
-				<float name="capture_max_territory_ratio" value="0.8" />
+				<float name="capture_max_territory_ratio" value="1" />
 				<group name="weights">
 					<float name="capture_dist_from_base_weight" value="1" />
 					<float name="capture_threat_weight" value="0.5" />
-					<float name="capture_victory_point_weight" value="0.4" />
+					<float name="capture_victory_point_weight" value="0.1" />
 					<float name="capture_next_to_in_supply_weight" value="0.2" />
 					<float name="capture_next_to_out_of_supply_weight" value="0.5" />
 					<float name="capture_neighbour_weight" value="0.05" />
 				</group>
-				<float name="capture_max_territory_relative_ratio" value="-1" />
+				<float name="capture_max_territory_relative_ratio" value="3" />
 				<enum_table name="max_capture_points_ratio">
 					<float name="fuel_point" value="1" />
 					<float name="munition_point" value="1" />
@@ -69,13 +69,13 @@
 					<float name="tactical_point" value="1" />
 				</enum_table>
 				<enum_table name="max_capture_points_relative_ratio">
-					<float name="fuel_point" value="-1" />
-					<float name="munition_point" value="-1" />
+					<float name="fuel_point" value="1" />
+					<float name="munition_point" value="1" />
 					<float name="null_point" value="-1" />
 					<float name="victory_point" value="-1" />
 					<float name="tactical_point" value="-1" />
 				</enum_table>
-				<int name="capture_min_num_territories" value="3" />
+				<int name="capture_min_num_territories" value="4" />
 				<enum_table name="min_capture_points">
 					<int name="fuel_point" value="1" />
 					<int name="munition_point" value="1" />
@@ -90,11 +90,11 @@
 				<int name="max_num_capture_tasks" value="2" />
 			</group>
 			<group name="army">
-				<float name="max_army_combat_ratio" value="-1" />
+				<float name="max_army_combat_ratio" value="2" />
 				<int name="min_num_units" value="3" />
 				<int name="min_num_capturing_units" value="4" />
 				<int name="min_num_non_support_units" value="3" />
-				<float name="max_capture_points_to_capturing_units_ratio" value="3" />
+				<float name="max_capture_points_to_capturing_units_ratio" value="4" />
 				<float name="min_non_support_units_to_support_units_ratio" value="2" />
 				<bool name="should_reinforce" value="True" />
 			</group>
@@ -125,6 +125,10 @@
 				<float name="none" value="0" />
 			</enum_table>
 			<bool name="use_offensive_player_abilities" value="False" />
+			<group name="reinforce">
+				<float name="reinforce_wait_time" value="15" />
+				<float name="reinforce_failed_retry_wait_time" value="60" />
+			</group>
 		</group>
 		<group name="encounter_positions">
 			<float name="encounter_pos_threat_scale" value="10" />

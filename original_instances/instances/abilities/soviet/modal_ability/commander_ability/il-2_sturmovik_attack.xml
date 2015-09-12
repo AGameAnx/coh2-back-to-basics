@@ -32,6 +32,10 @@
 								<float name="loiter_area_radius" value="60" />
 								<float name="loiter_time_sec" value="80" />
 								<bool name="follow_target" value="False" />
+								<float name="lowest_altitude" value="0" />
+								<bool name="loiter_descend" value="False" />
+								<float name="loiter_circling_time_sec" value="0" />
+								<bool name="can_be_targeted" value="True" />
 							</group>
 							<group name="attack_info">
 								<float name="target_lead_out_distance" value="10" />
@@ -75,6 +79,11 @@
 								<int name="phrase_order" value="0" />
 								<locstring name="phrase" value="0" />
 							</template_reference>
+							<list name="additional_loiter_info">
+							</list>
+							<list name="aircraft_on_spawn_actions">
+							</list>
+							<bool name="enable_landing" value="False" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="52756" />
@@ -220,7 +229,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_airstrike" />
-		<int name="ui_position" value="120" />
+		<int name="ui_position" value="90" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
@@ -249,6 +258,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="269" />
 </instance>

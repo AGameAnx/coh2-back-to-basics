@@ -14,6 +14,8 @@
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
 			<float name="message_seconds" value="10" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="0" />
 		</group>
 		<enum name="target" value="tp_entity" />
 		<list name="actions">
@@ -81,6 +83,21 @@
 				<locstring name="ui_name" value="0" />
 				<instance_reference name="critical_name" value="critical\vehicle_damage_engine" />
 				<bool name="is_present" value="False" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_unit_type">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<enum name="unit_type" value="glider" />
+						<template_reference name="qualify_option" value="options\none">
+						</template_reference>
+						<bool name="search_load_out" value="False" />
+						<bool name="owned_by_player_only" value="False" />
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<template_reference name="ui_info" value="tables\ui_info">

@@ -6,16 +6,6 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
-				<template_reference name="action" value="action\ui_unit_modifier_action">
-					<bool name="die_with_creator" value="True" />
-					<template_reference name="ui_info" value="tables\ui_info">
-						<locstring name="screen_name" value="11046713" />
-						<locstring name="help_text" value="11046712" />
-						<icon name="icon_name" value="Icons_abilities_hold_fire_on" />
-						<string name="hotkey_name" value="" />
-					</template_reference>
-					<uniqueid name="id" value="53319" />
-				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -40,6 +30,7 @@
 									<bool name="not_retreating" value="False" />
 									<bool name="pinned" value="False" />
 									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
 								</template_reference>
 							</list>
 						</template_reference>
@@ -52,6 +43,16 @@
 							<string name="state_machine_name" value="ability_hold_fire_state" />
 							<string name="undo_action_state_name" value="off" />
 							<uniqueid name="id" value="53321" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="True" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="11046713" />
+								<locstring name="help_text" value="11046712" />
+								<icon name="icon_name" value="Icons_abilities_hold_fire_on" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="444470" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="53320" />
@@ -81,6 +82,7 @@
 				</template_reference>
 				<template_reference name="action" value="action\cancel_forced_attack">
 					<uniqueid name="id" value="53323" />
+					<enum name="stop_command" value="attack_stop" />
 				</template_reference>
 			</list>
 		</group>
@@ -197,6 +199,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="379" />
 </instance>

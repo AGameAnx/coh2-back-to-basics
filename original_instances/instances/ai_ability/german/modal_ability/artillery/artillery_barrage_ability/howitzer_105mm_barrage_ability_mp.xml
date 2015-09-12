@@ -7,7 +7,7 @@
 			<string name="entity_target_filter" value="EntityTargetFilter_FirstEnemyStructure" />
 			<string name="position_target_filter" value="" />
 			<float name="priority" value="50" />
-			<string name="squad_target_filter" value="SquadTargetFilter_BestArtillery" />
+			<string name="squad_target_filter" value="SquadTargetFilter_FirstNonMovingEnemy" />
 			<string name="tactic_filter_start" value="" />
 			<float name="tactic_max_range_override" value="-1" />
 			<enum_table name="class">

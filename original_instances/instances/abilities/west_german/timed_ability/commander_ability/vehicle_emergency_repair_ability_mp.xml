@@ -38,6 +38,11 @@
 											<locstring name="ui_name" value="0" />
 											<instance_reference name="race" value="racebps\west_german" />
 										</template_reference>
+										<template_reference name="requirement" value="requirements\required_race">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="race" value="racebps\british" />
+										</template_reference>
 									</list>
 								</template_reference>
 							</list>
@@ -87,6 +92,7 @@
 							<bool name="not_retreating" value="False" />
 							<bool name="pinned" value="False" />
 							<bool name="suppressed" value="False" />
+							<bool name="camouflaged" value="False" />
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -315,6 +321,7 @@
 						<bool name="not_retreating" value="False" />
 						<bool name="pinned" value="False" />
 						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>
@@ -330,6 +337,7 @@
 				<bool name="not_retreating" value="False" />
 				<bool name="pinned" value="False" />
 				<bool name="suppressed" value="False" />
+				<bool name="camouflaged" value="False" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -362,6 +370,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="16449" />
 </instance>

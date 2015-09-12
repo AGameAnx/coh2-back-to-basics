@@ -39,6 +39,7 @@
 					<float name="use_hardpoint" value="2" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="62677" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_BarrageEvent" />
@@ -142,7 +143,7 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_81mm_mortar_barrage" />
-		<float name="ui_reticule_radius_min" value="14" />
+		<float name="ui_reticule_radius_min" value="4.375" />
 		<float name="ui_reticule_radius_max" value="14" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
@@ -166,6 +167,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="2300" />
 </instance>

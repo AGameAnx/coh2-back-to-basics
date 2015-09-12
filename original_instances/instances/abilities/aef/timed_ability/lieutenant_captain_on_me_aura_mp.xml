@@ -17,7 +17,7 @@
 					</group>
 					<bool name="die_with_creator" value="True" />
 					<bool name="do_recalc_targets" value="True" />
-					<float name="duration" value="4" />
+					<float name="duration" value="0.5" />
 					<bool name="entity_targets" value="False" />
 					<instance_reference name="entity_types_to_choose" value="" />
 					<bool name="stationary" value="False" />
@@ -62,7 +62,7 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\timed_action">
 							<float name="duration" value="4" />
-							<bool name="fire_and_forget" value="False" />
+							<bool name="fire_and_forget" value="True" />
 							<list name="subactions">
 								<template_reference name="action" value="action\suppression">
 									<float name="suppression" value="0" />
@@ -70,7 +70,7 @@
 									<float name="supressionrecovertime" value="0" />
 								</template_reference>
 								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="4" />
+									<float name="duration" value="0" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
 										<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
@@ -84,7 +84,7 @@
 										</template_reference>
 										<template_reference name="modifier" value="modifiers\posture_speed_modifier">
 											<enum name="application_type" value="apply_to_squad" />
-											<bool name="exclusive" value="False" />
+											<bool name="exclusive" value="True" />
 											<string name="modifier_id" value="lieutenant" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="addition" />
@@ -118,6 +118,7 @@
 													<bool name="not_retreating" value="False" />
 													<bool name="pinned" value="False" />
 													<bool name="suppressed" value="False" />
+													<bool name="camouflaged" value="False" />
 												</template_reference>
 											</list>
 										</template_reference>
@@ -148,7 +149,7 @@
 						</template_reference>
 						<template_reference name="action" value="action\timed_action">
 							<float name="duration" value="8" />
-							<bool name="fire_and_forget" value="False" />
+							<bool name="fire_and_forget" value="True" />
 							<list name="subactions">
 								<template_reference name="action" value="action\change_target_action">
 									<list name="actions">
@@ -238,7 +239,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="8" />
+		<float name="duration_time" value="0.5" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -343,6 +344,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="15612" />
 </instance>

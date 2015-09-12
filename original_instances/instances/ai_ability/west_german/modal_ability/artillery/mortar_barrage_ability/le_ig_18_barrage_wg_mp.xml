@@ -6,8 +6,8 @@
 		<group name="ai_tactic">
 			<string name="entity_target_filter" value="EntityTargetFilter_FirstEnemyStructure" />
 			<string name="position_target_filter" value="" />
-			<float name="priority" value="85" />
-			<string name="squad_target_filter" value="SquadTargetFilter_BestArtillery" />
+			<float name="priority" value="75" />
+			<string name="squad_target_filter" value="SquadTargetFilter_BestInfantryArtillery" />
 			<string name="tactic_filter_start" value="" />
 			<float name="tactic_max_range_override" value="-1" />
 			<enum_table name="class">

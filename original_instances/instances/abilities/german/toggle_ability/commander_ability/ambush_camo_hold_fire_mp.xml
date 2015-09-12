@@ -8,6 +8,7 @@
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\cancel_forced_attack">
 					<uniqueid name="id" value="51990" />
+					<enum name="stop_command" value="attack_stop" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -49,6 +50,7 @@
 									<bool name="not_retreating" value="False" />
 									<bool name="pinned" value="False" />
 									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
 								</template_reference>
 							</list>
 						</template_reference>
@@ -173,6 +175,14 @@
 				<bool name="is_present" value="True" />
 				<instance_reference name="upgrade_name" value="upgrade\german\commander\ability\ambush_camou_package" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\german\commander\passive\hull_down" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="23" />
@@ -204,6 +214,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="110" />
 </instance>

@@ -159,7 +159,6 @@
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\passive_ability\conscript_ptrs_upgrade" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\il-2_anti_tank_bomb_strike" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\dshk_mp" />
-			<instance_reference name="ability" value="abilities\soviet\timed_ability\throw_away_hack_ui\cmd_advanced_t34_85_medium_tank" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\il-2_sturmovik_attack_advanced" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\allied_air_supplies" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\sherman_soviet_dispatch" />
@@ -168,7 +167,7 @@
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="16" />
+				<float name="command" value="32" />
 				<float name="fuel" value="-1" />
 				<float name="manpower" value="-1" />
 				<float name="munition" value="-1" />
@@ -278,8 +277,8 @@
 				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\weapon_support_center" />
 				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\hq\hq" />
 			</list>
-			<list name="player_upgrade_list">
-				<group name="player_upgrade_info">
+			<list name="unlocking_upgrade_list">
+				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\soviet\research\hq_molotov_grenade_mp" />
 					<instance_reference name="unlocked_ability" value="abilities\soviet\modal_ability\grenades\conscript_molotov_cocktail" />
 					<instance_reference name="unlocked_building" value="" />
@@ -287,7 +286,7 @@
 						<instance_reference name="upgraded_squad" value="sbps\races\soviet\soldiers\conscript_squad\conscript_squad" />
 					</list>
 				</group>
-				<group name="player_upgrade_info">
+				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\soviet\research\hq_anti_tank_grenade_mp" />
 					<instance_reference name="unlocked_ability" value="abilities\soviet\modal_ability\grenades\anti_tank_grenade" />
 					<instance_reference name="unlocked_building" value="" />
@@ -295,10 +294,18 @@
 						<instance_reference name="upgraded_squad" value="sbps\races\soviet\soldiers\conscript_squad\conscript_squad" />
 					</list>
 				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\soviet\research\hq_healing_aura_mp" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
 			</list>
 			<group name="builder_squads">
 				<instance_reference name="base_builder_squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad" />
 				<instance_reference name="obs_post_builder_squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad" />
+				<instance_reference name="defense_builder_squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad" />
 			</group>
 		</group>
 		<list name="team_size_point_resource_multiplier">

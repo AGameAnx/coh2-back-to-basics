@@ -13,7 +13,9 @@
 			<float name="message_colour_b" value="0" />
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
-			<float name="message_seconds" value="1" />
+			<float name="message_seconds" value="6" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="-75" />
 		</group>
 		<enum name="target" value="tp_entity" />
 		<list name="actions">
@@ -33,7 +35,7 @@
 		<list name="requirements">
 		</list>
 		<template_reference name="ui_info" value="tables\ui_info">
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="2164550" />
 			<locstring name="help_text" value="0" />
 			<icon name="icon_name" value="" />
 			<string name="hotkey_name" value="" />

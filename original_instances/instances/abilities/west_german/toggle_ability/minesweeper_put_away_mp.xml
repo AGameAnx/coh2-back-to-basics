@@ -73,7 +73,7 @@
 			</template_reference>
 		</group>
 		<float name="toggled_recharge_time_off" value="0" />
-		<float name="toggled_recharge_time_on" value="1" />
+		<float name="toggled_recharge_time_on" value="0" />
 		<group name="ui_cursor">
 			<string name="cursor_bad" value="modal_ability_cancel" />
 			<string name="cursor_good" value="modal_ability" />
@@ -155,6 +155,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="91312" />
 </instance>

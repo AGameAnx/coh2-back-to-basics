@@ -10,7 +10,7 @@
 			<list name="start_target_actions">
 			</list>
 		</group>
-		<enum name="activation" value="toggle" />
+		<enum name="activation" value="timed" />
 		<bool name="can_interrupt" value="False" />
 		<bool name="can_target_in_fow" value="False" />
 		<float name="caster_close_in_distance" value="2" />
@@ -145,6 +145,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="70" />
 </instance>

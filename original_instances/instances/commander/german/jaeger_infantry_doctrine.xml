@@ -18,16 +18,6 @@
 			</list>
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
-				<template_reference name="metadata" value="item_metadata\content_url_metadata">
-					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2028898/movie480.webm" />
-					<enum name="content_type" value="video" />
-					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2028898/movie.184x123.jpg" />
-				</template_reference>
-				<template_reference name="metadata" value="item_metadata\content_url_metadata">
-					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231466/ss_9707488369dad03eb5a7bc8c5fbf920e79c23279.600x338.jpg" />
-					<enum name="content_type" value="image" />
-					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231466/ss_9707488369dad03eb5a7bc8c5fbf920e79c23279.116x65.jpg" />
-				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="" />
 		</template_reference>

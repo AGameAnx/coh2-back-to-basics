@@ -26,7 +26,6 @@
 			<instance_reference name="commander_ability" value="commander_ability\west_german\commander\ability\mg34_dispatch" />
 			<instance_reference name="commander_ability" value="commander_ability\west_german\commander\ability\panzerfusiler_dispatch" />
 			<instance_reference name="commander_ability" value="commander_ability\west_german\commander\ability\ostwind_dispatch" />
-			<instance_reference name="commander_ability" value="commander_ability\west_german\commander\ability\flame_halftrack_dispatch" />
 			<instance_reference name="commander_ability" value="commander_ability\west_german\commander\ability\jagdtiger" />
 		</list>
 	</group>

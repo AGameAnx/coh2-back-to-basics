@@ -9,11 +9,11 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\sequence_action">
-					<uniqueid name="id" value="450815" />
+					<uniqueid name="id" value="447370" />
 					<list name="action_list_sequences">
 						<list name="actions">
 							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
+								<bool name="disable_parent_hardpoint" value="True" />
 								<group name="filter_weapons">
 									<instance_reference name="weapon_01" value="" />
 									<instance_reference name="weapon_02" value="" />
@@ -22,12 +22,13 @@
 								<float name="num_salvo" value="1" />
 								<float name="use_hardpoint" value="4" />
 								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="450816" />
+								<uniqueid name="id" value="447371" />
+								<bool name="target_override_direction_times_max_range" value="False" />
 							</template_reference>
 						</list>
 						<list name="actions">
 							<template_reference name="action" value="action\delay">
-								<float name="delay" value="6" />
+								<float name="delay" value="5.5" />
 								<float name="delay_min" value="0" />
 								<bool name="progress_bar" value="False" />
 								<bool name="randomize" value="False" />
@@ -42,7 +43,7 @@
 										<int name="number_of_entities_to_spawn" value="1" />
 										<float name="entity_scatter" value="0" />
 										<float name="entity_height_scatter" value="0" />
-										<uniqueid name="id" value="450817" />
+										<uniqueid name="id" value="447372" />
 										<enum name="paradrop_drift_type" value="random_dir" />
 										<template_reference name="scatter_type_option" value="options\none">
 										</template_reference>
@@ -62,11 +63,12 @@
 										</template_reference>
 									</template_reference>
 								</list>
-								<uniqueid name="id" value="450818" />
+								<uniqueid name="id" value="447373" />
 								<bool name="can_prevent_refund" value="True" />
 							</template_reference>
 						</list>
 					</list>
+					<bool name="run_now" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -168,6 +170,7 @@
 						<bool name="not_retreating" value="False" />
 						<bool name="pinned" value="True" />
 						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>
@@ -207,6 +210,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="95493" />
+	<uniqueid name="pbgid" value="95352" />
 </instance>

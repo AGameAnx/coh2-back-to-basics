@@ -5,8 +5,12 @@
 		<icon name="icon" value="Icons_commander_cmdr_aef_air_dropped_combat_group" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082339" />
+				<locstring name="tag" value="11082294" />
+				<locstring name="tag" value="11082334" />
+				<locstring name="tag" value="11082348" />
 			</list>
-			<enum name="rarity" value="uncommon" />
+			<enum name="rarity" value="common" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\aef" />
 			</list>

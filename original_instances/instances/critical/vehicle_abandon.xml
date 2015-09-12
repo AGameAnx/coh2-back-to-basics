@@ -14,9 +14,50 @@
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
 			<float name="message_seconds" value="5" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="0" />
 		</group>
 		<enum name="target" value="tp_entity" />
 		<list name="actions">
+			<template_reference name="action" value="action\requirement_action">
+				<bool name="check_self" value="True" />
+				<bool name="global_fire_and_forget_on_success" value="False" />
+				<bool name="instant_requirement_check" value="True" />
+				<bool name="kill_action_on_failed_requirements" value="False" />
+				<bool name="no_retrigger" value="False" />
+				<bool name="validate_all_sub_actions" value="False" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_squad_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="include_queued" value="False" />
+						<bool name="is_present" value="True" />
+						<instance_reference name="upgrade_name" value="upgrade\british\commander\passive\command_vehicle_active" />
+					</template_reference>
+				</list>
+				<list name="action_table">
+					<template_reference name="action" value="action\player_target_action">
+						<bool name="allies" value="False" />
+						<bool name="enemies" value="False" />
+						<bool name="neutral" value="False" />
+						<bool name="self" value="True" />
+						<list name="subactions">
+							<template_reference name="action" value="action\upgrade_remove">
+								<bool name="apply_to_entities_in_squad" value="False" />
+								<instance_reference name="upgrade" value="upgrade\british\commander\passive\command_vehicle_active_player" />
+								<uniqueid name="id" value="445202" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="445203" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="445204" />
+				<bool name="fire_and_forget_non_global" value="False" />
+				<template_reference name="ui_help_text" value="tables\help_text_phrase">
+					<int name="phrase_order" value="0" />
+					<locstring name="phrase" value="0" />
+				</template_reference>
+			</template_reference>
 			<template_reference name="action" value="action\abandon_action">
 				<uniqueid name="id" value="53587" />
 				<bool name="safe_abandon" value="False" />
@@ -59,6 +100,11 @@
 								<locstring name="ui_name" value="0" />
 								<instance_reference name="race" value="racebps\west_german" />
 							</template_reference>
+							<template_reference name="requirement" value="requirements\required_race">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<instance_reference name="race" value="racebps\british" />
+							</template_reference>
 						</list>
 					</template_reference>
 					<template_reference name="requirement" value="requirements\required_player_upgrade">
@@ -68,6 +114,21 @@
 						<float name="max_completed" value="100" />
 						<float name="min_completed" value="1" />
 						<instance_reference name="upgrade_name" value="upgrade\campaign\disable_abandon_critical_squad" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_unit_type">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<enum name="unit_type" value="glider" />
+						<template_reference name="qualify_option" value="options\none">
+						</template_reference>
+						<bool name="search_load_out" value="False" />
+						<bool name="owned_by_player_only" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>

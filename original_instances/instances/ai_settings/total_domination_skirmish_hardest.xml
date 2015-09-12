@@ -125,6 +125,10 @@
 				<float name="none" value="0" />
 			</enum_table>
 			<bool name="use_offensive_player_abilities" value="False" />
+			<group name="reinforce">
+				<float name="reinforce_wait_time" value="15" />
+				<float name="reinforce_failed_retry_wait_time" value="60" />
+			</group>
 		</group>
 		<group name="encounter_positions">
 			<float name="encounter_pos_threat_scale" value="10" />

@@ -55,12 +55,12 @@
 				<group name="weights">
 					<float name="capture_dist_from_base_weight" value="1" />
 					<float name="capture_threat_weight" value="0.5" />
-					<float name="capture_victory_point_weight" value="0.5" />
+					<float name="capture_victory_point_weight" value="0.1" />
 					<float name="capture_next_to_in_supply_weight" value="0.2" />
 					<float name="capture_next_to_out_of_supply_weight" value="0.5" />
 					<float name="capture_neighbour_weight" value="0.05" />
 				</group>
-				<float name="capture_max_territory_relative_ratio" value="-1" />
+				<float name="capture_max_territory_relative_ratio" value="3" />
 				<enum_table name="max_capture_points_ratio">
 					<float name="fuel_point" value="1" />
 					<float name="munition_point" value="1" />
@@ -75,7 +75,7 @@
 					<float name="victory_point" value="-1" />
 					<float name="tactical_point" value="-1" />
 				</enum_table>
-				<int name="capture_min_num_territories" value="3" />
+				<int name="capture_min_num_territories" value="4" />
 				<enum_table name="min_capture_points">
 					<int name="fuel_point" value="1" />
 					<int name="munition_point" value="1" />
@@ -125,6 +125,10 @@
 				<float name="none" value="0" />
 			</enum_table>
 			<bool name="use_offensive_player_abilities" value="False" />
+			<group name="reinforce">
+				<float name="reinforce_wait_time" value="15" />
+				<float name="reinforce_failed_retry_wait_time" value="60" />
+			</group>
 		</group>
 		<group name="encounter_positions">
 			<float name="encounter_pos_threat_scale" value="10" />

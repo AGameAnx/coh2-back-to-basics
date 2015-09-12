@@ -178,6 +178,7 @@
 								</group>
 							</list>
 							<uniqueid name="id" value="68197" />
+							<bool name="valid_sections_only" value="True" />
 						</template_reference>
 						<template_reference name="action" value="action\timed_action">
 							<float name="duration" value="1" />
@@ -316,7 +317,7 @@
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
-		<enum name="ui_group_cast_type" value="multi" />
+		<enum name="ui_group_cast_type" value="single" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
@@ -331,6 +332,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="14129" />
 </instance>

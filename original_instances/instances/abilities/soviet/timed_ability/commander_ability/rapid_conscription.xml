@@ -47,6 +47,7 @@
 															<bool name="not_retreating" value="False" />
 															<bool name="pinned" value="False" />
 															<bool name="suppressed" value="False" />
+															<bool name="camouflaged" value="False" />
 														</template_reference>
 													</list>
 												</template_reference>
@@ -232,6 +233,30 @@
 							<bool name="trigger_on_squad_death" value="True" />
 						</group>
 						<group name="replace_info">
+							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\partisan_commander_squads\partisans_lmg_mp" />
+							<bool name="trigger_on_squad_death" value="False" />
+						</group>
+						<group name="replace_info">
+							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\partisan_commander_squads\partisans_panzerschreck_mp" />
+							<bool name="trigger_on_squad_death" value="False" />
+						</group>
+						<group name="replace_info">
+							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\partisan_commander_squads\partisans_ptrs_mp" />
+							<bool name="trigger_on_squad_death" value="False" />
+						</group>
+						<group name="replace_info">
+							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\partisan_commander_squads\partisans_rifle_mp" />
+							<bool name="trigger_on_squad_death" value="False" />
+						</group>
+						<group name="replace_info">
+							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\partisan_commander_squads\partisans_smg_mp" />
+							<bool name="trigger_on_squad_death" value="False" />
+						</group>
+						<group name="replace_info">
+							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\soviet_officer_squad\commissar_squad_mp" />
+							<bool name="trigger_on_squad_death" value="False" />
+						</group>
+						<group name="replace_info">
 							<instance_reference name="squad_type_to_monitor" value="sbps\races\soviet\soldiers\partisan_squads\tow_partisan_squad_lmg_squad" />
 							<bool name="trigger_on_squad_death" value="False" />
 						</group>
@@ -380,6 +405,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="324" />
 </instance>

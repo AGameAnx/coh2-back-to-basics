@@ -177,7 +177,7 @@
 			<instance_reference name="ability" value="abilities\west_german\modal_ability\commander_ability\flare_artillery" />
 			<instance_reference name="ability" value="abilities\west_german\modal_ability\commander_ability\passive_ability\infrared_stg44" />
 			<instance_reference name="ability" value="abilities\west_german\timed_ability\commander_ability\breakthrough_tactics" />
-			<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\panzer_iv_group_dispatch" />
+			<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\sturmtiger_dispatch" />
 			<instance_reference name="ability" value="abilities\west_german\timed_ability\commander_ability\signal_flags" />
 			<instance_reference name="ability" value="abilities\west_german\timed_ability\commander_ability\vehicle_critical_repair_unlock" />
 			<instance_reference name="ability" value="abilities\west_german\modal_ability\commander_ability\passive_ability\through_salvage" />
@@ -196,7 +196,7 @@
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="20" />
+				<float name="command" value="32" />
 				<float name="fuel" value="-1" />
 				<float name="manpower" value="-1" />
 				<float name="munition" value="-1" />
@@ -287,11 +287,12 @@
 				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" />
 				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_mp" />
 			</list>
-			<list name="player_upgrade_list">
+			<list name="unlocking_upgrade_list">
 			</list>
 			<group name="builder_squads">
 				<instance_reference name="base_builder_squad" value="sbps\races\west_german\vehicles\sws_halftrack_squad\sws_halftrack_squad_mp" />
 				<instance_reference name="obs_post_builder_squad" value="sbps\races\west_german\soldiers\assault_pioneer_squad\assault_pioneer_squad_mp" />
+				<instance_reference name="defense_builder_squad" value="sbps\races\west_german\soldiers\assault_pioneer_squad\assault_pioneer_squad_mp" />
 			</group>
 		</group>
 		<list name="team_size_point_resource_multiplier">

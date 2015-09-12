@@ -17,18 +17,21 @@
 					<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\infantry_support_mp" />
 					<bool name="query_only" value="True" />
 					<bool name="check_visible" value="False" />
+					<bool name="use_target_entity_facing" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\construct_action">
 					<uniqueid name="id" value="187357" />
 					<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" />
 					<bool name="query_only" value="True" />
 					<bool name="check_visible" value="False" />
+					<bool name="use_target_entity_facing" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\construct_action">
 					<uniqueid name="id" value="187358" />
 					<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\heavy_armor_support_mp" />
 					<bool name="query_only" value="True" />
 					<bool name="check_visible" value="False" />
+					<bool name="use_target_entity_facing" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\sequence_action">
 					<uniqueid name="id" value="186408" />
@@ -63,6 +66,7 @@
 							</template_reference>
 						</list>
 					</list>
+					<bool name="run_now" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -239,6 +243,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="4473" />
 </instance>

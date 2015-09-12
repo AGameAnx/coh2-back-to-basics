@@ -57,6 +57,10 @@
 						<float name="loiter_area_radius" value="1" />
 						<float name="loiter_time_sec" value="0" />
 						<bool name="follow_target" value="False" />
+						<float name="lowest_altitude" value="0" />
+						<bool name="loiter_descend" value="False" />
+						<float name="loiter_circling_time_sec" value="0" />
+						<bool name="can_be_targeted" value="True" />
 					</group>
 					<group name="attack_info">
 						<float name="target_lead_out_distance" value="0" />
@@ -79,6 +83,11 @@
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
+					<list name="additional_loiter_info">
+					</list>
+					<list name="aircraft_on_spawn_actions">
+					</list>
+					<bool name="enable_landing" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -166,16 +175,16 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11051845" />
+				<locstring name="ui_name" value="11071701" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
 					<float name="command" value="3" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />
-					<float name="popcap" value="0" />
 					<float name="soviet_progression" value="0" />
 					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
 				</template_reference>
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
@@ -233,6 +242,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="4315" />
 </instance>

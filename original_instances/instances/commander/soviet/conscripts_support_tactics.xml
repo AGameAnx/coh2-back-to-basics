@@ -19,14 +19,14 @@
 			<bool name="is_in_default_bundle" value="False" />
 			<list name="default_metadata">
 				<template_reference name="metadata" value="item_metadata\content_url_metadata">
-					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2029171/movie480.webm" />
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2029171/movie_max.webm" />
 					<enum name="content_type" value="video" />
 					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2029171/movie.184x123.jpg" />
 				</template_reference>
 				<template_reference name="metadata" value="item_metadata\content_url_metadata">
-					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231460/ss_60ee6ac735e3596a636ea098ad816fef9bd38812.600x338.jpg" />
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231460/ss_60ee6ac735e3596a636ea098ad816fef9bd38812.1920x1080.jpg" />
 					<enum name="content_type" value="image" />
-					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231460/ss_60ee6ac735e3596a636ea098ad816fef9bd38812.116x65.jpg" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231460/ss_60ee6ac735e3596a636ea098ad816fef9bd38812.600x338.jpg" />
 				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="" />

@@ -20,6 +20,7 @@
 						</template_reference>
 					</group>
 					<uniqueid name="id" value="410216" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="1.5" />
@@ -51,7 +52,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="10" />
+			<float name="munition" value="15" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -147,12 +148,12 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="23" />
+		<int name="ui_position" value="22" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_negative" />
-		<float name="ui_reticule_radius_min" value="4" />
+		<float name="ui_reticule_radius_min" value="1" />
 		<float name="ui_reticule_radius_max" value="4" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
@@ -161,12 +162,12 @@
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
-		<enum name="ui_group_cast_type" value="single" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
 			<bool name="map_sector_hq_link_extender" value="False" />
 		</enum_table>
+		<enum name="ui_group_cast_type" value="single" />
 		<list name="requirements_target">
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
@@ -175,36 +176,9 @@
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
-			<template_reference name="required" value="requirements\required_any_in_list">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11075361" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_not">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<list name="requirement_table">
-							<template_reference name="required" value="requirements\required_in_state">
-								<enum name="reason" value="usage" />
-								<locstring name="ui_name" value="0" />
-								<bool name="garrisoned" value="False" />
-								<bool name="healed" value="False" />
-								<float name="in_combat_since" value="3" />
-								<bool name="injured" value="False" />
-								<bool name="leader" value="False" />
-								<bool name="not_moving" value="False" />
-								<bool name="not_retreating" value="False" />
-								<bool name="pinned" value="True" />
-								<bool name="suppressed" value="False" />
-							</template_reference>
-						</list>
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_ability_recharged">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-					</template_reference>
-				</list>
-			</template_reference>
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="17065" />
+	<uniqueid name="pbgid" value="87376" />
 </instance>

@@ -12,176 +12,10 @@
 					<string name="dca_action_name" value="UI\Airstrike_Warning_Smoke" />
 					<float name="duration" value="5" />
 					<bool name="is_terrain_only" value="True" />
-					<uniqueid name="id" value="190538" />
+					<uniqueid name="id" value="469198" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="3" />
-					<float name="delay_min" value="0" />
-					<bool name="progress_bar" value="False" />
-					<bool name="randomize" value="False" />
-					<list name="delayed_actions">
-						<template_reference name="action" value="action\timed_action">
-							<float name="duration" value="45" />
-							<bool name="fire_and_forget" value="False" />
-							<list name="subactions">
-								<template_reference name="action" value="action\sector_highlight">
-									<float name="highlight_r" value="238" />
-									<float name="highlight_g" value="113" />
-									<float name="highlight_b" value="25" />
-									<float name="highlight_a" value="200" />
-									<bool name="self_only" value="False" />
-									<uniqueid name="id" value="190539" />
-									<int name="priority" value="500" />
-								</template_reference>
-								<template_reference name="action" value="action\blip_action">
-									<enum name="blip_type" value="sector_artillery" />
-									<float name="duration" value="0" />
-									<uniqueid name="id" value="190540" />
-								</template_reference>
-								<template_reference name="action" value="action\overwatch_action">
-									<group name="area_info">
-										<float name="angle_left" value="0" />
-										<float name="angle_right" value="0" />
-										<enum name="area_type" value="sector" />
-										<float name="radius" value="0" />
-									</group>
-									<float name="duration" value="15" />
-									<float name="interval" value="15" />
-									<float name="interval_min" value="15" />
-									<float name="interval_multiplier" value="1" />
-									<float name="interval_reset_delay" value="8" />
-									<group name="target_info">
-										<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
-											<list name="target_infos">
-												<template_reference name="info" value="type_ability_target_type\enemy">
-												</template_reference>
-											</list>
-										</template_reference>
-									</group>
-									<list name="trigger_actions">
-										<template_reference name="action" value="action\air_strike_action">
-											<bool name="random_direction" value="False" />
-											<float name="source_offset_x" value="500" />
-											<float name="source_offset_y" value="500" />
-											<float name="source_offset_z" value="50" />
-											<float name="time_range_between_planes_maximum" value="10" />
-											<float name="time_range_between_planes_minimum" value="3" />
-											<bool name="use_long_path" value="True" />
-											<group name="loiter_info">
-												<float name="loiter_area_radius" value="10" />
-												<float name="loiter_time_sec" value="10" />
-												<bool name="follow_target" value="False" />
-											</group>
-											<group name="attack_info">
-												<float name="target_lead_out_distance" value="8" />
-												<float name="target_lead_in_distance" value="16" />
-												<int name="attacks_per_aircraft" value="3" />
-												<float name="delay_between_attack" value="2" />
-												<float name="attack_sway_width" value="3" />
-												<float name="attack_sway_frequency" value="2" />
-												<float name="target_attack_distance" value="225" />
-												<float name="target_attack_time_sec" value="4.25" />
-												<float name="initial_attack_delay" value="0" />
-											</group>
-											<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
-												<list name="target_infos">
-													<template_reference name="info" value="type_ability_target_type\enemy">
-													</template_reference>
-												</list>
-											</template_reference>
-											<int name="number_aircraft" value="1" />
-											<bool name="search_attack_target" value="False" />
-											<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_ground_attack_west_germans_squad" />
-											<uniqueid name="id" value="190541" />
-											<template_reference name="ui_help_text" value="tables\help_text_phrase">
-												<int name="phrase_order" value="0" />
-												<locstring name="phrase" value="0" />
-											</template_reference>
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="190542" />
-								</template_reference>
-								<template_reference name="action" value="action\overwatch_action">
-									<group name="area_info">
-										<float name="angle_left" value="0" />
-										<float name="angle_right" value="0" />
-										<enum name="area_type" value="sector" />
-										<float name="radius" value="0" />
-									</group>
-									<float name="duration" value="15" />
-									<float name="interval" value="15" />
-									<float name="interval_min" value="15" />
-									<float name="interval_multiplier" value="1" />
-									<float name="interval_reset_delay" value="8" />
-									<group name="target_info">
-										<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
-											<list name="target_infos">
-												<template_reference name="info" value="type_ability_target_type\enemy">
-												</template_reference>
-												<template_reference name="info" value="type_ability_target_type\has_unit_type">
-													<enum name="unit_type" value="vehicle" />
-												</template_reference>
-											</list>
-										</template_reference>
-									</group>
-									<list name="trigger_actions">
-										<template_reference name="action" value="action\delay">
-											<float name="delay" value="1" />
-											<float name="delay_min" value="0" />
-											<bool name="progress_bar" value="False" />
-											<bool name="randomize" value="False" />
-											<list name="delayed_actions">
-												<template_reference name="action" value="action\air_strike_action">
-													<bool name="random_direction" value="False" />
-													<float name="source_offset_x" value="1" />
-													<float name="source_offset_y" value="1" />
-													<float name="source_offset_z" value="1" />
-													<float name="time_range_between_planes_maximum" value="10" />
-													<float name="time_range_between_planes_minimum" value="3" />
-													<bool name="use_long_path" value="True" />
-													<group name="loiter_info">
-														<float name="loiter_area_radius" value="10" />
-														<float name="loiter_time_sec" value="10" />
-														<bool name="follow_target" value="False" />
-													</group>
-													<group name="attack_info">
-														<float name="target_lead_in_distance" value="10" />
-														<int name="attacks_per_aircraft" value="3" />
-														<float name="target_lead_out_distance" value="5" />
-														<float name="delay_between_attack" value="1" />
-														<float name="attack_sway_width" value="4" />
-														<float name="attack_sway_frequency" value="2" />
-														<float name="target_attack_distance" value="225" />
-														<float name="target_attack_time_sec" value="4.25" />
-														<float name="initial_attack_delay" value="0" />
-													</group>
-													<template_reference name="target_info" value="type_ability_target_type\is_position">
-													</template_reference>
-													<int name="number_aircraft" value="1" />
-													<bool name="search_attack_target" value="False" />
-													<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_ground_anti_tank_squad" />
-													<uniqueid name="id" value="194438" />
-													<template_reference name="ui_help_text" value="tables\help_text_phrase">
-														<int name="phrase_order" value="0" />
-														<locstring name="phrase" value="0" />
-													</template_reference>
-												</template_reference>
-											</list>
-											<uniqueid name="id" value="194437" />
-											<bool name="can_prevent_refund" value="True" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="190544" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="190545" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="190546" />
-					<bool name="can_prevent_refund" value="True" />
-				</template_reference>
-				<template_reference name="action" value="action\delay">
-					<float name="delay" value="6" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
@@ -198,6 +32,10 @@
 								<float name="loiter_area_radius" value="50" />
 								<float name="loiter_time_sec" value="0" />
 								<bool name="follow_target" value="False" />
+								<float name="lowest_altitude" value="0" />
+								<bool name="loiter_descend" value="False" />
+								<float name="loiter_circling_time_sec" value="0" />
+								<bool name="can_be_targeted" value="True" />
 							</group>
 							<group name="attack_info">
 								<float name="target_lead_in_distance" value="0" />
@@ -214,62 +52,204 @@
 							</template_reference>
 							<int name="number_aircraft" value="1" />
 							<bool name="search_attack_target" value="False" />
-							<instance_reference name="aircraft_squad_name" value="sbps\races\west_german\vehicles\planes\ju52_paratrooper_plane" />
-							<uniqueid name="id" value="194433" />
+							<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_ground_attack_west_germans_squad" />
+							<uniqueid name="id" value="469199" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
 								<locstring name="phrase" value="0" />
 							</template_reference>
+							<list name="additional_loiter_info">
+							</list>
+							<list name="aircraft_on_spawn_actions">
+							</list>
+							<bool name="enable_landing" value="False" />
+						</template_reference>
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="3" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="False" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\air_strike_action">
+									<bool name="random_direction" value="True" />
+									<float name="source_offset_x" value="1" />
+									<float name="source_offset_y" value="1" />
+									<float name="source_offset_z" value="1" />
+									<float name="time_range_between_planes_maximum" value="1" />
+									<float name="time_range_between_planes_minimum" value="1" />
+									<bool name="use_long_path" value="False" />
+									<group name="loiter_info">
+										<float name="loiter_area_radius" value="50" />
+										<float name="loiter_time_sec" value="0" />
+										<bool name="follow_target" value="False" />
+										<float name="lowest_altitude" value="0" />
+										<bool name="loiter_descend" value="False" />
+										<float name="loiter_circling_time_sec" value="0" />
+										<bool name="can_be_targeted" value="True" />
+									</group>
+									<group name="attack_info">
+										<float name="target_lead_in_distance" value="0" />
+										<int name="attacks_per_aircraft" value="1" />
+										<float name="target_lead_out_distance" value="0" />
+										<float name="delay_between_attack" value="1" />
+										<float name="attack_sway_width" value="3" />
+										<float name="attack_sway_frequency" value="2" />
+										<float name="target_attack_distance" value="100" />
+										<float name="target_attack_time_sec" value="2.125" />
+										<float name="initial_attack_delay" value="0" />
+									</group>
+									<template_reference name="target_info" value="type_ability_target_type\is_position">
+									</template_reference>
+									<int name="number_aircraft" value="1" />
+									<bool name="search_attack_target" value="False" />
+									<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_ground_attack_west_germans_squad" />
+									<uniqueid name="id" value="469200" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+									<list name="additional_loiter_info">
+									</list>
+									<list name="aircraft_on_spawn_actions">
+									</list>
+									<bool name="enable_landing" value="False" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="469201" />
+							<bool name="can_prevent_refund" value="True" />
+						</template_reference>
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="7" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="False" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\air_strike_action">
+									<bool name="random_direction" value="True" />
+									<float name="source_offset_x" value="1" />
+									<float name="source_offset_y" value="1" />
+									<float name="source_offset_z" value="1" />
+									<float name="time_range_between_planes_maximum" value="1" />
+									<float name="time_range_between_planes_minimum" value="1" />
+									<bool name="use_long_path" value="False" />
+									<group name="loiter_info">
+										<float name="loiter_area_radius" value="50" />
+										<float name="loiter_time_sec" value="0" />
+										<bool name="follow_target" value="False" />
+										<float name="lowest_altitude" value="0" />
+										<bool name="loiter_descend" value="False" />
+										<float name="loiter_circling_time_sec" value="0" />
+										<bool name="can_be_targeted" value="True" />
+									</group>
+									<group name="attack_info">
+										<float name="target_lead_in_distance" value="0" />
+										<int name="attacks_per_aircraft" value="1" />
+										<float name="target_lead_out_distance" value="0" />
+										<float name="delay_between_attack" value="1" />
+										<float name="attack_sway_width" value="3" />
+										<float name="attack_sway_frequency" value="2" />
+										<float name="target_attack_distance" value="100" />
+										<float name="target_attack_time_sec" value="2.125" />
+										<float name="initial_attack_delay" value="0" />
+									</group>
+									<template_reference name="target_info" value="type_ability_target_type\is_position">
+									</template_reference>
+									<int name="number_aircraft" value="1" />
+									<bool name="search_attack_target" value="False" />
+									<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_ground_attack_west_germans_squad" />
+									<uniqueid name="id" value="469202" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+									<list name="additional_loiter_info">
+									</list>
+									<list name="aircraft_on_spawn_actions">
+									</list>
+									<bool name="enable_landing" value="False" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="469203" />
+							<bool name="can_prevent_refund" value="True" />
+						</template_reference>
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="45" />
+							<bool name="fire_and_forget" value="False" />
+							<list name="subactions">
+								<template_reference name="action" value="action\sector_highlight">
+									<float name="highlight_r" value="238" />
+									<float name="highlight_g" value="113" />
+									<float name="highlight_b" value="25" />
+									<float name="highlight_a" value="200" />
+									<bool name="self_only" value="False" />
+									<uniqueid name="id" value="469204" />
+									<int name="priority" value="500" />
+								</template_reference>
+								<template_reference name="action" value="action\blip_action">
+									<enum name="blip_type" value="sector_artillery" />
+									<float name="duration" value="0" />
+									<uniqueid name="id" value="469205" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="469206" />
+						</template_reference>
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="3.5" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="False" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\air_strike_action">
+									<bool name="random_direction" value="True" />
+									<float name="source_offset_x" value="1" />
+									<float name="source_offset_y" value="1" />
+									<float name="source_offset_z" value="1" />
+									<float name="time_range_between_planes_maximum" value="1" />
+									<float name="time_range_between_planes_minimum" value="1" />
+									<bool name="use_long_path" value="False" />
+									<group name="loiter_info">
+										<float name="loiter_area_radius" value="50" />
+										<float name="loiter_time_sec" value="0" />
+										<bool name="follow_target" value="False" />
+										<float name="lowest_altitude" value="0" />
+										<bool name="loiter_descend" value="False" />
+										<float name="loiter_circling_time_sec" value="0" />
+										<bool name="can_be_targeted" value="True" />
+									</group>
+									<group name="attack_info">
+										<float name="target_lead_in_distance" value="0" />
+										<int name="attacks_per_aircraft" value="1" />
+										<float name="target_lead_out_distance" value="0" />
+										<float name="delay_between_attack" value="1" />
+										<float name="attack_sway_width" value="3" />
+										<float name="attack_sway_frequency" value="2" />
+										<float name="target_attack_distance" value="100" />
+										<float name="target_attack_time_sec" value="2.125" />
+										<float name="initial_attack_delay" value="0" />
+									</group>
+									<template_reference name="target_info" value="type_ability_target_type\is_position">
+									</template_reference>
+									<int name="number_aircraft" value="1" />
+									<bool name="search_attack_target" value="False" />
+									<instance_reference name="aircraft_squad_name" value="sbps\races\west_german\vehicles\planes\ju52_paratrooper_plane" />
+									<uniqueid name="id" value="469207" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+									<list name="additional_loiter_info">
+									</list>
+									<list name="aircraft_on_spawn_actions">
+									</list>
+									<bool name="enable_landing" value="False" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="469208" />
+							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="190548" />
+					<uniqueid name="id" value="469209" />
 					<bool name="can_prevent_refund" value="True" />
-				</template_reference>
-				<template_reference name="action" value="action\air_strike_action">
-					<bool name="random_direction" value="True" />
-					<float name="source_offset_x" value="1" />
-					<float name="source_offset_y" value="1" />
-					<float name="source_offset_z" value="1" />
-					<float name="time_range_between_planes_maximum" value="10" />
-					<float name="time_range_between_planes_minimum" value="3" />
-					<bool name="use_long_path" value="False" />
-					<group name="loiter_info">
-						<float name="loiter_area_radius" value="75" />
-						<float name="loiter_time_sec" value="0" />
-						<bool name="follow_target" value="False" />
-					</group>
-					<group name="attack_info">
-						<float name="target_lead_in_distance" value="1" />
-						<int name="attacks_per_aircraft" value="4" />
-						<float name="target_lead_out_distance" value="5" />
-						<float name="delay_between_attack" value="10" />
-						<float name="attack_sway_width" value="0" />
-						<float name="attack_sway_frequency" value="0" />
-						<float name="target_attack_distance" value="150" />
-						<float name="target_attack_time_sec" value="8" />
-						<float name="initial_attack_delay" value="5" />
-					</group>
-					<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
-						<list name="target_infos">
-							<template_reference name="info" value="type_ability_target_type\enemy">
-							</template_reference>
-							<template_reference name="info" value="type_ability_target_type\has_any_in_list">
-								<list name="target_infos">
-									<template_reference name="info" value="type_ability_target_type\has_unit_type">
-										<enum name="unit_type" value="aircraft" />
-									</template_reference>
-								</list>
-							</template_reference>
-						</list>
-					</template_reference>
-					<int name="number_aircraft" value="1" />
-					<bool name="search_attack_target" value="False" />
-					<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_air_cap_squad" />
-					<uniqueid name="id" value="194371" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
 				</template_reference>
 			</list>
 		</group>
@@ -310,7 +290,7 @@
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
-		<bool name="require_no_shot_block" value="False" />
+		<bool name="require_no_shot_block" value="True" />
 		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
@@ -433,6 +413,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="15252" />
 </instance>

@@ -1,6 +1,6 @@
 <instance description="" template="commander_ability">
 	<group name="commander_ability_bag">
-		<locstring name="name" value="11071422" />
+		<locstring name="name" value="11095369" />
 		<locstring name="description" value="11071421" />
 		<icon name="icon" value="Icons_commander_cmdr_west_german_veteran_panzer_iv_battle_group" />
 		<template_reference name="server_item" value="server_item">

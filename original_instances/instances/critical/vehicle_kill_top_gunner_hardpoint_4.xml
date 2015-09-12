@@ -14,6 +14,8 @@
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
 			<float name="message_seconds" value="5" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="0" />
 		</group>
 		<enum name="target" value="tp_entity" />
 		<list name="actions">
@@ -259,6 +261,13 @@
 						<bool name="include_queued" value="False" />
 						<bool name="is_present" value="True" />
 						<instance_reference name="upgrade_name" value="upgrade\soviet\items\isu152_top_gunner_mp" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_squad_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="include_queued" value="False" />
+						<bool name="is_present" value="True" />
+						<instance_reference name="upgrade_name" value="upgrade\british\items\universal_carrier_vickers_k_package_upgrade_mp" />
 					</template_reference>
 				</list>
 			</template_reference>

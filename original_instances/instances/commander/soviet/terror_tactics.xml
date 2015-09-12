@@ -24,9 +24,9 @@
 					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/2028947/movie.184x123.jpg" />
 				</template_reference>
 				<template_reference name="metadata" value="item_metadata\content_url_metadata">
-					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231463/ss_8f6eb336e643c0892ca832a1292655546ddf013f.600x338.jpg" />
+					<string name="content_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231463/ss_8f6eb336e643c0892ca832a1292655546ddf013f.1920x1080.jpg" />
 					<enum name="content_type" value="image" />
-					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231463/ss_8f6eb336e643c0892ca832a1292655546ddf013f.116x65.jpg" />
+					<string name="content_small_url" value="http://cdn.akamai.steamstatic.com/steam/apps/231463/ss_8f6eb336e643c0892ca832a1292655546ddf013f.600x338.jpg" />
 				</template_reference>
 			</list>
 			<instance_reference name="inventory_item_category" value="" />

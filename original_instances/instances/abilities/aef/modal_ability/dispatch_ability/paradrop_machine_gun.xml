@@ -67,6 +67,10 @@
 						<float name="loiter_area_radius" value="1" />
 						<float name="loiter_time_sec" value="0" />
 						<bool name="follow_target" value="False" />
+						<float name="lowest_altitude" value="0" />
+						<bool name="loiter_descend" value="False" />
+						<float name="loiter_circling_time_sec" value="0" />
+						<bool name="can_be_targeted" value="True" />
 					</group>
 					<group name="attack_info">
 						<float name="target_lead_out_distance" value="0" />
@@ -89,6 +93,11 @@
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
+					<list name="additional_loiter_info">
+					</list>
+					<list name="aircraft_on_spawn_actions">
+					</list>
+					<bool name="enable_landing" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -159,7 +168,7 @@
 			<locstring name="extra_text" value="11068287" />
 			<locstring name="help_text" value="11052671" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_vehicles_vehicle_aef_browning_m2_50cal_hmg" />
+			<icon name="icon_name" value="Icons_commander_cmdr_aef_air_dropped_browning" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11052670" />
@@ -227,6 +236,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="2330" />
 </instance>

@@ -8,36 +8,53 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\aef\explosive_weapon\grenade\rifleman_at_rifle_grenade" />
-					<instance_reference name="decrement_accessory_item" value="" />
-					<bool name="entity_target_only" value="False" />
-					<bool name="force_squad_to_target" value="False" />
-					<bool name="no_decrement" value="True" />
-					<float name="number_of_shots" value="1" />
-					<group name="target_info">
-						<template_reference name="target_info" value="type_ability_target_type\all">
-						</template_reference>
-					</group>
-					<uniqueid name="id" value="258955" />
-				</template_reference>
-				<template_reference name="action" value="action\delay">
-					<float name="delay" value="1.5" />
-					<float name="delay_min" value="0" />
-					<bool name="progress_bar" value="False" />
-					<bool name="randomize" value="False" />
-					<list name="delayed_actions">
-						<template_reference name="action" value="action\game_event_action">
-							<float name="event_extra_param" value="0" />
-							<float name="event_param_begin" value="1" />
-							<float name="event_param_end" value="-1" />
-							<enum name="event_type" value="grenade" />
-							<bool name="event_send_to_target_player" value="False" />
-							<uniqueid name="id" value="258953" />
-						</template_reference>
+				<template_reference name="action" value="action\sequence_action">
+					<uniqueid name="id" value="448423" />
+					<list name="action_list_sequences">
+						<list name="actions">
+							<template_reference name="action" value="action\force_reload_action">
+								<int name="hardpoint_index" value="1" />
+								<uniqueid name="id" value="448424" />
+							</template_reference>
+						</list>
+						<list name="actions">
+							<template_reference name="action" value="action\use_accessory_weapon">
+								<instance_reference name="accessory_weapon_item" value="slot_item\aef\explosive_weapon\grenade\rifleman_at_rifle_grenade" />
+								<instance_reference name="decrement_accessory_item" value="" />
+								<bool name="entity_target_only" value="False" />
+								<bool name="force_squad_to_target" value="False" />
+								<bool name="no_decrement" value="True" />
+								<float name="number_of_shots" value="1" />
+								<group name="target_info">
+									<template_reference name="target_info" value="type_ability_target_type\all">
+									</template_reference>
+								</group>
+								<uniqueid name="id" value="448425" />
+								<bool name="target_override_direction_times_max_range" value="False" />
+							</template_reference>
+						</list>
+						<list name="actions">
+							<template_reference name="action" value="action\delay">
+								<float name="delay" value="1.5" />
+								<float name="delay_min" value="0" />
+								<bool name="progress_bar" value="False" />
+								<bool name="randomize" value="False" />
+								<list name="delayed_actions">
+									<template_reference name="action" value="action\game_event_action">
+										<float name="event_extra_param" value="0" />
+										<float name="event_param_begin" value="1" />
+										<float name="event_param_end" value="-1" />
+										<enum name="event_type" value="grenade" />
+										<bool name="event_send_to_target_player" value="False" />
+										<uniqueid name="id" value="448426" />
+									</template_reference>
+								</list>
+								<uniqueid name="id" value="448427" />
+								<bool name="can_prevent_refund" value="False" />
+							</template_reference>
+						</list>
 					</list>
-					<uniqueid name="id" value="258954" />
-					<bool name="can_prevent_refund" value="False" />
+					<bool name="run_now" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -156,6 +173,7 @@
 						<bool name="not_retreating" value="False" />
 						<bool name="pinned" value="True" />
 						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>
@@ -195,6 +213,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="16611" />
 </instance>

@@ -364,6 +364,7 @@
 																					<bool name="not_retreating" value="False" />
 																					<bool name="pinned" value="False" />
 																					<bool name="suppressed" value="False" />
+																					<bool name="camouflaged" value="False" />
 																				</template_reference>
 																			</list>
 																		</template_reference>
@@ -757,6 +758,7 @@
 																			<bool name="not_retreating" value="False" />
 																			<bool name="pinned" value="False" />
 																			<bool name="suppressed" value="False" />
+																			<bool name="camouflaged" value="False" />
 																		</template_reference>
 																	</list>
 																</template_reference>
@@ -1093,6 +1095,7 @@
 																			<bool name="not_retreating" value="False" />
 																			<bool name="pinned" value="False" />
 																			<bool name="suppressed" value="False" />
+																			<bool name="camouflaged" value="False" />
 																		</template_reference>
 																	</list>
 																</template_reference>
@@ -1418,6 +1421,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="17921" />
 </instance>

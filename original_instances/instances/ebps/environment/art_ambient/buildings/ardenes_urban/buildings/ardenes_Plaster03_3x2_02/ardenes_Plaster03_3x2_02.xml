@@ -48,6 +48,8 @@
 			<float name="extra_build_test_footprint" value="0" />
 			<bool name="require_all_cells_clear" value="True" />
 			<bool name="snap_to_terrain" value="False" />
+			<bool name="ignore_impass" value="False" />
+			<bool name="lock_to_impass" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext">
 			<bool name="ap_killed_kicker" value="True" />
@@ -100,14 +102,14 @@
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
 			<icon name="minimap_icon" value="" />
-			<string name="portrait_icon_winter" value="Icons_portraits_building_common_ardennes_plaster_white_w_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_building_common_ardennes_plaster_white_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<string name="portrait_icon_summer" value="Icons_portraits_building_common_ardennes_plaster_white_s_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_building_common_ardennes_plaster_white_s_portrait" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="extra_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -143,6 +145,13 @@
 			<bool name="revert_on_transfer" value="True" />
 			<bool name="spawner_ext" value="True" />
 			<bool name="supply_ext" value="True" />
+			<string name="production_style_key" value="" />
+			<list name="race_flag_animator_states">
+				<template_reference name="flag_race_state" value="flag_race_state">
+					<int name="value" value="3" />
+					<instance_reference name="racebag" value="racebps\british" />
+				</template_reference>
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
 			<bool name="can_repair" value="False" />
@@ -208,18 +217,52 @@
 					<float name="max_health_percentage" value="1" />
 					<list name="critical_info">
 						<group name="info">
-							<float name="weight" value="100" />
+							<float name="weight" value="50" />
 							<enum_table name="applicable_weapons">
 								<bool name="small_arms" value="True" />
 								<bool name="flame" value="False" />
 								<bool name="ballistic" value="True" />
-								<bool name="explosive" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="False" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\building_panel_damage_critical" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
+						</group>
+						<group name="info">
+							<float name="weight" value="25" />
+							<enum_table name="applicable_weapons">
+								<bool name="small_arms" value="True" />
+								<bool name="flame" value="False" />
+								<bool name="ballistic" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
+							</enum_table>
+							<instance_reference name="critical" value="critical\_no_critical" />
+							<enum_table name="applicable_hit_direction">
+								<bool name="front" value="True" />
+								<bool name="rear" value="True" />
+							</enum_table>
+							<enum name="apply_on" value="penetrate" />
+						</group>
+						<group name="info">
+							<float name="weight" value="25" />
+							<enum_table name="applicable_weapons">
+								<bool name="small_arms" value="True" />
+								<bool name="flame" value="False" />
+								<bool name="ballistic" value="True" />
+								<bool name="big_explosive" value="True" />
+								<bool name="small_explosive" value="True" />
+							</enum_table>
+							<instance_reference name="critical" value="critical\_no_critical" />
+							<enum_table name="applicable_hit_direction">
+								<bool name="front" value="True" />
+								<bool name="rear" value="True" />
+							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 						<group name="info">
 							<float name="weight" value="100" />
@@ -227,13 +270,15 @@
 								<bool name="small_arms" value="False" />
 								<bool name="flame" value="True" />
 								<bool name="ballistic" value="False" />
-								<bool name="explosive" value="False" />
+								<bool name="big_explosive" value="False" />
+								<bool name="small_explosive" value="False" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\building_fire_damage_panel" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
 							</enum_table>
+							<enum name="apply_on" value="penetrate" />
 						</group>
 					</list>
 				</group>
@@ -241,6 +286,10 @@
 			<float name="weapon_priority" value="-40" />
 			<template_reference name="wreck_entity_option" value="options\none">
 			</template_reference>
+			<list name="self_destruct_actions">
+			</list>
+			<list name="rebuilt_entity_actions">
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hit_object_ext">
 			<instance_reference name="hit_material" value="hit_material\stucco" />
@@ -282,13 +331,13 @@
 			<float name="animated_spawning_seconds" value="0" />
 			<bool name="must_be_in_supply" value="False" />
 			<float name="reinforce_radius" value="25" />
-			<bool name="spawn_at_map_entry_point" value="False" />
 			<list name="spawn_items">
 			</list>
 			<list name="bonus_xp_from_hold_list">
 			</list>
 			<list name="reinforce_requirements">
 			</list>
+			<bool name="spawn_to_hold_try_first" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\supply_ext">
 			<bool name="default_on" value="False" />
@@ -343,9 +392,9 @@
 			<bool name="enable_trigger_attack_in_hold" value="False" />
 			<bool name="holds_produced_squads" value="False" />
 			<bool name="keep_abandoned_team_weapon" value="False" />
-			<float name="load_seconds" value="1" />
-			<float name="max_load_seconds" value="5" />
-			<float name="min_hold_seconds" value="1" />
+			<float name="load_seconds" value="0" />
+			<float name="max_load_seconds" value="0" />
+			<float name="min_hold_seconds" value="0" />
 			<float name="num_slots" value="12" />
 			<float name="num_squad_slots" value="2" />
 			<float name="percent_unload_on_death" value="0" />
@@ -360,7 +409,7 @@
 				<float name="popcap" value="0" />
 			</group>
 			<bool name="shared_with_other_same_type_units" value="False" />
-			<float name="unload_seconds" value="0.5" />
+			<float name="unload_seconds" value="0" />
 			<bool name="use_building_target_scan_radius" value="True" />
 			<bool name="use_crouching_posture" value="False" />
 			<list name="on_loaded_hold_actions">

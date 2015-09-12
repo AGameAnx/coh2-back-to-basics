@@ -347,6 +347,12 @@
 				<float name="value" value="1" />
 			</group>
 		</list>
+		<group name="default_defensive_structure_utility">
+			<float name="utility" value="90" />
+			<float name="utility_random_range_offset" value="10" />
+			<float name="per_unit_scale" value="0.3" />
+			<float name="per_unit_scale_historical" value="0.2" />
+		</group>
 	</group>
 	<uniqueid name="pbgid" value="0" />
 </instance>

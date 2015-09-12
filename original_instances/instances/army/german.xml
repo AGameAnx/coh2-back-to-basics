@@ -54,7 +54,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="20" />
-			<float name="manpower" value="360" />
+			<float name="manpower" value="420" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -168,7 +168,7 @@
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="16" />
+				<float name="command" value="32" />
 				<float name="fuel" value="-1" />
 				<float name="manpower" value="-1" />
 				<float name="munition" value="-1" />
@@ -278,11 +278,12 @@
 				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\hintere_panzerwerk" />
 				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\schweres_kriegswerk" />
 			</list>
-			<list name="player_upgrade_list">
+			<list name="unlocking_upgrade_list">
 			</list>
 			<group name="builder_squads">
 				<instance_reference name="base_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
 				<instance_reference name="obs_post_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
+				<instance_reference name="defense_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
 			</group>
 		</group>
 		<list name="team_size_point_resource_multiplier">

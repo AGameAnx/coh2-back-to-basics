@@ -14,6 +14,8 @@
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
 			<float name="message_seconds" value="10" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="0" />
 		</group>
 		<enum name="target" value="tp_entity" />
 		<list name="actions">
@@ -81,6 +83,7 @@
 						<bool name="not_retreating" value="False" />
 						<bool name="pinned" value="False" />
 						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>

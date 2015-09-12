@@ -20,6 +20,7 @@
 						</template_reference>
 					</group>
 					<uniqueid name="id" value="275660" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="2.5" />
@@ -154,6 +155,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="17093" />
 </instance>

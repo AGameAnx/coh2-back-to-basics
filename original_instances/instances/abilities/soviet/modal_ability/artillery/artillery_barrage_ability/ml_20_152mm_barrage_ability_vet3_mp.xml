@@ -23,10 +23,11 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="4" />
+					<float name="num_salvo" value="10" />
 					<float name="use_hardpoint" value="4" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="52642" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
 					<float name="event_extra_param" value="0" />
@@ -114,7 +115,7 @@
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11048908" />
 			<icon name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="11048905" />
+			<locstring name="brief_text" value="11097080" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -160,6 +161,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="234" />
 </instance>

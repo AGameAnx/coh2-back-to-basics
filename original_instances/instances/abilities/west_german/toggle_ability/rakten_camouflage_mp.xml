@@ -6,22 +6,6 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
-				<template_reference name="action" value="action\change_target_action">
-					<list name="actions">
-						<template_reference name="action" value="action\ui_unit_modifier_action">
-							<bool name="die_with_creator" value="False" />
-							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="11095087" />
-								<locstring name="help_text" value="11095089" />
-								<icon name="icon_name" value="Icons_abilities_ability_west_german_camouflage_at" />
-								<string name="hotkey_name" value="" />
-							</template_reference>
-							<uniqueid name="id" value="440272" />
-						</template_reference>
-					</list>
-					<enum name="change_target_type" value="squad" />
-					<uniqueid name="id" value="440273" />
-				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
 					<bool name="permanent" value="False" />
@@ -37,6 +21,113 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="440274" />
+				</template_reference>
+				<template_reference name="action" value="action\change_target_action">
+					<list name="actions">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_not">
+									<enum name="reason" value="" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_in_state">
+											<enum name="reason" value="usage_and_display" />
+											<locstring name="ui_name" value="0" />
+											<bool name="garrisoned" value="True" />
+											<bool name="healed" value="False" />
+											<float name="in_combat_since" value="-1" />
+											<bool name="injured" value="False" />
+											<bool name="leader" value="False" />
+											<bool name="not_moving" value="False" />
+											<bool name="not_retreating" value="False" />
+											<bool name="pinned" value="False" />
+											<bool name="suppressed" value="False" />
+										<bool name="camouflaged" value="False" />
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11095087" />
+										<locstring name="help_text" value="11095089" />
+										<icon name="icon_name" value="Icons_abilities_ability_west_german_camouflage_at" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="464741" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="464740" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="3" />
+								</template_reference>
+								<template_reference name="required" value="requirements\required_not">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_in_state">
+											<enum name="reason" value="usage_and_display" />
+											<locstring name="ui_name" value="0" />
+											<bool name="garrisoned" value="True" />
+											<bool name="healed" value="False" />
+											<float name="in_combat_since" value="10" />
+											<bool name="injured" value="False" />
+											<bool name="leader" value="False" />
+											<bool name="not_moving" value="False" />
+											<bool name="not_retreating" value="False" />
+											<bool name="pinned" value="False" />
+											<bool name="suppressed" value="False" />
+										<bool name="camouflaged" value="False" />
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11069430" />
+										<locstring name="help_text" value="11069434" />
+										<icon name="icon_name" value="Icons_abilities_ability_aef_first_strike" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="464042" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="464043" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<enum name="change_target_type" value="squad" />
+					<uniqueid name="id" value="440273" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="True" />
@@ -118,6 +209,29 @@
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
+			<template_reference name="action" value="action\change_target_action">
+					<list name="actions">
+						<template_reference name="action" value="action\override_weapon_target_prereq_action">
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="True" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<instance_reference name="weapon_to_override" value="weapon\west_german\small_arms\single_fire\rifle\volksgrenadier_kar_98k_rifle_mp" />
+							<uniqueid name="id" value="467838" />
+							<bool name="auto_attack_only" value="True" />
+							<bool name="persist_on_weapon_change" value="True" />
+						</template_reference>
+					</list>
+					<enum name="change_target_type" value="entities" />
+					<uniqueid name="id" value="467839" />
+				</template_reference>
 			</list>
 		</group>
 		<enum name="activation" value="toggle" />
@@ -202,6 +316,26 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_in_state">
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<bool name="garrisoned" value="True" />
+						<bool name="healed" value="False" />
+						<float name="in_combat_since" value="-1" />
+						<bool name="injured" value="False" />
+						<bool name="leader" value="False" />
+						<bool name="not_moving" value="False" />
+						<bool name="not_retreating" value="False" />
+						<bool name="pinned" value="False" />
+						<bool name="suppressed" value="False" />
+					<bool name="camouflaged" value="False" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="31" />
@@ -233,6 +367,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="94011" />
 </instance>

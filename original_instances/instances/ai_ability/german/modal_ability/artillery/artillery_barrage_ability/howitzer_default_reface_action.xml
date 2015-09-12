@@ -4,10 +4,10 @@
 			<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\howitzer_default_reface_action" />
 		</list>
 		<group name="ai_tactic">
-			<string name="entity_target_filter" value="EntityTargetFilter_FirstEnemyStructure" />
+			<string name="entity_target_filter" value="" />
 			<string name="position_target_filter" value="" />
-			<float name="priority" value="50" />
-			<string name="squad_target_filter" value="SquadTargetFilter_BestArtillery" />
+			<float name="priority" value="-1" />
+			<string name="squad_target_filter" value="" />
 			<string name="tactic_filter_start" value="" />
 			<float name="tactic_max_range_override" value="-1" />
 			<enum_table name="class">

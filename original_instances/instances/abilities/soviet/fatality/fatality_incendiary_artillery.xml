@@ -103,7 +103,7 @@
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_abilities_ability_incendiary_artillery" />
+			<icon name="icon_name" value="Icons_fatalities_fatality_incendiary_artillery" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11072644" />
@@ -149,6 +149,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="16901" />
 </instance>

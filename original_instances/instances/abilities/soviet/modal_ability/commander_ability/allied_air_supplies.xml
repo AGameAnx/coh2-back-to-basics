@@ -26,6 +26,10 @@
 						<float name="loiter_area_radius" value="50" />
 						<float name="loiter_time_sec" value="0" />
 						<bool name="follow_target" value="False" />
+						<float name="lowest_altitude" value="0" />
+						<bool name="loiter_descend" value="False" />
+						<float name="loiter_circling_time_sec" value="0" />
+						<bool name="can_be_targeted" value="True" />
 					</group>
 					<group name="attack_info">
 						<float name="target_lead_in_distance" value="0" />
@@ -48,6 +52,11 @@
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
+					<list name="additional_loiter_info">
+					</list>
+					<list name="aircraft_on_spawn_actions">
+					</list>
+					<bool name="enable_landing" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -118,7 +127,7 @@
 			<locstring name="extra_text" value="11072088" />
 			<locstring name="help_text" value="11072089" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_commander_cmdr_german_air_dropped_medical_supplies" />
+			<icon name="icon_name" value="Icons_commander_cmdr_soviet_allied_supply_drop" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11072090" />
@@ -194,6 +203,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="16629" />
 </instance>

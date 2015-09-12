@@ -8,31 +8,9 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\reinforcements_action">
-					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="14" />
-					<float name="points_total" value="0" />
-					<bool name="spawn_random_squads" value="False" />
-					<list name="entity_table">
-					</list>
-					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\aef\vehicles\m4a3_sherman_squad\m4a3e8_sherman_easy_8_squad_mp" />
-					</list>
-					<bool name="use_attack_move" value="False" />
-					<uniqueid name="id" value="70797" />
-					<bool name="ignore_requirements" value="False" />
-				</template_reference>
-				<template_reference name="action" value="action\game_event_action">
-					<float name="event_extra_param" value="0" />
-					<float name="event_param_begin" value="1" />
-					<float name="event_param_end" value="-1" />
-					<enum name="event_type" value="flag_drop" />
-					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="70798" />
-				</template_reference>
 			</list>
 		</group>
-		<enum name="activation" value="targeted" />
+		<enum name="activation" value="timed" />
 		<bool name="can_interrupt" value="False" />
 		<bool name="can_target_in_fow" value="True" />
 		<float name="caster_close_in_distance" value="2" />
@@ -40,8 +18,8 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="145" />
-			<float name="manpower" value="400" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="0" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -102,7 +80,7 @@
 			<icon name="icon_name" value="Icons_vehicles_vehicle_aef_m4a3e8_sherman" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11055679" />
+			<locstring name="screen_name" value="11096386" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -122,23 +100,9 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\commander\ability\sherman_easy8_dispatch" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_resource">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11065340" />
-				<template_reference name="resource" value="tables\resource_table">
-					<float name="action" value="0" />
-					<float name="command" value="9" />
-					<float name="fuel" value="0" />
-					<float name="manpower" value="0" />
-					<float name="munition" value="0" />
-					<float name="soviet_progression" value="0" />
-					<float name="soviet_227" value="0" />
-					<float name="popcap" value="0" />
-				</template_reference>
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="90" />
+		<int name="ui_position" value="0" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />
@@ -167,6 +131,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="14334" />
 </instance>

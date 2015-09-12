@@ -5,6 +5,9 @@
 		<icon name="icon" value="Icons_commander_cmdr_soviet_conscript_repair_kit" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082342" />
+				<locstring name="tag" value="11082294" />
+				<locstring name="tag" value="11082346" />
 			</list>
 			<enum name="rarity" value="common" />
 			<list name="races">

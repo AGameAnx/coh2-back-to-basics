@@ -6,7 +6,7 @@
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
 			</list>
-			<enum name="rarity" value="rare" />
+			<enum name="rarity" value="common" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\german" />
 			</list>

@@ -20,7 +20,7 @@
 			<instance_reference name="inventory_item_category" value="inventory_item_category\commander_ability\units_and_buildings" />
 		</template_reference>
 		<instance_reference name="upgrade" value="upgrade\soviet\commander\passive\t34_85_advanced_unlock" />
-		<instance_reference name="ability" value="" />
+		<instance_reference name="ability" value="abilities\soviet\timed_ability\throw_away_hack_ui\cmd_advanced_t34_85_medium_tank" />
 	</group>
 	<uniqueid name="pbgid" value="86424" />
 </instance>

@@ -30,6 +30,7 @@
 									<bool name="not_retreating" value="False" />
 									<bool name="pinned" value="False" />
 									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
 								</template_reference>
 							</list>
 						</template_reference>
@@ -37,7 +38,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
+							<bool name="permanent" value="True" />
 							<list name="modifiers">
 								<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 									<enum name="application_type" value="apply_to_entity" />
@@ -54,7 +55,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.15" />
+									<float name="value" value="1.15" />
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
@@ -288,6 +289,12 @@
 						<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear_ramming" />
 						<bool name="is_present" value="False" />
 					</template_reference>
+					<template_reference name="requirement" value="requirements\required_critical">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare" />
+						<bool name="is_present" value="False" />
+					</template_reference>
 				</list>
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_veterancy">
@@ -326,6 +333,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="93285" />
 </instance>

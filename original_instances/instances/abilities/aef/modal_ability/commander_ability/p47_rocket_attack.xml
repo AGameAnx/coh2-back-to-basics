@@ -29,9 +29,13 @@
 							<float name="time_range_between_planes_minimum" value="3" />
 							<bool name="use_long_path" value="False" />
 							<group name="loiter_info">
-								<float name="loiter_area_radius" value="60" />
+								<float name="loiter_area_radius" value="50" />
 								<float name="loiter_time_sec" value="80" />
 								<bool name="follow_target" value="False" />
+								<float name="lowest_altitude" value="0" />
+								<bool name="loiter_descend" value="False" />
+								<float name="loiter_circling_time_sec" value="0" />
+								<bool name="can_be_targeted" value="True" />
 							</group>
 							<group name="attack_info">
 								<float name="target_lead_in_distance" value="8" />
@@ -61,6 +65,11 @@
 								<int name="phrase_order" value="0" />
 								<locstring name="phrase" value="0" />
 							</template_reference>
+							<list name="additional_loiter_info">
+							</list>
+							<list name="aircraft_on_spawn_actions">
+							</list>
+							<bool name="enable_landing" value="False" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="228204" />
@@ -81,9 +90,13 @@
 							<float name="time_range_between_planes_minimum" value="3" />
 							<bool name="use_long_path" value="False" />
 							<group name="loiter_info">
-								<float name="loiter_area_radius" value="60" />
+								<float name="loiter_area_radius" value="50" />
 								<float name="loiter_time_sec" value="80" />
 								<bool name="follow_target" value="False" />
+								<float name="lowest_altitude" value="0" />
+								<bool name="loiter_descend" value="False" />
+								<float name="loiter_circling_time_sec" value="0" />
+								<bool name="can_be_targeted" value="True" />
 							</group>
 							<group name="attack_info">
 								<float name="target_lead_in_distance" value="8" />
@@ -113,6 +126,11 @@
 								<int name="phrase_order" value="0" />
 								<locstring name="phrase" value="0" />
 							</template_reference>
+							<list name="additional_loiter_info">
+							</list>
+							<list name="aircraft_on_spawn_actions">
+							</list>
+							<bool name="enable_landing" value="False" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="389593" />
@@ -129,7 +147,7 @@
 						<template_reference name="action" value="action\reticule_action">
 							<uniqueid name="id" value="390787" />
 							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
-							<float name="radius" value="60" />
+							<float name="radius" value="50" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="390786" />
@@ -255,8 +273,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_bomb_strike" />
-		<float name="ui_reticule_radius_min" value="60" />
-		<float name="ui_reticule_radius_max" value="60" />
+		<float name="ui_reticule_radius_min" value="50" />
+		<float name="ui_reticule_radius_max" value="50" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
@@ -279,6 +297,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="15053" />
 </instance>

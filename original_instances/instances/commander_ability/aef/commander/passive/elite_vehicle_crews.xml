@@ -5,8 +5,10 @@
 		<icon name="icon" value="Icons_commander_cmdr_aef_elite_vehicle_crews" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082341" />
+				<locstring name="tag" value="11082342" />
 			</list>
-			<enum name="rarity" value="epic" />
+			<enum name="rarity" value="common" />
 			<list name="races">
 				<instance_reference name="race" value="racebps\aef" />
 			</list>

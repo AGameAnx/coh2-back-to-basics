@@ -53,6 +53,7 @@
 									</template_reference>
 								</list>
 							</list>
+							<bool name="run_now" value="False" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="258008" />
@@ -225,6 +226,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="16497" />
 </instance>

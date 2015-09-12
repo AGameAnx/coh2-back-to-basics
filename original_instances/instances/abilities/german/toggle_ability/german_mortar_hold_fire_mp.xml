@@ -6,6 +6,8 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+			</list>
+			<list name="start_target_actions">
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
 					<bool name="permanent" value="False" />
@@ -20,10 +22,11 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\auto_target_enable_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="51941" />
+					<uniqueid name="id" value="458585" />
 				</template_reference>
 				<template_reference name="action" value="action\cancel_forced_attack">
-					<uniqueid name="id" value="51942" />
+					<uniqueid name="id" value="458586" />
+					<enum name="stop_command" value="attack_stop" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -49,6 +52,7 @@
 									<bool name="not_retreating" value="True" />
 									<bool name="pinned" value="False" />
 									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
 								</template_reference>
 								<template_reference name="requirement" value="requirements\required_any_in_list">
 									<enum name="reason" value="usage" />
@@ -74,6 +78,11 @@
 											<locstring name="ui_name" value="0" />
 											<instance_reference name="race" value="racebps\aef" />
 										</template_reference>
+										<template_reference name="requirement" value="requirements\required_race">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="race" value="racebps\british" />
+										</template_reference>
 									</list>
 								</template_reference>
 							</list>
@@ -88,7 +97,7 @@
 									<bool name="retrigger" value="True" />
 									<string name="state_machine_name" value="ability_hold_fire_state" />
 									<string name="undo_action_state_name" value="off" />
-									<uniqueid name="id" value="51945" />
+									<uniqueid name="id" value="457343" />
 								</template_reference>
 								<template_reference name="action" value="action\ui_unit_modifier_action">
 									<bool name="die_with_creator" value="True" />
@@ -98,22 +107,20 @@
 										<icon name="icon_name" value="Icons_abilities_hold_fire_on" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
-									<uniqueid name="id" value="51946" />
+									<uniqueid name="id" value="457344" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="51944" />
+							<uniqueid name="id" value="457345" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="51943" />
+					<uniqueid name="id" value="457346" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-			</list>
-			<list name="start_target_actions">
 			</list>
 		</group>
 		<enum name="activation" value="toggle" />
@@ -173,7 +180,7 @@
 			</template_reference>
 		</group>
 		<float name="toggled_recharge_time_off" value="0" />
-		<float name="toggled_recharge_time_on" value="1" />
+		<float name="toggled_recharge_time_on" value="0" />
 		<group name="ui_cursor">
 			<string name="cursor_bad" value="modal_ability_cancel" />
 			<string name="cursor_good" value="modal_ability" />
@@ -229,6 +236,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="121" />
 </instance>

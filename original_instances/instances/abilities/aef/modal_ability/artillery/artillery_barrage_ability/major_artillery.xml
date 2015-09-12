@@ -57,8 +57,8 @@
 									<float name="source_offset_x" value="90" />
 									<float name="source_offset_y" value="75" />
 									<float name="source_offset_z" value="1" />
-									<float name="time_range_between_shells_max" value="2" />
-									<float name="time_range_between_shells_min" value="4" />
+									<float name="time_range_between_shells_max" value="4" />
+									<float name="time_range_between_shells_min" value="2" />
 									<instance_reference name="weapon_name" value="weapon\aef\explosive_weapons\heavy_artillery\major_offmap_105mm_mp" />
 									<uniqueid name="id" value="254793" />
 								</template_reference>
@@ -257,6 +257,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="16113" />
 </instance>

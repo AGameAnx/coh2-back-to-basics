@@ -5,6 +5,9 @@
 		<icon name="icon" value="Icons_units_unit_soviet_officer" />
 		<template_reference name="server_item" value="server_item">
 			<list name="search_tags">
+				<locstring name="tag" value="11082294" />
+				<locstring name="tag" value="11082348" />
+				<locstring name="tag" value="11082334" />
 			</list>
 			<enum name="rarity" value="common" />
 			<list name="races">

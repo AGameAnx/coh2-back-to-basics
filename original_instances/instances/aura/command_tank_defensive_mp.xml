@@ -60,21 +60,6 @@
 					<locstring name="phrase" value="0" />
 				</template_reference>
 			</template_reference>
-			<template_reference name="action" value="action\change_target_action">
-				<list name="actions">
-					<template_reference name="action" value="action\sector_highlight">
-						<float name="highlight_r" value="238" />
-						<float name="highlight_g" value="113" />
-						<float name="highlight_b" value="25" />
-						<float name="highlight_a" value="200" />
-						<bool name="self_only" value="False" />
-						<uniqueid name="id" value="53406" />
-						<int name="priority" value="305" />
-					</template_reference>
-				</list>
-				<enum name="change_target_type" value="self" />
-				<uniqueid name="id" value="53405" />
-			</template_reference>
 			<template_reference name="action" value="action\requirement_action">
 				<bool name="check_self" value="False" />
 				<bool name="global_fire_and_forget_on_success" value="False" />
@@ -99,6 +84,7 @@
 								<bool name="not_retreating" value="False" />
 								<bool name="pinned" value="False" />
 								<bool name="suppressed" value="False" />
+								<bool name="camouflaged" value="False" />
 							</template_reference>
 						</list>
 					</template_reference>

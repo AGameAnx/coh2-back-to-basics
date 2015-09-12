@@ -96,7 +96,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
+			<locstring name="extra_text" value="11090119" />
 			<locstring name="help_text" value="11085938" />
 			<string name="hotkey_name" value="S" />
 			<icon name="icon_name" value="Icons_abilities_ability_common_cancel_face_team_weapon" />
@@ -130,6 +130,7 @@
 						<bool name="not_retreating" value="False" />
 						<bool name="pinned" value="False" />
 						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>
@@ -171,6 +172,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="92302" />
 </instance>

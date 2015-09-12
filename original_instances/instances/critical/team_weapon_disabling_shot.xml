@@ -14,6 +14,8 @@
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
 			<float name="message_seconds" value="10" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="0" />
 		</group>
 		<enum name="target" value="tp_entity" />
 		<list name="actions">
@@ -27,14 +29,14 @@
 						<float name="duration" value="5" />
 						<bool name="permanent" value="False" />
 						<list name="modifiers">
-							<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+							<template_reference name="modifier" value="modifiers\range_weapon_modifier">
 								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="hardpoint_01" />
-								<enum name="usage_type" value="enable" />
-								<float name="value" value="-1" />
-								<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.001" />
+								<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 							</template_reference>
 						</list>
 						<uniqueid name="id" value="257377" />

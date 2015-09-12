@@ -124,6 +124,7 @@
 							<instance_reference name="weapon_to_override" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m15a1_aa_half_track_50cal_right_special_aa_mp" />
 							<uniqueid name="id" value="259879" />
 							<bool name="auto_attack_only" value="False" />
+							<bool name="persist_on_weapon_change" value="False" />
 						</template_reference>
 						<template_reference name="action" value="action\override_weapon_target_prereq_action">
 							<list name="requirement_table">
@@ -140,6 +141,7 @@
 							<instance_reference name="weapon_to_override" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m15a1_aa_half_track_50cal_left_special_aa_mp" />
 							<uniqueid name="id" value="259927" />
 							<bool name="auto_attack_only" value="False" />
+							<bool name="persist_on_weapon_change" value="False" />
 						</template_reference>
 						<template_reference name="action" value="action\override_weapon_target_prereq_action">
 							<list name="requirement_table">
@@ -156,6 +158,7 @@
 							<instance_reference name="weapon_to_override" value="weapon\aef\ballistic_weapon\tank_gun\m15a1_halftrack_37mm_special_aa_mp" />
 							<uniqueid name="id" value="259928" />
 							<bool name="auto_attack_only" value="False" />
+							<bool name="persist_on_weapon_change" value="False" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="259878" />
@@ -178,6 +181,7 @@
 							<instance_reference name="weapon_to_override" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m15a1_aa_half_track_50cal_left_mp" />
 							<uniqueid name="id" value="349911" />
 							<bool name="auto_attack_only" value="False" />
+							<bool name="persist_on_weapon_change" value="False" />
 						</template_reference>
 						<template_reference name="action" value="action\override_weapon_target_prereq_action">
 							<list name="requirement_table">
@@ -194,6 +198,7 @@
 							<instance_reference name="weapon_to_override" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m15a1_aa_half_track_50cal_right_mp" />
 							<uniqueid name="id" value="349912" />
 							<bool name="auto_attack_only" value="False" />
+							<bool name="persist_on_weapon_change" value="False" />
 						</template_reference>
 						<template_reference name="action" value="action\override_weapon_target_prereq_action">
 							<list name="requirement_table">
@@ -210,6 +215,7 @@
 							<instance_reference name="weapon_to_override" value="weapon\aef\ballistic_weapon\tank_gun\m15a1_halftrack_37mm_mp" />
 							<uniqueid name="id" value="349913" />
 							<bool name="auto_attack_only" value="False" />
+							<bool name="persist_on_weapon_change" value="False" />
 						</template_reference>
 					</list>
 					<enum name="change_target_type" value="entities" />
@@ -346,6 +352,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="16728" />
 </instance>

@@ -21,6 +21,7 @@
 					<instance_reference name="entity_blueprint_name" value="ebps\races\aef\buildings\defensive_structures\airborne_beacon_mp" />
 					<bool name="query_only" value="False" />
 					<bool name="check_visible" value="False" />
+					<bool name="use_target_entity_facing" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="6" />
@@ -173,12 +174,15 @@
 		<template_reference name="targeted_ability_option" value="options\abilities\targeted_ability_option">
 			<bool name="persist_targeted_ability" value="True" />
 			<bool name="post_ability_out_of_range_stop" value="False" />
+			<bool name="range_ignore_target_far_position" value="False" />
 		</template_reference>
 		<enum name="ui_direction_requirement" value="nondirectional" />
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="14511" />
 </instance>

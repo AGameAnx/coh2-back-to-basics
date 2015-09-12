@@ -46,6 +46,7 @@
 								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" />
 								<bool name="query_only" value="False" />
 								<bool name="check_visible" value="False" />
+								<bool name="use_target_entity_facing" value="False" />
 							</template_reference>
 							<template_reference name="action" value="action\change_target_action">
 								<list name="actions">
@@ -63,6 +64,7 @@
 							</template_reference>
 						</list>
 					</list>
+					<bool name="run_now" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -219,6 +221,8 @@
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="2351" />
 </instance>

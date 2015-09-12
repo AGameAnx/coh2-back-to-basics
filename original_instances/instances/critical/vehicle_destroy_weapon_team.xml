@@ -14,12 +14,14 @@
 			<float name="message_colour_g" value="0" />
 			<float name="message_colour_r" value="255" />
 			<float name="message_seconds" value="5" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="0" />
 		</group>
 		<enum name="target" value="tp_entity" />
 		<list name="actions">
 			<template_reference name="action" value="action\make_wreck_action">
 				<enum name="death_type" value="default" />
-				<uniqueid name="id" value="452198" />
+				<uniqueid name="id" value="440351" />
 				<enum name="wreck_type" value="default" />
 			</template_reference>
 		</list>
@@ -40,5 +42,5 @@
 		</template_reference>
 		<bool name="repairable" value="True" />
 	</group>
-	<uniqueid name="pbgid" value="95556" />
+	<uniqueid name="pbgid" value="94015" />
 </instance>
