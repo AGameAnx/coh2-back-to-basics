@@ -43,6 +43,7 @@
 			<bool name="fire_at_building_combat_slot" value="False" />
 			<bool name="non_moving_setup" value="False" />
 			<bool name="can_be_substituted" value="False" />
+			<bool name="non_moving_setup_requires_facing" value="False" />
 		</group>
 		<string name="name" value="MG34 LMG [Generic]" />
 		<group name="fire">
@@ -249,6 +250,8 @@
 			</list>
 			<float name="min" value="19" />
 			<float name="max" value="19" />
+			<list name="post_damage_actions">
+			</list>
 		</group>
 		<group name="deflection">
 			<bool name="has_deflection_damage" value="False" />
@@ -335,6 +338,7 @@
 			<float name="pivot_end_time" value="0" />
 			<bool name="pivot_only" value="False" />
 			<float name="fire_cone_angle" value="3" />
+			<float name="fire_cone_angle_vert" value="2" />
 		</group>
 		<bool name="fx_always_visible" value="False" />
 		<group name="offhand">
@@ -439,6 +443,8 @@
 			<float name="max" value="39" />
 		</group>
 		<string name="fx_action_target_name" value="lmg_mg34_target" />
+		<list name="target_type_table">
+		</list>
 	</group>
 	<uniqueid name="pbgid" value="17455" />
 </instance>
